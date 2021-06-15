@@ -1,0 +1,179 @@
+.house-item {
+    min-height: 188rpx;
+    padding: 32rpx 0;
+    border-bottom: 1px solid #f7f7f7;
+    margin: 0 24rpx;
+    display: block;
+}
+
+.house-item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+}
+
+.content {
+    margin-top: -1rpx;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 168rpx;
+}
+
+.content .hot {
+    display: inline-block;
+    width: 23rpx;
+    height: 28rpx;
+    margin-left: .3em;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/hot.png);
+    background-size: 100% 100%;
+}
+
+.content-main {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.content-main,.content-main .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.content-main .row {
+    line-height: 36rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content-main .row.bottom {
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.content-main .row.unit {
+    margin-bottom: 5rpx;
+    margin-top: 7rpx;
+}
+
+.content-main .first-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 9rpx;
+}
+
+.content-main .first-row ._h3 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.content-main .flex-wrap-row,.content-main .normal-row {
+    margin-bottom: 5rpx;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.content-main .flex-wrap-row {
+    flex-wrap: wrap;
+}
+
+.content-main .customized_price {
+    font-size: 26rpx;
+    margin-bottom: 5rpx;
+}
+
+.content-main.center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.probability {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 12rpx;
+    font-size: 22rpx;
+    color: #444;
+}
+
+.probability ._i {
+    height: 28rpx;
+    width: 28rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/rate.png);
+    background-position: 50%;
+    background-size: cover;
+    margin-right: 8rpx;
+}
+
+.probability .item {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.green {
+    color: #1cb8ab;
+    font-size: 20rpx;
+}
+
+.price {
+    font-size: 30rpx;
+}
+
+.no_border {
+    border: 0;
+}
+
+.new-arrival {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 66rpx;
+    height: 36rpx;
+    font-size: 20rpx;
+    color: #f06e6e;
+    border: 2rpx solid #f06e6e;
+    border-radius: 0 14rpx 0 0;
+}

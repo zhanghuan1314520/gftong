@@ -1,0 +1,22 @@
+{
+    "usingComponents": {
+        "top-filter": "/pages/packageA/map/_top_filter",
+        "zone-select": "/pages/packageA/map/_zone_select",
+        "price-select": "/pages/packageA/map/_price_select",
+        "layout-select": "/pages/packageA/map/_layout_select",
+        "area-select": "/pages/packageA/map/_area_select",
+        "decorate-select": "/pages/packageA/map/_decorate_select",
+        "map-section": "/pages/packageA/whole_buildings_map/_map",
+        "list-section": "/pages/packageA/whole_buildings_map/_list",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

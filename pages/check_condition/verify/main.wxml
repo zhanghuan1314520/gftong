@@ -1,0 +1,37 @@
+<view class="{{['container data-v-3bc42092',type]}}">
+    <view class="page data-v-3bc42092">
+        <view class="header data-v-3bc42092">
+            <button class="share-top-right data-v-3bc42092" openType="share">
+                <image class="_img data-v-3bc42092" src="/static/img/share-new.png"></image>
+                <label class="_span data-v-3bc42092">分享</label>
+            </button>
+        </view>
+        <view class="h1 data-v-3bc42092">常见问题</view>
+        <view class="qa-item data-v-3bc42092" wx:for="{{commonProblem}}" wx:for-index="i" wx:key="i">
+            <view bindtap="__e" class="qa-item--hd data-v-3bc42092" data-event-opts="{{[ [ 'tap',[ [ 'onCollapse',['$event'] ] ] ] ]}}" data-index="{{i}}">
+                <view class="qa-item--tt data-v-3bc42092">
+                    <view class="i data-v-3bc42092">问</view>
+                    <view class="t data-v-3bc42092">{{item.title}}</view>
+                </view>
+                <view class="{{[ 'collapse data-v-3bc42092',[item.collapsed?'open':''] ]}}"></view>
+            </view>
+            <view class="qa-item--bd data-v-3bc42092" wx:if="{{item.collapsed}}">
+                <view class="data-v-3bc42092" wx:for="{{item.content}}" wx:for-index="j" wx:for-item="el" wx:key="j">{{el}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="footer data-v-3bc42092" wx:if="{{type==='talent'}}">
+        <navigator class="footer-btn data-v-3bc42092" url="/pages/check_condition/talent/main">立即查询</navigator>
+    </view>
+    <view class="footer data-v-3bc42092" wx:else>
+        <navigator class="left-btn data-v-3bc42092" url="{{'/pages/check_condition/main?verify_type=杭州购房资格查询&status=doing&share_by_consultant_uid='+share_by_consultant_uid}}">
+            <text class="data-v-3bc42092">购房资格查询</text>
+            <text class="data-v-3bc42092">测试购房资格</text>
+        </navigator>
+        <navigator class="right-btn data-v-3bc42092" url="{{'/pages/check_condition/main?verify_type=杭州无房资格查询&status=doing&share_by_consultant_uid='+share_by_consultant_uid}}">
+            <text class="data-v-3bc42092">无房家庭资格查询</text>
+            <text class="data-v-3bc42092">测试是否为无房家庭</text>
+        </navigator>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-3bc42092" title="{{title}}" vueId="6fea4dab-1"></page-wrap>
+</view>

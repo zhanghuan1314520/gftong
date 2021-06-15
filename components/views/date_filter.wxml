@@ -1,0 +1,9 @@
+<view class="date-filter _div data-v-3d365641">
+    <view bindtap="__e" class="date-filter__handle _div data-v-3d365641" data-event-opts="{{[ [ 'tap',[ [ 'onShowDropdown',['$event'] ] ] ] ]}}">
+        <view class="date-filter__text _div data-v-3d365641">{{value.label||selected.label}}</view>
+        <view class="{{[ 'date-filter__arrow _div data-v-3d365641',[show?'active':''] ]}}"></view>
+    </view>
+    <view class="date-filter__dropdown _div data-v-3d365641" hidden="{{!show}}">
+        <view bindtap="__e" class="date-filter__option _div data-v-3d365641" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-key="{{option.key}}" wx:for="{{options}}" wx:for-index="__i0__" wx:for-item="option" wx:key="key">{{option.label}}</view>
+    </view>
+</view>

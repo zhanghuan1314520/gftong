@@ -1,0 +1,6 @@
+<view class="page _div data-v-1788c7c7">
+    <button class="data-v-1788c7c7" openType="share">
+        <image class="_img data-v-1788c7c7" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/user_guide/pic.png"></image>
+    </button>
+    <page-wrap bind:__l="__l" class="data-v-1788c7c7" title="新手指引" vueId="3b3060d6-1"></page-wrap>
+</view>

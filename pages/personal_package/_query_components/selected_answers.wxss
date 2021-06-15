@@ -1,0 +1,17 @@
+.wrap.data-v-1ba467d1 {
+    margin: 32rpx 0;
+    padding: 0 32rpx;
+}
+
+.header.data-v-1ba467d1 {
+    margin-bottom: 16rpx;
+    font-size: 30rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.item.data-v-1ba467d1 {
+    font-size: 26rpx;
+    line-height: 56rpx;
+    color: #666;
+}

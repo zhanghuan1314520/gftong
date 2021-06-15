@@ -1,0 +1,47 @@
+<view bindtap="__e" class="item data-v-48466916" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <img-wrap bind:__l="__l" class="data-v-48466916" item="{{item}}" vueId="0d63a7a4-1"></img-wrap>
+    <view class="{{['info data-v-48466916',center?'center':'']}}">
+        <view class="row between building-name data-v-48466916">
+            <view class="building-desc-title _h1 data-v-48466916">{{item.name}}</view>
+            <text class="count data-v-48466916" wx:if="{{item.surplus_count_desc}}">{{item.surplus_count_desc}}</text>
+        </view>
+        <view class="row small zone data-v-48466916">
+            <view class="zone-wrap data-v-48466916">
+                <text class="data-v-48466916">{{''+item.zone+''}}</text>
+                <text class="data-v-48466916" wx:if="{{item.zone_section&&!show_presell_date}}">{{'-'+item.zone_section}}</text>
+            </view>
+            <view class="data-v-48466916" wx:if="{{!show_presell_date&&item.area_range}}">
+                <text class="sperate data-v-48466916">|</text>
+                <text class="data-v-48466916">{{'建面'+item.area_range+'㎡'}}</text>
+            </view>
+            <block wx:else>
+                <view class="data-v-48466916" wx:if="{{show_presell_date}}">
+                    <text class="sperate data-v-48466916">|</text>
+                    <text class="data-v-48466916">{{'预计预售：'+item.estimated_presell_time+''}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="row between bottom data-v-48466916">
+            <view class="data-v-48466916">
+                <view class="{{['_strong data-v-48466916',item.price_desc_arr.length>1?'small':'']}}" wx:if="{{item.price_desc_arr&&item.price_desc_arr.length&&item.price_desc!='正在计算'}}">
+                    <view class="building-desc-price data-v-48466916" wx:for="{{item.price_desc_arr}}" wx:for-index="__i0__" wx:for-item="price" wx:key="*this">{{''+price+''}}</view>
+                </view>
+            </view>
+            <view catchtap="__e" class="comment-show data-v-48466916" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count&&!is_price_empty?'inline-flex':'none')+';'}}">
+                <fc-icon bind:__l="__l" class="data-v-48466916" type="40_comment_small" vueId="0d63a7a4-2"></fc-icon>
+                <text class="data-v-48466916">{{item.comment_count||''}}</text>
+            </view>
+        </view>
+        <view class="bottom-tags data-v-48466916">
+            <view class="data-v-48466916">
+                <view class="tags tags-overflow data-v-48466916">
+                    <text class="{{['tag data-v-48466916',tag.style]}}" wx:for="{{item.tag_names}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{''+tag.name+''}}</text>
+                </view>
+            </view>
+            <view catchtap="__e" class="comment-show comment-bottom data-v-48466916" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count&&is_price_empty?'inline-flex':'none')+';'}}">
+                <fc-icon bind:__l="__l" class="data-v-48466916" type="40_comment_small" vueId="0d63a7a4-3"></fc-icon>
+                <text class="data-v-48466916">{{item.comment_count||''}}</text>
+            </view>
+        </view>
+    </view>
+</view>

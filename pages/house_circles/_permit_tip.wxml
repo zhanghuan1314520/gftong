@@ -1,0 +1,13 @@
+<view class="_div data-v-4c50fce9" style="{{'display:'+(show?'block':'none')+';'}}">
+    <view class="tip-dlg _div data-v-4c50fce9">
+        <view class="_h3 data-v-4c50fce9">
+            <label class="_span data-v-4c50fce9">房友圈发表暂时只对置业顾问开放哦</label>
+            <label class="_span data-v-4c50fce9">敬请关注！</label>
+        </view>
+        <view class="_footer data-v-4c50fce9">
+            <button bindtap="__e" class="cancel data-v-4c50fce9" data-event-opts="{{[ [ 'tap',[ [ 'onHide',['$event'] ] ] ] ]}}">好的我先看看</button>
+            <button bindgetuserinfo="__e" class="confirm data-v-4c50fce9" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goConsultApply',['$event'] ] ] ] ]}}" data-name="置业顾问" openType="getUserInfo">申请置业顾问</button>
+        </view>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-4c50fce9" data-event-opts="{{[ [ 'tap',[ [ 'onHide',['$event'] ] ] ] ]}}"></view>
+</view>

@@ -1,0 +1,9 @@
+<view class="page _div data-v-f90fcd54">
+    <top bind:__l="__l" class="data-v-f90fcd54" title="{{detail.building.name}}" type="{{type}}" vueId="18083487-1"></top>
+    <view class="main-section _div data-v-f90fcd54">
+        <detail bind:__l="__l" bind:showDecoraterSelect="__e" class="data-v-f90fcd54" data-event-opts="{{[ [ '^showDecoraterSelect',[ ['toggleDecorateSelect'] ] ] ]}}" detail="{{detail}}" vueId="18083487-2" wx:if="{{!loading}}"></detail>
+        <consultants bind:__l="__l" bind:goMore="__e" building_id="{{detail.building.id}}" class="data-v-f90fcd54" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultants'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="一房一价" is_default="{{false}}" show_help="{{is_consultant}}" theme="{{consultantCard.building.theme}}" title="有问题？问问他们吧！" vueId="18083487-3" wx:if="{{consultantCard}}"></consultants>
+    </view>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-f90fcd54" data-event-opts="{{[ [ '^change',[ ['changeItemDecorate'] ] ],[ '^hide',[ ['toggleDecorateSelect'] ] ] ]}}" options="{{house_decorate_prices}}" selected="{{selected_decorate_price}}" show="{{show_decorate_select}}" vueId="18083487-4"></common-select>
+    <page-wrap bind:__l="__l" class="data-v-f90fcd54" hide_back_home="{{true}}" title="{{detail.building.name}}" vueId="18083487-5"></page-wrap>
+</view>

@@ -1,0 +1,58 @@
+<view class="wrap _div data-v-715e7c1d">
+    <view bindtap="__e" class="building-img _div data-v-715e7c1d" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" wx:if="{{detail.layout_image}}">
+        <image class="img _img data-v-715e7c1d" src="{{detail.layout_image.image_url}}"></image>
+        <image class="icon _img data-v-715e7c1d" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/previewImg.png"></image>
+    </view>
+    <view class="title32B _h2 data-v-715e7c1d">{{detail.name}}</view>
+    <view class="row _div data-v-715e7c1d">
+        <label class="textAssistFont28 _span data-v-715e7c1d">楼盘名称：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.building.name}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.area}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">建筑面积：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.area+'平米'}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.usage}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">物业类型：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.usage}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.decoration_type}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">装修情况：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.decoration_type}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.decorate_price&&detail.decoration_type}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">装修价格：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.decorate_price+'元/㎡'}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d">
+        <label class="textAssistFont28 _span data-v-715e7c1d">{{detail.decoration_type+'单价：'}}</label>
+        <label class="Price30B _span data-v-715e7c1d">{{detail.square_price_show+'元/㎡'}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.total_price}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">总价：</label>
+        <label class="Price30B _span data-v-715e7c1d">{{detail.total_price+'万'}}</label>
+    </view>
+    <view class="row _div data-v-715e7c1d" wx:if="{{detail.layout}}">
+        <label class="textAssistFont28 _span data-v-715e7c1d">户型结构：</label>
+        <label class="heading28 _span data-v-715e7c1d">{{detail.layout}}</label>
+    </view>
+    <view class="tools _div data-v-715e7c1d">
+        <img-tools bind:__l="__l" bind:goLayout="__e" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:stop="__e" class="img-tools data-v-715e7c1d" data-event-opts="{{[ [ '^goLayout',[ ['goLayout'] ] ],[ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ],[ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ ['getOpenVr'] ] ] ]}}" floor="true" playing="{{audio_playing[0]}}" type="large" url="{{detail.layout_image}}" vueId="539e1f8c-1"></img-tools>
+        <audio-player bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-715e7c1d" data-event-opts="{{[ [ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ],[ '^seek',[ ['seek'] ] ] ]}}" playing="{{audio_playing[0]}}" running_time="{{running_times[0]}}" time="{{durations[0]}}" vueId="539e1f8c-2"></audio-player>
+    </view>
+    <view class="price _div data-v-715e7c1d">
+        <view class="left _div data-v-715e7c1d">
+            <view class="_div data-v-715e7c1d">
+                <label class="_span data-v-715e7c1d">{{'首付'+detail.rd_ratio_tx+'：'+detail.down_payment_rd+'万'}}</label>
+            </view>
+            <view class="_div data-v-715e7c1d">
+                <label class="_span data-v-715e7c1d">{{'首付'+detail.normal_ratio_tx+'：'+detail.down_payment_normal+'万'}}</label>
+            </view>
+        </view>
+        <navigator catchtap="__e" class="right-link _a data-v-715e7c1d" data-event-opts="{{[ [ 'tap',[ [ 'goLoanComputer',['$event'] ] ] ] ]}}">
+            <text class="data-v-715e7c1d">算房贷</text>
+            <fc-icon bind:__l="__l" class="data-v-715e7c1d" type="32_more_primary" vueId="539e1f8c-3"></fc-icon>
+        </navigator>
+    </view>
+    <vr-tip agree="{{disclaimer_agree}}" bind:__l="__l" bind:confirm="__e" bind:hide="__e" bind:toggleAgree="__e" class="data-v-715e7c1d" data-event-opts="{{[ [ '^confirm',[ ['confirmDisclaimer'] ] ],[ '^hide',[ ['toggleVrTip'] ] ],[ '^toggleAgree',[ ['toggleDisclaimerAgree'] ] ] ]}}" vueId="539e1f8c-4" wx:if="{{show_vr_disclaimer}}"></vr-tip>
+</view>

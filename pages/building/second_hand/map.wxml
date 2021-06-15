@@ -1,0 +1,7 @@
+<view class="page data-v-5a63925e">
+    <map bindcallouttap="__e" bindmarkertap="__e" class="data-v-5a63925e" data-event-opts="{{[ [ 'markertap',[ [ 'openDetail',['$event'] ] ] ],[ 'callouttap',[ [ 'openDetail',['$event'] ] ] ] ]}}" id="map" markers="{{markers}}"></map>
+    <button class="share data-v-5a63925e" openType="share">
+        <cover-image class="img data-v-5a63925e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/metro_map/share-btn.png"></cover-image>
+    </button>
+    <page-wrap bind:__l="__l" class="价格地图 data-v-5a63925e" vueId="052dcb3e-1"></page-wrap>
+</view>

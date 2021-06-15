@@ -1,0 +1,13 @@
+<view class="{{[ 'expression-section _div data-v-1348ce7c',[!show?'hide':''] ]}}">
+    <navigator class="item expression-top-btn _a data-v-1348ce7c" url="/pages/packageA/frequent_expressions/main" wx:if="{{is_consultant_user}}">
+        <view class="_i data-v-1348ce7c"></view>
+        <label class="_span data-v-1348ce7c">新建常用语</label>
+        <text class="link data-v-1348ce7c">修改</text>
+    </navigator>
+    <view class="list _div data-v-1348ce7c">
+        <view bindtap="__e" class="item _div data-v-1348ce7c" data-event-opts="{{[ [ 'tap',[ [ '$emit',['selectExpression','$0'],[ [ ['frequent_expressions','id',item.id,'content'] ] ] ] ] ] ]}}" wx:for="{{frequent_expressions}}" wx:for-index="__i0__" wx:key="id">
+            <text class="data-v-1348ce7c">{{item.content}}</text>
+            <text class="hintsFont28 data-v-1348ce7c" wx:if="{{item.autoreply_delay_text}}">{{item.autoreply_delay_text}}</text>
+        </view>
+    </view>
+</view>

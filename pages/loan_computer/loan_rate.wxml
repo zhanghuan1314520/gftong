@@ -1,0 +1,5 @@
+<view class="page data-v-7fe78626">
+    <image class="data-v-7fe78626" mode="widthFix" src="{{imgsrc}}"></image>
+    <bottom-right-share bind:__l="__l" class="data-v-7fe78626" vueId="fb1cdff6-1"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-7fe78626" hide_back_home="{{true}}" title="房贷利率" vueId="fb1cdff6-2"></page-wrap>
+</view>

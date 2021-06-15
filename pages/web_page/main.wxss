@@ -1,0 +1,25 @@
+web-view.data-v-5b913f1c {
+    position: relative;
+    z-index: 1;
+}
+
+.share-wrap.data-v-5b913f1c {
+    position: fixed;
+    bottom: 40rpx;
+    left: 235rpx;
+    z-index: 99999999;
+}
+
+.share-wrap button.data-v-5b913f1c {
+    width: 280rpx;
+    height: 70rpx;
+    z-index: 99999;
+    border-radius: 35rpx;
+    background-color: #00ad82;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,173,130,.3);
+}
+
+.share-wrap cover-image.data-v-5b913f1c {
+    width: 280rpx;
+    height: 70rpx;
+}

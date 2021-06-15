@@ -1,0 +1,127 @@
+.page.data-v-91268574 {
+    min-height: 100vh;
+    background: #eff5f9 url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/web_720/720_list_bg.png) no-repeat top;
+    background-size: 750rpx 497rpx;
+    padding-top: 332rpx;
+    padding-bottom: 48rpx;
+}
+
+.list.data-v-91268574 {
+    padding: 32rpx;
+}
+
+.item.data-v-91268574 {
+    padding: 16rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.item+.item.data-v-91268574 {
+    margin-top: 32rpx;
+}
+
+.cover.data-v-91268574 {
+    width: 654rpx;
+    height: 240rpx;
+}
+
+.hd.data-v-91268574 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 24rpx;
+}
+
+.hd.data-v-91268574,.info.data-v-91268574 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.name.data-v-91268574 {
+    max-width: 353rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #111;
+    font-size: 32rpx;
+    line-height: 45rpx;
+    font-weight: 700;
+}
+
+.status.data-v-91268574 {
+    background-color: #e1faf4;
+    padding: 3rpx 12rpx;
+    color: #00b08d;
+    font-size: 22rpx;
+    line-height: 30rpx;
+    border-radius: 4rpx;
+    margin-left: 8rpx;
+}
+
+.btn-hp.data-v-91268574 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 148rpx;
+    height: 48rpx;
+    padding: 0 16rpx;
+    background-image: -webkit-gradient(linear,left top,right top,from(#8168ef),to(#918bff));
+    background-image: linear-gradient(90deg,#8168ef,#918bff);
+    border-radius: 4rpx;
+    font-size: 24rpx;
+    line-height: 33rpx;
+    color: #fff;
+}
+
+.btn-hp ._img.data-v-91268574 {
+    width: 8rpx;
+    height: 16rpx;
+    margin-left: 12rpx;
+}
+
+.zone.data-v-91268574 {
+    font-size: 22rpx;
+    line-height: 30rpx;
+}
+
+.customized-price.data-v-91268574,.price.data-v-91268574 {
+    color: #fa4b00;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    font-weight: 700;
+}
+
+.price.data-v-91268574 {
+    margin-left: 15rpx;
+}
+
+.customized-price.data-v-91268574 {
+    margin-top: 8rpx;
+}
+
+.empty-box.data-v-91268574 {
+    width: 686rpx;
+    margin: -32rpx auto;
+    padding: 124rpx 0 58rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+}

@@ -1,0 +1,316 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/add_num/main",
+    "pages/discuess_group/main",
+    "pages/exchange/main",
+    "pages/house_circles/edit/main",
+    "pages/house_circles/main",
+    "pages/index/search/main",
+    "pages/index/top_search/main",
+    "pages/search/forthcoming/main",
+    "pages/search/latest_opening/main",
+    "pages/mine_detail/main",
+    "pages/reg_step/main",
+    "pages/review_result/search/main",
+    "pages/update/main",
+    "pages/web_notice/main",
+    "pages/web_page/main",
+    "pages/web_qr/main",
+    "pages/activity/main",
+    "pages/find_building/main",
+    "pages/personal_center/main",
+    "pages/messages/main",
+    "pages/history/main",
+
+    "__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/address-preview/address-preview",
+    "__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-comment/complaint-comment",
+    "__plugin__/wx2b03c6e691cd7370/wxlive-components/ext-player/complaint-room/complaint-room"
+  ],  
+  "window": {
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00AD82",
+    "navigationBarTitleText": "杭州购房通",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#9398A7",
+    "selectedColor": "#00AD82",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "首页",
+        "iconPath": "static/img/tab-icon/index.png",
+        "selectedIconPath": "static/img/tab-icon/index-active.png"
+      },
+      {
+        "pagePath": "pages/find_building/main",
+        "text": "必看好房",
+        "iconPath": "static/img/tab-icon/all-buildings.png",
+        "selectedIconPath": "static/img/tab-icon/all-buildings-active.png"
+      },
+      {
+        "pagePath": "pages/house_circles/main",
+        "text": "房友圈",
+        "iconPath": "static/img/tab-icon/consultant.png",
+        "selectedIconPath": "static/img/tab-icon/consultant-active.png"
+      },
+      {
+        "pagePath": "pages/messages/main",
+        "text": "消息",
+        "iconPath": "static/img/tab-icon/messages.png",
+        "selectedIconPath": "static/img/tab-icon/messages-active.png"
+      },
+      {
+        "pagePath": "pages/personal_center/main",
+        "text": "我的",
+        "iconPath": "static/img/tab-icon/personal-center.png",
+        "selectedIconPath": "static/img/tab-icon/personal-center-active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "pages/consultant_activity/",
+      "pages": [
+        "main",
+        "lottery",
+        "rules",
+        "pick_rules",
+        "prize",
+        "stars"
+      ]
+    },
+    {
+      "root": "pages/building/",
+      "pages": [
+        "around_facilities/detail/main",
+        "around_facilities/main",
+        "around_facilities/map/main",
+        "article/main",
+        "event/add/main",
+        "event/main",
+        "img_preview/main",
+        "info/main",
+        "main",
+        "business",
+        "material/main",
+        "price/main",
+        "price_graph/main",
+        "price_detail/main",
+        "reg_predict/main",
+        "audio/main",
+        "video/main",
+        "vr/main",
+        "web_vr/main",
+        "comments/detail/main",
+        "comments/add/main",
+        "comments/main",
+        "lot_detail/main",
+        "planar_graph/main",
+        "web_720/main",
+        "layout_detail/main",
+        "choose/main",
+        "choose_search/main",
+        "compare/main",
+        "second_hand/main",
+        "second_hand/history",
+        "second_hand/map"
+      ]
+    },
+    {
+      "root": "pages/chat_list/",
+      "pages": [
+        "main",
+        "chat/main",
+        "history_detail/main",
+        "history/main"
+      ]
+    },
+    {
+      "root": "pages/consultants/",
+      "pages": [
+        "main",
+        "card/main",
+        "filter/main",
+        "headimgs/main",
+        "recommend_rules/main"
+      ]
+    },
+    {
+      "root": "pages/packageA/",
+      "pages": [
+        "check_risk/main",
+        "article_list/main",
+        "surplus_buildings/main",
+        "consultant_home/main",
+        "consultant_task/main",
+        "consultant_qa/main",
+        "consultant_checkin/national_day",
+        "daily_report/main",
+        "hot_business/main",
+        "map/main",
+        "whole_buildings/main",
+        "whole_buildings_map/main",
+        "whole_buildings_result/main",
+        "intention_reg/main",
+        "carplate/main",
+        "carplateResult/main",
+        "mine_carplate/main",
+        "frequent_expressions/main",
+        "cropper_image/main",
+        "web_article/main",
+        "nconv2019_zones/main",
+        "video/main",
+        "page_price/main",
+        "sec_hand_m/main",
+        "sec_hand_m/second_hand_evalute/result/main",
+        "sec_hand_m/second_hand_evalute/search/main",
+        "metro_map/main",
+        "layout/main",
+        "metro_list/main",
+        "sec_hand_m/new_house_trend/detail",
+        "footprint/main",
+        "choose_location/main",
+        "contact_us/cooperation/main",
+        "trade_data/auction/main",
+        "trade_data/auction/detail/main"
+      ]
+    },
+    {
+      "root": "pages/packageB/",
+      "pages": [
+        "brand_museum/main",
+        "wx_moments/main",
+        "consultant_topic/main",
+        "image_page/main",
+        "booth/main",
+        "interactive_msg/main",
+        "bigV/main",
+        "prepayment_calc/main",
+        "prepayment_calc/help",
+        "prepayment_calc/result",
+        "provident_fund/main",
+        "provident_fund/result",
+        "live/main",
+        "special/main",
+        "integral_simulation/main",
+        "integral_simulation/steps",
+        "integral_simulation/result",
+        "plates/main"
+      ]
+    },
+    {
+      "root": "pages/packageC/",
+      "pages": [
+        "plates/main",
+        "interest_forecast/main",
+        "interest_rate/main",
+        "qa/main",
+        "fangchan_release/main",
+        "hot/main",
+        "message_list/list",
+        "message_list/save_img",
+        "message_list/score_list",
+        "learn_layout/main",
+        "disclaimer/main"
+      ]
+    },
+    {
+      "root": "pages/personal_package/",
+      "pages": [
+        "add_consultant/main",
+        "coin/charge/main",
+        "coin/main",
+        "coin/records/main",
+        "consultant/main",
+        "consultant/call_history/main",
+        "consultant_topic/main",
+        "consultant_bidding/bidding/main",
+        "consultant_bidding/main",
+        "consultant_rule/main",
+        "consultant_score/main",
+        "consultant_select/main",
+        "consultant_select/star",
+        "customer_service/main",
+        "consultant_upload/main",
+        "favourite/main",
+        "house_notification/main",
+        "notice/main",
+        "phone_verify/main",
+        "group_assistant/main",
+        "user_guide/main",
+        "pi/main",
+        "material/main",
+        "material/house_purchase",
+        "taxation/main",
+        "official_weixin/main",
+        "exclusive_poster/main",
+        "feedback/main",
+        "inherit/main",
+        "dora/main",
+        "consultant_checkin_rankings/main"
+      ]
+    },
+    {
+      "root": "pages/activity_a/",
+      "pages": [
+        "building_rank/main",
+        "forthcoming_sale/main",
+        "latest_opening/main",
+        "latest_ln/main",
+        "check_need_condition/main",
+        "vr/main",
+        "thematic/main",
+        "720/main",
+        "brands/main"
+      ]
+    },
+    {
+      "root": "pages/mine/",
+      "pages": [
+        "main",
+        "bind/main"
+      ]
+    },
+    {
+      "root": "pages/loan_computer/",
+      "pages": [
+        "main",
+        "detail/main",
+        "result/main",
+        "help",
+        "loan_rate"
+      ]
+    },
+    {
+      "root": "pages/check_condition/",
+      "pages": [
+        "main",
+        "verify/main",
+        "talent/main"
+      ]
+    },
+    {
+      "root": "pages/report/",
+      "pages": [
+        "2020/main",
+        "2020/steps/main",
+        "2020/pick/main",
+        "2020/steps/consultant",
+        "2020/pick/search/main"
+      ]
+    },
+    {
+      "root": "pages/result/",
+      "pages": [
+        "main",
+        "search/main"
+      ]
+    }
+  ],
+  "sitemapLocation": "sitemap11.json"
+} 

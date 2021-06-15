@@ -1,0 +1,50 @@
+<view class="page _div data-v-5d491d25">
+    <button class="share data-v-5d491d25" openType="share">
+        <image class="_img data-v-5d491d25" lazyLoad="{{true}}" src="/static/img/circle-share.png"></image>
+        <label class="_span data-v-5d491d25">分享</label>
+    </button>
+    <view class="_h1 data-v-5d491d25">常见问题</view>
+    <view class="_ul data-v-5d491d25">
+        <view class="_li data-v-5d491d25">
+            <view class="_h3 data-v-5d491d25">
+                <view class="_i data-v-5d491d25">1</view>
+                <label class="_span data-v-5d491d25">摇号顺序是怎样的？</label>
+            </view>
+            <view class="_p data-v-5d491d25">首轮摇号：优先摇出“无房家庭”入围户数，但不确定选房顺序；</view>
+            <view class="_p data-v-5d491d25">第二轮摇号：首轮摇号未入围的“无房家庭”与非无房家庭共同摇号，摇出剩余入围户数，但不确定选房顺序。同时摇出未入围家庭的轮候顺序。</view>
+            <view class="_p data-v-5d491d25">第三轮摇号：前两轮摇出的入围家庭共同摇号，摇出选房顺序号。</view>
+        </view>
+        <view class="_li data-v-5d491d25">
+            <view class="_h3 data-v-5d491d25">
+                <view class="_i data-v-5d491d25">2</view>
+                <label class="_span data-v-5d491d25">摇号可以放弃选房吗？</label>
+            </view>
+            <view class="_p data-v-5d491d25">可以放弃选房，第一次放弃不影响，第二次放弃则3个月内不能参加摇号，第三次放弃则6个月内不能摇号。</view>
+        </view>
+        <view class="_li data-v-5d491d25">
+            <view class="_h3 data-v-5d491d25">
+                <view class="_i data-v-5d491d25">3</view>
+                <label class="_span data-v-5d491d25">杭州购房贷款比例是怎样的？</label>
+            </view>
+            <view class="_p data-v-5d491d25">在市区范围内，对于已拥有一套住房，或无住房但有住房贷款记录（无论是否还清）的居民家庭，执行二套房信贷政策，公积金与商业贷款首付款不低于60%。公积金贷款利率按同期住房公积金贷款基准利率1.1倍起执行；</view>
+            <view class="_p data-v-5d491d25">杭州的限贷政策所谓的首付首套30%，二套60%，并不仅仅意味着房产，对在杭州无住房但有住房贷款记录的居民家庭，仍然执行二套房信贷政策。</view>
+            <view class="_p data-v-5d491d25">具体的贷款记录需要查征信报告，有无房产相关记录，需要在房产局查档，以记录为准，农村自建房不在范围内。</view>
+        </view>
+        <view class="_li data-v-5d491d25">
+            <view class="_h3 data-v-5d491d25">
+                <view class="_i data-v-5d491d25">4</view>
+                <label class="_span data-v-5d491d25">杭州限购范围包括哪些呢？</label>
+            </view>
+            <view class="_p data-v-5d491d25">包括：上城区、下城区、江干区、拱墅区、西湖区、萧山区含大江东、余杭区、富阳区、滨江区。</view>
+            <view class="_p data-v-5d491d25">注：2017年8月11日，临安撤市设区，成为杭州第十区。2017年8月12日，杭州市房管局明确：“由于临安不在原限购政策的范围内，所以即便撤市设区后还是不限购，除非出台新的限购政策，把临安囊括进去。”</view>
+        </view>
+        <view class="_li data-v-5d491d25">
+            <view class="_h3 data-v-5d491d25">
+                <view class="_i data-v-5d491d25">5</view>
+                <label class="_span data-v-5d491d25">房租收入可以算入个人收入里，计入到银行流水吗？</label>
+            </view>
+            <view class="_p data-v-5d491d25">可以，需要提供租赁合同以及银行租金入账流水。</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-5d491d25" title="常见问题" vueId="883b1f32-1"></page-wrap>
+</view>

@@ -1,0 +1,4 @@
+<view bindtap="__e" class="{{['notice data-v-4e0fb56a',subscribed?'subscribed':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'notice',['$event'] ] ] ] ]}}">
+    <view class="i _i data-v-4e0fb56a"></view>
+    <text class="data-v-4e0fb56a">{{subscribed?'已开启上新提醒':'上新及时通知我'}}</text>
+</view>

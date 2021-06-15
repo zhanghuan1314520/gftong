@@ -1,0 +1,5 @@
+<view class="empty-state _div data-v-4df5bf55">
+    <image class="empty_building _img data-v-4df5bf55" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/building.png"></image>
+    <view class="_p data-v-4df5bf55">没有这个楼盘呢，看看其他的吧～</view>
+    <view bindtap="__e" class="more-btn _div data-v-4df5bf55" data-event-opts="{{[ [ 'tap',[ [ '$emit',['getMore'] ] ] ] ]}}">点我查看其他航拍楼盘</view>
+</view>

@@ -1,0 +1,7 @@
+<view class="_div data-v-7b5a10f1">
+    <view class="_div data-v-7b5a10f1" wx:if="{{show}}">
+        <view bindtap="__e" class="step step-1 _div data-v-7b5a10f1" data-event-opts="{{[ [ 'tap',[ [ 'goStep',['$event'] ] ] ] ]}}" data-step="{{2}}" wx:if="{{step===1}}"></view>
+        <view bindtap="__e" class="step step-2 _div data-v-7b5a10f1" data-event-opts="{{[ [ 'tap',[ [ 'goStep',['$event'] ] ] ] ]}}" data-step="{{3}}" wx:if="{{step===2}}"></view>
+        <view bindtap="__e" class="step step-3 _div data-v-7b5a10f1" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}" wx:if="{{step===3}}"></view>
+    </view>
+</view>

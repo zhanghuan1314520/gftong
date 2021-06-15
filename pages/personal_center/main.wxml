@@ -1,0 +1,26 @@
+<view class="{{['page data-v-5affbb5a',care_type]}}">
+    <view class="{{[ 'personal-center data-v-5affbb5a',[user.is_consultant?'top-padding':''] ]}}">
+        <view class="block data-v-5affbb5a" wx:if="{{user.is_consultant}}">
+            <consultant-header bind:__l="__l" bind:checkUserInfo="__e" bind:goCard="__e" bind:sendLog="__e" care_msg="{{care_msg}}" care_type="{{care_type}}" class="data-v-5affbb5a" consultant="{{consultant}}" consultantRank="{{consultant_rank}}" data-event-opts="{{[ [ '^sendLog',[ ['sendLog'] ] ],[ '^checkUserInfo',[ ['checkUserInfo'] ] ],[ '^goCard',[ ['goCard'] ] ] ]}}" user="{{user}}" vueId="1fb01e0e-1"></consultant-header>
+        </view>
+        <view class="block bg-none data-v-5affbb5a" wx:else>
+            <normal-header bind:__l="__l" care_msg="{{care_msg}}" care_type="{{care_type}}" class="data-v-5affbb5a" user="{{user}}" vueId="1fb01e0e-2"></normal-header>
+        </view>
+        <view class="block bg-none data-v-5affbb5a" wx:if="{{user.is_consultant&&!loading}}">
+            <banner-swiper bind:__l="__l" bind:sendLog="__e" class="data-v-5affbb5a" consultant="{{consultant}}" data-event-opts="{{[ [ '^sendLog',[ ['sendLog'] ] ] ]}}" user="{{user}}" vueId="1fb01e0e-3"></banner-swiper>
+        </view>
+        <view class="block data-v-5affbb5a" wx:if="{{user.is_consultant&&!consultant_loading}}">
+            <consultant-tools bind:__l="__l" class="data-v-5affbb5a" consultant="{{consultant}}" user="{{user}}" vueId="1fb01e0e-4"></consultant-tools>
+        </view>
+        <view class="block data-v-5affbb5a" wx:if="{{user.is_consultant&&!consultant_loading||!user.is_consultant&&!loading}}">
+            <normal-tools bind:__l="__l" class="data-v-5affbb5a" consultant="{{consultant}}" user="{{user}}" vueId="1fb01e0e-5"></normal-tools>
+        </view>
+        <view class="block bg-none data-v-5affbb5a" wx:if="{{!user.is_consultant&&!loading}}">
+            <banner-swiper bind:__l="__l" bind:sendLog="__e" class="data-v-5affbb5a" consultant="{{consultant}}" data-event-opts="{{[ [ '^sendLog',[ ['sendLog'] ] ] ]}}" user="{{user}}" vueId="1fb01e0e-6"></banner-swiper>
+        </view>
+        <view class="block last data-v-5affbb5a">
+            <more-tools bind:__l="__l" class="data-v-5affbb5a" is_consultant="{{user.is_consultant}}" upgradable="{{upgradable}}" user="{{user}}" vueId="1fb01e0e-7"></more-tools>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-5affbb5a" title="个人中心" vueId="1fb01e0e-8"></page-wrap>
+</view>

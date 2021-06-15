@@ -1,0 +1,22 @@
+<view class="{{[ '_div data-v-3568b397',[!shadow?'no_shadow':''] ]}}" style="{{'display:'+(show?'block':'none')+';'}}">
+    <view bindtap="__e" class="overlay _div data-v-3568b397" data-event-opts="{{[ [ 'tap',[ [ 'cancel',['$event'] ] ] ] ]}}"></view>
+    <view class="share-options _div data-v-3568b397">
+        <view class="options _div data-v-3568b397">
+            <button class="data-v-3568b397" openType="share">
+                <image class="_img data-v-3568b397" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-detail/share-wx.png"></image>
+                <view class="_div data-v-3568b397">发送给朋友</view>
+            </button>
+            <button bindtap="__e" class="data-v-3568b397" data-event-opts="{{[ [ 'tap',[ [ 'showBillboard',['$event'] ] ] ] ]}}">
+                <view class="_div data-v-3568b397" wx:if="{{is_building}}">
+                    <image class="_img data-v-3568b397" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-detail/share-billboard.png"></image>
+                    <view class="_div data-v-3568b397">分享楼盘海报</view>
+                </view>
+                <view class="_div data-v-3568b397" wx:else>
+                    <image class="_img data-v-3568b397" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/pray/save-btn.png"></image>
+                    <view class="_div data-v-3568b397">保存图片</view>
+                </view>
+            </button>
+        </view>
+        <button bindtap="__e" class="cancel-btn data-v-3568b397" data-event-opts="{{[ [ 'tap',[ [ 'cancel',['$event'] ] ] ] ]}}">取消</button>
+    </view>
+</view>

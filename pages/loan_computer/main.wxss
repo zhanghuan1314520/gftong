@@ -1,0 +1,235 @@
+.page-box .page {
+    padding-bottom: 160rpx;
+}
+
+.loan-computer-page .form-wrap {
+    width: 100%;
+    padding: 0 30rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.loan-computer-page .form-wrap .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 26rpx 0 20rpx;
+    background-color: #fff;
+    border-bottom: 2rpx solid #f0f0f0;
+}
+
+.loan-computer-page .form-wrap .row.multi-row {
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.loan-computer-page .form-wrap .row.multi-row .label {
+    padding-top: 18rpx;
+}
+
+.loan-computer-page .form-wrap .label {
+    width: 230rpx;
+    font-size: 30rpx;
+    color: #353535;
+}
+
+.loan-computer-page .form-wrap .content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: #333;
+    text-align: right;
+}
+
+.loan-computer-page .form-wrap .content,.loan-computer-page .form-wrap .content.shadow form,.loan-computer-page .form-wrap .content input,.loan-computer-page .form-wrap .content picker {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.loan-computer-page .form-wrap .content .unit {
+    display: inline-block;
+    margin-left: .6em;
+    vertical-align: middle;
+}
+
+.loan-computer-page .btn-wrap {
+    margin: 40rpx auto;
+}
+
+.loan-computer-page ._p {
+    padding: 0 30rpx;
+    margin-top: 20rpx;
+    margin-bottom: 24rpx;
+    font-size: 28rpx;
+    color: #b3b3b3;
+}
+
+.loan-computer-page .multi-content {
+    width: 500rpx;
+    flex-wrap: wrap;
+}
+
+.loan-computer-page .multi-content .input-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 500rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.loan-computer-page .multi-content .input-row ._i {
+    display: inline-block;
+    margin: 0 14rpx;
+}
+
+.loan-computer-page .multi-content ._p {
+    font-size: 24rpx;
+    color: #999;
+    text-align: left;
+}
+
+.loan-computer-page .large-input,.loan-computer-page .mini-input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 80rpx;
+    padding: 24rpx 16rpx;
+    line-height: 80rpx;
+    background: #f2f2f2;
+    border-radius: 8rpx;
+    color: #666;
+    font-size: 28rpx;
+}
+
+.loan-computer-page .large-input input,.loan-computer-page .mini-input input {
+    color: #000;
+    text-align: left;
+}
+
+.loan-computer-page .large-input {
+    width: 460rpx;
+}
+
+.loan-computer-page .mini-input {
+    width: 160rpx;
+}
+
+.loan-computer-page .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.loan-computer-page .select .item {
+    width: 80rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    border: 2rpx solid #999;
+    margin-right: 6rpx;
+    font-size: 24rpx;
+    color: #999;
+    border-radius: 4rpx;
+    text-align: center;
+}
+
+.loan-computer-page .select .item.active {
+    border-color: #00ad82;
+    color: #00ad82;
+    font-weight: 700;
+}
+
+.lpr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.lpr>._div {
+    width: 100%;
+    text-align: right;
+}
+
+.lpr .lpr-tip {
+    font-size: 22rpx;
+    color: #888;
+}
+
+.question-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.question-label::after {
+    display: inline-block;
+    content: "";
+    width: 32rpx;
+    height: 32rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/32_question.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-left: 16rpx;
+}
+
+.formula-left {
+    margin-right: .4em;
+    color: #888;
+}
+
+.formula ._i {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+.tools-page__bottom-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 40rpx 32rpx 96rpx 28rpx;
+    font-size: 24rpx;
+    color: #607fbf;
+}

@@ -1,0 +1,119 @@
+.bottom-tip.data-v-34c827ad {
+    padding-top: 16rpx;
+    text-align: center;
+}
+
+.consultant-card.data-v-34c827ad {
+    width: 100%;
+    height: 239rpx;
+    padding: 26rpx 44rpx 24rpx;
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 0 0 20rpx 20rpx;
+    box-sizing: border-box;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,.06);
+}
+
+.building-link.data-v-34c827ad {
+    margin-top: 8rpx;
+    color: #607fbf;
+}
+
+.consultant-info.data-v-34c827ad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 88rpx;
+    position: relative;
+}
+
+.consultant-info ._img.data-v-34c827ad {
+    width: 88rpx;
+    height: 88rpx;
+    margin-right: 16rpx;
+    border-radius: 8rpx;
+}
+
+.consultant-info .detail.data-v-34c827ad {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.consultant-info .detail ._h3.data-v-34c827ad {
+    display: inline;
+    margin-right: 16rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.consultant-info .switch-btn.data-v-34c827ad {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 34rpx;
+    font-size: 28rpx;
+    color: #7c8aa6;
+}
+
+.consultant-info .switch-btn .icon.data-v-34c827ad {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 8rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chatlist/refresh.png);
+    background-size: 34rpx 34rpx;
+}
+
+.btns.data-v-34c827ad {
+    padding: 0;
+    margin-top: 32rpx;
+    margin-left: 107rpx;
+}
+
+.btns.data-v-34c827ad,.btns button.data-v-34c827ad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.btns button.data-v-34c827ad {
+    height: 72rpx;
+    margin: 0;
+    font-size: 28rpx;
+    color: #000;
+    background-color: transparent;
+}
+
+.btns button image.data-v-34c827ad {
+    width: 72rpx;
+    height: 72rpx;
+}
+
+.btns .wechat.data-v-34c827ad {
+    width: 228rpx;
+}
+
+.btns .phone.data-v-34c827ad {
+    width: 256rpx;
+}

@@ -1,0 +1,6 @@
+<view class="comment-header _div data-v-01a48c32">
+    <view class="_header data-v-01a48c32">
+        <text class="title32B data-v-01a48c32">{{'全部评论('+(count||'')+')'}}</text>
+    </view>
+    <fangchan-toggle-rules bind:__l="__l" class="data-v-01a48c32" comment_rules="{{comment_rules}}" tip_content="{{tip_content}}" vueId="803cedfa-1"></fangchan-toggle-rules>
+</view>

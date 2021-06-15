@@ -1,0 +1,11 @@
+.main-section.data-v-f90fcd54 {
+    position: relative;
+    top: -95rpx;
+    background: #fff;
+}
+
+.tools.data-v-f90fcd54 {
+    background-color: #fff;
+    padding: 0 32rpx;
+    margin-top: -16rpx;
+}

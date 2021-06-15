@@ -1,0 +1,8 @@
+<view class="page data-v-76b92a11">
+    <top-previw bind:__l="__l" buildings="{{buildings}}" class="data-v-76b92a11" vueId="81f9c59e-1" wx:if="{{buildings&&buildings.length}}"></top-previw>
+    <base-table bind:__l="__l" class="data-v-76b92a11" items="{{open_items}}" title="开盘信息" vueId="81f9c59e-2" wx:if="{{is_opened}}"></base-table>
+    <base-table bind:__l="__l" class="data-v-76b92a11" items="{{base_items}}" title="基础信息" vueId="81f9c59e-3"></base-table>
+    <base-table bind:__l="__l" class="data-v-76b92a11" items="{{facility_items}}" title="配套数量对比" type="facility" vueId="81f9c59e-4" wx:if="{{facility_items&&facility_items.length}}"></base-table>
+    <bottom-right-share bind:__l="__l" class="data-v-76b92a11" vueId="81f9c59e-5"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-76b92a11" title="楼盘对比" vueId="81f9c59e-6"></page-wrap>
+</view>

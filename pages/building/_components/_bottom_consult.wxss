@@ -1,0 +1,20 @@
+.wrap.data-v-c402554e {
+    position: fixed;
+    left: 20rpx;
+    bottom: calc(156rpx + constant(safe-area-inset-bottom));
+    bottom: calc(156rpx + env(safe-area-inset-bottom));
+    width: 710rpx;
+    height: 100rpx;
+    margin: 0 auto;
+    z-index: 3;
+    box-shadow: 0 4rpx 10rpx 0 rgba(66,71,71,.3);
+}
+
+._i.data-v-c402554e {
+    position: absolute;
+    left: 33rpx;
+    top: 43rpx;
+    width: 16rpx;
+    height: 16rpx;
+    z-index: 4;
+}

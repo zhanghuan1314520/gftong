@@ -1,0 +1,10 @@
+<navigator bindtap="__e" class="join-group data-v-35c16330" data-event-opts="{{[ [ 'tap',[ [ 'tapJoinGroup',['$event'] ] ] ] ]}}" url="/pages/personal_package/group_assistant/main">
+    <view class="left data-v-35c16330">
+        <view class="top data-v-35c16330">
+            <common-img bind:__l="__l" class="headimgs data-v-35c16330" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/check-condition/headimgs.png" vueId="6150fca0-1"></common-img>
+            <text class="data-v-35c16330">与网友一起讨论吧</text>
+        </view>
+        <view class="bottom data-v-35c16330">“在杭州买房如何避坑？”</view>
+    </view>
+    <view class="right data-v-35c16330">加入群聊</view>
+</navigator>

@@ -1,0 +1,6 @@
+<form bindsubmit="__e" class="data-v-69860e72" data-event-opts="{{[ [ 'submit',[ [ 'onSearch',['$event'] ] ] ] ]}}">
+    <view bindtap="__e" class="search _div data-v-69860e72" data-event-opts="{{[ [ 'tap',[ [ 'onClick',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-69860e72" src="/static/img/search.png"></image>
+        <input bindconfirm="__e" class="data-v-69860e72" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'onSearch',['$event'] ] ] ] ]}}" disabled="{{can_search==0}}" name="keyword" placeholder="{{input_placeholder}}" type="search"></input>
+    </view>
+</form>

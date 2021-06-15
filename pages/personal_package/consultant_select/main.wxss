@@ -1,0 +1,146 @@
+.page.data-v-ce7ce220 {
+    padding: 30rpx 28rpx 30rpx 32rpx;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.card.data-v-ce7ce220 {
+    margin-bottom: 32rpx;
+}
+
+.card .star.data-v-ce7ce220 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 690rpx;
+    height: 70rpx;
+    padding: 0 24rpx 0 18rpx;
+    border-radius: 8rpx;
+    background-color: #fbf4e6;
+    margin-top: 8rpx;
+    color: #666;
+    font-size: 24rpx;
+    box-sizing: border-box;
+}
+
+.card .star.data-v-ce7ce220,.card .star .left.data-v-ce7ce220 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card .star .i.data-v-ce7ce220 {
+    width: 45rpx;
+    height: 45rpx;
+    margin-right: 15rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/consultant_select/star.png);
+    background-size: 45rpx 45rpx;
+}
+
+.card .star .right.data-v-ce7ce220 {
+    width: 136rpx;
+    text-align: left;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/consultant_select/right.png);
+    background-size: 43rpx 16rpx;
+}
+
+.item.data-v-ce7ce220 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 690rpx;
+    height: 231rpx;
+    background-image: linear-gradient(132deg,#fbedcf,#f4dba7);
+    border-radius: 8rpx;
+    padding: 28rpx 24rpx 24rpx 36rpx;
+    color: #5c4801;
+    font-size: 24rpx;
+}
+
+.bg.data-v-ce7ce220 {
+    position: absolute;
+    right: 17rpx;
+    bottom: 0;
+    width: 169rpx;
+    height: 131rpx;
+}
+
+.top.data-v-ce7ce220 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+._h3.data-v-ce7ce220 {
+    max-width: 490rpx;
+    overflow: hidden;
+    font-size: 44rpx;
+    font-weight: 700;
+}
+
+.card-link.data-v-ce7ce220 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card-link ._img.data-v-ce7ce220 {
+    width: 14rpx;
+    height: 22rpx;
+    margin-left: 7rpx;
+}
+
+.select.data-v-ce7ce220 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.select ._img.data-v-ce7ce220 {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 12rpx;
+}
+
+.desc.data-v-ce7ce220 {
+    margin: 48rpx auto;
+    width: 690rpx;
+    text-align: left;
+    font-size: 24rpx;
+    color: #888;
+}
+
+.desc ._p.data-v-ce7ce220 {
+    margin-bottom: 20rpx;
+    line-height: 33rpx;
+}
+
+.desc ._p.data-v-ce7ce220:first-child {
+    font-weight: 700;
+}

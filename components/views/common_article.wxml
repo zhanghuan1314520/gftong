@@ -1,0 +1,17 @@
+<view bindtap="__e" class="item _div data-v-31423fc0" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-id="{{item.id}}">
+    <view class="content _div data-v-31423fc0">
+        <view class="article _div data-v-31423fc0">
+            <view class="title32B _p data-v-31423fc0">{{item.content_body.title}}</view>
+            <view class="sub-info noteFont22 _div data-v-31423fc0">
+                <view class="userinfo _div data-v-31423fc0">
+                    <image class="_img data-v-31423fc0" lazyLoad="{{true}}" src="{{auth_headimg}}"></image>
+                    <label class="_span data-v-31423fc0">{{item.author.name}}</label>
+                </view>
+                <view class="date _div data-v-31423fc0">{{item.published_date}}</view>
+            </view>
+        </view>
+        <view class="article-img _div data-v-31423fc0">
+            <common-img bind:__l="__l" class="data-v-31423fc0" lazyLoad="{{true}}" mode="{{aspectFill}}" src="{{item.content_body.image_url}}" vueId="2307a628-1"></common-img>
+        </view>
+    </view>
+</view>

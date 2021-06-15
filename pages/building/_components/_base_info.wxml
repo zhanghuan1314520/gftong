@@ -1,0 +1,20 @@
+<view class="base-info _div data-v-04350dea">
+    <view class="{{[ 'house-price _div data-v-04350dea',[!show_price?'hide':''] ]}}">
+        <label class="price _span data-v-04350dea">
+            <view class="_div data-v-04350dea" wx:if="{{show_customized_price}}">
+                <view class="_div data-v-04350dea" wx:for="{{current_house.customized_price}}" wx:for-index="i" wx:for-item="prize" wx:key="i">{{''+prize+''}}</view>
+            </view>
+            <view class="_div data-v-04350dea" wx:else>
+                <label class="_span data-v-04350dea" wx:for="{{current_house.price_desc_arr}}" wx:for-index="i" wx:for-item="prize" wx:key="i">{{''+prize+''}}</label>
+                <label class="{{[ 'decoration_type _span data-v-04350dea',[current_house.decoration_type==='精装'?'red':''] ]}}" wx:if="{{current_house.decoration_type&&house.id!=367}}">{{'('+current_house.decoration_type+')'}}</label>
+            </view>
+        </label>
+    </view>
+    <view bindtap="__e" class="{{[ 'top-address _p data-v-04350dea',[!house.zone&&!house.address?'hide':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'openMap',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-04350dea" src="https://cdn.vip-wifi.com/fangchan/img/common-icons/address-small=black.png"></image>
+        <label class="navigator-arrow mini-arrow _span data-v-04350dea">{{''+house.zone+(house.zone?'-':'')+house.address+''}}</label>
+    </view>
+    <view class="qr _div data-v-04350dea">
+        <common-img bind:__l="__l" class="data-v-04350dea" src="{{macode_url}}" vueId="099d3d46-1"></common-img>
+    </view>
+</view>

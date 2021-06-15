@@ -1,0 +1,15 @@
+.secondhand-price.data-v-19f4deb4 {
+    width: 228rpx;
+    height: 126rpx;
+    position: absolute;
+    top: 16rpx;
+    right: 0;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/aside_sec.png) no-repeat 50%;
+    background-size: contain;
+    font-family: PingFangSC-Semibold;
+    font-size: 28rpx;
+    color: #d99100;
+    text-align: center;
+    padding-top: 70rpx;
+    line-height: 40rpx;
+}

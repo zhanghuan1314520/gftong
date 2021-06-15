@@ -1,0 +1,27 @@
+<view class="{{[ 'you-like _div',[ (!you_like.primary_position||!you_like.primary_position.length)&&(!you_like.secondary_position||!you_like.secondary_position.length)?'hide':'' ] ]}}">
+    <view class="house-page-title _h2">猜你喜欢</view>
+    <view class="_ul">
+        <view class="_div" id="you_like_col_1">
+            <house-item bind:__l="__l" item="{{item}}" vueId="{{'24c2eeec-1-'+i}}" wx:for="{{you_like.primary_position}}" wx:for-index="i" wx:key="i"></house-item>
+        </view>
+        <view class="{{[ 'house-col-3 _div',[!you_like.secondary_position||!you_like.secondary_position.length?'hide':''] ]}}" id="you_like_col_3">
+            <navigator bindtap="__e" class="_a" data-event-opts="{{[ [ 'tap',[ [ 'clickHouse',['$event'] ] ] ] ]}}" data-href="{{item.href}}" data-id="{{item.log_id||''}}" data-index="{{i}}" data-pos_name="{{item.position}}" wx:for="{{you_like.secondary_position}}" wx:for-index="i" wx:key="i">
+                <view class="default-house-img _div">
+                    <common-img bind:__l="__l" mode="aspectFill" shadowClass="house-shadow" src="{{item.img_url}}" vueId="{{'24c2eeec-2-'+i}}"></common-img>
+                    <view class="{{[ 'view-wrap _div',[!item.view_count?'hide':''] ]}}">
+                        <image class="_img" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/view.png"></image>
+                        <label class="_span">{{item.view_count||''}}</label>
+                    </view>
+                </view>
+                <view class="_h3">{{item.name}}</view>
+                <view class="_div">
+                    <label class="_span">{{''+item.tag+''}}</label>
+                    <view class="comment-show _div" style="{{'display:'+(item.comment_count?'flex':'none')+';'}}">
+                        <image class="_img" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/msg.png"></image>
+                        <label class="_span">{{item.comment_count}}</label>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

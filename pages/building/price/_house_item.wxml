@@ -1,0 +1,32 @@
+<view bindtap="__e" class="item _div data-v-a3009c16" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goDetail'] ] ] ] ]}}">
+    <view class="top _div data-v-a3009c16">
+        <view class="_div data-v-a3009c16">
+            <view class="_h1 data-v-a3009c16">{{item.name}}</view>
+            <label class="{{['tags _span data-v-a3009c16',decoration_type_class]}}" wx:if="{{decoration_type_tag}}">{{decoration_type_tag}}</label>
+            <label class="{{['tags _span data-v-a3009c16',usage_class]}}">{{item.usage}}</label>
+        </view>
+        <view class="_strong data-v-a3009c16">
+            <text class="data-v-a3009c16">{{item.total_price}}</text>
+            <label class="unit _span data-v-a3009c16">万</label>
+        </view>
+    </view>
+    <view class="row _div data-v-a3009c16">
+        <label class="_span data-v-a3009c16">{{''+decoration_type_label+''}}<view class="price _strong data-v-a3009c16">{{item.square_price_show+'元/㎡'}}</view>
+        </label>
+        <label class="_span data-v-a3009c16" wx:if="{{item.decorate_price&&decoration_type_tag}}">{{'装修价格：'+item.decorate_price+'元/㎡'}}</label>
+    </view>
+    <view class="row _div data-v-a3009c16">
+        <label class="_span data-v-a3009c16" wx:if="{{item.layout}}">{{item.layout}}</label>
+        <label class="_span data-v-a3009c16" wx:if="{{item.inside_area}}">{{'套内面积'+item.inside_area+'㎡'}}</label>
+        <label class="_span data-v-a3009c16">{{'建筑面积：'+item.area+'㎡'}}</label>
+        <label class="_span data-v-a3009c16" wx:if="{{area_rate}}">{{'得房率'+area_rate+'%'}}</label>
+    </view>
+    <view class="row _div data-v-a3009c16">
+        <label class="_span data-v-a3009c16">{{'首付'+item.rd_ratio_tx+'：'}}<view class="_strong data-v-a3009c16">{{item.down_payment_rd+'万'}}</view>
+        </label>
+        <label class="_span data-v-a3009c16">{{'首付'+item.normal_ratio_tx+'：'}}<view class="_strong data-v-a3009c16">{{item.down_payment_normal+'万'}}</view>
+        </label>
+        <navigator catchtap="__e" class="right-link _a data-v-a3009c16" data-event-opts="{{[ [ 'tap',[ [ 'goLoanComputer',['$event'] ] ] ] ]}}">算房贷<fc-icon bind:__l="__l" class="data-v-a3009c16" type="32_more_primary" vueId="6e9aaadd-1"></fc-icon>
+        </navigator>
+    </view>
+</view>

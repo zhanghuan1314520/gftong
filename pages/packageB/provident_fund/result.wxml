@@ -1,0 +1,26 @@
+<view class="page data-v-280e57c6">
+    <view class="card data-v-280e57c6">
+        <view class="left data-v-280e57c6">
+            <view class="data-v-280e57c6">公积金可贷款额度</view>
+            <view class="strong data-v-280e57c6">{{''+result.money+''}}<text class="unit data-v-280e57c6">元</text>
+            </view>
+            <view class="years data-v-280e57c6">{{'可贷款年限 '+result.year+' 年'}}</view>
+        </view>
+        <view class="right data-v-280e57c6">
+            <common-img bind:__l="__l" class="qr data-v-280e57c6" src="{{qrcode_img}}" vueId="68bdc171-1"></common-img>
+        </view>
+    </view>
+    <view class="note data-v-280e57c6">*公积金贷款额度计算结果仅供参考，请以实际审核结果为准。</view>
+    <view class="tip-wrap data-v-280e57c6">
+        <view class="tip-title data-v-280e57c6">公积金贷款额度小贴士</view>
+        <text class="tip-list data-v-280e57c6">1.职工住房公积金可贷额度以申请住房公积金贷款时职工住房公积金账户月平均余额15倍计算，计算结果取千位整数，计算结果高于50万元的按50万元确定，低于15万元的，按15万元确定。职工住房公积金账户月均余额为职工申请贷款时近12个月(不含申请当月)的住房公积金账户月均余额(不含近12个月的一次性补缴)，不足12个月的按实际月数计算。
+
+            2.职工本人符合贷款申请条件的，最高贷款额度为50万元。职工及其配偶均符合贷款申请条件的，每户最高贷款限额为100万。
+
+            3.具体可贷额度根据职工住房公积金缴存情况和住房公积金贷款可贷额度标准、所购住房的状况和价格、个人还款能力和信用状况等因素综合确定。
+
+            4.职工住房公积金贷款额度不足的，可申请住房公积金组合贷款，组合贷款中商业贷款的期限、担保方式、还款方式应与公积金贷款一致。</text>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-280e57c6" vueId="68bdc171-2"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-280e57c6" hide_back_home="{{true}}" vueId="68bdc171-3"></page-wrap>
+</view>

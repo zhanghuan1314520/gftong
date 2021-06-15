@@ -1,0 +1,27 @@
+<view class="item _div data-v-9493d138">
+    <view class="header _div data-v-9493d138">
+        <button bindgetuserinfo="__e" class="{{[ 'user data-v-9493d138',[item.author.consultant_id?'clickable':''] ]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goConsult',['$event'] ] ] ] ]}}" openType="getUserInfo">
+            <image class="headimg _img data-v-9493d138" src="{{item.author.headimgurl}}"></image>
+            <label class="_span data-v-9493d138">{{item.author.name}}</label>
+        </button>
+        <label class="_span data-v-9493d138">{{''+item.published_date+''}}</label>
+    </view>
+    <view class="{{[ 'content _div data-v-9493d138',[has_line?'line':''] ]}}">
+        <view class="_h3 data-v-9493d138">{{''+item.title+''}}<text class="category data-v-9493d138" wx:if="{{item.category==='工程进度'}}">工程进度</text>
+        </view>
+        <text bindtap="__e" class="{{[ 'text data-v-9493d138',[!show_all&&show_operate?'two-line':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">{{item.content}}</text>
+        <view bindtap="__e" class="link data-v-9493d138" data-event-opts="{{[ [ 'tap',[ [ 'toggleShow',['$event'] ] ] ] ]}}" wx:if="{{show_operate}}">{{show_all?'收起':'全文'}}</view>
+        <view class="img-wrap _div data-v-9493d138" wx:if="{{item.video}}">
+            <view bindtap="__e" class="video-mask data-v-9493d138" data-event-opts="{{[ [ 'tap',[ [ 'goVideoPage',['$0','$1'],['item.video','item.title'] ] ] ] ]}}">
+                <common-img bind:__l="__l" class="video data-v-9493d138" mode="aspectFill" src="{{utils.getCoverPhoto(item.video_cover_photo_url||photos_url)}}" vueId="bc204fea-1"></common-img>
+            </view>
+        </view>
+        <view class="img-wrap _div data-v-9493d138" wx:if="{{item.photos_urls&&item.photos_urls.length}}">
+            <view bindtap="__e" class="{{['img data-v-9493d138',item.photos_urls.length>1?'mini':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{item.photos_urls}}" wx:for-index="i" wx:for-item="url" wx:key="i">
+                <single-img bind:__l="__l" class="data-v-9493d138" src="{{utils.getPhoto(item.photos_urls,url)}}" vueId="{{'bc204fea-2-'+i}}" wx:if="{{item.photos_urls.length===1}}"></single-img>
+                <common-img bind:__l="__l" class="data-v-9493d138" mode="aspectFill" src="{{utils.getPhoto(item.photos_urls,url)}}" vueId="{{'bc204fea-3-'+i}}" wx:else></common-img>
+            </view>
+        </view>
+    </view>
+</view>
+<wxs module="utils" src="../../../common/wxs/event_img.wxs" />

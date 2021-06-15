@@ -1,0 +1,10 @@
+<view class="float-card data-v-66e3da28" wx:if="{{show}}">
+    <view class="building data-v-66e3da28">
+        <image class="data-v-66e3da28" src="{{building.cover_photo_url}}"></image>
+        <view class="info data-v-66e3da28">
+            <view class="heading32B data-v-66e3da28">{{building.name}}</view>
+            <view class="assistFont24 data-v-66e3da28">{{building.zone}}</view>
+        </view>
+    </view>
+    <button bindtap="__e" class="data-v-66e3da28" data-event-opts="{{[ [ 'tap',[ [ 'send',['$event'] ] ] ] ]}}">发送楼盘</button>
+</view>

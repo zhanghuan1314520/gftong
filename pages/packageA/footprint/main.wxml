@@ -1,0 +1,29 @@
+<view class="{{[ 'footprint-page _div data-v-0bbe0660',[!is_show_history?'bgcolor':''] ]}}">
+    <view class="{{[ 'footprint-history _div data-v-0bbe0660',[!is_show_history?'hide':''] ]}}">
+        <view class="history-title _div data-v-0bbe0660">
+            <view class="_p data-v-0bbe0660">为您保留最近30天的楼盘浏览历史记录</view>
+        </view>
+        <view class="adapt_bottom_origin _div data-v-0bbe0660">
+            <view class="history-list _div data-v-0bbe0660" wx:for="{{history_items}}" wx:for-index="key" wx:for-item="val" wx:key="key">
+                <view class="time _p data-v-0bbe0660">{{key}}</view>
+                <view class="history-footprint _div data-v-0bbe0660">
+                    <house-item bind:__l="__l" class="data-v-0bbe0660" index="{{index}}" item="{{item}}" vueId="{{'021c31d2-1-'+key+'-'+index}}" wx:for="{{val}}" wx:key="building_id"></house-item>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="{{[ 'footprint-content _div data-v-0bbe0660',[is_show_history?'hide':''] ]}}">
+        <view class="top _div data-v-0bbe0660">
+            <image class="_img data-v-0bbe0660" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/footprint/footprint.png"></image>
+            <view class="_p data-v-0bbe0660">您还没有浏览记录，快去逛逛吧！</view>
+        </view>
+        <view class="recommended adapt_bottom_origin _div data-v-0bbe0660">
+            <view class="_p data-v-0bbe0660">为你推荐</view>
+            <view class="recommended-content _div data-v-0bbe0660" wx:for="{{recommendations}}" wx:for-index="__i0__" wx:key="building_id">
+                <house-item bind:__l="__l" class="data-v-0bbe0660" item="{{item}}" vueId="{{'021c31d2-2-'+__i0__}}"></house-item>
+            </view>
+        </view>
+    </view>
+    <list-loading bind:__l="__l" class="data-v-0bbe0660" vueId="021c31d2-3" wx:if="{{loading}}"></list-loading>
+    <page-wrap bind:__l="__l" class="data-v-0bbe0660" hide_back_home="{{true}}" title="楼盘足迹" vueId="021c31d2-4"></page-wrap>
+</view>

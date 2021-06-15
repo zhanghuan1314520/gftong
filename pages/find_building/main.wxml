@@ -1,0 +1,40 @@
+<view class="page _div data-v-09543dba">
+    <view class="home-header-wrap header search _header data-v-09543dba">
+        <navigator class="input data-v-09543dba" url="/pages/index/search/main">
+            <fc-icon bind:__l="__l" class="data-v-09543dba" type="32_search" vueId="22eb487f-1"></fc-icon>
+            <text class="textAssistFont28 text data-v-09543dba">按楼盘名字搜索</text>
+        </navigator>
+        <button class="btn data-v-09543dba" openType="share">
+            <fc-icon bind:__l="__l" class="data-v-09543dba" type="48_share_black" vueId="22eb487f-2"></fc-icon>
+            <text class="text data-v-09543dba">分享</text>
+        </button>
+    </view>
+    <top-header bind:__l="__l" class="data-v-09543dba" subjects="{{subjects}}" vueId="22eb487f-3"></top-header>
+    <view class="main-contain _div data-v-09543dba">
+        <view class="page-title _div data-v-09543dba" id="building-header">全部楼盘</view>
+        <view class="client-rect data-v-09543dba"></view>
+        <view class="{{[ 'find-building-filter--wrap data-v-09543dba',[filter_show?'filter-show':''] ]}}">
+            <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-09543dba" className="{{'find-building-filter '+(filter_fixed_top?'top-fixed':'')}}" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" id="top_filter" layout="{{layout}}" metro="{{metro}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="22eb487f-4" vueSlots="{{['after']}}" zone_ids="{{zone_ids}}">
+                <view slot="after">
+                    <tag-filter bind:__l="__l" bind:change="__e" class="data-v-09543dba" data-event-opts="{{[ [ '^change',[ ['changeStatus'] ] ] ]}}" status="{{status}}" vueId="{{'22eb487f-5'+','+'22eb487f-4'}}"></tag-filter>
+                </view>
+            </top-filter>
+        </view>
+        <view class="building-container _div data-v-09543dba" id="building-container" style="{{$root.s0}}">
+            <view class="_div data-v-09543dba" id="recommendation" wx:if="{{show_recommendation}}">
+                <recommendation bind:__l="__l" class="data-v-09543dba" list="{{recommendation}}" vueId="22eb487f-6"></recommendation>
+            </view>
+            <view class="data-null _div data-v-09543dba" wx:if="{{recommend&&!loading}}">
+                <image class="_img data-v-09543dba" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/null.png"></image>
+                <text class="data-v-09543dba">未找到合适房源，试试其他条件吧~</text>
+            </view>
+            <view class="_h3 data-v-09543dba" wx:if="{{recommend}}">基于部分条件为您推荐：</view>
+            <view class="_div data-v-09543dba" wx:if="{{items.length}}">
+                <building-item bind:__l="__l" class="data-v-09543dba" item="{{item}}" vueId="{{'22eb487f-7-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id"></building-item>
+            </view>
+            <bottom-tip bind:__l="__l" class="data-v-09543dba" vueId="22eb487f-8" wx:if="{{!loading&&no_more&&items.length}}"></bottom-tip>
+            <list-loading bind:__l="__l" class="data-v-09543dba" vueId="22eb487f-9" wx:if="{{loading||!no_more}}"></list-loading>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-09543dba" hide_back_home="{{true}}" vueId="22eb487f-10"></page-wrap>
+</view>

@@ -1,0 +1,8 @@
+<view class="shadow _div">
+    <form bindsubmit="__e" data-event-opts="{{[ [ 'submit',[ [ 'pushFormSubmit',['$event'] ] ] ] ]}}">
+        <button class="shadow-button" formType="submit">
+            <button class="small-share-btn" openType="share">
+                <image class="_img" src="/static/img/red-share-icon.png"></image>分享</button>
+        </button>
+    </form>
+</view>

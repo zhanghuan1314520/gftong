@@ -1,0 +1,132 @@
+.title.data-v-5425f16c {
+    width: 750rpx;
+    padding: 24rpx 32rpx 16rpx;
+    margin: 0 auto;
+    border: 0;
+    background-color: #fff;
+}
+
+.swiper-wrap.data-v-5425f16c {
+    background-color: #fff;
+}
+
+.main-section.data-v-5425f16c {
+    margin-top: 40rpx;
+}
+
+.feeds-list.data-v-5425f16c {
+    position: relative;
+}
+
+.pencil-btn.data-v-5425f16c {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 192rpx;
+    height: 60rpx;
+    line-height: 58rpx;
+    color: #333;
+    font-size: 28rpx;
+    font-weight: 700;
+    border-radius: 44rpx 0 0 44rpx;
+    box-shadow: 0 2rpx 8rpx 0 rgba(0,0,0,.15);
+    background-color: #fff;
+}
+
+.pencil-btn ._img.data-v-5425f16c {
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+
+.feed-btn.data-v-5425f16c {
+    top: 800rpx;
+}
+
+.question-btn.data-v-5425f16c {
+    top: 580rpx;
+}
+
+.house-cirlces.data-v-5425f16c {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.events.data-v-5425f16c {
+    margin-top: 24rpx;
+}
+
+.tip.data-v-5425f16c {
+    color: #999;
+    font-size: 28rpx;
+    padding: 30rpx;
+    text-align: center;
+}
+
+.question-list.data-v-5425f16c {
+    margin-top: -15rpx;
+}
+
+.events-list.data-v-5425f16c,.question-list.data-v-5425f16c {
+    background-color: #fff;
+}
+
+.events-list.data-v-5425f16c {
+    padding-top: -24rpx;
+}
+
+.loading-wrap.data-v-5425f16c {
+    background-color: #fff;
+}
+
+.ranking .time.data-v-5425f16c {
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #c8c8c8;
+    line-height: 33rpx;
+    margin: 0 20rpx 8rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+    height: 49rpx;
+}
+
+.ranking .ranking-list.data-v-5425f16c {
+    padding: 0 16rpx;
+}
+
+.fixed.data-v-5425f16c {
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    background-color: #fff;
+}
+
+.article-list.data-v-5425f16c {
+    margin-top: -40rpx;
+}
+
+.feedpage_mixing_banner.data-v-5425f16c {
+    padding: 32rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.feedpage_mixing_banner .content.data-v-5425f16c {
+    overflow: hidden;
+    border-radius: 8rpx;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.search.data-v-5425f16c {
+    margin-top: -15rpx;
+}

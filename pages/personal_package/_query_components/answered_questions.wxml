@@ -1,0 +1,7 @@
+<view class="wrap data-v-380c7bc0">
+    <view class="question data-v-380c7bc0">{{''+item.question+''}}</view>
+    <view class="answer data-v-380c7bc0">
+        <text class="content data-v-380c7bc0">{{item.answer}}</text>
+        <text bindtap="__e" class="del data-v-380c7bc0" data-event-opts="{{[ [ 'tap',[ [ '$emit',['del'] ] ] ] ]}}"></text>
+    </view>
+</view>

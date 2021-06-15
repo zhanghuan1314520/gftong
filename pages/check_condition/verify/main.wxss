@@ -1,0 +1,189 @@
+.container.data-v-3bc42092,.page.data-v-3bc42092 {
+    background-color: #fff;
+}
+
+.container.talent .header.data-v-3bc42092 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/talentQualificationInquiry/q.png);
+}
+
+.container.condition .header.data-v-3bc42092 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/check-condition/q.png);
+}
+
+.header.data-v-3bc42092 {
+    width: 750rpx;
+    height: 540rpx;
+    position: relative;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 100% 100%;
+}
+
+.h1.data-v-3bc42092 {
+    font-size: 36rpx;
+    line-height: 50rpx;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 20rpx;
+    margin: 32rpx 32rpx 0;
+}
+
+.qa-item.data-v-3bc42092 {
+    position: relative;
+    padding-bottom: 24rpx;
+}
+
+.qa-item.data-v-3bc42092::after,.qa-item.data-v-3bc42092::before {
+    display: block;
+    position: absolute;
+    left: 32rpx;
+    content: "";
+    width: 686rpx;
+    border-bottom: 2rpx solid #f2f2f2;
+    z-index: 1;
+}
+
+.qa-item.data-v-3bc42092::before {
+    top: 0;
+}
+
+.qa-item.data-v-3bc42092::after {
+    bottom: 0;
+}
+
+.qa-item+.qa-item.data-v-3bc42092 {
+    margin-top: 24rpx;
+}
+
+.qa-item--hd.data-v-3bc42092 {
+    padding-top: 24rpx;
+    margin: 0 16rpx 0 32rpx;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.qa-item--hd.data-v-3bc42092,.qa-item--tt.data-v-3bc42092 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.qa-item--tt .i.data-v-3bc42092 {
+    width: 36rpx;
+    height: 36rpx;
+    text-align: center;
+    line-height: 36rpx;
+    background-color: rgba(92,204,148,.3);
+    border-radius: 4rpx;
+    color: #66cc96;
+    font-size: 22rpx;
+    font-weight: 700;
+}
+
+.qa-item--tt .t.data-v-3bc42092 {
+    font-size: 30rpx;
+    line-height: 42rpx;
+    font-weight: 700;
+    color: #333;
+    margin-left: 12rpx;
+}
+
+.collapse.data-v-3bc42092 {
+    width: 48rpx;
+    height: 48rpx;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/48_up_grey.png) no-repeat 50%;
+    transform: rotate(180deg);
+    background-size: 100% 100%;
+}
+
+.collapse.open.data-v-3bc42092 {
+    transform: rotate(0deg);
+}
+
+.qa-item--bd.data-v-3bc42092 {
+    width: 686rpx;
+    padding-top: 8rpx;
+    font-size: 26rpx;
+    line-height: 42rpx;
+    color: #666;
+    margin: 0 auto;
+}
+
+.footer.data-v-3bc42092 {
+    position: sticky;
+    bottom: 0;
+    margin-top: 40rpx;
+    background: #fff;
+    box-shadow: 0 0 16rpx 0 rgba(0,0,0,.05);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 20rpx 32rpx calc(32rpx + env(safe-area-inset-bottom));
+}
+
+.footer-btn.data-v-3bc42092 {
+    background-image: linear-gradient(-28deg,#00bf99 4%,#2ed17a);
+    box-shadow: 0 2rpx 14rpx 0 rgba(0,153,67,.27),inset 0 -12rpx 16rpx 0 rgba(0,0,0,.1);
+    border-radius: 6rpx;
+    width: 100%;
+    height: 112rpx;
+    line-height: 112rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: #fff;
+    font-weight: 700;
+}
+
+.left-btn.data-v-3bc42092,.right-btn.data-v-3bc42092 {
+    width: 332rpx;
+    height: 128rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 6rpx;
+    color: #fff;
+}
+
+.left-btn text.data-v-3bc42092:nth-of-type(1),.right-btn text.data-v-3bc42092:nth-of-type(1) {
+    font-size: 36rpx;
+    line-height: 50rpx;
+    font-weight: 700;
+}
+
+.left-btn text.data-v-3bc42092:nth-of-type(2),.right-btn text.data-v-3bc42092:nth-of-type(2) {
+    opacity: .8;
+    font-size: 24rpx;
+    line-height: 33rpx;
+    margin-top: 2rpx;
+}
+
+.left-btn.data-v-3bc42092 {
+    background-image: linear-gradient(-28deg,#00abf5 4%,#3dcefa);
+    box-shadow: 0 2rpx 8rpx 0 rgba(0,162,243,.3),inset 0 -12rpx 16rpx 0 rgba(0,0,0,.1);
+}
+
+.right-btn.data-v-3bc42092 {
+    background-image: linear-gradient(-28deg,#00bf99 4%,#2ed17a);
+    box-shadow: 0 2rpx 14rpx 0 rgba(0,153,67,.27),inset 0 -12rpx 16rpx 0 rgba(0,0,0,.1);
+}

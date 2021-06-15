@@ -1,0 +1,7 @@
+<view class="page data-v-1ee42e69">
+    <common-img bind:__l="__l" class="image data-v-1ee42e69" mode="widthFix" src="{{imgsrc_1}}" vueId="cd5d8f48-1"></common-img>
+    <common-img bind:__l="__l" class="image data-v-1ee42e69" mode="widthFix" src="{{imgsrc_2}}" vueId="cd5d8f48-2"></common-img>
+    <common-img bind:__l="__l" class="image data-v-1ee42e69" mode="widthFix" src="{{imgsrc_3}}" vueId="cd5d8f48-3"></common-img>
+    <bottom-right-share bind:__l="__l" class="data-v-1ee42e69" vueId="cd5d8f48-4"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-1ee42e69" title="户型攻略" vueId="cd5d8f48-5"></page-wrap>
+</view>

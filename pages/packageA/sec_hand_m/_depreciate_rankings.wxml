@@ -1,0 +1,10 @@
+<view class="depreciate_rankings _div data-v-3d7cb274">
+    <view class="tabs-wrap _div data-v-3d7cb274">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-3d7cb274" data-event-opts="{{[ [ '^change',[ ['changeType'] ] ] ]}}" selected="{{type}}" tabs="{{tabs}}" vueId="6265ecea-1" width="100%"></common-tabs>
+    </view>
+    <view class="list _div data-v-3d7cb274">
+        <list-item bind:__l="__l" class="data-v-3d7cb274" index="{{i+1}}" item="{{item}}" type="{{type}}" vueId="{{'6265ecea-2-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></list-item>
+    </view>
+    <loading bind:__l="__l" class="data-v-3d7cb274" vueId="6265ecea-3" wx:if="{{loading||!no_more}}"></loading>
+    <bottom-tip bind:__l="__l" class="data-v-3d7cb274" vueId="6265ecea-4" wx:if="{{!loading&&no_more}}"></bottom-tip>
+</view>

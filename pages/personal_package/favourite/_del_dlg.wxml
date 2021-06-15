@@ -1,0 +1,7 @@
+<view class="data-v-7154f01a">
+    <view class="dlg data-v-7154f01a">
+        <view bindtap="__e" class="item active data-v-7154f01a" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">取消关注</view>
+        <view bindtap="__e" class="item data-v-7154f01a" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}">关闭</view>
+    </view>
+    <view bindtap="__e" class="overlay data-v-7154f01a" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

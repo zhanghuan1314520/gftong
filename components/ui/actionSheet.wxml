@@ -1,0 +1,11 @@
+<view class="{{[ 'ui-actionsheet data-v-c7bdbdfe',[showActionSheet?'show':''] ]}}">
+    <view bindtap="__e" class="ui-actionsheet--mask data-v-c7bdbdfe" data-event-opts="{{[ [ 'tap',[ [ 'onHideActionSheet',['$event'] ] ] ] ]}}"></view>
+    <view class="ui-actionsheet--container data-v-c7bdbdfe">
+        <view class="ui-actionsheet--actions data-v-c7bdbdfe">
+            <view bindtap="__e" class="ui-actionsheet--item data-v-c7bdbdfe" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-key="{{action.key}}" wx:for="{{actions}}" wx:for-index="__i0__" wx:for-item="action" wx:key="key">{{''+action.name+''}}</view>
+        </view>
+        <view class="ui-actionsheet--btns data-v-c7bdbdfe">
+            <view bindtap="__e" class="ui-actionsheet--item data-v-c7bdbdfe" data-event-opts="{{[ [ 'tap',[ [ 'onHideActionSheet',['$event'] ] ] ] ]}}">取消</view>
+        </view>
+    </view>
+</view>

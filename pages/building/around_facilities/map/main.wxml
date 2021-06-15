@@ -1,0 +1,37 @@
+<view class="page _div data-v-1ea0abfa">
+    <map bindmarkertap="__e" class="data-v-1ea0abfa" data-event-opts="{{[ [ 'markertap',[ [ 'clickMarker',['$event'] ] ] ] ]}}" id="map" latitude="{{house.latitude}}" longitude="{{house.longitude}}" markers="{{markers}}" showLocation="{{true}}">
+        <cover-view bindtap="__e" class="consult-tip data-v-1ea0abfa" data-event-opts="{{[ [ 'tap',[ [ 'goConsultant',['$event'] ] ] ] ]}}">
+            <cover-view class="text data-v-1ea0abfa">咨询周边好学校，了解更多学区信息</cover-view>
+            <cover-image class="data-v-1ea0abfa" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/consult-btn.png"></cover-image>
+        </cover-view>
+        <view class="audio-share data-v-1ea0abfa">
+            <audio-control audio_url="{{audio_url}}" bind:__l="__l" class="audio-player data-v-1ea0abfa" title="{{title}}" vueId="294e2ce8-1" wx:if="{{audio_url}}"></audio-control>
+            <button class="share-btn data-v-1ea0abfa" openType="share"></button>
+        </view>
+        <view class="guide data-v-1ea0abfa">
+            <button catchtap="__e" class="disclaimer-btn data-v-1ea0abfa" data-event-opts="{{[ [ 'tap',[ [ 'goDisclaimer',['$event'] ] ] ] ]}}"></button>
+        </view>
+        <view class="{{['guide data-v-1ea0abfa',category,footer_class]}}">
+            <button catchtap="__e" class="guide-btn data-v-1ea0abfa" data-event-opts="{{[ [ 'tap',[ [ 'goGuide',['$event'] ] ] ] ]}}"></button>
+        </view>
+    </map>
+    <view class="{{['_footer data-v-1ea0abfa',category,footer_class]}}">
+        <view bindtap="__e" class="movable data-v-1ea0abfa" data-event-opts="{{[ [ 'tap',[ [ 'toggleMovable',['$event'] ] ] ] ]}}">
+            <view class="movable-icon data-v-1ea0abfa"></view>
+        </view>
+        <view class="filters data-v-1ea0abfa" wx:if="{{category==='school'}}">
+            <view bindtap="__e" class="{{['item data-v-1ea0abfa',tab===school_type?'selected':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'selectSchoolType',['$0'],[ [ ['school_tabs','',i] ] ] ] ] ] ]}}" wx:for="{{school_tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab+''}}</view>
+        </view>
+        <view class="tabs data-v-1ea0abfa">
+            <view bindtap="__e" class="{{[ 'tab data-v-1ea0abfa',tab.key,[tab.key===category?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" data-name="{{tab.name}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab.name+''}}</view>
+        </view>
+        <poi-list bind:__l="__l" bind:select="__e" class="data-v-1ea0abfa" classname="{{category}}" data-event-opts="{{[ [ '^select',[ ['onSelect'] ] ] ]}}" items="{{items}}" selected_index="{{selected_index}}" vueId="294e2ce8-2" wx:if="{{items.length}}"></poi-list>
+        <block wx:else>
+            <view class="empty data-v-1ea0abfa" wx:if="{{category!==''}}">
+                <image class="img data-v-1ea0abfa" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/empty-tip.png"></image>
+                <view class="data-v-1ea0abfa">喔唷，附近暂无数据呢~</view>
+            </view>
+        </block>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-1ea0abfa" hide_back_home="{{true}}" title="{{title}}" vueId="294e2ce8-3"></page-wrap>
+</view>

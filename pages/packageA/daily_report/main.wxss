@@ -1,0 +1,285 @@
+.page.data-v-77dac3f2 {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 32rpx 0 16rpx;
+}
+
+.page.paper-page.data-v-77dac3f2 {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(96%,#ffd4d4));
+    background-image: linear-gradient(180deg,#fff,#ffd4d4 96%);
+}
+
+.page.paper-page .content.data-v-77dac3f2 {
+    padding: 0;
+}
+
+.community-topics-top.data-v-77dac3f2 {
+    position: relative;
+    height: 150rpx;
+    line-height: 114rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/daily_report/daily-report-bg1.png);
+    background-size: 100% 100%;
+}
+
+.title-section.data-v-77dac3f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 32rpx;
+}
+
+.title-section .date.data-v-77dac3f2 {
+    margin-left: 32rpx;
+}
+
+.title-section .date text.data-v-77dac3f2 {
+    margin-right: .8em;
+}
+
+.report-title.data-v-77dac3f2 {
+    width: 173rpx;
+    height: 43rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/daily_report/daily-report-title.png);
+    background-size: 173rpx 43rpx;
+}
+
+.default.data-v-77dac3f2 {
+    margin-top: -36rpx;
+    border-top-left-radius: 36rpx;
+    border-top-right-radius: 36rpx;
+    overflow: hidden;
+}
+
+.default .null.data-v-77dac3f2 {
+    font-size: 28rpx;
+    color: #666;
+    padding-top: 8rpx;
+}
+
+.content.data-v-77dac3f2 {
+    position: relative;
+    width: 100%;
+    padding-top: 32rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+}
+
+.content ._section.data-v-77dac3f2 {
+    margin: 0 32rpx;
+    padding: 40rpx 0;
+    text-align: left;
+    position: relative;
+    border-bottom: 2rpx dashed #ccc;
+}
+
+.content ._section.data-v-77dac3f2:first-child {
+    padding-top: 0;
+}
+
+.content ._section.data-v-77dac3f2:last-of-type {
+    border-bottom: 0;
+}
+
+.content ._section ._ul.data-v-77dac3f2 {
+    margin-top: 16rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.content ._section ._ul ._li.data-v-77dac3f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    line-height: 64rpx;
+}
+
+.content ._section ._ul ._li .label.data-v-77dac3f2 {
+    -webkit-box-flex: 0;
+    flex: 0 0 152rpx;
+}
+
+.content ._section ._ul ._li .label ._i.data-v-77dac3f2 {
+    display: inline;
+}
+
+.content ._section ._ul ._li .house-name.data-v-77dac3f2 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.content ._section ._ul ._li .house-name navigator.data-v-77dac3f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content ._section ._ul ._li .house-name .name.data-v-77dac3f2 {
+    color: #69c;
+    font-weight: 700;
+    font-size: 28rpx;
+}
+
+.content ._section ._ul ._li .date-desc.data-v-77dac3f2 {
+    color: #888;
+    font-size: 24rpx;
+}
+
+.content ._section ._ul ._li .link.data-v-77dac3f2 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #5c7a99;
+    text-decoration: none;
+}
+
+.pic-tip.data-v-77dac3f2 {
+    background-color: transparent;
+}
+
+.pic-tip .subject-pic.data-v-77dac3f2 {
+    display: block;
+    width: 100%;
+    border-radius: 32rpx;
+}
+
+.daily-new.data-v-77dac3f2 {
+    padding-bottom: 34rpx;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear,left top,right top,from(#f2faf6),color-stop(97%,#e0f2ea));
+    background-image: linear-gradient(90deg,#f2faf6,#e0f2ea 97%);
+    background-position: 0 150rpx;
+    background-size: 100% 100%;
+}
+
+.daily-new.data-v-77dac3f2::before {
+    content: "";
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/daily_report/daily-report-bg2.png);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 150rpx;
+}
+
+.daily-new ._header.data-v-77dac3f2,.daily-new .card.data-v-77dac3f2 {
+    position: relative;
+    z-index: 1;
+}
+
+.daily-new ._header.data-v-77dac3f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 47rpx 32rpx 32rpx;
+    color: #00b08d;
+}
+
+.daily-new ._header ._h2.data-v-77dac3f2 {
+    font-size: 36rpx;
+    font-weight: 700;
+}
+
+.daily-new ._header .desc.data-v-77dac3f2 {
+    margin-left: 20rpx;
+    font-size: 24rpx;
+}
+
+.daily-new .card.data-v-77dac3f2 {
+    width: 686rpx;
+    padding: 32rpx 32rpx 50rpx;
+    margin: 0 auto;
+    border-radius: 36rpx;
+    background-color: #fff;
+    line-height: 72rpx;
+}
+
+.daily-new .card .item.data-v-77dac3f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #888;
+    font-size: 24rpx;
+}
+
+.daily-new .card .item .name.data-v-77dac3f2 {
+    margin-right: .5em;
+    font-weight: 700;
+    font-size: 28rpx;
+    color: #69c;
+}
+
+.daily-new .card .item .tag.data-v-77dac3f2 {
+    margin: 0 0 0 8rpx;
+}
+
+.theme-content.data-v-77dac3f2 {
+    margin: 0 0 32rpx 32rpx;
+    height: 180rpx;
+}
+
+.theme-content .list.data-v-77dac3f2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 280rpx;
+    height: 180rpx;
+    margin-right: 20rpx;
+    border-radius: 6rpx;
+    overflow: hidden;
+}
+
+.theme-content .list image.data-v-77dac3f2 {
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.theme-content .list.data-v-77dac3f2:last-child {
+    margin-right: 32rpx;
+}
+
+.theme-content .content-scroll.data-v-77dac3f2 {
+    white-space: nowrap;
+    overflow: scroll;
+    width: 100%;
+    height: 180rpx;
+}

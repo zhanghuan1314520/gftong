@@ -1,0 +1,6 @@
+<view class="calendar-billboard data-v-e0c08d24">
+    <view class="billboard-main data-v-e0c08d24">
+        <common-img bind:__l="__l" class="img data-v-e0c08d24" mode="widthFix" src="{{photo_url}}" vueId="9c793898-1"></common-img>
+        <view bindtap="__e" class="btn data-v-e0c08d24" data-event-opts="{{[ [ 'tap',[ [ 'saveImg',['$event'] ] ] ] ]}}">{{saving?'保存中...':'保存到手机'}}</view>
+    </view>
+</view>

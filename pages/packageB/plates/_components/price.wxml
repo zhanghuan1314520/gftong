@@ -1,0 +1,62 @@
+<view class="wrap _div data-v-9b50e648">
+    <view class="header _div data-v-9b50e648" id="price_header">
+        <view class="title36B _div data-v-9b50e648">板块房价</view>
+        <view class="right _div data-v-9b50e648">
+            <label class="assistFont24 _span data-v-9b50e648">关注指数：</label>
+            <stars bind:__l="__l" class="data-v-9b50e648" score="{{plate.ratings&&plate.ratings['关注指数']}}" type="normal" vueId="6a5941c2-1"></stars>
+        </view>
+    </view>
+    <view class="main _div data-v-9b50e648">
+        <navigator class="top _a data-v-9b50e648" hoverClass="none" url="/pages/check_condition/main?verify_type=杭州购房资格查询">
+            <view class="left text28B _div data-v-9b50e648">{{'购房资格：'+plate.zone+''}}</view>
+            <view class="right _div data-v-9b50e648">
+                <label class="_span data-v-9b50e648">查询能否在该板块买房</label>
+                <fc-icon bind:__l="__l" class="data-v-9b50e648" type="32_more_primary" vueId="6a5941c2-2"></fc-icon>
+            </view>
+        </navigator>
+        <view class="price-wrap _div data-v-9b50e648">
+            <view class="section price _div data-v-9b50e648" wx:if="{{presell_data.price_range}}">
+                <view class="section-header _div data-v-9b50e648">
+                    <view class="text30B _div data-v-9b50e648">板块内新房取证价格:</view>
+                    <view class="strong _div data-v-9b50e648">{{presell_data.price_range}}</view>
+                </view>
+                <view class="assistFont24 _div data-v-9b50e648">数据仅包含近三个月板块内取证住宅项目的公示价格</view>
+            </view>
+            <view class="list _div data-v-9b50e648" wx:if="{{presell_data.items&&presell_data.items.length}}">
+                <view class="item _div data-v-9b50e648" wx:for="{{show_presell}}" wx:for-index="i" wx:key="i">
+                    <view class="date noteFont22 _div data-v-9b50e648">{{''+item.presell_date+''}}</view>
+                    <view class="info _div data-v-9b50e648">
+                        <view class="name _div data-v-9b50e648">{{item.building_name}}</view>
+                        <view class="strong _div data-v-9b50e648" wx:if="{{item.price_desc}}">
+                            <label class="label _span data-v-9b50e648">价格：</label>{{''+item.price_desc+''}}</view>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="__e" class="more _div data-v-9b50e648" data-event-opts="{{[ [ 'tap',[ [ 'toggleShowPresell',['$event'] ] ] ] ]}}" wx:if="{{presell_data.items&&presell_data.items.length>3}}">
+                <label class="_span data-v-9b50e648">{{show_all_presell?'点击收起':'展开全部'}}</label>
+                <fc-icon bind:__l="__l" class="{{['data-v-9b50e648',show_all_presell?'up':'']}}" type="32_down" vueId="6a5941c2-3"></fc-icon>
+            </view>
+        </view>
+        <view class="area-wrap _div data-v-9b50e648" wx:if="{{plate.areas&&plate.areas.length}}">
+            <view class="section area _div data-v-9b50e648">
+                <view class="section-header _div data-v-9b50e648">
+                    <view class="text30B _div data-v-9b50e648">板块内新房主力面积:</view>
+                    <view class="strong _div data-v-9b50e648">{{main_area.area}}</view>
+                </view>
+                <view class="assistFont24 _div data-v-9b50e648">仅含近两年已在购房通上架的楼盘数据(含历史开盘数据)</view>
+            </view>
+            <view class="chart _div data-v-9b50e648">
+                <canvas class="canvas data-v-9b50e648" id="area-chart" type="2d"></canvas>
+            </view>
+        </view>
+        <view class="company-wrap _div data-v-9b50e648">
+            <view class="section company _div data-v-9b50e648">
+                <view class="section-header text30B _div data-v-9b50e648">板块内知名开发商</view>
+                <view class="assistFont24 _div data-v-9b50e648">数据仅包含已在购房通上架的新房开发商</view>
+            </view>
+            <view class="items _div data-v-9b50e648" wx:if="{{plate.details&&plate.details['知名开发商']}}">
+                <view class="item _div data-v-9b50e648" wx:for="{{plate.details['知名开发商']}}" wx:for-index="i" wx:key="i">{{''+item+''}}</view>
+            </view>
+        </view>
+    </view>
+</view>

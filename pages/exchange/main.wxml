@@ -1,0 +1,4 @@
+<view class="page _div">
+    <web-view src="{{src}}"></web-view>
+    <page-wrap bind:__l="__l" title="金币兑换" vueId="0dd74eec-1"></page-wrap>
+</view>

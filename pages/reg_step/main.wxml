@@ -1,0 +1,7 @@
+<view class="_div data-v-aa385856">
+    <button class="transparent-share data-v-aa385856" openType="share">
+        <image class="_img data-v-aa385856" lazyLoad="{{true}}" src="/static/img/circle-share.png"></image>
+    </button>
+    <image class="main _img data-v-aa385856" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/material/reg-step.png"></image>
+    <page-wrap bind:__l="__l" class="data-v-aa385856" title="新手购房网络登记指南" vueId="248cccfe-1"></page-wrap>
+</view>

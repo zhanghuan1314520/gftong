@@ -1,0 +1,10 @@
+<view class="{{[ 'auth-phone data-v-34cda08c',[!show?'hide':''] ]}}">
+    <view class="auth-dialog data-v-34cda08c">
+        <view class="auth-dialog__tit data-v-34cda08c">订阅楼盘提醒</view>
+        <view class="auth-dialog__con data-v-34cda08c">担心错过开盘信息抢不到心仪房源？实时推送楼盘预售、摇号结果、楼盘动态</view>
+        <view class="auth-dialog__btn data-v-34cda08c">
+            <button bindgetphonenumber="__e" class="ui-btn primary big radius-44 data-v-34cda08c" data-event-opts="{{[ [ 'getphonenumber',[ [ 'getphonenumber',['$event'] ] ] ] ]}}" openType="getPhoneNumber">授权手机号</button>
+        </view>
+    </view>
+    <view bindtap="__e" class="overlay data-v-34cda08c" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

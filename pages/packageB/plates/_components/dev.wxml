@@ -1,0 +1,21 @@
+<view class="wrap _div data-v-2f7ef0c4">
+    <view class="header _div data-v-2f7ef0c4">
+        <view class="title36B _div data-v-2f7ef0c4">板块发展</view>
+        <view class="right _div data-v-2f7ef0c4">
+            <label class="assistFont24 _span data-v-2f7ef0c4">期待指数：</label>
+            <stars bind:__l="__l" class="data-v-2f7ef0c4" score="{{plate.ratings&&plate.ratings['期待指数']}}" type="normal" vueId="0787fa53-1"></stars>
+        </view>
+    </view>
+    <view class="main _div data-v-2f7ef0c4">
+        <view class="section _div data-v-2f7ef0c4">
+            <view class="text30B _div data-v-2f7ef0c4">当前产业结构</view>
+            <line3 bind:__l="__l" class="data-v-2f7ef0c4" content="{{plate.details&&plate.details['当前产业结构']}}" vueId="0787fa53-2" wx:if="{{plate.details&&plate.details['当前产业结构']}}"></line3>
+            <button bindtap="__e" class="btn data-v-2f7ef0c4" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$0'],['plate.details.产业结构图'] ] ] ] ]}}" wx:if="{{plate.details&&plate.details['产业结构图']}}">查看产业结构图</button>
+        </view>
+        <view class="section _div data-v-2f7ef0c4">
+            <view class="text30B _div data-v-2f7ef0c4">板块规划</view>
+            <line3 bind:__l="__l" class="data-v-2f7ef0c4" content="{{plate.details&&plate.details['板块规划']}}" vueId="0787fa53-3" wx:if="{{plate.details&&plate.details['板块规划']}}"></line3>
+            <button bindtap="__e" class="btn data-v-2f7ef0c4" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$0'],['plate.details.板块规划图'] ] ] ] ]}}" wx:if="{{plate.details&&plate.details['板块规划图']}}">查看板块规划图</button>
+        </view>
+    </view>
+</view>

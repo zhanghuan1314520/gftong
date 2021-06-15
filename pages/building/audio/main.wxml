@@ -1,0 +1,28 @@
+<view class="page data-v-20ad9bbe">
+    <view class="header data-v-20ad9bbe">
+        <house bind:__l="__l" class="data-v-20ad9bbe" comment="{{true}}" item="{{house}}" vueId="590e2c62-1"></house>
+    </view>
+    <view class="content data-v-20ad9bbe">
+        <view class="house-page-title _div data-v-20ad9bbe">
+            <view class="_h3 data-v-20ad9bbe">楼盘语音讲解</view>
+        </view>
+        <view class="list data-v-20ad9bbe">
+            <item bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-20ad9bbe" data-event-opts="{{[ [ '^seek',[ ['onSeek'] ] ],[ '^play',[ [ 'playAudio',['around'] ] ] ],[ '^stop',[ ['stopAudio'] ] ] ]}}" link="{{around_audio}}" playing="{{audio_playing_type==='around'}}" running_time="{{around_running_time}}" time="{{around_time}}" title="周边配套讲解" vueId="590e2c62-2" wx:if="{{around_audio}}"></item>
+            <item bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-20ad9bbe" data-event-opts="{{[ [ '^seek',[ ['onSeek'] ] ],[ '^play',[ [ 'playAudio',['detail'] ] ] ],[ '^stop',[ ['stopAudio'] ] ] ]}}" link="{{detail_audio}}" playing="{{audio_playing_type==='detail'}}" running_time="{{detail_running_time}}" time="{{detail_time}}" title="基本信息讲解" vueId="590e2c62-3" wx:if="{{detail_audio}}"></item>
+            <item bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-20ad9bbe" data-event-opts="{{[ [ '^seek',[ ['onSeek'] ] ],[ '^play',[ [ 'playAudio',['zone'] ] ] ],[ '^stop',[ ['stopAudio'] ] ] ]}}" link="{{zone_audio}}" playing="{{audio_playing_type==='zone'}}" running_time="{{zone_running_time}}" time="{{zone_time}}" title="区域板块讲解" vueId="590e2c62-4" wx:if="{{zone_audio}}"></item>
+            <view bindtap="__e" class="audio-link data-v-20ad9bbe" data-event-opts="{{[ [ 'tap',[ [ 'goLayout',['$event'] ] ] ] ]}}" wx:if="{{show_layout_audio}}">
+                <view class="left data-v-20ad9bbe">
+                    <view class="name data-v-20ad9bbe">户型图讲解</view>
+                    <view class="tip data-v-20ad9bbe">空间信息的全方位、多角度讲解</view>
+                </view>
+                <view class="btn data-v-20ad9bbe">前往收听</view>
+            </view>
+        </view>
+    </view>
+    <consultants bind:__l="__l" bind:goMore="__e" class="data-v-20ad9bbe" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultants'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" is_default="{{false}}" theme="{{consultantCard.building.theme}}" title="有问题？问问他们吧！" vueId="590e2c62-5" wx:if="{{!house.current_consultant}}"></consultants>
+    <view class="data-v-20ad9bbe" wx:if="{{house.current_consultant}}">
+        <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-20ad9bbe" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{house}}" is_consultant="{{is_consultant}}" vueId="590e2c62-6"></current-consultant>
+    </view>
+    <common-footer bind:__l="__l" building_id="{{house.building_id}}" class="data-v-20ad9bbe" name="{{title}}" vueId="590e2c62-7" wx:if="{{!house.current_consultant}}"></common-footer>
+    <page-wrap bind:__l="__l" class="data-v-20ad9bbe" title="{{title}}" vueId="590e2c62-8"></page-wrap>
+</view>

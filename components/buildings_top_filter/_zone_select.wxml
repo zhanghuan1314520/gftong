@@ -1,0 +1,23 @@
+<view class="top-filter-wrap _div data-v-218b1343">
+    <view class="select-content _div data-v-218b1343">
+        <view class="left _div data-v-218b1343">
+            <view bindtap="__e" class="{{[ 'opt _div data-v-218b1343',[item.value===type?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$0'],[ [ ['tabs','',i,'value'] ] ] ] ] ] ]}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">{{''+item.text+''}}</view>
+        </view>
+        <view class="right _div data-v-218b1343">
+            <view class="{{[ '_div data-v-218b1343',[type==='zone'?'hide':''] ]}}">
+                <view class="checkbox-wrap _div data-v-218b1343">
+                    <view bindtap="__e" class="{{[ 'checkbox checkbox-metros _div data-v-218b1343',[opt.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelectMetro',[i] ] ] ] ]}}" wx:for="{{metros}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+(opt.value===''?'不限':opt.value)+''}}</view>
+                </view>
+            </view>
+            <view class="{{[ '_div data-v-218b1343',[type==='metro'?'hide':''] ]}}">
+                <view class="checkbox-wrap _div data-v-218b1343">
+                    <view bindtap="__e" class="{{[ 'checkbox checkbox-zone _div data-v-218b1343',[opt.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelectZones',[i] ] ] ] ]}}" wx:for="{{zones}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+(opt.value===''?'不限':opt.name)+''}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom _div data-v-218b1343">
+        <button bindtap="__e" class="btn data-v-218b1343" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">清空</button>
+        <button bindtap="__e" class="btn main data-v-218b1343" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</button>
+    </view>
+</view>

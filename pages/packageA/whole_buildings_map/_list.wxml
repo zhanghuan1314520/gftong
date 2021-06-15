@@ -1,0 +1,5 @@
+<view class="list data-v-1333b1dd">
+    <house-item bind:__l="__l" class="data-v-1333b1dd" item="{{item}}" vueId="{{'16399b02-1-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id"></house-item>
+    <bottom-tip bind:__l="__l" class="data-v-1333b1dd" vueId="16399b02-2" wx:if="{{!loading&&no_more&&items.length}}"></bottom-tip>
+    <list-loading bind:__l="__l" class="data-v-1333b1dd" vueId="16399b02-3" wx:if="{{loading||!no_more}}"></list-loading>
+</view>

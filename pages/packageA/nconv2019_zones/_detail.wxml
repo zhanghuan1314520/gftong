@@ -1,0 +1,9 @@
+<view class="detail-wrap data-v-fc48886e">
+    <banner bind:__l="__l" class="data-v-fc48886e" vueId="211e9af0-1" wx:if="{{show_banner}}"></banner>
+    <view class="detail data-v-fc48886e">
+        <view bindtap="__e" class="close data-v-fc48886e" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}"></view>
+        <view class="name data-v-fc48886e">{{''+item.name+''}}</view>
+        <view class="distance data-v-fc48886e" wx:if="{{item.distance}}">{{''+item.distance+''}}</view>
+        <view class="tip data-v-fc48886e">注意：该地点有确证患者停留过，请保持警惕减少出门</view>
+    </view>
+</view>

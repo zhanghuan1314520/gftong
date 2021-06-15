@@ -1,0 +1,9 @@
+<view class="coin-rule _div">
+    <view class="_h3">{{title+'：'}}</view>
+    <view class="_ul">
+        <view class="_li" wx:for="{{rules}}" wx:for-index="i" wx:key="i">
+            <view class="_i">{{i+1}}</view>
+            <label class="_span">{{item}}</label>
+        </view>
+    </view>
+</view>

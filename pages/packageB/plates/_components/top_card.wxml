@@ -1,0 +1,27 @@
+<view class="card _div data-v-6c59f01c">
+    <view class="top _div data-v-6c59f01c">
+        <view class="name _div data-v-6c59f01c">{{plate.name+'板块'}}</view>
+        <view class="desc _div data-v-6c59f01c">{{plate.compliments||''}}</view>
+    </view>
+    <view class="main _div data-v-6c59f01c">
+        <view class="left _div data-v-6c59f01c">
+            <common-img bind:__l="__l" class="region-img data-v-6c59f01c" src="{{plate.profilogram_url}}" vueId="4adea65a-1"></common-img>
+        </view>
+        <view class="right _div data-v-6c59f01c">
+            <view class="row _div data-v-6c59f01c">
+                <label class="data-v-6c59f01c">综合评分：</label>
+                <stars bind:__l="__l" class="data-v-6c59f01c" score="{{plate.ratings&&plate.ratings['综合评星']}}" type="large" vueId="4adea65a-2"></stars>
+                <view bindtap="__e" class="help _div data-v-6c59f01c" data-event-opts="{{[ [ 'tap',[ [ 'showTip',['$event'] ] ] ] ]}}">?</view>
+            </view>
+            <view class="row _div data-v-6c59f01c">
+                <label class="data-v-6c59f01c">所属行政区域：</label>
+                <view class="content _div data-v-6c59f01c">{{plate.zone}}</view>
+            </view>
+            <view class="row _div data-v-6c59f01c">
+                <label class="data-v-6c59f01c">环线位置：</label>
+                <view class="content _div data-v-6c59f01c">{{plate.ring_road}}</view>
+            </view>
+        </view>
+    </view>
+    <tip-dlg className bind:__l="__l" bind:confirm="__e" bind:toggleDlg="__e" class="data-v-6c59f01c" content="板块综合评星是通过购房通市场研究员对板块配套、当前产业结构、未来的规划发展以及版块内的房价情况综合评定得出，仅供购房者参考，星级评分标准最终解释权归购房通所有。" data-event-opts="{{[ [ '^toggleDlg',[ ['e0'] ] ],[ '^confirm',[ ['e1'] ] ] ]}}" show="{{show_tip}}" show_confirm="{{true}}" title="板块评星" vueId="4adea65a-3"></tip-dlg>
+</view>

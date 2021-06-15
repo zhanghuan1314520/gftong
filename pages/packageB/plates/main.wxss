@@ -1,0 +1,27 @@
+.page.data-v-829689da {
+    padding-top: 20rpx;
+    background-color: #fcfcfc;
+}
+
+.page.data-v-829689da .header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16rpx 32rpx;
+}
+
+.page.data-v-829689da .header,.page.data-v-829689da .header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page.data-v-829689da .header .right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}

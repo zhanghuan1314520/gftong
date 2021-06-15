@@ -1,0 +1,6 @@
+<button bindtap="__e" class="{{[classname]}}" data-event-opts="{{[ [ 'tap',[ [ 'getUserProfile',['$event'] ] ] ] ]}}" disabled="{{disabled}}" wx:if="{{canIUseGetUserProfile}}">
+    <slot></slot>
+</button>
+<button bindgetuserinfo="__e" class="{{[classname]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'getUserInfo',['$event'] ] ] ] ]}}" disabled="{{disabled}}" openType="getUserInfo" wx:else>
+    <slot></slot>
+</button>

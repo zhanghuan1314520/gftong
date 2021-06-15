@@ -1,0 +1,22 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#00B08D",
+    "usingComponents": {
+        "normal-header": "/pages/personal_center/_components/normal_header",
+        "consultant-header": "/pages/personal_center/_components/consultant_header",
+        "consultant-tools": "/pages/personal_center/_components/consultant_tools",
+        "normal-tools": "/pages/personal_center/_components/normal_tools",
+        "more-tools": "/pages/personal_center/_components/more_tools",
+        "banner-swiper": "/pages/personal_center/_components/banner_swiper",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

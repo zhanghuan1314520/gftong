@@ -1,0 +1,36 @@
+<button bindgetuserinfo="__e" class="{{['consult-card-item data-v-74d26869',consultant.level]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" id="{{consultant.id}}" openType="getUserInfo">
+    <view class="_header data-v-74d26869">
+        <view class="info _div data-v-74d26869">
+            <view class="headimg consultant-headimg _div data-v-74d26869">
+                <common-img bind:__l="__l" class="img data-v-74d26869" mode="widthFix" src="{{consultant.weixin_headimgurl}}" vueId="170b6c0a-1"></common-img>
+                <view class="consultant-headimg-tag data-v-74d26869" wx:if="{{consultant.honour_title}}">{{consultant.honour_title}}</view>
+            </view>
+            <view class="_h3 data-v-74d26869">
+                <label class="_span data-v-74d26869">{{consultant.name}}</label>
+                <view catchtap="__e" class="consultant-medals _div data-v-74d26869" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleMedalDetail','$0'],['consultant'] ] ] ] ]}}">
+                    <label class="card-metal _span data-v-74d26869"></label>
+                </view>
+            </view>
+        </view>
+        <view class="tools _div data-v-74d26869">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" class="data-v-74d26869" classname="shadow-button" data-event-opts="{{[ [ '^tap',[ [ '',['$event'] ] ] ],[ '^success',[ [ 'goChat',['$0'],['consultant.id'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="170b6c0a-2" vueSlots="{{['default']}}">
+                <view class="common-btn consult-btn _div data-v-74d26869"></view>
+            </fangchan-auth-user>
+            <navigator catchtap="__e" class="common-btn call-btn _a data-v-74d26869" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-phone="{{consultant.mobile}}"></navigator>
+        </view>
+    </view>
+    <view class="_footer data-v-74d26869">
+        <view class="view-data _div data-v-74d26869">
+            <label class="num _span data-v-74d26869">{{consultant.show_times}}</label>
+            <label class="_span data-v-74d26869">浏览量</label>
+        </view>
+        <view class="view-data _div data-v-74d26869">
+            <label class="num _span data-v-74d26869">{{consultant.last_period_obtained_score}}</label>
+            <label class="_span data-v-74d26869">活跃度</label>
+        </view>
+        <view class="view-data _div data-v-74d26869">
+            <label class="num _span data-v-74d26869">{{consultant.like_count}}</label>
+            <label class="_span data-v-74d26869">点赞数</label>
+        </view>
+    </view>
+</button>

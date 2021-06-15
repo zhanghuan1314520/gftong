@@ -1,0 +1,28 @@
+<view class="wrap data-v-20929260">
+    <view class="container data-v-20929260">
+        <view class="picker-wrap data-v-20929260">
+            <view class="top data-v-20929260">
+                <button bindtap="__e" class="default data-v-20929260" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}">取消</button>
+                <text class="title32B data-v-20929260">{{title}}</text>
+                <button bindtap="__e" class="primary data-v-20929260" data-event-opts="{{[ [ 'tap',[ [ 'confirmPicker',['$event'] ] ] ] ]}}">确定</button>
+            </view>
+            <picker-view bindchange="__e" class="picker-columns data-v-20929260" data-event-opts="{{[ [ 'change',[ [ 'changePicker',['$event'] ] ] ] ]}}" value="{{[rate,discount]}}">
+                <picker-view-column class="left data-v-20929260">
+                    <view class="{{['item data-v-20929260',rate===i?'active':'']}}" wx:for="{{rate_opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.year+'基准'+opt.value+'%'}}</view>
+                </picker-view-column>
+                <picker-view-column class="right data-v-20929260">
+                    <view class="{{['item data-v-20929260',discount===i?'active':'']}}" wx:for="{{discount_opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.text+''}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+        <view class="custom-wrap text28B data-v-20929260">
+            <text class="left data-v-20929260">自定义利率</text>
+            <view class="right data-v-20929260">
+                <input bindinput="__e" class="data-v-20929260" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','custom_rate','$event',[] ] ] ] ] ]}}" type="digit" value="{{custom_rate}}"></input>
+                <text class="data-v-20929260">%</text>
+                <button bindtap="__e" class="{{['data-v-20929260',custom_rate?'visible':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'confirmCustom',['$event'] ] ] ] ]}}">确定</button>
+            </view>
+        </view>
+    </view>
+    <view bindtap="__e" class="overlay data-v-20929260" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

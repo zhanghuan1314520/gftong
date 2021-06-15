@@ -1,0 +1,57 @@
+.page.data-v-793ca64c {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultants/recommend_rules/header-bg.png);
+    background-size: 750rpx 258rpx;
+}
+
+.header.data-v-793ca64c {
+    padding: 32rpx 35rpx 40rpx;
+    font-size: 34rpx;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card.data-v-793ca64c {
+    width: 710rpx;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,.04);
+    border-radius: 24rpx;
+    overflow: hidden;
+}
+
+.rules.data-v-793ca64c {
+    padding: 32rpx 40rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.rules .item.data-v-793ca64c {
+    margin-bottom: 16rpx;
+}
+
+.rules .strong.data-v-793ca64c {
+    font-weight: 700;
+}
+
+.desc.data-v-793ca64c {
+    margin-top: 24rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #999;
+}
+
+.tip.data-v-793ca64c {
+    padding: 0 30rpx;
+    margin-top: 37rpx;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.tip .link.data-v-793ca64c {
+    margin-left: .8em;
+    color: #00b08d;
+    text-decoration: underline;
+}

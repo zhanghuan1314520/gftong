@@ -1,0 +1,9 @@
+<view class="list _ul data-v-0f5bf110">
+    <view bindtap="__e" class="item _li data-v-0f5bf110" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$0',index],[ [ ['result','',index] ] ] ] ] ] ]}}" wx:for="{{result}}" wx:key="index">
+        <view class="detail _div data-v-0f5bf110">
+            <view class="{{[ 'img _div data-v-0f5bf110',[index>2?'other-img':''] ]}}">{{index>2?index+1:''}}</view>
+            <view class="text _div data-v-0f5bf110">{{item.title}}</view>
+        </view>
+        <text class="others data-v-0f5bf110" wx:if="{{index<3}}">热</text>
+    </view>
+</view>

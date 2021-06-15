@@ -1,0 +1,4 @@
+<button class="share-btn data-v-ff2765fe" openType="share" style="{{$root.s0}}">
+    <fc-icon bind:__l="__l" class="data-v-ff2765fe" type="{{icon}}" vueId="221f96a2-1"></fc-icon>
+    <text class="data-v-ff2765fe">分享</text>
+</button>

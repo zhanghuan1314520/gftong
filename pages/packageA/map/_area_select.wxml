@@ -1,0 +1,11 @@
+<cover-view class="{{[ 'top-filter-wrap map-filter data-v-1ac5aaf4',[!show?'hide':''] ]}}">
+    <cover-view class="select-content data-v-1ac5aaf4">
+        <cover-view class="checkbox-wrap data-v-1ac5aaf4">
+            <cover-view bindtap="__e" class="{{[ 'checkbox large data-v-1ac5aaf4',[opt.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',[i] ] ] ] ]}}" data-value="{{opt.value}}" wx:for="{{opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.text+''}}</cover-view>
+        </cover-view>
+    </cover-view>
+    <cover-view class="bottom data-v-1ac5aaf4">
+        <cover-view bindtap="__e" class="btn data-v-1ac5aaf4" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">不限</cover-view>
+        <cover-view bindtap="__e" class="btn main data-v-1ac5aaf4" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</cover-view>
+    </cover-view>
+</cover-view>

@@ -1,0 +1,21 @@
+<view class="page data-v-8e9c2d08">
+    <view class="search-wrap data-v-8e9c2d08">
+        <view class="search data-v-8e9c2d08">
+            <fc-icon bind:__l="__l" class="{{['i data-v-8e9c2d08',show_search_loading?'hide':'']}}" type="48_search_primary" vueId="d95a2248-1"></fc-icon>
+            <search-loading bind:__l="__l" class="{{['i data-v-8e9c2d08',!show_search_loading?'hide':'']}}" vueId="d95a2248-2"></search-loading>
+            <input bindblur="__e" bindfocus="__e" bindinput="__e" class="data-v-8e9c2d08" data-event-opts="{{[ [ 'focus',[ [ 'e0',['$event'] ] ] ],[ 'blur',[ [ 'e1',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','keyword','$event',[] ] ] ] ] ]}}" focus="{{focus}}" placeholder="按楼盘名字搜索" placeholderClass="textAssistFont28" value="{{keyword}}"></input>
+            <fc-icon bind:__l="__l" bind:tap="__e" class="close data-v-8e9c2d08" data-event-opts="{{[ [ '^tap',[ ['e2'] ] ] ]}}" type="40_del" vueId="d95a2248-3" wx:if="{{keyword}}"></fc-icon>
+        </view>
+        <navigator class="textAssistFont28 data-v-8e9c2d08" openType="navigateBack">取消</navigator>
+    </view>
+    <view class="list data-v-8e9c2d08">
+        <view bindtap="__e" class="item data-v-8e9c2d08" data-event-opts="{{[ [ 'tap',[ [ 'add',[i] ] ] ] ]}}" wx:for="{{items}}" wx:for-index="i" wx:key="id">
+            <view class="left data-v-8e9c2d08">
+                <fc-icon bind:__l="__l" class="i data-v-8e9c2d08" type="48_building_black" vueId="{{'d95a2248-4-'+i}}"></fc-icon>
+                <text class="data-v-8e9c2d08">{{item.name}}</text>
+            </view>
+            <view class="add data-v-8e9c2d08">添加</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-8e9c2d08" title="添加楼盘" vueId="d95a2248-5"></page-wrap>
+</view>

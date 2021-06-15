@@ -1,0 +1,26 @@
+.empty-state.data-v-7b43bf8c {
+    width: 100%;
+    text-align: center;
+}
+
+.empty-state ._img.data-v-7b43bf8c {
+    background-position: 50%;
+    overflow: hidden;
+}
+
+.empty-state .empty_building.data-v-7b43bf8c {
+    width: 218rpx;
+    height: 224rpx;
+}
+
+.empty-state .empty_page.data-v-7b43bf8c {
+    width: 120rpx;
+    height: 144rpx;
+}
+
+.empty-state ._p.data-v-7b43bf8c {
+    font-size: 28rpx;
+    color: #888;
+    text-align: center;
+    margin-top: 32rpx;
+}

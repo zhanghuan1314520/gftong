@@ -1,0 +1,35 @@
+<form bindsubmit="__e" class="data-v-102b8003" data-event-opts="{{[ [ 'submit',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <button class="shadow-button item data-v-102b8003" formType="submit">
+        <view class="image-wrap _div data-v-102b8003">
+            <image class="_img data-v-102b8003" lazyLoad="{{true}}" mode="aspectFill" src="{{item.cover_photo_url}}"></image>
+            <view class="{{[ 'view-wrap _div data-v-102b8003',[!item.view_count?'hide':''] ]}}">
+                <image class="_img data-v-102b8003" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/view.png"></image>
+                <label class="_span data-v-102b8003">{{item.view_count||''}}</label>
+            </view>
+        </view>
+        <view class="info _div data-v-102b8003">
+            <view class="_h1 data-v-102b8003">
+                <label class="coupon _span data-v-102b8003" wx:if="{{item.coupon_exists}}">惠</label>{{''+item.name+''}}</view>
+            <view class="_p data-v-102b8003">{{''+item.zone+' '+(item.address_desc?'-'+item.address_desc:'')+'\n                '+(item.area_range?' | '+item.area_range:'')+''}}</view>
+            <view class="num-info _div data-v-102b8003">
+                <view class="_div data-v-102b8003">
+                    <label class="_span data-v-102b8003" wx:if="{{item.customized_price&&item.customized_price.length}}">
+                        <view class="_strong data-v-102b8003" wx:for="{{item.customized_price}}" wx:for-index="i" wx:for-item="price" wx:key="i">{{''+price+''}}</view>
+                    </label>
+                    <block wx:else>
+                        <label class="_span data-v-102b8003" wx:if="{{item.price_desc}}">
+                            <view class="_strong data-v-102b8003">{{item.price_desc}}</view>
+                        </label>
+                    </block>
+                </view>
+                <view catchtap="__e" class="comment-show _div data-v-102b8003" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count?'flex':'none')+';'}}">
+                    <image class="_img data-v-102b8003" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/msg.png"></image>
+                    <label class="_span data-v-102b8003">{{item.comment_count}}</label>
+                </view>
+            </view>
+            <view class="business-tags _div data-v-102b8003">
+                <label class="tag-item _span data-v-102b8003" wx:for="{{item.tag_list}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{''+tag+''}}</label>
+            </view>
+        </view>
+    </button>
+</form>

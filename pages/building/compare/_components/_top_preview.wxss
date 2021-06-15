@@ -1,0 +1,92 @@
+.header.data-v-bb0bd8ba {
+    width: 710rpx;
+    min-height: 320rpx;
+    padding: 32rpx 32rpx 32rpx 40rpx;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,.05);
+    border-radius: 12rpx;
+}
+
+.header.data-v-bb0bd8ba,.header .left.data-v-bb0bd8ba {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header .left.data-v-bb0bd8ba {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 78rpx;
+    height: 240rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #7fb1a7;
+}
+
+.header .left.data-v-bb0bd8ba,.header .left .i.data-v-bb0bd8ba {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .left .i.data-v-bb0bd8ba {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+
+.fixed.data-v-bb0bd8ba {
+    position: fixed;
+    top: 0;
+    left: 20rpx;
+    z-index: 10;
+}
+
+.right.data-v-bb0bd8ba {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.right .item.data-v-bb0bd8ba:first-child {
+    padding-right: 32rpx;
+    border-right: 2rpx solid #f2f2f2;
+}
+
+.right .item.data-v-bb0bd8ba:last-child {
+    padding-left: 32rpx;
+}
+
+.right .name.data-v-bb0bd8ba {
+    margin-top: 10rpx;
+    max-width: 218rpx;
+}
+
+.right .usage.data-v-bb0bd8ba {
+    margin-top: 8rpx;
+}

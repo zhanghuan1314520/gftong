@@ -1,0 +1,26 @@
+<view class="_div data-v-120bbc63">
+    <view class="weixin-info-page _div data-v-120bbc63" wx:if="{{show}}">
+        <view class="_h1 data-v-120bbc63">杭州购房通 买房更轻松</view>
+        <view class="weixin-info-card _div data-v-120bbc63">
+            <view class="header _section data-v-120bbc63">
+                <image bindtap="__e" class="qr _img data-v-120bbc63" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/weixin-qr.png"></image>
+                <button class="data-v-120bbc63" openType="contact" sendMessageImg="{{contactSendMessage.offiaccount.msg_face}}" sendMessagePath="{{'/pages/personal_package/official_weixin/main?mediasourceid='+current_offiaccount.id}}" showMessageCard="{{true}}">去关注</button>
+            </view>
+            <view class="line _div data-v-120bbc63"></view>
+            <view class="footer _section data-v-120bbc63">
+                <view class="_h3 data-v-120bbc63">关注【杭州购房通】您可以：</view>
+                <view class="_ol data-v-120bbc63">
+                    <view class="_li data-v-120bbc63">
+                        <view class="_i data-v-120bbc63"></view>
+                        <label class="_span data-v-120bbc63">实时接收楼盘踩盘、政策解读、干货攻略、楼市动态等最新资讯</label>
+                    </view>
+                    <view class="_li data-v-120bbc63">
+                        <view class="_i data-v-120bbc63"></view>
+                        <label class="_span data-v-120bbc63">快速查看楼盘详情、买房攻略、摇号结果</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-120bbc63" vueId="5b9989d6-1"></page-wrap>
+</view>

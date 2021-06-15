@@ -1,0 +1,5 @@
+<view class="_div" id="hot-business-rec">
+    <view class="{{['_div',item.class]}}" data-index="{{i}}" data-item="{{item}}" wx:for="{{list}}" wx:for-index="i" wx:key="i">
+        <house-item bind:__l="__l" index="{{i}}" item="{{item}}" vueId="{{'306717ac-1-'+i}}"></house-item>
+    </view>
+</view>

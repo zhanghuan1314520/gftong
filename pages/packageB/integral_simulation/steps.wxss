@@ -1,0 +1,193 @@
+.steps {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 32rpx 0 24rpx;
+    background-color: #fff;
+}
+
+.steps,.steps .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
+.steps .item {
+    width: 160rpx;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.steps .item>text:nth-of-type(1) {
+    width: 64rpx;
+    height: 64rpx;
+    text-align: center;
+    line-height: 64rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #a1b3b3;
+    color: #fff;
+}
+
+.steps .item>text:nth-of-type(2) {
+    font-size: 20rpx;
+    line-height: 28rpx;
+    color: #a1b3b3;
+    margin-top: 12rpx;
+}
+
+.steps .item.active>text:nth-of-type(1) {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#54c7c3),to(#00b08d));
+    background-image: linear-gradient(180deg,#54c7c3,#00b08d);
+}
+
+.steps .item.active>text:nth-of-type(2) {
+    color: #00b08d;
+}
+
+.steps-progress {
+    position: absolute;
+    z-index: 1;
+    top: 62rpx;
+    left: 80rpx;
+    right: 80rpx;
+    height: 4rpx;
+    background-color: #a1b3b3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.steps-progress>view {
+    width: 0;
+    height: 100%;
+    background-color: #44c3b9;
+    transition: width .5s ease-in;
+}
+
+.step-form {
+    padding-top: 16rpx;
+}
+
+.step-form-item {
+    padding: 36rpx 32rpx;
+    background-color: #fff;
+}
+
+.step-form-item.has-arrow,.step-form-item.has-arrow .step-form-item--helper {
+    padding-right: 16rpx;
+}
+
+.step-form-item+.step-form-item {
+    border-top: 1rpx solid #ebebeb;
+}
+
+.step-form-item--body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.step-form-item--input,.step-form-item--label,.step-form-item--suffix {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.step-form-item--label {
+    max-width: 400rpx;
+}
+
+.step-form-item--input {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.step-form-item--input input {
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: right;
+}
+
+.step-form-item--suffix {
+    padding-left: 16rpx;
+}
+
+.step-form-item--helper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 4rpx;
+}
+
+.step-form-item--helper text {
+    font-size: 24rpx;
+    line-height: 33rpx;
+    color: #888;
+}
+
+.step-form-item--helper text:nth-of-type(2) {
+    font-weight: 700;
+    color: #00b08d;
+}
+
+.step-form-item--picker {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #333;
+}
+
+.step-form-item--picker picker {
+    -webkit-box-flex: 1;
+    flex: 1;
+    height: 40rpx;
+    text-align: right;
+}
+
+.step-form-item--picker .ellipsis {
+    max-width: 500rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.step-form-item--picker input {
+    display: none;
+}
+
+.step-tips {
+    padding: 16rpx 32rpx;
+    line-height: 33rpx;
+}
+
+.step-form-btn {
+    padding: 32rpx;
+}

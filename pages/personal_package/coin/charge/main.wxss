@@ -1,0 +1,40 @@
+.coin-page {
+    background-color: #fff;
+}
+
+.coin-page .navs ._li {
+    height: 104rpx;
+    padding: 0 24rpx 0 30rpx;
+    line-height: 104rpx;
+    background-color: #fff;
+}
+
+.coin-page .navs ._li ._a {
+    display: block;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/charge/coin.png);
+    background-size: 50rpx auto;
+    background-position: 0;
+    background-repeat: no-repeat;
+    font-style: 28rpx;
+    color: #111;
+    padding-left: 66rpx;
+}
+
+.coin-page .tabs-wrap {
+    margin: 0 30rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    background-color: #fff;
+}
+
+.coin-page .tip {
+    padding: 0 30rpx;
+    margin: 16rpx 0;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.coin-page .error {
+    font-size: 24rpx;
+    color: #fa543e;
+    padding: 14rpx 30rpx;
+}

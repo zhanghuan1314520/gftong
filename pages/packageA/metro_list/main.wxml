@@ -1,0 +1,20 @@
+<view class="map-search _div data-v-943ea9a2">
+    <map-section bind:__l="__l" bind:changeFilter="__e" bind:changeScale="__e" bind:changeTab="__e" bind:clickCallout="__e" bind:clickMarker="__e" circles="{{circles}}" class="data-v-943ea9a2 vue-ref" data-event-opts="{{[ [ '^clickMarker',[ ['clickMarker'] ] ],[ '^clickCallout',[ ['clickCallout'] ] ],[ '^changeTab',[ ['changeTab'] ] ],[ '^changeFilter',[ ['getBuildingByPoi'] ] ],[ '^changeScale',[ ['changeScale'] ] ] ]}}" data-ref="map" filters="{{filters}}" lines="{{lines}}" markers="{{markers}}" polyline="{{polyline}}" selected_line="{{selected_line}}" status="{{status}}" vueId="38eb2f1d-1" wx:if="{{show_map}}"></map-section>
+    <list-section bind:__l="__l" bind:changeTab="__e" class="data-v-943ea9a2" data-event-opts="{{[ [ '^changeTab',[ ['changeTab'] ] ] ]}}" fixed="{{fixed}}" items="{{items}}" lines="{{lines}}" loading="{{loading}}" no_more="{{no_more}}" selected_line="{{selected_line}}" vueId="38eb2f1d-2" wx:else></list-section>
+    <cover-view bindtap="__e" class="switch-btn floating-btn data-v-943ea9a2" data-event-opts="{{[ [ 'tap',[ [ 'switchPageType',['$event'] ] ] ] ]}}">
+        <button class="data-v-943ea9a2">
+            <cover-image class="img data-v-943ea9a2" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/map/'+(show_map?'list':'map')+'.png'}}"></cover-image>
+        </button>
+    </cover-view>
+    <cover-view class="share-btn floating-btn data-v-943ea9a2">
+        <button class="share data-v-943ea9a2" openType="share">
+            <cover-image class="img data-v-943ea9a2" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/map/share.png"></cover-image>
+        </button>
+    </cover-view>
+    <cover-view bindtap="__e" class="disclaimer data-v-943ea9a2" data-event-opts="{{[ [ 'tap',[ [ 'goDisclaimer',['$event'] ] ] ] ]}}" wx:if="{{show_map}}">
+        <button class="data-v-943ea9a2">
+            <cover-image class="img data-v-943ea9a2" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/disclaimer/subway_tips.png"></cover-image>
+        </button>
+    </cover-view>
+    <page-wrap bind:__l="__l" class="data-v-943ea9a2" hide_back_home="{{true}}" title="地铁找房" vueId="38eb2f1d-3"></page-wrap>
+</view>

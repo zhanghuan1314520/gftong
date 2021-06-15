@@ -1,0 +1,116 @@
+.page.data-v-33717b85 {
+    height: 100vh;
+}
+
+.chat-wrap.data-v-33717b85,.page.data-v-33717b85 {
+    background-color: #f0f0f0;
+}
+
+.read-status.data-v-33717b85 {
+    position: relative;
+    width: 48rpx;
+    font-size: 24rpx;
+    margin-right: 16rpx;
+    color: #afafaf;
+}
+
+.read-status.noread.data-v-33717b85 {
+    color: #51b3b0;
+}
+
+.read-status .text.data-v-33717b85 {
+    display: block;
+    position: absolute;
+    height: 33rpx;
+    bottom: 0;
+}
+
+.chat-wrap.data-v-33717b85 {
+    height: calc(100vh - 136rpx - 128rpx - 32rpx);
+    padding: 16rpx 0;
+    overflow-anchor: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chat-wrap #msg-btm.data-v-33717b85 {
+    display: block;
+    height: calc(76rpx + constant(safe-area-inset-bottom));
+    height: calc(76rpx + env(safe-area-inset-bottom));
+}
+
+.chat-wrap.consultant.data-v-33717b85 {
+    height: calc(100vh - 288rpx - 128rpx - 32rpx);
+}
+
+.msg-img.data-v-33717b85 {
+    display: block;
+    max-width: 358rpx;
+    border-radius: 16rpx;
+}
+
+.accepted-ask-phone.data-v-33717b85 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.accepted-ask-phone.data-v-33717b85,.content-wrap.data-v-33717b85 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.report-card.data-v-33717b85 {
+    width: 100%;
+    margin-bottom: 28rpx;
+    margin-top: -9rpx;
+    padding: 0 0 0 138rpx;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+
+.report-card .content.data-v-33717b85,.report-card.data-v-33717b85 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 96rpx;
+}
+
+.report-card .content.data-v-33717b85 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 498rpx;
+    background: rgba(0,0,0,.15);
+    position: relative;
+    border-radius: 24rpx;
+    padding: 15rpx 6rpx 15rpx 26rpx;
+}
+
+.report-card .content.data-v-33717b85::before {
+    position: absolute;
+    content: "";
+    width: 132rpx;
+    height: 84rpx;
+    right: 6rpx;
+    top: 6rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/report/2020/consultant/chat-tip.png);
+    background-size: 100% 100%;
+}
+
+.report-card .content .text.data-v-33717b85 {
+    width: 321rpx;
+    font-size: 24rpx;
+    color: #fff;
+    text-align: left;
+}
+
+.report-card.self.data-v-33717b85 {
+    padding: 0 138rpx 0 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}

@@ -1,0 +1,17 @@
+<view class="wrap _section data-v-72f7b8b3">
+    <view class="house-page-title border data-v-72f7b8b3">
+        <text class="h3 data-v-72f7b8b3">价格分析</text>
+        <navigator class="right-link data-v-72f7b8b3" url="{{link}}">查看更多</navigator>
+    </view>
+    <view class="list data-v-72f7b8b3">
+        <view class="house data-v-72f7b8b3">
+            <text class="text28B data-v-72f7b8b3">与周边二手房差价</text>
+            <view class="_strong data-v-72f7b8b3">
+                <text class="data-v-72f7b8b3">{{house.price_diff_range}}</text>
+                <text class="unit data-v-72f7b8b3">元/㎡</text>
+            </view>
+        </view>
+        <view class="desc data-v-72f7b8b3">{{'*以本楼盘'+house.presell_date+'批次参考计算'}}</view>
+        <item bind:__l="__l" building_id="{{building_id}}" class="data-v-72f7b8b3" house_id="{{house_id}}" item="{{item}}" show_price="{{has_house_price}}" vueId="{{'53ae3d5f-1-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="community_id"></item>
+    </view>
+</view>

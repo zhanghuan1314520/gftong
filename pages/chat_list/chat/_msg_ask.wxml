@@ -1,0 +1,16 @@
+<view class="wrap data-v-0cc9b087">
+    <view class="msg-content data-v-0cc9b087" wx:if="{{msg}}">{{msg}}</view>
+    <block wx:else>
+        <view class="msg-card data-v-0cc9b087" wx:if="{{card}}">
+            <image class="data-v-0cc9b087" src="{{card.headimg}}"></image>
+            <view class="msg-card-detail data-v-0cc9b087">
+                <view class="assistFont24 data-v-0cc9b087">{{card.nickname}}</view>
+                <view class="heading28B data-v-0cc9b087">{{card.msg}}</view>
+            </view>
+        </view>
+    </block>
+    <view class="btns data-v-0cc9b087">
+        <button bindtap="__e" class="cancel data-v-0cc9b087" data-event-opts="{{[ [ 'tap',[ [ '$emit',['cancel'] ] ] ] ]}}" wx:if="{{show_cancel}}">{{cancel_text}}</button>
+        <button bindgetphonenumber="__e" bindtap="__e" class="confirm data-v-0cc9b087" data-event-opts="{{[ [ 'getphonenumber',[ [ 'getPhoneNumber',['$event'] ] ] ],[ 'tap',[ [ 'onConfirm',['$event'] ] ] ] ]}}" openType="{{open_type}}" wx:if="{{show_confirm}}">{{''+confirm_text+''}}</button>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<view bindtap="__e" class="{{['item data-v-bab2027e',item.type]}}" data-event-opts="{{[ [ 'tap',[ [ 'openDetail',['$event'] ] ] ] ]}}">
+    <view class="progress data-v-bab2027e">
+        <view class="bar-wrap data-v-bab2027e">
+            <view class="bar data-v-bab2027e" style="{{'width:'+item.percent+';'}}">{{''+(item.type==='current'?'本楼盘':item.community_name)+''}}</view>
+            <view class="price data-v-bab2027e" style="{{'left:'+item.percent+';'}}">{{''+item.price_desc+''}}</view>
+        </view>
+    </view>
+    <view class="noteFont22 data-v-bab2027e" wx:if="{{show_link&&show_price&&item.type==='current'}}">查看一房一价>></view>
+    <view class="noteFont22 data-v-bab2027e" wx:if="{{show_link&&item.type!=='current'}}">查看历史成交数据>></view>
+</view>

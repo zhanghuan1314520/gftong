@@ -1,0 +1,90 @@
+<view class="page data-v-511053da">
+    <view class="top data-v-511053da"></view>
+    <view class="consultant-part data-v-511053da" wx:if="{{is_consultant}}">
+        <view class="tabs-wrap ranking-tabs _div data-v-511053da">
+            <view class="data-v-511053da">
+                <common-tabs bind:__l="__l" bind:change="__e" class="data-v-511053da" data-event-opts="{{[ [ '^change',[ ['changeCategory'] ] ] ]}}" selected="{{type}}" tabs="{{rankingTabs}}" vueId="ef55dc3a-1" width="602rpx"></common-tabs>
+            </view>
+        </view>
+        <view class="ranking-all-tips data-v-511053da" wx:if="{{type==='all'}}">仅展示前50名置业顾问</view>
+        <view class="ranking-info data-v-511053da" wx:else>
+            <view class="topic-tips data-v-511053da" wx:if="{{type==='week'}}">
+                <text class="data-v-511053da">排名第1的置业顾问可获得一篇文章</text>
+                <navigator class="_a data-v-511053da" url="{{link}}">了解活动</navigator>
+            </view>
+            <view class="topic-tips data-v-511053da" wx:else>
+                <text class="data-v-511053da" wx:if="{{type==='today'}}">截止今日24时仍排名前 6 即可享受专属展位，加油！</text>
+                <text class="data-v-511053da" wx:else>昨日排名前 6 的置业顾问已享受专属展位</text>
+                <navigator class="_a data-v-511053da" url="/pages/packageB/booth/main">了解展位</navigator>
+            </view>
+            <view class="ranking-winner _div data-v-511053da" wx:if="{{type==='today'&&yesterdayWinner.length&&show_winner}}">
+                <text class="iconFont24 winner-label data-v-511053da">昨日前6：</text>
+                <view class="winner-list data-v-511053da">
+                    <view bindtap="__e" class="winner-item data-v-511053da" data-event-opts="{{[ [ 'tap',[ [ 'goCst',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" wx:for="{{yesterdayWinner}}" wx:for-index="__i0__" wx:key="consultant_id">
+                        <view class="winner-head data-v-511053da">
+                            <image class="_img data-v-511053da" src="{{item.consultant_headimgurl}}"></image>
+                        </view>
+                        <view class="winner-name text-ellipsis data-v-511053da">{{item.consultant_name}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="ranking-winner _div data-v-511053da" wx:if="{{type==='week'&&winner.length}}">
+                <text class="iconFont24 winner-label data-v-511053da">获奖置业顾问：</text>
+                <view class="winner-list data-v-511053da">
+                    <view bindtap="__e" class="winner-item data-v-511053da" data-event-opts="{{[ [ 'tap',[ [ 'goCst',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" wx:for="{{winner}}" wx:for-index="__i1__" wx:key="consultant_id">
+                        <view class="winner-head data-v-511053da">
+                            <image class="_img data-v-511053da" src="{{item.consultant_headimgurl}}"></image>
+                        </view>
+                        <view class="winner-name text-ellipsis data-v-511053da">{{item.consultant_name}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="my-ranking data-v-511053da" wx:if="{{type==='today'||type==='week'}}">我的排名：<text class="strong data-v-511053da">{{my_ranking.my_ranking}}</text>
+                <text class="data-v-511053da" wx:if="{{my_ranking.my_ranking_desc!=='null'&&my_ranking.my_ranking_desc!==null}}">{{'（'+my_ranking.my_ranking_desc+'）'}}</text>
+            </view>
+        </view>
+        <view class="ranking-list data-v-511053da">
+            <view bindtap="__e" class="ranking-item data-v-511053da" data-event-opts="{{[ [ 'tap',[ [ 'goCst',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" wx:for="{{items}}" wx:for-index="i" wx:key="consultant_id">
+                <view class="ranking-index data-v-511053da">
+                    <text class="data-v-511053da">{{i+1}}</text>
+                </view>
+                <view class="cst-info data-v-511053da">
+                    <view class="cst-headimg data-v-511053da">
+                        <image class="_img data-v-511053da" src="{{item.consultant_headimgurl}}"></image>
+                    </view>
+                    <view class="cst-bd data-v-511053da">
+                        <view class="cst-tit data-v-511053da">
+                            <text class="cst-name data-v-511053da">{{item.consultant_name}}</text>
+                            <view class="cst-medals data-v-511053da">
+                                <view class="{{['data-v-511053da',item.consultant_level]}}"></view>
+                            </view>
+                            <view class="cst-score data-v-511053da" wx:if="{{item.last_period_obtained_score}}">{{'活跃度：'+item.last_period_obtained_score}}</view>
+                        </view>
+                        <view catchtap="__e" class="cst-wx data-v-511053da" data-event-opts="{{[ [ 'tap',[ [ 'setClipboardData',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" data-weixin="{{item.consultant_weixin_name}}">
+                            <text class="data-v-511053da">{{'微信号：'+item.consultant_weixin_name}}</text>
+                            <image class="cp-btn _img data-v-511053da" lazyLoad="true" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/copy.png"></image>
+                        </view>
+                        <view class="cst-building data-v-511053da">{{'楼盘：'+item.building_name}}</view>
+                        <view class="cst-ranking data-v-511053da" wx:if="{{item.ranking_desc||type==='yesterday'}}">
+                            <text class="des data-v-511053da" wx:if="{{item.ranking_desc}}">{{item.ranking_desc}}</text>
+                            <block wx:else>
+                                <text class="des score data-v-511053da" wx:if="{{type==='yesterday'}}">{{'昨日活跃度：'+item.current_activation_score}}</text>
+                            </block>
+                            <view class="booth-des data-v-511053da" wx:if="{{i<rankingBooth.length&&type==='today'}}">
+                                <text class="dividing data-v-511053da">|</text>
+                                <navigator catchtap="__e" class="booth-link data-v-511053da" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}" url="{{'/pages/packageB/booth/main?type='+i}}" wx:if="{{type==='today'}}">{{rankingBooth[i].name+'展位'}}</navigator>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <loading bind:__l="__l" class="data-v-511053da" vueId="ef55dc3a-2" wx:if="{{loading}}"></loading>
+        </view>
+        <view class="sticky sticky-footer sticky-footer--ranking data-v-511053da" wx:if="{{items.length}}">
+            <navigator class="ui-btn big primary radius-44 _a data-v-511053da" url="/pages/packageA/consultant_task/main">提升排名</navigator>
+        </view>
+    </view>
+    <view class="guest-part data-v-511053da" wx:else>
+        <guest bind:__l="__l" class="data-v-511053da" items="{{items}}" no_reach_bottom="{{no_reach_bottom}}" vueId="ef55dc3a-3"></guest>
+    </view>
+</view>

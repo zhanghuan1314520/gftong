@@ -1,0 +1,56 @@
+._h1.data-v-a3f74cac {
+    margin-top: 32rpx;
+    padding: 0 30rpx;
+    color: #333;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.top-filter-wrap.data-v-a3f74cac {
+    max-height: 60vh;
+}
+
+.top-filter-wrap .select-content.data-v-a3f74cac {
+    height: 50vh;
+}
+
+.top-filter-wrap .zones.data-v-a3f74cac {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.top-filter-wrap .opts-wrap.data-v-a3f74cac {
+    max-height: 50vh;
+    -webkit-box-flex: 1;
+    flex: 1;
+    overflow: scroll;
+}
+
+.top-filter-wrap .opt.data-v-a3f74cac {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20rpx;
+    height: 80rpx;
+}
+
+.top-filter-wrap .opt .checkbox-icon.data-v-a3f74cac {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #ededed;
+    border-radius: 2;
+}
+
+.top-filter-wrap .opt .checkbox-icon>cover-image.data-v-a3f74cac {
+    width: 40rpx;
+    height: 40rpx;
+}

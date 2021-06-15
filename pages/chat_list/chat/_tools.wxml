@@ -1,0 +1,14 @@
+<view class="{{[ 'tools _div data-v-4414a57e',[!show?'hide':''] ]}}">
+    <view bindtap="__e" class="item _div data-v-4414a57e" data-event-opts="{{[ [ 'tap',[ [ 'chooseImg',['album'] ] ] ] ]}}">
+        <view class="icon _div data-v-4414a57e">
+            <image class="_img data-v-4414a57e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/pic.png"></image>
+        </view>
+        <view class="iconFont24 data-v-4414a57e">相册</view>
+    </view>
+    <view bindtap="__e" class="item _div data-v-4414a57e" data-event-opts="{{[ [ 'tap',[ [ 'chooseImg',['camera'] ] ] ] ]}}">
+        <view class="icon _div data-v-4414a57e">
+            <image class="_img data-v-4414a57e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/camera.png"></image>
+        </view>
+        <view class="iconFont24 data-v-4414a57e">拍照</view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="page data-v-23c3d101">
+    <view class="tabs data-v-23c3d101">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-23c3d101" data-event-opts="{{[ [ '^change',[ ['e0'] ] ] ]}}" scroll="{{true}}" selected="{{selected_line}}" tabs="{{lines}}" vueId="57f30eb9-1"></common-tabs>
+    </view>
+    <view class="filters _div data-v-23c3d101" wx:if="{{filters.length}}">
+        <view bindtap="__e" class="{{['item _div data-v-23c3d101',filter.active?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'selectFilter',['$0','$1'],[ [ ['filters','',i,'poi_id'] ],[ ['filters','',i,'markerId'] ] ] ] ] ] ]}}" wx:for="{{filters}}" wx:for-index="i" wx:for-item="filter" wx:key="i">{{''+filter.name+''}}</view>
+    </view>
+    <map bindcallouttap="__e" bindmarkertap="__e" bindregionchange="__e" circles="{{circles}}" class="map data-v-23c3d101" data-event-opts="{{[ [ 'markertap',[ [ 'e1',['$event'] ] ] ],[ 'callouttap',[ [ 'e2',['$event'] ] ] ],[ 'regionchange',[ [ 'changeRegion',['$event'] ] ] ] ]}}" id="map" latitude="{{30.66074}}" longitude="{{104.06327}}" markers="{{markers}}" polyline="{{polyline}}"></map>
+</view>

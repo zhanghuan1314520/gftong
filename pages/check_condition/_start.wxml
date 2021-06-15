@@ -1,0 +1,11 @@
+<view class="wrap _div data-v-42daa266">
+    <view class="card _div data-v-42daa266">
+        <button class="circle-share data-v-42daa266" openType="share">
+            <image class="_img data-v-42daa266" src="/static/img/circle-share.png"></image>
+        </button>
+        <view class="content _div data-v-42daa266">
+            <view class="_p data-v-42daa266">{{verify_type}}</view>
+        </view>
+    </view>
+    <button bindgetuserinfo="__e" class="large-btn confirm-btn data-v-42daa266" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goNext',['$event'] ] ] ] ]}}" openType="getUserInfo">立即查询</button>
+</view>

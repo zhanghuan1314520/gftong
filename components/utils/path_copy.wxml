@@ -1,0 +1,11 @@
+<view class="data-v-5d59c8e6" wx:if="{{show_dot}}">
+    <view bindtap="__e" class="dot data-v-5d59c8e6" data-event-opts="{{[ [ 'tap',[ [ 'toggleConsole',['$event'] ] ] ] ]}}">+</view>
+    <view class="data-v-5d59c8e6" wx:if="{{show_console}}">
+        <view class="console data-v-5d59c8e6">
+            <button bindtap="__e" class="btn data-v-5d59c8e6" data-event-opts="{{[ [ 'tap',[ [ 'cpCurrentPath',['$event'] ] ] ] ]}}">复制当前页面路径</button>
+            <button bindtap="__e" class="btn data-v-5d59c8e6" data-event-opts="{{[ [ 'tap',[ [ 'cpSharePath',['$event'] ] ] ] ]}}">复制页面转发路径</button>
+            <button bindtap="__e" class="btn data-v-5d59c8e6" data-event-opts="{{[ [ 'tap',[ [ 'cpSubPath',['$event'] ] ] ] ]}}" wx:if="{{show_sub_page_path}}">复制上级页面转跳路径</button>
+        </view>
+        <view bindtap="__e" class="overlay data-v-5d59c8e6" data-event-opts="{{[ [ 'tap',[ [ 'toggleConsole',['$event'] ] ] ] ]}}"></view>
+    </view>
+</view>

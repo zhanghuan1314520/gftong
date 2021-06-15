@@ -1,0 +1,38 @@
+.auth-dialog.data-v-34cda08c {
+    width: 600rpx;
+    min-height: 544rpx;
+    background: #fff url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/sms.png) no-repeat top;
+    background-size: 600rpx 243rpx;
+    border-radius: 12rpx;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999999;
+}
+
+.auth-dialog__tit.data-v-34cda08c {
+    font-size: 32rpx;
+    line-height: 45rpx;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40rpx;
+}
+
+.auth-dialog__con.data-v-34cda08c {
+    font-size: 32rpx;
+    line-height: 52rpx;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    padding: 178rpx 28rpx 32rpx;
+}
+
+.auth-dialog__btn.data-v-34cda08c {
+    padding: 0 68rpx;
+}
+
+.auth-dialog__btn .ui-btn.data-v-34cda08c {
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,176,141,.2);
+}

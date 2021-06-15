@@ -1,0 +1,10 @@
+._img.data-v-1d12226c {
+    width: 360rpx;
+    height: 284rpx;
+}
+
+._p.data-v-1d12226c {
+    padding-bottom: 30rpx;
+    font-size: 26rpx;
+    font-weight: 600;
+}

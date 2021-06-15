@@ -1,0 +1,4 @@
+<view class="wx-username _div data-v-8392aa64" wx:if="{{name}}">
+    <label catchtap="__e" class="_span data-v-8392aa64" data-event-opts="{{[ [ 'tap',[ [ 'copWx',['$event'] ] ] ] ]}}">{{'微信号：【'+name+'】'}}</label>
+    <image catchtap="__e" class="_img data-v-8392aa64" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/join-group.png"></image>
+</view>

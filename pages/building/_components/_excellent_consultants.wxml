@@ -1,0 +1,14 @@
+<view class="{{[ '_section data-v-385f52f6',[!excellent_consultants.length?'hide':''] ]}}">
+    <view class="tpl-h3 _div data-v-385f52f6">
+        <view class="title32B header _div data-v-385f52f6">{{''+title+''}}<view bindtap="__e" class="help data-v-385f52f6" data-event-opts="{{[ [ 'tap',[ [ 'goConsultantHelp',['$event'] ] ] ] ]}}" wx:if="{{show_help}}">
+                <fc-icon bind:__l="__l" class="data-v-385f52f6" type="32_question" vueId="2b2c796c-1"></fc-icon>
+            </view>
+        </view>
+        <view bindtap="__e" class="desc _div data-v-385f52f6" data-event-opts="{{[ [ 'tap',[ [ 'goMore',['$event'] ] ] ] ]}}">
+            <label class="_span data-v-385f52f6">更多</label>
+            <fc-icon bind:__l="__l" class="data-v-385f52f6" type="32_more" vueId="2b2c796c-2"></fc-icon>
+        </view>
+    </view>
+    <image class="excellent-consultants-auth data-v-385f52f6" src="https://cdn.vip-wifi.com/fangchan/img/building/consultants-tip.png"></image>
+    <excellent-consultant-items bind:__l="__l" class="data-v-385f52f6" classname="{{classname}}" excellent_consultants="{{excellent_consultants}}" from="{{from}}" show_building_name="{{false}}" theme="{{theme}}" vueId="2b2c796c-3"></excellent-consultant-items>
+</view>

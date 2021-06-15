@@ -1,0 +1,80 @@
+.dlg.data-v-6e83be79 {
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 630rpx;
+    height: 912rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+    z-index: 9999999;
+}
+
+.top-titile.data-v-6e83be79 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 146rpx;
+    color: #00b08c;
+    font-size: 44rpx;
+    font-weight: 700;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/vr/tip-top.png);
+    background-size: 630rpx 146rpx;
+}
+
+.list.data-v-6e83be79 {
+    padding: 0 35rpx;
+    line-height: 40rpx;
+}
+
+.agreement.data-v-6e83be79 {
+    padding: 0 40rpx;
+    margin-top: 40rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.agreement text.data-v-6e83be79 {
+    margin-left: 16rpx;
+}
+
+.confirm-btn.data-v-6e83be79 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 560rpx;
+    height: 88rpx;
+    margin-top: 20rpx;
+    border-radius: 44rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(135deg,#00d69d,#00b08d);
+}
+
+.confirm-btn.disabled.data-v-6e83be79 {
+    background-image: none;
+    background-color: #ccc;
+}

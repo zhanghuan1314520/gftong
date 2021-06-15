@@ -1,0 +1,35 @@
+<view class="business-header _div data-v-b573dcce">
+    <view class="top _div data-v-b573dcce">
+        <view class="_h1 data-v-b573dcce">{{house.name||''}}</view>
+        <form bindsubmit="__e" class="data-v-b573dcce" data-event-opts="{{[ [ 'submit',[ [ 'goComments',['$event'] ] ] ] ]}}" reportSubmit="{{true}}">
+            <button class="btn blue-btn data-v-b573dcce" formType="submit">
+                <label class="_span data-v-b573dcce">去评论</label>
+                <image class="_img data-v-b573dcce" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/blue-right-arrow.png"></image>
+            </button>
+        </form>
+    </view>
+    <view class="tags _div data-v-b573dcce" wx:if="{{house.tag_list&&house.tag_list.length}}">
+        <label class="tag _span data-v-b573dcce" wx:for="{{house.tag_list}}" wx:for-index="__i0__" wx:for-item="tag" wx:key="*this">{{''+tag+''}}</label>
+    </view>
+    <view bindtap="__e" class="addr _div data-v-b573dcce" data-event-opts="{{[ [ 'tap',[ [ 'openMap',['$event'] ] ] ] ]}}">
+        <view class="_div data-v-b573dcce">
+            <label class="data-v-b573dcce">地址：</label>
+            <label class="_span data-v-b573dcce">{{house.address}}</label>
+        </view>
+        <image class="location-icon _img data-v-b573dcce" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/map-icon.png"></image>
+    </view>
+    <view class="info _ul data-v-b573dcce">
+        <view class="_li data-v-b573dcce" wx:if="{{house.avg_price_desc}}">
+            <view class="_strong data-v-b573dcce">{{house.avg_price_desc}}</view>
+            <view class="_p data-v-b573dcce">参考均价</view>
+        </view>
+        <view class="_li data-v-b573dcce" wx:if="{{house.total_price_desc}}">
+            <view class="_strong data-v-b573dcce">{{house.total_price_desc}}</view>
+            <view class="_p data-v-b573dcce">参考总价</view>
+        </view>
+        <view class="_li data-v-b573dcce">
+            <view class="_strong data-v-b573dcce">{{house.usage}}</view>
+            <view class="_p data-v-b573dcce">物业类型</view>
+        </view>
+    </view>
+</view>

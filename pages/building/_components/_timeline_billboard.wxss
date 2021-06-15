@@ -1,0 +1,150 @@
+.timeline-wrap.data-v-c9abbd40 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ededed;
+    z-index: 99999999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.billboard.data-v-c9abbd40 {
+    width: 600rpx;
+    margin-top: 64rpx;
+    border-radius: 0 0 8rpx 8rpx;
+    padding-bottom: 23rpx;
+    background-color: #fff;
+}
+
+.brand.data-v-c9abbd40 {
+    width: 324rpx;
+    height: 146rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/timeline-billboard/brand-text.png);
+    background-size: 100% 100%;
+}
+
+.headimg-wrap.data-v-c9abbd40 {
+    position: relative;
+    width: 600rpx;
+    height: 400rpx;
+    z-index: 999998;
+}
+
+.headimg-wrap .headimg.data-v-c9abbd40 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8rpx 8rpx 0 0;
+}
+
+.headimg-wrap .icon-720.data-v-c9abbd40 {
+    width: 128rpx;
+    height: 128rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/panorama.png);
+    background-size: 100% 100%;
+    z-index: 999999;
+}
+
+.header.data-v-c9abbd40 {
+    padding: 0 32rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 32rpx;
+}
+
+.header .tag.data-v-c9abbd40 {
+    background-color: #f0f2f7;
+    color: #7c8aa6;
+}
+
+.strong.data-v-c9abbd40 {
+    font-size: 42rpx;
+    font-weight: 700;
+    color: #333;
+    margin-right: 20rpx;
+    max-width: 400rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.address.data-v-c9abbd40 {
+    padding: 0 32rpx;
+    font-size: 28rpx;
+    margin-top: 16rpx;
+    color: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.address text.data-v-c9abbd40 {
+    max-width: 530rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.address .i.data-v-c9abbd40 {
+    margin-right: 8rpx;
+}
+
+.tip.data-v-c9abbd40 {
+    position: absolute;
+    width: 307rpx;
+    height: 74rpx;
+    bottom: 20rpx;
+    right: 20rpx;
+}
+
+.price.data-v-c9abbd40 {
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #fa4b00;
+    line-height: 45rpx;
+    margin-top: 16rpx;
+    padding: 0 32rpx;
+}
+
+.price view+view.data-v-c9abbd40 {
+    margin-top: 6rpx;
+}
+
+.layout.data-v-c9abbd40 {
+    margin-top: 28rpx;
+    line-height: 44rpx;
+    font-size: 28rpx;
+    color: #999;
+    padding: 0 32rpx;
+}

@@ -1,0 +1,8 @@
+<navigator class="events _a data-v-6e1cc9f1" id="events" wx:if="{{events.length}}">
+    <image class="_img data-v-6e1cc9f1" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/event.png"></image>
+    <swiper autoplay="{{true}}" circular="{{true}}" class="data-v-6e1cc9f1" vertical="{{true}}">
+        <swiper-item bindtap="__e" class="data-v-6e1cc9f1" data-buildingid="{{item.building_id}}" data-event-opts="{{[ [ 'tap',[ [ 'clickLog',['$event'] ] ] ] ]}}" data-id="{{item.id}}" wx:for="{{events}}" wx:for-index="i" wx:key="i">
+            <view class="_p data-v-6e1cc9f1">{{item.content}}</view>
+        </swiper-item>
+    </swiper>
+</navigator>

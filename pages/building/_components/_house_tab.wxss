@@ -1,0 +1,31 @@
+.tabs-wrap.data-v-2b10f606 {
+    padding: 0 30rpx;
+    margin-bottom: 16rpx;
+    background-color: #fff;
+}
+
+.tabs-wrap .tabs.data-v-2b10f606 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.tabs-wrap .tab.data-v-2b10f606 {
+    padding: 24rpx 0 11rpx;
+    border-bottom: 6rpx solid transparent;
+    color: #888;
+    font-size: 28rpx;
+    margin-right: 53rpx;
+}
+
+.tabs-wrap .tab.active.data-v-2b10f606 {
+    border-bottom-color: #00ad82;
+    font-weight: 700;
+    color: #333;
+}
+
+.tabs-wrap .tab.data-v-2b10f606:last-child {
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+<cover-view class="audio-wrap data-v-6b847813">
+    <cover-view class="text text28B data-v-6b847813">周边配套讲解</cover-view>
+    <cover-view class="progress-wrap data-v-6b847813">
+        <cover-view class="bar data-v-6b847813" style="{{'width:'+progress+';'}}">
+            <cover-view class="i data-v-6b847813"></cover-view>
+        </cover-view>
+    </cover-view>
+    <cover-view class="duration data-v-6b847813" wx:if="{{status!=='waiting'}}">{{''+duration+''}}</cover-view>
+    <cover-image bindtap="__e" class="btn data-v-6b847813" data-event-opts="{{[ [ 'tap',[ [ 'start',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/map/start.png" wx:if="{{status!='doing'}}"></cover-image>
+    <cover-image bindtap="__e" class="btn data-v-6b847813" data-event-opts="{{[ [ 'tap',[ [ 'pause',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/map/stop.png" wx:else></cover-image>
+</cover-view>

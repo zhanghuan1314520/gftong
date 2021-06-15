@@ -1,0 +1,27 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "fangchan-auth-user": "/node-modules/fangchan-base/components/views/fangchan-auth-user",
+        "loading": "/components/views/loading",
+        "feeds": "/pages/consultants/card/_feeds",
+        "share-options": "/components/business/share_options",
+        "billboard": "/pages/consultants/card/_billboard",
+        "like-share": "/pages/consultants/card/_like_share",
+        "medals": "/pages/consultants/card/_medals",
+        "buiildings": "/pages/consultants/card/_buildings",
+        "card": "/pages/consultants/card/_card",
+        "vr720": "/pages/consultants/card/_vr_720",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

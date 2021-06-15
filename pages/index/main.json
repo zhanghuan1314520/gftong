@@ -1,0 +1,31 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "house-item": "/components/business/house_item",
+        "little-house-item": "/components/business/little_house_item",
+        "loading": "/components/views/loading",
+        "search": "/pages/index/_components/_search",
+        "home-event": "/pages/index/_event",
+        "top-tip": "/components/home/home_top_tip",
+        "home-swiper": "/pages/index/_swiper",
+        "bottom-tip": "/components/views/bottom_tip",
+        "home-headline": "/pages/index/_headline",
+        "excellent-consultant-items": "/components/views/excellent_consultant_items",
+        "article-item": "/components/views/common_article",
+        "empty-box": "/components/views/empty_box",
+        "tab": "/pages/index/_tab",
+        "bottom-user-bar": "/pages/index/_components/botttom_user_bar",
+        "activity-banner": "/pages/index/_activity",
+        "scroll-tabs": "/pages/index/_components/_scroll_tabs",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

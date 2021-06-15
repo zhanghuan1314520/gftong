@@ -1,0 +1,10 @@
+<view class="subject-item _div data-v-1838f61d" style="{{'width:'+width+';'}}">
+    <image class="data-v-1838f61d" mode="aspectFill" src="{{item.img}}"></image>
+    <view class="content _div data-v-1838f61d">
+        <view class="item-name _p data-v-1838f61d">{{item.show_name+''}}<label class="tip _span data-v-1838f61d" wx:if="{{item.name_tip}}">{{item.name_tip}}</label>
+        </view>
+        <view class="desc _p data-v-1838f61d">{{item.desc_top}}</view>
+        <view class="desc _p data-v-1838f61d">{{item.desc_sec}}</view>
+    </view>
+    <view class="_i data-v-1838f61d" wx:if="{{item.new}}"></view>
+</view>

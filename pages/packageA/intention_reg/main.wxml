@@ -1,0 +1,8 @@
+<view class="page data-v-1060d08e">
+    <view class="list data-v-1060d08e">
+        <navigator class="_a data-v-1060d08e" url="{{item.url}}" wx:for="{{list}}" wx:for-index="i" wx:key="i">
+            <text class="text data-v-1060d08e">{{item.title}}</text>
+            <text class="arrow data-v-1060d08e"></text>
+        </navigator>
+    </view>
+</view>

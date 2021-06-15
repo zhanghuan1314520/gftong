@@ -1,0 +1,9 @@
+.opt.data-v-5ac2c1c3 {
+    padding-left: 30rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+
+.opt.active.data-v-5ac2c1c3 {
+    color: #00ad82;
+}

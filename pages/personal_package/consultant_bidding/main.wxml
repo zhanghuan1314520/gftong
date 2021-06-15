@@ -1,0 +1,33 @@
+<view class="up-home _div data-v-2965f8ea">
+    <view class="banner _div data-v-2965f8ea">
+        <scroll-view class="data-v-2965f8ea" scrollWithAnimation="true" scrollX="true" style="width:100%;">
+            <view class="card _div data-v-2965f8ea" wx:for="{{positions}}" wx:for-index="i" wx:for-item="pos" wx:key="i">
+                <view class="_header data-v-2965f8ea">{{pos.date}}</view>
+                <view class="_article data-v-2965f8ea">
+                    <view class="_div data-v-2965f8ea">{{pos.description}}</view>
+                    <view class="_h3 data-v-2965f8ea">{{pos.bid_position_name}}</view>
+                    <view class="_p data-v-2965f8ea" wx:if="{{pos.bid_amount}}">您当前出价:<view class="_strong data-v-2965f8ea">
+                            <view class="_i data-v-2965f8ea">{{pos.bid_amount}}</view>金币</view>
+                    </view>
+                    <view class="_p data-v-2965f8ea" wx:else>
+                        <view class="data-v-2965f8ea">您当前还未出价</view>
+                        <view class="data-v-2965f8ea">{{'最低出价'+pos.bid_min_amount+'金币'}}</view>
+                    </view>
+                    <form bindsubmit="__e" class="data-v-2965f8ea" data-event-opts="{{[ [ 'submit',[ [ 'goBidding',['$event'] ] ] ] ]}}" data-id="{{pos.building_id}}" data-position="{{pos.position}}">
+                        <button class="{{[ 'btn data-v-2965f8ea',[pos.bid_amount>0?'active':''] ]}}" formType="submit">{{''+(pos.bid_amount?'我要修改':'我要出价')+''}}</button>
+                    </form>
+                    <view class="tip _p data-v-2965f8ea">{{pos.due_time}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="nav navigator-arrow _div data-v-2965f8ea">
+        <label class="data-v-2965f8ea">我的金币余额：</label>
+        <view class="_strong data-v-2965f8ea">{{gold_coins+'金币'}}</view>
+        <form bindsubmit="__e" class="data-v-2965f8ea" data-event-opts="{{[ [ 'submit',[ [ 'goCoin',['$event'] ] ] ] ]}}">
+            <button class="shadow-button data-v-2965f8ea" formType="submit">金币充值</button>
+        </form>
+    </view>
+    <show-rule bind:__l="__l" class="data-v-2965f8ea" rules="{{rules}}" title="优秀置业顾问展示规则" vueId="1b140a04-1"></show-rule>
+    <page-wrap bind:__l="__l" class="data-v-2965f8ea" title="我要上首页" vueId="1b140a04-2"></page-wrap>
+</view>

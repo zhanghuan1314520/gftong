@@ -1,0 +1,34 @@
+<view class="map-search data-v-1df69e9e">
+    <view class="top-search-wrap data-v-1df69e9e">
+        <view bindtap="__e" class="zone-select-wrap data-v-1df69e9e" data-event-opts="{{[ [ 'tap',[ [ 'toggleZoneSelect',['$event'] ] ] ] ]}}">
+            <view class="selected data-v-1df69e9e">{{''+(zone||'区域')+''}}</view>
+            <image class="icon data-v-1df69e9e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/32_triangle.png"></image>
+        </view>
+        <view class="search-wrap data-v-1df69e9e">
+            <view class="search-input-wrap data-v-1df69e9e">
+                <image class="icon data-v-1df69e9e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/32_search.png"></image>
+                <input bindconfirm="__e" bindinput="__e" class="data-v-1df69e9e" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'onSearch',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','keyword','$event',[] ] ] ] ] ]}}" placeholder="搜索你的小区是否有确诊患者停留" value="{{keyword}}"></input>
+            </view>
+            <button bindtap="__e" class="data-v-1df69e9e" data-event-opts="{{[ [ 'tap',[ [ 'onSearch',['$event'] ] ] ] ]}}">搜索</button>
+        </view>
+    </view>
+    <view class="top-tip data-v-1df69e9e">
+        <image class="data-v-1df69e9e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/nconv2019_zones/notice.png"></image>
+        <view class="data-v-1df69e9e">
+            <rich-text class="data-v-1df69e9e" nodes="{{notice_text}}"></rich-text>
+        </view>
+    </view>
+    <map bindcallouttap="__e" bindtap="__e" class="data-v-1df69e9e" data-event-opts="{{[ [ 'tap',[ [ 'clickMap',['$event'] ] ] ],[ 'callouttap',[ [ 'clickMarker',['$event'] ] ] ] ]}}" id="house-map" markers="{{markers}}">
+        <cover-view class="btm-share-wrap data-v-1df69e9e">
+            <button class="share-btn data-v-1df69e9e" openType="share">
+                <cover-image class="data-v-1df69e9e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/map/map-share.png"></cover-image>
+            </button>
+        </cover-view>
+        <cover-image class="qr data-v-1df69e9e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/nconv2019_zones/qr.png"></cover-image>
+        <zone-select bind:__l="__l" bind:changeZone="__e" class="zone-select data-v-1df69e9e" data-event-opts="{{[ [ '^changeZone',[ ['changeZone'] ] ] ]}}" show="{{show_zone_select}}" vueId="9fd7d8ba-1" zone="{{zone}}"></zone-select>
+        <subscribe-dlg bind:__l="__l" bind:hide="__e" class="data-v-1df69e9e" data-event-opts="{{[ [ '^hide',[ ['toggleSubcribeDlg'] ] ] ]}}" vueId="9fd7d8ba-2" wx:if="{{show_subscribe_dlg}}"></subscribe-dlg>
+    </map>
+    <list bind:__l="__l" bind:select="__e" bind:subscribe="__e" class="{{['hidden data-v-1df69e9e',show_list&&!show_subscribe_dlg&&!show_zone_select?'show':'']}}" data-event-opts="{{[ [ '^subscribe',[ ['subscribe'] ] ],[ '^select',[ ['selectCommunity'] ] ] ]}}" is_follow="{{is_follow}}" items="{{communities}}" refresh_date="{{refresh_date}}" show_banner="{{show_banner}}" tip_text="{{tip_text}}" tip_title="{{tip_title}}" vueId="9fd7d8ba-3"></list>
+    <detail bind:__l="__l" bind:close="__e" class="data-v-1df69e9e" data-event-opts="{{[ [ '^close',[ ['hideDetail'] ] ] ]}}" item="{{detail}}" show_banner="{{show_banner}}" vueId="9fd7d8ba-4" wx:if="{{show_detail&&!show_zone_select}}"></detail>
+    <page-wrap bind:__l="__l" class="data-v-1df69e9e" hide_back_home="{{true}}" show_app_name="{{false}}" title="{{page_title}}" vueId="9fd7d8ba-5"></page-wrap>
+</view>

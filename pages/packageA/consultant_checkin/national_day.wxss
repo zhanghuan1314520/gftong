@@ -1,0 +1,289 @@
+.page.data-v-d1a9ec34 {
+    min-height: 100vh;
+    background-image: linear-gradient(178deg,#d92b31 6%,#ec3537 19%,#ff824d);
+}
+
+.checkin-wrap.data-v-d1a9ec34 {
+    position: relative;
+    background-position: center 30rpx;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultants/national-day/checkin-bg.png);
+    background-size: 750rpx 420rpx;
+    min-height: 100vh;
+    padding: 42rpx 24rpx 24rpx;
+}
+
+.checkin-wrap .mid-autumn-entry.data-v-d1a9ec34 {
+    position: absolute;
+    top: 85rpx;
+    right: 0;
+    width: 161rpx;
+    height: 147rpx;
+}
+
+.checkin-wrap .mid-autumn-entry ._img.data-v-d1a9ec34 {
+    width: 100%;
+    height: 100%;
+}
+
+text.h1.data-v-d1a9ec34 {
+    font-size: 40rpx;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    color: #fff;
+    line-height: 56rpx;
+}
+
+text.h2.data-v-d1a9ec34 {
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 45rpx;
+    display: block;
+    text-align: center;
+    color: #333;
+    padding-top: 128rpx;
+    position: relative;
+    z-index: 1;
+}
+
+.checkin-main.data-v-d1a9ec34 {
+    width: 100%;
+    min-height: 910rpx;
+    position: relative;
+    border-radius: 8rpx;
+    background-color: #fff;
+    margin-top: 160rpx;
+    box-shadow: 0 2rpx 20rpx 0 rgba(0,0,0,.1);
+}
+
+.checkin-main.data-v-d1a9ec34::after {
+    content: "";
+    display: block;
+    width: 514rpx;
+    height: 257rpx;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultants/national-day/checkin-hd.png);
+    background-size: contain;
+    top: -104rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.status.data-v-d1a9ec34 {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 60rpx 23rpx 79rpx;
+}
+
+.status .item.data-v-d1a9ec34 {
+    width: 80rpx;
+    text-align: center;
+}
+
+.status .item>._span.data-v-d1a9ec34 {
+    display: block;
+    font-size: 24rpx;
+    color: #666;
+    margin-top: 8rpx;
+}
+
+.status .checkin.data-v-d1a9ec34 {
+    width: 80rpx;
+    height: 80rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #855931;
+    border-radius: 50%;
+    background-color: #fadda2;
+}
+
+.status .checkin text.n.data-v-d1a9ec34 {
+    font-family: Impact;
+    font-size: 28rpx;
+    line-height: 32rpx;
+}
+
+.status .checkin text.t.data-v-d1a9ec34 {
+    font-size: 20rpx;
+    line-height: 26rpx;
+}
+
+.status .checkin.ed.data-v-d1a9ec34 {
+    color: #fff;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4968f2),to(#2dc2e0));
+    background-image: linear-gradient(180deg,#4968f2,#2dc2e0);
+}
+
+.giftbox.data-v-d1a9ec34 {
+    width: 480rpx;
+    height: 88rpx;
+    position: relative;
+    background: #f2f2f2;
+    box-shadow: 0 2rpx 8rpx 0 hsla(0,0%,94.9%,.5);
+    border-radius: 44rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: visible;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#c6f),color-stop(99%,#9c2ad1));
+    background-image: linear-gradient(180deg,#c6f,#9c2ad1 99%);
+    color: #fff;
+}
+
+.giftbox ._img.data-v-d1a9ec34 {
+    width: 82rpx;
+    height: 87rpx;
+    position: absolute;
+    left: 20rpx;
+    bottom: 16rpx;
+}
+
+.giftbox ._span.data-v-d1a9ec34 {
+    font-family: PingFangSC-Semibold;
+    font-size: 32rpx;
+    line-height: 45rpx;
+}
+
+.giftbox[disabled].data-v-d1a9ec34 {
+    background-image: none;
+}
+
+.giftbox[disabled] ._span.data-v-d1a9ec34 {
+    color: #666;
+}
+
+.rules.data-v-d1a9ec34 {
+    position: relative;
+    padding: 40rpx 32rpx;
+    margin-top: 76rpx;
+}
+
+.rules ._dl.data-v-d1a9ec34 {
+    position: relative;
+    z-index: 1;
+    color: #666;
+    font-size: 24rpx;
+    line-height: 48rpx;
+}
+
+.rules ._dt.data-v-d1a9ec34 {
+    font-weight: 700;
+}
+
+.rules.data-v-d1a9ec34::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100rpx;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),color-stop(68%,hsla(0,0%,96.1%,0)));
+    background-image: linear-gradient(180deg,#f5f5f5,hsla(0,0%,96.1%,0) 68%);
+    top: 0;
+    left: 0;
+}
+
+.checkin-dlg.data-v-d1a9ec34 {
+    position: fixed;
+    top: 238rpx;
+    left: 75rpx;
+    width: 600rpx;
+    height: 440rpx;
+    padding-top: 140rpx;
+    border-radius: 16rpx;
+    background-color: #fff;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/consultant_checkin/star-bg.png);
+    background-size: 516rpx 101rpx;
+    background-position: 12rpx 36rpx;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 999999;
+}
+
+.checkin-dlg .house-i.data-v-d1a9ec34 {
+    width: 216rpx;
+    height: 216rpx;
+    line-height: 216rpx;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -108rpx;
+    left: 50%;
+    margin-left: -108rpx;
+    background-color: #00bf8f;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,191,143,.3);
+}
+
+.checkin-dlg .house-i ._img.data-v-d1a9ec34 {
+    width: 158rpx;
+    height: 133rpx;
+    vertical-align: middle;
+}
+
+.checkin-dlg ._h1.data-v-d1a9ec34 {
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.checkin-dlg ._h1 ._strong.data-v-d1a9ec34 {
+    font-size: 40rpx;
+    color: #fa4b00;
+}
+
+.checkin-dlg ._h2.data-v-d1a9ec34 {
+    font-family: PingFangSC-Semibold;
+    font-size: 36rpx;
+    color: #333;
+    line-height: 50rpx;
+}
+
+.checkin-dlg ._h2 ._span.data-v-d1a9ec34 {
+    font-size: 40rpx;
+    color: #fa4b00;
+}
+
+.checkin-dlg ._p.data-v-d1a9ec34 {
+    margin-top: 16rpx;
+    color: #555;
+    font-size: 24rpx;
+}
+
+.checkin-dlg button.data-v-d1a9ec34 {
+    width: 320rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    margin-top: 48rpx;
+    border-radius: 44rpx;
+    background-image: -webkit-gradient(linear,left top,right top,from(#00c2a8),to(#00ad82));
+    background-image: linear-gradient(90deg,#00c2a8,#00ad82);
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 700;
+}

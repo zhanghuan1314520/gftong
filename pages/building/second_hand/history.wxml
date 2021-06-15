@@ -1,0 +1,18 @@
+<view class="page data-v-2e6a8292">
+    <top-filter area="{{area}}" bedrooms="{{bedrooms}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="filters data-v-2e6a8292" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" price="{{unit_price}}" show_bedrooms="{{true}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="11bc9ea9-1"></top-filter>
+    <view class="item data-v-2e6a8292" wx:for="{{items}}" wx:key="index">
+        <view class="top data-v-2e6a8292">
+            <view class="title32B data-v-2e6a8292">{{''+item.title+''}}</view>
+        </view>
+        <view class="desc data-v-2e6a8292">{{'面积：'+item.area+''}}</view>
+        <view class="desc data-v-2e6a8292">{{'成交时间：'+item.sign_date+''}}</view>
+        <view class="bottom data-v-2e6a8292">
+            <label class="data-v-2e6a8292">总价：</label>
+            <view class="_strong data-v-2e6a8292">{{item.total_price_desc}}</view>
+            <label class="right data-v-2e6a8292">单价：</label>
+            <view class="_strong data-v-2e6a8292">{{item.unit_price_desc}}</view>
+        </view>
+    </view>
+    <list-loading bind:__l="__l" class="data-v-2e6a8292" vueId="11bc9ea9-2" wx:if="{{loading}}"></list-loading>
+    <page-wrap bind:__l="__l" class="data-v-2e6a8292" title="成交历史" vueId="11bc9ea9-3"></page-wrap>
+</view>

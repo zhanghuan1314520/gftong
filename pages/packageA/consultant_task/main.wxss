@@ -1,0 +1,312 @@
+.page .top-page.data-v-794117f7 {
+    width: 100%;
+    min-height: 360rpx;
+    background-image: linear-gradient(153deg,#f18100 11%,#ec5228);
+    border-radius: 0 0 40rpx 40rpx;
+    z-index: 0;
+    padding-bottom: 70rpx;
+}
+
+.bottom-tip.data-v-794117f7,.top-tip.data-v-794117f7 {
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.top-tip.data-v-794117f7 {
+    font-size: 26rpx;
+    color: #c19a6c;
+    line-height: 37rpx;
+}
+
+.bottom-tip.data-v-794117f7 {
+    padding: 32rpx 25rpx;
+    color: #888;
+}
+
+._header.data-v-794117f7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 32rpx 0 66rpx 48rpx;
+    color: #fff;
+    font-size: 24rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/consultant_task/bg.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+._header ._strong.data-v-794117f7 {
+    color: #fff;
+    margin-left: 16rpx;
+    font-size: 56rpx;
+    font-weight: 700;
+}
+
+._header .arrow.data-v-794117f7 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 16rpx;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 8rpx 16rpx;
+}
+
+._header .question.data-v-794117f7 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 50%;
+    border: 2rpx solid #fff;
+    margin: 0 10rpx 0 7rpx;
+    font-size: 18rpx;
+    color: #fff;
+    font-weight: 700;
+}
+
+._header .integral.data-v-794117f7,._header .question.data-v-794117f7,._header .right.data-v-794117f7 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._header .left.data-v-794117f7 {
+    margin-top: 16rpx;
+}
+
+._article.data-v-794117f7 {
+    position: relative;
+    z-index: 1;
+    margin: 0 20rpx;
+    padding: 32rpx 28rpx 45rpx;
+    background: #fff;
+    border-radius: 12rpx;
+}
+
+._article ._h2.data-v-794117f7,._article ._h3.data-v-794117f7 {
+    font-size: 28rpx;
+    color: #333;
+    font-weight: 700;
+}
+
+._article .tasks-wrap.data-v-794117f7 {
+    padding: 0 32rpx;
+}
+
+._li.data-v-794117f7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 32rpx;
+    font-size: 24rpx;
+}
+
+._li>._i.data-v-794117f7 {
+    display: inline-block;
+    width: 54rpx;
+    height: 54rpx;
+    margin-top: 6rpx;
+    margin-right: 24rpx;
+    background-size: 100% 100%;
+}
+
+._li .consultant-home.data-v-794117f7 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/consultant_task/consultant-home.png);
+}
+
+._li .checkin.data-v-794117f7 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/consultant_task/checkin.png);
+}
+
+._li .content.data-v-794117f7 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 80rpx;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    padding-bottom: 32rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2rpx solid #f7f7f7;
+}
+
+._li .content .left.data-v-794117f7 {
+    width: 362rpx;
+}
+
+._li .desc.data-v-794117f7 {
+    display: block;
+    font-size: 22rpx;
+    color: #888;
+    line-height: 32rpx;
+    margin-bottom: 6rpx;
+    margin-top: 8rpx;
+}
+
+._li .desc.strong.data-v-794117f7 {
+    color: #c9b77f;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+._li .progress-wrap.data-v-794117f7 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 8rpx;
+}
+
+._li .progress-wrap ._span.data-v-794117f7 {
+    background-color: #fff;
+}
+
+._li .progress-wrap .target-score.data-v-794117f7 {
+    color: #999;
+}
+
+._li .progress.data-v-794117f7 {
+    position: relative;
+    width: 198rpx;
+    height: 14rpx;
+    border-radius: 7rpx;
+    background-color: #e7e7e7;
+    margin-right: 24rpx;
+    overflow: hidden;
+}
+
+._li .progress-bar.data-v-794117f7 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(112deg,#fea876,#fd6631);
+    border-radius: 7px;
+    margin-right: 24rpx;
+}
+
+._li .btn.data-v-794117f7 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 180rpx;
+    height: 68rpx;
+    border: 2rpx solid #eb7d00;
+    border-radius: 34rpx;
+    margin: 0;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #eb7d00;
+    background-color: transparent;
+    z-index: 1;
+}
+
+._li .btn.disabled.data-v-794117f7,._li .btn[disabled].data-v-794117f7 {
+    border-color: #ccc;
+    color: #ccc;
+}
+
+._li:last-child .content.data-v-794117f7 {
+    border: 0;
+}
+
+.right.data-v-794117f7 {
+    width: 160rpx;
+    height: 50rpx;
+    background-image: -webkit-gradient(linear,left top,right top,from(#fcb21d),to(rgba(254,200,2,.3)));
+    background-image: linear-gradient(90deg,#fcb21d,rgba(254,200,2,.3));
+    border-radius: 25rpx 0 0 25rpx;
+}
+
+.right ._span.data-v-794117f7 {
+    font-weight: 700;
+    margin-left: 18rpx;
+}
+
+.integral.data-v-794117f7 {
+    font-size: 36rpx;
+    color: #fff;
+    font-weight: 700;
+}
+
+.need-integral.data-v-794117f7 {
+    font-size: 24rpx;
+    color: #fff;
+    line-height: 33rpx;
+    margin: 8rpx 0 24rpx;
+}
+
+.active.data-v-794117f7 {
+    height: 60rpx;
+    border: 2rpx solid hsla(0,0%,100%,.5);
+    border-radius: 32rpx;
+    font-size: 28rpx;
+    color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.active label.data-v-794117f7 {
+    margin-left: 22rpx;
+    margin-right: 4rpx;
+}
+
+.active ._span.data-v-794117f7 {
+    font-weight: 700;
+    margin-left: 10rpx;
+}
+
+.name.data-v-794117f7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 5rpx;
+}
+
+.name ._h2.data-v-794117f7 {
+    font-size: 32rpx;
+    color: #333;
+    height: 45rpx;
+}

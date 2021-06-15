@@ -1,0 +1,45 @@
+<view class="page _div data-v-0f4f6d14">
+    <view class="result-wrap _div data-v-0f4f6d14">
+        <view class="carplate-header _div data-v-0f4f6d14">
+            <view class="carplate-header__left _div data-v-0f4f6d14">
+                <view class="carplate-header__tit _div data-v-0f4f6d14">{{''+quota.quota_name+''}}<label class="_span data-v-0f4f6d14">{{quota.quota_type}}</label>
+                </view>
+            </view>
+            <button class="carplate-header__share data-v-0f4f6d14" openType="share">
+                <image class="_img data-v-0f4f6d14" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/w.png"></image>
+                <label class="_span data-v-0f4f6d14">分享</label>
+            </button>
+        </view>
+        <view class="carplate-body _div data-v-0f4f6d14">
+            <view class="result-list _div data-v-0f4f6d14">
+                <view bindtap="__e" class="{{[ 'r-search-wrap _div data-v-0f4f6d14',[!items.length?'hide':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'searchClick',['$event'] ] ] ] ]}}">
+                    <label class="_span data-v-0f4f6d14">输入完整申请编码、姓名查询</label>
+                    <view class="_i data-v-0f4f6d14"></view>
+                </view>
+                <empty-tip bind:__l="__l" class="data-v-0f4f6d14" show="{{!loading&&!items.length}}" tip="{{empty_tip}}" vueId="2ed6c658-1"></empty-tip>
+                <view class="{{[ '_div data-v-0f4f6d14',[page===1&&loading?'hide':''] ]}}">
+                    <view class="_div data-v-0f4f6d14">
+                        <view bindtap="__e" class="result _div data-v-0f4f6d14" data-event-opts="{{[ [ 'tap',[ [ 'goMineResult',['$0'],[ [ ['items','',index,'code'] ] ] ] ] ] ]}}" wx:for="{{items}}" wx:for-item="result" wx:key="index">
+                            <image class="geted _img data-v-0f4f6d14" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/geted.png"></image>
+                            <view class="row _div data-v-0f4f6d14">
+                                <label class="data-v-0f4f6d14">序号：</label>
+                                <label class="highlight _span data-v-0f4f6d14">{{''+result.lottery_index+''}}</label>
+                            </view>
+                            <view class="row _div data-v-0f4f6d14" wx:if="{{result.code}}">
+                                <label class="data-v-0f4f6d14">公正摇号编码：</label>
+                                <label class="_span data-v-0f4f6d14">{{''+result.code+''}}</label>
+                            </view>
+                            <view class="row _div data-v-0f4f6d14" wx:if="{{result.name}}">
+                                <label class="data-v-0f4f6d14">姓名：</label>
+                                <label class="_span data-v-0f4f6d14">{{''+result.name+''}}</label>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <loading bind:__l="__l" class="data-v-0f4f6d14" vueId="2ed6c658-2" wx:if="{{loading||!no_more}}"></loading>
+                <view bindtap="__e" class="bottom-tip _p data-v-0f4f6d14" data-event-opts="{{[ [ 'tap',[ [ 'searchClick',['$event'] ] ] ] ]}}" wx:if="{{!loading&&no_more}}">请输入摇号编码进行查询</view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-0f4f6d14" title="{{name}}" vueId="2ed6c658-3"></page-wrap>
+</view>

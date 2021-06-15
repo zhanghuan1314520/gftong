@@ -1,0 +1,14 @@
+<view class="_div data-v-245e6014">
+    <view class="footer _div data-v-245e6014">
+        <view class="bottom-btn-wrap _div data-v-245e6014">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" class="f-btn data-v-245e6014" classname="shadow-button" data-event-opts="{{[ [ '^success',[ ['goConsultantByUser'] ] ] ]}}" failTip="需要认证用户信息才可以查看置业顾问" forceAuth="{{true}}" vueId="39f962ac-1" vueSlots="{{['default']}}">
+                <view class="f-btn primary-btn _div data-v-245e6014">
+                    <label class="_span data-v-245e6014">联系置业顾问</label>
+                </view>
+            </fangchan-auth-user>
+            <navigator bindtap="__e" class="f-btn phone-btn _a data-v-245e6014" data-event-opts="{{[ [ 'tap',[ [ 'goCall',['$event'] ] ] ] ]}}">
+                <label class="_span data-v-245e6014">免费电话咨询</label>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<view class="page data-v-91268574">
+    <search area="{{area}}" bind:__l="__l" bind:changeFilter="__e" bind:changeKeyword="__e" bind:search="__e" class="search data-v-91268574" data-event-opts="{{[ [ '^changeKeyword',[ ['changeKeyword'] ] ],[ '^search',[ ['search'] ] ],[ '^changeFilter',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" keyword="{{keyword}}" layout="{{layout}}" metro="{{metro}}" price="{{price}}" total_price="{{total_price}}" vueId="af087504-1" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}"></search>
+    <view class="list data-v-91268574">
+        <view bindtap="__e" class="item data-v-91268574" data-event-opts="{{[ [ 'tap',[ [ 'openBuilding',['$event'] ] ] ] ]}}" data-id="{{item.building_id}}" data-name="{{item.name}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="building_id">
+            <view catchtap="__e" class="cover data-v-91268574" data-event-opts="{{[ [ 'tap',[ [ 'openWeb720',['$event'] ] ] ] ]}}" data-id="{{item.building_id}}" data-name="{{item.name}}" data-panorama="{{item.vr_panorama_resource?item.vr_panorama_resource.vr_panorama_url:''}}">
+                <common-img bind:__l="__l" class="data-v-91268574" mode="aspectFill" src="{{item.img_url}}" vueId="{{'af087504-2-'+__i0__}}"></common-img>
+            </view>
+            <view class="hd data-v-91268574">
+                <view class="info data-v-91268574">
+                    <view class="name data-v-91268574">{{item.name}}</view>
+                    <view class="status data-v-91268574">{{item.status}}</view>
+                </view>
+                <view catchtap="__e" class="btn-hp data-v-91268574" data-event-opts="{{[ [ 'tap',[ [ 'openWeb720',['$event'] ] ] ] ]}}" data-id="{{item.building_id}}" data-name="{{item.name}}" data-panorama="{{item.vr_panorama_resource?item.vr_panorama_resource.vr_panorama_url:''}}">
+                    <text class="data-v-91268574">航拍看房</text>
+                    <image class="_img data-v-91268574" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/w-right-arrow.png"></image>
+                </view>
+            </view>
+            <view class="zone-price data-v-91268574">
+                <text class="zone data-v-91268574">{{item.zone?item.zone_section?item.zone+'-'+item.zone_section:item.zone:''}}</text>
+                <text class="price data-v-91268574" wx:if="{{item.price_desc&&!item.customized_price.length}}">{{item.price_desc}}</text>
+            </view>
+            <view class="customized-price data-v-91268574" wx:if="{{item.customized_price.length}}">
+                <view class="data-v-91268574" wx:for="{{item.customized_price}}" wx:for-index="i" wx:for-item="price" wx:key="i">{{price}}</view>
+            </view>
+        </view>
+    </view>
+    <button bindtap="__e" class="share-top-right-transparent data-v-91268574" data-event-opts="{{[ [ 'tap',[ [ 'tabShare',['$event'] ] ] ] ]}}" openType="share">
+        <image class="_img data-v-91268574" lazyLoad="{{true}}" src="/static/img/share.png"></image>
+        <label class="_span data-v-91268574">分享</label>
+    </button>
+    <view class="empty-box _div data-v-91268574" wx:if="{{!loading&&!items.length}}">
+        <empty-box bind:__l="__l" bind:getMore="__e" class="data-v-91268574" data-event-opts="{{[ [ '^getMore',[ ['getMore'] ] ] ]}}" vueId="af087504-3"></empty-box>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-91268574" hide_back_home="{{true}}" title="楼盘航拍" vueId="af087504-4"></page-wrap>
+</view>

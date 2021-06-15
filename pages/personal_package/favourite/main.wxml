@@ -1,0 +1,21 @@
+<view class="my-favourite _div data-v-52120611">
+    <view class="tabs data-v-52120611" wx:if="{{all_count}}">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-52120611" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" scroll="{{true}}" selected="{{category}}" tabs="{{tabs}}" vueId="17996ef0-1"></common-tabs>
+    </view>
+    <empty-tip bind:__l="__l" class="data-v-52120611" vueId="17996ef0-2" wx:if="{{!items.length&&!loading}}"></empty-tip>
+    <view class="_ul data-v-52120611" wx:if="{{items.length&&!loading}}">
+        <view class="item-wrap data-v-52120611" wx:for="{{items}}" wx:for-index="__i0__" wx:key="building_id">
+            <view bindtap="__e" class="del-i data-v-52120611" data-event-opts="{{[ [ 'tap',[ [ 'showDel',['$0'],[ [ ['items','building_id',item.building_id,'building_id'] ] ] ] ] ] ]}}"></view>
+            <house-item bind:__l="__l" class="data-v-52120611" item="{{item}}" vueId="{{'17996ef0-3-'+__i0__}}"></house-item>
+        </view>
+        <loading bind:__l="__l" class="data-v-52120611" vueId="17996ef0-4" wx:if="{{loading}}"></loading>
+    </view>
+    <del-dlg bind:__l="__l" bind:confirm="__e" bind:hide="__e" class="data-v-52120611" data-event-opts="{{[ [ '^hide',[ ['hideDel'] ] ],[ '^confirm',[ ['delItem'] ] ] ]}}" vueId="17996ef0-5" wx:if="{{show_del_dlg}}"></del-dlg>
+    <view class="recommendations data-v-52120611" wx:if="{{!all_count&&recommendations.length}}">
+        <view class="title32B list-title data-v-52120611">为您推荐</view>
+        <view class="item-wrap data-v-52120611" wx:for="{{recommendations}}" wx:for-index="__i1__" wx:key="building_id">
+            <house-item bind:__l="__l" class="data-v-52120611" item="{{item}}" vueId="{{'17996ef0-6-'+__i1__}}"></house-item>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-52120611" title="我的关注" vueId="17996ef0-7"></page-wrap>
+</view>

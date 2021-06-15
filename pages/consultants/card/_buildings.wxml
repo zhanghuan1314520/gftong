@@ -1,0 +1,29 @@
+<view class="wrap data-v-94c67452">
+    <view class="header data-v-94c67452">主营楼盘</view>
+    <swiper bindchange="__e" class="buildings data-v-94c67452" data-event-opts="{{[ [ 'change',[ [ 'changeBuilding',['$event'] ] ] ] ]}}" style="{{'height:'+utils.getHeight( buildings[current] )+';'}}">
+        <swiper-item class="house-item-wrap data-v-94c67452" wx:for="{{buildings}}" wx:for-index="__i0__" wx:key="building_id">
+            <house-item bind:__l="__l" class="data-v-94c67452" classname="no_border" item="{{item}}" vueId="{{'7f4da267-1-'+__i0__}}"></house-item>
+            <view class="tabs data-v-94c67452">
+                <view bindtap="__e" class="item data-v-94c67452" data-event-opts="{{[ [ 'tap',[ [ 'openBuilding',['$0'],[ [ ['tabs','',i,'link'] ] ] ] ] ] ]}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">
+                    <view class="{{['icon data-v-94c67452',item.icon]}}"></view>
+                    <view class="text data-v-94c67452">{{item.name}}</view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="paginations data-v-94c67452" wx:if="{{paginations.length>1}}">
+        <view class="{{['item data-v-94c67452',item===current?'active':'']}}" wx:for="{{paginations}}" wx:for-index="__i1__" wx:key="*this"></view>
+    </view>
+</view>
+<wxs module="common_utils" src="../../../components/business/_house_item_utils.wxs" />
+<wxs module="utils">
+module.exports = ({
+    getHeight: (function(item) {
+        var height = 230;
+        if (item && item.price_desc_arr && item.price_desc_arr.length > 1) {
+            height = 260
+        };
+        return ((height + 138) + 'rpx')
+    }),
+});
+</wxs>

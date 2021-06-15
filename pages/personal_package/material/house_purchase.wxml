@@ -1,0 +1,212 @@
+<view class="house-purchase _div data-v-1e28c790">
+    <top-right-share bind:__l="__l" class="data-v-1e28c790" top="24" type="white" vueId="2aedae4d-1"></top-right-share>
+    <image class="top-img _img data-v-1e28c790" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/material/purchase.png"></image>
+    <view class="content _div data-v-1e28c790">
+        <view class="card-top card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">1.确定是否具有购房资格</view>
+            <view class="desc _div data-v-1e28c790">您可以使用杭州购房通资格查询工具查询您在杭州限购区域是否有购房资格。</view>
+            <navigator class="btn data-v-1e28c790" url="/pages/check_condition/verify/main?type=condition">立即查询购房资格</navigator>
+        </view>
+        <view class="card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">2.挑选心仪的楼盘</view>
+            <view class="list _div data-v-1e28c790">
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">在您具备购房资格后，您可以在对应区域查看有哪些楼盘即将取证。杭州购房通已经将即将取证的楼盘整理起来啦，您可以在即将取证列表中去挑选心仪的楼盘。选楼盘时需要关注一些周边配套信息，推荐您使用杭州购房通，里面周边配套非常详细直观哦。<navigator class="link _a data-v-1e28c790" url="/pages/history/main?type=即将取证">点击查看即将取证楼盘</navigator>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">您可能会对几个楼盘都感兴趣，一时做不了决定，这时候您可以前往评论区，看看房友们是如何讨论评价的。同时您还可以关注杭州购房通官方公众号，我们会定期推出专业的楼盘评测和踩盘文哦。<navigator class="link _a data-v-1e28c790" url="/pages/personal_package/official_weixin/main">点击关注杭州购房通公众号</navigator>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">如果以上途径还没有找到想要的资讯，您还可以加入杭州购房通讨论群，与房友一起讨论，群里还有官方客服为您在线答疑解惑哦。<navigator class="link _a data-v-1e28c790" url="/pages/personal_package/group_assistant/main">点击添加客服拉你入群</navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">3.参与报名登记</view>
+            <view class="list _div data-v-1e28c790">
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">登记分为在线登记和线下登记，具体登记方式请以开发商公示为准。<navigator class="link _a data-v-1e28c790" url="/pages/personal_package/pi/main?img=yx&title=意向登记资料">点击查看登记所需要的资料（仅供参考）</navigator>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">报名成功后，还需要上传购房资料哦。</view>
+                </view>
+            </view>
+        </view>
+        <view class="card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">4.等待摇号结果</view>
+            <view class="list _div data-v-1e28c790">
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">核査意向登记汇总表(您可以订阅报名的楼盘，第一时间接收通知，杭州购房通将及时在楼盘详情页面释放登记表。</view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">
+                        <view class="desc-title title-bottom _div data-v-1e28c790">摇号方式：</view>
+                        <text class="instructions data-v-1e28c790">①杭州市国立公证处确定时间、地点，组织实施公证摇号；
+                                ②首轮摇号：根据开发商销售公示方案的分配比例，优先摇出无房家庭入围户数，但不确定选房顺序;第二轮摇号:首轮摇号未入围的无房家庭与非无房家庭共同摇号，摇出剩余入户数，但不确定选房顺序。同时摇出未入围家庭的轮侯顺序;
+                                ③第三轮摇号：前两轮摇出的入围家庭共同摇号，摇出选房顺序号。</text>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">查询摇号结果(您可以订阅相关楼盘，关注杭州购房通服务号，可第一时间查询摇号结果，同时也可加入我们的购房群，我们将第一时通知到您)</view>
+                </view>
+            </view>
+        </view>
+        <view class="card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">5.选房</view>
+            <view class="list _div data-v-1e28c790">
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">根据摇号顺序进行选房</view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <text class="desc data-v-1e28c790">选房需携带本人有效身份证和意向登记通过的回执单。</text>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <text class="desc data-v-1e28c790">开发商对选房家庭人员身份等信息进行校验。</text>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">
+                        <view class="desc-title title-bottom _div data-v-1e28c790">委托他人办理选房，须携带如下资料：</view>
+                        <text class="instructions data-v-1e28c790">①本人身份证原件
+                                ②委托人身份证原件及复印件
+                                ③公证委托书</text>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <text class="desc data-v-1e28c790">放弃选房：针对入围家庭，放弃两次，三个月不能参与摇号；放弃三次，六个月不能参与摇号。</text>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <text class="desc data-v-1e28c790">签订合同：具体签订合同的时间和形式根据开发商公示为准。</text>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                    </view>
+                    <text class="desc data-v-1e28c790">办理贷款：上述流程完成后就到了办理贷款业务的环节，售楼部会通知你什么时候去办理贷款。一般来说选房的时候，都会有银行的工作人员现场办理业务。</text>
+                </view>
+            </view>
+        </view>
+        <view class="card _div data-v-1e28c790">
+            <view class="name _p data-v-1e28c790">6.选择合适的付款方式</view>
+            <view class="list _div data-v-1e28c790">
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                        <view class="line _div data-v-1e28c790"></view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">
+                        <text class="data-v-1e28c790">全款：全款买房流程简单，有钱就是任性~</text>
+                    </view>
+                </view>
+                <view class="item _div data-v-1e28c790">
+                    <view class="icon _div data-v-1e28c790">
+                        <view class="circle _div data-v-1e28c790">
+                            <view class="small _i data-v-1e28c790"></view>
+                        </view>
+                    </view>
+                    <view class="desc _div data-v-1e28c790">
+                        <view class="desc-title _ul data-v-1e28c790">
+                            <view class="_li data-v-1e28c790">贷款：贷款买房是大部分购房者的选择，我们一起看看需要准备哪些材料吧~~</view>
+                        </view>
+                        <text class="instructions data-v-1e28c790">①征信情况，征信可以在线打印（中国人民银行征信中心），也可以带着身份证到线下的中国人民银行指定网点打印，注意打印征信需要提前一天登录。
+②流水，需要打印半年银行卡流水，流水金额超过每月还款的2倍，流水可以到线下所在的任意网点进行打印，注意流水不可跨行打印哦。
+③月供，杭州购房通已为您提供功能强大的房贷计算器，可以帮您计算不同贷款方式的月供、利息、期数。同时，如果您有提前还款的打算，也可以使用提前还款计算器进行试算，看看您能省多少利息</text>
+                        <navigator class="link _a data-v-1e28c790" url="/pages/loan_computer/main">点击使用房贷计算器</navigator>
+                        <navigator class="link _a data-v-1e28c790" url="/pages/packageB/prepayment_calc/main">点击使用提前还款计算器</navigator>
+                        <text class="instructions data-v-1e28c790">④如果您有正常缴纳公积金，可以使用公积金贷款额度计算工具看看您最多能贷多少金额和年限。</text>
+                        <navigator class="link _a data-v-1e28c790" url="/pages/packageB/provident_fund/main">点击使用公积金额度计算器</navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-1e28c790" vueId="2aedae4d-2"></page-wrap>
+</view>

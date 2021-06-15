@@ -1,0 +1,43 @@
+<view catchtouchmove="__e" class="{{['filters-wrap _div data-v-5d06f84e',className]}}" data-event-opts="{{[ [ 'touchmove',[ [ 'stopMove',['$event'] ] ] ] ]}}">
+    <slot></slot>
+    <view class="{{[ 'filters _ul data-v-5d06f84e',[auction?'auction':'',tabs.length===2?'is2filter':''] ]}}">
+        <view bindtap="__e" class="{{[ '_li data-v-5d06f84e',[tab===selected||text[tab]&&text[tab]!=tab&&text[tab]!='不限'?'active':'',tab==='时间筛选'?'isTime':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-tab="{{tab}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+            <view class="{{['order data-v-5d06f84e',selected==='order'?'open':'']}}" wx:if="{{tab==='order'}}"></view>
+            <view class="select-opt data-v-5d06f84e" wx:else>
+                <label class="_span data-v-5d06f84e">{{''+( text[tab]==='不限'||!text[tab]?tab:text[tab] )+''}}</label>
+                <image class="_img data-v-5d06f84e" src="{{[tab===selected?'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/down-active.png':'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/down.png']}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="dlg-wrap data-v-5d06f84e">
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='区域'?'hide':''] ]}}">
+            <zone-select bind:__l="__l" bind:changeZone="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^changeZone',[ ['changeZoneMetro'] ] ] ]}}" vueId="42f1e034-1" zone_ids="{{zone_ids}}"></zone-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='用途'?'hide':''] ]}}">
+            <use-type bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeUseType'] ] ] ]}}" vueId="42f1e034-2"></use-type>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='成交价'?'hide':''] ]}}">
+            <hammer-price bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeHammerPrice'] ] ] ]}}" vueId="42f1e034-3"></hammer-price>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='价格'?'hide':''] ]}}">
+            <price-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changePrice'] ] ] ]}}" vueId="42f1e034-4"></price-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='面积'?'hide':''] ]}}">
+            <area-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeArea'] ] ] ]}}" vueId="42f1e034-5"></area-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='装修'?'hide':''] ]}}">
+            <decorate-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeDecorate'] ] ] ]}}" vueId="42f1e034-6"></decorate-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='时间筛选'?'hide':''] ]}}">
+            <time-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeTime'] ] ] ]}}" times="{{times}}" vueId="42f1e034-7"></time-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='更多'?'hide':''] ]}}">
+            <more-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeMore'] ] ] ]}}" vueId="42f1e034-8"></more-select>
+        </view>
+        <view class="{{[ '_div data-v-5d06f84e',[selected!=='order'?'hide':''] ]}}">
+            <order-select bind:__l="__l" bind:change="__e" class="data-v-5d06f84e" data-event-opts="{{[ [ '^change',[ ['changeOrder'] ] ] ]}}" order="{{interesting_order}}" vueId="42f1e034-9"></order-select>
+        </view>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-5d06f84e" data-event-opts="{{[ [ 'tap',[ [ 'hideSelect',['$event'] ] ] ] ]}}" wx:if="{{selected}}"></view>
+    <slot name="after"></slot>
+</view>

@@ -1,0 +1,12 @@
+<view class="_footer data-v-73f46755">
+    <view bindtap="__e" class="favourite _div data-v-73f46755" data-event-opts="{{[ [ 'tap',[ [ 'toggleFavourite',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-73f46755" src="/static/img/favourited.png" wx:if="{{favourite}}"></image>
+        <image class="_img data-v-73f46755" src="/static/img/favourite.png" wx:else></image>
+        <label class="_span data-v-73f46755">{{(favourite?'已':'')+'关注'}}</label>
+    </view>
+    <button bindgetuserinfo="__e" class="data-v-73f46755" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goConsult',['$event'] ] ] ] ]}}" openType="getUserInfo">联系置业顾问</button>
+    <button bindgetuserinfo="__e" class="subscribe data-v-73f46755" data-event-opts="{{[ [ 'getuserinfo',[ [ 'subscribe',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:if="{{!is_consultant}}">{{''+(!subscribed?'订阅动态提醒':'取消动态提醒')+''}}</button>
+    <button bindtap="__e" class="subscribe data-v-73f46755" data-event-opts="{{[ [ 'tap',[ [ 'goAdd',['$event'] ] ] ] ]}}" wx:if="{{is_consultant&&is_building_consultant}}">发布楼盘动态</button>
+    <tip-dlg bind:__l="__l" bind:confirm="__e" bind:toggleDlg="__e" class="data-v-73f46755" content="{{apply_content}}" data-event-opts="{{[ [ '^toggleDlg',[ ['togglePublishDlg'] ] ],[ '^confirm',[ ['copyWexin'] ] ] ]}}" show="{{show_public_dlg}}" title="提示" vueId="53f1be83-1"></tip-dlg>
+    <like-tip bind:__l="__l" bind:hide="__e" class="data-v-73f46755" content="该楼盘有新动态时，我们将通过服务号发消息通知您哟！" data-event-opts="{{[ [ '^hide',[ ['toggleSubscribe'] ] ] ]}}" show="{{show_subscribe_tip}}" show_copy="{{false}}" title="关注并绑定【杭州购房者之家】" vueId="53f1be83-2"></like-tip>
+</view>

@@ -1,0 +1,11 @@
+<view class="theme-content _div data-v-01613baa">
+    <scroll-view class="{{[ 'content-scroll data-v-01613baa',[!scroll?'left':''] ]}}" id="feed_swiper" scrollIntoView="{{tab_selected}}" scrollWithAnimation="true" scrollX="{{true}}">
+        <view bindtap="__e" class="{{[ 'list _div data-v-01613baa',[item.index===selectTab?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeTab',[index] ] ] ] ]}}" id="{{'id_'+index}}" wx:for="{{tabs}}" wx:key="index">
+            <view class="item _div data-v-01613baa">
+                <view class="tx _p data-v-01613baa">{{item.first}}</view>
+                <view class="tx _p data-v-01613baa">{{item.sec}}</view>
+            </view>
+            <view class="line _i data-v-01613baa" wx:if="{{index!==tabs.length-1}}"></view>
+        </view>
+    </scroll-view>
+</view>

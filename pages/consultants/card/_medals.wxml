@@ -1,0 +1,26 @@
+<view class="_div data-v-612ec21e">
+    <view class="dlg _div data-v-612ec21e">
+        <view class="header _div data-v-612ec21e">
+            <image class="_img data-v-612ec21e" src="{{consultant.weixin_headimgurl}}"></image>
+            <view class="name _div data-v-612ec21e">{{consultant.name}}</view>
+            <view class="icons _div data-v-612ec21e">
+                <label class="{{['metal _span data-v-612ec21e',consultant.level]}}"></label>
+                <label class="{{['excellect _span data-v-612ec21e',!consultant.excellect_obtain?'disabled':'']}}"></label>
+                <label class="{{['perfessional _span data-v-612ec21e',!consultant.perfessional_obtain?'disabled':'']}}"></label>
+            </view>
+        </view>
+        <view class="footer _div data-v-612ec21e">
+            <view class="footer__title _div data-v-612ec21e">所获勋章</view>
+            <view class="footer__list _ul data-v-612ec21e">
+                <view class="item _li data-v-612ec21e" wx:for="{{consultant.medals}}" wx:for-index="i" wx:key="i">
+                    <view class="{{[ 'icon _div data-v-612ec21e',item.class_name,[item.obtained?'active':''] ]}}"></view>
+                    <view class="content _div data-v-612ec21e">
+                        <view class="{{['text _div data-v-612ec21e',item.obtained?'active':'']}}">{{item.name}}</view>
+                        <view class="desc _div data-v-612ec21e" wx:if="{{item.desc}}">{{item.desc}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-612ec21e" data-event-opts="{{[ [ 'tap',[ [ '$emit',['hide'] ] ] ] ]}}"></view>
+</view>

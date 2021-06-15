@@ -1,0 +1,71 @@
+var RESIZE_SUFFIX = '?x-oss-process\x3dimage/resize,w_210,h_140';
+
+function checkPlanarGraph(item) {
+    var activities = item ? item.activities : [];
+    return (activities && activities.length && activities.indexOf('planar_graph') > -1)
+};
+
+function checkShowVr(item) {
+    var vr_resource = item ? item.vr_resource : ({});
+    return (vr_resource && vr_resource.vr_photo_url)
+};
+
+function formatSuffix(url) {
+    if (url.indexOf('x-oss-process\x3dimage/resize') === -1) {
+        return (url + RESIZE_SUFFIX)
+    };
+    return (url)
+};
+
+function checkPanorama(item) {
+    var activities = item ? item.activities : [];
+    return (activities && activities.length && activities.indexOf('vr_panorama') > -1)
+};
+
+function getHeadimg(item) {
+    var photo_url = item ? item.photo_url : '';
+    var vr_resource = item ? item.vr_resource : '';
+    var img_url = item ? item.img_url : '';
+    var cover_url = item ? item.cover_photo_url : '';
+    if (photo_url) {
+        return (formatSuffix(photo_url))
+    };
+    if (vr_resource && vr_resource.vr_photo_url) {
+        return (formatSuffix(vr_resource.vr_photo_url))
+    };
+    if (cover_url) {
+        return (formatSuffix(cover_url))
+    };
+    return (img_url)
+};
+
+function getLiveStatus(item) {
+    var status_obj = ({
+        '即将直播': ({
+            label: '直播预告',
+            status: 'forcoming',
+        }),
+        '直播中': ({
+            label: '直播中',
+            status: 'living',
+        }),
+        '回放': ({
+            label: '直播回放',
+            status: 'end',
+        }),
+        '结束': ({
+            label: '直播结束',
+            status: '',
+        }),
+    });
+    var live_streaming = item.live_streaming;
+    var status = live_streaming.status;
+    return (status ? status_obj[((nt_0 = (status), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))] : '')
+};
+module.exports = ({
+    checkPlanarGraph: checkPlanarGraph,
+    checkShowVr: checkShowVr,
+    getHeadimg: getHeadimg,
+    checkPanorama: checkPanorama,
+    getLiveStatus: getLiveStatus,
+});

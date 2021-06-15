@@ -1,0 +1,4 @@
+<view class="empty-state _div data-v-59e587b5" style="{{'padding-top:'+(top||0)+'rpx'+';'}}">
+    <image class="{{['_img data-v-59e587b5',type]}}" src="{{img_src}}"></image>
+    <view class="_p data-v-59e587b5">{{desc}}</view>
+</view>

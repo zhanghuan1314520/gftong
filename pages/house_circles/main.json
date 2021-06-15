@@ -1,0 +1,30 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "banner": "/pages/house_circles/_banner",
+        "permit-tip": "/pages/house_circles/_permit_tip",
+        "common-tabs": "/components/views/common_tabs",
+        "common-article": "/components/views/common_article",
+        "event-item": "/pages/house_circles/_event_item",
+        "loading": "/components/views/loading",
+        "tag-filter": "/pages/house_circles/_tag_filter",
+        "blog-item": "/components/business/blog",
+        "search": "/pages/house_circles/_search",
+        "tabs": "/pages/house_circles/tabs",
+        "host-list": "/pages/index/top_search/host_list",
+        "empty-box": "/components/views/empty_box",
+        "recommended": "/pages/house_circles/recommended",
+        "bottom-share": "/pages/house_circles/bottom_share",
+        "bottom-write": "/pages/house_circles/bottom_write",
+        "top-swiper": "/components/business/swiper",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

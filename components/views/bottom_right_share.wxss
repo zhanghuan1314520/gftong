@@ -1,0 +1,28 @@
+.share-btn.data-v-ff2765fe {
+    position: fixed;
+    bottom: 286;
+    right: 24rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 88rpx;
+    height: 88rpx;
+    background: rgba(0,176,141,.96);
+    box-shadow: 0 4rpx 12rpx 0 rgba(0,176,141,.4);
+    z-index: 10;
+    font-size: 24rpx;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 1.2em;
+}

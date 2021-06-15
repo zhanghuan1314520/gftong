@@ -1,0 +1,8 @@
+<view catchtap="__e" class="{{['audio data-v-530a3bce',type,playing?'playing':'waiting']}}" data-event-opts="{{[ [ 'tap',[ [ 'onPress',['$event'] ] ] ] ]}}">
+    <view class="progress-wrap data-v-530a3bce">
+        <view class="progress data-v-530a3bce"></view>
+        <view class="progress data-v-530a3bce"></view>
+        <view class="progress data-v-530a3bce"></view>
+        <view class="progress data-v-530a3bce"></view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="page data-v-469e3c4b">
+    <view class="top data-v-469e3c4b">
+        <top-right-share bind:__l="__l" class="data-v-469e3c4b" top="24" type="white" vueId="6143705f-1"></top-right-share>
+    </view>
+    <view class="{{[ 'vr-filter--wrap data-v-469e3c4b',[filter_show?'fixed':''] ]}}">
+        <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-469e3c4b" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" metro="{{metro}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="6143705f-2" zone_ids="{{zone_ids}}"></top-filter>
+    </view>
+    <view class="{{[ 'list data-v-469e3c4b',[filter_show?'padding-top':''] ]}}">
+        <view class="item-wrap data-v-469e3c4b" wx:for="{{items}}" wx:for-index="i" wx:key="id">
+            <view class="rank_item data-v-469e3c4b">
+                <house-item bind:__l="__l" class="data-v-469e3c4b" item="{{item}}" vueId="{{'6143705f-3-'+i}}" vueSlots="{{['default']}}">
+                    <button catchtap="__e" class="vr-btn data-v-469e3c4b" data-event-opts="{{[ [ 'tap',[ [ 'tapVr',[i] ] ] ] ]}}">VR实景线上售楼部</button>
+                </house-item>
+            </view>
+        </view>
+        <view class="empty-state data-v-469e3c4b" wx:if="{{!items.length&&!loading}}">
+            <empty-box bind:__l="__l" class="data-v-469e3c4b" desc="没有这个楼盘，看看其他的吧～" top="106" type="empty_building" vueId="6143705f-4"></empty-box>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-469e3c4b" hide_back_home="{{true}}" title="VR售楼部" vueId="6143705f-5"></page-wrap>
+</view>

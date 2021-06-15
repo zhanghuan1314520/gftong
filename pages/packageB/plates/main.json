@@ -1,0 +1,21 @@
+{
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "top-card": "/pages/packageB/plates/_components/top_card",
+        "life": "/pages/packageB/plates/_components/life",
+        "dev": "/pages/packageB/plates/_components/dev",
+        "price": "/pages/packageB/plates/_components/price",
+        "recommedation": "/pages/packageB/plates/_components/recommendation",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

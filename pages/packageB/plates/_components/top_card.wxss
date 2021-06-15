@@ -1,0 +1,98 @@
+.card.data-v-6c59f01c {
+    width: 686rpx;
+    height: 320rpx;
+    margin: 0 auto;
+    border-radius: 12rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/card-bg.png);
+    background-size: 100% 100%;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,176,141,.3);
+}
+
+.top.data-v-6c59f01c {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 28rpx;
+    padding-left: 28rpx;
+    margin-bottom: 10rpx;
+}
+
+.top.data-v-6c59f01c,.top .name.data-v-6c59f01c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top .name.data-v-6c59f01c {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 20rpx;
+    height: 62rpx;
+    border-radius: 31rpx;
+    background: rgba(53,166,124,.5);
+    color: #fff;
+    font-size: 40rpx;
+    font-weight: 700;
+}
+
+.top .desc.data-v-6c59f01c {
+    margin-left: 16rpx;
+    font-size: 24rpx;
+    color: hsla(0,0%,100%,.8);
+}
+
+.main.data-v-6c59f01c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 32rpx;
+}
+
+.main .region-img.data-v-6c59f01c {
+    display: inline-block;
+    width: 200rpx;
+    height: 200rpx;
+    margin-right: 28rpx;
+}
+
+.main .row.data-v-6c59f01c {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 26rpx;
+}
+
+.main .help.data-v-6c59f01c,.main .row.data-v-6c59f01c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main .help.data-v-6c59f01c {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 28rpx;
+    height: 28rpx;
+    border: 3rpx solid #fff;
+    font-size: 20rpx;
+    border-radius: 50%;
+}

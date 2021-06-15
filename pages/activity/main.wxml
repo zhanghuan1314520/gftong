@@ -1,0 +1,19 @@
+<view class="page _div data-v-f9546208">
+    <view class="img-wrap _div data-v-f9546208">
+        <image bindtap="__e" class="_img data-v-f9546208" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" id="pic" mode="widthFix" src="{{mini_img}}" wx:if="{{mini_img}}"></image>
+        <image bindtap="__e" class="{{[ 'main-img _img data-v-f9546208',[show_img?'show':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" mode="widthFix" src="{{show_img}}"></image>
+    </view>
+    <form bindsubmit="__e" class="data-v-f9546208" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}" id="form">
+        <view class="_h3 data-v-f9546208">{{'立即报名参加'+name+'免费看房团'}}</view>
+        <view class="_section data-v-f9546208">
+            <label class="form-label data-v-f9546208" for="name">姓名*</label>
+            <input autocomplete="off" class="form-input data-v-f9546208" name="name" type="text"></input>
+            <label class="form-label data-v-f9546208" for="phone">电话*</label>
+            <input autocomplete="off" class="form-input data-v-f9546208" name="phone" type="number"></input>
+        </view>
+        <button class="form-btn data-v-f9546208" formType="submit">立即预约免费看房名额</button>
+    </form>
+    <navigator bindtap="__e" class="tip _a data-v-f9546208" data-event-opts="{{[ [ 'tap',[ [ 'call',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-f9546208" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-detail/phone-icon.png"></image>直接拨打售楼部热线</navigator>
+    <page-wrap bind:__l="__l" class="data-v-f9546208" title="{{name}}" vueId="fc22f314-1"></page-wrap>
+</view>

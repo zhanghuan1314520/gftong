@@ -1,0 +1,12 @@
+<view class="_div" wx:if="{{show}}">
+    <view bindtap="__e" class="overlay _div" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+    <form class="footer-input" style="{{'bottom:'+bottom+';'}}">
+        <view class="wrap _div">
+            <lazy-textarea bind:__l="__l" bind:blur="__e" bind:changeBottom="__e" bind:input="__e" data-event-opts="{{[ [ '^blur',[ ['onBlur'] ] ],[ '^changeBottom',[ ['changeBottom'] ] ],[ '^input',[ [ '__set_model',[ '','content','$event',[] ] ] ] ] ]}}" maxlength="140" name="content" placeholder="{{placeholder}}" value="{{content}}" vueId="578c88fc-1"></lazy-textarea>
+            <view class="bottom _div">
+                <view class="_p">{{content.length+'/140'}}</view>
+                <fangchan-auth-user bind:__l="__l" bind:success="__e" classname="{{'nickname '+(sending||content===''?'disabled':'')}}" data-event-opts="{{[ [ '^success',[ ['submitComment'] ] ] ]}}" disabled="{{sending}}" failTip="没有授权用户信息，无法评论" forceAuth="{{true}}" vueId="578c88fc-2" vueSlots="{{['default']}}">发送</fangchan-auth-user>
+            </view>
+        </view>
+    </form>
+</view>

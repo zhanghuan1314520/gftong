@@ -1,0 +1,10 @@
+<view class="_div data-v-5b913f1c">
+    <web-view binderror="__e" class="data-v-5b913f1c" data-event-opts="{{[ [ 'error',[ [ 'errorLoad',['$event'] ] ] ] ]}}" src="{{src}}">
+        <cover-view class="share-wrap data-v-5b913f1c" wx:if="{{show_share&&!fromTimeline}}">
+            <button class="data-v-5b913f1c" openType="share">
+                <cover-image class="data-v-5b913f1c" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/article-share-btn.png"></cover-image>
+            </button>
+        </cover-view>
+    </web-view>
+    <page-wrap bind:__l="__l" class="data-v-5b913f1c" page_show_treasure="{{false}}" show_app_name="{{false}}" title="{{title}}" vueId="386cb37e-1"></page-wrap>
+</view>

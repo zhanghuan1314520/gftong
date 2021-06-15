@@ -1,0 +1,12 @@
+<view class="search-wrap data-v-597c835c" id="search-wrap">
+    <view class="{{['search data-v-597c835c',fixed?'fixed':'']}}">
+        <view class="search-input-wrap data-v-597c835c">
+            <view class="search-input data-v-597c835c">
+                <fc-icon bind:__l="__l" class="data-v-597c835c" type="32_search" vueId="b3836f84-1"></fc-icon>
+                <input bindconfirm="__e" bindinput="__e" class="data-v-597c835c" confirmType="search" data-event-opts="{{[ [ 'input',[ [ 'changeKeyword',['$event'] ] ] ],[ 'confirm',[ [ 'search',['$event'] ] ] ] ]}}" placeholder="按楼盘名字搜索" placeholderClass="textAssistFont28" type="search" value="{{keyword}}"></input>
+            </view>
+            <text bindtap="__e" class="textAssistFont28 data-v-597c835c" data-event-opts="{{[ [ 'tap',[ [ 'search',['$event'] ] ] ] ]}}">搜索</text>
+        </view>
+        <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-597c835c" data-event-opts="{{[ [ '^change',[ ['changeFilter'] ] ],[ '^toggleFilter',[ ['toggleFilter'] ] ] ]}}" decoration="{{decoration}}" layout="{{layout}}" metro="{{metro}}" price="{{price}}" tabs="{{['区域','价格','面积','装修']}}" total_price="{{total_price}}" vueId="b3836f84-2" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}"></top-filter>
+    </view>
+</view>

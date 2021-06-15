@@ -1,0 +1,28 @@
+.share ._img,.small-share-btn ._img {
+    display: inline-block;
+    width: 30rpx;
+    height: 26rpx;
+    vertical-align: middle;
+}
+
+.share {
+    background-color: #00b08d;
+}
+
+.small-share-btn {
+    width: 144rpx;
+    height: 60rpx;
+    border: 0;
+    line-height: 60rpx!important;
+    text-align: center!important;
+    font-size: 26rpx!important;
+    background-color: #fce9e6!important;
+    color: #f55831!important;
+    border-radius: 30rpx!important;
+}
+
+.small-share-btn ._img {
+    width: 30rpx;
+    height: 26rpx;
+    vertical-align: middle;
+}

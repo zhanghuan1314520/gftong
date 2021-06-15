@@ -1,0 +1,137 @@
+<view class="_div data-v-15725c28">
+    <view class="consult-rule-section _section data-v-15725c28">
+        <view class="_h3 data-v-15725c28">{{'入驻'+VUE_APP_NAME+'的优势：'}}</view>
+        <view class="_ul data-v-15725c28">
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">1</view>
+                <label class="_span data-v-15725c28">在小程序首页、楼盘详情页、楼盘评论区、通知消息中为入驻置业顾问进行展示，获取源源不断的客流！</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">2</view>
+                <label class="_span data-v-15725c28">通过活跃度来进行置业顾问推荐，合作越紧密，推荐次数越多，范围越广；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">3</view>
+                <label class="_span data-v-15725c28">为每一位置业顾问提供一个公平、公正、公开的环境；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">4</view>
+                <label class="_span data-v-15725c28" wx:if="{{customer_service_info}}">{{''+VUE_APP_NAME+'为置业顾问提供专属的客服，微信号“'+customer_service_info.wx_username+'”。'}}<navigator bindtap="__e" class="link _a data-v-15725c28" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制</navigator>
+                </label>
+            </view>
+        </view>
+    </view>
+    <view class="consult-rule-section _section data-v-15725c28">
+        <view class="_h3 data-v-15725c28">置业顾问排名规则：</view>
+        <view class="_ul data-v-15725c28">
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">1</view>
+                <label class="_span data-v-15725c28">{{VUE_APP_NAME+'致力于为置业顾问提供一个公平、公正、公开的沟通平台；'}}</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">2</view>
+                <label class="_span data-v-15725c28">依据置业顾问活跃度进行排名，使用平台越多、越活跃的置业顾问排名越靠前；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">3</view>
+                <label class="_span data-v-15725c28">最近30个自然日的积分总和为置业顾问活跃度，根据活跃度数值依次从高到低排序，数值越高排名越靠前。相同活跃度的置业顾问注册时间靠前的排名靠前；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">4</view>
+                <label class="_span data-v-15725c28">活跃度达到100成为银牌置业顾问；活跃度达到500成为金牌置业顾问。每日置业顾问的等级，会根据活跃度进行金牌、银牌、铜牌的变化。</label>
+            </view>
+        </view>
+    </view>
+    <view class="consult-rule-section _section data-v-15725c28">
+        <view class="_h3 data-v-15725c28">积分规则：</view>
+        <view class="_ul data-v-15725c28">
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">1</view>
+                <label class="_span data-v-15725c28">关注公众号“杭州置业顾问之家”并绑定，+50积分，关注后可实时接收客户咨询、客户来电、预留电话等。<navigator class="link _a data-v-15725c28" url="/pages/packageA/consultant_home/main">点击获取公众号二维码；</navigator>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">2</view>
+                <label class="_span data-v-15725c28">转发小程序任意一页（楼盘、户型、介绍页均可）到微信群或分享小程序自动生成的带有置业顾问专属二维码的海报到朋友圈，老用户点击打开页面一次+1个积分，每日最多+20积分，系统自动增加；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">3</view>
+                <label class="_span data-v-15725c28">
+                    <view class="_div data-v-15725c28">转发小程序任意一页（楼盘页、户型图、房友圈文章均可）到微信群或分享小程序自动生成的带有置业顾问专属二维码的海报到朋友圈，新用户（七天内未曾打开过杭州购房通小程序的用户）点击打开页面一个用户+2个积分，每日最多+500积分，系统自动增加；</view>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">4</view>
+                <label class="_span data-v-15725c28">
+                    <view class="_div data-v-15725c28">新用户加分奖励：当日新用户加分达到2分，奖励+5积分；当日新用户加分达到20分，奖励+10积分；当日新用户加分达到50分，奖励+15积分</view>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">5</view>
+                <label class="_span data-v-15725c28">{{'分享指定图片到朋友圈，不分组、不删除，+10积分，指定图片向置业顾问专属客服获取，微信号“'+customer_service_info.wx_username+'”。'}}<navigator bindtap="__e" class="link _a data-v-15725c28" data-event-opts="{{[ [ 'tap',[ [ 'copyWeixin',['$event'] ] ] ] ]}}">复制</navigator>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">6</view>
+                <label class="_span data-v-15725c28">平台没有的新楼盘，提供名字、区域、开发商名称等完整资料，并被平台采纳，+40分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">7</view>
+                <label class="_span data-v-15725c28">提供楼盘户型图、意境图、效果图、鸟瞰图、总平图、实拍图，并被平台采纳，每一张+5积分；提供楼盘封面视频，并被平台采纳，+10积分；提供楼盘语音讲解素材，并被平台采纳，每条语音+20积分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">8</view>
+                <label class="_span data-v-15725c28">提供楼盘详情、简介、最新动态，并被平台采纳，+20积分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">9</view>
+                <label class="_span data-v-15725c28">楼盘信息纠错，并被平台采纳，+10积分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">10</view>
+                <label class="_span data-v-15725c28">邀请杭州购房通官方客服号入活跃地产群（100人以上），每拉入一个群+10分</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">11</view>
+                <label class="_span data-v-15725c28">公众号或公证处公示前提供楼盘登记公示/摇号结果，EXCEL表格格式，+100分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">12</view>
+                <label class="_span data-v-15725c28">邀请同楼盘或其他楼盘置业顾问入驻成功，双方均加50积分，系统自动增加。<button class="link data-v-15725c28" openType="share">邀请好友入驻</button>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">13</view>
+                <label class="_span data-v-15725c28">推荐项目策划联系方式并成功添加，+50积分；</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">14</view>
+                <label class="_span data-v-15725c28">发现并向工作人员提出非本楼盘置业顾问在本楼盘入驻的，经工作人员核实确认后进行清理并+10积分/人。</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">15</view>
+                <label class="_span data-v-15725c28">积分兑换金币，会扣除积分，但是不会影响活跃度，不会影响置业顾问金、银、铜牌等级，不会影响置业顾问排名。</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">16</view>
+                <label class="_span data-v-15725c28">为保证公平、公正、公开的展示环境，平台一旦发现置业顾问存在恶意刷取积分等违规行为，除扣除作弊所得积分以外，还会额外惩罚性扣除一定积分，如多次作弊平台有权采取包括但不限于下架置业顾问、下架置业顾问所在楼盘等措施进行处罚。</label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">17</view>
+                <label class="_span data-v-15725c28">平台判断作弊规则：置业顾问引流加分中存在大量未授权用户、或引流加分的用户昵称存在明显作弊特征、或引流加分的用户昵称存在明显作弊规律；同时为了打击作弊行为，通过摄像头扫小程序码的用户不加分。<view class="_strong data-v-15725c28">周末及法定假期存在作弊刷分，将扣除双倍作弊积分。</view>
+                </label>
+            </view>
+            <view class="_li data-v-15725c28">
+                <view class="_i data-v-15725c28">18</view>
+                <label class="_span data-v-15725c28">{{VUE_APP_NAME+'对积分、排名规则具有最终解释权。'}}</label>
+            </view>
+        </view>
+    </view>
+    <view class="consult-rule-section _section data-v-15725c28">
+        <view class="_h3 data-v-15725c28">置业顾问专属客服怎么联系？</view>
+        <view class="_li data-v-15725c28">
+            <label class="_span data-v-15725c28" wx:if="{{customer_service_info}}">{{VUE_APP_NAME+'为置业顾问提供专属的客服，微信号“'+customer_service_info.wx_username+'”。'}}<navigator bindtap="__e" class="link _a data-v-15725c28" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制</navigator>
+            </label>
+        </view>
+    </view>
+</view>

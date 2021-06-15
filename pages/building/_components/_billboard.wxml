@@ -1,0 +1,7 @@
+<view bindtap="__e" class="{{[ 'billboard-wrap _div data-v-1102b979',[!show?'hide':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}">
+    <view class="billboard data-v-1102b979">
+        <image catchtap="__e" class="billboard-img data-v-1102b979" data-event-opts="{{[ [ 'tap',[ [ 'tapBillboard',['$event'] ] ] ] ]}}" mode="widthFix" src="{{tmp_img_path}}"></image>
+        <view class="billboard-success-tip data-v-1102b979" wx:if="{{show_success}}"></view>
+    </view>
+    <billboard-canvas bind:__l="__l" bind:drawComplete="__e" bind:success="__e" class="data-v-1102b979" consultant="{{consultant}}" currrent_house="{{currrent_house}}" data-event-opts="{{[ [ '^drawComplete',[ ['drawComplete'] ] ],[ '^success',[ ['saveImgSuccess'] ] ] ]}}" events="{{events}}" house="{{house}}" info="{{info}}" is_building_consultant="{{is_building_consultant}}" show="{{show}}" show_720="{{show_720}}" show_planar_graph="{{show_planar_graph}}" show_vr="{{show_vr}}" vueId="7887dd4c-1"></billboard-canvas>
+</view>

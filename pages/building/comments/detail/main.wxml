@@ -1,0 +1,72 @@
+<view class="page _div data-v-1157a14e">
+    <view bindtap="__e" class="_header data-v-1157a14e" data-event-opts="{{[ [ 'tap',[ [ 'onConsult',['$event'] ] ] ] ]}}" data-id="{{comment.consultant_id}}" data-waid="{{comment.weixin_account_id}}">
+        <view class="comment _div data-v-1157a14e">
+            <view class="headimg-wrap data-v-1157a14e">
+                <image class="headimg _img data-v-1157a14e" lazyLoad="{{true}}" src="{{comment.headimgurl}}"></image>
+                <text class="big-v data-v-1157a14e" wx:if="{{comment.weixin_account_id}}"></text>
+            </view>
+            <view class="right _div data-v-1157a14e">
+                <view class="name-wrap _div data-v-1157a14e">
+                    <label class="{{['nickname _span data-v-1157a14e',comment.consultant_id||comment.weixin_account_id?'consult':'']}}">
+                        <label class="_span data-v-1157a14e">{{comment.nickname||'匿名用户'}}</label>
+                        <label class="contact _span data-v-1157a14e" wx:if="{{comment.weixin_account_id}}">点击联系</label>
+                    </label>
+                </view>
+                <view class="content _p data-v-1157a14e">{{comment.content}}</view>
+                <view class="content-img data-v-1157a14e" wx:if="{{comment.photos_urls.length}}">
+                    <image catchtap="__e" class="_img data-v-1157a14e" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" mode="aspectFill" src="{{comment.photos_urls[0]}}"></image>
+                </view>
+                <weixin-username bind:__l="__l" class="data-v-1157a14e" name="{{comment.official_wx_username}}" vueId="732e7350-1"></weixin-username>
+                <view class="footer data-v-1157a14e">
+                    <text class="noteFont22 data-v-1157a14e">{{comment.created_date}}</text>
+                    <view catchtap="__e" class="footer-right data-v-1157a14e" data-event-opts="{{[ [ 'tap',[ [ 'stopClick',['$event'] ] ] ] ]}}">
+                        <view bindtap="__e" class="{{[ 'like-btn moreFont24 data-v-1157a14e',[comment.is_liked?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onLike',['$event'] ] ] ] ]}}" data-id="{{comment.id}}" data-index="{{index}}">
+                            <fc-icon bind:__l="__l" class="data-v-1157a14e" type="{{comment.is_liked?'48_like_actions':'48_like_normal'}}" vueId="732e7350-2"></fc-icon>
+                            <text class="data-v-1157a14e">{{like_count}}</text>
+                        </view>
+                        <button bindgetuserinfo="__e" class="comment-btn shadow-button data-v-1157a14e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReply',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:if="{{comment.can_reply}}">
+                            <fc-icon bind:__l="__l" class="data-v-1157a14e" type="48_comment_small" vueId="732e7350-3"></fc-icon>
+                        </button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="reply-wrap _div data-v-1157a14e" wx:if="{{reply_total_count}}">
+        <view class="_h3 data-v-1157a14e">{{'全部回复('+reply_total_count+')'}}</view>
+        <view bindtap="__e" class="comment _div data-v-1157a14e" data-event-opts="{{[ [ 'tap',[ [ 'onConsult',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" data-waid="{{item.weixin_account_id}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="headimg-wrap data-v-1157a14e">
+                <image class="headimg _img data-v-1157a14e" lazyLoad="{{true}}" src="{{item.headimgurl}}"></image>
+                <text class="big-v data-v-1157a14e" wx:if="{{weixin_account_id.weixin_account_id}}"></text>
+            </view>
+            <view class="right _div data-v-1157a14e">
+                <view class="name-wrap _div data-v-1157a14e">
+                    <button bindgetuserinfo="__e" class="nickname shadow-button data-v-1157a14e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReply',['$event'] ] ] ] ]}}" data-index="{{i}}" openType="getUserInfo" wx:if="{{!item.consultant_id}}">
+                        <label class="_span data-v-1157a14e">{{item.nickname}}</label>
+                        <label class="_span data-v-1157a14e" wx:if="{{item.parent_username}}">
+                            <view class="_i data-v-1157a14e">回复</view>{{''+item.parent_username+''}}</label>：</button>
+                    <label class="nickname _span data-v-1157a14e" wx:else>
+                        <label class="consult _span data-v-1157a14e">{{item.nickname}}</label>
+                        <label class="_span data-v-1157a14e" wx:if="{{item.parent_username}}">
+                            <view class="_i data-v-1157a14e">回复</view>
+                            <label class="_span data-v-1157a14e">{{item.parent_username}}</label>：</label>
+                    </label>
+                </view>
+                <view class="content _p data-v-1157a14e">{{item.content}}</view>
+                <view class="footer data-v-1157a14e">
+                    <text class="noteFont22 data-v-1157a14e">{{item.created_date}}</text>
+                    <view catchtap="__e" class="footer-right data-v-1157a14e" data-event-opts="{{[ [ 'tap',[ [ 'stopClick',['$event'] ] ] ] ]}}">
+                        <button bindgetuserinfo="__e" class="comment-btn shadow-button data-v-1157a14e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReply',['$event'] ] ] ] ]}}" data-index="{{i}}" openType="getUserInfo">
+                            <fc-icon bind:__l="__l" class="data-v-1157a14e" type="48_comment_small" vueId="{{'732e7350-4-'+i}}"></fc-icon>
+                        </button>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <loading bind:__l="__l" class="data-v-1157a14e" vueId="732e7350-5" wx:if="{{loading||!no_more}}"></loading>
+    </view>
+    <input-dlg bind:__l="__l" bind:changeComments="__e" bind:hide="__e" class="data-v-1157a14e" data-event-opts="{{[ [ '^changeComments',[ ['changeComment'] ] ],[ '^hide',[ ['hideReply'] ] ] ]}}" reply_item="{{comment}}" reply_user="{{reply_user}}" show="{{show_reply}}" vueId="732e7350-6"></input-dlg>
+    <comment-footer bind:__l="__l" bind:goComment="__e" class="data-v-1157a14e" data-event-opts="{{[ [ '^goComment',[ ['goComment'] ] ] ]}}" vueId="732e7350-7"></comment-footer>
+    <comment-tip bind:__l="__l" bind:hide="__e" class="data-v-1157a14e" contents="{{msg_box.contents}}" copy_text="{{msg_box.copy_text}}" data-event-opts="{{[ [ '^hide',[ ['hideCommentTip'] ] ] ]}}" show="{{show_comment_tip}}" vueId="732e7350-8"></comment-tip>
+    <page-wrap bind:__l="__l" class="data-v-1157a14e" title="{{title}}" vueId="732e7350-9"></page-wrap>
+</view>

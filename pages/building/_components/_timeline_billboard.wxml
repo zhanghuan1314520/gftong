@@ -1,0 +1,25 @@
+<view class="timeline-wrap data-v-c9abbd40">
+    <view class="brand data-v-c9abbd40"></view>
+    <view class="billboard data-v-c9abbd40">
+        <view class="headimg-wrap data-v-c9abbd40">
+            <view class="icon-720 data-v-c9abbd40" wx:if="{{cover_720}}"></view>
+            <common-img bind:__l="__l" class="headimg data-v-c9abbd40" mode="aspectFill" src="{{headimg}}" vueId="26bbb43c-1"></common-img>
+        </view>
+        <view class="header data-v-c9abbd40">
+            <view class="strong data-v-c9abbd40">{{name}}</view>
+            <view class="tag data-v-c9abbd40" wx:if="{{status}}">{{status}}</view>
+        </view>
+        <view class="address data-v-c9abbd40" wx:if="{{!layout_type}}">
+            <fc-icon bind:__l="__l" class="i data-v-c9abbd40" type="40_address_grey" vueId="26bbb43c-2"></fc-icon>
+            <text class="data-v-c9abbd40">{{location_desc}}</text>
+        </view>
+        <view class="price data-v-c9abbd40" wx:if="{{price.length}}">
+            <view class="data-v-c9abbd40" wx:for="{{price}}" wx:for-index="i">{{item}}</view>
+        </view>
+        <view class="layout data-v-c9abbd40" wx:if="{{layout_type}}">
+            <view class="data-v-c9abbd40" wx:if="{{layout_description}}">{{layout_description}}</view>
+            <view class="data-v-c9abbd40" wx:if="{{layout_area}}">{{'户型建面：'+layout_area}}</view>
+        </view>
+    </view>
+    <image class="tip data-v-c9abbd40" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/common-icons/timeline-guide.png"></image>
+</view>

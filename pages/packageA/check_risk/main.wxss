@@ -1,0 +1,18 @@
+.share-btn.data-v-5c38ef22 {
+    position: fixed;
+    right: 32rpx;
+    bottom: 286rpx;
+    width: 112rpx;
+    height: 112rpx;
+}
+
+.share-btn button.data-v-5c38ef22 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.share-btn cover-image.data-v-5c38ef22 {
+    width: 100%;
+    height: 100%;
+}

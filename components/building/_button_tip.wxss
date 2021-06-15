@@ -1,0 +1,42 @@
+.button-tip.data-v-e7b35baa {
+    position: absolute;
+    width: 288rpx;
+    height: 120rpx;
+    padding: 25rpx;
+    right: 0;
+    top: -128rpx;
+    background-color: #fa543e;
+    box-shadow: 0 2rpx 4rpx 0 rgba(250,84,62,.2);
+    line-height: 1.5em;
+    color: #fff;
+    font-size: 24rpx;
+    z-index: 99;
+    border-radius: 3rpx;
+}
+
+.button-tip.data-v-e7b35baa::after {
+    content: "";
+    position: absolute;
+    bottom: -8rpx;
+    right: 30rpx;
+    width: 0;
+    height: 0;
+    border: 16rpx solid transparent;
+    border-top-color: #fa543e;
+    border-width: 16rpx 15rpx 0;
+}
+
+.button-tip .close-btn.data-v-e7b35baa {
+    position: absolute;
+    top: 8rpx;
+    right: 8rpx;
+    width: 36rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    text-align: center;
+}
+
+.button-tip .close-btn ._img.data-v-e7b35baa {
+    width: 20rpx;
+    height: 20rpx;
+}

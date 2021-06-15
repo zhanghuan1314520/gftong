@@ -1,0 +1,27 @@
+<view class="page _div">
+    <view class="weixin-release _div">
+        <button class="circle-share" openType="share">
+            <image class="_img" src="/static/img/circle-share.png"></image>
+        </button>
+        <view class="_header" wx:if="{{weixin.qrcode_url&&weixin.introduce}}">
+            <image bindtap="__e" class="qrcode _img" data-event-opts="{{[ [ 'tap',[ [ 'perviewQr',['$event'] ] ] ] ]}}" lazyLoad="{{true}}" src="{{weixin.qrcode_url}}"></image>
+            <view class="info _div">
+                <view class="detail _p">{{weixin.introduce}}</view>
+                <view bindtap="__e" class="tip _p" data-event-opts="{{[ [ 'tap',[ [ 'perviewQr',['$event'] ] ] ] ]}}">点击图片长按识别关注</view>
+            </view>
+        </view>
+        <view class="list _ul">
+            <view class="_li" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                <form bindsubmit="__e" data-event-opts="{{[ [ 'submit',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-link="{{item.link}}" data-title="{{item.title}}">
+                    <button class="shadow-button" formType="submit">
+                        <image class="_img" lazyLoad="{{true}}" src="{{item.image}}"></image>
+                        <view class="_div">{{''+item.title+''}}<view class="_p">{{item.date}}</view>
+                        </view>
+                    </button>
+                </form>
+            </view>
+        </view>
+        <loading bind:__l="__l" vueId="61a644e5-1" wx:if="{{loading}}"></loading>
+    </view>
+    <page-wrap bind:__l="__l" title="{{name}}" vueId="61a644e5-2"></page-wrap>
+</view>

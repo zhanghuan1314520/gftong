@@ -1,0 +1,66 @@
+.row.data-v-616c48e8 {
+    padding: 0 30rpx;
+    margin: 20rpx 0;
+    background-color: #fff;
+    font-size: 28rpx;
+}
+
+.navigator-arrow.data-v-616c48e8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 34rpx 30rpx;
+}
+
+picker.data-v-616c48e8 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: right;
+}
+
+label.data-v-616c48e8 {
+    color: #111;
+}
+
+.item.data-v-616c48e8 {
+    display: block;
+    padding: 22rpx 0 16rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+input.data-v-616c48e8 {
+    height: auto;
+    line-height: 40rpx;
+    padding: 20rpx 0 50rpx;
+}
+
+textarea.data-v-616c48e8 {
+    display: block;
+    width: 100%;
+    padding: 20rpx 0;
+    height: 128rpx;
+    box-sizing: border-box;
+}
+
+.content.data-v-616c48e8 {
+    height: 280rpx;
+}
+
+.consult-rule-section.data-v-616c48e8 {
+    margin-top: 20rpx;
+}
+
+.consult-rule-section ._h3.data-v-616c48e8 {
+    font-size: 26rpx;
+    font-weight: 700;
+    color: #c8a73b;
+}
+
+.form-uploader.data-v-616c48e8 {
+    padding-left: 0;
+    padding-right: 0;
+}

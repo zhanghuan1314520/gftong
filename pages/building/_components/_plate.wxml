@@ -1,0 +1,6 @@
+<view bindtap="__e" class="wrap _div data-v-0e1938e6" data-event-opts="{{[ [ 'tap',[ [ 'openDetail',['$event'] ] ] ] ]}}" wx:if="{{plate&&plate.name}}">
+    <view class="inner _div data-v-0e1938e6">
+        <view class="left _div data-v-0e1938e6">{{'该楼盘位于'+plate.name+'板块，看看板块评分'}}</view>
+        <view class="btn _div data-v-0e1938e6">去看看</view>
+    </view>
+</view>

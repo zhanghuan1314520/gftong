@@ -1,0 +1,16 @@
+.page.data-v-4514416a {
+    min-height: 100vh;
+    padding-top: 326rpx;
+    background-color: #fff;
+}
+
+.map-entry.data-v-4514416a {
+    width: 690rpx;
+    height: 128rpx;
+    margin: 20rpx auto;
+}
+
+.map-entry ._img.data-v-4514416a {
+    width: 100%;
+    height: 100%;
+}

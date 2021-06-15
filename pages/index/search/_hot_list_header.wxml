@@ -1,0 +1,10 @@
+<view class="nav _div data-v-037f1102">
+    <view class="left _div data-v-037f1102">
+        <image class="_img data-v-037f1102" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/hot-list-title.png"></image>
+        <text clas="time" class="data-v-037f1102">{{time}}</text>
+    </view>
+    <view bindtap="__e" class="see-more _div data-v-037f1102" data-event-opts="{{[ [ 'tap',[ [ 'getMore',['$event'] ] ] ] ]}}">
+        <text class="data-v-037f1102">查看更多</text>
+        <fc-icon bind:__l="__l" class="data-v-037f1102" type="32_more" vueId="70176ef0-1"></fc-icon>
+    </view>
+</view>

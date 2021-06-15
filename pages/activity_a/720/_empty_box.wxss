@@ -1,0 +1,35 @@
+.empty-state.data-v-4df5bf55 {
+    width: 100%;
+    text-align: center;
+}
+
+.empty-state ._img.data-v-4df5bf55 {
+    background-position: 50%;
+    overflow: hidden;
+}
+
+.empty-state .empty_building.data-v-4df5bf55 {
+    width: 218rpx;
+    height: 224rpx;
+}
+
+.empty-state ._p.data-v-4df5bf55 {
+    font-size: 28rpx;
+    color: #888;
+    text-align: center;
+    margin-top: 32rpx;
+}
+
+.more-btn.data-v-4df5bf55 {
+    width: 440rpx;
+    height: 88rpx;
+    background: #00b08d;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,176,141,.2);
+    border-radius: 44rpx;
+    font-size: 32rpx;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 88rpx;
+    margin: 32rpx auto;
+}

@@ -1,0 +1,112 @@
+.page.data-v-3f8d8f70 {
+    min-height: 100vh;
+    padding: 24rpx 32rpx;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#00b08d),color-stop(71%,#008a85),color-stop(85%,#008a85));
+    background-image: linear-gradient(180deg,#00b08d,#008a85 71%,#008a85 85%);
+}
+
+.main.data-v-3f8d8f70 {
+    padding: 40rpx;
+    background-color: #fff;
+    border-radius: 14rpx;
+}
+
+.top.data-v-3f8d8f70 {
+    padding-bottom: 48rpx;
+    border-bottom: 1rpx solid #00ab87;
+}
+
+.title.data-v-3f8d8f70 {
+    width: 600rpx;
+    height: 56rpx;
+    margin: 0 auto;
+}
+
+.title ._img.data-v-3f8d8f70 {
+    width: 100%;
+    height: 100%;
+}
+
+.wx-wrap.data-v-3f8d8f70 {
+    position: relative;
+    width: 348rpx;
+    height: 359rpx;
+    margin: 36rpx auto;
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/personal_package/group_assistant/border.png);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.wx-wrap ._img.data-v-3f8d8f70 {
+    display: block;
+    width: 300rpx;
+    height: 300rpx;
+    margin: 0 auto;
+}
+
+.wx-wrap .name.data-v-3f8d8f70 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.btn.data-v-3f8d8f70 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 480rpx;
+    height: 88rpx;
+    margin-top: 40rpx;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32rpx;
+    border-radius: 44rpx;
+    background-color: #00b08d;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,176,141,.2);
+}
+
+.add-btn.data-v-3f8d8f70,.highlight.data-v-3f8d8f70 {
+    color: #00b08d;
+}
+
+.footer.data-v-3f8d8f70 {
+    padding-top: 40rpx;
+}
+
+.footer .add-btn.data-v-3f8d8f70 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 20rpx;
+    height: 20rpx;
+    border: 1rpx solid #00b08d;
+    border-radius: 50%;
+    font-size: 16rpx;
+    font-weight: 700;
+}
+
+.footer .highlight.data-v-3f8d8f70 {
+    font-weight: 700;
+}
+
+.footer ._img.data-v-3f8d8f70 {
+    width: 640rpx;
+    height: 399rpx;
+    margin: 16rpx auto;
+}

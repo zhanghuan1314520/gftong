@@ -1,0 +1,1 @@
+<personal-section bind:__l="__l" className="normal" tabs="{{tabs}}" title="常用工具" vueId="39950395-1"></personal-section>

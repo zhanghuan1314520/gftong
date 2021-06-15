@@ -1,0 +1,30 @@
+<view class="page _div data-v-09076dac">
+    <form bindsubmit="__e" class="normal-form data-v-09076dac" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="_h3 data-v-09076dac">{{title}}</view>
+        <view class="content _div data-v-09076dac">
+            <view class="row _div data-v-09076dac">
+                <label class="data-v-09076dac">姓名</label>
+                <input class="data-v-09076dac" name="nickname" placeholder="如:张三" type="text"></input>
+            </view>
+            <view class="row _div data-v-09076dac">
+                <label class="data-v-09076dac">编码</label>
+                <input class="data-v-09076dac" name="ln_number" placeholder="如:B01234" type="text"></input>
+            </view>
+        </view>
+        <button class="large-btn confirm-btn data-v-09076dac" formType="submit">确定</button>
+    </form>
+    <view class="_div data-v-09076dac" wx:if="{{showBind}}">
+        <view bindtap="__e" class="overlay _div data-v-09076dac" data-event-opts="{{[ [ 'tap',[ [ 'toggleBind',['$event'] ] ] ] ]}}"></view>
+        <view class="add-dlg _div data-v-09076dac">
+            <view class="header _div data-v-09076dac">绑定身份信息</view>
+            <view class="content _div data-v-09076dac">
+                <view class="_p data-v-09076dac">绑定身份信息可方便获取楼盘审核状态、摇号结果</view>
+            </view>
+            <view class="bottom _div data-v-09076dac">
+                <button bindtap="__e" class="cancel-btn data-v-09076dac" data-event-opts="{{[ [ 'tap',[ [ 'toggleBind',['$event'] ] ] ] ]}}">取消</button>
+                <button bindtap="__e" class="confirm-btn data-v-09076dac" data-event-opts="{{[ [ 'tap',[ [ 'confirmBind',['$event'] ] ] ] ]}}">确定</button>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-09076dac" title="绑定编码" vueId="a261e2a6-1"></page-wrap>
+</view>

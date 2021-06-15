@@ -1,0 +1,12 @@
+<form bindsubmit="__e" class="data-v-1146da18" data-event-opts="{{[ [ 'submit',[ [ 'onSearch',['$event'] ] ] ] ]}}">
+    <view class="search-wrap _div data-v-1146da18">
+        <view class="input-wrap _div data-v-1146da18">
+            <fc-icon bind:__l="__l" class="data-v-1146da18" type="32_search" vueId="0bdfdcd3-1"></fc-icon>
+            <input bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="data-v-1146da18" confirmType="search" data-event-opts="{{[ [ 'input',[ [ 'onChange',['$event'] ] ] ],[ 'focus',[ [ 'onFocus',['$event'] ] ] ],[ 'blur',[ [ 'onBlur',['$event'] ] ] ],[ 'confirm',[ [ 'onSearch',['$event'] ] ] ] ]}}" name="keyword" placeholder="{{placeholder}}" placeholderClass="textAssistFont28" type="search" value="{{keyword}}"></input>
+            <view bindtap="__e" class="remove _div data-v-1146da18" data-event-opts="{{[ [ 'tap',[ [ 'clearInput',['$event'] ] ] ] ]}}" wx:if="{{keyword.length}}">
+                <image class="_img data-v-1146da18" src="/static/img/input-remove.png"></image>
+            </view>
+        </view>
+        <button class="{{[ 'data-v-1146da18',[focus?'active':''] ]}}" formType="submit">搜索</button>
+    </view>
+</form>

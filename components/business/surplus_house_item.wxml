@@ -1,0 +1,38 @@
+<view catchtap="__e" class="{{['item _div data-v-2ea34bfe',classname]}}" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <img-wrap bind:__l="__l" class="data-v-2ea34bfe" item="{{item}}" vueId="9e24b34a-1"></img-wrap>
+    <view class="content _div data-v-2ea34bfe">
+        <view class="{{[ 'content-main _div data-v-2ea34bfe',[center&&!item.building_ranking?'center':''] ]}}">
+            <view class="top _div data-v-2ea34bfe">
+                <view class="building-desc-title _h3 data-v-2ea34bfe">{{item.name}}</view>
+                <label class="_span data-v-2ea34bfe" wx:if="{{item.surplus_count_desc}}">{{item.surplus_count_desc}}</label>
+            </view>
+            <view class="detail _div data-v-2ea34bfe">
+                <label class="_span data-v-2ea34bfe">{{item.zone}}</label>
+                <label class="_span data-v-2ea34bfe" wx:if="{{item.zone_section}}">{{'-'+item.zone_section}}</label>
+            </view>
+            <view class="bottom _div data-v-2ea34bfe">
+                <label class="{{[ 'building-desc-price _span data-v-2ea34bfe',[item.price_desc_arr.length>1?'small':''] ]}}">
+                    <view class="_div data-v-2ea34bfe" wx:for="{{item.price_desc_arr}}" wx:for-index="i" wx:for-item="price" wx:key="i">{{price}}</view>
+                </label>
+                <view catchtap="__e" class="comment-show _div data-v-2ea34bfe" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count?'inline-flex':'none')+';'}}" wx:if="{{!center}}">
+                    <fc-icon bind:__l="__l" class="data-v-2ea34bfe" type="40_comment_small" vueId="9e24b34a-2"></fc-icon>
+                    <label class="_span data-v-2ea34bfe">{{item.comment_count}}</label>
+                </view>
+            </view>
+            <view class="tags _div data-v-2ea34bfe">
+                <view class="tags-overflow _div data-v-2ea34bfe">
+                    <label class="{{['tag _span data-v-2ea34bfe',tag.tag_class]}}" wx:for="{{item.tags}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{tag.name}}</label>
+                </view>
+                <view catchtap="__e" class="comment-show comment-bottom _div data-v-2ea34bfe" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count?'inline-flex':'none')+';'}}" wx:if="{{center}}">
+                    <fc-icon bind:__l="__l" class="data-v-2ea34bfe" type="40_comment_small" vueId="9e24b34a-3"></fc-icon>
+                    <label class="_span data-v-2ea34bfe">{{item.comment_count}}</label>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view catchtap="__e" class="tips _div data-v-2ea34bfe" data-event-opts="{{[ [ 'tap',[ [ 'closeTip',['$event'] ] ] ] ]}}" wx:if="{{item.show_surplus_count_desc_tip&&showTip}}">
+        <view class="tx _div data-v-2ea34bfe">{{item.surplus_count_desc}}</view>
+        <image class="_img data-v-2ea34bfe" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/tips.png"></image>
+        <view class="mask _div data-v-2ea34bfe"></view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+.page-box.data-v-3cca96b1 {
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.page.data-v-3cca96b1 {
+    background-color: #fff;
+    min-height: calc(100vh - 124rpx);
+}

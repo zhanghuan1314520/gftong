@@ -1,0 +1,3 @@
+<view class="video _div data-v-09047c7b">
+    <video autoplay="{{true}}" class="data-v-09047c7b" poster="{{video_cover_photo_url}}" src="{{src}}"></video>
+</view>

@@ -1,0 +1,3 @@
+<view class="loading _div">
+    <view class="typing_loader _div"></view>
+</view>

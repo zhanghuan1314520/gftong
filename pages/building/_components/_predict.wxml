@@ -1,0 +1,22 @@
+<view bindtap="__e" class="predict _div data-v-2393b06c" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" wx:if="{{predict_time}}">
+    <view class="precision _div data-v-2393b06c" wx:if="{{register_predict_precision}}">
+        <view class="_em data-v-2393b06c">精准度</view>
+        <label class="_span data-v-2393b06c">{{register_predict_precision+'%'}}</label>
+    </view>
+    <view class="header _div data-v-2393b06c">
+        <view class="left _div data-v-2393b06c">
+            <view class="time _div data-v-2393b06c">
+                <label class="_span data-v-2393b06c" wx:if="{{register_predict_precision}}">登记结束</label>
+                <label class="_span data-v-2393b06c" wx:else>截至目前</label>
+                <view class="_i data-v-2393b06c">{{date+' '+time}}</view>
+            </view>
+            <view class="num _div data-v-2393b06c">预计<label class="_span data-v-2393b06c">{{predict_registers}}</label>人报名</view>
+        </view>
+        <view class="right _div data-v-2393b06c">
+            <label class="_span data-v-2393b06c" wx:if="{{register_predict_precision}}">预测已结束</label>
+            <label class="_span data-v-2393b06c" wx:else>预测进行中</label>
+            <navigator class="_a data-v-2393b06c">查看趋势</navigator>
+        </view>
+    </view>
+    <view class="_p data-v-2393b06c">注：该数据由杭州购房通智能AI系统通过大数据预测得出，最终人数以官方数据为准。</view>
+</view>

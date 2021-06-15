@@ -1,0 +1,5 @@
+<view class="page data-v-3ff5678c">
+    <doing answered_questions="{{answered_questions}}" bind:__l="__l" bind:deleteQuestion="__e" bind:selectQuestion="__e" class="data-v-3ff5678c" current_question="{{current_question}}" data-event-opts="{{[ [ '^deleteQuestion',[ ['deleteQuestion'] ] ],[ '^selectQuestion',[ ['selectQuestion'] ] ] ]}}" query_desc="轻松了解房屋所有权人去世后，房屋继承的那些事" query_title="该查询器适用范围：杭州市" vueId="44dd6c9a-1" wx:if="{{!show_result}}"></doing>
+    <done answered_questions="{{answered_questions}}" bind:__l="__l" bind:reset="__e" class="data-v-3ff5678c" data-event-opts="{{[ [ '^reset',[ ['reset'] ] ] ]}}" desc="{{desc}}" result="{{result}}" vueId="44dd6c9a-2" wx:else></done>
+    <page-wrap bind:__l="__l" class="data-v-3ff5678c" title="房屋继承查询" vueId="44dd6c9a-3"></page-wrap>
+</view>

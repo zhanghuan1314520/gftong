@@ -1,0 +1,27 @@
+.tabs.data-v-daf2fb00 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 580rpx;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tabs>._li.data-v-daf2fb00 {
+    height: 100%;
+    font-size: 28rpx;
+    color: #444;
+    margin-right: 40rpx;
+    border-bottom: 4rpx solid transparent;
+}
+
+.tabs>._li.active.data-v-daf2fb00 {
+    font-size: 36rpx;
+    color: #00ad82;
+    border-color: #00ad82;
+}

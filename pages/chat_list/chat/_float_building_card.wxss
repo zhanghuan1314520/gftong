@@ -1,0 +1,51 @@
+.float-card.data-v-66e3da28 {
+    position: fixed;
+    left: 20rpx;
+    bottom: calc(152rpx + constant(safe-area-inset-bottom));
+    bottom: calc(152rpx + env(safe-area-inset-bottom));
+    width: 710rpx;
+    height: 148rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 11rpx 32rpx 10rpx 12rpx;
+    background: #fff;
+    box-shadow: 0 2rpx 4rpx 0 rgba(0,0,0,.06);
+    border-radius: 4rpx;
+    box-sizing: border-box;
+}
+
+.float-card .building.data-v-66e3da28,.float-card.data-v-66e3da28 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.float-card .building.data-v-66e3da28 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.float-card image.data-v-66e3da28 {
+    width: 197rpx;
+    height: 127rpx;
+    margin-right: 16rpx;
+    border-radius: 4rpx;
+}
+
+.float-card button.data-v-66e3da28 {
+    width: 135rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    margin: 0;
+    font-size: 24rpx;
+    color: #fff;
+    background-color: #00b08d;
+    border-radius: 4rpx;
+}

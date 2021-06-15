@@ -1,0 +1,125 @@
+<view class="page-box _div">
+    <view class="page loan-computer-page _div">
+        <tabs bind:__l="__l" bind:onChange="__e" data-event-opts="{{[ [ '^onChange',[ ['changeLoanType'] ] ] ]}}" type="{{loan_type}}" vueId="c3fd00e2-1"></tabs>
+        <view class="form-wrap _div">
+            <view class="row _div" wx:if="{{total_price}}">
+                <label class="label">贷款总额</label>
+                <view class="content _div">{{''+total_price+'\n          万'}}</view>
+            </view>
+            <view class="row _div" wx:if="{{total_price}}">
+                <label class="label">首付金额</label>
+                <view class="content _div">{{''+down_payment+'万'}}<view class="select _div">
+                        <view bindtap="__e" class="{{[ 'item _div',[item.key===selected_rate?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'selectDownPayment',['$event'] ] ] ] ]}}" data-key="{{item.key}}" wx:for="{{down_payment_select}}" wx:for-index="i" wx:key="i">{{item.text}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="row _div">
+                <label class="label">还款方式</label>
+                <view class="content navigator-arrow _div">
+                    <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'changeType',['$event'] ] ] ] ]}}" range="{{types}}" rangeKey="text" value="{{type_value}}">
+                        <view class="picker">{{types[type_value].text}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="row _div" wx:if="{{isBusiness||isCompose}}">
+                <label class="label">商贷总额</label>
+                <view class="content _div">
+                    <label class="large-input _span">
+                        <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','business_loan','$event',[] ] ] ] ] ]}}" placeholder="请输入商业贷款总额" type="number" value="{{business_loan}}"></input>万</label>
+                </view>
+            </view>
+            <view class="row _div" wx:if="{{isPublic||isCompose}}">
+                <label class="label">公积金贷款总额</label>
+                <view class="content _div">
+                    <label class="large-input _span">
+                        <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','public_loan','$event',[] ] ] ] ] ]}}" placeholder="请输入公积金贷款总额" type="number" value="{{public_loan}}"></input>万</label>
+                </view>
+            </view>
+            <view class="row _div">
+                <label class="label">按揭年数</label>
+                <view class="content navigator-arrow _div">
+                    <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'changeYear',['$event'] ] ] ] ]}}" range="{{years}}" start="{{currentDate}}" value="{{year_value}}">
+                        <view class="picker">{{year+'年('+year*12+'月)'}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="row _div">
+                <label class="label">首次还款日期</label>
+                <view class="content navigator-arrow _div">
+                    <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'changeFirstDate',['$event'] ] ] ] ]}}" mode="date">
+                        <view class="picker">{{from_date_show}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="_div" wx:if="{{isBusiness||isCompose}}">
+                <view class="row _div">
+                    <label bindtap="__e" class="label question-label" data-event-opts="{{[ [ 'tap',[ [ 'toggleLprTip',['$event'] ] ] ] ]}}">LPR</label>
+                    <view class="content lpr _div">
+                        <view class="_div">{{lpr+'%'}}</view>
+                        <view class="lpr-tip _div">{{lpr_remark}}</view>
+                    </view>
+                </view>
+                <view class="row _div">
+                    <label bindtap="__e" class="label question-label" data-event-opts="{{[ [ 'tap',[ [ 'toggleBusinessBasePointTip',['$event'] ] ] ] ]}}">基点</label>
+                    <view class="content _div">
+                        <label class="mini-input _span">
+                            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','business_base_point','$event',[] ] ] ] ] ]}}" type="digit" value="{{business_base_point}}"></input>BP(‱)</label>
+                    </view>
+                </view>
+            </view>
+            <view class="row _div" wx:if="{{isBusiness||isCompose}}">
+                <label class="label">商业利率</label>
+                <view class="content _div">
+                    <view class="_div">
+                        <view class="input-row formula _div">
+                            <label class="formula-left _span">{{''+lpr+'%'}}<view class="_i">+</view>{{''+(business_base_point||0)+'‱'}}</label>
+                            <view class="_i">=</view>
+                            <label class="_span">{{business_rate+'%'}}</label>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="row multi-row _div" wx:if="{{isPublic||isCompose}}">
+                <label class="label">公积金利率</label>
+                <view class="content multi-content _div">
+                    <view class="input-row _div">
+                        <label class="mini-input _span">
+                            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','public_base_rate','$event',[] ] ] ] ] ]}}" type="digit" value="{{public_base_rate}}"></input>%</label>
+                        <view class="_i">×</view>
+                        <label class="mini-input _span">
+                            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','public_multiple','$event',[] ] ] ] ] ]}}" type="digit" value="{{public_multiple}}"></input>倍</label>
+                        <view class="_i">=</view>{{''+public_rate+'%'}}</view>
+                    <view class="_p">{{'当前年限基准利率：公积金'+public_interest_rate.value+'%'}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="btn-wrap _div">
+            <button bindtap="__e" class="large-btn confirm-btn" data-event-opts="{{[ [ 'tap',[ [ 'computeResult',['$event'] ] ] ] ]}}">开始计算</button>
+        </view>
+        <view class="tools-page__bottom-link _div">
+            <navigator bindtap="__e" class="_a" data-event-opts="{{[ [ 'tap',[ [ 'knowLoan',['帮助'] ] ] ] ]}}" url="/pages/loan_computer/help">帮助</navigator>
+            <navigator bindtap="__e" class="_a" data-event-opts="{{[ [ 'tap',[ [ 'knowLoan',['了解贷款利率'] ] ] ] ]}}" url="/pages/loan_computer/loan_rate">了解贷款利率</navigator>
+        </view>
+        <tip-dlg bind:__l="__l" bind:toggleDlg="__e" content="自2019年10月8日起，新发放商业性个人住房贷款利率以最近一个月相应期限的贷款市场报价利率（简称 LPR）为定价基准加点形成。br 贷款市场报价利率（LPR）每月20日更新一次，可在中国人民银行查询。" data-event-opts="{{[ [ '^toggleDlg',[ ['toggleLprTip'] ] ] ]}}" show="{{show_lpr_tip}}" title="什么是LPR？" vueId="c3fd00e2-2"></tip-dlg>
+        <tip-dlg bind:__l="__l" bind:toggleDlg="__e" content="基点数值由贷款银行按照地区信贷政策要求和借款人综合情况确定，LPR+基点为最新商业利率。" data-event-opts="{{[ [ '^toggleDlg',[ ['toggleBusinessBasePointTip'] ] ] ]}}" show="{{show_busniess_base_point_tip}}" title="什么是基点？" vueId="c3fd00e2-3"></tip-dlg>
+        <page-wrap bind:__l="__l" hide_back_home="{{true}}" title="房贷计算" vueId="c3fd00e2-4"></page-wrap>
+    </view>
+    <view class="footer-booth adapt_bottom_origin" wx:if="{{footerCardType==='booth'}}">
+        <ui-consultant-booth bind:__l="__l" consultant="{{consultant_today_rankings[4]}}" pos="房贷计算器" vueId="c3fd00e2-5"></ui-consultant-booth>
+    </view>
+    <view class="sticky sticky-footer sticky-footer--contact" wx:if="{{footerCardType==='contact'}}">
+        <view>
+            <view class="account">
+                <view class="account-headimg">
+                    <image class="_img" src="{{current_personal_account.headimg}}"></image>
+                </view>
+                <view class="account-body">
+                    <view class="account-tit">{{contactSendMessage.personal.title}}</view>
+                    <view class="account-info">{{contactSendMessage.personal.content}}</view>
+                </view>
+            </view>
+            <identify-btn bind:__l="__l" text="{{contactSendMessage.personal.btn_text}}" vueId="c3fd00e2-6" wx:if="{{$root.m0}}"></identify-btn>
+            <button openType="contact" sendMessageImg="{{contactSendMessage.personal.msg_face}}" sendMessagePath="{{'/pages/check_condition/main?mediasourceid='+current_personal_account.id}}" showMessageCard="{{true}}" wx:else>{{contactSendMessage.personal.btn_text}}</button>
+        </view>
+    </view>
+</view>

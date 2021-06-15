@@ -1,0 +1,31 @@
+<view class="page data-v-5294956e">
+    <view class="bg data-v-5294956e"></view>
+    <view class="card data-v-5294956e">
+        <view class="card-o data-v-5294956e">
+            <view class="card-m data-v-5294956e">
+                <view class="flag data-v-5294956e">房屋权属查询结果</view>
+                <view class="result data-v-5294956e">{{result}}</view>
+                <view class="desc data-v-5294956e">{{desc}}</view>
+                <view class="btns data-v-5294956e">
+                    <button class="btn share-btn data-v-5294956e" openType="share">分享给朋友</button>
+                    <view bindtap="__e" class="btn reset-btn data-v-5294956e" data-event-opts="{{[ [ 'tap',[ [ '$emit',['reset'] ] ] ] ]}}">再查一次</view>
+                </view>
+            </view>
+        </view>
+        <view class="footer data-v-5294956e">
+            <view class="top data-v-5294956e"></view>
+            <view class="left data-v-5294956e">
+                <view class="data-v-5294956e">此结果仅供参考，请最终以实际办理结果为准</view>
+                <view class="data-v-5294956e">扫码我也要查<view class="icon data-v-5294956e">
+                        <view class="i data-v-5294956e"></view>
+                        <view class="i data-v-5294956e"></view>
+                        <view class="i data-v-5294956e"></view>
+                    </view>
+                </view>
+            </view>
+            <common-img bind:__l="__l" class="right data-v-5294956e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/dora/qr.png" vueId="bce19ec4-1"></common-img>
+        </view>
+    </view>
+    <selected-answers bind:__l="__l" class="data-v-5294956e" items="{{answered_questions}}" vueId="bce19ec4-2"></selected-answers>
+    <join-group bind:__l="__l" class="data-v-5294956e" vueId="bce19ec4-3"></join-group>
+</view>

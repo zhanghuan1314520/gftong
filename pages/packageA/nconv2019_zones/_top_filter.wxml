@@ -1,0 +1,8 @@
+<view class="filters-wrap _div data-v-48aaf83c">
+    <view class="filters _div data-v-48aaf83c">
+        <view bindtap="__e" class="{{[ 'li _div data-v-48aaf83c',[tab===selected||text[tab]&&text[tab]!=tab&&text[tab]!='不限'?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-tab="{{tab}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+            <label class="_span data-v-48aaf83c">{{''+( !text[tab]||text[tab]==='不限'?tab:text[tab] )+''}}</label>
+            <image class="img _img data-v-48aaf83c" src="{{[tab===selected?'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/down-active.png':'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/down.png']}}"></image>
+        </view>
+    </view>
+</view>

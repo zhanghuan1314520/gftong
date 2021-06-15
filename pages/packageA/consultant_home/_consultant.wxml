@@ -1,0 +1,34 @@
+<view class="weixin-info-page data-v-adad5f5e">
+    <view class="weixin-info-card _div data-v-adad5f5e" wx:if="{{show}}">
+        <view class="header _section data-v-adad5f5e">
+            <view class="zone-tip title32B data-v-adad5f5e" wx:if="{{zone}}">{{'当前楼盘所在区域：'+zone}}</view>
+            <view class="qr-wrap data-v-adad5f5e">
+                <view class="top data-v-adad5f5e">{{wx_nick_name}}</view>
+                <image bindtap="__e" class="_img data-v-adad5f5e" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" lazyLoad="{{true}}" src="{{img}}"></image>
+                <view class="bottom data-v-adad5f5e">微信号<text class="strong data-v-adad5f5e">{{wx_name}}</text>
+                </view>
+                <view class="qr-coner-left data-v-adad5f5e"></view>
+                <view class="qr-coner-right data-v-adad5f5e"></view>
+            </view>
+            <button bindtap="__e" class="data-v-adad5f5e" data-event-opts="{{[ [ 'tap',[ [ 'copy',['$event'] ] ] ] ]}}">点此复制微信号</button>
+        </view>
+        <view class="footer _section data-v-adad5f5e" wx:if="{{show_footer}}">
+            <view class="_h3 data-v-adad5f5e">关注【置业顾问之家】并绑定，您可以：</view>
+            <view class="_ol data-v-adad5f5e">
+                <view class="_li data-v-adad5f5e">
+                    <view class="_i data-v-adad5f5e"></view>
+                    <label class="_span data-v-adad5f5e">实时接收客户未接来电和客户预留电话</label>
+                </view>
+                <view class="_li data-v-adad5f5e">
+                    <view class="_i data-v-adad5f5e"></view>
+                    <label class="_span data-v-adad5f5e">购房者咨询后，立即接收消息提醒</label>
+                </view>
+                <view class="_li data-v-adad5f5e">
+                    <view class="_i data-v-adad5f5e"></view>
+                    <label class="_span data-v-adad5f5e">绑定后立即增加50积分</label>
+                </view>
+            </view>
+            <image class="guide-img data-v-adad5f5e" src="{{guide_img}}" wx:if="{{guide_img}}"></image>
+        </view>
+    </view>
+</view>

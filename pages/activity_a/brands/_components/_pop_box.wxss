@@ -1,0 +1,45 @@
+.pop-box.data-v-6656e8b9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 560rpx;
+    min-height: 576rpx;
+    background: #fff;
+    border-radius: 12rpx;
+    padding: 32rpx 0 27rpx;
+    z-index: 999999999;
+}
+
+.pop-box .box-title.data-v-6656e8b9 {
+    text-align: center;
+    font-size: 32rpx;
+    color: #333;
+    margin-bottom: 24rpx;
+}
+
+.pop-box .tx.data-v-6656e8b9 {
+    font-size: 28rpx;
+    color: #333;
+    text-align: left;
+    padding: 0 32rpx;
+}
+
+.pop-box .tx-end.data-v-6656e8b9 {
+    margin-top: 16rpx;
+}
+
+.pop-box .line.data-v-6656e8b9 {
+    width: 100%;
+    height: 2rpx;
+    background: #ebebeb;
+    margin-top: 40rpx;
+}
+
+.pop-box .box-btn.data-v-6656e8b9 {
+    padding-top: 28rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #d68f00;
+    font-weight: 700;
+}

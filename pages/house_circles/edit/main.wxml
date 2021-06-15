@@ -1,0 +1,40 @@
+<view class="edit _div data-v-795fefc0">
+    <form bindsubmit="__e" class="data-v-795fefc0" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="picker-wrap navigator-arrow _div data-v-795fefc0">
+            <label class="data-v-795fefc0">所属楼盘</label>
+            <picker bindchange="__e" class="data-v-795fefc0" data-event-opts="{{[ [ 'change',[ [ 'changeBuilding',['$event'] ] ] ] ]}}" range="{{buildings}}" rangeKey="name" value="{{selected_building_index}}">
+                <label class="building_name _span data-v-795fefc0">{{buildings.length?buildings[selected_building_index].name:'请选择'}}</label>
+            </picker>
+        </view>
+        <view class="content-section _section data-v-795fefc0">
+            <view class="textarea-wrap _div data-v-795fefc0">
+                <label class="data-v-795fefc0">输入您的房友圈内容(1000字以内)(一天可发一条)</label>
+                <textarea autoHeight="true" class="data-v-795fefc0" cols="30" maxlength="1000" name="content" placeholder="房友圈内容......" rows="10"></textarea>
+            </view>
+        </view>
+        <view class="content-section _section data-v-795fefc0">
+            <view class="textarea-wrap no-textarea _div data-v-795fefc0">
+                <label class="data-v-795fefc0" wx:if="{{showVideo}}">上传图片或视频（图片最多9张/视频最多1个)</label>
+                <label class="data-v-795fefc0" wx:else>上传图片（图片最多9张)</label>
+            </view>
+            <view class="upload-wrap _div data-v-795fefc0">
+                <view bindtap="__e" class="uploaded _div data-v-795fefc0" data-event-opts="{{[ [ 'tap',[ [ 'onDel',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{temp_urls}}" wx:for-index="i" wx:for-item="url" wx:key="i">
+                    <image class="_img data-v-795fefc0" src="{{url}}"></image>
+                </view>
+                <view class="upload _div data-v-795fefc0" wx:if="{{temp_urls.length<media_len}}">
+                    <button bindtap="__e" class="add-img-btn data-v-795fefc0" data-event-opts="{{[ [ 'tap',[ [ 'uploadMedia',['$event'] ] ] ] ]}}">
+                        <image class="_img data-v-795fefc0" src="/static/img/add-img-icon.png"></image>
+                    </button>
+                    <text class="data-v-795fefc0" wx:if="{{media_type}}">{{mediaTypes[media_type]+temp_urls.length+'/'+media_len}}</text>
+                    <text class="data-v-795fefc0" wx:else>上传</text>
+                </view>
+            </view>
+            <view class="tip error _p data-v-795fefc0" wx:if="{{upload_tip}}">{{upload_tip}}</view>
+        </view>
+        <button class="large-btn confirm-btn data-v-795fefc0" formType="submit" wx:if="{{upload_end}}">提交</button>
+        <view class="large-btn disabled _div data-v-795fefc0" wx:else>上传中...</view>
+    </form>
+    <view class="tip _p data-v-795fefc0">审核通过后，将会在房友圈展示。</view>
+    <view class="tip _p data-v-795fefc0" wx:if="{{customer_service_info}}">{{'如有疑问可联系客服微信: '+customer_service_info.wx_username+''}}<navigator bindtap="__e" class="link _a data-v-795fefc0" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制</navigator>
+    </view>
+</view>

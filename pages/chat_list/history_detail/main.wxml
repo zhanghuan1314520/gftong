@@ -1,0 +1,23 @@
+<view class="chat-page _div data-v-0eeddab8">
+    <view class="chat-list-header _header data-v-0eeddab8">
+        <view class="left data-v-0eeddab8">您正在查看历史聊天记录</view>
+    </view>
+    <scroll-view bindscrolltoupper="__e" class="chat-wrap data-v-0eeddab8" data-event-opts="{{[ [ 'scrolltoupper',[ [ 'getMore',['$event'] ] ] ] ]}}" scrollY="{{true}}" style="{{'height:'+'100vh'+';'}}">
+        <view class="tip _div data-v-0eeddab8" wx:if="{{no_more}}">没有更多了</view>
+        <view class="_div data-v-0eeddab8" id="msg-top" style="{{'display:'+(loading?'block':'none')+';'}}">
+            <loading bind:__l="__l" class="data-v-0eeddab8" vueId="03851da6-1"></loading>
+        </view>
+        <view class="{{['history-msg _div data-v-0eeddab8',msg.role==='self'?'self':'peer']}}" wx:for="{{items}}" wx:for-index="__i0__" wx:for-item="msg" wx:key="id">
+            <image bindtap="__e" class="headimg _img data-v-0eeddab8" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" data-img="{{msg.msg_ext.headimg}}" lazyLoad="{{true}}" src="{{msg.msg_ext.headimg}}"></image>
+            <view class="content-wrap _div data-v-0eeddab8">
+                <view class="top _div data-v-0eeddab8">
+                    <label class="name _span data-v-0eeddab8">{{''+msg.msg_ext.nickName+''}}</label>
+                    <label class="date _span data-v-0eeddab8">{{''+msg.created_time+''}}</label>
+                </view>
+                <view bindlongtap="__e" class="content _div data-v-0eeddab8" data-content="{{msg.msg_content}}" data-event-opts="{{[ [ 'longtap',[ [ 'copyContent',['$event'] ] ] ] ]}}" id="{{msg.id}}">{{''+msg.msg_content+''}}</view>
+            </view>
+        </view>
+        <view class="_div data-v-0eeddab8" id="msg-btm"></view>
+    </scroll-view>
+    <page-wrap bind:__l="__l" class="data-v-0eeddab8" title="历史咨询" vueId="03851da6-2"></page-wrap>
+</view>

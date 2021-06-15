@@ -1,0 +1,23 @@
+<view class="doing-wrap _div data-v-111a5be3">
+    <view class="answered _div data-v-111a5be3" wx:for="{{questions}}" wx:for-index="i" wx:key="i">
+        <label class="data-v-111a5be3">{{''+i+1+'、'+item.question+''}}</label>
+        <label bindtap="__e" class="_span data-v-111a5be3" data-event-opts="{{[ [ 'tap',[ [ 'deleteItem',['$event'] ] ] ] ]}}" data-index="{{i}}">
+            <text class="data-v-111a5be3">{{item.answer}}</text>
+            <image class="_img data-v-111a5be3" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/check-condition/delete.png"></image>
+        </label>
+    </view>
+    <button bindtap="__e" class="back-link data-v-111a5be3" data-event-opts="{{[ [ 'tap',[ [ 'goNext',['$event'] ] ] ] ]}}" wx:if="{{finish}}">提交</button>
+    <view class="content _div data-v-111a5be3" wx:else>
+        <view class="_h3 data-v-111a5be3">{{questions.length+1+'、'+question}}</view>
+        <view class="radios-wrap _div data-v-111a5be3">
+            <form bindsubmit="__e" class="data-v-111a5be3" data-event-opts="{{[ [ 'submit',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-item="{{item}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                <button class="shadow-button data-v-111a5be3" formType="submit">
+                    <view class="radio _div data-v-111a5be3">
+                        <view class="_i data-v-111a5be3">{{alphabets[i]}}</view>
+                        <label class="_span data-v-111a5be3">{{item.value}}</label>
+                    </view>
+                </button>
+            </form>
+        </view>
+    </view>
+</view>

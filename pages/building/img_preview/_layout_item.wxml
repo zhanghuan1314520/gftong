@@ -1,0 +1,21 @@
+<view bindtap="__e" class="layout-wrap _div data-v-46f5b692" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}">
+    <view class="layout-info data-v-46f5b692">
+        <view class="layout-img _div data-v-46f5b692">
+            <view class="saleout data-v-46f5b692" wx:if="{{url.status==='售罄'}}"></view>
+            <view class="usage data-v-46f5b692" wx:if="{{url.usage==='商业'}}">商业</view>
+            <common-img bind:__l="__l" class="data-v-46f5b692" mode="aspectFill" src="{{url.image_url}}" vueId="0e225970-1"></common-img>
+        </view>
+        <view class="layout-content _div data-v-46f5b692">
+            <view class="detail _div data-v-46f5b692" wx:if="{{url.layout_description}}">{{''+url.layout_description+''}}</view>
+            <view class="layout-no _div data-v-46f5b692" wx:if="{{url.layout_no}}">{{''+url.layout_no+''}}</view>
+            <view class="area _div data-v-46f5b692" wx:if="{{url.area}}">
+                <text class="data-v-46f5b692">{{'户型建面：'+url.area}}</text>
+            </view>
+            <view class="tag-list data-v-46f5b692">
+                <view class="tag-item data-v-46f5b692" wx:for="{{tag_list}}" wx:for-index="__i0__" wx:for-item="tag" wx:key="*this">{{''+tag+''}}</view>
+            </view>
+            <img-tools bind:__l="__l" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:stop="__e" class="data-v-46f5b692" data-event-opts="{{[ [ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ ['openVr'] ] ],[ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ] ]}}" playing="{{playing}}" url="{{url}}" vueId="0e225970-2"></img-tools>
+        </view>
+    </view>
+    <audio-player bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-46f5b692" data-event-opts="{{[ [ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ],[ '^seek',[ ['seek'] ] ] ]}}" playing="{{playing}}" running_time="{{running_time}}" time="{{duration}}" vueId="0e225970-3"></audio-player>
+</view>

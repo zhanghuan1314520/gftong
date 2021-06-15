@@ -1,0 +1,12 @@
+<view class="timeline-wrap data-v-62fbb77a">
+    <scroll-view class="timeline data-v-62fbb77a" enableFlex="{{true}}" scrollIntoView="{{selected_id}}" scrollX="{{true}}">
+        <view bindtap="__e" class="point-wrap data-v-62fbb77a" data-event-opts="{{[ [ 'tap',[ [ 'tapPoint',[i] ] ] ] ]}}" id="{{'item-'+i}}" wx:for="{{timeline}}" wx:for-index="i" wx:key="i">
+            <view class="{{['point data-v-62fbb77a',item.selected?'selected':'']}}">
+                <view class="doing data-v-62fbb77a" wx:if="{{item.doing}}">进行中</view>
+                <view class="text28 data-v-62fbb77a">{{item.title}}</view>
+                <view class="data-v-62fbb77a">{{item.tx}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view bindtap="__e" class="tip moreFont24 data-v-62fbb77a" data-download="{{tip.download}}" data-event-opts="{{[ [ 'tap',[ [ 'tapTip',['$event'] ] ] ] ]}}" data-link="{{tip.link}}" wx:if="{{tip}}">{{tip.tx}}</view>
+</view>

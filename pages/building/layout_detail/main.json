@@ -1,0 +1,23 @@
+{
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "auth-phone": "/components/building/_auth_phone",
+        "like-tip": "/pages/building/_components/_like_tip",
+        "common-footer": "/pages/building/_components/_common_footer",
+        "img-tools": "/pages/building/img_preview/_img_tools",
+        "audio-player": "/pages/building/img_preview/_audio_player",
+        "vr-tip": "/pages/building/img_preview/_vr_tip",
+        "layout": "/pages/building/_components/_layout",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

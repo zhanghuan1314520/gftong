@@ -1,0 +1,19 @@
+<view class="data-v-759e0986">
+    <view class="_div data-v-759e0986" wx:if="{{show}}">
+        <view class="main _div data-v-759e0986">
+            <view class="_p data-v-759e0986">杭州购房的人，大部分都在用“杭州购房通”。你也赶紧加入微信群讨论讨论吧，群里各路大神进行分享、答疑。</view>
+            <image bindtap="__e" class="_img data-v-759e0986" data-event-opts="{{[ [ 'tap',[ [ 'goPreview',['$event'] ] ] ] ]}}" src="{{official_customer_service.wx_qrcode_url}}"></image>
+            <label class="_span data-v-759e0986">添加客服微信拉你入群</label>
+            <button bindtap="__e" class="confirm-btn large-btn data-v-759e0986" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}">复制客服微信号</button>
+        </view>
+        <view class="dlg-wrap _div data-v-759e0986" wx:if="{{show_dlg}}">
+            <view class="dlg _div data-v-759e0986">
+                <view class="_p data-v-759e0986">杭州购房通客服微信号，已经复制</view>
+                <view class="_p data-v-759e0986">快去加好友，拉入群进行讨论吧！</view>
+                <button bindtap="__e" class="data-v-759e0986" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}">好的</button>
+            </view>
+            <view bindtap="__e" class="overlay _div data-v-759e0986" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}"></view>
+        </view>
+        <page-wrap bind:__l="__l" class="data-v-759e0986" title="讨论群" vueId="623ac0ec-1"></page-wrap>
+    </view>
+</view>

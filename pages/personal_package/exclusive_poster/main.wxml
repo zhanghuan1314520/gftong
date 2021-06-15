@@ -1,0 +1,24 @@
+<view class="page data-v-43e162f4">
+    <view class="cropper-wrap data-v-43e162f4">
+        <view class="cropper data-v-43e162f4">
+            <canvas bindtouchend="__e" bindtouchmove="__e" bindtouchstart="__e" canvasId="{{_canvasId}}" class="canvas-a data-v-43e162f4" data-event-opts="{{[ [ 'touchstart',[ [ 'touchstart',['$event'] ] ] ],[ 'touchmove',[ [ 'touchmove',['$event'] ] ] ],[ 'touchend',[ [ 'touchend',['$event'] ] ] ] ]}}" disableScroll="{{true}}" style="{{'width:'+width+'px'+';'+'height:'+height+'px'+';'+'background:'+'rgba(0, 0, 0, 0)'+';'}}" wx:if="{{width}}"></canvas>
+            <canvas canvasId="{{_targetId}}" class="canvas-b data-v-43e162f4" disableScroll="{{true}}" style="{{'position:'+'fixed'+';'+'top:'+-width*_pixelRatio+'px'+';'+'left:'+-height*_pixelRatio+'px'+';'+'width:'+width*_pixelRatio+'px'+';'+'height:'+height*_pixelRatio+'px'+';'}}" wx:if="{{width}}"></canvas>
+        </view>
+    </view>
+    <view class="btns data-v-43e162f4">
+        <button bindtap="__e" class="ui-btn big primary radius-12 data-v-43e162f4" data-event-opts="{{[ [ 'tap',[ [ 'onChooseImage',['$event'] ] ] ] ]}}">
+            <text class="data-v-43e162f4">上传图片</text>
+        </button>
+        <button bindtap="__e" class="ui-btn big light radius-12 data-v-43e162f4" data-event-opts="{{[ [ 'tap',[ [ 'getCropperImage',['$event'] ] ] ] ]}}">
+            <text class="data-v-43e162f4">生成专属海报</text>
+        </button>
+    </view>
+    <canvas canvasId="canvas" class="billboard-canvas data-v-43e162f4" style="width:560px;height:996px;"></canvas>
+    <cover-view bindtap="__e" class="poster-dialog data-v-43e162f4" data-event-opts="{{[ [ 'tap',[ [ 'onHideDialog',['$event'] ] ] ] ]}}" wx:if="{{showDialog}}">
+        <cover-image class="poster-img data-v-43e162f4" src="{{tmp_img_path}}"></cover-image>
+        <button catchtap="__e" class="save-btn data-v-43e162f4" data-event-opts="{{[ [ 'tap',[ [ 'saveImage',['$event'] ] ] ] ]}}">
+            <cover-image class="save-btn__img data-v-43e162f4" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/cover-btn.png"></cover-image>
+        </button>
+    </cover-view>
+    <page-wrap bind:__l="__l" class="data-v-43e162f4" hide_back_home="{{true}}" show_app_name="{{false}}" title="生成专属海报" vueId="1ca7e75b-1"></page-wrap>
+</view>

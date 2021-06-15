@@ -1,0 +1,28 @@
+<view class="_div data-v-529ed11c">
+    <view class="comments-wrap section _section data-v-529ed11c">
+        <view class="house-page-title info _header data-v-529ed11c">
+            <view class="_h3 data-v-529ed11c">{{'楼盘评论('+comment_count+')'}}</view>
+            <view class="right-link _div data-v-529ed11c">
+                <form bindsubmit="__e" class="data-v-529ed11c" data-event-opts="{{[ [ 'submit',[ [ 'goAllComments',['$event'] ] ] ] ]}}">
+                    <button class="shadow-button data-v-529ed11c" formType="submit">全部评论</button>
+                </form>
+            </view>
+        </view>
+        <view class="{{[ 'loading _div data-v-529ed11c',[!loading||comments.length?'hide':''] ]}}">
+            <loading bind:__l="__l" class="data-v-529ed11c" vueId="47e1becf-1"></loading>
+        </view>
+        <view class="{{[ '_div data-v-529ed11c',[loading?'hide':''] ]}}">
+            <view class="comment-tip _p data-v-529ed11c" wx:if="{{!comments.length}}">暂无评论</view>
+            <view class="_div data-v-529ed11c">
+                <comment-item bind:__l="__l" bind:changeComment="__e" class="data-v-529ed11c" comment="{{comment}}" data-event-opts="{{[ [ '^changeComment',[ ['changeComment'] ] ] ]}}" index="{{index}}" is_building_page="{{true}}" vueId="{{'47e1becf-2-'+index}}" wx:for="{{comments}}" wx:for-item="comment" wx:key="index"></comment-item>
+                <view bindtap="__e" class="all-comments _div data-v-529ed11c" data-event-opts="{{[ [ 'tap',[ [ 'goAllComments',['$event'] ] ] ] ]}}">查看全部评论<fc-icon bind:__l="__l" class="i-more data-v-529ed11c" type="32_more" vueId="47e1becf-3"></fc-icon>
+                </view>
+                <button bindgetuserinfo="__e" class="shadow-button data-v-529ed11c" data-event-opts="{{[ [ 'getuserinfo',[ [ 'addComment',['$event'] ] ] ] ]}}" openType="getUserInfo">
+                    <navigator class="add-btn _a data-v-529ed11c">
+                        <view class="_i data-v-529ed11c"></view>我也要评论/提问/晒一晒</navigator>
+                </button>
+            </view>
+        </view>
+    </view>
+    <comment-tip bind:__l="__l" class="data-v-529ed11c" contents="{{msg_box.contents}}" copy_text="{{msg_box.copy_text}}" vueId="47e1becf-4"></comment-tip>
+</view>

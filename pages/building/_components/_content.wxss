@@ -1,0 +1,217 @@
+.house-content.data-v-429ebc72 {
+    min-height: 250rpx;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+    line-height: 37rpx;
+    font-size: 26rpx;
+    color: #777;
+    background-color: #fff;
+    position: relative;
+}
+
+.house-content .list-options:nth-child(1) ._span.data-v-429ebc72,.house-content .list-options:nth-child(2) ._span.data-v-429ebc72,.house-content .list-options:nth-child(3) ._span.data-v-429ebc72,.house-content .list-options:nth-child(4) ._span.data-v-429ebc72 {
+    max-width: 360rpx;
+    word-break: break-all;
+}
+
+.price.data-v-429ebc72 {
+    color: #fa4b00;
+    font-size: 26rpx;
+    font-weight: 700;
+}
+
+.right-section.data-v-429ebc72 {
+    max-width: 228rpx;
+    position: absolute;
+    top: 70rpx;
+    right: 0;
+}
+
+.qr-wrap.data-v-429ebc72 {
+    position: absolute;
+    top: 84rpx;
+    right: 30rpx;
+}
+
+.qr-wrap.has-audio.data-v-429ebc72 {
+    top: 224rpx;
+}
+
+.metros-wrap.data-v-429ebc72 {
+    overflow: hidden;
+}
+
+.metros-wrap .left.data-v-429ebc72 {
+    float: left;
+}
+
+.metros.data-v-429ebc72 {
+    float: left;
+    display: block;
+}
+
+.metros>._span.data-v-429ebc72 {
+    margin-top: 10rpx;
+}
+
+.metros>._span .text.data-v-429ebc72 {
+    line-height: 1.2em;
+}
+
+.metros ._img.data-v-429ebc72 {
+    width: 26rpx;
+    height: 30rpx;
+    margin-right: 16rpx;
+}
+
+.phone.data-v-429ebc72 {
+    margin-left: .3em;
+    width: 35rpx;
+    height: 32rpx;
+}
+
+.metros>._span.data-v-429ebc72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.house-content .list-options ._span.address fc-icon.data-v-429ebc72 {
+    vertical-align: bottom;
+}
+
+.house-content .list-options ._span.address ._span.data-v-429ebc72 {
+    color: #69c;
+}
+
+.house-content .list-options ._span.address ._img.data-v-429ebc72 {
+    margin-right: 16rpx;
+    width: 24rpx;
+    height: 30rpx;
+}
+
+.secondhand-price.data-v-429ebc72 {
+    width: 228rpx;
+    height: 126rpx;
+    position: absolute;
+    top: 16rpx;
+    right: 0;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/aside_sec.png) no-repeat 50%;
+    background-size: contain;
+    font-family: PingFangSC-Semibold;
+    font-size: 28rpx;
+    color: #d99100;
+    text-align: center;
+    padding-top: 70rpx;
+    line-height: 40rpx;
+}
+
+.audio-entery.data-v-429ebc72 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 686rpx;
+    height: 136rpx;
+    margin: 0 auto;
+    padding: 24rpx;
+    box-sizing: border-box;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio-bg.png);
+    background-size: 686rpx 136rpx;
+}
+
+.audio-entery.data-v-429ebc72,.audio-entery .left.data-v-429ebc72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.audio-entery .left.data-v-429ebc72 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.audio-entery .header.data-v-429ebc72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 33rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #1c1c1c;
+    font-weight: 700;
+}
+
+.audio-entery .header text.data-v-429ebc72 {
+    margin-left: 16rpx;
+}
+
+.audio-entery .list.data-v-429ebc72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 13rpx;
+}
+
+.audio-entery .list text.data-v-429ebc72 {
+    position: relative;
+    font-size: 24rpx;
+    color: #666;
+    margin-right: 1em;
+}
+
+.audio-entery .list text.data-v-429ebc72::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 97rpx;
+    height: 13rpx;
+    content: "";
+    opacity: .64;
+    background-image: -webkit-gradient(linear,right top,left top,color-stop(2%,hsla(0,0%,93.3%,0)),to(#61e5ee));
+    background-image: linear-gradient(270deg,hsla(0,0%,93.3%,0) 2%,#61e5ee);
+}
+
+.audio-entery .btn.data-v-429ebc72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 167rpx;
+    height: 60rpx;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#65eaee),color-stop(99%,#61bdef));
+    background-image: linear-gradient(180deg,#65eaee,#61bdef 99%);
+    border-radius: 30rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 700;
+}
+
+.presell-no--item.data-v-429ebc72 {
+    display: block;
+}
+
+.address-blue.data-v-429ebc72 {
+    margin-right: 8rpx;
+}

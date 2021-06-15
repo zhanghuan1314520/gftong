@@ -1,0 +1,23 @@
+<view class="page _div data-v-3d655576">
+    <view class="result-wrap _div data-v-3d655576">
+        <view class="user _div data-v-3d655576">
+            <label class="_span data-v-3d655576">{{'第'+result.lottery_index+'号'}}</label>
+        </view>
+        <view class="result-card _div data-v-3d655576">
+            <view class="lottery-info _div data-v-3d655576">
+                <view class="_div data-v-3d655576">姓<text class="zw data-v-3d655576">姓名</text>{{'名：'+result.name}}</view>
+                <view class="_div data-v-3d655576">{{'申请编码：'+result.code}}</view>
+            </view>
+            <view class="lottery-geted _div data-v-3d655576">恭喜中签啦！！</view>
+            <view class="qr-wrap _div data-v-3d655576" wx:if="{{!loading}}">
+                <image class="_img data-v-3d655576" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/qr/gzh.jpg"></image>
+                <view class="_p data-v-3d655576">扫码我也要查</view>
+            </view>
+            <button class="circle-share data-v-3d655576" openType="share">
+                <image class="_img data-v-3d655576" src="/static/img/circle-share.png"></image>
+            </button>
+        </view>
+        <view class="tip _p data-v-3d655576">分享攒更多人品</view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-3d655576" title="我的摇号" vueId="38bed3c1-1"></page-wrap>
+</view>

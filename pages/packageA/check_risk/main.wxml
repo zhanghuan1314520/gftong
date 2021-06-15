@@ -1,0 +1,10 @@
+<view class="_div data-v-5c38ef22">
+    <web-view class="data-v-5c38ef22" src="https://wx.cdgoufang.com/back_home/b/index">
+        <cover-view class="share-btn data-v-5c38ef22" wx:if="{{show_share}}">
+            <button class="data-v-5c38ef22" openType="share">
+                <cover-image class="data-v-5c38ef22" src="https://cdn.vip-wifi.com/hzfangchan/img/share-btn/i.png"></cover-image>
+            </button>
+        </cover-view>
+    </web-view>
+    <page-wrap bind:__l="__l" class="data-v-5c38ef22" title="返乡政策查询器" vueId="400ea782-1"></page-wrap>
+</view>

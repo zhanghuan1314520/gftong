@@ -1,0 +1,33 @@
+.btn.data-v-5acdea10 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    left: 20rpx;
+    top: -76rpx;
+    width: 160rpx;
+    height: 70rpx;
+    border-radius: 6rpx;
+    border: 2rpx solid rgba(0,151,121,.4);
+    background-color: #fff;
+    color: #333;
+    font-size: 28rpx;
+    z-index: 10;
+}
+
+.disabled.data-v-5acdea10 {
+    opacity: .5;
+}
+
+.img.data-v-5acdea10 {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+}

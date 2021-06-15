@@ -1,0 +1,119 @@
+.search-group.data-v-62d624eb {
+    max-height: calc(99vh - 125rpx);
+}
+
+.house-list.data-v-62d624eb {
+    background-color: #fff;
+}
+
+.search-page.data-v-62d624eb {
+    padding: 30rpx 0;
+    background-color: #f5f5f5;
+}
+
+.search-page .search-wrap.data-v-62d624eb {
+    padding: 0;
+    height: 65rpx;
+    margin-left: 30rpx;
+    margin-bottom: 30rpx;
+    border-radius: 0;
+}
+
+.search-page .search-main-wrap.data-v-62d624eb {
+    width: 624rpx;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4rpx;
+    background-color: #fff;
+}
+
+.search-page .search-input.data-v-62d624eb {
+    width: auto;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.search-page .search-input .remove.data-v-62d624eb {
+    padding: 9rpx;
+}
+
+.search-page .search-btn.data-v-62d624eb {
+    padding: 0 20rpx;
+    font-size: 28rpx;
+}
+
+.search-hisotry-wrap.data-v-62d624eb {
+    padding: 0 40rpx 40rpx 30rpx;
+    background: none;
+}
+
+.history-list.data-v-62d624eb {
+    overflow: hidden;
+    height: 68rpx;
+}
+
+.history-list .list-item.data-v-62d624eb {
+    max-width: 280rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.unfold-history-list.data-v-62d624eb {
+    overflow: visible;
+    height: auto;
+}
+
+.hot-history-list.data-v-62d624eb {
+    height: auto;
+}
+
+.top-search.data-v-62d624eb {
+    height: 776rpx;
+    margin: 16rpx 0 32rpx;
+}
+
+.search-list.data-v-62d624eb {
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 26rpx;
+}
+
+.search-empty-tip.data-v-62d624eb {
+    padding: 10rpx 0 40rpx;
+    text-align: center;
+}
+
+.recommend-list .header.data-v-62d624eb {
+    padding: 24rpx 32rpx 16rpx;
+}
+
+.recommend-list .list-section.data-v-62d624eb {
+    background-color: #fff;
+}
+
+.header-item.data-v-62d624eb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-item .item-icon.data-v-62d624eb {
+    width: 32rpx;
+    height: 32rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/32_triangle.png);
+    background-size: 32rpx 32rpx;
+}
+
+.header-item .item-icon.up.data-v-62d624eb {
+    transform: rotateX(180deg);
+}

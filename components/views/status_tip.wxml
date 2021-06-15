@@ -1,0 +1,6 @@
+<view class="wrap _div data-v-7718f1d0" wx:if="{{show}}">
+    <view class="content _div data-v-7718f1d0">{{content}}</view>
+    <view bindtap="__e" class="close-card _div data-v-7718f1d0" data-event-opts="{{[ [ 'tap',[ [ 'onClose',['$event'] ] ] ] ]}}">
+        <view class="close _div data-v-7718f1d0"></view>
+    </view>
+</view>

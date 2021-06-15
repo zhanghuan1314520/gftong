@@ -1,0 +1,4 @@
+<view bindtap="__e" class="{{['disclaimer _div data-v-742dbbf4',className]}}" data-event-opts="{{[ [ 'tap',[ [ 'goDisclaimer',['$event'] ] ] ] ]}}">
+    <text class="tx data-v-742dbbf4">{{title}}</text>
+    <fc-icon bind:__l="__l" class="data-v-742dbbf4" type="32_risk" vueId="c7460ddc-1"></fc-icon>
+</view>

@@ -1,0 +1,109 @@
+.banner.data-v-2965f8ea {
+    height: 620rpx;
+    background-image: radial-gradient(78% 46%,#89bbac 0,#00ad82 85%);
+    padding-top: 20rpx;
+    padding-left: 30rpx;
+    position: relative;
+}
+
+scroll-view.data-v-2965f8ea {
+    width: auto;
+    height: 560rpx;
+    white-space: nowrap;
+}
+
+scroll-view .card.data-v-2965f8ea {
+    display: inline-block;
+    width: 480rpx;
+    height: 560rpx;
+    margin: 0 40rpx 0 0;
+    border-radius: 8rpx;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,.3);
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+scroll-view .card ._header.data-v-2965f8ea {
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+    background-color: #dff2ed;
+    color: #00ad82;
+}
+
+scroll-view .card ._article.data-v-2965f8ea {
+    padding: 60rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+
+scroll-view .card ._article ._h3.data-v-2965f8ea {
+    margin: 16rpx 0 23rpx;
+    font-weight: 600;
+    color: #333;
+    font-size: 32rpx;
+}
+
+scroll-view .card ._article ._strong.data-v-2965f8ea {
+    display: inline;
+    color: #eb451c;
+    font-weight: 600;
+}
+
+scroll-view .card ._article ._strong ._i.data-v-2965f8ea {
+    display: inline;
+    font-size: 36rpx;
+}
+
+scroll-view .card ._article .tip.data-v-2965f8ea {
+    margin-top: 16rpx;
+    color: #999;
+    font-size: 22rpx;
+}
+
+scroll-view .card .btn.data-v-2965f8ea {
+    width: 344rpx;
+    height: 80rpx;
+    margin-top: 66rpx;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: 600;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    background-color: #00ad82;
+    box-shadow: 0 2rpx 4rpx 0 rgba(0,173,130,.3);
+}
+
+scroll-view .card .btn.red.data-v-2965f8ea {
+    background-color: #fa4d32;
+    box-shadow: 0 2rpx 4rpx 0 rgba(250,77,50,.3);
+}
+
+.nav.data-v-2965f8ea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 104rpx;
+    padding: 0 24rpx 0 30rpx;
+    color: #111;
+    font-size: 28rpx;
+    background-color: #fff;
+}
+
+.nav ._strong.data-v-2965f8ea {
+    -webkit-box-flex: 1;
+    flex: 1;
+    color: #fa4d32;
+    font-weight: 600;
+}

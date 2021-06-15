@@ -1,0 +1,15 @@
+.event.data-v-905cdd52 {
+    margin-top: 20rpx;
+    background-color: #fff;
+    padding-bottom: 32rpx;
+}
+
+.event ._ul.data-v-905cdd52 {
+    padding-top: 18rpx;
+}
+
+.event ._p.data-v-905cdd52 {
+    color: #999;
+    font-size: 24rpx;
+    text-align: center;
+}

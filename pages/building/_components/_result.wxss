@@ -1,0 +1,102 @@
+.section.data-v-468ac5aa {
+    margin: 20rpx auto 0;
+    padding-bottom: 0;
+}
+
+.result-header.data-v-468ac5aa {
+    border-top: 1rpx solid #ebebeb;
+}
+
+.result-header .content.data-v-468ac5aa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #444;
+    padding: 30rpx 0 18rpx;
+}
+
+.result-header .content ._h2.data-v-468ac5aa {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.results.data-v-468ac5aa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 30rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    font-size: 26rpx;
+    color: #2bad41;
+}
+
+.results.data-v-468ac5aa,.results .rs-link.data-v-468ac5aa {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.results .rs-link.data-v-468ac5aa {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin-right: 70rpx;
+}
+
+.results .rs-link.data-v-468ac5aa:last-child {
+    margin-right: 0;
+}
+
+.results .rs-link ._span.data-v-468ac5aa,.results .rs-link .img-wrap.data-v-468ac5aa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.results .rs-link .img-wrap.data-v-468ac5aa {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 5rpx;
+}
+
+.results .rs-link .img-wrap ._img.data-v-468ac5aa {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+}
+
+.mine-section.data-v-468ac5aa {
+    padding-bottom: 32rpx;
+    text-align: center;
+    background: #fff;
+}
+
+.mine-tip.data-v-468ac5aa {
+    color: #999;
+    font-size: 24rpx;
+    padding: 30rpx;
+    text-align: center;
+}

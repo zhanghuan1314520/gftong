@@ -1,0 +1,27 @@
+<view class="page data-v-0594ca0a">
+    <view class="card data-v-0594ca0a">
+        <view class="header title32B data-v-0594ca0a">继承份额测试结果</view>
+        <view class="result-card data-v-0594ca0a">
+            <view class="result data-v-0594ca0a">{{result}}</view>
+            <view class="desc data-v-0594ca0a">{{desc}}</view>
+        </view>
+        <view class="btns data-v-0594ca0a">
+            <button class="btn share-btn data-v-0594ca0a" openType="share">分享给朋友</button>
+            <view bindtap="__e" class="btn reset-btn data-v-0594ca0a" data-event-opts="{{[ [ 'tap',[ [ '$emit',['reset'] ] ] ] ]}}">再查一次</view>
+        </view>
+        <view class="footer data-v-0594ca0a">
+            <view class="left data-v-0594ca0a">
+                <view class="data-v-0594ca0a">此结果仅供参考，请最终以实际办理结果为准</view>
+                <view class="data-v-0594ca0a">扫码我也要查<view class="icon data-v-0594ca0a">
+                        <view class="i data-v-0594ca0a"></view>
+                        <view class="i data-v-0594ca0a"></view>
+                        <view class="i data-v-0594ca0a"></view>
+                    </view>
+                </view>
+            </view>
+            <common-img bind:__l="__l" class="right data-v-0594ca0a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/inherit/qr.png" vueId="942cf71e-1"></common-img>
+        </view>
+    </view>
+    <selected-answers bind:__l="__l" class="data-v-0594ca0a" items="{{answered_questions}}" vueId="942cf71e-2"></selected-answers>
+    <join-group bind:__l="__l" class="data-v-0594ca0a" vueId="942cf71e-3"></join-group>
+</view>

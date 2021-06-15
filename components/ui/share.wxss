@@ -1,0 +1,41 @@
+.ui-share.data-v-268521ff {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 152rpx;
+    height: 64rpx;
+    font-size: 28rpx;
+    font-weight: 700;
+    border-radius: 32rpx;
+    z-index: 1;
+}
+
+.ui-share.icon-size-48 ._img.data-v-268521ff {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.ui-share.org.data-v-268521ff {
+    background-color: #ffeed1;
+    color: #fa8919;
+}
+
+.ui-share.org.outline.data-v-268521ff {
+    border: 1rpx solid rgba(250,137,25,.37);
+}
+
+.ui-share.inc.data-v-268521ff {
+    border-radius: 32rpx 0 0 32rpx;
+}
+
+text.data-v-268521ff {
+    margin-left: 4rpx;
+    line-height: normal;
+}

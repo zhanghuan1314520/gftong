@@ -1,0 +1,18 @@
+<view class="like_share _div data-v-2ed6ad43">
+    <button bindgetuserinfo="__e" class="like-btn data-v-2ed6ad43" data-event-opts="{{[ [ 'getuserinfo',[ [ 'onLikeConsult',['$event'] ] ] ] ]}}" openType="getUserInfo">
+        <view class="{{['icon _div data-v-2ed6ad43',consultant.is_liked?'like':'unlike']}}"></view>
+        <view class="_p data-v-2ed6ad43">{{''+(!consultant.is_liked?'为我点赞':'感谢支持')+''}}</view>
+    </button>
+    <button bindtap="__e" class="card-btn data-v-2ed6ad43" data-event-opts="{{[ [ 'tap',[ [ 'showBillboard',['$event'] ] ] ] ]}}" wx:if="{{is_consultant}}">
+        <view class="icon card _div data-v-2ed6ad43"></view>
+        <view class="_p data-v-2ed6ad43">生成名片</view>
+    </button>
+    <button class="share-btn data-v-2ed6ad43" openType="share">
+        <view class="icon share _div data-v-2ed6ad43"></view>
+        <view class="_p data-v-2ed6ad43">转发</view>
+    </button>
+    <button bindtap="__e" class="qr-btn data-v-2ed6ad43" data-event-opts="{{[ [ 'tap',[ [ 'saveQr',['$event'] ] ] ] ]}}">
+        <view class="icon qr _div data-v-2ed6ad43"></view>
+        <view class="_p data-v-2ed6ad43">加我为好友</view>
+    </button>
+</view>

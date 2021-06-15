@@ -1,0 +1,159 @@
+<view class="{{['page _div data-v-51ee567b',page_class?'page_class':'',show_app_tip?'has_app_tip':'']}}">
+    <common-img bind:__l="__l" class="preload data-v-51ee567b" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/red_bag/delay_box.png" vueId="1a10b852-1"></common-img>
+    <common-img bind:__l="__l" class="preload data-v-51ee567b" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/red_bag/open_box.png" vueId="1a10b852-2"></common-img>
+    <common-img bind:__l="__l" class="preload data-v-51ee567b" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/red_bag/wish_box.png" vueId="1a10b852-3"></common-img>
+    <view class="home-header-wrap _header data-v-51ee567b">
+        <top-tip bind:__l="__l" bind:toggleTip="__e" class="data-v-51ee567b" data-event-opts="{{[ [ '^toggleTip',[ ['toggleTip'] ] ] ]}}" vueId="1a10b852-4"></top-tip>
+        <view class="top-header _div data-v-51ee567b">
+            <button bindgetuserinfo="__e" class="top-header-item data-v-51ee567b" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReport',['$event'] ] ] ] ]}}" openType="getUserInfo">
+                <text class="skeleton-radius cup-i data-v-51ee567b"></text>
+                <label class="skeleton-rect cup-text _span data-v-51ee567b">早报</label>
+            </button>
+            <view class="search-wrap skeleton-rect _div data-v-51ee567b">
+                <search bind:__l="__l" bind:click="__e" can_search="0" class="data-v-51ee567b" data-event-opts="{{[ [ '^click',[ ['searchClick'] ] ] ]}}" show_hot_keyword="{{true}}" vueId="1a10b852-5"></search>
+            </view>
+            <button bindtap="__e" class="top-header-item skeleton-radius data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'tabLog',['$event'] ] ] ] ]}}" data-name="分享" openType="share">
+                <text class="share-i data-v-51ee567b"></text>
+                <label class="_span data-v-51ee567b">分享</label>
+            </button>
+        </view>
+    </view>
+    <view class="home-top-banner _div data-v-51ee567b" wx:if="{{homepage_banner&&homepage_banner.length}}">
+        <home-swiper banners="{{homepage_banner}}" bind:__l="__l" class="data-v-51ee567b" classname="top-banner-swiper home-index-banner" swiper_id="home_top_banner" vueId="1a10b852-6"></home-swiper>
+    </view>
+    <view class="{{[ 'stats _ul data-v-51ee567b',[home_tabs.show_top_tab_img?'top-tab-img':''] ]}}">
+        <view class="_li data-v-51ee567b">
+            <form bindsubmit="__e" class="data-v-51ee567b" data-event-opts="{{[ [ 'submit',[ [ 'goFilterList',['$event'] ] ] ] ]}}" data-href="/pages/packageC/hot/main">
+                <button bindtap="__e" class="shadow-button data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'tabLog',['$event'] ] ] ] ]}}" data-name="热门楼盘" formType="submit">
+                    <view class="num _strong data-v-51ee567b">{{dashboard.hot||0}}</view>
+                    <label class="_span data-v-51ee567b">热门楼盘</label>
+                </button>
+            </form>
+        </view>
+        <view class="_li data-v-51ee567b" wx:for="{{home_tabs.dashboard_tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+            <form bindsubmit="__e" class="data-v-51ee567b" data-event-opts="{{[ [ 'submit',[ [ 'goFilterList',['$event'] ] ] ] ]}}" data-href="{{'/pages/history/main?type='+tab.name}}">
+                <button bindtap="__e" class="shadow-button data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'tabLog',['$event'] ] ] ] ]}}" data-name="{{tab.name}}" formType="submit">
+                    <view class="num _strong data-v-51ee567b">{{dashboard[tab.dashboard_key]||0}}</view>
+                    <label class="_span data-v-51ee567b">{{tab.name}}</label>
+                </button>
+            </form>
+            <view class="flag data-v-51ee567b" wx:if="{{tab.flag}}">{{tab.flag}}</view>
+        </view>
+    </view>
+    <scroll-tabs bind:__l="__l" class="data-v-51ee567b" scroll_tabs="{{scroll_tabs}}" scroll_tabs_bg="{{scroll_tabs_bg}}" scroll_tabs_bg_height="{{scroll_tabs_bg_height}}" scroll_tabs_bg_width="{{scroll_tabs_bg_width}}" vueId="1a10b852-7"></scroll-tabs>
+    <activity-banner activity="{{activity}}" authority="{{user_authority}}" bind:__l="__l" class="data-v-51ee567b" vueId="1a10b852-8"></activity-banner>
+    <home-headline bind:__l="__l" class="data-v-51ee567b" vueId="1a10b852-9"></home-headline>
+    <view class="_section data-v-51ee567b" wx:if="{{show_hot}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">热门楼盘</view>
+            <navigator class="_a data-v-51ee567b" url="/pages/packageC/hot/main">更多<image class="_img data-v-51ee567b" lazyLoad="{{true}}" src="/static/img/right-link.png"></image>
+            </navigator>
+        </view>
+        <view class="_ul data-v-51ee567b">
+            <view class="_div data-v-51ee567b" id="hot_col_1">
+                <house-item bind:__l="__l" class="data-v-51ee567b" index="{{i}}" item="{{item}}" vueId="{{'1a10b852-10-'+i}}" wx:for="{{hot.col_1}}" wx:for-index="i" wx:key="i"></house-item>
+            </view>
+            <view class="house-col-3 _div data-v-51ee567b" id="hot_col_3" wx:if="{{hot.col_3&&hot.col_3.length}}">
+                <little-house-item bind:__l="__l" bind:goLink="__e" class="data-v-51ee567b" data-event-opts="{{[ [ '^goLink',[ ['goLink'] ] ] ]}}" index="{{i}}" item="{{item}}" vueId="{{'1a10b852-11-'+i}}" wx:for="{{hot.col_3}}" wx:for-index="i" wx:key="i"></little-house-item>
+            </view>
+        </view>
+    </view>
+    <view class="_section data-v-51ee567b" wx:if="{{ln_registering.col_1.length||ln_registering.col_3.length}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">正在登记</view>
+            <navigator class="_a data-v-51ee567b" url="/pages/history/main?type=正在登记">更多<image class="_img data-v-51ee567b" lazyLoad="{{true}}" src="/static/img/right-link.png"></image>
+            </navigator>
+        </view>
+        <view class="_ul data-v-51ee567b">
+            <view class="_div data-v-51ee567b" id="ln_registering_col_1">
+                <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" listname="正在登记" type="正在登记" vueId="{{'1a10b852-12-'+i}}" wx:for="{{ln_registering.col_1}}" wx:for-index="i" wx:key="i"></house-item>
+            </view>
+            <view class="house-col-3 _div data-v-51ee567b" id="ln_registering_col_3" wx:if="{{ln_registering.col_3&&ln_registering.col_3.length}}">
+                <little-house-item bind:__l="__l" bind:goLink="__e" class="data-v-51ee567b" data-event-opts="{{[ [ '^goLink',[ ['goLink'] ] ] ]}}" index="{{i+1}}" item="{{item}}" vueId="{{'1a10b852-13-'+i}}" wx:for="{{ln_registering.col_3}}" wx:for-index="i" wx:key="i"></little-house-item>
+            </view>
+        </view>
+    </view>
+    <view class="middle-banner-swiper data-v-51ee567b">
+        <home-swiper banners="{{homepage_middle_banner}}" bind:__l="__l" class="data-v-51ee567b" classname="hot-middle-banner-swiper" swiper_id="home_middle_banner" vueId="1a10b852-14" wx:if="{{homepage_middle_banner&&homepage_middle_banner.length}}"></home-swiper>
+    </view>
+    <view class="_section data-v-51ee567b" wx:if="{{latest_opening.length}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">最新取证</view>
+            <navigator class="_a data-v-51ee567b" url="/pages/history/main?type=最新取证">更多<image class="_img data-v-51ee567b" lazyLoad="{{true}}" src="/static/img/right-link.png"></image>
+            </navigator>
+        </view>
+        <view class="_ul data-v-51ee567b">
+            <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" listname="最新取证" vueId="{{'1a10b852-15-'+i}}" wx:for="{{latest_opening}}" wx:for-index="i" wx:key="i"></house-item>
+        </view>
+    </view>
+    <view class="_section data-v-51ee567b" wx:if="{{show_forthcoming&&forthcoming_sale.length}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">即将取证</view>
+            <navigator class="_a data-v-51ee567b" url="/pages/history/main?type=即将取证">更多<image class="_img data-v-51ee567b" lazyLoad="{{true}}" src="/static/img/right-link.png"></image>
+            </navigator>
+        </view>
+        <view class="_ul data-v-51ee567b">
+            <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" listname="即将取证" vueId="{{'1a10b852-16-'+i}}" wx:for="{{forthcoming_sale}}" wx:for-index="i" wx:key="i"></house-item>
+        </view>
+    </view>
+    <home-event bind:__l="__l" class="data-v-51ee567b" vueId="1a10b852-17"></home-event>
+    <view class="_section data-v-51ee567b" wx:if="{{show_execellect_consultant&&excellent_consultants.length}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">
+                <text class="data-v-51ee567b">为您推荐优秀置业顾问</text>
+                <view bindtap="__e" class="help data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'goConsultantHelp',['$event'] ] ] ] ]}}">
+                    <fc-icon bind:__l="__l" class="data-v-51ee567b" type="32_question" vueId="1a10b852-18" wx:if="{{is_consultant}}"></fc-icon>
+                </view>
+            </view>
+        </view>
+        <excellent-consultant-items bind:__l="__l" class="data-v-51ee567b" classname="{{consultantCard.home.class}}" excellent_consultants="{{excellent_consultants}}" theme="{{consultantCard.home.theme}}" vueId="1a10b852-19" wx:if="{{consultantCard}}"></excellent-consultant-items>
+    </view>
+    <view class="_section data-v-51ee567b" wx:if="{{latest_lot_number.length}}">
+        <view class="title _header data-v-51ee567b">
+            <view class="_h2 data-v-51ee567b">最新摇号</view>
+            <navigator class="_a data-v-51ee567b" url="/pages/history/main?type=最新摇号">更多<image class="_img data-v-51ee567b" lazyLoad="{{true}}" src="/static/img/right-link.png"></image>
+            </navigator>
+        </view>
+        <view class="_ul data-v-51ee567b">
+            <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" listname="最新摇号" vueId="{{'1a10b852-20-'+i}}" wx:for="{{latest_lot_number}}" wx:for-index="i" wx:key="i"></house-item>
+        </view>
+    </view>
+    <view class="_section data-v-51ee567b">
+        <view class="{{[ 'follow-tabs _div data-v-51ee567b',[tab_fixed?'tabs-fixed':''] ]}}">
+            <tab bind:__l="__l" bind:change="__e" class="data-v-51ee567b" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected_tab}}" tabs="{{tabs}}" vueId="1a10b852-21"></tab>
+        </view>
+        <view bindtap="__e" class="address data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'onSettingAddress',['$event'] ] ] ] ]}}" wx:if="{{current_address&&selected_tab==='location'}}">
+            <fc-icon bind:__l="__l" class="data-v-51ee567b" type="40_address_grey" vueId="1a10b852-22"></fc-icon>
+            <text class="text data-v-51ee567b">{{current_address+'-附近'}}</text>
+            <fc-icon bind:__l="__l" class="data-v-51ee567b" type="48_more_grey" vueId="1a10b852-23"></fc-icon>
+        </view>
+        <view class="main-section _div data-v-51ee567b" style="{{$root.s0}}">
+            <view class="sale bottom-list-wrap _div data-v-51ee567b">
+                <view class="{{['_div data-v-51ee567b',item.class]}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                    <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" vueId="{{'1a10b852-24-'+i}}"></house-item>
+                </view>
+            </view>
+            <view class="empty-box _div data-v-51ee567b" wx:if="{{show_empty_box}}">
+                <empty-box bind:__l="__l" class="data-v-51ee567b" desc="{{empty_desc}}" top="0" type="empty_building" vueId="1a10b852-25"></empty-box>
+            </view>
+            <button class="shadow-button authUserLocation data-v-51ee567b" openType="openSetting" wx:if="{{!authing&&(!latitude||!longitude)&&selected_tab==='location'}}">
+                <common-img bind:__l="__l" class="data-v-51ee567b" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/authUserLocation.png" vueId="1a10b852-26"></common-img>
+            </button>
+            <view class="recommendations data-v-51ee567b" wx:if="{{!items.length&&selected_tab==='location'&&recommendations.length}}">
+                <view class="title32B list-title data-v-51ee567b">为您推荐</view>
+                <view class="data-v-51ee567b" wx:for="{{recommendations}}" wx:for-index="__i0__" wx:key="building_id">
+                    <house-item bind:__l="__l" class="data-v-51ee567b" item="{{item}}" vueId="{{'1a10b852-27-'+__i0__}}"></house-item>
+                </view>
+            </view>
+            <view class="loading-wrap _div data-v-51ee567b">
+                <loading bind:__l="__l" class="data-v-51ee567b" vueId="1a10b852-28" wx:if="{{bottom_list_loading||!no_more}}"></loading>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-51ee567b" vueId="1a10b852-29"></page-wrap>
+    <view class="float-right-bottom data-v-51ee567b" style="{{'background-image:'+'url('+homepage_suspended_button.photo_url+'?v='+_t+')'+';'}}" wx:if="{{homepage_suspended_button.photo_url&&show_float}}">
+        <view bindtap="__e" class="close data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'onCloseFloat',['$event'] ] ] ] ]}}"></view>
+        <navigator bindtap="__e" class="_a data-v-51ee567b" data-event-opts="{{[ [ 'tap',[ [ 'homepageSuspendedButtonLog',['$event'] ] ] ] ]}}" url="{{homepage_suspended_button.href}}"></navigator>
+    </view>
+    <bottom-user-bar bind:__l="__l" bind:hide="__e" class="data-v-51ee567b" data-event-opts="{{[ [ '^hide',[ ['closeBottomUserBar'] ] ] ]}}" open_type="{{bottom_user_bar.open_type}}" pos_id="{{bottom_user_bar.id}}" position="{{bottom_user_bar.position}}" tip="{{bottom_user_bar.tip}}" url="{{bottom_user_bar.url}}" vueId="1a10b852-30" wx:if="{{show_bottom_user_bar}}"></bottom-user-bar>
+</view>

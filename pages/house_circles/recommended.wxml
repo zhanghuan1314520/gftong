@@ -1,0 +1,41 @@
+<view class="recommended-page _div data-v-69e46b7c">
+    <view class="theme-item _div data-v-69e46b7c">
+        <view class="theme-name title36B _p data-v-69e46b7c">主题楼盘</view>
+        <view class="theme-content _div data-v-69e46b7c">
+            <scroll-view class="content-scroll data-v-69e46b7c" id="feed_swiper" scrollWithAnimation="true" scrollX="{{true}}">
+                <view bindtap="__e" class="list _div data-v-69e46b7c" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="{{item.name}}" data-url="{{item.link}}" wx:for="{{subjects}}" wx:for-index="i" wx:key="i">
+                    <subject bind:__l="__l" class="data-v-69e46b7c" item="{{item}}" vueId="{{'70cdb7bf-1-'+i}}" width="280rpx"></subject>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="ranking-item item _div data-v-69e46b7c">
+        <view class="tpl-h3 _div data-v-69e46b7c">
+            <view class="title36B _h3 data-v-69e46b7c">实时热榜</view>
+            <navigator class="desc data-v-69e46b7c" url="/pages/index/top_search/main">
+                <label class="_span data-v-69e46b7c">更多</label>
+                <fc-icon bind:__l="__l" class="data-v-69e46b7c" type="32_more" vueId="70cdb7bf-2"></fc-icon>
+            </navigator>
+        </view>
+        <view class="ranking-content _div data-v-69e46b7c">
+            <view bindtap="__e" class="list _p data-v-69e46b7c" data-event-opts="{{[ [ 'tap',[ [ 'goRankingDetail',['$0','$1'],[ [ ['ranking','',i] ],'index' ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:for-index="i" wx:key="i">
+                <image class="_img data-v-69e46b7c" src="{{item.m0}}"></image>
+                <label class="text _span data-v-69e46b7c">{{item[$orig].title}}</label>
+            </view>
+        </view>
+    </view>
+    <view class="dynamic-item item _div data-v-69e46b7c">
+        <view class="tpl-h3 _div data-v-69e46b7c">
+            <view class="title36B _h3 data-v-69e46b7c">楼市动态</view>
+            <view bindtap="__e" class="desc _div data-v-69e46b7c" data-event-opts="{{[ [ 'tap',[ [ 'selectArticle',['$event'] ] ] ] ]}}">
+                <label class="_span data-v-69e46b7c">更多</label>
+                <fc-icon bind:__l="__l" class="data-v-69e46b7c" type="32_more" vueId="70cdb7bf-3"></fc-icon>
+            </view>
+        </view>
+        <view class="dynamic-content _div data-v-69e46b7c">
+            <view class="_div data-v-69e46b7c" wx:for="{{article_data}}" wx:for-index="i" wx:key="i">
+                <common-article bind:__l="__l" class="data-v-69e46b7c" item="{{item}}" type="feeds" vueId="{{'70cdb7bf-4-'+i}}" wx:if="{{item.content_type==='weixin_article'}}"></common-article>
+            </view>
+        </view>
+    </view>
+</view>

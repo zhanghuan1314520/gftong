@@ -1,0 +1,14 @@
+<view class="page _div data-v-085382f6">
+    <view class="top-banner _div data-v-085382f6" wx:if="{{banners&&banners.length}}">
+        <top-swiper banners="{{banners}}" bind:__l="__l" class="data-v-085382f6" className="top-banner-swiper" log_type="{{thematic}}" swiper_id="thematic-swiper" vueId="706f380d-1"></top-swiper>
+    </view>
+    <view class="house-list _ul data-v-085382f6">
+        <house-item bind:__l="__l" class="data-v-085382f6" item="{{item}}" type="{{type}}" vueId="{{'706f380d-2-'+index}}" wx:for="{{items}}" wx:key="index"></house-item>
+        <list-loading bind:__l="__l" class="data-v-085382f6" vueId="706f380d-3" wx:if="{{loading||!no_more}}"></list-loading>
+        <view class="bottom-item data-v-085382f6" wx:for="{{bottom_items}}" wx:for-index="__i0__" wx:key="view_id">
+            <common-img bind:__l="__l" class="data-v-085382f6" mode="widthFix" src="{{item.photo_url}}" vueId="{{'706f380d-4-'+__i0__}}"></common-img>
+        </view>
+    </view>
+    <button bindtap="__e" class="phone-call data-v-085382f6" data-event-opts="{{[ [ 'tap',[ [ 'call',['$event'] ] ] ] ]}}" wx:if="{{show_phone}}">电话咨询</button>
+    <page-wrap bind:__l="__l" class="data-v-085382f6" show_app_name="{{false}}" title="{{title}}" vueId="706f380d-5"></page-wrap>
+</view>

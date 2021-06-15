@@ -1,0 +1,5 @@
+<view class="wrap data-v-44d88040">
+    <view class="title36B question data-v-44d88040">{{item.question}}</view>
+    <view class="desc assistFont24 data-v-44d88040">{{item.desc}}</view>
+    <view bindtap="__e" class="option text28B data-v-44d88040" data-event-opts="{{[ [ 'tap',[ [ '$emit',['select',i] ] ] ] ]}}" hoverClass="selected" wx:for="{{item.answers}}" wx:for-index="i" wx:key="i">{{''+item.content+''}}</view>
+</view>

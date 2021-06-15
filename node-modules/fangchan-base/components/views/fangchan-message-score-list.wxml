@@ -1,0 +1,22 @@
+<view class="score-list-page data-v-47ad5379">
+    <view class="score-list data-v-47ad5379" wx:if="{{date_summary.status==='ok'}}">
+        <view class="list-top data-v-47ad5379">
+            <view class="top-nav data-v-47ad5379">
+                <text class="data-v-47ad5379">{{date_summary.title}}</text>
+                <text class="data-v-47ad5379">{{date_summary.score}}</text>
+            </view>
+            <view class="desc _p data-v-47ad5379">{{date_summary.remark}}</view>
+        </view>
+        <view class="list-content data-v-47ad5379">
+            <view class="item data-v-47ad5379" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                <view class="item-top data-v-47ad5379">
+                    <text class="data-v-47ad5379">{{item.obtain_desc}}</text>
+                    <text class="red data-v-47ad5379">{{'+'+item.score}}</text>
+                </view>
+                <view class="item-desc _p data-v-47ad5379">{{item.occur_date||item.occur_time}}</view>
+            </view>
+        </view>
+        <view bindtap="__e" class="score-btn data-v-47ad5379" data-event-opts="{{[ [ 'tap',[ [ 'goScore',['$event'] ] ] ] ]}}">继续赚积分</view>
+    </view>
+    <fangchan-empty-box bind:__l="__l" class="data-v-47ad5379" desc="啊哦，该消息通知已过期~" top="220" type="empty_page" vueId="945604a4-1" wx:else></fangchan-empty-box>
+</view>

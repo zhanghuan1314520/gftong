@@ -1,0 +1,9 @@
+.tag-filters.data-v-a48f90d6 {
+    width: 750rpx;
+    background-color: #fff;
+    padding: 0 32rpx 20rpx;
+}
+
+.tag-filters .item.data-v-a48f90d6 {
+    width: 164rpx;
+}

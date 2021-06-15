@@ -1,0 +1,55 @@
+<view class="page data-v-6219012c">
+    <preview actived="{{selected_block}}" bind:__l="__l" bind:change="__e" bind:showShareOption="__e" class="data-v-6219012c" data-event-opts="{{[ [ '^change',[ ['changeBlock'] ] ],[ '^showShareOption',[ ['showShareOption'] ] ] ]}}" open_type="{{open_type}}" tags="{{tags}}" url="{{building.planar_graph_url}}" vueId="8b16e82e-1" wx:if="{{building.planar_graph_url}}"></preview>
+    <view class="filter data-v-6219012c">
+        <view class="status-tabs data-v-6219012c" wx:if="{{building.planar_graph_url}}">
+            <view bindtap="__e" class="{{[ 'status-tabs--item data-v-6219012c',[status_tabs_active===item?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeStatus',['$0'],[ [ ['status_tabs','',i] ] ] ] ] ] ]}}" wx:for="{{status_tabs}}" wx:for-index="i" wx:key="i">{{item}}</view>
+        </view>
+        <navigator bindtap="__e" class="vr-720 _a data-v-6219012c" data-event-opts="{{[ [ 'tap',[ [ 'clickVr720',['$event'] ] ] ] ]}}" wx:if="{{show_vr_720}}">
+            <view class="i data-v-6219012c"></view>
+            <text class="data-v-6219012c">切换实景</text>
+            <fc-icon bind:__l="__l" class="data-v-6219012c" type="32_more_grey" vueId="8b16e82e-2"></fc-icon>
+        </navigator>
+    </view>
+    <swiper bindchange="__e" class="block-wrap data-v-6219012c" current="{{currentSwiper}}" data-event-opts="{{[ [ 'change',[ [ 'changeSwiperBlock',['$event'] ] ] ] ]}}" nextMargin="32rpx" previousMargin="32rpx" wx:if="{{show_items.length}}">
+        <swiper-item class="block-wrap-item data-v-6219012c" id="{{'item-'+item.id}}" wx:for="{{show_items}}" wx:for-index="__i0__" wx:key="id">
+            <view class="card-item-wrap data-v-6219012c">
+                <view class="card-item data-v-6219012c">
+                    <view class="header data-v-6219012c">
+                        <text class="block data-v-6219012c">{{item.block}}</text>
+                        <text class="{{['status data-v-6219012c',item.status_class]}}" wx:if="{{item.details['销售状态']}}">{{item.details['销售状态']}}</text>
+                    </view>
+                    <view class="info data-v-6219012c">
+                        <view class="info-item data-v-6219012c" wx:for="{{item.infos}}" wx:for-index="i" wx:for-item="info" wx:key="i">{{info}}</view>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+    <list-loading bind:__l="__l" class="data-v-6219012c" vueId="8b16e82e-3" wx:if="{{layout_loading}}"></list-loading>
+    <view class="{{['layout-list data-v-6219012c',hide_layout?'hide':'']}}">
+        <view class="header data-v-6219012c">{{block_title+'-户型图'}}</view>
+        <view class="layout-item data-v-6219012c" wx:for="{{layout_urls}}" wx:for-index="i" wx:for-item="url" wx:key="i">
+            <layout-item bind:__l="__l" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:preview="__e" bind:seek="__e" bind:stop="__e" class="data-v-6219012c" data-event-opts="{{[ [ '^preview',[ [ 'preview',[i] ] ] ],[ '^play',[ [ 'playAudio',[i,'$0'],[ [ ['layout_urls','',i,'audio_url'] ] ] ] ] ],[ '^stop',[ [ 'stopAudio',[i] ] ] ],[ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ ['openVr'] ] ],[ '^seek',[ ['seekAudio'] ] ] ]}}" duration="{{durations[i]}}" playing="{{audio_playing[i]}}" running_time="{{running_times[i]}}" url="{{url}}" vueId="{{'8b16e82e-4-'+i}}"></layout-item>
+        </view>
+    </view>
+    <empty-box bind:__l="__l" class="data-v-6219012c" desc="暂时还没有楼栋和户型详情，我们会尽快完善~ " top="80" type="empty_building" vueId="8b16e82e-5" wx:if="{{!items.length&&!layout_urls.length&&!loading}}"></empty-box>
+    <block wx:else>
+        <empty-box bind:__l="__l" class="data-v-6219012c" desc="{{'暂时没有“'+status_tabs_active+'”状态的楼栋信息'}}" top="80" type="empty_building" vueId="8b16e82e-6" wx:if="{{!show_items.length&&!loading}}"></empty-box>
+    </block>
+    <disclaimer bind:__l="__l" class="data-v-6219012c" title="参考总平图免责声明" vueId="8b16e82e-7" wx:if="{{items.length}}"></disclaimer>
+    <view class="data-v-6219012c" style="position:fixed;bottom:0;left:0;right:0;" wx:if="{{!loadingCurrentConsultant&&showCurrentConsultant}}">
+        <ui-consultant-booth bind:__l="__l" class="data-v-6219012c" consultant="{{currentConsultant}}" full="{{true}}" pos="分享" showTips="{{false}}" vueId="8b16e82e-8"></ui-consultant-booth>
+    </view>
+    <common-footer bind:__l="__l" building_id="{{building.id}}" class="data-v-6219012c" from="总平图" name="{{building.name}}" recommend_consultant_id="{{recommend_consultant_id}}" vueId="8b16e82e-9" wx:if="{{!loadingCurrentConsultant&&!showCurrentConsultant}}"></common-footer>
+    <page-wrap bind:__l="__l" class="data-v-6219012c" hide_back_home="{{true}}" title="{{building.name}}" vueId="8b16e82e-10"></page-wrap>
+    <share-options bind:__l="__l" bind:hide="__e" bind:showBillboard="__e" class="data-v-6219012c" data-event-opts="{{[ [ '^showBillboard',[ ['toggleBillboard'] ] ],[ '^hide',[ ['hideShareOption'] ] ] ]}}" shadow="{{false}}" show="{{show_share_option}}" vueId="8b16e82e-11"></share-options>
+    <billboard bind:__l="__l" bind:hide="__e" class="data-v-6219012c" consultant="{{consultant}}" current_house="{{current_house}}" data-event-opts="{{[ [ '^hide',[ ['toggleBillboard'] ] ] ]}}" events="{{events}}" house="{{house}}" info="{{buildingCardInfo}}" is_building_consultant="{{is_building_consultant}}" show="{{show_billboard}}" show_planar_graph="{{true}}" vueId="8b16e82e-12"></billboard>
+    <view class="btn-rmd-wrap data-v-6219012c" wx:if="{{!is_consultant&&!showCurrentConsultant&&show_rmd}}">
+        <fangchan-auth-user bind:__l="__l" bind:success="__e" class="data-v-6219012c" classname="shadow-button" data-event-opts="{{[ [ '^success',[ ['goConsultantByUser'] ] ] ]}}" failTip="需要认证用户信息才可以向置业顾问提问" forceAuth="{{true}}" vueId="8b16e82e-13" vueSlots="{{['default']}}">
+            <view class="btn-rmd data-v-6219012c">
+                <fc-icon bind:__l="__l" class="data-v-6219012c" type="48_q" vueId="{{'8b16e82e-14'+','+'8b16e82e-13'}}"></fc-icon>
+                <text class="data-v-6219012c">提问</text>
+            </view>
+        </fangchan-auth-user>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="wrap data-v-a6f633dc" wx:if="{{show}}">
+    <navigator bindtap="__e" class="banner data-v-a6f633dc" data-event-opts="{{[ [ 'tap',[ [ 'clickLog',['$event'] ] ] ] ]}}" style="{{$root.s0}}" url="{{activity.url}}">
+        <common-img bind:__l="__l" class="bg data-v-a6f633dc" src="{{activity.img}}" vueId="06fb367e-1"></common-img>
+    </navigator>
+</view>

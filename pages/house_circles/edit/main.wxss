@@ -1,0 +1,128 @@
+.picker-wrap.data-v-795fefc0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 88rpx;
+    padding: 0 30rpx 0 26rpx;
+    margin-bottom: 16rpx;
+    font-size: 28rpx;
+    color: #000;
+    background-color: #fff;
+}
+
+.picker-wrap picker.data-v-795fefc0 {
+    color: #999;
+    font-size: 26rpx;
+}
+
+.textarea-wrap.data-v-795fefc0 {
+    min-height: 360rpx;
+    padding: 0 22rpx;
+    background-color: #fff;
+}
+
+.textarea-wrap.no-textarea.data-v-795fefc0 {
+    min-height: auto;
+}
+
+.textarea-wrap label.data-v-795fefc0 {
+    display: block;
+    padding: 20rpx 0 18rpx;
+    font-size: 28rpx;
+    color: #000;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.textarea-wrap textarea.data-v-795fefc0 {
+    width: 100%;
+    min-height: 300rpx;
+    padding: 20rpx 0;
+    font-size: 26rpx;
+}
+
+._p.data-v-795fefc0 {
+    margin-top: 0;
+    color: #444;
+    font-size: 28rpx;
+}
+
+.uploaded.data-v-795fefc0 {
+    display: inline-block;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.uploaded ._img.data-v-795fefc0,.uploaded.data-v-795fefc0 {
+    width: 152rpx;
+    height: 152rpx;
+}
+
+.upload-wrap.data-v-795fefc0 {
+    padding: 40rpx;
+    background-color: #fff;
+}
+
+.upload-wrap .upload.data-v-795fefc0 {
+    width: 100rpx;
+    color: #999;
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.upload-wrap .upload button.data-v-795fefc0 {
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #ebebeb;
+    margin-bottom: 20rpx;
+}
+
+.upload-wrap .upload ._img.data-v-795fefc0 {
+    width: 48rpx;
+    height: 48rpx;
+    vertical-align: middle;
+}
+
+.disabled.data-v-795fefc0 {
+    background: #ebebeb;
+    margin: 32rpx auto 0;
+}
+
+form.data-v-795fefc0 {
+    display: block;
+    margin-bottom: 20rpx;
+}
+
+.tip.data-v-795fefc0 {
+    font-size: 24rpx;
+    line-height: 33rpx;
+    color: #999;
+    padding: 0 30rpx;
+    min-height: 8rpx;
+}
+
+.tip.error.data-v-795fefc0 {
+    margin: 16rpx 0;
+    color: red;
+}
+
+.building_name.data-v-795fefc0 {
+    display: inline-block;
+    width: 300rpx;
+    text-align: right;
+}
+
+.content-section+.content-section.data-v-795fefc0 {
+    margin-top: 18rpx;
+}
+
+.content-section+.confirm-btn.data-v-795fefc0 {
+    margin-top: 32rpx;
+}

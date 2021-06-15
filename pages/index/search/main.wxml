@@ -1,0 +1,69 @@
+<view class="search-page _div data-v-62d624eb">
+    <form bindsubmit="__e" class="search-wrap data-v-62d624eb" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="search-main-wrap _div data-v-62d624eb">
+            <search-select bind:__l="__l" bind:changeType="__e" class="data-v-62d624eb" data-event-opts="{{[ [ '^changeType',[ ['changeType'] ] ] ]}}" selected="{{type}}" vueId="42746cec-1" wx:if="{{!feature}}"></search-select>
+            <view class="search-input _div data-v-62d624eb">
+                <search-loading bind:__l="__l" class="{{[ 'search-loading data-v-62d624eb',[!show_search_loading?'hide':''] ]}}" vueId="42746cec-2"></search-loading>
+                <image class="{{[ 'search _img data-v-62d624eb',[show_search_loading?'hide':''] ]}}" src="/static/img/search.png"></image>
+                <input alwaysEmbed="{{true}}" autoFocus="true" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="data-v-62d624eb" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'search',['$event'] ] ] ],[ 'focus',[ [ 'startSearch',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','name','$event',[] ] ] ] ] ]}}" name="name" placeholder="{{placeholder}}" type="search" value="{{name}}"></input>
+                <view bindtap="__e" class="remove _div data-v-62d624eb" data-event-opts="{{[ [ 'tap',[ [ 'resetName',['$event'] ] ] ] ]}}">
+                    <image class="_img data-v-62d624eb" src="/static/img/input-remove.png"></image>
+                </view>
+            </view>
+        </view>
+        <button class="search-btn data-v-62d624eb" formType="submit">搜索</button>
+    </form>
+    <view class="search-empty-tip textAssistFont28 data-v-62d624eb" wx:if="{{show_recommend_list}}">未找到您搜索的房源，换个词再搜搜吧~</view>
+    <view class="_div data-v-62d624eb" style="{{'margin-bottom:'+'16rpx'+';'}}" wx:if="{{banners&&banners.length&&!show_dynamic_search}}">
+        <ad-swiper banners="{{banners}}" bind:__l="__l" class="data-v-62d624eb" className="top-banner-swiper" height="{{150}}" log_type="search_page_banner" swiper_id="thematic-swiper" vueId="42746cec-3"></ad-swiper>
+    </view>
+    <view class="recommend-list data-v-62d624eb" wx:if="{{show_recommend_list}}">
+        <view class="header data-v-62d624eb">您可能感兴趣的楼盘:</view>
+        <view class="list-section data-v-62d624eb">
+            <view class="_li data-v-62d624eb" wx:for="{{recommend_list}}" wx:for-index="i" wx:key="i">
+                <surplus-house-item bind:__l="__l" class="data-v-62d624eb" item="{{item}}" vueId="{{'42746cec-4-'+i}}" wx:if="{{type==='在售楼盘'}}"></surplus-house-item>
+                <house-item bind:__l="__l" class="data-v-62d624eb" item="{{item}}" type="{{type}}" vueId="{{'42746cec-5-'+i}}" wx:else></house-item>
+            </view>
+        </view>
+    </view>
+    <view class="search-hisotry-wrap _div data-v-62d624eb" style="{{'display:'+(showSearchHistory?'block':'none')+';'}}">
+        <view class="header _div data-v-62d624eb">
+            <view bindtap="__e" class="header-item _div data-v-62d624eb" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+                <view class="_h3 data-v-62d624eb">历史搜索</view>
+                <view class="{{['item-icon _i data-v-62d624eb',fold_history_list?'down':'up']}}" wx:if="{{show_fold_icon}}"></view>
+            </view>
+            <image bindtap="__e" class="_img data-v-62d624eb" data-event-opts="{{[ [ 'tap',[ [ 'removeHisotry',['$event'] ] ] ] ]}}" src="/static/img/delete.png"></image>
+        </view>
+        <view class="{{[ 'history-list _ul data-v-62d624eb',[!fold_history_list?'unfold-history-list':''] ]}}">
+            <view bindtap="__e" class="list-item _li data-v-62d624eb" data-event-opts="{{[ [ 'tap',[ [ 'selectHistory',['$event'] ] ] ] ]}}" data-name="{{item}}" wx:for="{{history}}" wx:for-index="__i0__" wx:key="*this">{{''+item+''}}</view>
+        </view>
+    </view>
+    <view class="search-hisotry-wrap _div data-v-62d624eb" style="{{'display:'+(showHistory?'block':'none')+';'}}">
+        <view class="header _div data-v-62d624eb">
+            <view class="hot _h3 data-v-62d624eb">热门搜索</view>
+        </view>
+        <view class="history-list hot-history-list _ul data-v-62d624eb">
+            <view bindtap="__e" class="_li data-v-62d624eb" data-event-opts="{{[ [ 'tap',[ [ 'selectHot',['$event'] ] ] ] ]}}" data-href="{{item.href}}" data-id="{{item.id}}" data-index="{{i}}" data-position="{{item.position}}" wx:for="{{hot_search_list}}" wx:for-index="i" wx:key="i">{{''+item.name+''}}</view>
+        </view>
+    </view>
+    <scroll-view class="{{[ 'house-list search-group data-v-62d624eb',[!show_dynamic_search?'hide':''] ]}}" scrollWithAnimation="{{true}}" scrollY="false">
+        <view class="_li data-v-62d624eb" wx:for="{{search_items}}" wx:for-index="__i1__" wx:key="id">
+            <search-item bind:__l="__l" bind:addHisotry="__e" class="data-v-62d624eb" data-event-opts="{{[ [ '^addHisotry',[ ['addHisotry'] ] ] ]}}" item="{{item}}" keyName="{{name}}" type="{{type}}" vueId="{{'42746cec-6-'+__i1__}}"></search-item>
+        </view>
+    </scroll-view>
+    <view class="{{[ 'house-list _ul data-v-62d624eb',[show_dynamic_search?'hide':''] ]}}">
+        <view class="_li data-v-62d624eb" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <surplus-house-item bind:__l="__l" class="data-v-62d624eb" item="{{item}}" vueId="{{'42746cec-7-'+i}}" wx:if="{{type==='在售楼盘'}}"></surplus-house-item>
+            <house-item bind:__l="__l" class="data-v-62d624eb" item="{{item}}" listname="{{type}}" type="{{type}}" vueId="{{'42746cec-8-'+i}}" wx:else></house-item>
+        </view>
+    </view>
+    <view class="top-search _div data-v-62d624eb" style="{{'display:'+(showHistory?'block':'none')+';'}}">
+        <hot-ranking bind:__l="__l" class="data-v-62d624eb" vueId="42746cec-9"></hot-ranking>
+    </view>
+    <view class="_div data-v-62d624eb" wx:if="{{start&&show_submited_bottom}}">
+        <view class="_div data-v-62d624eb" style="{{'display:'+(loading||!no_more?'block':'none')+';'}}">
+            <loading bind:__l="__l" class="data-v-62d624eb" vueId="42746cec-10"></loading>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-62d624eb" title="搜索楼盘" vueId="42746cec-11"></page-wrap>
+</view>

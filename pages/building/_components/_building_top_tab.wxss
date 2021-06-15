@@ -1,0 +1,93 @@
+.building-top-tab.data-v-9ef3ad6c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 88rpx;
+    background-color: #fff;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,.05);
+    color: #667380;
+    font-size: 28rpx;
+    text-align: center;
+    z-index: 3;
+}
+
+.building-top-tab.hidden.data-v-9ef3ad6c {
+    z-index: -1;
+    opacity: 0;
+}
+
+.building-top-tab-other.data-v-9ef3ad6c {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    height: 100%;
+    width: calc(100vw - 180rpx);
+    border-bottom: 1rpx solid #ebebeb;
+    white-space: nowrap;
+}
+
+.tab.data-v-9ef3ad6c {
+    padding-left: 32rpx;
+}
+
+.tab.data-v-9ef3ad6c,.tab .inner.data-v-9ef3ad6c {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tab.active.data-v-9ef3ad6c {
+    color: #333;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.tab.active .inner.data-v-9ef3ad6c::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6rpx;
+    background-color: #00b08d;
+    border-radius: 3rpx;
+}
+
+.tab.data-v-9ef3ad6c:last-child {
+    padding-right: 32rpx;
+}
+
+.home-tab.data-v-9ef3ad6c {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 180rpx;
+    box-shadow: 0 0 16rpx 0 rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0 16rpx;
+}

@@ -1,0 +1,35 @@
+<cover-view class="{{[ 'top-filter-wrap map-filter data-v-05310cf7',[!show?'hide':''] ]}}">
+    <cover-view class="select-content data-v-05310cf7">
+        <cover-view class="left data-v-05310cf7">
+            <cover-view bindtap="__e" class="{{[ 'opt data-v-05310cf7',[item.value===type?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$0'],[ [ ['tabs','',i,'value'] ] ] ] ] ] ]}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">{{''+item.text+''}}</cover-view>
+        </cover-view>
+        <cover-view class="right data-v-05310cf7">
+            <cover-view class="{{[ 'data-v-05310cf7',[type==='zone'?'hide':''] ]}}">
+                <cover-view class="checkbox-wrap data-v-05310cf7">
+                    <cover-view bindtap="__e" class="{{[ 'checkbox checkbox-metros data-v-05310cf7',[opt.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelectMetro',[i] ] ] ] ]}}" wx:for="{{metros}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+(opt.value===''?'不限':opt.value)+''}}</cover-view>
+                </cover-view>
+            </cover-view>
+            <cover-view class="{{[ 'data-v-05310cf7',[type==='metro'?'hide':''] ]}}">
+                <cover-view class="zones data-v-05310cf7">
+                    <cover-view class="opts-wrap data-v-05310cf7">
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-05310cf7',[selected_zone===''?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'selectAll',['$event'] ] ] ] ]}}">不限</cover-view>
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-05310cf7',[item.id===selected_zone?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{zones}}" wx:for-index="i" wx:key="i">{{''+item.name+''}}</cover-view>
+                    </cover-view>
+                    <cover-view class="opts-wrap data-v-05310cf7" wx:if="{{showSections&&sections.length}}">
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-05310cf7',[selected_all_section?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'selectAllSection',['$event'] ] ] ] ]}}">不限</cover-view>
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-05310cf7',[item.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelectSection',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{sections}}" wx:for-index="i" wx:key="i">
+                            <cover-view class="data-v-05310cf7">{{item.name}}</cover-view>
+                            <cover-view class="checkbox-icon data-v-05310cf7">
+                                <cover-image class="{{[ 'data-v-05310cf7',[!item.selected?'hide':''] ]}}" src="https://cdn.vip-wifi.com/fangchan/img/input/checkbox.png"></cover-image>
+                            </cover-view>
+                        </cover-view>
+                    </cover-view>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+    </cover-view>
+    <cover-view class="bottom data-v-05310cf7">
+        <cover-view bindtap="__e" class="btn data-v-05310cf7" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">清空</cover-view>
+        <cover-view bindtap="__e" class="btn main data-v-05310cf7" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</cover-view>
+    </cover-view>
+</cover-view>

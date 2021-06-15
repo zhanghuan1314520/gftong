@@ -1,0 +1,8 @@
+.page.data-v-76b92a11 {
+    padding: 24rpx 0 32rpx;
+    background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,176,141,0)),to(#00b08d));
+    background-image: linear-gradient(0deg,rgba(0,176,141,0),#00b08d);
+    background-size: 100% 320rpx;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}

@@ -1,0 +1,24 @@
+._header.data-v-01a48c32 {
+    font-size: 24rpx;
+    background-color: #fff;
+}
+
+._header.data-v-01a48c32,.comment-header.data-v-01a48c32 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.comment-header.data-v-01a48c32 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1rpx solid #f7f7f7;
+    padding: 25rpx 30rpx 22rpx;
+}

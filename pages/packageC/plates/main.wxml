@@ -1,0 +1,19 @@
+<view class="page _div data-v-b8c1b552">
+    <common-img bind:__l="__l" class="banner data-v-b8c1b552" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/list/plates/banner.png" vueId="0ebdedb4-1"></common-img>
+    <view class="list _div data-v-b8c1b552">
+        <view bindtap="__e" class="item _div data-v-b8c1b552" data-event-opts="{{[ [ 'tap',[ [ 'openDetail',['$0'],[ [ ['items','id',item.id,'id'] ] ] ] ] ] ]}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+            <view class="name _div data-v-b8c1b552">{{item.name}}</view>
+            <view class="img-wrap _div data-v-b8c1b552">
+                <common-img bind:__l="__l" class="img data-v-b8c1b552" src="{{item.cover_image_url}}" vueId="{{'0ebdedb4-2-'+__i0__}}"></common-img>
+            </view>
+            <view class="footer _div data-v-b8c1b552">
+                <view class="zone _div data-v-b8c1b552">{{'所属行政区: '+item.zone+''}}</view>
+                <view class="rate _div data-v-b8c1b552">
+                    <label class="_span data-v-b8c1b552">综合评星：</label>
+                    <stars bind:__l="__l" class="data-v-b8c1b552" score="{{item.rate}}" type="normal" vueId="{{'0ebdedb4-3-'+__i0__}}"></stars>
+                </view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-b8c1b552" title="板块合集" vueId="0ebdedb4-4"></page-wrap>
+</view>

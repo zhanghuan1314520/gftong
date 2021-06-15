@@ -1,0 +1,24 @@
+<view class="img-wrap _div data-v-0499d828">
+    <common-img bind:__l="__l" class="data-v-0499d828" mode="aspectFill" src="{{common_utils.getHeadimg(item)}}" vueId="02a82088-1"></common-img>
+    <view class="red-building data-v-0499d828" wx:if="{{show_red_building}}"></view>
+    <block wx:else>
+        <view class="{{['live-status data-v-0499d828',common_utils.getLiveStatus(item).status]}}" wx:if="{{item.live_streaming&&common_utils.getLiveStatus(item).status}}">
+            <text class="data-v-0499d828">{{common_utils.getLiveStatus(item).label}}</text>
+            <view class="liveing-line data-v-0499d828" wx:if="{{common_utils.getLiveStatus(item).status==='living'}}">
+                <view class="data-v-0499d828"></view>
+                <view class="data-v-0499d828"></view>
+                <view class="data-v-0499d828"></view>
+            </view>
+        </view>
+    </block>
+    <view class="img-icons data-v-0499d828">
+        <fc-icon bind:__l="__l" class="img-icons--item data-v-0499d828" type="32_plane" vueId="02a82088-2" wx:if="{{common_utils.checkPanorama(item)}}"></fc-icon>
+        <fc-icon bind:__l="__l" class="img-icons--item data-v-0499d828" type="32_vr" vueId="02a82088-3" wx:if="{{common_utils.checkShowVr(item)}}"></fc-icon>
+        <fc-icon bind:__l="__l" class="img-icons--item data-v-0499d828" type="32_video" vueId="02a82088-4" wx:if="{{item.video_urls&&item.video_urls.length&&showVideo}}"></fc-icon>
+    </view>
+    <view class="{{[ 'view-wrap _div data-v-0499d828',[!item.view_count?'hide':''] ]}}">
+        <fc-icon bind:__l="__l" class="data-v-0499d828" type="40_white_browse" vueId="02a82088-5"></fc-icon>
+        <label class="_span data-v-0499d828">{{item.view_count||''}}</label>
+    </view>
+</view>
+<wxs module="common_utils" src="_house_item_utils.wxs" />

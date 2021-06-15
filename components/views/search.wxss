@@ -1,0 +1,25 @@
+.search.data-v-69860e72 {
+    position: relative;
+    width: 100%;
+    height: 60rpx;
+    margin: 0 auto;
+}
+
+.search ._img.data-v-69860e72 {
+    position: absolute;
+    top: 50%;
+    left: 20rpx;
+    margin-top: -12rpx;
+    width: 25rpx;
+    height: 26rpx;
+}
+
+.search input.data-v-69860e72 {
+    width: 100%;
+    height: 100%;
+    line-height: 56rpx;
+    padding: 0 50rpx;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    background-color: #f0f0f0;
+}

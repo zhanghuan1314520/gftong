@@ -1,0 +1,8 @@
+.billboard-canvas.data-v-7a7bc688 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+}

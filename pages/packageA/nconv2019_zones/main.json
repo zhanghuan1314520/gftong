@@ -1,0 +1,20 @@
+{
+    "usingComponents": {
+        "top-filter": "/pages/packageA/nconv2019_zones/_top_filter",
+        "zone-select": "/pages/packageA/nconv2019_zones/_zone_select",
+        "search": "/pages/house_circles/_search",
+        "list": "/pages/packageA/nconv2019_zones/_list",
+        "detail": "/pages/packageA/nconv2019_zones/_detail",
+        "subscribe-dlg": "/pages/packageA/nconv2019_zones/_subscribe_dlg",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

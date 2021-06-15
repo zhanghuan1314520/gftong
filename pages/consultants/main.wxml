@@ -1,0 +1,79 @@
+<view class="page _div data-v-1453daa4">
+    <view class="top-3 _div data-v-1453daa4" wx:if="{{score_top_3_consultants&&score_top_3_consultants.length}}">
+        <view class="_h3 data-v-1453daa4">昨日活跃度TOP3</view>
+        <view class="ranks _div data-v-1453daa4">
+            <button bindgetuserinfo="__e" class="rank data-v-1453daa4" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{score_top_3_consultants}}" wx:for-index="i" wx:key="i">
+                <view class="before _i data-v-1453daa4" wx:if="{{i===0}}"></view>
+                <view class="after _i data-v-1453daa4" wx:if="{{i===0}}"></view>
+                <view class="headimg _div data-v-1453daa4">
+                    <view class="_i data-v-1453daa4">
+                        <label class="_span data-v-1453daa4">{{i+1}}</label>
+                    </view>
+                    <view class="img-wrap _div data-v-1453daa4">
+                        <image class="_img data-v-1453daa4" lazyLoad="{{true}}" src="{{item.weixin_headimgurl}}"></image>
+                    </view>
+                </view>
+                <view class="content _div data-v-1453daa4">
+                    <view class="name _div data-v-1453daa4">{{item.name}}</view>
+                    <view class="score _div data-v-1453daa4">{{'活跃度'+item.obtained_score+''}}</view>
+                </view>
+            </button>
+        </view>
+    </view>
+    <view class="consultants _div data-v-1453daa4">
+        <view class="_h3 data-v-1453daa4">
+            <view class="_div data-v-1453daa4">活跃度排行榜</view>
+        </view>
+        <view class="_ul data-v-1453daa4">
+            <button bindgetuserinfo="__e" class="{{['consult-card item data-v-1453daa4',consultant.level]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" id="{{consultant.id}}" openType="getUserInfo" wx:for="{{items}}" wx:for-index="i" wx:for-item="consultant" wx:key="i">
+                <view class="_header data-v-1453daa4">
+                    <image class="headimg _img data-v-1453daa4" lazyLoad="{{true}}" src="{{consultant.weixin_headimgurl}}"></image>
+                    <view class="info _div data-v-1453daa4">
+                        <view class="_h3 data-v-1453daa4">{{''+consultant.name+''}}<label class="_span data-v-1453daa4">{{consultant.type+'置业顾问'}}</label>
+                        </view>
+                        <view class="_p data-v-1453daa4">{{''+consultant.building_name+''}}</view>
+                    </view>
+                </view>
+                <view class="_article data-v-1453daa4">
+                    <view class="row _div data-v-1453daa4">
+                        <view class="col _div data-v-1453daa4">
+                            <label class="data-v-1453daa4">微信：</label>
+                            <label class="_span data-v-1453daa4">{{consultant.weixin_name}}</label>
+                            <image catchtap="__e" class="cp-btn _img data-v-1453daa4" data-event-opts="{{[ [ 'tap',[ [ 'setClipboardData',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-weixin="{{consultant.weixin_name}}" src="/static/img/consultant/cp.png"></image>
+                        </view>
+                    </view>
+                    <view class="right-btn _div data-v-1453daa4">
+                        <form catchsubmit="__e" class="data-v-1453daa4" data-event-opts="{{[ [ 'submit',[ [ 'goChat',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}">
+                            <button catchtap="__e" class="common-btn consult-btn data-v-1453daa4" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}" formType="submit">
+                                <image class="_img data-v-1453daa4" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/consult-i.png"></image>
+                            </button>
+                        </form>
+                        <navigator catchtap="__e" class="common-btn call-btn _a data-v-1453daa4" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-phone="{{consultant.mobile}}">
+                            <image class="_img data-v-1453daa4" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/phone-i.png"></image>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="_footer data-v-1453daa4">
+                    <view class="viewer _div data-v-1453daa4">
+                        <view class="img _div data-v-1453daa4" wx:for="{{consultant.viewers_headimg}}" wx:for-index="j" wx:for-item="url" wx:key="j">
+                            <image class="_img data-v-1453daa4" lazyLoad="{{true}}" src="{{url}}"></image>
+                        </view>
+                    </view>
+                    <view class="view-data _div data-v-1453daa4">
+                        <label class="num _span data-v-1453daa4">{{consultant.show_times}}</label>
+                        <label class="_span data-v-1453daa4">浏览量</label>
+                    </view>
+                    <view class="score _div data-v-1453daa4">
+                        <label class="num _span data-v-1453daa4">{{consultant.last_period_obtained_score}}</label>
+                        <label class="_span data-v-1453daa4">活跃度</label>
+                    </view>
+                </view>
+            </button>
+        </view>
+        <loading bind:__l="__l" class="data-v-1453daa4" vueId="7038999d-1" wx:if="{{loading||!no_more}}"></loading>
+        <view class="_footer data-v-1453daa4">
+            <button bindgetuserinfo="__e" class="data-v-1453daa4" data-event-opts="{{[ [ 'getuserinfo',[ [ 'addConsultant',['$event'] ] ] ] ]}}" openType="getUserInfo">申请置业顾问入驻</button>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-1453daa4" title="置业顾问" vueId="7038999d-2"></page-wrap>
+</view>

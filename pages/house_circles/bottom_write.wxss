@@ -1,0 +1,28 @@
+.bottom-right-write.data-v-04303e4c {
+    position: fixed;
+    right: 32rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 88rpx;
+    height: 88rpx;
+    line-height: 1.2em;
+    bottom: 400rpx;
+    border-radius: 50%;
+    opacity: .8;
+    background: #ff783e;
+    box-shadow: 0 4rpx 12rpx 0 rgba(176,76,0,.4);
+    font-size: 24rpx;
+    color: #fff;
+    z-index: 9;
+}

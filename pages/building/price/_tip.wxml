@@ -1,0 +1,6 @@
+<view class="data-v-45db8abe">
+    <view bindtap="__e" class="step-box data-v-45db8abe" data-event-opts="{{[ [ 'tap',[ [ 'changeStep',['$event'] ] ] ] ]}}">
+        <view class="{{['step data-v-45db8abe',classname]}}"></view>
+    </view>
+    <view bindtap="__e" class="{{['overlay data-v-45db8abe',overlayClassName]}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['hide','$0'],['step'] ] ] ] ]}}"></view>
+</view>

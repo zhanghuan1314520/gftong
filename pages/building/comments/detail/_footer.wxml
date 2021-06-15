@@ -1,0 +1,6 @@
+<view class="_footer data-v-029eef96">
+    <button class="share-btn data-v-029eef96" openType="share">
+        <view class="_i data-v-029eef96"></view>分享</button>
+    <button bindgetuserinfo="__e" class="comment-btn data-v-029eef96" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goComment',['$event'] ] ] ] ]}}" openType="getUserInfo">
+        <view class="_i data-v-029eef96"></view>评论</button>
+</view>

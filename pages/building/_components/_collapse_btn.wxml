@@ -1,0 +1,4 @@
+<view bindtap="__e" class="{{[ 'show-all data-v-0f22dca3',[all?'on':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onShowAll',['$event'] ] ] ] ]}}">
+    <text class="data-v-0f22dca3">{{!all?text:'收起'}}</text>
+    <image class="_img data-v-0f22dca3" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon-a.png"></image>
+</view>

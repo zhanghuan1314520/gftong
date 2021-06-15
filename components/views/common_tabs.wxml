@@ -1,0 +1,12 @@
+<view class="{{[ 'wrap data-v-6aa6cdcc',[scroll?'scroll-wrap':''] ]}}" style="{{'width:'+width+';'}}">
+    <scroll-view class="tabs data-v-6aa6cdcc" scrollIntoView="{{tabId}}" scrollWithAnimation="{{true}}" scrollX="{{true}}" wx:if="{{scroll}}">
+        <view bindtap="__e" class="{{[ '_li data-v-6aa6cdcc',[selected===tab.key?'active':'',selected===tab.key&&tabs.length>1?'bottom_active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChange',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" id="{{'tab-'+tab.key}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab.name+''}}<text class="num data-v-6aa6cdcc" wx:if="{{tab.show_number&&tab.unread_count}}">{{tab.unread_count}}</text>
+            <view class="new _i data-v-6aa6cdcc" wx:if="{{tab.new&&!tab.show_number}}"></view>
+        </view>
+    </scroll-view>
+    <view class="tabs _ul data-v-6aa6cdcc" wx:else>
+        <view bindtap="__e" class="{{[ '_li data-v-6aa6cdcc',[selected===tab.key?'active':'',selected===tab.key&&tabs.length>1?'bottom_active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChange',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab.name+''}}<text class="num data-v-6aa6cdcc" wx:if="{{tab.show_number&&tab.unread_count}}">{{tab.unread_count}}</text>
+            <view class="new _i data-v-6aa6cdcc" wx:if="{{tab.new&&!tab.show_number}}"></view>
+        </view>
+    </view>
+</view>

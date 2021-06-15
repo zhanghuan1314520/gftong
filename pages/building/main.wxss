@@ -1,0 +1,444 @@
+.current-house>view.data-v-256e26cf {
+    background-color: #fff;
+}
+
+.content-wrap.data-v-256e26cf {
+    position: relative;
+}
+
+.history-wrap.data-v-256e26cf {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.history-wrap .header.data-v-256e26cf {
+    padding: 24rpx 0 16rpx;
+    color: #444;
+    font-size: 26rpx;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.history-wrap .house-page-title.data-v-256e26cf {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.history-wrap .history-item.data-v-256e26cf {
+    padding: 30rpx;
+    border-bottom: 1px solid #ebebeb;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.history-wrap .history-item.data-v-256e26cf:last-of-type {
+    border-bottom: none;
+}
+
+.history-wrap .history-item>._div.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.history-wrap .history-item>._div.price-box.data-v-256e26cf {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 10rpx;
+}
+
+.history-wrap .history-item ._h3.data-v-256e26cf {
+    color: #111;
+    line-height: 40rpx;
+}
+
+.history-wrap .history-item .top.data-v-256e26cf {
+    font-size: 28rpx;
+}
+
+.history-wrap .history-item .price.data-v-256e26cf {
+    color: #fa4e05;
+    line-height: 30rpx;
+    font-size: 22rpx;
+    font-weight: 700;
+}
+
+.history-wrap .history-item .content.data-v-256e26cf {
+    margin: 16rpx 0 0;
+}
+
+.history-wrap .history-item .content ._span.data-v-256e26cf:last-child {
+    color: #999;
+}
+
+.history-wrap .history-item .bottom.data-v-256e26cf {
+    height: 56rpx;
+    line-height: 56rpx;
+    padding: 0 30rpx;
+    color: #ad7400;
+    font-size: 20rpx;
+    border-radius: 8rpx;
+    background: #f7f1e4;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 16rpx;
+}
+
+.history-wrap .history-item .bottom .num.data-v-256e26cf {
+    display: inline;
+    font-size: 24rpx;
+    font-weight: 500;
+    margin-left: 12rpx;
+}
+
+.history-wrap .history-item .bottom .prob.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.history-wrap .history-item .bottom .prob>._span.data-v-256e26cf {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.house-tools-new.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: -16rpx -16rpx 0;
+    padding-bottom: 6rpx;
+}
+
+.house-tools-new ._img.data-v-256e26cf {
+    width: 362rpx;
+    height: 176rpx;
+}
+
+.ccb-button.data-v-256e26cf {
+    padding: 0;
+    margin: 16rpx 0;
+    line-height: 0;
+    border-radius: 0;
+}
+
+.ccb-button image.data-v-256e26cf {
+    width: 750rpx;
+    height: 144rpx;
+}
+
+.hot-sign-up.data-v-256e26cf {
+    padding: 2rpx 0 24rpx;
+    background-color: #fff;
+}
+
+.hot-sign-up.data-v-256e26cf,.hot-sign-up button.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.hot-sign-up button.data-v-256e26cf {
+    width: 686rpx;
+    height: 81rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    border-radius: 6rpx;
+}
+
+.hot-sign-up button .text.data-v-256e26cf {
+    position: absolute;
+    font-size: 24rpx;
+    color: #fff;
+    z-index: 1;
+}
+
+.hot-sign-up button ._img.data-v-256e26cf {
+    width: 100%;
+    height: 100%;
+    opacity: .98;
+}
+
+.hot-sign-up button .normal.data-v-256e26cf {
+    left: 242rpx;
+}
+
+.hot-sign-up button .bold.data-v-256e26cf {
+    font-weight: 700;
+    right: 52rpx;
+}
+
+.bm-tips-mask.data-v-256e26cf {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 999;
+    background-color: rgba(0,0,0,.6);
+}
+
+.bm-tips.data-v-256e26cf {
+    width: 600rpx;
+    border-radius: 12rpx;
+    background-color: #fff;
+}
+
+.bm-tips-inner.data-v-256e26cf {
+    width: 100%;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/bm-top.png);
+    background-position: top;
+    background-size: 600rpx 252rpx;
+    background-repeat: no-repeat;
+    padding: 60rpx 0;
+}
+
+.bm-tips-inner .bt-text.data-v-256e26cf,.bm-tips-inner .top-text.data-v-256e26cf {
+    text-align: center;
+    font-size: 32rpx;
+    line-height: 45rpx;
+    color: #ffffb3;
+    font-weight: 700;
+}
+
+.bm-tips-inner .bt-text.data-v-256e26cf {
+    color: #333;
+    margin-top: 40rpx;
+}
+
+.bm-tips-inner .qr-box.data-v-256e26cf {
+    width: 300rpx;
+    height: 300rpx;
+    border: 1rpx solid #00b08d;
+    margin: 47rpx auto 0;
+}
+
+.bm-tips-inner .qr-box ._img.data-v-256e26cf {
+    width: 298rpx;
+    height: 298rpx;
+}
+
+.bm-tips-inner button.data-v-256e26cf {
+    font-size: 32rpx;
+    line-height: 88rpx;
+    font-weight: 700;
+    color: #fff;
+    width: 464rpx;
+    height: 88rpx;
+    background: #00b08d;
+    box-shadow: 0 8rpx 16px 0 rgba(0,176,141,.2);
+    border-radius: 44rpx;
+    margin: 40rpx auto 0;
+}
+
+.tab-group.data-v-256e26cf {
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 296rpx;
+    margin: 0 auto;
+    font-size: 24rpx;
+    color: #666;
+    padding-top: 20rpx;
+    padding-bottom: 6rpx;
+    border-radius: 16rpx 16rpx 0 0;
+    background-color: #fff;
+    box-shadow: 0 8rpx 8rpx 0 rgba(0,0,0,.02);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.preview-wrap.data-v-256e26cf {
+    position: relative;
+}
+
+.activity-banner.data-v-256e26cf {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.activity-banner.data-v-256e26cf,.activity-item.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.activity-item.data-v-256e26cf {
+    width: 686rpx;
+    height: 168rpx;
+}
+
+.activity-item ._img.data-v-256e26cf {
+    width: 100%;
+    height: 100%;
+}
+
+.wk-banner--item.data-v-256e26cf {
+    width: 750rpx;
+    height: 180rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.wk-banner--item ._img.data-v-256e26cf {
+    width: 100%;
+    height: 100%;
+}
+
+.brands-activity.data-v-256e26cf {
+    background: #fff;
+    padding: 36rpx 162rpx 43rpx 194rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/brands/guide.png);
+    background-size: 686rpx 88rpx;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.brands-activity .text.data-v-256e26cf {
+    font-family: PingFangSC-Medium;
+    font-size: 24rpx;
+    color: #f7d4b3;
+}
+
+.f2-history-trend--box.data-v-256e26cf {
+    padding-bottom: 32rpx;
+}
+
+.f2-history-trend--header.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 32rpx;
+}
+
+.f2-history-trend--header>text.data-v-256e26cf:nth-of-type(1) {
+    color: #333;
+    line-height: 45rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.f2-history-trend--header>text.data-v-256e26cf:nth-of-type(2) {
+    color: #888;
+    line-height: 28rpx;
+    font-size: 20rpx;
+}
+
+.f2-history-trend.data-v-256e26cf {
+    width: 686rpx;
+    height: 435rpx;
+    margin: 24rpx auto 0;
+}
+
+.show-more-history.data-v-256e26cf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 0 32rpx;
+}
+
+.show-more-history text.data-v-256e26cf {
+    line-height: 36rpx;
+    color: #667380;
+    font-size: 24rpx;
+}
+
+.show-more-history view.data-v-256e26cf {
+    transform: translateY(2rpx);
+}
+
+.show-more-history .is-show-more.data-v-256e26cf {
+    transform: rotate(180deg);
+    margin-top: -8rpx;
+}
+
+.bullet-comments.data-v-256e26cf {
+    padding-bottom: 6rpx;
+}
+
+.sell-out.data-v-256e26cf {
+    padding: 24rpx 32rpx;
+    font-size: 0;
+    line-height: 0;
+    background-color: #fff;
+}
+
+.sell-out ._img.data-v-256e26cf {
+    width: 686rpx;
+    height: 120rpx;
+}

@@ -1,0 +1,130 @@
+.item.data-v-48466916 {
+    padding: 32rpx 0;
+    -ms-flex-pack: justify;
+    border-bottom: 1rpx solid #ededed;
+}
+
+.info.data-v-48466916,.item.data-v-48466916 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.info.data-v-48466916 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    color: #888;
+    font-size: 24rpx;
+    min-height: 168rpx;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+}
+
+.info .building-name.data-v-48466916 {
+    margin-bottom: 9rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.info .row.data-v-48466916 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.info .row.between.data-v-48466916 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.info .bottom.data-v-48466916 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 5rpx;
+}
+
+.info .bottom .right.data-v-48466916 {
+    width: 345rpx;
+}
+
+.info .bottom .tag.data-v-48466916 {
+    margin-top: 5rpx;
+}
+
+.info .count.data-v-48466916 {
+    font-size: 22rpx;
+    color: #666;
+}
+
+.info.center.data-v-48466916 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.info.center .zone.data-v-48466916 {
+    margin-bottom: 5rpx;
+}
+
+._h1.data-v-48466916 {
+    max-width: 350rpx;
+}
+
+._strong.data-v-48466916 {
+    line-height: 35rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30rpx;
+}
+
+._strong.small.data-v-48466916 {
+    font-size: 26rpx;
+}
+
+.small.data-v-48466916 {
+    font-size: 22rpx;
+}
+
+.sperate.data-v-48466916 {
+    padding: 0 .4em;
+}
+
+.zone-wrap.data-v-48466916 {
+    max-width: 200rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    text-overflow: ellipsis;
+}
+
+.zone.data-v-48466916 {
+    line-height: 33rpx;
+    margin-bottom: 8rpx;
+}
+
+.bottom-tags.data-v-48466916 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.comment-bottom.data-v-48466916 {
+    margin-top: 6rpx;
+}

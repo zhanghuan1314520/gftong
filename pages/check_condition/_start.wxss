@@ -1,0 +1,86 @@
+.card.data-v-42daa266 {
+    position: relative;
+    width: 100%;
+    height: 600rpx;
+    line-height: 600rpx;
+    background-color: #00ad82;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/check-condition/bg.png);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.card.need.data-v-42daa266 {
+    background-color: #0bc;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/check-condition/need-bg.png);
+}
+
+.card.need .content.data-v-42daa266 {
+    background-color: #007580;
+}
+
+.card .content.data-v-42daa266,.card.data-v-42daa266::after {
+    content: "";
+    position: absolute;
+    top: 160rpx;
+    left: 50%;
+    width: 528rpx;
+    height: 320rpx;
+    border: 4rpx solid #000;
+    margin-left: -264rpx;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.card .content.data-v-42daa266 {
+    padding-top: 92rpx;
+    transform: translateX(12px);
+    background-color: #008060;
+    z-index: 2;
+}
+
+.card.data-v-42daa266::after {
+    transform: translateX(-12px);
+    -webkit-transform: translateY(24px);
+    transform: translateY(24px);
+    background-color: #ffff80;
+}
+
+.card ._p.data-v-42daa266 {
+    font-size: 56rpx;
+    line-height: 78rpx;
+    color: #fff;
+}
+
+.card ._p.little.data-v-42daa266 {
+    font-size: 30rpx;
+}
+
+.confirm-btn.data-v-42daa266 {
+    width: 560rpx;
+    margin-top: 60rpx;
+}
+
+.circle-share.data-v-42daa266 {
+    position: absolute;
+    top: 0;
+    right: 30rpx;
+    background-color: rgba(0,0,0,.2);
+}
+
+.wrap.data-v-42daa266 {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+}
+
+.wrap .footer.data-v-42daa266 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #999;
+    font-size: 26rpx;
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,23 @@
+<view class="page data-v-4d046043">
+    <text class="tips text28B data-v-4d046043">各位小伙伴，每日转发图片+文案到朋友圈可以加分，每一条加10分，当日转发当日加分</text>
+    <view class="eg-list data-v-4d046043">
+        <view class="eg-item data-v-4d046043" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="eg-tit text28B data-v-4d046043">{{item.title}}</view>
+            <view class="eg-con data-v-4d046043">
+                <view class="eg-text data-v-4d046043">
+                    <text class="label data-v-4d046043">文字：</text>
+                    <view class="content data-v-4d046043">{{item.content}}</view>
+                    <button bindtap="__e" class="btn data-v-4d046043" data-content="{{item.content}}" data-event-opts="{{[ [ 'tap',[ [ 'copyContent',['$event'] ] ] ] ]}}">复制内容</button>
+                </view>
+                <view class="eg-img data-v-4d046043">
+                    <text class="label data-v-4d046043">图片：</text>
+                    <view class="content data-v-4d046043">
+                        <image bindtap="__e" class="_img data-v-4d046043" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" data-img="{{item.img}}" mode="aspectFill" src="{{item.img}}"></image>
+                    </view>
+                    <button bindtap="__e" class="btn data-v-4d046043" data-event-opts="{{[ [ 'tap',[ [ 'onSaveImg',['$event'] ] ] ] ]}}" data-img="{{item.img}}">保存图片</button>
+                </view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-4d046043" hide_back_home="{{true}}" title="朋友圈转发加分内容" vueId="346b078d-1"></page-wrap>
+</view>

@@ -1,0 +1,25 @@
+<view class="page data-v-793ca64c">
+    <view class="header data-v-793ca64c">{{(building_id?'楼盘页':'首页')+'推荐位规则说明：'}}</view>
+    <view class="card data-v-793ca64c">
+        <excellent-consultant-items bind:__l="__l" class="data-v-793ca64c" classname="{{consultantsClassName}}" excellent_consultants="{{excellent_consultants}}" show_building_name="{{building_id?false:true}}" theme="{{theme}}" vueId="c90e05fc-1"></excellent-consultant-items>
+        <view class="rules data-v-793ca64c">
+            <view class="item data-v-793ca64c">
+                <text class="strong data-v-793ca64c">第一位：</text>
+                <text class="data-v-793ca64c">活跃度排名第一的置业顾问</text>
+            </view>
+            <view class="item data-v-793ca64c">
+                <text class="strong data-v-793ca64c">第二位：</text>
+                <text class="data-v-793ca64c">活跃度排名第二的置业顾问</text>
+            </view>
+            <view class="item data-v-793ca64c">
+                <text class="strong data-v-793ca64c">第三位：</text>
+                <text class="data-v-793ca64c">昨日净增长积分最高的置业顾问</text>
+            </view>
+        </view>
+    </view>
+    <view class="tip data-v-793ca64c">
+        <text class="data-v-793ca64c">{{'如有疑问可联系客服微信：'+customer_service_info.wx_username}}</text>
+        <text bindtap="__e" class="link data-v-793ca64c" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制</text>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-793ca64c" title="荐位规则说明" vueId="c90e05fc-2"></page-wrap>
+</view>

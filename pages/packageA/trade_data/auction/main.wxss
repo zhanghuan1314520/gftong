@@ -1,0 +1,193 @@
+.trade-data__top.data-v-4ba029a1 {
+    padding: 0;
+    background-size: 750rpx 323rpx;
+    background-position: 0 0;
+}
+
+.top-lactime.data-v-4ba029a1 {
+    top: 100rpx;
+}
+
+.search-wrap.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.search-main-wrap.data-v-4ba029a1,.search-wrap.data-v-4ba029a1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.search-main-wrap.data-v-4ba029a1 {
+    width: 590rpx;
+}
+
+.search-main-btn.data-v-4ba029a1 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.search-input.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 60rpx;
+    padding: 0 20rpx;
+    font-size: 26rpx;
+    background-color: #f2f2f2;
+    border-radius: 4rpx;
+}
+
+.search-input input.data-v-4ba029a1 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 0 16rpx;
+}
+
+.search-input .search.data-v-4ba029a1 {
+    width: 25rpx;
+    height: 26rpx;
+}
+
+.search-input .remove.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50rpx;
+    height: 52rpx;
+    background-color: transparent;
+}
+
+.search-input .remove ._img.data-v-4ba029a1 {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.search-btn.data-v-4ba029a1 {
+    width: 100rpx;
+    height: 60rpx;
+    border: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 30rpx;
+    color: #00ad82;
+    line-height: 60rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.auction-list__item.data-v-4ba029a1,.search-btn.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.auction-list__item.data-v-4ba029a1 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #d8d8d8;
+}
+
+.auction-list__item .item-l.data-v-4ba029a1 {
+    width: 515rpx;
+}
+
+.auction-list__item .item-l .tit.data-v-4ba029a1 {
+    font-size: 28rpx;
+    color: #444;
+    line-height: 40rpx;
+}
+
+.auction-list__item .item-l .price.data-v-4ba029a1 {
+    margin-top: 12rpx;
+    color: #fa3319;
+    font-size: 24rpx;
+}
+
+.auction-list__item .item-l .date.data-v-4ba029a1 {
+    font-size: 24rpx;
+    color: #c5c5c5;
+    margin-top: 11rpx;
+}
+
+.auction-list__item .item-r.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.auction-list__item .item-r ._span.data-v-4ba029a1 {
+    min-width: 118rpx;
+    height: 36rpx;
+    border-top-left-radius: 18rpx;
+    border-top-right-radius: 4rpx;
+    border-bottom-right-radius: 18rpx;
+    border-bottom-left-radius: 4rpx;
+    background-color: #f0f2f7;
+    line-height: 36rpx;
+    text-align: center;
+    color: #7c8aa6;
+    font-size: 22rpx;
+}
+
+.auction-list__item .item-r ._span.bgc1.data-v-4ba029a1 {
+    background-color: #f0f2f7;
+    color: #7c8aa6;
+}
+
+.auction-list__item .item-r ._span.bgc2.data-v-4ba029a1 {
+    background-color: #e1f3fa;
+    color: #20a8d4;
+}
+
+.auction-list__item .item-r ._span.bgc3.data-v-4ba029a1 {
+    background-color: #fef2dd;
+    color: #e29917;
+}
+
+.auction-list__item .item-r ._span.bgc4.data-v-4ba029a1 {
+    background-color: #e3feeb;
+    color: #00ad82;
+}
+
+.building-link.data-v-4ba029a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 26rpx;
+    color: #69c;
+}

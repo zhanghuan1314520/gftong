@@ -1,0 +1,104 @@
+<view class="interest-forecast _div data-v-55e858a3">
+    <view class="section-1 _div data-v-55e858a3">
+        <view class="_div data-v-55e858a3" wx:if="{{!house_loading}}">
+            <view class="fills-box has-meteor has-tickertape result _div data-v-55e858a3" wx:if="{{current_house.register_predict_precision}}">
+                <view class="house-name _h1 data-v-55e858a3">{{house_name}}</view>
+                <view class="result-box _div data-v-55e858a3">
+                    <view class="_div data-v-55e858a3">
+                        <label class="_span data-v-55e858a3">预计人数</label>
+                        <view class="_em data-v-55e858a3">{{predict_registers_def}}</view>
+                    </view>
+                    <view class="_div data-v-55e858a3">
+                        <label class="_span data-v-55e858a3">精准度</label>
+                        <view class="_em data-v-55e858a3">{{current_house.register_predict_precision+'%'}}</view>
+                    </view>
+                    <view class="_div data-v-55e858a3">
+                        <label class="_span data-v-55e858a3">实际人数</label>
+                        <view class="_em data-v-55e858a3">{{current_house.total_registers}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="fills-box has-meteor chart-line _div data-v-55e858a3" wx:else>
+                <view class="house-name _h1 data-v-55e858a3">{{house_name}}</view>
+                <view class="predict-registers _div data-v-55e858a3">
+                    <text class="data-v-55e858a3">当前预计</text>
+                    <view class="_div data-v-55e858a3">
+                        <label class="_span data-v-55e858a3" wx:for="{{predict_registers}}" wx:for-index="i" wx:for-item="num" wx:key="i">{{num}}</label>
+                    </view>
+                    <text class="data-v-55e858a3">人报名</text>
+                </view>
+                <house-chart bind:__l="__l" class="data-v-55e858a3" time_points="{{time_points}}" vueId="7e4c8d05-1"></house-chart>
+            </view>
+            <view class="fills-box data-table _div data-v-55e858a3">
+                <view class="{{[ 'table-item _div data-v-55e858a3',[!current_house.price_desc?'hide':''] ]}}">
+                    <view class="lable _div data-v-55e858a3">楼盘价格：</view>
+                    <view class="content _div data-v-55e858a3">{{current_house.price_desc}}</view>
+                </view>
+                <view class="table-item _div data-v-55e858a3">
+                    <view class="lable _div data-v-55e858a3">房源类型：</view>
+                    <view class="content _div data-v-55e858a3">
+                        <view class="_div data-v-55e858a3">全部</view>
+                        <view class="_div data-v-55e858a3">棚改</view>
+                        <view class="_div data-v-55e858a3">刚需</view>
+                        <view class="_div data-v-55e858a3">普通</view>
+                    </view>
+                </view>
+                <view class="table-item _div data-v-55e858a3">
+                    <view class="lable _div data-v-55e858a3">房源套数：</view>
+                    <view class="content _div data-v-55e858a3">
+                        <view class="_div data-v-55e858a3">{{current_house.total_apartments}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.ross_apartments}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.rd_apartments}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.common_apartments}}</view>
+                    </view>
+                </view>
+                <view class="{{[ 'table-item _div data-v-55e858a3',[!current_house.show_reg?'hide':''] ]}}">
+                    <view class="lable _div data-v-55e858a3">摇号人数：</view>
+                    <view class="content _div data-v-55e858a3">
+                        <view class="_div data-v-55e858a3">{{current_house.total_registers}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.ross_registers}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.rd_registers}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.common_registers}}</view>
+                    </view>
+                </view>
+                <view class="{{[ 'table-item _div data-v-55e858a3',[!current_house.show_prob?'hide':''] ]}}">
+                    <view class="lable _div data-v-55e858a3">摇中概率：</view>
+                    <view class="content _div data-v-55e858a3">
+                        <view class="_div data-v-55e858a3">{{current_house.total_probability}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.ross_probability}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.rd_probability}}</view>
+                        <view class="_div data-v-55e858a3">{{current_house.common_probability}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="section-2 _div data-v-55e858a3">
+        <view class="forecast _div data-v-55e858a3">
+            <view class="threweggs _div data-v-55e858a3">
+                <view class="num _div data-v-55e858a3">{{predict_against_vote.like_count+'人扔鸡蛋'}}<view class="{{[ 'vote-tips _div data-v-55e858a3',[against_tips?'in':''] ]}}">
+                        <label class="_span data-v-55e858a3">+1</label>
+                        <view class="_p data-v-55e858a3">原谅我，我会更努力！</view>
+                    </view>
+                </view>
+                <view class="btn opacity _div data-v-55e858a3" wx:if="{{predict_against_vote.is_liked||against_vote_disable}}"></view>
+                <view bindtap="__e" class="btn _div data-v-55e858a3" data-event-opts="{{[ [ 'tap',[ [ 'onLike',['Fc::HousePredictAgainstVote'] ] ] ] ]}}" wx:else></view>
+            </view>
+            <view class="sendflowers _div data-v-55e858a3">
+                <view class="num _div data-v-55e858a3">{{predict_agree_vote.like_count+'人送鲜花'}}<view class="{{[ 'vote-tips _div data-v-55e858a3',[agree_tips?'in':''] ]}}">
+                        <label class="_span data-v-55e858a3">+1</label>
+                        <view class="_p data-v-55e858a3">掌声是我们前进的动力</view>
+                    </view>
+                </view>
+                <view class="btn opacity _div data-v-55e858a3" wx:if="{{predict_agree_vote.is_liked||agree_vote_disable}}"></view>
+                <view bindtap="__e" class="btn _div data-v-55e858a3" data-event-opts="{{[ [ 'tap',[ [ 'onLike',['Fc::HousePredictAgreeVote'] ] ] ] ]}}" wx:else></view>
+            </view>
+        </view>
+        <view class="footer _div data-v-55e858a3">
+            <image class="_img data-v-55e858a3" src="{{qrcode}}"></image>
+            <view class="_div data-v-55e858a3">
+                <view class="_p data-v-55e858a3">该数据由杭州购房通智能AI系统通过大数据计算预测得出,最终数据以官方登记公示为准.</view>
+            </view>
+        </view>
+    </view>
+</view>

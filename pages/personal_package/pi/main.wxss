@@ -1,0 +1,68 @@
+.page.data-v-6e765714 {
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 180rpx;
+}
+
+.share-btn.data-v-6e765714 {
+    position: absolute;
+    top: 12rpx;
+    right: 0;
+}
+
+.yx>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 2326rpx;
+}
+
+.gjj_a>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 2038rpx;
+}
+
+.gjj_b>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 2091rpx;
+}
+
+.gjj_c>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 1910rpx;
+}
+
+.rc>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 2547rpx;
+}
+
+.xz72>.img-box>._img.data-v-6e765714 {
+    width: 750rpx;
+    height: 2654rpx;
+}
+
+.share-canvas.data-v-6e765714 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -3000px;
+    top: -2000px;
+}
+
+.save-btn.data-v-6e765714 {
+    width: 512rpx;
+    height: 120rpx;
+    position: fixed;
+    left: 50%;
+    bottom: 50rpx;
+    transform: translateX(-50%);
+    z-index: 99;
+    background-color: transparent;
+}
+
+.save-btn ._img.data-v-6e765714 {
+    width: 100%;
+    height: 100%;
+}

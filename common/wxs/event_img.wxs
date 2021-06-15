@@ -1,0 +1,9 @@
+module.exports = ({
+    getCoverPhoto: (function(url) {
+        return (url + '?x-oss-process\x3dimage/resize,w_320,h_320')
+    }),
+    getPhoto: (function(photos_urls, url) {
+        var suffix = photos_urls.length === 1 ? '?x-oss-process\x3dimage/resize,w_500' : '?x-oss-process\x3dimage/resize,w_300,h_300';
+        return (url + suffix)
+    }),
+});

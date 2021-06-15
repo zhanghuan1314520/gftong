@@ -1,0 +1,26 @@
+<view class="section-surplus_houses _div data-v-0de80e97" wx:if="{{show_surplus_houses}}">
+    <view class="section-surplus_houses-title _div data-v-0de80e97">
+        <view class="_h1 data-v-0de80e97">楼盘剩余房源</view>
+        <view class="surplus-houses _div data-v-0de80e97 vue-ref" data-ref="surplus-houses">
+            <label class="_span data-v-0de80e97">{{'共'+surplus_apartment_count+'套'}}</label>
+        </view>
+    </view>
+    <view bindtap="__e" class="section-surplus_houses-tips _div data-v-0de80e97" data-event-opts="{{[ [ 'tap',[ [ 'goCall',['$event'] ] ] ] ]}}">
+        <view class="left _div data-v-0de80e97">剩余房源数据来源于透明售房网展示信息，数据可能存在延迟，具体剩余套数可电话咨询。</view>
+        <image class="phone _img data-v-0de80e97" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/phone.png"></image>
+    </view>
+    <view class="section-surplus_houses-list _div data-v-0de80e97">
+        <form bindsubmit="__e" class="data-v-0de80e97" data-event-opts="{{[ [ 'submit',[ [ 'goSurplusApartments',['$event'] ] ] ] ]}}" data-id="{{item.id}}" data-name="{{item.name}}" wx:for="{{surplus_houses}}" wx:for-index="i" wx:key="i">
+            <button class="shadow-button section-surplus_houses-list__item data-v-0de80e97" formType="submit">
+                <view class="item-con _div data-v-0de80e97">
+                    <view class="houses-title _div data-v-0de80e97">{{item.name+'(预售证号:'+item.presell_no+')'}}</view>
+                    <view class="houses-price _div data-v-0de80e97">
+                        <label class="_span data-v-0de80e97">{{item.price_desc}}</label>
+                        <view class="_em data-v-0de80e97" wx:if="{{item.surplus_count_desc}}">{{item.surplus_count_desc}}</view>
+                    </view>
+                </view>
+                <image class="_img data-v-0de80e97" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chevron.png"></image>
+            </button>
+        </form>
+    </view>
+</view>

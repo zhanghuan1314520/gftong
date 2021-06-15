@@ -1,0 +1,89 @@
+.page.data-v-6a0ecffd {
+    min-height: 100vh;
+    padding-bottom: 36rpx;
+    background-color: #fff;
+}
+
+.page.data-v-6a0ecffd::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 160rpx;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#00b08d),color-stop(67%,#008a85));
+    background-image: linear-gradient(180deg,#00b08d,#008a85 67%);
+    z-index: 0;
+}
+
+.header.data-v-6a0ecffd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    padding: 31rpx 32rpx 38rpx;
+    color: #fff;
+    font-size: 36rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.price-page.data-v-6a0ecffd {
+    position: relative;
+    border-radius: 12rpx 12rpx 0 0;
+    z-index: 2;
+}
+
+.switch-btn.data-v-6a0ecffd {
+    position: fixed;
+    bottom: 105rpx;
+    right: 16rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 88rpx;
+    height: 88rpx;
+    line-height: 1.2em;
+    border-radius: 50%;
+    font-weight: 700;
+    z-index: 9999;
+    background: rgba(0,176,141,.96);
+    box-shadow: 0 4rpx 12rpx 0 rgba(0,176,141,.4);
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.switch-btn text.data-v-6a0ecffd {
+    margin-top: -2rpx;
+}
+
+.price-img.data-v-6a0ecffd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 56rpx;
+    padding: 0 4rpx 0 18rpx;
+    background: rgba(0,0,0,.15);
+    border-radius: 28rpx;
+    font-size: 26rpx;
+    color: #fff;
+}

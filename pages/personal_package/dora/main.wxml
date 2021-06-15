@@ -1,0 +1,5 @@
+<view class="page data-v-9395a7a8">
+    <doing answered_questions="{{answered_questions}}" bind:__l="__l" bind:deleteQuestion="__e" bind:selectQuestion="__e" class="data-v-9395a7a8" current_question="{{current_question}}" data-event-opts="{{[ [ '^deleteQuestion',[ ['deleteQuestion'] ] ],[ '^selectQuestion',[ ['selectQuestion'] ] ] ]}}" query_desc="取自婚姻法的夫妻房屋财产判定，了解婚前婚后购房的差异，点击开始测试。" query_title="该查询器适用范围：杭州市" vueId="308318c7-1" wx:if="{{!show_result}}"></doing>
+    <done answered_questions="{{answered_questions}}" bind:__l="__l" bind:reset="__e" class="data-v-9395a7a8" data-event-opts="{{[ [ '^reset',[ ['reset'] ] ] ]}}" desc="{{desc}}" result="{{result}}" vueId="308318c7-2" wx:else></done>
+    <page-wrap bind:__l="__l" class="data-v-9395a7a8" title="房屋权属查询" vueId="308318c7-3"></page-wrap>
+</view>

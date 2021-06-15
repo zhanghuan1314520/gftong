@@ -1,0 +1,185 @@
+.page.data-v-5f77c6d3 {
+    position: relative;
+    padding: 64rpx 32rpx;
+    text-align: center;
+}
+
+.page.data-v-5f77c6d3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400rpx;
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#4dbf4d),color-stop(96%,#00b08d));
+    background-image: linear-gradient(0deg,#4dbf4d,#00b08d 96%);
+    z-index: 0;
+}
+
+.card-top.data-v-5f77c6d3 {
+    position: relative;
+    height: 336rpx;
+    padding: 72rpx 88rpx 0;
+    background-image: linear-gradient(168deg,rgba(167,255,102,.3),rgba(0,175,191,0) 61%);
+    background-color: hsla(0,0%,100%,.2);
+    border-radius: 40rpx 40rpx 0 0;
+    color: #fff;
+    font-size: 28rpx;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.card-top .header.data-v-5f77c6d3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card-top .header .help.data-v-5f77c6d3 {
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    border: 1rpx solid #fff;
+    font-size: 22rpx;
+    margin-left: .2em;
+}
+
+.card-top .money .strong.data-v-5f77c6d3 {
+    font-size: 56rpx;
+    font-weight: 700;
+}
+
+.card-top .items.data-v-5f77c6d3 {
+    position: absolute;
+    bottom: 0;
+    width: 510rpx;
+    font-size: 24rpx;
+}
+
+.card-top .items.data-v-5f77c6d3,.card-top .items .item.data-v-5f77c6d3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.card-top .items .item.data-v-5f77c6d3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 80rpx;
+}
+
+.card-top .items .item.text.data-v-5f77c6d3 {
+    margin-bottom: 15rpx;
+}
+
+.card-top .items label.data-v-5f77c6d3 {
+    color: hsla(0,0%,100%,.7);
+}
+
+.card-top .items .img.data-v-5f77c6d3 {
+    position: relative;
+    width: 220rpx;
+    height: 133rpx;
+}
+
+.card-top .items .img .book-img.data-v-5f77c6d3 {
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.card-bottom.data-v-5f77c6d3 {
+    min-height: 248rpx;
+    margin-bottom: 32rpx;
+    box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,.05);
+    border-radius: 0 0 40rpx 40rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.card-bottom .all.data-v-5f77c6d3 {
+    padding: 72rpx 0;
+}
+
+.card-bottom .row.data-v-5f77c6d3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 72rpx 0 64rpx;
+    margin-bottom: 24rpx;
+}
+
+.card-bottom .row.data-v-5f77c6d3:last-child {
+    margin-bottom: 0;
+}
+
+.card-bottom .part.data-v-5f77c6d3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 52rpx 54rpx;
+}
+
+.card-bottom .header.data-v-5f77c6d3 {
+    margin-bottom: 36rpx;
+}
+
+.card-bottom .item.data-v-5f77c6d3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-bottom: 24rpx;
+}
+
+.card-bottom .item.data-v-5f77c6d3:last-child {
+    margin-bottom: 0;
+}
+
+.btn-tip.data-v-5f77c6d3 {
+    text-align: left;
+}
+
+.card-footer.data-v-5f77c6d3 {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+}

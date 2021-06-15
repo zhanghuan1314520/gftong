@@ -1,0 +1,8 @@
+<navigator class="building-card data-v-1b639a41" url="{{link}}">
+    <image class="data-v-1b639a41" mode="aspectFill" src="{{card.cover_photo_url}}"></image>
+    <view class="info data-v-1b639a41">
+        <text class="heading32B name data-v-1b639a41">{{card.name}}</text>
+        <text class="assistFont24 data-v-1b639a41">{{card.zone}}</text>
+    </view>
+    <view catchtap="__e" class="vr-link data-v-1b639a41" data-event-opts="{{[ [ 'tap',[ [ 'openVr',['$event'] ] ] ] ]}}" wx:if="{{show_vr_link}}">查看楼盘VR</view>
+</navigator>

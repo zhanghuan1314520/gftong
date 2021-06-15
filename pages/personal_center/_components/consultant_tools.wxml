@@ -1,0 +1,1 @@
+<personal-section bind:__l="__l" className="consultant_tools" tabs="{{tabs}}" title="置业顾问工具" vueId="28733efe-1"></personal-section>

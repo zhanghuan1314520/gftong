@@ -1,0 +1,222 @@
+.page.data-v-012c8db8 {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 1206rpx;
+    background-color: #fff;
+}
+
+.page-content.data-v-012c8db8 {
+    position: relative;
+    width: 100%;
+    padding-top: 23rpx;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2abdb7),to(#fff));
+    background-image: linear-gradient(180deg,#2abdb7,#fff);
+}
+
+.page-content.data-v-012c8db8::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 763.33333rpx;
+    height: 762rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/mine_detail/bg.png);
+    background-size: 763.33333rpx 762rpx;
+    background-position: top;
+}
+
+.result.data-v-012c8db8 {
+    position: relative;
+}
+
+.result-info.data-v-012c8db8 {
+    position: relative;
+    width: 686rpx;
+    padding: 24rpx;
+    margin: 0 auto;
+    background: hsla(0,0%,100%,.7);
+    box-shadow: 0 8rpx 16rpx 0 rgba(95,212,207,.1);
+    border-radius: 12rpx;
+    box-sizing: border-box;
+}
+
+.result-info.data-v-012c8db8::before {
+    content: "";
+    position: absolute;
+    top: -22rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 508rpx;
+    height: 111rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/mine_detail/bg-normal.png);
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.result-info-content.data-v-012c8db8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 638rpx;
+    min-height: 314rpx;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4rpx;
+    position: relative;
+}
+
+.result-detail.data-v-012c8db8 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ln-num.data-v-012c8db8,.result-detail.data-v-012c8db8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.ln-num.data-v-012c8db8 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -14rpx;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28rpx;
+    color: #333;
+    font-family: PingFangSC-Regular;
+}
+
+.ln-num .num.data-v-012c8db8 {
+    font-size: 40rpx;
+    font-weight: 700;
+}
+
+.ln-num-icon.data-v-012c8db8 {
+    position: absolute;
+    top: 2rpx;
+    right: -36rpx;
+}
+
+.card-names.data-v-012c8db8 {
+    font-size: 28rpx;
+    color: #333;
+    text-align: center;
+    padding-top: 40rpx;
+}
+
+.result-num.data-v-012c8db8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #333;
+    padding-top: 12rpx;
+}
+
+.order_rating.data-v-012c8db8 {
+    text-align: center;
+    color: #333;
+    font-size: 28rpx;
+    margin: 12rpx auto 0;
+    width: 536rpx;
+}
+
+.go-comment.data-v-012c8db8 {
+    margin: 38rpx auto 0;
+    text-align: center;
+    width: 638rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-weight: 700;
+    background: #41bcb1;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.warining-tip.data-v-012c8db8 {
+    line-height: 56rpx;
+    margin: 0 auto;
+    color: #333;
+    font-size: 40rpx;
+    font-weight: 700;
+    text-align: left;
+    padding: 0 32rpx;
+}
+
+.qr-wrap.data-v-012c8db8 {
+    position: relative;
+    text-align: center;
+    margin-left: 583rpx;
+    margin-bottom: 45rpx;
+    width: 136rpx;
+}
+
+.qr-wrap ._img.data-v-012c8db8 {
+    width: 136rpx;
+    height: 136rpx;
+}
+
+.qr-wrap ._p.data-v-012c8db8 {
+    font-size: 22rpx;
+    color: hsla(0,0%,100%,.6);
+}
+
+.lottery-result.data-v-012c8db8 {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+
+.success .ln-num.data-v-012c8db8,.success .ln-num .num.data-v-012c8db8 {
+    color: #fff;
+}
+
+.success .order_rating.data-v-012c8db8,.success .result-num.data-v-012c8db8 {
+    color: #cc3d0b;
+}
+
+.success .go-comment.data-v-012c8db8 {
+    background-image: -webkit-gradient(linear,left top,right top,from(#ffa054),to(#ff765f));
+    background-image: linear-gradient(90deg,#ffa054,#ff765f);
+}
+
+.success .result-info.data-v-012c8db8::before {
+    top: -52rpx;
+    height: 142rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/mine_detail/bg-good.png);
+    background-size: 100% 100%;
+}

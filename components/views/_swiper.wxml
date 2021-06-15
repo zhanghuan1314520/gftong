@@ -1,0 +1,8 @@
+<swiper autoplay="true" bindanimationfinish="__e" circular="{{true}}" class="data-v-784b6552" data-event-opts="{{[ [ 'animationfinish',[ [ 'animationSwiper',['$event'] ] ] ] ]}}" id="hot_swiper" indicatorActiveColor="rgba(255, 255, 255, .8)" indicatorColor="rgba(255, 255, 255, .4)" indicatorDots="{{banners.length>1}}">
+    <swiper-item class="data-v-784b6552" wx:for="{{banners}}" wx:for-index="i" wx:for-item="banner" wx:key="i">
+        <navigator bindtap="__e" class="_a data-v-784b6552" data-event-opts="{{[ [ 'tap',[ [ 'goLink',['$event'] ] ] ] ]}}" data-href="{{banner.href}}" data-id="{{banner.id}}">
+            <common-img bind:__l="__l" class="data-v-784b6552" src="{{banner.photo_url}}" vueId="{{'ec2cd0ca-1-'+i}}"></common-img>
+            <label class="recommend-logo _span data-v-784b6552">广告</label>
+        </navigator>
+    </swiper-item>
+</swiper>

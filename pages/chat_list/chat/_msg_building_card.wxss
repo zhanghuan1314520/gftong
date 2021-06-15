@@ -1,0 +1,41 @@
+.building-card.data-v-1b639a41 {
+    width: 498rpx;
+    border-radius: 8rpx;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+image.data-v-1b639a41 {
+    display: block;
+    width: 100%;
+    height: 211rpx;
+}
+
+.info.data-v-1b639a41 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 73rpx;
+    padding: 0 18rpx;
+}
+
+.info .name.data-v-1b639a41 {
+    margin-right: 1em;
+    max-width: 290rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.vr-link.data-v-1b639a41 {
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #607fbf;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+}

@@ -1,0 +1,79 @@
+.tools.data-v-35ef910d {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 17rpx;
+}
+
+.tools.data-v-35ef910d,.tools .item.data-v-35ef910d {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tools .item.data-v-35ef910d {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 116rpx;
+    height: 90rpx;
+    font-size: 22rpx;
+    line-height: 30rpx;
+    color: #444;
+    margin-right: 8rpx;
+    text-shadow: -2rpx 0 4rpx #fff;
+}
+
+.tools .item.data-v-35ef910d:last-child {
+    margin: 0;
+}
+
+.tools .i.data-v-35ef910d {
+    width: 116rpx;
+    height: 52rpx;
+    border-radius: 4rpx;
+}
+
+.tools .video .i.data-v-35ef910d {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/video-s.png);
+    background-size: 100% 100%;
+}
+
+.tools .vr .i.data-v-35ef910d {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/vr-s.png);
+    background-size: 100% 100%;
+}
+
+.large .item.data-v-35ef910d {
+    width: 196rpx;
+    height: 72rpx;
+    font-size: 0;
+}
+
+.large .item .i.data-v-35ef910d {
+    width: 164rpx;
+    height: 72rpx;
+    box-shadow: none;
+}
+
+.large .item .text.data-v-35ef910d {
+    display: none;
+}
+
+.large .video .i.data-v-35ef910d {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/layout/video-large.png);
+    background-size: 100% 100%;
+}
+
+.large .vr .i.data-v-35ef910d {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/layout/vr-large.png);
+    background-size: 100% 100%;
+}

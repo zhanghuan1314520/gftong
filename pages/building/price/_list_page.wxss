@@ -1,0 +1,12 @@
+.page.data-v-bf1644ea {
+    min-height: 100vh;
+    background-color: #fff;
+    border-radius: 12rpx 12rpx 0 0;
+}
+
+.main-section.data-v-bf1644ea {
+    min-height: calc(100vh - 197rpx);
+    border-radius: 12rpx 12rpx 0 0;
+    background-color: #fff;
+    position: relative;
+}

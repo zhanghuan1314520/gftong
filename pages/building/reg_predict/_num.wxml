@@ -1,0 +1,42 @@
+<view class="_div data-v-4011090a">
+    <view class="{{[ 'house-price _div data-v-4011090a',[!current_house.price_desc?'hide':''] ]}}">
+        <label class="data-v-4011090a">楼盘价格：</label>
+        <label class="price _span data-v-4011090a">{{current_house.price_desc}}</label>
+    </view>
+    <view class="{{[ 'house-count-wrap _div data-v-4011090a',[is_selling?'hide':''] ]}}">
+        <view class="house-count _div data-v-4011090a">
+            <view class="header _div data-v-4011090a">
+                <view class="item _div data-v-4011090a">
+                    <image class="_img data-v-4011090a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-detail/building.png"></image>
+                </view>
+                <view class="item _div data-v-4011090a">房源套数：</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_reg?'hide':''] ]}}">摇号人数：</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_prob?'hide':''] ]}}">摇中概率：</view>
+            </view>
+            <view class="col _div data-v-4011090a">
+                <view class="item _div data-v-4011090a">全部</view>
+                <view class="item _div data-v-4011090a">{{current_house.total_apartments}}</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_reg?'hide':''] ]}}">{{current_house.total_registers}}</view>
+                <view class="{{[ 'item prob _div data-v-4011090a',[!current_house.show_prob?'hide':''] ]}}">{{current_house.total_probability}}</view>
+            </view>
+            <view class="{{[ 'col _div data-v-4011090a',[!current_house.ross_apartments?'hide':''] ]}}">
+                <view class="item _div data-v-4011090a">棚改</view>
+                <view class="item _div data-v-4011090a">{{current_house.ross_apartments}}</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_reg?'hide':''] ]}}">{{current_house.ross_registers}}</view>
+                <view class="{{[ 'item prob _div data-v-4011090a',[!current_house.show_prob?'hide':''] ]}}">{{current_house.ross_probability}}</view>
+            </view>
+            <view class="{{[ 'col _div data-v-4011090a',[!current_house.rd_apartments?'hide':''] ]}}">
+                <view class="item _div data-v-4011090a">刚需</view>
+                <view class="item _div data-v-4011090a">{{current_house.rd_apartments}}</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_reg?'hide':''] ]}}">{{current_house.rd_registers}}</view>
+                <view class="{{[ 'item prob _div data-v-4011090a',[!current_house.show_prob?'hide':''] ]}}">{{current_house.rd_probability}}</view>
+            </view>
+            <view class="{{[ 'col _div data-v-4011090a',[!current_house.common_apartments?'hide':''] ]}}">
+                <view class="item _div data-v-4011090a">普通</view>
+                <view class="item _div data-v-4011090a">{{current_house.common_apartments}}</view>
+                <view class="{{[ 'item _div data-v-4011090a',[!current_house.show_reg?'hide':''] ]}}">{{current_house.common_registers}}</view>
+                <view class="{{[ 'item prob _div data-v-4011090a',[!current_house.show_prob?'hide':''] ]}}">{{current_house.common_probability}}</view>
+            </view>
+        </view>
+    </view>
+</view>

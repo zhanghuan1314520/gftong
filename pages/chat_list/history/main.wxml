@@ -1,0 +1,20 @@
+<view class="page chat-list-page _div data-v-47d37cb2">
+    <view class="chat-list-header _header data-v-47d37cb2">
+        <view class="left data-v-47d37cb2">可点击查看与对方的聊天记录</view>
+    </view>
+    <view class="chat-list _div data-v-47d37cb2">
+        <view bindtap="__e" class="chat-item _div data-v-47d37cb2" data-event-opts="{{[ [ 'tap',[ [ 'goChat',['$event'] ] ] ] ]}}" data-id="{{chat.id}}" wx:for="{{items}}" wx:for-index="i" wx:for-item="chat" wx:key="i">
+            <image class="headimg _img data-v-47d37cb2" lazyLoad="{{true}}" src="{{chat.peer_headimgurl}}"></image>
+            <view class="detail _div data-v-47d37cb2">
+                <view class="top _div data-v-47d37cb2">
+                    <view class="_h3 data-v-47d37cb2">{{chat.peer_nickname}}</view>
+                    <navigator class="count-link _a data-v-47d37cb2">{{chat.total_messages_count+'条'}}</navigator>
+                </view>
+                <view class="content _div data-v-47d37cb2" wx:if="{{chat.content}}">{{chat.content}}</view>
+            </view>
+        </view>
+        <loading bind:__l="__l" class="data-v-47d37cb2" vueId="39113fa2-1" wx:if="{{loading}}"></loading>
+    </view>
+    <view class="tip _p data-v-47d37cb2" wx:if="{{!loading&&!items.length}}">没有历史咨询</view>
+    <page-wrap bind:__l="__l" class="data-v-47d37cb2" title="历史咨询" vueId="39113fa2-2"></page-wrap>
+</view>

@@ -1,0 +1,36 @@
+.detail-wrap.data-v-fc48886e {
+    padding: 24rpx;
+    background-color: #fff;
+    border-radius: 24rpx 24rpx 0 0;
+}
+
+.detail.data-v-fc48886e {
+    position: relative;
+    margin-top: 24rpx;
+    font-size: 24rpx;
+}
+
+.close.data-v-fc48886e {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32rpx;
+    height: 32rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/nconv2019_zones/close.png);
+    background-size: 32rpx 32rpx;
+}
+
+.name.data-v-fc48886e {
+    font-size: 36rpx;
+    color: #333;
+}
+
+.distance.data-v-fc48886e {
+    margin-top: 8rpx;
+    color: #666;
+}
+
+.tip.data-v-fc48886e {
+    margin-top: 8rpx;
+    color: #eb1111;
+}

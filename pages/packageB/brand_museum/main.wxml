@@ -1,0 +1,51 @@
+<view class="{{['data-v-29474077',pageClassNames]}}">
+    <view class="main data-v-29474077">
+        <view class="bm-swiper data-v-29474077" wx:if="{{photos_urls.length}}">
+            <swiper autoplay="{{autoplay}}" circular="{{circular}}" class="data-v-29474077" duration="{{duration}}" indicatorActiveColor="#FFFFFF" indicatorColor="rgba(255, 255, 255, 0.39)" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+                <swiper-item class="data-v-29474077" wx:for="{{photos_urls}}" wx:for-index="i" wx:key="i">
+                    <view class="bm-swiper--item data-v-29474077">
+                        <image class="_img data-v-29474077" src="{{item}}"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="client-rect data-v-29474077"></view>
+        <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-29474077" className="{{'consultant-league-filter'+(filter_show?' full':'')}}" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" id="top_filter" layout="{{layout}}" metro="{{metro}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="53a2c782-1" vueSlots="{{['after']}}" zone_ids="{{zone_ids}}">
+            <view slot="after">
+                <tag-filter bind:__l="__l" bind:change="__e" class="data-v-29474077" data-event-opts="{{[ [ '^change',[ ['changeStatus'] ] ] ]}}" status="{{status}}" vueId="{{'53a2c782-2'+','+'53a2c782-1'}}"></tag-filter>
+            </view>
+        </top-filter>
+        <view class="bm-list data-v-29474077">
+            <view class="bm-item data-v-29474077" wx:for="{{items}}" wx:key="index">
+                <view class="bm-house data-v-29474077">
+                    <view bindtap="__e" class="bm-house--wrap data-v-29474077" data-building="{{item}}" data-event-opts="{{[ [ 'tap',[ [ 'tapItem',['$event'] ] ] ] ]}}">
+                        <house-item bind:__l="__l" class="data-v-29474077" item="{{item}}" vueId="{{'53a2c782-3-'+index}}"></house-item>
+                    </view>
+                </view>
+                <view class="bm-consultant data-v-29474077">
+                    <view class="consultant-piece data-v-29474077">
+                        <button bindgetuserinfo="__e" class="c-info data-v-29474077" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{item.buildingConsultant.id}}" openType="getUserInfo">
+                            <view class="c-head data-v-29474077">
+                                <image class="_img data-v-29474077" lazyLoad="{{true}}" src="{{item.buildingConsultant.weixin_headimgurl}}"></image>
+                            </view>
+                            <view class="c-body data-v-29474077">
+                                <view class="c-name data-v-29474077">{{item.buildingConsultant.name}}</view>
+                                <view class="c-des data-v-29474077">专属置业顾问</view>
+                            </view>
+                        </button>
+                        <view class="c-contact data-v-29474077">
+                            <button bindgetuserinfo="__e" catchtap="__e" class="data-v-29474077" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ],[ 'getuserinfo',[ [ 'onChat',['$event'] ] ] ] ]}}" data-id="{{item.buildingConsultant.id}}" openType="getUserInfo">
+                                <image class="_img data-v-29474077" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/chat.png"></image>
+                            </button>
+                            <button bindgetuserinfo="__e" catchtap="__e" class="data-v-29474077" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ],[ 'getuserinfo',[ [ 'onCall',['$event'] ] ] ] ]}}" data-id="{{item.buildingConsultant.id}}" openType="getUserInfo">
+                                <image class="_img data-v-29474077" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/call.png"></image>
+                            </button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <list-loading bind:__l="__l" class="data-v-29474077" vueId="53a2c782-4" wx:if="{{loading||!no_more}}"></list-loading>
+        <view class="bm-nomore data-v-29474077" wx:if="{{!loading&&no_more}}">没有更多了</view>
+    </view>
+</view>

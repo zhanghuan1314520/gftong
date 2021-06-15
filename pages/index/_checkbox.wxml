@@ -1,0 +1,4 @@
+<view bindtap="__e" class="{{['checkbox-wrap _div data-v-04094987',checkboxClass]}}" data-event-opts="{{[ [ 'tap',[ [ 'change',['$event'] ] ] ] ]}}">
+    <view class="checkbox _div data-v-04094987">
+        <image class="_img data-v-04094987" src="{{img}}"></image>
+    </view>{{''+zone+''}}</view>

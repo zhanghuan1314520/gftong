@@ -1,0 +1,14 @@
+<view class="page data-v-ad890ba2">
+    <navigator class="search data-v-ad890ba2" url="/pages/building/choose_search/main">
+        <fc-icon bind:__l="__l" class="i data-v-ad890ba2" type="48_search_primary" vueId="8d2d8bd2-1"></fc-icon>
+        <text class="data-v-ad890ba2">添加楼盘</text>
+    </navigator>
+    <view class="list data-v-ad890ba2">
+        <view bindtap="__e" class="item data-v-ad890ba2" data-event-opts="{{[ [ 'tap',[ [ 'select',['$0'],[ [ ['items','building_id',item[$orig].building_id,'building_id'] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:for-index="__i0__" wx:key="building_id">
+            <fc-icon bind:__l="__l" class="i data-v-ad890ba2" type="{{item.g0>-1?'40_checkbox_selected':'40_checkbox_unselected'}}" vueId="{{'8d2d8bd2-2-'+__i0__}}"></fc-icon>
+            <house-item bind:__l="__l" class="house data-v-ad890ba2" item="{{item[$orig]}}" just_view="{{true}}" vueId="{{'8d2d8bd2-3-'+__i0__}}"></house-item>
+        </view>
+    </view>
+    <button bindtap="__e" class="{{['btn data-v-ad890ba2',disabled?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}" disabled="{{disabled}}">开始对比</button>
+    <page-wrap bind:__l="__l" class="data-v-ad890ba2" title="楼盘对比" vueId="8d2d8bd2-4"></page-wrap>
+</view>

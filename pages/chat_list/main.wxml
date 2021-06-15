@@ -1,0 +1,3 @@
+<view class="page chat-list-page _div data-v-4f5db8c4">
+    <page-wrap bind:__l="__l" class="data-v-4f5db8c4" title="我的咨询" vueId="1489c4ea-1"></page-wrap>
+</view>

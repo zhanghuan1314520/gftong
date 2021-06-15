@@ -1,0 +1,19 @@
+<view class="{{[ 'search-list-page _div data-v-24c2458f',[filter_show?'page-no-scroll':''] ]}}">
+    <view class="top-banner _div data-v-24c2458f" indicatorDots="{{true}}" wx:if="{{hotpage_banner.length}}">
+        <top-swiper banners="{{hotpage_banner}}" bind:__l="__l" class="data-v-24c2458f" vueId="537ff83c-1" wx:if="{{!banner_loading&&hotpage_banner.length}}"></top-swiper>
+    </view>
+    <view class="history-filter-list _div data-v-24c2458f">
+        <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-24c2458f" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" layout="{{layout}}" metro="{{metro}}" tabs="{{filter_tabs}}" vueId="537ff83c-2" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}"></top-filter>
+    </view>
+    <search bind:__l="__l" bind:searchClick="__e" class="data-v-24c2458f" data-event-opts="{{[ [ '^searchClick',[ ['searchClick'] ] ] ]}}" vueId="537ff83c-3"></search>
+    <view class="_section data-v-24c2458f">
+        <view class="house-list _ul data-v-24c2458f">
+            <tag-filter bind:__l="__l" bind:change="__e" class="data-v-24c2458f" data-event-opts="{{[ [ '^change',[ ['changeTag'] ] ] ]}}" selected="{{interesting_order}}" tags="{{tags}}" vueId="537ff83c-4"></tag-filter>
+            <list-recommendation bind:__l="__l" class="data-v-24c2458f" list="{{recommendation}}" type="hot_list" vueId="537ff83c-5" wx:if="{{show_recommendation}}"></list-recommendation>
+            <house-item bind:__l="__l" class="data-v-24c2458f" item="{{item}}" vueId="{{'537ff83c-6-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></house-item>
+            <loading bind:__l="__l" class="data-v-24c2458f" vueId="537ff83c-7" wx:if="{{loading}}"></loading>
+            <bottom-tip bind:__l="__l" class="data-v-24c2458f" vueId="537ff83c-8" wx:if="{{!loading&&no_more}}"></bottom-tip>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-24c2458f" title="热门楼盘" vueId="537ff83c-9"></page-wrap>
+</view>

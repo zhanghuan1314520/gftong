@@ -1,0 +1,68 @@
+.new-hand.data-v-5796b67d {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.building-price.data-v-5796b67d {
+    width: 100%;
+    min-height: 104rpx;
+    background: #fff;
+}
+
+.building-price .items.data-v-5796b67d {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    min-height: 104rpx;
+    padding: 0 16rpx 0 32rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.building-price .item.data-v-5796b67d {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.building-price .price-title.data-v-5796b67d {
+    font-size: 24rpx;
+    color: #888;
+}
+
+.building-price .price-title .building-name.data-v-5796b67d {
+    font-weight: 700;
+    margin-right: 24rpx;
+    font-size: 32rpx;
+    color: #333;
+}
+
+.building-price .item-name.data-v-5796b67d {
+    width: 190rpx;
+    font-size: 30rpx;
+    color: #333;
+    max-width: 190rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.building-price .item-price.data-v-5796b67d {
+    font-size: 32rpx;
+    color: #333;
+    line-height: 48rpx;
+    width: 200rpx;
+    font-weight: 700;
+}
+
+.building-price .item-price .unit.data-v-5796b67d {
+    font-size: 24rpx;
+    color: #333;
+    margin-left: 8rpx;
+    font-weight: 400;
+}

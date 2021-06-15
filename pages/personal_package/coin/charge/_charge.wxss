@@ -1,0 +1,8 @@
+.not-ios.data-v-1016b8fa {
+    padding-bottom: 30rpx;
+}
+
+.select-wrap.data-v-1016b8fa {
+    padding: 0 30rpx;
+    background-color: #fff;
+}

@@ -1,0 +1,95 @@
+<view class="page data-v-bfc9349a">
+    <view class="tpl-form-section data-v-bfc9349a">
+        <view class="tpl-input tpl-title data-v-bfc9349a">
+            <common-tabs bind:__l="__l" bind:change="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected}}" tabs="{{tabs}}" vueId="6eabb556-1"></common-tabs>
+            <top-right-share bind:__l="__l" class="data-v-bfc9349a" top="12" type="org" vueId="6eabb556-2"></top-right-share>
+        </view>
+    </view>
+    <view class="tpl-form-section data-v-bfc9349a" wx:if="{{is_single}}">
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">月均余额</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkBaseMoney',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','base_moneny','$event',[] ] ] ] ] ]}}" placeholder="请输入您的公积金账户月均余额" placeholderClass="hitsFont28" type="digit" value="{{base_moneny}}"></input>
+                <text class="unit data-v-bfc9349a">元</text>
+            </view>
+        </view>
+        <view bindtap="__e" class="help data-v-bfc9349a" data-event-opts="{{[ [ 'tap',[ [ 'openModal',['$event'] ] ] ] ]}}">
+            <view class="tips data-v-bfc9349a">{{help.tips}}</view>
+            <fc-icon bind:__l="__l" class="data-v-bfc9349a" type="28_help" vueId="6eabb556-3"></fc-icon>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">您的性别</label>
+            <picker bindchange="__e" class="content data-v-bfc9349a" data-event-opts="{{[ [ 'change',[ [ 'changeGender',['$event'] ] ] ] ]}}" range="{{genders}}" value="{{gender_index}}">
+                <text class="data-v-bfc9349a">{{genders[gender_index]}}</text>
+                <fc-icon bind:__l="__l" class="data-v-bfc9349a" type="48_more_grey" vueId="6eabb556-4"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">您的年龄</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkAge',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','age','$event',[] ] ] ] ] ]}}" maxlength="3" placeholder="请输入您的年龄" placeholderClass="hitsFont28" type="number" value="{{age}}"></input>
+                <text class="unit data-v-bfc9349a">岁</text>
+            </view>
+        </view>
+    </view>
+    <view class="tpl-form-section data-v-bfc9349a" wx:else>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">您的月均余额</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkBaseMoney',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','base_moneny','$event',[] ] ] ] ] ]}}" placeholder="请输入月均余额" placeholderClass="hitsFont28" type="digit" value="{{base_moneny}}"></input>
+                <text class="unit data-v-bfc9349a">元</text>
+            </view>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">配偶的月均余额</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkOtherBaseMoney',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','other_base_moneny','$event',[] ] ] ] ] ]}}" placeholder="请输入月均余额" placeholderClass="hitsFont28" type="digit" value="{{other_base_moneny}}"></input>
+                <text class="unit data-v-bfc9349a">元</text>
+            </view>
+        </view>
+        <view bindtap="__e" class="help data-v-bfc9349a" data-event-opts="{{[ [ 'tap',[ [ 'openModal',['$event'] ] ] ] ]}}">
+            <view class="tips data-v-bfc9349a">{{help.tips}}</view>
+            <fc-icon bind:__l="__l" class="data-v-bfc9349a" type="28_help" vueId="6eabb556-5"></fc-icon>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">您的性别</label>
+            <picker bindchange="__e" class="content data-v-bfc9349a" data-event-opts="{{[ [ 'change',[ [ 'changeGender',['$event'] ] ] ] ]}}" range="{{genders}}" value="{{gender_index}}">
+                <text class="data-v-bfc9349a">{{genders[gender_index]}}</text>
+                <fc-icon bind:__l="__l" class="data-v-bfc9349a" type="48_more_grey" vueId="6eabb556-6"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">您的年龄</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkAge',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','age','$event',[] ] ] ] ] ]}}" maxlength="3" placeholder="请输入年龄" placeholderClass="hitsFont28" type="number" value="{{age}}"></input>
+                <text class="unit data-v-bfc9349a">岁</text>
+            </view>
+        </view>
+        <view class="tpl-input data-v-bfc9349a">
+            <label class="label data-v-bfc9349a">配偶的年龄</label>
+            <view class="content data-v-bfc9349a">
+                <input bindblur="__e" bindinput="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'blur',[ [ 'checkOtherAge',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','other_age','$event',[] ] ] ] ] ]}}" maxlength="3" placeholder="请输入年龄" placeholderClass="hitsFont28" type="number" value="{{other_age}}"></input>
+                <text class="unit data-v-bfc9349a">岁</text>
+            </view>
+        </view>
+    </view>
+    <button bindtap="__e" class="large-btn confirm-btn data-v-bfc9349a" data-event-opts="{{[ [ 'tap',[ [ 'submit',['$event'] ] ] ] ]}}">开始计算</button>
+    <view class="modal data-v-bfc9349a" wx:if="{{showModal}}">
+        <view bindtap="__e" class="modal-mask data-v-bfc9349a" data-event-opts="{{[ [ 'tap',[ [ 'hideModal',['$event'] ] ] ] ]}}"></view>
+        <view class="modal-container data-v-bfc9349a">
+            <view class="modal-header data-v-bfc9349a">
+                <view class="modal-title data-v-bfc9349a">月均余额计算帮助</view>
+            </view>
+            <view class="modal-body data-v-bfc9349a">
+                <view class="data-v-bfc9349a">月均余额：申请贷款时近12个月（不含申请当月及近12个月的一次性补缴）的住房公积金账户月末余额的平均数，未满2个月则按照实际月数计算。</view>
+                <view class="data-v-bfc9349a">举例：小张于2019年1月开始缴纳公积金，月缴存额为1000元，期间未提取过公积金，预备在2020年1月申请公积金贷款买房，他的月均余额是多少？</view>
+                <view class="data-v-bfc9349a">2019.01~2019.12，一共12个月，小张2019年1月的账户余额为1000元，2月为2000元，3月为3000元，以此类推，12月为12000元；</view>
+                <view class="data-v-bfc9349a">月均余额=（1000+2000+……12000）/12=6500 元</view>
+            </view>
+            <view class="modal-footer data-v-bfc9349a">
+                <view bindtap="__e" class="data-v-bfc9349a" data-event-opts="{{[ [ 'tap',[ [ 'hideModal',['$event'] ] ] ] ]}}">我知道了</view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-bfc9349a" title="算公积金额度" vueId="6eabb556-7"></page-wrap>
+</view>

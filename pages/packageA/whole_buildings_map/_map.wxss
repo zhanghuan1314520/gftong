@@ -1,0 +1,12 @@
+.back.data-v-6730a94e {
+    position: absolute;
+    top: 32rpx;
+    left: 0;
+    width: 168rpx;
+    height: 76rpx;
+}
+
+map.data-v-6730a94e {
+    width: 100%;
+    height: 100%;
+}

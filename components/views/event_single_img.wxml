@@ -1,0 +1,1 @@
+<image mode="{{mode}}" src="{{path}}" style="{{$root.s0}}" webp="{{webp}}"></image>

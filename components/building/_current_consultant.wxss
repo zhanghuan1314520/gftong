@@ -1,0 +1,177 @@
+.current-consultant.data-v-23c3848a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 128rpx;
+    z-index: 6;
+    background: #fff;
+    box-shadow: 0 0 8rpx 0 rgba(0,0,0,.1);
+    padding: 20rpx;
+}
+
+.current-consultant .consultant-cell.data-v-23c3848a,.current-consultant.data-v-23c3848a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.current-consultant .consultant-cell.data-v-23c3848a {
+    background-color: transparent;
+    text-align: left;
+    -webkit-box-flex: 0;
+    flex: 0 0 326rpx;
+    line-height: normal;
+}
+
+.current-consultant .consultant-cell .dt.data-v-23c3848a {
+    -webkit-box-flex: 0;
+    flex: 0 0 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.current-consultant .consultant-cell .dt ._img.data-v-23c3848a {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.current-consultant .consultant-cell .dd.data-v-23c3848a {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding-left: 16rpx;
+}
+
+.current-consultant .consultant-cell .dd-th.data-v-23c3848a {
+    font-family: PingFangSC-Semibold;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.current-consultant .consultant-cell .dd-bd.data-v-23c3848a {
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #888;
+    margin-top: 4rpx;
+}
+
+.current-consultant .btns-cell.data-v-23c3848a {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+
+.current-consultant .btns-cell .btn-item.data-v-23c3848a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 88rpx;
+    border-radius: 5.5rpx;
+    -webkit-box-flex: 1;
+    flex: 1;
+    background-color: transparent;
+}
+
+.current-consultant .btns-cell .btn-item ._img.data-v-23c3848a {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 14rpx;
+}
+
+.current-consultant .btns-cell .btn-item ._span.data-v-23c3848a {
+    font-family: PingFangSC-Semibold;
+    font-size: 32rpx;
+    color: #fff;
+}
+
+.current-consultant .btns-cell .btn-item+.btn-item.data-v-23c3848a {
+    margin-left: 16rpx;
+}
+
+.current-consultant .btns-cell .btn-item.primary.data-v-23c3848a {
+    background-image: linear-gradient(135deg,#00d69d,#00b08d);
+}
+
+.current-consultant .btns-cell .btn-item.yellow.data-v-23c3848a {
+    background-image: linear-gradient(-45deg,#ff8000,#fb0);
+}
+
+.current-consultant .btns-cell .btn-item.red.data-v-23c3848a {
+    background-image: linear-gradient(135deg,#ff8585,#fa5050);
+}
+
+.current-consultant .btns-cell .btn-item-inner.data-v-23c3848a {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 184rpx;
+}
+
+.current-consultant .btns-cell .btn-item-inner.data-v-23c3848a,.current-consultant .inner-share-tips.data-v-23c3848a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.current-consultant .inner-share-tips.data-v-23c3848a {
+    width: 710rpx;
+    height: 100rpx;
+    padding: 0 24rpx;
+    border-radius: 8rpx;
+    background: #424747;
+    box-shadow: 0 4rpx 10rpx 0 rgba(66,71,71,.3);
+    position: absolute;
+    top: -121rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.current-consultant .inner-share-tips text.data-v-23c3848a {
+    font-size: 28rpx;
+    line-height: 36rpx;
+    font-weight: 700;
+}
+
+.current-consultant .inner-share-tips .inner-btn.data-v-23c3848a {
+    padding: 10rpx 18rpx;
+    border-radius: 2rpx;
+    border: 2rpx solid #fff;
+    font-size: 24rpx;
+    line-height: 33rpx;
+}
+
+.current-consultant .inner-share-tips .inner-arrow.data-v-23c3848a {
+    width: 28rpx;
+    height: 28rpx;
+    background: #424747;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 64rpx;
+    bottom: -8rpx;
+    border-radius: 4rpx;
+}

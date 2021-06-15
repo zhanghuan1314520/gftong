@@ -1,0 +1,61 @@
+<view class="house-content _article data-v-429ebc72">
+    <view class="house-page-title _div data-v-429ebc72">
+        <view class="_h3 data-v-429ebc72">楼盘基本信息</view>
+        <navigator bindtap="__e" class="right-link _a data-v-429ebc72" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goMore'] ] ] ] ]}}">查看更多</navigator>
+    </view>
+    <navigator class="audio-entery data-v-429ebc72" url="{{audio_url}}" wx:if="{{show_audio}}">
+        <view class="left data-v-429ebc72">
+            <view class="header data-v-429ebc72">
+                <fc-icon bind:__l="__l" class="data-v-429ebc72" type="33_audio_i" vueId="2fee81c0-1"></fc-icon>
+                <text class="data-v-429ebc72">楼盘语音讲解</text>
+            </view>
+            <view class="list data-v-429ebc72">
+                <text class="data-v-429ebc72">户型图</text>
+                <text class="data-v-429ebc72">周边配套</text>
+                <text class="data-v-429ebc72">区域板块</text>
+                <text class="data-v-429ebc72">基本信息</text>
+            </view>
+        </view>
+        <view class="btn data-v-429ebc72">立即收听</view>
+    </navigator>
+    <view class="list-options _div data-v-429ebc72" wx:if="{{!is_business&&(is_selling||house.status==='待售'||house.status==='即将取证')&&house.price_desc_arr&&house.price_desc_arr.length&&house.surplus_houses_price!='正在计算'&&!show_surplus_houses}}">
+        <label class="label data-v-429ebc72">参考价格</label>：<label class="price _span data-v-429ebc72">
+            <view class="_div data-v-429ebc72" wx:for="{{house.price_desc_arr}}" wx:for-index="i" wx:for-item="price" wx:key="i">{{''+price+''}}</view>
+        </label>
+    </view>
+    <view class="list-options _div data-v-429ebc72" wx:if="{{is_selling&&house.surplus_houses_presell_no&&!show_surplus_houses}}">
+        <label class="label data-v-429ebc72">预售证号</label>：<label class="_span data-v-429ebc72">
+            <text class="presell-no--item data-v-429ebc72" wx:for="{{presell_nos_slice}}" wx:for-index="i" wx:for-item="no" wx:key="i">{{no+(i<presell_nos_slice.length-1?',':'')+(i===presell_nos_slice.length-1?showEllipsis:'')}}</text>
+            <collapse-btn bind:__l="__l" bind:onCollapse="__e" class="data-v-429ebc72" data-event-opts="{{[ [ '^onCollapse',[ ['onShowAll'] ] ] ]}}" vueId="2fee81c0-2" wx:if="{{showCollapse}}"></collapse-btn>
+        </label>
+    </view>
+    <view class="list-options _div data-v-429ebc72" wx:for="{{baseinfos}}" wx:for-index="i">
+        <label class="label data-v-429ebc72">{{item.key}}</label>：<label class="_span data-v-429ebc72">{{item.value}}</label>
+    </view>
+    <view class="list-options _div data-v-429ebc72" wx:if="{{salesDepartment.val}}">
+        <label class="label data-v-429ebc72">售楼部地址</label>：<label bindtap="__e" class="{{[ '_span data-v-429ebc72',[salesDepartment.coord?'address':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'goSalesAddress',['$event'] ] ] ] ]}}">
+            <fc-icon bind:__l="__l" class="address-blue data-v-429ebc72" type="32_address_blue" vueId="2fee81c0-3" wx:if="{{salesDepartment.coord}}"></fc-icon>
+            <label class="_span data-v-429ebc72">{{salesDepartment.val}}</label>
+        </label>
+    </view>
+    <view class="list-options _div data-v-429ebc72" wx:if="{{house.address}}">
+        <label class="label data-v-429ebc72">楼盘位置</label>：<label bindtap="__e" class="address _span data-v-429ebc72" data-event-opts="{{[ [ 'tap',[ [ 'goLocation',['$event'] ] ] ] ]}}">
+            <fc-icon bind:__l="__l" class="data-v-429ebc72" type="40_address_blue" vueId="2fee81c0-4"></fc-icon>
+            <label class="_span data-v-429ebc72">{{house.zone+(house.zone?'-':'')+house.address}}</label>
+        </label>
+    </view>
+    <view class="list-options metros-wrap _div data-v-429ebc72" wx:if="{{house.metros&&house.metros.length}}">
+        <label class="left label data-v-429ebc72">地铁交通</label>：<label class="metros _span data-v-429ebc72">
+            <label class="_span data-v-429ebc72" wx:for="{{metros}}" wx:for-item="metro" wx:key="index">
+                <fc-icon bind:__l="__l" class="data-v-429ebc72" type="{{metro.ongoing?'40_bus_disable_color':'40_bus_primary_color'}}" vueId="{{'2fee81c0-5-'+index}}"></fc-icon>
+                <label class="text _span data-v-429ebc72">{{metro.name}}</label>
+            </label>
+        </label>
+    </view>
+    <view class="data-v-429ebc72" style="padding-left:32rpx;">
+        <collapse-btn bind:__l="__l" bind:onCollapse="__e" class="data-v-429ebc72" data-event-opts="{{[ [ '^onCollapse',[ ['onShowAllInfo'] ] ] ]}}" text="展开全部信息" vueId="2fee81c0-6" wx:if="{{showInfoCollapse}}"></collapse-btn>
+    </view>
+    <view class="{{[ 'qr-wrap data-v-429ebc72',[show_audio?'has-audio':''] ]}}" wx:if="{{macode_url&&!is_opened}}">
+        <building-qr bind:__l="__l" class="data-v-429ebc72" qr="{{macode_url}}" vueId="2fee81c0-7"></building-qr>
+    </view>
+</view>

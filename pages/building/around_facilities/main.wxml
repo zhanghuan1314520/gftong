@@ -1,0 +1,25 @@
+<view class="page hasfooter _div data-v-5fff0d69">
+    <around-map bind:__l="__l" category="{{category}}" class="data-v-5fff0d69" dest="{{dest}}" house="{{thishouse}}" vueId="8654b102-1"></around-map>
+    <view class="facilities data-v-5fff0d69" scrollY="{{true}}">
+        <view class="facility _section data-v-5fff0d69" wx:for="{{facilities}}" wx:for-index="i" wx:for-item="facility" wx:key="i">
+            <view class="_header data-v-5fff0d69">
+                <label class="{{['_span data-v-5fff0d69',facility.category]}}">{{facility.name}}</label>
+                <navigator class="_a data-v-5fff0d69" url="{{facility.href}}">查看更多</navigator>
+            </view>
+            <view class="_ul data-v-5fff0d69">
+                <view bindtap="__e" class="_li data-v-5fff0d69" data-category="{{facility.category}}" data-event-opts="{{[ [ 'tap',[ [ 'selectPos',['$event'] ] ] ] ]}}" data-i="{{i}}" data-j="{{j}}" wx:for="{{facility.items}}" wx:for-index="j" wx:key="j">
+                    <view class="_h3 data-v-5fff0d69">
+                        <label class="name _span data-v-5fff0d69">{{item.name}}</label>
+                        <label class="_span data-v-5fff0d69">{{item.distance+'米'}}</label>
+                    </view>
+                    <view class="_p data-v-5fff0d69">{{item.address}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="data-v-5fff0d69" wx:if="{{house.current_consultant&&!loading}}">
+        <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-5fff0d69" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{house}}" is_consultant="{{is_consultant}}" vueId="8654b102-2"></current-consultant>
+    </view>
+    <building-footer bind:__l="__l" class="data-v-5fff0d69" current_house="{{current_house}}" house="{{house}}" is_selling="{{is_selling}}" vueId="8654b102-3" wx:if="{{!house.current_consultant&&!loading}}"></building-footer>
+    <page-wrap bind:__l="__l" class="data-v-5fff0d69" title="{{title}}" vueId="8654b102-4"></page-wrap>
+</view>

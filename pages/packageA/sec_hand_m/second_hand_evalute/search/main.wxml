@@ -1,0 +1,29 @@
+<view class="page search-page _div data-v-5f744e93">
+    <form bindsubmit="__e" class="search-wrap data-v-5f744e93" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="search-input _div data-v-5f744e93">
+            <image class="search _img data-v-5f744e93" src="/static/img/search.png"></image>
+            <input autoFocus="true" bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="data-v-5f744e93" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'search',['$event'] ] ] ],[ 'focus',[ [ 'startSearch',['$event'] ] ] ],[ 'blur',[ [ 'endSearch',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','name','$event',[] ] ] ] ] ]}}" name="query" type="search" value="{{name}}"></input>
+            <view bindtap="__e" class="remove _div data-v-5f744e93" data-event-opts="{{[ [ 'tap',[ [ 'resetName',['$event'] ] ] ] ]}}">
+                <image class="_img data-v-5f744e93" src="/static/img/input-remove.png"></image>
+            </view>
+        </view>
+        <button class="search-btn data-v-5f744e93" formType="submit">搜索</button>
+    </form>
+    <view class="search-hisotry-wrap _div data-v-5f744e93" style="{{'display:'+(showHistory?'block':'none')+';'}}">
+        <view class="header _div data-v-5f744e93">
+            <view class="_h3 data-v-5f744e93">历史搜索</view>
+            <image bindtap="__e" class="_img data-v-5f744e93" data-event-opts="{{[ [ 'tap',[ [ 'removeHisotry',['$event'] ] ] ] ]}}" src="/static/img/delete.png"></image>
+        </view>
+        <view class="history-list _ul data-v-5f744e93">
+            <view bindtap="__e" class="_li data-v-5f744e93" data-event-opts="{{[ [ 'tap',[ [ 'selectHistory',['$event'] ] ] ] ]}}" data-name="{{item}}" wx:for="{{history}}" wx:for-index="i" wx:key="i">{{''+item+''}}</view>
+        </view>
+    </view>
+    <view class="_p data-v-5f744e93" wx:if="{{items.length}}">您可以直接选择</view>
+    <view class="_p data-v-5f744e93" wx:if="{{!items.length&&!loading}}">没有相应的楼盘</view>
+    <view class="results _ul data-v-5f744e93">
+        <view bindtap="__e" class="_li data-v-5f744e93" data-event-opts="{{[ [ 'tap',[ [ 'select',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">{{''+item.community_name+''}}<label class="_span data-v-5f744e93">{{item.community_alias}}</label>
+        </view>
+    </view>
+    <loading bind:__l="__l" class="data-v-5f744e93" vueId="42b6a629-1" wx:if="{{loading}}"></loading>
+    <page-wrap bind:__l="__l" class="data-v-5f744e93" title="二手房估价" vueId="42b6a629-2"></page-wrap>
+</view>

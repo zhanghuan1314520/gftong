@@ -1,0 +1,50 @@
+<view class="page _div data-v-6873505e">
+    <view class="_header data-v-6873505e">
+        <view class="house-name _div data-v-6873505e">{{''+community_name+''}}</view>
+        <view class="price _div data-v-6873505e">
+            <view class="_strong data-v-6873505e">{{result.header.total_price}}</view>
+            <label class="unit _span data-v-6873505e">万</label>
+        </view>
+        <view class="_ul data-v-6873505e">
+            <view class="_li data-v-6873505e">
+                <label class="_span data-v-6873505e">房屋均价</label>
+                <view class="_div data-v-6873505e">{{result.header.unit_price}}</view>
+            </view>
+            <view class="_li data-v-6873505e">
+                <label class="_span data-v-6873505e">环比上月变化</label>
+                <view class="_div data-v-6873505e">{{result.header.trend}}</view>
+            </view>
+            <view class="_li data-v-6873505e">
+                <label class="_span data-v-6873505e">估价参考范围</label>
+                <view class="_div data-v-6873505e">{{result.header.total_price_range}}</view>
+            </view>
+        </view>
+        <button class="circle-share data-v-6873505e" openType="share">
+            <image class="_img data-v-6873505e" src="/static/img/share.png"></image>
+        </button>
+    </view>
+    <view class="history-price _div data-v-6873505e">
+        <view class="history-price__tit _div data-v-6873505e">
+            <label class="_span data-v-6873505e">历史均价</label>
+        </view>
+        <view class="ecbox _div data-v-6873505e">
+            <f2-charts bind:__l="__l" canvasId="historyCanvas" class="data-v-6873505e vue-ref" data-ref="historyCanvas" opts="{{firstLineOpts}}" source="{{historyData}}" vueId="4e3d3a5e-1"></f2-charts>
+        </view>
+    </view>
+    <view class="_section data-v-6873505e">
+        <view class="header _div data-v-6873505e">房源分析</view>
+        <view class="_ul data-v-6873505e">
+            <view class="_li data-v-6873505e" wx:for="{{result.house_analysis}}" wx:for-index="i" wx:key="i">
+                <view class="left _div data-v-6873505e">
+                    <label class="data-v-6873505e">{{item.block_name}}</label>
+                    <label class="_span data-v-6873505e">{{item.block_value}}</label>
+                </view>
+                <view class="right _div data-v-6873505e">
+                    <view class="_p data-v-6873505e">{{''+item.block_desc+''}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="tip _p data-v-6873505e">数据来源于贝壳</view>
+    <page-wrap bind:__l="__l" class="data-v-6873505e" title="二手房估价" vueId="4e3d3a5e-2"></page-wrap>
+</view>

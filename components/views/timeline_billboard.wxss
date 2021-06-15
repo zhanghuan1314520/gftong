@@ -1,0 +1,26 @@
+.timeline-wrap.data-v-d08fe680 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ededed;
+    z-index: 99999999999;
+}
+
+.billboard.data-v-d08fe680 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600rpx;
+    height: 840rpx;
+}
+
+.tip.data-v-d08fe680 {
+    position: absolute;
+    width: 307rpx;
+    height: 74rpx;
+    bottom: 20rpx;
+    right: 20rpx;
+}

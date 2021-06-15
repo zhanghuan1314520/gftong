@@ -1,0 +1,8 @@
+<view class="page data-v-6a73a85c">
+    <view class="top-header data-v-6a73a85c" wx:if="{{!answered_questions.length}}">
+        <view class="text28 range data-v-6a73a85c">{{query_title}}</view>
+        <view class="textAssistFont28 data-v-6a73a85c">{{query_desc}}</view>
+    </view>
+    <answered-questions bind:__l="__l" bind:del="__e" class="data-v-6a73a85c" data-event-opts="{{[ [ '^del',[ [ '$emit',['deleteQuestion',i] ] ] ] ]}}" item="{{item}}" vueId="{{'4b873e01-1-'+i}}" wx:for="{{answered_questions}}" wx:for-index="i" wx:key="i"></answered-questions>
+    <current-question bind:__l="__l" bind:select="__e" class="data-v-6a73a85c" data-event-opts="{{[ [ '^select',[ ['e0'] ] ] ]}}" item="{{current_question}}" vueId="4b873e01-2"></current-question>
+</view>

@@ -1,0 +1,12 @@
+<view class="disclaimer-page data-v-5e9f8b79">
+    <view class="page-content data-v-5e9f8b79">
+        <rich-text class="tx data-v-5e9f8b79" nodes="{{desc}}"></rich-text>
+        <view class="tip _p data-v-5e9f8b79">请您详细阅读如下声明：</view>
+        <view class="content-list list data-v-5e9f8b79">
+            <view class="list-item list data-v-5e9f8b79" wx:for="{{lists}}" wx:key="index">
+                <view class="item-title _p data-v-5e9f8b79">{{item.title}}</view>
+                <view class="item-desc _p data-v-5e9f8b79">{{item.content}}</view>
+            </view>
+        </view>
+    </view>
+</view>

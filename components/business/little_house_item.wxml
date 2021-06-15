@@ -1,0 +1,12 @@
+<button bindtap="__e" class="btn shadow-button data-v-e36d9b36" data-event-opts="{{[ [ 'tap',[ [ 'goLink',['$event'] ] ] ] ]}}" data-href="{{item.href}}" data-id="{{item.log_id||''}}" data-index="{{index}}" data-log_data="{{item}}" data-photo="{{common_utils.getHeadimg(item)}}">
+    <img-wrap bind:__l="__l" class="data-v-e36d9b36" item="{{item}}" vueId="19472d82-1"></img-wrap>
+    <view class="heading28B name data-v-e36d9b36">{{item.name}}</view>
+    <view class="comment-detail data-v-e36d9b36">
+        <label class="tag _span data-v-e36d9b36">{{item.tag}}</label>
+        <view class="comment-show data-v-e36d9b36" style="{{'display:'+(item.comment_count?'inline-flex':'none')+';'}}">
+            <fc-icon bind:__l="__l" class="data-v-e36d9b36" type="40_comment_small" vueId="19472d82-2"></fc-icon>
+            <label class="_span data-v-e36d9b36">{{item.comment_count}}</label>
+        </view>
+    </view>
+</button>
+<wxs module="common_utils" src="_house_item_utils.wxs" />

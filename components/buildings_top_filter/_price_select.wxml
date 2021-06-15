@@ -1,0 +1,20 @@
+<view class="top-filter-wrap _div data-v-157ccce2">
+    <view class="select-content _div data-v-157ccce2">
+        <view class="left _div data-v-157ccce2">
+            <view bindtap="__e" class="{{[ 'opt _div data-v-157ccce2',[item.value===type?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$event'] ] ] ] ]}}" data-type="{{item.value}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">{{''+item.text+''}}</view>
+        </view>
+        <view class="right _div data-v-157ccce2">
+            <view bindtap="__e" class="{{[ 'opt _div data-v-157ccce2',[item.value===selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-text="{{item.text}}" data-value="{{item.value}}" wx:for="{{opts}}" wx:for-index="i" wx:key="i">{{''+item.text+''}}</view>
+        </view>
+    </view>
+    <view class="bottom _div data-v-157ccce2">
+        <view class="input-wrap _div data-v-157ccce2">
+            <view bindtap="__e" class="input data-v-157ccce2" data-event-opts="{{[ [ 'tap',[ [ 'changeStartFocus',['$event'] ] ] ] ]}}" wx:if="{{!start_focus}}">{{start||input_tip_start}}</view>
+            <input bindblur="__e" bindchange="__e" class="input data-v-157ccce2" data-event-opts="{{[ [ 'blur',[ [ 'changeStartFocus',['$event'] ] ] ],[ 'change',[ [ 'changeStart',['$event'] ] ] ] ]}}" focus="{{start_focus}}" name="start" placeholder="{{input_tip_start}}" type="text" wx:else></input>
+            <label class="_span data-v-157ccce2">-</label>
+            <view bindtap="__e" class="input data-v-157ccce2" data-event-opts="{{[ [ 'tap',[ [ 'changeEndFocus',['$event'] ] ] ] ]}}" wx:if="{{!end_focus}}">{{end||input_tip_end}}</view>
+            <input bindblur="__e" bindchange="__e" class="input data-v-157ccce2" data-event-opts="{{[ [ 'blur',[ [ 'changeEndFocus',['$event'] ] ] ],[ 'change',[ [ 'changeEnd',['$event'] ] ] ] ]}}" focus="{{end_focus}}" name="end" placeholder="{{input_tip_end}}" type="text" wx:else></input>
+        </view>
+        <button bindtap="__e" class="btn main data-v-157ccce2" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</button>
+    </view>
+</view>

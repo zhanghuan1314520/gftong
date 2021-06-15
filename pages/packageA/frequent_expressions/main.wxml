@@ -1,0 +1,40 @@
+<view class="page _div data-v-5a645bb0">
+    <view class="_header data-v-5a645bb0">我的常用语<navigator bindtap="__e" class="item expression-top-btn _a data-v-5a645bb0" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}" wx:if="{{items.length<10}}">
+            <view class="_i data-v-5a645bb0"></view>
+            <label class="_span data-v-5a645bb0">新建常用语</label>
+        </navigator>
+    </view>
+    <view class="expression-section _div data-v-5a645bb0">
+        <view class="msg-wrap _div data-v-5a645bb0" wx:for="{{items}}" wx:for-index="i" wx:key="id">
+            <view class="item data-v-5a645bb0">
+                <label class="_span data-v-5a645bb0">{{item.content}}</label>
+                <navigator catchtap="__e" class="del _a data-v-5a645bb0" data-event-opts="{{[ [ 'tap',[ [ 'onDelete',['$0',i],[ [ ['items','id',item.id,'id'] ] ] ] ] ] ]}}">删除</navigator>
+            </view>
+            <view class="item delay data-v-5a645bb0">
+                <view bindtap="__e" class="left data-v-5a645bb0" data-event-opts="{{[ [ 'tap',[ [ 'toggleDelayChecked',[i] ] ] ] ]}}">
+                    <fc-icon bind:__l="__l" class="data-v-5a645bb0" type="{{item.autoreply_delay_checked?'40_checkbox_selected':'40_checkbox_unselected'}}" vueId="{{'0855967a-1-'+i}}"></fc-icon>
+                    <text class="textAssistFont28 data-v-5a645bb0">设置为自动回复</text>
+                </view>
+                <picker bindchange="__e" class="data-v-5a645bb0" data-event-opts="{{[ [ 'change',[ [ 'changeDelay',['$event'] ] ] ] ]}}" data-index="{{i}}" mode="selector" range="{{delay_seconds_options}}" value="{{item.autoreply_delay_checked_index}}" wx:if="{{item.autoreply_delay_checked}}">
+                    <text class="data-v-5a645bb0">{{item.autoreply_delay_text}}</text>
+                    <fc-icon bind:__l="__l" class="down data-v-5a645bb0" type="48_more_grey" vueId="{{'0855967a-2-'+i}}"></fc-icon>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="{{[ '_div data-v-5a645bb0',[!show_dlg?'hide':''] ]}}">
+        <view bindtap="__e" class="overlay _div data-v-5a645bb0" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}"></view>
+        <view class="chat-dlg _div data-v-5a645bb0">
+            <form bindsubmit="__e" class="data-v-5a645bb0" data-event-opts="{{[ [ 'submit',[ [ 'onCreate',['$event'] ] ] ] ]}}">
+                <textarea bindinput="__e" class="data-v-5a645bb0" data-event-opts="{{[ [ 'input',[ [ 'changeContent',['$event'] ] ] ] ]}}" maxlength="200" name="content" placeholder="写常用语" value="{{content}}"></textarea>
+                <view class="footer _div data-v-5a645bb0">
+                    <label class="_span data-v-5a645bb0">最多可建10条常用语</label>
+                    <view class="right _div data-v-5a645bb0">
+                        <label class="_span data-v-5a645bb0">限200个字符</label>
+                        <button class="data-v-5a645bb0" disabled="{{!content.length}}" formType="submit">保存</button>
+                    </view>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

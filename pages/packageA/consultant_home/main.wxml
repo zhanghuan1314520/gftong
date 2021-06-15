@@ -1,0 +1,4 @@
+<view class="data-v-6cb3775e">
+    <consultant bind:__l="__l" class="data-v-6cb3775e" vueId="b0af4f94-1" wx:if="{{is_consultant}}"></consultant>
+    <page-wrap bind:__l="__l" class="data-v-6cb3775e" vueId="b0af4f94-2"></page-wrap>
+</view>

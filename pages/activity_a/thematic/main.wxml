@@ -1,0 +1,21 @@
+<view class="page data-v-d8544390">
+    <view class="banner data-v-d8544390" wx:if="{{img_src}}">
+        <common-img bind:__l="__l" class="banner-img data-v-d8544390" src="{{img_src}}" vueId="7d7bac4c-1"></common-img>
+    </view>
+    <view class="{{[ 'list-top data-v-d8544390',[tabs_fixed_top?'list-top-fixed':''] ]}}" wx:if="{{show_filter}}">
+        <view class="list-top-filter data-v-d8544390">
+            <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-d8544390" className="find-building-filter" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" id="top_filter" layout="{{layout}}" metro="{{metro}}" price="{{price}}" show_section="{{true}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="7d7bac4c-2" zone_ids="{{zone_ids}}"></top-filter>
+        </view>
+    </view>
+    <view class="{{[ 'list-container data-v-d8544390',[tabs_fixed_top?'list-container-top':''] ]}}">
+        <house-item bind:__l="__l" class="data-v-d8544390" item="{{item}}" vueId="{{'7d7bac4c-3-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id"></house-item>
+        <view class="empty-state data-v-d8544390" wx:if="{{!show_list_container&&!loading}}">
+            <empty-box bind:__l="__l" class="data-v-d8544390" desc="没有这个楼盘，看看其他的吧～" top="97" type="empty_building" vueId="7d7bac4c-4"></empty-box>
+        </view>
+        <view class="data-v-d8544390" wx:else>
+            <list-loading bind:__l="__l" class="data-v-d8544390" vueId="7d7bac4c-5" wx:if="{{loading||!no_more}}"></list-loading>
+            <bottom-tip bind:__l="__l" class="data-v-d8544390" vueId="7d7bac4c-6" wx:if="{{!loading&&no_more}}"></bottom-tip>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-d8544390" hide_back_home="{{true}}" title="{{thematic}}" vueId="7d7bac4c-7"></page-wrap>
+</view>

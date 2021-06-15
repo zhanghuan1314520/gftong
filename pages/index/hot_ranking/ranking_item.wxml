@@ -1,0 +1,7 @@
+<view class="ranking-item _div data-v-06700d0c">
+    <scroll-view class="content-scroll data-v-06700d0c" id="feed_swiper" scrollWithAnimation="true" scrollX="{{true}}">
+        <view class="list _div data-v-06700d0c" wx:for="{{ranking_list}}" wx:for-index="key" wx:for-item="val" wx:key="key">
+            <item bind:__l="__l" bind:goItem="__e" bind:goRanking="__e" class="data-v-06700d0c" data-event-opts="{{[ [ '^goItem',[ ['goItem'] ] ],[ '^goRanking',[ ['goRanking'] ] ] ]}}" type="{{key}}" val="{{val}}" vueId="{{'5ad5fc2e-1-'+key}}"></item>
+        </view>
+    </scroll-view>
+</view>

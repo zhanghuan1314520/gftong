@@ -1,0 +1,67 @@
+.page.data-v-5affbb5a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280rpx;
+    background-color: #dedede;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 0;
+}
+
+.page.night.data-v-5affbb5a::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/care/night.png);
+}
+
+.page.morning.data-v-5affbb5a::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/care/morning.png);
+}
+
+.page.noon.data-v-5affbb5a::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/care/noon.png);
+}
+
+.page.afternoon.data-v-5affbb5a::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/care/afternoon.png);
+}
+
+.page .block.data-v-5affbb5a {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 12rpx;
+}
+
+.page .block.bg-none.data-v-5affbb5a {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.page .block+.block.data-v-5affbb5a {
+    background-color: #fff;
+    margin-top: 36rpx;
+}
+
+.page .block.last.data-v-5affbb5a {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.personal-center.data-v-5affbb5a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 20rpx 20rpx;
+}
+
+.personal-center.top-padding.data-v-5affbb5a {
+    padding-top: 48rpx;
+}

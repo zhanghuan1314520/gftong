@@ -1,0 +1,36 @@
+<view class="page _div data-v-76236e08" wx:if="{{show_page}}">
+    <view class="banner data-v-76236e08">
+        <view class="header data-v-76236e08">定制需求</view>
+        <view class="tip data-v-76236e08">我们将为您找到满意的房子</view>
+    </view>
+    <view class="card data-v-76236e08">
+        <view class="filters data-v-76236e08">
+            <view class="top data-v-76236e08">
+                <view class="title36B data-v-76236e08">我的找房条件:</view>
+                <view class="right data-v-76236e08">
+                    <fc-icon bind:__l="__l" bind:tap="__e" class="icon data-v-76236e08" data-event-opts="{{[ [ '^tap',[ ['edit'] ] ] ]}}" type="40_pen" vueId="d31dba04-1"></fc-icon>
+                    <fc-icon bind:__l="__l" bind:tap="__e" class="icon data-v-76236e08" data-event-opts="{{[ [ '^tap',[ ['del'] ] ] ]}}" type="40_delete_primary" vueId="d31dba04-2"></fc-icon>
+                </view>
+            </view>
+            <view class="filter-item data-v-76236e08" wx:for="{{filters}}" wx:for-index="__i0__" wx:key="key">
+                <view class="label data-v-76236e08">{{''+item.label+''}}</view>
+                <view class="content data-v-76236e08">{{''+item.value+''}}</view>
+            </view>
+            <view class="datetime assistFont24 _div data-v-76236e08" wx:if="{{changed_time}}">{{'*以上信息更新于'+changed_time}}</view>
+        </view>
+        <view bindtap="__e" class="{{['subscrible-btn data-v-76236e08',subscribed?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'onNotificate',['$event'] ] ] ] ]}}">
+            <common-img bind:__l="__l" class="icon data-v-76236e08" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/whole_buildings/bell.png" vueId="d31dba04-3"></common-img>
+            <text class="data-v-76236e08">{{subscribed?'已订阅推送提醒':'有合适楼盘时通知我'}}</text>
+        </view>
+        <view class="list _div data-v-76236e08" wx:if="{{items.length}}">
+            <view class="_h3 data-v-76236e08">为您找到<view class="_strong data-v-76236e08">{{total_count}}</view>个楼盘</view>
+            <building-item bind:__l="__l" class="data-v-76236e08" item="{{item}}" vueId="{{'d31dba04-4-'+__i1__}}" wx:for="{{items}}" wx:for-index="__i1__" wx:key="id"></building-item>
+            <list-loading bind:__l="__l" class="data-v-76236e08" vueId="d31dba04-5" wx:if="{{loading}}"></list-loading>
+        </view>
+        <view class="list _div data-v-76236e08" wx:if="{{!loading&&!items.length}}">
+            <view class="_h3 data-v-76236e08">暂无合适楼盘，基于部分条件为您推荐：</view>
+            <building-item bind:__l="__l" class="data-v-76236e08" item="{{item}}" vueId="{{'d31dba04-6-'+__i2__}}" wx:for="{{seek_items}}" wx:for-index="__i2__" wx:key="id"></building-item>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-76236e08" title="一键找房" vueId="d31dba04-7"></page-wrap>
+</view>

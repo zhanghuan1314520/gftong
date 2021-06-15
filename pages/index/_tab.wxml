@@ -1,0 +1,6 @@
+<view class="wrap scroll-wrap data-v-20d4be95" style="{{'width:'+width+';'}}">
+    <scroll-view class="tabs data-v-20d4be95" id="scroll" scrollIntoView="{{tab_selected}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+        <view bindtap="__e" class="{{[ '_li data-v-20d4be95',[selected===tab.key?'active':'',selected===tab.key&&tabs.length>1?'bottom_active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChange',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" data-name="{{tab.name}}" id="{{'tab-'+tab.key}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{tab.name}}</view>
+        <view class="active-i data-v-20d4be95" id="tab-active-bar" style="{{'transform:'+'translate('+active_bar_left+'px, 0)'+';'}}"></view>
+    </scroll-view>
+</view>

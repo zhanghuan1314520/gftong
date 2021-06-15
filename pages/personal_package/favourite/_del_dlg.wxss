@@ -1,0 +1,20 @@
+.dlg.data-v-7154f01a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 999999;
+}
+
+.dlg .item.data-v-7154f01a {
+    padding: 32rpx 0 23rpx;
+    font-size: 32rpx;
+    color: #333;
+    border-bottom: 1rpx solid #eee;
+}
+
+.dlg .active.data-v-7154f01a {
+    color: #00b08d;
+}

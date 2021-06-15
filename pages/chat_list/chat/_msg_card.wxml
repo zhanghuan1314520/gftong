@@ -1,0 +1,8 @@
+<view class="card _div data-v-481768bb">
+    <view class="content _div data-v-481768bb">{{''+msg.content+''}}</view>
+    <view class="bottom _div data-v-481768bb" wx:if="{{show_operate}}">
+        <button bindtap="__e" class="data-v-481768bb" data-event-opts="{{[ [ 'tap',[ [ 'hideOperate',['$event'] ] ] ] ]}}">不用</button>
+        <button bindgetphonenumber="__e" class="data-v-481768bb" data-event-opts="{{[ [ 'getphonenumber',[ [ 'getPhoneNum',['$event'] ] ] ] ]}}" openType="getPhoneNumber">好的，尽快</button>
+    </view>
+    <view class="bottom _div data-v-481768bb" wx:else>已收到您的反馈</view>
+</view>

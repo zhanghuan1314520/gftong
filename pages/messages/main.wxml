@@ -1,0 +1,62 @@
+<view class="messages data-v-79ff8d16">
+    <navigator class="top-link navigator-arrow data-v-79ff8d16" url="{{top_tip_link}}" wx:if="{{show_top_tip}}">
+        <text class="left data-v-79ff8d16">{{''+(is_consultant_user?'关注杭州置业顾问之家，客户消息第一时间通知':'关注杭州购房者之家，掌握杭州楼市一手资讯')+''}}</text>
+        <text class="right data-v-79ff8d16">去关注</text>
+    </navigator>
+    <view class="messages-page-head data-v-79ff8d16">
+        <view class="messages-page-head--tit data-v-79ff8d16">全部消息</view>
+        <view class="messages-page-head--rt data-v-79ff8d16">
+            <view bindtap="__e" class="item data-v-79ff8d16" data-event-opts="{{[ [ 'tap',[ [ 'readAll',['$event'] ] ] ] ]}}">
+                <text class="i sweep data-v-79ff8d16"></text>
+                <text class="data-v-79ff8d16">全部设为已读</text>
+            </view>
+            <navigator class="item data-v-79ff8d16" hoverClass="none" url="/pages/packageA/frequent_expressions/main" wx:if="{{is_consultant_user}}">
+                <text class="i setting data-v-79ff8d16"></text>
+                <text class="data-v-79ff8d16">设置</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="messages-list data-v-79ff8d16">
+        <navigator class="{{['notice data-v-79ff8d16',item.unread_count>0&&item.key==='dynamic'?'new':'']}}" url="{{'/pages/packageC/message_list/list?category='+item.name}}" wx:for="{{categories}}" wx:for-index="__i0__" wx:key="key">
+            <text class="{{['i data-v-79ff8d16',item.key]}}"></text>
+            <text class="unread data-v-79ff8d16" wx:if="{{item.unread_count>0&&item.key!=='dynamic'}}">{{item.unread_count<=99?item.unread_count:'...'}}</text>
+            <view class="right data-v-79ff8d16">
+                <view class="header data-v-79ff8d16">
+                    <view class="data-v-79ff8d16">{{item.name}}</view>
+                    <view class="time data-v-79ff8d16">{{item.last_message.received_time||''}}</view>
+                </view>
+                <view class="desc data-v-79ff8d16">{{item.last_message.subject||''}}</view>
+            </view>
+        </navigator>
+        <view class="data-v-79ff8d16">
+            <ui-swipe-action bind:__l="__l" class="data-v-79ff8d16" vueId="b3c6a71a-1" vueSlots="{{['default']}}">
+                <ui-swipe-action-item bind:__l="__l" bind:change="__e" bind:click="__e" class="data-v-79ff8d16" data-event-opts="{{[ [ '^click',[ [ 'onSwipeActionClick',['$event','$0'],[ [ ['chats','id',chat.id,'id'] ] ] ] ] ],[ '^change',[ ['onSwipeActionchange'] ] ] ]}}" options="{{swipeActionOptions}}" vueId="{{'b3c6a71a-2-'+__i1__+','+'b3c6a71a-1'}}" vueSlots="{{['default']}}" wx:for="{{chats}}" wx:for-index="__i1__" wx:for-item="chat" wx:key="id">
+                    <button bindgetuserinfo="__e" class="messages-item is-button data-v-79ff8d16" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goChat',['$event'] ] ] ] ]}}" data-id="{{chat.id}}" openType="getUserInfo">
+                        <view class="messages-hd data-v-79ff8d16">
+                            <view class="messages-headimage data-v-79ff8d16">
+                                <image class="_img data-v-79ff8d16" lazyLoad="{{true}}" src="{{chat.mini_headimg}}"></image>
+                                <view class="msg-badge data-v-79ff8d16" wx:if="{{chat.unread_messages_count}}">{{chat.unread_messages_count}}</view>
+                            </view>
+                        </view>
+                        <view class="messages-bd data-v-79ff8d16">
+                            <view class="messages-bd--tp data-v-79ff8d16">
+                                <view class="messages-tit data-v-79ff8d16">
+                                    <text class="data-v-79ff8d16">{{chat.peer_nickname}}</text>
+                                </view>
+                                <view class="messages-time data-v-79ff8d16">{{chat.date}}</view>
+                            </view>
+                            <view class="messages-bd--bt data-v-79ff8d16">{{chat.messsage_content}}</view>
+                        </view>
+                    </button>
+                </ui-swipe-action-item>
+            </ui-swipe-action>
+        </view>
+    </view>
+    <loading bind:__l="__l" class="data-v-79ff8d16" vueId="b3c6a71a-3" wx:if="{{loading}}"></loading>
+    <navigator class="chat-history-link _a data-v-79ff8d16" url="/pages/chat_list/history/main">点击查看历史聊天记录</navigator>
+    <view class="hot-part data-v-79ff8d16">
+        <hot-list-header bind:__l="__l" class="hot-section data-v-79ff8d16" source="消息首页" time="{{hot_time}}" vueId="b3c6a71a-4"></hot-list-header>
+        <hot-list bind:__l="__l" class="data-v-79ff8d16" items="{{hot_list}}" max_length="5" source="消息首页" vueId="b3c6a71a-5"></hot-list>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-79ff8d16" hide_back_home="{{true}}" title="我的消息" vueId="b3c6a71a-6"></page-wrap>
+</view>

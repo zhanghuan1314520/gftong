@@ -1,0 +1,14 @@
+<form bindsubmit="__e" class="exchange data-v-3ff78832" data-event-opts="{{[ [ 'submit',[ [ 'exchange',['$event'] ] ] ] ]}}" style="{{'display:'+(show?'block':'none')+';'}}">
+    <view class="row _div data-v-3ff78832">
+        <input bindchange="__e" class="data-v-3ff78832" data-event-opts="{{[ [ 'change',[ [ 'changeInput',['$event'] ] ] ] ]}}" name="gold_coins" placeholder="请输入金币" type="number" value="{{input_value}}"></input>
+        <label class="_span data-v-3ff78832">=</label>
+        <label class="data-v-3ff78832">{{input_value*10+'积分'}}</label>
+    </view>
+    <view class="tips-item _div data-v-3ff78832">
+        <view class="tip _p data-v-3ff78832">{{exchange_scale_desc}}</view>
+        <view class="tip _p data-v-3ff78832">{{exchange_gold_coins_desc}}</view>
+    </view>
+    <view class="error _p data-v-3ff78832" wx:if="{{error}}">{{error}}</view>
+    <button class="large-btn confirm-btn data-v-3ff78832" formType="submit">兑换</button>
+    <rules bind:__l="__l" class="data-v-3ff78832" rules="{{rules}}" show_score="true" title="积分兑换规则" vueId="67bf09b0-1"></rules>
+</form>

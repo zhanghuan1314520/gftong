@@ -1,0 +1,23 @@
+.page.data-v-a0a3a38e {
+    padding-bottom: 128rpx;
+    background-color: #fff;
+}
+
+.tabs-wrap.data-v-a0a3a38e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 40rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.tip.data-v-a0a3a38e {
+    color: #999;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.exent-tip.data-v-a0a3a38e {
+    padding: 16rpx 2rpx 32rpx 32rpx;
+}

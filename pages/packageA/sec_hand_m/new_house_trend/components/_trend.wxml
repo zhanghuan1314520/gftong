@@ -1,0 +1,25 @@
+<view class="trend _div data-v-1890e21c">
+    <view class="price-trend _div data-v-1890e21c">
+        <view class="trend-title _div data-v-1890e21c">
+            <label class="_span data-v-1890e21c">均价走势</label>
+            <view class="trend-time _div data-v-1890e21c">
+                <view bindtap="__e" class="{{[ 'item _div data-v-1890e21c',[item.active?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeTime',['$0'],[ [ ['trend_time','title',item.title] ] ] ] ] ] ]}}" wx:for="{{trend_time}}" wx:for-index="__i0__" wx:key="title">{{'近'+item.title+''}}</view>
+            </view>
+        </view>
+        <view class="ecbox _div data-v-1890e21c">
+            <f2-charts bind:__l="__l" canvasId="trandFirstLine" class="data-v-1890e21c vue-ref" data-ref="trandFirstLine" opts="{{firstLineOpts}}" source="{{firstLineData}}" vueId="523b7198-1" yLabel="{{yLabel}}"></f2-charts>
+        </view>
+    </view>
+    <navigator bindtap="__e" class="join-group data-v-1890e21c" data-event-opts="{{[ [ 'tap',[ [ 'tabLog',['$event'] ] ] ] ]}}" url="/pages/personal_package/group_assistant/main">
+        <view class="card _div data-v-1890e21c">
+            <view class="left data-v-1890e21c">
+                <view class="top data-v-1890e21c">
+                    <common-img bind:__l="__l" class="headimgs data-v-1890e21c" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/second-hand/headimgs.png" vueId="523b7198-2"></common-img>
+                    <text class="data-v-1890e21c">加入群聊，一起探讨</text>
+                </view>
+                <view class="bottom data-v-1890e21c">“杭州未来的房价走势如何？”</view>
+            </view>
+            <view class="right data-v-1890e21c">加入群聊</view>
+        </view>
+    </navigator>
+</view>

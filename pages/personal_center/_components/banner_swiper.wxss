@@ -1,0 +1,69 @@
+.swiper-banner-box.data-v-1ef358ce {
+    border-radius: 16rpx;
+    background-color: #fff;
+}
+
+.swiper-banner.data-v-1ef358ce {
+    height: 182rpx;
+}
+
+.offical-account.data-v-1ef358ce {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.offical-account ._img.data-v-1ef358ce {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.tip-banner.data-v-1ef358ce {
+    height: 182rpx;
+    background: -webkit-gradient(linear,left top,right top,from(#fae1af),to(#fff3cc));
+    background: linear-gradient(90deg,#fae1af,#fff3cc);
+    color: #d68f00;
+    font-size: 26rpx;
+    font-weight: 700;
+    text-align: left;
+    border-radius: 16rpx;
+}
+
+.tip-banner>._div.data-v-1ef358ce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 16rpx 30rpx;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-size: 24rpx;
+}
+
+.tip-banner>._div ._p.data-v-1ef358ce {
+    width: 513rpx;
+    color: #8b572a;
+}
+
+.tip-banner>._div ._i.data-v-1ef358ce {
+    color: #f54900;
+    font-weight: 700;
+    padding-right: 20rpx;
+    background-size: 14rpx 22rpx;
+    background-position: 100%;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/arr-red.png);
+    background-repeat: no-repeat;
+}
+
+.activity-g-banner.data-v-1ef358ce {
+    border-radius: 12rpx;
+    overflow: hidden;
+}

@@ -1,0 +1,141 @@
+.page.data-v-51995d1f {
+    padding-bottom: 100rpx;
+}
+
+.layout-detail.data-v-51995d1f {
+    padding-bottom: 32rpx;
+    margin-bottom: 16rpx;
+    background-color: #fff;
+}
+
+.preview.data-v-51995d1f {
+    position: relative;
+    width: 100%;
+    height: 600rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.main.data-v-51995d1f {
+    position: relative;
+    padding: 32rpx 32rpx 0;
+    line-height: 44rpx;
+    min-height: 127rpx;
+}
+
+.right-tools.data-v-51995d1f {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: absolute;
+    right: 39rpx;
+    top: 45rpx;
+}
+
+.right-tools.data-v-51995d1f,.right-tools .item.data-v-51995d1f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.right-tools .item.data-v-51995d1f {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 66rpx;
+    height: 82rpx;
+    margin-left: 36rpx;
+    background-color: transparent;
+    padding: 0;
+    line-height: 30rpx;
+}
+
+.layout.data-v-51995d1f {
+    margin-bottom: 8rpx;
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.desc.data-v-51995d1f {
+    font-size: 28rpx;
+    color: #999;
+}
+
+.tags.data-v-51995d1f {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 12rpx;
+}
+
+.tags.data-v-51995d1f,.tags .item.data-v-51995d1f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tags .item.data-v-51995d1f {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 114rpx;
+    height: 36rpx;
+    background-color: #f1f1f1;
+    font-size: 22rpx;
+    color: #989898;
+    margin-right: 9rpx;
+}
+
+.saleout.data-v-51995d1f {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120rpx;
+    height: 120rpx;
+    z-index: 1;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/layout/saleout.png);
+    background-size: 100% 100%;
+}
+
+.business-tag.data-v-51995d1f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 24rpx;
+    left: 24rpx;
+    width: 72rpx;
+    height: 36rpx;
+    border-radius: 4rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+.img-tools.data-v-51995d1f {
+    display: block;
+}
+
+.tools.data-v-51995d1f {
+    padding: 0 16rpx;
+}

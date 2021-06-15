@@ -1,0 +1,10 @@
+<view class="page _div data-v-1a0f347a">
+    <view class="_div data-v-1a0f347a" style="{{'width:'+width+'px'+';'+'height:'+height+'px'+';'}}">
+        <image bindload="__e" bindtap="__e" class="_img data-v-1a0f347a" data-event-opts="{{[ [ 'tap',[ [ 'onViewImg',['$event'] ] ] ],[ 'load',[ [ 'onimgload',['$event'] ] ] ] ]}}" src="{{photo_url}}"></image>
+    </view>
+    <button catchtap="__e" class="save-btn data-v-1a0f347a" data-event-opts="{{[ [ 'tap',[ [ 'onSaveImg',['$event'] ] ] ] ]}}" wx:if="{{show_bb}}">
+        <image class="_img data-v-1a0f347a" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/share-img.png"></image>
+    </button>
+    <canvas canvasId="canvas" class="share-canvas data-v-1a0f347a" style="{{'width:'+real_width+'px'+';'+'height:'+real_height+'px'+';'}}"></canvas>
+    <page-wrap bind:__l="__l" class="data-v-1a0f347a" title="{{title}}" vueId="cb76f71c-1"></page-wrap>
+</view>

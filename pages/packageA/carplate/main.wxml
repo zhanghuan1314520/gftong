@@ -1,0 +1,37 @@
+<view class="page _div data-v-4b657664">
+    <view class="carplate-header _div data-v-4b657664">
+        <view class="carplate-header__left _div data-v-4b657664">
+            <view class="carplate-header__tit _div data-v-4b657664">杭州小客车增量车牌摇号查询</view>
+        </view>
+        <button class="carplate-header__share data-v-4b657664" openType="share">
+            <image class="_img data-v-4b657664" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/w.png"></image>
+            <label class="_span data-v-4b657664">分享</label>
+        </button>
+    </view>
+    <view class="carplate-body _div data-v-4b657664">
+        <picker bindchange="__e" class="data-v-4b657664" data-event-opts="{{[ [ 'change',[ [ 'changeDates',['$event'] ] ] ] ]}}" range="{{quota_dates}}" value="{{quota_dates_index}}" wx:if="{{quota_dates.length}}">
+            <view class="picker-inner _div data-v-4b657664">
+                <label class="_span data-v-4b657664">{{quota_dates[quota_dates_index]}}</label>
+                <image class="_img data-v-4b657664" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/down.png"></image>
+            </view>
+        </picker>
+        <view class="list _div data-v-4b657664">
+            <view class="list-item _div data-v-4b657664" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+                <view class="list-item__tit _div data-v-4b657664">
+                    <view class="_h3 data-v-4b657664">{{item.quota_name}}</view>
+                    <label class="{{[ '_span data-v-4b657664',[item.quota_type==='个人'?'person':'',item.quota_type==='单位'?'unit':''] ]}}">{{item.quota_type}}</label>
+                </view>
+                <view class="list-item__bd _div data-v-4b657664">
+                    <navigator bindtap="__e" class="_a data-v-4b657664" data-event-opts="{{[ [ 'tap',[ [ 'toResult',['$0'],[ [ ['items','id',item.id] ] ] ] ] ] ]}}">
+                        <label class="_span data-v-4b657664">查询</label>
+                        <view class="_i data-v-4b657664"></view>
+                    </navigator>
+                    <view class="_div data-v-4b657664">申请编码总数:<label class="_span data-v-4b657664">{{item.quota_details&&item.quota_details['申请编码总数']}}</label>
+                    </view>
+                    <view class="_div data-v-4b657664">{{item.quota_type+'指标总数:'}}<label class="_span data-v-4b657664">{{item.quota_details&&item.quota_details[item.quota_type==='单位'?'单位指标总数':'个人指标总数']}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

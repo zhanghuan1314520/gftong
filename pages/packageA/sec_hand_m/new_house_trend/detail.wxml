@@ -1,0 +1,10 @@
+<view class="detail _div data-v-28fb170c">
+    <detail-nav bind:__l="__l" class="data-v-28fb170c" item="{{item}}" vueId="76e9b248-1"></detail-nav>
+    <trend bind:__l="__l" class="data-v-28fb170c" trend_zone="{{trend_zone}}" vueId="76e9b248-2"></trend>
+    <view class="top-search _div data-v-28fb170c">
+        <hot-list-header bind:__l="__l" class="data-v-28fb170c" source="新房行情页" time="{{time}}" vueId="76e9b248-3"></hot-list-header>
+        <view class="search-list _div data-v-28fb170c">
+            <host-list bind:__l="__l" class="data-v-28fb170c" items="{{hotList}}" max_length="5" source="新房行情入口页" vueId="76e9b248-4"></host-list>
+        </view>
+    </view>
+</view>

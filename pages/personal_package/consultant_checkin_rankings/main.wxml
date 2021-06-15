@@ -1,0 +1,43 @@
+<view class="page data-v-764e8ca2">
+    <view class="header data-v-764e8ca2">
+        <view class="h1 data-v-764e8ca2">Hi，你已累计签到<text class="data-v-764e8ca2">{{my_ranking.checkin_days}}</text>天</view>
+        <view class="h2 data-v-764e8ca2">人生的路上，无论生活还是事业都需要有足够的耐心</view>
+    </view>
+    <view class="main data-v-764e8ca2">
+        <view class="list data-v-764e8ca2">
+            <view class="list-tit data-v-764e8ca2">
+                <view class="s data-v-764e8ca2"></view>
+                <view class="ss data-v-764e8ca2"></view>
+                <text class="data-v-764e8ca2">签到榜</text>
+                <view class="ss data-v-764e8ca2"></view>
+                <view class="s data-v-764e8ca2"></view>
+            </view>
+            <view class="my-ranking data-v-764e8ca2">
+                <view class="my-ranking--info data-v-764e8ca2">
+                    <image class="headimg my-ranking--headimg data-v-764e8ca2" src="{{my_ranking.headimgurl}}"></image>
+                    <view class="my-ranking--body data-v-764e8ca2">
+                        <view class="my-name data-v-764e8ca2">{{my_ranking.consultant_name||''}}</view>
+                        <view class="my-topic data-v-764e8ca2">第<text class="data-v-764e8ca2">{{my_ranking.current_ranking||0}}</text>名</view>
+                    </view>
+                </view>
+                <view class="checkin-days data-v-764e8ca2">{{'累计签到'+(my_ranking.checkin_days||0)+'天'}}</view>
+            </view>
+            <view class="list-items data-v-764e8ca2">
+                <view class="item data-v-764e8ca2" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                    <view class="current-ranking data-v-764e8ca2">{{item.current_ranking}}</view>
+                    <view class="current-info data-v-764e8ca2">
+                        <view class="current-consultant data-v-764e8ca2">
+                            <image class="headimg current-consultant--headimg data-v-764e8ca2" src="{{item.headimgurl}}"></image>
+                            <text class="current-consultant--name data-v-764e8ca2">{{item.consultant_name}}</text>
+                        </view>
+                        <view class="checkin-days data-v-764e8ca2">{{'累计签到'+item.checkin_days+'天'}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <list-loading bind:__l="__l" class="data-v-764e8ca2" vueId="3def9732-1" wx:if="{{loading||!no_more}}"></list-loading>
+    <view class="bottom-tips--box data-v-764e8ca2">
+        <bottom-tip bind:__l="__l" class="data-v-764e8ca2" vueId="3def9732-2" wx:if="{{!loading&&no_more}}"></bottom-tip>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="map-wrap _div data-v-6ccc691d">
+    <map bindtap="__e" class="data-v-6ccc691d" data-event-opts="{{[ [ 'tap',[ [ 'goMap',['$event'] ] ] ] ]}}" includePoints="{{points}}" latitude="{{house.latitude}}" longitude="{{house.longitude}}" markers="{{markers}}">
+        <cover-image bindtap="__e" class="map-link data-v-6ccc691d" data-event-opts="{{[ [ 'tap',[ [ 'goMap',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/map/btn-img.png"></cover-image>
+    </map>
+</view>

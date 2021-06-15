@@ -1,0 +1,121 @@
+.sec-top.data-v-008d0282 {
+    background-color: #fff;
+    padding-bottom: 30rpx;
+}
+
+.updated-time.data-v-008d0282 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 42rpx 30rpx 0;
+}
+
+.updated-time ._span.data-v-008d0282 {
+    font-size: 40rpx;
+    line-height: 56rpx;
+    color: #333;
+    font-weight: 700;
+}
+
+.updated-time ._em.data-v-008d0282 {
+    font-size: 24rpx;
+    color: #666;
+    line-height: 33rpx;
+    margin-left: 20rpx;
+}
+
+.second-total.data-v-008d0282 {
+    position: relative;
+    background-color: #fff;
+    padding: 30rpx;
+    margin: 30rpx 30rpx 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1rpx solid #ededed;
+    box-shadow: 0 7rpx 14rpx 0 #eaf1ef;
+    border-radius: 8rpx;
+}
+
+.second-total ._dl.data-v-008d0282 {
+    text-align: center;
+}
+
+.second-total ._dt.data-v-008d0282 {
+    color: #666;
+    font-size: 24rpx;
+    line-height: 33rpx;
+}
+
+.second-total ._dd.data-v-008d0282 {
+    color: #000;
+    font-size: 56rpx;
+    line-height: 78rpx;
+    margin-top: 11rpx;
+    font-weight: 700;
+}
+
+.second-total>._i.data-v-008d0282 {
+    width: 1rpx;
+    height: 115rpx;
+    margin: 0 80rpx;
+}
+
+.second-chart.data-v-008d0282 {
+    background-color: #fff;
+    padding: 30rpx;
+}
+
+.second-chart>._p.data-v-008d0282 {
+    font-size: 24rpx;
+    color: #d4d4d4;
+    line-height: 30rpx;
+    margin-top: 24rpx;
+}
+
+.second-chart+.second-chart.data-v-008d0282 {
+    margin-top: 20rpx;
+}
+
+.second-chart__tit.data-v-008d0282 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    padding-bottom: 30rpx;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 28rpx;
+    position: relative;
+    z-index: 99;
+}
+
+.second-chart__tit ._span.data-v-008d0282 {
+    font-weight: 700;
+    color: #444;
+}
+
+.second-chart__tit ._em.data-v-008d0282 {
+    color: #666;
+}
+
+.ecbox.data-v-008d0282 {
+    width: 100%;
+    height: 420rpx;
+}

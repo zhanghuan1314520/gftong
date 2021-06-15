@@ -1,0 +1,22 @@
+<view bindtap="__e" class="wrap data-v-669f5327" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}">
+    <view class="house-page-title data-v-669f5327">
+        <view class="h3 data-v-669f5327">楼盘总平图<text class="new data-v-669f5327" wx:if="{{new_planar_graph_hint}}">上新</text>
+        </view>
+        <navigator class="right-link data-v-669f5327" url="{{utils.getLink(building_id)}}">查看更多</navigator>
+    </view>
+    <navigator class="preview data-v-669f5327" url="{{utils.getLink(building_id)}}">
+        <view class="entry data-v-669f5327">点击查看</view>
+        <common-img bind:__l="__l" class="img data-v-669f5327" mode="aspectFill" src="{{url}}" vueId="e7b4fd0c-1" wx:if="{{url}}"></common-img>
+    </navigator>
+</view>
+<wxs module="utils">
+var link = '';
+module.exports = ({
+    getLink: (function(id) {
+        if (!link && id) {
+            link = '/pages/building/planar_graph/main?building_id\x3d' + id
+        };
+        return (link)
+    }),
+});
+</wxs>

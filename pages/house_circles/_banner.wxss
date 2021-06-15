@@ -1,0 +1,185 @@
+.swiper-banner-wrap.data-v-1b37d3cd {
+    padding: 8rpx 0 24rpx;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.banner.data-v-1b37d3cd {
+    white-space: nowrap;
+    overflow: scroll;
+    width: 100%;
+    height: 288rpx;
+}
+
+.item.data-v-1b37d3cd {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    height: 272rpx;
+    margin-right: 16rpx;
+    border-radius: 12rpx;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.item.data-v-1b37d3cd:first-child {
+    margin-left: 32rpx;
+}
+
+.card.data-v-1b37d3cd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 560rpx;
+    padding: 24rpx 32rpx 26rpx;
+    text-align: center;
+    background-size: 100% 100%;
+    line-height: 33rpx;
+    font-size: 24rpx;
+    color: hsla(0,0%,100%,.8);
+    position: relative;
+}
+
+.card.data-v-1b37d3cd::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 226rpx;
+    height: 217rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/daily_report/card-bg.png);
+    background-size: 226rpx 217rpx;
+}
+
+.card .btn.data-v-1b37d3cd {
+    display: inline-block;
+    width: 160rpx;
+    height: 50rpx;
+    line-height: 48rpx;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card .top.data-v-1b37d3cd {
+    color: rgba(255,252,179,.8);
+}
+
+.card .label.data-v-1b37d3cd {
+    margin-right: 1em;
+}
+
+.card.data-v-1b37d3cd:nth-child(3n-2) {
+    background-image: linear-gradient(161deg,#3cba96,#2f9477);
+    box-shadow: 0 8rpx 16rpx 0 rgba(47,148,119,.2);
+}
+
+.card:nth-child(3n-2) .btn.data-v-1b37d3cd {
+    background-color: #00c9a1;
+}
+
+.card.data-v-1b37d3cd:nth-child(3n-1) {
+    background-image: linear-gradient(161deg,#d4a14a,#ba8529);
+    box-shadow: 0 8rpx 16rpx 0 rgba(186,133,41,.2);
+}
+
+.card:nth-child(3n-1) .btn.data-v-1b37d3cd {
+    background-color: #edb24c;
+}
+
+.card.data-v-1b37d3cd:nth-child(3n) {
+    background-image: linear-gradient(154deg,#4ebab7,#44a19e);
+    box-shadow: 0 8rpx 16rpx 0 rgba(68,161,158,.2);
+    color: hsla(0,0%,100%,.8);
+}
+
+.card:nth-child(3n) .btn.data-v-1b37d3cd {
+    background-color: #54c7c3;
+}
+
+.card .row.data-v-1b37d3cd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.card ._h3.data-v-1b37d3cd {
+    width: 500rpx;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 45rpx;
+    text-align: left;
+}
+
+.more.data-v-1b37d3cd {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 72rpx;
+    font-weight: 700;
+    font-size: 28rpx;
+    color: #00b08d;
+    letter-spacing: .8em;
+    writing-mode: tb-rl;
+    background-color: #c0ebe2;
+}
+
+.festival .card.data-v-1b37d3cd:nth-child(3n-2) {
+    background-image: linear-gradient(147deg,#f57c56,#f43f29);
+    box-shadow: 0 8rpx 16rpx 0 rgba(244,87,62,.2);
+}
+
+.festival .card:nth-child(3n-2) .btn.data-v-1b37d3cd {
+    background-color: #ffb9a4;
+    color: #e53030;
+}
+
+.festival .card.data-v-1b37d3cd:nth-child(3n-1) {
+    background-image: linear-gradient(134deg,#7e3bbe,#cc318d);
+    box-shadow: 0 8rpx 16rpx 0 rgba(186,133,41,.2);
+}
+
+.festival .card:nth-child(3n-1) .btn.data-v-1b37d3cd {
+    background-color: #ffa0b3;
+    color: #d61139;
+}
+
+.festival .card.data-v-1b37d3cd:nth-child(3n) {
+    background-image: linear-gradient(154deg,#fd9818,#fb7c1e);
+    box-shadow: 0 8rpx 16rpx 0 rgba(68,161,158,.2);
+    color: hsla(0,0%,100%,.8);
+}
+
+.festival .card:nth-child(3n) .btn.data-v-1b37d3cd {
+    background-color: #ffd5af;
+    color: #e66100;
+}
+
+.festival .more.data-v-1b37d3cd {
+    color: #fa2c2c;
+    background-color: #fcc;
+}

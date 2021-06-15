@@ -1,0 +1,49 @@
+<view class="second_hand_evalute _div data-v-7b2ba9b5">
+    <form bindsubmit="__e" class="data-v-7b2ba9b5" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="_section data-v-7b2ba9b5">
+            <view class="row navigator-arrow _div data-v-7b2ba9b5">
+                <label class="data-v-7b2ba9b5">小区</label>
+                <view bindtap="__e" class="content _div data-v-7b2ba9b5" data-event-opts="{{[ [ 'tap',[ [ 'goSearch',['$event'] ] ] ] ]}}">
+                    <input class="data-v-7b2ba9b5" disabled="{{true}}" placeholder="请选择您想要估价的小区" placeholderClass="disabled" type="text" value="{{community_name}}"></input>
+                </view>
+            </view>
+            <view class="row _div data-v-7b2ba9b5">
+                <label class="data-v-7b2ba9b5">面积</label>
+                <view class="content _div data-v-7b2ba9b5">
+                    <view class="has-bg _div data-v-7b2ba9b5">
+                        <input class="primary-input data-v-7b2ba9b5" name="area" placeholder="请输入大于0的数字" placeholderClass="disabled" type="number"></input>
+                        <label class="unit _span data-v-7b2ba9b5">平米</label>
+                    </view>
+                </view>
+            </view>
+            <view class="row navigator-arrow _div data-v-7b2ba9b5">
+                <label class="data-v-7b2ba9b5">户型</label>
+                <picker bindchange="__e" class="content data-v-7b2ba9b5" data-event-opts="{{[ [ 'change',[ [ 'changeHouseType',['$event'] ] ] ] ]}}" mode="multiSelector" range="{{house_types}}" rangeKey="name" value="{{select_house_type}}">
+                    <label class="_span data-v-7b2ba9b5" wx:if="{{house_type}}">{{house_type}}</label>
+                    <label class="disabled _span data-v-7b2ba9b5" wx:else>请选择户型</label>
+                </picker>
+            </view>
+            <view class="row navigator-arrow _div data-v-7b2ba9b5">
+                <label class="data-v-7b2ba9b5">朝向</label>
+                <picker bindchange="__e" class="content data-v-7b2ba9b5" data-event-opts="{{[ [ 'change',[ [ 'changeOrient',['$event'] ] ] ] ]}}" range="{{orientations}}" rangeKey="name" value="{{select_orient_index}}">
+                    <view class="data-v-7b2ba9b5" wx:if="{{select_orient_index}}">{{''+orientations[select_orient_index].name+''}}</view>
+                    <view class="disabled data-v-7b2ba9b5" wx:else>朝向可以根据客厅阳台判断</view>
+                </picker>
+            </view>
+            <view class="row _div data-v-7b2ba9b5">
+                <label class="data-v-7b2ba9b5">楼层</label>
+                <view class="content _div data-v-7b2ba9b5">
+                    <view class="has-bg item _div data-v-7b2ba9b5">
+                        <input class="data-v-7b2ba9b5" name="floor" placeholder="请填写" placeholderClass="disabled" type="number"></input>
+                        <label class="unit _span data-v-7b2ba9b5">层</label>
+                    </view>
+                    <view class="has-bg item longer _div data-v-7b2ba9b5">
+                        <input class="data-v-7b2ba9b5" name="total_floor" placeholder="请填写" placeholderClass="disabled" type="number"></input>
+                        <label class="unit _span data-v-7b2ba9b5">总楼层</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <button class="large-btn confirm-btn data-v-7b2ba9b5" formType="submit">确定</button>
+    </form>
+</view>

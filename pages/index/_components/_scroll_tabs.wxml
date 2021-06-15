@@ -1,0 +1,18 @@
+<view class="tabs _div data-v-aed3b6e8">
+    <scroll-view bindscroll="__e" class="tabs-warp data-v-aed3b6e8" data-event-opts="{{[ [ 'scroll',[ [ 'scroll',['$event'] ] ] ] ]}}" id="scroll" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+        <view class="scroll-content data-v-aed3b6e8" style="{{'width:'+scroll_tabs_bg_width+'rpx'+';'}}">
+            <view class="shadow _li data-v-aed3b6e8" wx:for="{{scroll_tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+                <button bindgetuserinfo="__e" class="shadow-button data-v-aed3b6e8" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="{{tab.name}}" data-url="{{tab.pagepath}}" openType="getUserInfo">
+                    <view class="skeleton-radius _i data-v-aed3b6e8"></view>
+                    <view class="skeleton-rect _div data-v-aed3b6e8"></view>
+                </button>
+            </view>
+            <view class="bg _div data-v-aed3b6e8" style="{{'width:'+scroll_tabs_bg_width+'rpx'+';'+'height:'+scroll_tabs_bg_height+'rpx'+';'}}">
+                <common-img bind:__l="__l" class="data-v-aed3b6e8" shadowClass="white-shadow" src="{{scroll_tabs_bg}}" vueId="a25b5676-1"></common-img>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="slide data-v-aed3b6e8" wx:if="{{scroll_tabs_bg_width}}">
+        <view class="slide-bar data-v-aed3b6e8" style="{{'transform:'+'translateX('+marginLeft+'px)'+';'+'width:'+slide_bar_width+'px'+';'}}"></view>
+    </view>
+</view>

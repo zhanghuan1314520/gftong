@@ -1,0 +1,11 @@
+<view class="consultants _div data-v-1e18bbdb">
+    <view class="_ul data-v-1e18bbdb">
+        <view class="_li data-v-1e18bbdb" wx:for="{{items}}" wx:for-index="__i0__" wx:for-item="consultant" wx:key="id">
+            <item bind:__l="__l" class="data-v-1e18bbdb" consultant="{{consultant}}" vueId="{{'3c89e17a-1-'+__i0__}}"></item>
+        </view>
+    </view>
+    <view class="tip _div data-v-1e18bbdb" wx:if="{{no_reach_bottom}}">仅展示前50名置业顾问</view>
+    <view class="_footer data-v-1e18bbdb">
+        <button bindgetuserinfo="__e" class="data-v-1e18bbdb" data-event-opts="{{[ [ 'getuserinfo',[ [ 'addConsultant',['$event'] ] ] ] ]}}" openType="getUserInfo">申请置业顾问入驻</button>
+    </view>
+</view>

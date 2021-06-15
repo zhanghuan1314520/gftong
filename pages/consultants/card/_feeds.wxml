@@ -1,0 +1,13 @@
+<view class="_section data-v-7eebacb1">
+    <view class="_header data-v-7eebacb1">
+        <view class="_h3 data-v-7eebacb1">
+            <label class="_span data-v-7eebacb1">我的动态</label>
+            <navigator bindtap="__e" class="pencil-btn _a data-v-7eebacb1" data-event-opts="{{[ [ 'tap',[ [ 'goEdit',['$event'] ] ] ] ]}}" wx:if="{{showEdit}}">
+                <image class="_img data-v-7eebacb1" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-circles/pencil.png"></image>发布动态</navigator>
+        </view>
+    </view>
+    <blog-item bind:__l="__l" bind:changeFeed="__e" bind:delete="__e" bind:sticky="__e" class="data-v-7eebacb1" data-event-opts="{{[ [ '^delete',[ ['onDelete'] ] ],[ '^sticky',[ ['onSticky'] ] ],[ '^changeFeed',[ ['onChangeFeed'] ] ] ]}}" item="{{item}}" show_delete="{{true}}" show_operate="{{false}}" show_video="{{show_video}}" vueId="{{'5664c9d1-1-'+__i0__}}" wx:for="{{feeds}}" wx:for-index="__i0__" wx:key="id"></blog-item>
+    <loading bind:__l="__l" class="data-v-7eebacb1" vueId="5664c9d1-2" wx:if="{{feeds_loading||!no_more}}"></loading>
+    <empty-box bind:__l="__l" class="data-v-7eebacb1" desc="还没有发布任何动态哦~" top="{{80}}" type="empty_page" vueId="5664c9d1-3" wx:if="{{!feeds_loading&&!feeds.length}}"></empty-box>
+    <view class="_p data-v-7eebacb1" wx:if="{{!loading&&no_more}}">没有更多了</view>
+</view>

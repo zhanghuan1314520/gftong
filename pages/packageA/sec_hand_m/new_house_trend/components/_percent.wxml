@@ -1,0 +1,5 @@
+<view class="{{['item-trend _div data-v-7ee8f5b1',item.towards?'up':'down']}}">
+    <label class="item-none _span data-v-7ee8f5b1" wx:if="{{item.value===0}}">-</label>
+    <view class="item _div data-v-7ee8f5b1" wx:else>
+        <view class="{{['triangle _i data-v-7ee8f5b1',item.towards?'up':'down']}}"></view>{{''+item.value+'%'}}</view>
+</view>

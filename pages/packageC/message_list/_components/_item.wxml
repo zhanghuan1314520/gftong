@@ -1,0 +1,16 @@
+<view bindtap="__e" class="item _div data-v-4577720b" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goJump'] ] ] ] ]}}">
+    <view class="time _p data-v-4577720b">{{item.receive_time}}</view>
+    <view class="content _div data-v-4577720b">
+        <view class="tx-title _p data-v-4577720b" wx:if="{{item.subject}}">{{item.subject}}</view>
+        <view class="tx-desc _div data-v-4577720b" wx:if="{{item.message_type==='yesterday_score_journals'}}">获得总积分：<text class="red data-v-4577720b">{{item.details.score}}</text>
+        </view>
+        <block wx:else>
+            <view class="tx-desc _p data-v-4577720b" wx:if="{{item.body}}">{{item.body}}</view>
+        </block>
+        <common-img bind:__l="__l" class="img data-v-4577720b" src="{{item.details.image_url}}" vueId="21d63d84-1" wx:if="{{item.details.image_url}}"></common-img>
+        <view class="click _div data-v-4577720b" wx:if="{{show_jump}}">
+            <text class="text data-v-4577720b">{{btn_text}}</text>
+            <fc-icon bind:__l="__l" class="data-v-4577720b" type="48_more_grey" vueId="21d63d84-2"></fc-icon>
+        </view>
+    </view>
+</view>

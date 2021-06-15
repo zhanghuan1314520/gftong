@@ -1,0 +1,89 @@
+.item.data-v-cf892188 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 30rpx 0 24rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}
+
+.item>._i.data-v-cf892188 {
+    width: 48rpx;
+    height: 41rpx;
+    line-height: 41rpx;
+    text-align: center;
+    font-size: 21rpx;
+    font-weight: 600;
+    color: #4a4a4a;
+    background-size: 100% 100%;
+}
+
+.item>.content.data-v-cf892188 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin-left: 20rpx;
+}
+
+.item>.content ._h3.data-v-cf892188 {
+    font-size: 32rpx;
+    color: #111;
+    font-weight: 600;
+}
+
+.item>.content ._p.data-v-cf892188 {
+    margin-top: 8rpx;
+    font-size: 28rpx;
+    color: #111;
+}
+
+.item .detail.data-v-cf892188 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    line-break: 37rpx;
+}
+
+.item .detail ._li.data-v-cf892188 {
+    font-size: 26rpx;
+    color: #777;
+}
+
+.item .detail ._li.data-v-cf892188:first-child {
+    color: #fa3319;
+}
+
+.item .detail ._strong.data-v-cf892188 {
+    display: inline-block;
+    color: #00ad82;
+    font-weight: 600;
+    font-size: 28rpx;
+}
+
+.item .detail ._strong.data-v-cf892188::before {
+    content: "";
+    display: inline-block;
+    width: 16rpx;
+    height: 23rpx;
+    background-size: 100% 100%;
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/depreciate_rankings/down.png);
+}
+
+.item .rank-1.data-v-cf892188 {
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/depreciate_rankings/1.png);
+    color: transparent;
+}
+
+.item .rank-2.data-v-cf892188 {
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/depreciate_rankings/2.png);
+    color: transparent;
+}
+
+.item .rank-3.data-v-cf892188 {
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/depreciate_rankings/3.png);
+    color: transparent;
+}

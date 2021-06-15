@@ -1,0 +1,17 @@
+._p.data-v-87a1a9ac {
+    padding: 27rpx 0;
+    line-height: 37rpx;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+    font-size: 26rpx;
+}
+
+._p ._img.data-v-87a1a9ac {
+    width: 48rpx;
+    height: 20rpx;
+}
+
+.list.data-v-1333b1dd {
+    background-color: #fff;
+}

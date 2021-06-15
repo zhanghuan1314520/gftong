@@ -1,0 +1,135 @@
+.wrap.data-v-94c67452 {
+    padding: 24rpx 0 30rpx;
+    background-color: #fff;
+    margin-top: 16rpx;
+}
+
+.header.data-v-94c67452 {
+    padding: 0 30rpx;
+    font-size: 40rpx;
+    font-weight: 700;
+}
+
+.tabs.data-v-94c67452 {
+    padding: 0 30rpx;
+}
+
+.tabs.data-v-94c67452,.tabs .item.data-v-94c67452 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.tabs .item.data-v-94c67452 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 102rpx;
+    height: 129rpx;
+    font-size: 24rpx;
+    color: #444;
+}
+
+.tabs .icon.data-v-94c67452 {
+    width: 88rpx;
+    height: 88rpx;
+}
+
+.web-720.data-v-94c67452 {
+    background-position: 0rpx 0;
+}
+
+.vr.data-v-94c67452,.web-720.data-v-94c67452 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/tabs.png);
+    background-size: 960rpx 88rpx;
+}
+
+.vr.data-v-94c67452 {
+    background-position: -109rpx 0;
+}
+
+.planar.data-v-94c67452 {
+    background-position: -218rpx 0;
+}
+
+.planar.data-v-94c67452,.sunlight.data-v-94c67452 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/tabs.png);
+    background-size: 960rpx 88rpx;
+}
+
+.sunlight.data-v-94c67452 {
+    background-position: -327rpx 0;
+}
+
+.layout.data-v-94c67452 {
+    background-position: -436rpx 0;
+}
+
+.layout.data-v-94c67452,.map.data-v-94c67452 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/tabs.png);
+    background-size: 960rpx 88rpx;
+}
+
+.map.data-v-94c67452 {
+    background-position: -545rpx 0;
+}
+
+.event.data-v-94c67452 {
+    background-position: -654rpx 0;
+}
+
+.event.data-v-94c67452,.pic.data-v-94c67452 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/tabs.png);
+    background-size: 960rpx 88rpx;
+}
+
+.pic.data-v-94c67452 {
+    background-position: -763rpx 0;
+}
+
+.info.data-v-94c67452 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/tabs.png);
+    background-size: 960rpx 88rpx;
+    background-position: -872rpx 0;
+}
+
+.house-item-wrap.data-v-94c67452 {
+    display: inline-block;
+    width: 100%;
+}
+
+.paginations.data-v-94c67452 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 8rpx;
+    margin-top: 24rpx;
+}
+
+.paginations .item.data-v-94c67452 {
+    width: 10rpx;
+    height: 8rpx;
+    margin-right: 6rpx;
+    border-radius: 4.5rpx;
+    background-color: #d8d8d8;
+    transition: width .4s ease-in-out;
+}
+
+.paginations .active.data-v-94c67452 {
+    width: 29rpx;
+    background-color: #9ae0d2;
+}

@@ -1,0 +1,75 @@
+.dlg.data-v-8e1198b6 {
+    padding-top: 30rpx;
+    position: fixed;
+    top: 300rpx;
+    left: 50%;
+    margin-left: -280rpx;
+    width: 560rpx;
+    height: auto;
+    border-radius: 12rpx;
+    background-color: #fff;
+    z-index: 9999999;
+}
+
+.dlg text.data-v-8e1198b6 {
+    display: block;
+    padding: 0 32rpx;
+    line-height: 37rpx;
+    margin-top: 30rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+
+._h3.data-v-8e1198b6 {
+    color: #333;
+}
+
+._h3.data-v-8e1198b6,button.data-v-8e1198b6 {
+    font-size: 32rpx;
+    text-align: center;
+    font-weight: 700;
+}
+
+button.data-v-8e1198b6 {
+    width: 100%;
+    display: block;
+    border-top: 1rpx solid #ebebeb;
+    margin-top: 38rpx;
+    padding: 17rpx 0;
+    color: #00b08d;
+    background-color: #fff;
+}
+
+.note-dlg .dlg.data-v-8e1198b6 {
+    padding: 200rpx 0;
+    width: 630rpx;
+    height: 520rpx;
+    background-color: #fff;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/event/tip-bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 20rpx;
+}
+
+.note-dlg text.data-v-8e1198b6 {
+    display: block;
+    padding: 0 32rpx;
+    margin-top: 30rpx;
+    text-align: center;
+    font-size: 26rpx;
+}
+
+.note-dlg button.data-v-8e1198b6 {
+    width: 264rpx;
+    height: 64rpx;
+    padding: 0;
+    line-height: 64rpx;
+    border-radius: 38rpx;
+    border: 0;
+    margin-top: 16rpx;
+    color: #fff;
+    font-size: 26rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/event/btn-bg.png);
+    background-size: 100% 100%;
+}

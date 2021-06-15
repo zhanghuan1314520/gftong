@@ -1,0 +1,7 @@
+<view bindtap="__e" class="wrap data-v-3af1175d" data-event-opts="{{[ [ 'tap',[ [ 'openTarget',['$event'] ] ] ] ]}}">
+    <view class="left data-v-3af1175d">
+        <view catchtap="__e" class="close data-v-3af1175d" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}"></view>
+        <text class="data-v-3af1175d">{{tip}}</text>
+    </view>
+    <view class="btn data-v-3af1175d">前往看看</view>
+</view>

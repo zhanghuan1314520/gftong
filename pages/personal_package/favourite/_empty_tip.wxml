@@ -1,0 +1,5 @@
+<view class="wrap data-v-74913584">
+    <empty-box bind:__l="__l" class="data-v-74913584" desc="暂无关注的楼盘，关注可获取楼盘最新动态哟~" top="52" vueId="2294d977-1"></empty-box>
+    <image class="data-v-74913584" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/favourite/heart.png"></image>
+    <navigator class="empty-state-btn data-v-74913584" openType="switchTab" url="/pages/index/main">马上关注</navigator>
+</view>

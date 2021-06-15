@@ -1,0 +1,18 @@
+.chat-list.data-v-47d37cb2 {
+    padding: 0 30rpx;
+}
+
+.count-link.data-v-47d37cb2 {
+    min-width: 98rpx;
+    height: 38rpx;
+    padding: 0 12rpx;
+    line-height: 38rpx;
+    font-size: 26rpx;
+    border-radius: 20rpx;
+    background-color: rgba(0,0,0,.05);
+    text-align: center;
+}
+
+.chat-item.data-v-47d37cb2 {
+    border-color: #f7f7f7;
+}

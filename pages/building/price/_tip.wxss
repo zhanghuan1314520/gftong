@@ -1,0 +1,49 @@
+.overlay.data-v-45db8abe {
+    z-index: 999;
+    opacity: .8;
+}
+
+.step-box.data-v-45db8abe {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.step.data-v-45db8abe {
+    position: absolute;
+    z-index: 1000;
+    background-size: 100% 100%;
+}
+
+.step-0.data-v-45db8abe,.step-2.data-v-45db8abe {
+    bottom: 199rpx;
+    right: 121rpx;
+    width: 512rpx;
+    height: 153rpx;
+}
+
+.step-0.data-v-45db8abe {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/table-entry-guide.png);
+}
+
+.step-1.data-v-45db8abe {
+    top: 310rpx;
+    right: 211rpx;
+    width: 288rpx;
+    height: 244rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/table-cell-guide.png);
+}
+
+.step-2.data-v-45db8abe {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/list-entry-guide.png);
+}
+
+.overlay-1.data-v-45db8abe {
+    opacity: 1;
+    z-index: 999;
+    background: transparent url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/block-over.png) no-repeat 0 -40rpx;
+    background-size: 750rpx 2668rpx;
+}

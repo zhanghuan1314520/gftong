@@ -1,0 +1,47 @@
+<view class="_div data-v-0b163dd3">
+    <view class="{{[ 'search-list-page page _div data-v-0b163dd3',[show_tag_filter?'page-tag-filter':''] ]}}">
+        <view class="history-top-banner _div data-v-0b163dd3" indicatorDots="{{true}}" wx:if="{{banner.length}}">
+            <top-swiper banners="{{banner}}" bind:__l="__l" class="data-v-0b163dd3" vueId="2efe9d4e-1" wx:if="{{!banner_loading&&banner.length}}"></top-swiper>
+        </view>
+        <search bind:__l="__l" bind:searchClick="__e" class="data-v-0b163dd3" data-event-opts="{{[ [ '^searchClick',[ ['searchClick'] ] ] ]}}" vueId="2efe9d4e-2"></search>
+        <view class="history-filter-list _div data-v-0b163dd3">
+            <view class="filter-header _header data-v-0b163dd3" wx:if="{{type==='全部楼盘'}}">
+                <view class="_h2 data-v-0b163dd3">{{type}}</view>
+                <zone-select bind:__l="__l" bind:change="__e" bind:get="__e" class="data-v-0b163dd3" data-event-opts="{{[ [ '^change',[ ['changeZone'] ] ],[ '^get',[ ['getZones'] ] ] ]}}" vueId="2efe9d4e-3" zones="{{zones}}"></zone-select>
+            </view>
+            <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-0b163dd3" className="{{top_filter_class}}" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" interesting_order="{{interesting_order}}" layout="{{layout}}" metro="{{metro}}" price="{{price}}" tabs="{{filter_tabs}}" times="{{estimated_presell_times}}" total_price="{{total_price}}" vueId="2efe9d4e-4" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}" wx:else></top-filter>
+        </view>
+        <view class="data-v-0b163dd3" wx:if="{{type==='即将取证'}}">
+            <notice bind:__l="__l" bind:notice="__e" class="data-v-0b163dd3" data-event-opts="{{[ [ '^notice',[ ['setNotice'] ] ] ]}}" subscribed="{{subscribed}}" vueId="2efe9d4e-5"></notice>
+        </view>
+        <view class="alert-wrap data-v-0b163dd3" wx:if="{{type==='正在登记'}}">
+            <view class="alert-dj data-v-0b163dd3">
+                <text class="data-v-0b163dd3">自2020年7月2日起，不能同时进行两个以上项目购房意向登记</text>
+                <navigator class="_a data-v-0b163dd3" url="/pages/personal_package/pi/main?img=xz72&title=购房新政">查看详情</navigator>
+            </view>
+        </view>
+        <view class="house-list _ul data-v-0b163dd3">
+            <tag-filter bind:__l="__l" bind:change="__e" class="data-v-0b163dd3" data-event-opts="{{[ [ '^change',[ ['changeTag'] ] ] ]}}" selected="{{select_tag}}" tags="{{tags}}" vueId="2efe9d4e-6"></tag-filter>
+            <list-recommendation bind:__l="__l" class="data-v-0b163dd3" list="{{recommendation}}" listname="{{type}}" type="{{recommendation_tye.list}}" vueId="2efe9d4e-7" wx:if="{{show_recommendation}}"></list-recommendation>
+            <house-item bind:__l="__l" class="data-v-0b163dd3" item="{{item}}" listname="{{type}}" type="{{type}}" vueId="{{'2efe9d4e-8-'+index}}" wx:for="{{items}}" wx:key="index"></house-item>
+            <list-loading bind:__l="__l" class="data-v-0b163dd3" vueId="2efe9d4e-9" wx:if="{{loading||!no_more}}"></list-loading>
+            <bottom-tip bind:__l="__l" class="data-v-0b163dd3" vueId="2efe9d4e-10" wx:if="{{!loading&&no_more}}"></bottom-tip>
+        </view>
+        <page-wrap bind:__l="__l" class="data-v-0b163dd3" hide_back_home="{{true}}" title="{{pageTitle}}" vueId="2efe9d4e-11"></page-wrap>
+    </view>
+    <view class="sticky sticky-footer sticky-footer--contact data-v-0b163dd3" wx:if="{{show_sticky&&!subscribed_hz}}">
+        <view class="data-v-0b163dd3">
+            <view class="account data-v-0b163dd3">
+                <view class="account-headimg data-v-0b163dd3">
+                    <image class="_img data-v-0b163dd3" src="{{current_offiaccount.headimg}}"></image>
+                </view>
+                <view class="account-body data-v-0b163dd3">
+                    <view class="account-tit data-v-0b163dd3">{{contactSendMessage.offiaccount.title}}</view>
+                    <view class="account-info data-v-0b163dd3">{{contactSendMessage.offiaccount.content}}</view>
+                </view>
+            </view>
+            <identify-btn bind:__l="__l" class="data-v-0b163dd3" link="{{wxArticle['5'].url}}" shareShow="{{wxArticle['5'].share}}" text="{{contactSendMessage.offiaccount.btn_text}}" title="{{wxArticle['5'].name}}" vueId="2efe9d4e-12" wx:if="{{$root.m0}}"></identify-btn>
+            <button class="data-v-0b163dd3" openType="contact" sendMessageImg="{{contactSendMessage.offiaccount.msg_face}}" sendMessagePath="{{'/pages/history/main?mediasourceid='+current_offiaccount.id}}" showMessageCard="{{true}}" wx:else>{{''+contactSendMessage.offiaccount.btn_text+''}}</button>
+        </view>
+    </view>
+</view>

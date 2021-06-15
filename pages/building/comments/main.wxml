@@ -1,0 +1,40 @@
+<view class="comments-wrap page _div data-v-0f1aff8a">
+    <view class="building _div data-v-0f1aff8a" wx:if="{{!house_loading}}">
+        <building-item bind:__l="__l" class="data-v-0f1aff8a" comment="{{true}}" item="{{house}}" vueId="67142998-1"></building-item>
+    </view>
+    <view class="data-v-0f1aff8a" style="padding-bottom:24rpx;background-color:#fff;" wx:if="{{showCommentRedPacketActivity}}">
+        <comment-red-packet-activity bind:__l="__l" bind:openComment="__e" class="data-v-0f1aff8a" config="{{commentRedPacketActivity}}" data-event-opts="{{[ [ '^openComment',[ ['openComment'] ] ] ]}}" is_consultant="{{is_consultant}}" vueId="67142998-2"></comment-red-packet-activity>
+    </view>
+    <comment-header bind:__l="__l" class="data-v-0f1aff8a" comment_rules="{{comment_rules}}" count="{{house.comment_count}}" tip_content="{{tip_content}}" vueId="67142998-3"></comment-header>
+    <view class="tags data-v-0f1aff8a">
+        <view bindtap="__e" class="{{[ 'tag-item data-v-0f1aff8a',[item.name===tag?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChangeTag',['$0'],[ [ ['tags','',i,'name'] ] ] ] ] ] ]}}" wx:for="{{tags}}" wx:for-index="i">{{item.name+'('+item.comment_count+')'}}</view>
+    </view>
+    <empty-tip bind:__l="__l" class="data-v-0f1aff8a" show="{{show_empty}}" tip="暂无评论，快来抢沙发哦！" vueId="67142998-4"></empty-tip>
+    <view class="comment-list adapt_bottom_origin data-v-0f1aff8a">
+        <view class="list-top data-v-0f1aff8a">
+            <view class="filters data-v-0f1aff8a">
+                <view bindtap="__e" class="{{['item data-v-0f1aff8a',order_type==='created_at'?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'changeOrder',['created_at'] ] ] ] ]}}">时间排序</view>
+                <view class="i data-v-0f1aff8a">|</view>
+                <view bindtap="__e" class="{{['item data-v-0f1aff8a',order_type===''?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'changeOrder',[''] ] ] ] ]}}">默认排序</view>
+            </view>
+        </view>
+        <comment-item bind:__l="__l" bind:addComment="__e" bind:changeComment="__e" class="data-v-0f1aff8a" comment="{{comment}}" data-event-opts="{{[ [ '^addComment',[ ['addComment'] ] ],[ '^changeComment',[ ['changeComment'] ] ] ]}}" index="{{index}}" vueId="{{'67142998-5-'+index}}" wx:for="{{items}}" wx:for-item="comment" wx:key="id"></comment-item>
+        <view class="data-v-0f1aff8a" style="{{'display:'+(!no_more||loading?'block':'none')+';'}}">
+            <loading bind:__l="__l" class="data-v-0f1aff8a" vueId="67142998-6"></loading>
+        </view>
+    </view>
+    <comment-footer bind:__l="__l" bind:changeFavourite="__e" bind:openComment="__e" building_id="{{building_id}}" class="data-v-0f1aff8a" data-event-opts="{{[ [ '^changeFavourite',[ ['changeFavourite'] ] ],[ '^openComment',[ ['openComment'] ] ] ]}}" favourite="{{house.favourite}}" follow_info="{{house.follow_info}}" from="评论区" vueId="67142998-7"></comment-footer>
+    <input-dlg bind:__l="__l" bind:changeComments="__e" bind:hide="__e" class="data-v-0f1aff8a" data-event-opts="{{[ [ '^changeComments',[ ['changeComments'] ] ],[ '^hide',[ ['hideInputDlg'] ] ] ]}}" reply_item="{{reply_item}}" reply_user="{{reply_user}}" show="{{show_input_dlg}}" vueId="67142998-8"></input-dlg>
+    <comment-tip bind:__l="__l" bind:hide="__e" class="data-v-0f1aff8a" contents="{{msg_box.contents}}" copy_text="{{msg_box.copy_text}}" data-event-opts="{{[ [ '^hide',[ ['hideCommentTip'] ] ] ]}}" show="{{show_comment_tip}}" vueId="67142998-9"></comment-tip>
+    <view bindtap="__e" class="commont-success data-v-0f1aff8a" data-event-opts="{{[ [ 'tap',[ [ 'hideSuccess',['$event'] ] ] ] ]}}" wx:if="{{commontSuccess&&!is_consultant}}">
+        <view class="commont-success--main data-v-0f1aff8a">
+            <view class="commont-success--header data-v-0f1aff8a">
+                <image class="data-v-0f1aff8a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/commont-success-icon.png"></image>
+                <text class="data-v-0f1aff8a">评论发布成功</text>
+            </view>
+            <view class="commont-success--body data-v-0f1aff8a">添加客服领红包吧～</view>
+            <view catchtap="__e" class="commont-success--footer data-v-0f1aff8a" data-event-opts="{{[ [ 'tap',[ [ 'goWeb',['$event'] ] ] ] ]}}">去添加</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-0f1aff8a" hide_back_home="{{true}}" title="{{name+'-全部评论'}}" vueId="67142998-10"></page-wrap>
+</view>

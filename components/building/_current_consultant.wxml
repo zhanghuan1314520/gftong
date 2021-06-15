@@ -1,0 +1,34 @@
+<view class="current-consultant _div data-v-23c3848a">
+    <view class="inner-share-tips _div data-v-23c3848a" wx:if="{{is_building&&show_inner_tips&&is_consultant}}">
+        <text class="data-v-23c3848a">分享小程序，享入驻楼盘底部黄金位 ~</text>
+        <view bindtap="__e" class="inner-btn data-v-23c3848a" data-event-opts="{{[ [ 'tap',[ [ '$emit',['onHideThis'] ] ] ] ]}}">知道了</view>
+        <view class="inner-arrow data-v-23c3848a"></view>
+    </view>
+    <button bindgetuserinfo="__e" class="consultant-cell data-v-23c3848a" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{house.current_consultant.id}}" openType="getUserInfo">
+        <view class="dt _div data-v-23c3848a">
+            <image class="_img data-v-23c3848a" src="{{house.current_consultant.weixin_headimgurl}}"></image>
+        </view>
+        <view class="dd _div data-v-23c3848a">
+            <view class="dd-th _div data-v-23c3848a">{{house.current_consultant.name}}</view>
+            <view class="dd-bd _div data-v-23c3848a">{{house.name}}</view>
+        </view>
+    </button>
+    <view class="btns-cell _div data-v-23c3848a">
+        <fangchan-auth-user bind:__l="__l" bind:success="__e" class="btn-item data-v-23c3848a" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'openChat',['$0'],['house.current_consultant.id'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="9953e9f4-1" vueSlots="{{['default']}}">
+            <view class="btn-item primary btn-item-inner _div data-v-23c3848a">
+                <image class="_img data-v-23c3848a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/wx.png"></image>
+                <label class="_span data-v-23c3848a">聊天</label>
+            </view>
+        </fangchan-auth-user>
+        <button bindtap="__e" class="btn-item red data-v-23c3848a" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goResult'] ] ] ] ]}}" wx:if="{{is_building&&current_house.lfd_status==='lfd_completed'}}">
+            <label class="_span data-v-23c3848a">摇号结果</label>
+        </button>
+        <button bindtap="__e" class="btn-item red data-v-23c3848a" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goReg'] ] ] ] ]}}" wx:if="{{is_building&&current_house.lfd_status!=='lfd_completed'&&current_house.lrd_status==='lrd_completed'}}">
+            <label class="_span data-v-23c3848a">登记公示</label>
+        </button>
+        <button bindtap="__e" class="btn-item yellow data-v-23c3848a" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{house.current_consultant.id}}" wx:if="{{!is_building||current_house.lfd_status!=='lfd_completed'&&current_house.lrd_status!=='lrd_completed'}}">
+            <image class="_img data-v-23c3848a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/tel.png"></image>
+            <label class="_span data-v-23c3848a">电话</label>
+        </button>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+<form bindsubmit="__e" class="cooperation-form data-v-08a36d2f" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+    <view class="cooperation-form__group data-v-08a36d2f">
+        <view class="cooperation-form__item data-v-08a36d2f">
+            <view class="text28 cooperation-form__item-lable data-v-08a36d2f">
+                <text class="data-v-08a36d2f">*</text>您的联系电话</view>
+            <view class="cooperation-form__item-input data-v-08a36d2f">
+                <input bindinput="__e" class="data-v-08a36d2f" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','mobile','$event',[] ] ] ] ] ]}}" name="mobile" placeholder="请授权手机号" placeholderClass="hintsFont28" type="text" value="{{mobile}}"></input>
+                <button bindgetphonenumber="__e" class="data-v-08a36d2f" data-event-opts="{{[ [ 'getphonenumber',[ [ 'getPhoneNumber',['$event'] ] ] ] ]}}" openType="getPhoneNumber">授权手机号</button>
+            </view>
+        </view>
+        <view class="cooperation-form__item data-v-08a36d2f">
+            <view class="text28 cooperation-form__item-lable data-v-08a36d2f">
+                <text class="data-v-08a36d2f">*</text>您的微信号</view>
+            <view class="cooperation-form__item-input data-v-08a36d2f">
+                <input bindinput="__e" class="data-v-08a36d2f" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','weixin_name','$event',[] ] ] ] ] ]}}" name="weixin_name" placeholder="请输入您的微信号" placeholderClass="hintsFont28" type="text" value="{{weixin_name}}"></input>
+            </view>
+        </view>
+        <view class="cooperation-form__item data-v-08a36d2f">
+            <view class="text28 cooperation-form__item-lable data-v-08a36d2f">
+                <text class="data-v-08a36d2f">*</text>合作意向</view>
+            <view class="cooperation-form__item-input data-v-08a36d2f">
+                <textarea bindinput="__e" class="data-v-08a36d2f" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','intention','$event',[] ] ] ] ] ]}}" maxlength="{{maxlength}}" name="intention" placeholder="请简要说明合作意向" placeholderClass="hintsFont28" type="text" value="{{intention}}"></textarea>
+                <view class="num text28 data-v-08a36d2f">{{intention.length+'/300'}}</view>
+            </view>
+        </view>
+    </view>
+    <button class="primary data-v-08a36d2f" formType="submit">提交</button>
+</form>

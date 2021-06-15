@@ -1,0 +1,41 @@
+<view class="sub-page _div data-v-4ba029a1">
+    <view class="trade-data__top _div data-v-4ba029a1">
+        <top-right-share bind:__l="__l" class="data-v-4ba029a1" top="24" type="white" vueId="1210049c-1"></top-right-share>
+    </view>
+    <view class="trade-data__first-section _div data-v-4ba029a1">
+        <form bindsubmit="__e" class="data-v-4ba029a1" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+            <view class="search-wrap _div data-v-4ba029a1">
+                <view class="search-main-wrap _div data-v-4ba029a1">
+                    <view class="search-input _div data-v-4ba029a1">
+                        <image class="search _img data-v-4ba029a1" src="/static/img/search.png"></image>
+                        <input bindconfirm="__e" bindinput="__e" class="data-v-4ba029a1" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'search',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','search_key','$event',[] ] ] ] ] ]}}" name="search_key" placeholder="输入宗地相关信息进行搜索" type="search" value="{{search_key}}"></input>
+                        <view bindtap="__e" class="remove _div data-v-4ba029a1" data-event-opts="{{[ [ 'tap',[ [ 'resetName',['$event'] ] ] ] ]}}">
+                            <image class="_img data-v-4ba029a1" src="/static/img/input-remove.png"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="search-main-btn _div data-v-4ba029a1">
+                    <button class="search-btn data-v-4ba029a1" formType="submit">搜索</button>
+                </view>
+            </view>
+        </form>
+        <top-filter auction="{{true}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-4ba029a1" className="auction-filter" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" tabs="{{filter_tabs}}" vueId="1210049c-2" zone_ids="{{zone_ids}}" zones="{{zones}}" wx:if="{{zones}}"></top-filter>
+        <view class="auction-list _div data-v-4ba029a1">
+            <view class="data-v-4ba029a1" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+                <view bindtap="__e" class="auction-list__item _div data-v-4ba029a1" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-id="{{item.id}}" wx:if="{{item.subject||item.land_address}}">
+                    <view class="item-l _div data-v-4ba029a1">
+                        <view class="tit _div data-v-4ba029a1">{{item.subject||item.land_address}}</view>
+                        <view class="price _div data-v-4ba029a1" wx:if="{{item.hammer_price}}">{{'成交楼面价：'+item.hammer_price+''}}</view>
+                        <view class="date data-v-4ba029a1" wx:if="{{item.notice_date&&item.status!='出让成功'}}">{{'公告日期：'+item.notice_date+''}}</view>
+                        <view class="date data-v-4ba029a1" wx:if="{{item.trade_time&&item.status==='出让成功'}}">{{'出让日期：'+item.trade_time+''}}</view>
+                        <navigator class="building-link data-v-4ba029a1" url="{{'/pages/building/main?building_id='+item.building.id}}" wx:if="{{item.building&&item.building.name}}">{{'对应项目：'+item.building.name+''}}<fc-icon bind:__l="__l" class="data-v-4ba029a1" type="48_more_grey" vueId="{{'1210049c-3-'+__i0__}}"></fc-icon>
+                        </navigator>
+                    </view>
+                    <view class="item-r _div data-v-4ba029a1">
+                        <label class="{{['_span data-v-4ba029a1',item.className]}}">{{item.status}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

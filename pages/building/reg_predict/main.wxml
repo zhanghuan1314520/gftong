@@ -1,0 +1,14 @@
+<view class="page _div data-v-c4c8753a">
+    <house-info address="{{[ ''+(house.zone||'')+(house.address||'') ]}}" bind:__l="__l" buidling_id="{{house.id}}" class="data-v-c4c8753a" house_id="{{current_house.id}}" location="{{house.location}}" name="{{house.name||''}}" vueId="ff62b38c-1"></house-info>
+    <view class="predict-content _div data-v-c4c8753a">
+        <view class="predict-section _div data-v-c4c8753a">
+            <house-num bind:__l="__l" class="data-v-c4c8753a" current_house="{{current_house}}" vueId="ff62b38c-2" wx:if="{{!house_loading}}"></house-num>
+        </view>
+        <view class="predict-section _div data-v-c4c8753a" wx:if="{{!house_loading}}">
+            <house-chart bind:__l="__l" class="data-v-c4c8753a" register_predict_precision="{{current_house.register_predict_precision}}" time_points="{{time_points}}" vueId="ff62b38c-3"></house-chart>
+        </view>
+        <view class="tip _p data-v-c4c8753a">注：该数据由杭州购房通智能AI系统通过大数据计算预测得出。
+            最终数据以官方登记公示为准。</view>
+        <page-wrap bind:__l="__l" class="data-v-c4c8753a" has_chart="{{true}}" title="{{title}}" vueId="ff62b38c-4"></page-wrap>
+    </view>
+</view>

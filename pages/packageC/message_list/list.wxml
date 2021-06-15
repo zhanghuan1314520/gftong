@@ -1,0 +1,22 @@
+<view class="msg-list _div data-v-23edec10">
+    <view class="data-v-23edec10" wx:if="{{banners&&banners.length&&category==='开盘消息'}}">
+        <ad-swiper banners="{{banners}}" bind:__l="__l" class="data-v-23edec10" height="{{150}}" log_type="msgpage_top_banner" swiper_id="notice-swiper" vueId="ed46b8b0-1"></ad-swiper>
+    </view>
+    <view class="tabs _div data-v-23edec10" wx:if="{{tabs.length>1}}">
+        <tabs bind:__l="__l" bind:change="__e" class="data-v-23edec10" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected_tab}}" show_dot="{{category==='最新动态'}}" tabs="{{tabs}}" vueId="ed46b8b0-2"></tabs>
+    </view>
+    <view class="content _div data-v-23edec10" wx:if="{{selected_tab==='public'}}">
+        <common-article bind:__l="__l" class="data-v-23edec10" item="{{item}}" type="feeds" vueId="{{'ed46b8b0-3-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></common-article>
+    </view>
+    <block wx:else>
+        <view class="content _div data-v-23edec10" wx:if="{{selected_tab==='reply'||selected_tab==='give_like'}}">
+            <comments bind:__l="__l" bind:tap="__e" class="data-v-23edec10" data-event-opts="{{[ [ '^tap',[ [ 'goJump',['$0'],[ [ ['items','',i] ] ] ] ] ] ]}}" item="{{item}}" vueId="{{'ed46b8b0-4-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></comments>
+        </view>
+        <view class="list _div data-v-23edec10" wx:else>
+            <item bind:__l="__l" bind:tap="__e" class="data-v-23edec10" data-event-opts="{{[ [ '^tap',[ [ 'goJump',['$0'],[ [ ['items','',i] ] ] ] ] ] ]}}" item="{{item}}" vueId="{{'ed46b8b0-5-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></item>
+        </view>
+    </block>
+    <list-loading bind:__l="__l" class="data-v-23edec10" vueId="ed46b8b0-6" wx:if="{{loading||!no_more}}"></list-loading>
+    <empty-box bind:__l="__l" class="data-v-23edec10" desc="暂无信息" top="209" type="empty_page" vueId="ed46b8b0-7" wx:if="{{!items.length&&!loading}}"></empty-box>
+    <page-wrap bind:__l="__l" class="data-v-23edec10" title="{{category}}" vueId="ed46b8b0-8"></page-wrap>
+</view>

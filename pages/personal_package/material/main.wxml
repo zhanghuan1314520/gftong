@@ -1,0 +1,27 @@
+<view class="page-box adapt_bottom_origin data-v-7741e35f">
+    <view class="page data-v-7741e35f">
+        <top-right-share bind:__l="__l" class="data-v-7741e35f" top="0" type="white" vueId="929ceb98-1"></top-right-share>
+        <view class="main data-v-7741e35f">
+            <view class="main-banner data-v-7741e35f">
+                <navigator class="banner data-v-7741e35f" url="/pages/personal_package/material/house_purchase">
+                    <text class="data-v-7741e35f">立即查看</text>
+                </navigator>
+            </view>
+            <view class="main-tools data-v-7741e35f">
+                <view class="main-tools--h1 data-v-7741e35f">常用工具</view>
+                <view class="main-tools--list data-v-7741e35f" wx:if="{{materialTools&&materialTools.tabs.length}}">
+                    <navigator bindtap="__e" class="data-v-7741e35f" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}" data-name="{{tab.name}}" url="{{tab.path}}" wx:for="{{materialTools.tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+                        <text class="data-v-7741e35f">{{tab.name}}</text>
+                    </navigator>
+                    <view class="data-v-7741e35f" style="{{$root.s0}}">
+                        <image class="_img data-v-7741e35f" lazyLoad="{{true}}" src="{{tool_tabs_bg.url}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer-booth adapt_bottom_origin data-v-7741e35f" wx:if="{{footerCardType==='booth'}}">
+        <ui-consultant-booth bind:__l="__l" class="data-v-7741e35f" consultant="{{consultant_today_rankings[3]}}" pos="购房指南" vueId="929ceb98-2"></ui-consultant-booth>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-7741e35f" hide_back_home="{{true}}" vueId="929ceb98-3"></page-wrap>
+</view>

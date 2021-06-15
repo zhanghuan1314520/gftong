@@ -1,0 +1,18 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "house-item": "/components/business/house_item",
+        "empty-tip": "/pages/personal_package/favourite/_empty_tip",
+        "del-dlg": "/pages/personal_package/favourite/_del_dlg",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

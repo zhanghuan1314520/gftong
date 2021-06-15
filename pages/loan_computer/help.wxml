@@ -1,0 +1,4 @@
+<view class="page data-v-668b4e26">
+    <image class="data-v-668b4e26" mode="widthFix" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/loan_computer/computer-help.png"></image>
+    <page-wrap bind:__l="__l" class="data-v-668b4e26" hide_back_home="{{true}}" title="帮助" vueId="0b6729f2-1"></page-wrap>
+</view>

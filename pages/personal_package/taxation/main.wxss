@@ -1,0 +1,133 @@
+.page.data-v-cd640cfa {
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.top-tab.data-v-cd640cfa {
+    background-color: #fff;
+    padding-left: 40rpx;
+    position: relative;
+}
+
+.button-box.data-v-cd640cfa {
+    padding: 32rpx 32rpx 42rpx;
+}
+
+.computed-result.data-v-cd640cfa {
+    width: 686rpx;
+    height: 368rpx;
+    background-color: #e1f0ed;
+    border-radius: 24rpx;
+    margin: 0 auto;
+    padding: 24rpx 32rpx 0 64rpx;
+    position: relative;
+}
+
+.computed-result.data-v-cd640cfa::after,.computed-result.data-v-cd640cfa::before {
+    content: "";
+    width: 12rpx;
+    height: 36rpx;
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#abd1c9),to(#ddf0ec));
+    background-image: linear-gradient(0deg,#abd1c9,#ddf0ec);
+    border-radius: 6rpx;
+    display: block;
+    position: absolute;
+    top: -18rpx;
+}
+
+.computed-result.data-v-cd640cfa::before {
+    left: 80rpx;
+}
+
+.computed-result.data-v-cd640cfa::after {
+    right: 80rpx;
+}
+
+.computed-result--h1.data-v-cd640cfa {
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 45rpx;
+    color: #58b09f;
+    text-align: center;
+}
+
+.total-label.data-v-cd640cfa {
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 45rpx;
+    color: #333;
+}
+
+.total-num.data-v-cd640cfa {
+    font-size: 48rpx;
+    font-weight: 700;
+    line-height: 67rpx;
+    color: #333;
+}
+
+.total-unit.data-v-cd640cfa {
+    font-size: 28rpx;
+    font-weight: 700;
+    line-height: 40rpx;
+    color: #333;
+    margin-left: 8rpx;
+}
+
+.computed-result--total.data-v-cd640cfa {
+    padding-bottom: 8rpx;
+    padding-top: 35rpx;
+}
+
+.computed-result--item.data-v-cd640cfa,.computed-result--total.data-v-cd640cfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.computed-result--item.data-v-cd640cfa {
+    font-size: 28rpx;
+    line-height: 48rpx;
+    color: #333;
+}
+
+.price-label.data-v-cd640cfa {
+    width: 112rpx;
+}
+
+.price-num.data-v-cd640cfa {
+    font-weight: 700;
+    margin-right: 8rpx;
+}
+
+.qr-box.data-v-cd640cfa {
+    position: absolute;
+    right: 32rpx;
+    bottom: 32rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.qr-box ._img.data-v-cd640cfa {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.qr-box text.data-v-cd640cfa {
+    font-size: 22rpx;
+    line-height: 30rpx;
+    color: #a3ccc4;
+    margin-top: 12rpx;
+}

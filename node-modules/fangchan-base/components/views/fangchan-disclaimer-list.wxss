@@ -1,0 +1,71 @@
+.disclaimer-page.data-v-5e9f8b79 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e0f4ed;
+    padding-bottom: 32rpx;
+    padding-top: 115rpx;
+}
+
+.disclaimer-page.data-v-5e9f8b79::before {
+    content: "";
+    width: 686rpx;
+    height: 141rpx;
+    position: absolute;
+    left: 50%;
+    top: 12rpx;
+    transform: translateX(-50%);
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/list/disclaimer/top.png);
+    background-size: 100% 100%;
+}
+
+.page-content.data-v-5e9f8b79 {
+    position: relative;
+    width: 686rpx;
+    min-height: 600rpx;
+    background: #fff;
+    border-radius: 8rpx;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 32rpx 32rpx 0;
+}
+
+.tx.data-v-5e9f8b79 {
+    font-size: 26rpx;
+    color: #333;
+}
+
+.tip.data-v-5e9f8b79 {
+    margin: 24rpx auto;
+    font-size: 30rpx;
+    color: #333;
+    font-weight: 700;
+}
+
+.list.data-v-5e9f8b79 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.list-item.data-v-5e9f8b79 {
+    margin-bottom: 32rpx;
+    text-align: left;
+}
+
+.item-title.data-v-5e9f8b79 {
+    font-family: PingFangSC-Semibold;
+    font-size: 28rpx;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 12rpx;
+}
+
+.item-desc.data-v-5e9f8b79 {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #333;
+}

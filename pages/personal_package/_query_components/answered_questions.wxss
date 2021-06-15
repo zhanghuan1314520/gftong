@@ -1,0 +1,45 @@
+.wrap.data-v-380c7bc0 {
+    padding: 24rpx 32rpx;
+    color: #333;
+    font-size: 28rpx;
+    font-weight: 700;
+    border-bottom: 1rpx solid #ebebeb;
+    line-height: 52rpx;
+}
+
+.question.data-v-380c7bc0 {
+    display: inline;
+}
+
+.answer.data-v-380c7bc0 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60rpx;
+    padding: 0 24rpx 0 10rpx;
+    background-color: #f2f2f2;
+    border-radius: 30rpx;
+}
+
+.answer .content.data-v-380c7bc0 {
+    display: inline-block;
+    max-width: 196rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.answer .del.data-v-380c7bc0 {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 20rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/query-icons/del.png);
+    background-size: 100% 100%;
+}

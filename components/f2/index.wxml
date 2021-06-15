@@ -1,0 +1,1 @@
+<canvas bindtouchend="__e" bindtouchmove="__e" bindtouchstart="__e" canvasId="{{canvasId}}" class="f2-canvas data-v-09c0ae1a" data-event-opts="{{[ [ 'touchstart',[ [ 'touchStart',['$event'] ] ] ],[ 'touchmove',[ [ 'touchMove',['$event'] ] ] ],[ 'touchend',[ [ 'touchEnd',['$event'] ] ] ] ]}}" id="{{id}}" type="2d" wx:if="{{canvasId}}"></canvas>

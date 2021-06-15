@@ -1,0 +1,9 @@
+<lottery-results bind:__l="__l" bind:goComment="__e" bind:setLock="__e" class="data-v-0f317dc6" data-event-opts="{{[ [ '^setLock',[ ['setLock'] ] ],[ '^goComment',[ ['goComment'] ] ] ]}}" go_comment_lock="{{go_comment_lock}}" hide_comment_btn="{{hide_comment_btn}}" loading="{{loading}}" result="{{result}}" show_result="{{show_result}}" vueId="6dd799ff-1" vueSlots="{{['default']}}">
+    <view class="result-card _div data-v-0f317dc6">
+        <navigator class="house-name navigator-arrow _a data-v-0f317dc6" url="{{'/pages/building/main?building_id='+building_id+'&house_id='+house_id}}">{{''+house.name+''}}</navigator>
+        <house-count apartment_counts="{{house.apartment_counts}}" bind:__l="__l" class="data-v-0f317dc6" vueId="{{'6dd799ff-2'+','+'6dd799ff-1'}}" wx:if="{{!loading}}"></house-count>
+    </view>
+    <excellent-consultants bind:__l="__l" bind:goMore="__e" building_id="{{building_id}}" class="data-v-0f317dc6" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultant'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="摇号结果" id="excellent_consultants" is_default="{{false}}" theme="{{consultantCard.building.theme}}" title="有疑问？和置业专家在线聊聊" vueId="{{'6dd799ff-3'+','+'6dd799ff-1'}}"></excellent-consultants>
+    <tip-dlg bind:__l="__l" bind:toggleDlg="__e" class="data-v-0f317dc6" content="{{tip_content}}" data-event-opts="{{[ [ '^toggleDlg',[ ['toggleTip'] ] ] ]}}" show="{{show_tip}}" title="说明" vueId="{{'6dd799ff-4'+','+'6dd799ff-1'}}"></tip-dlg>
+    <page-wrap bind:__l="__l" class="data-v-0f317dc6" title="我的摇号" vueId="{{'6dd799ff-5'+','+'6dd799ff-1'}}"></page-wrap>
+</lottery-results>

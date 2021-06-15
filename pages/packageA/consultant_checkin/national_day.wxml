@@ -1,0 +1,51 @@
+<view class="page _div data-v-d1a9ec34">
+    <view class="checkin-wrap _div data-v-d1a9ec34">
+        <text class="h1 data-v-d1a9ec34">国庆七天乐  天天领宝箱</text>
+        <view class="checkin-main _div data-v-d1a9ec34">
+            <text class="h2 data-v-d1a9ec34">国庆七天 每天签到 每天领宝箱~</text>
+            <view class="status _div data-v-d1a9ec34">
+                <view class="item _div data-v-d1a9ec34" wx:for="{{days}}" wx:for-index="__i0__" wx:for-item="day" wx:key="*this">
+                    <view class="checkin ed _div data-v-d1a9ec34" wx:if="{{day.selected}}">
+                        <text class="t data-v-d1a9ec34">积分</text>
+                        <text class="n data-v-d1a9ec34">+5</text>
+                    </view>
+                    <view class="checkin _div data-v-d1a9ec34" wx:else>
+                        <text class="n data-v-d1a9ec34">5</text>
+                        <text class="t data-v-d1a9ec34">积分</text>
+                    </view>
+                    <label class="_span data-v-d1a9ec34">{{day.show_tx}}</label>
+                </view>
+            </view>
+            <button bindtap="__e" class="giftbox data-v-d1a9ec34" data-event-opts="{{[ [ 'tap',[ [ 'openBox',['$event'] ] ] ] ]}}" disabled="{{loading||!can_open_box}}">
+                <image class="_img data-v-d1a9ec34" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultants/checkin-bx.png"></image>
+                <label class="_span data-v-d1a9ec34" wx:if="{{can_open_box}}">点击开启宝箱</label>
+                <label class="_span data-v-d1a9ec34" wx:else>宝箱已开启</label>
+            </button>
+            <view class="rules _div data-v-d1a9ec34">
+                <view class="_dl data-v-d1a9ec34">
+                    <view class="_dt data-v-d1a9ec34">签到规则：</view>
+                    <view class="_dd data-v-d1a9ec34">1、国庆七天每天签到，每天领宝箱。</view>
+                    <view class="_dd data-v-d1a9ec34">2、国庆后恢复连续签到7天，开启宝箱功能。</view>
+                    <view class="_dd data-v-d1a9ec34">3、宝箱内设置积分奖励，可随机抽取。</view>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-d1a9ec34" wx:if="{{show_checkin}}">
+            <view bindtap="__e" class="overlay _div data-v-d1a9ec34" data-event-opts="{{[ [ 'tap',[ [ 'hideCheckin',['$event'] ] ] ] ]}}"></view>
+            <view class="checkin-dlg _div data-v-d1a9ec34">
+                <view class="house-i _div data-v-d1a9ec34">
+                    <image class="_img data-v-d1a9ec34" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/consultant_checkin/house-i.png"></image>
+                </view>
+                <view class="_div data-v-d1a9ec34" wx:if="{{dlgType==='checkin'}}">
+                    <view class="_h1 data-v-d1a9ec34">签到成功，增加5积分</view>
+                    <view class="_p data-v-d1a9ec34">亲，记得关注置业顾问之家哦</view>
+                </view>
+                <view class="_div data-v-d1a9ec34" wx:else>
+                    <view class="_h2 data-v-d1a9ec34">恭喜你，获得<label class="_span data-v-d1a9ec34">{{bonus_score}}</label>积分</view>
+                    <view class="_p data-v-d1a9ec34">国庆七天乐，天天领宝箱</view>
+                </view>
+                <button bindtap="__e" class="data-v-d1a9ec34" data-event-opts="{{[ [ 'tap',[ [ 'hideCheckin',['$event'] ] ] ] ]}}">我知道了</button>
+            </view>
+        </view>
+    </view>
+</view>

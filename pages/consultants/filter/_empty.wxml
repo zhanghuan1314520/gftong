@@ -1,0 +1,24 @@
+<view class="data-v-03755426">
+    <view class="data-v-03755426">
+        <view class="empty-icon data-v-03755426"></view>
+        <view class="textAssistFont28 data-v-03755426">该楼盘暂无置业顾问</view>
+    </view>
+    <view class="list textAssistFont28 data-v-03755426">
+        <view class="item data-v-03755426">1、<button bindgetuserinfo="__e" class="btn data-v-03755426" data-event-opts="{{[ [ 'getuserinfo',[ [ 'e0',['$event'] ] ] ] ]}}" openType="getUserInfo">申请入驻置业顾问</button>或<button class="btn data-v-03755426" openType="share">邀请置业顾问入</button>
+        </view>
+        <view class="item data-v-03755426">2、拨打楼盘电话<button bindtap="__e" class="btn data-v-03755426" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goCall'] ] ] ] ]}}">免费电话咨询</button>
+        </view>
+        <view class="item data-v-03755426">3、联系客服加入官方讨论群，获取更多楼盘</view>
+    </view>
+    <view class="service-wrap data-v-03755426" wx:if="{{official_customer_service}}">
+        <view class="left data-v-03755426">
+            <view class="strong data-v-03755426">联系客服加入官方讨论群</view>
+            <view class="tip data-v-03755426">获取更多楼盘详情</view>
+            <navigator bindtap="__e" class="btn _a data-v-03755426" data-event-opts="{{[ [ 'tap',[ [ '$emit',['copyCustomerWeixin'] ] ] ] ]}}">复制微信号</navigator>
+        </view>
+        <view class="right data-v-03755426">
+            <image class="data-v-03755426" src="{{official_customer_service.wx_qrcode_url}}"></image>
+            <view class="tip data-v-03755426">{{official_customer_service.wx_nickname}}</view>
+        </view>
+    </view>
+</view>

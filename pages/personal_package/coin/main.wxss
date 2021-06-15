@@ -1,0 +1,59 @@
+._ul.data-v-e8dd9044 {
+    padding: 0 30rpx;
+    background-color: #fff;
+}
+
+.record-title.data-v-e8dd9044 {
+    text-align: left;
+    padding: 16rpx 30rpx;
+    font-size: 26rpx;
+    background-color: #fff;
+}
+
+.record-item.data-v-e8dd9044 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 30rpx 0 20rpx;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.record-item.data-v-e8dd9044,.record-item .detail.data-v-e8dd9044 {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.record-item .detail.data-v-e8dd9044 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    font-size: 26rpx;
+    color: #333;
+}
+
+.record-item .detail ._span.data-v-e8dd9044 {
+    display: block;
+    color: #999;
+    font-size: 22rpx;
+}
+
+.record-item ._strong.data-v-e8dd9044 {
+    font-size: 32rpx;
+    color: #00ad82;
+}
+
+.record-item ._strong.active.data-v-e8dd9044 {
+    color: #fa543e;
+}

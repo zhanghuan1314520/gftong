@@ -1,0 +1,12 @@
+.captcha-btn.data-v-310d4c6c {
+    height: 42rpx;
+    padding-left: 40rpx;
+    line-height: 42rpx;
+    border-left: 1rpx solid #e5e5e5;
+    color: #00ad82;
+    font-size: 30rpx;
+}
+
+.disabled.data-v-310d4c6c {
+    color: #999;
+}

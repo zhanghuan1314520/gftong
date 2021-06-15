@@ -1,0 +1,40 @@
+.chart.data-v-36716a45 {
+    padding-top: 22rpx;
+    font-size: 26rpx;
+    color: #777;
+}
+
+.chart ._h3.data-v-36716a45 {
+    padding: 0 30rpx;
+}
+
+.chart-canvas.data-v-36716a45 {
+    width: 690rpx;
+    height: 420rpx;
+}
+
+.precision.data-v-36716a45 {
+    position: absolute;
+    top: 125rpx;
+    left: 254rpx;
+    width: 182rpx;
+    height: 182rpx;
+    transform: rotate(-20deg);
+}
+
+.precision cover-image.data-v-36716a45 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.precision .num.data-v-36716a45 {
+    display: block;
+    padding-top: 95rpx;
+    color: #c41b1a;
+    font-size: 32rpx;
+    font-weight: 700;
+    text-align: center;
+}

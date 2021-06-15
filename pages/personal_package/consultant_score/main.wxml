@@ -1,0 +1,24 @@
+<view class="page _div data-v-2a295d28">
+    <view class="_header data-v-2a295d28">
+        <label class="data-v-2a295d28">当前积分</label>
+        <view class="_strong data-v-2a295d28">{{score}}</view>
+    </view>
+    <view class="tabs _div data-v-2a295d28">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-2a295d28" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected}}" tabs="{{tabs}}" vueId="0d45091b-1" width="100%"></common-tabs>
+    </view>
+    <view class="_section data-v-2a295d28">
+        <view class="_h3 data-v-2a295d28">最近30天的积分记录</view>
+        <view class="_ul data-v-2a295d28">
+            <view class="_li data-v-2a295d28" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                <view class="content _div data-v-2a295d28">
+                    <label class="data-v-2a295d28">{{item.obtain_desc}}</label>
+                    <view class="_p data-v-2a295d28">{{item.occur_date}}</view>
+                </view>
+                <label class="{{['score _span data-v-2a295d28',item.score>0?'plus':'minus']}}">{{''+(item.score>0?'+'+item.score:item.score)+''}}</label>
+            </view>
+            <loading bind:__l="__l" class="data-v-2a295d28" vueId="0d45091b-2" wx:if="{{loading||!no_more}}"></loading>
+            <empty-tip bind:__l="__l" class="data-v-2a295d28" show="{{!loading&&!items.length}}" tip="暂时没有相关记录" vueId="0d45091b-3"></empty-tip>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-2a295d28" title="积分" vueId="0d45091b-4"></page-wrap>
+</view>

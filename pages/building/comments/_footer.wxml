@@ -1,0 +1,19 @@
+<view class="wrap data-v-f4cd14d6">
+    <view class="consultant-wrap data-v-f4cd14d6">
+        <text class="data-v-f4cd14d6">有疑问？可以和置业顾问聊聊</text>
+        <button bindgetuserinfo="__e" class="btn data-v-f4cd14d6" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCall',['$event'] ] ] ] ]}}" openType="getUserInfo">免费电话咨询</button>
+        <button bindgetuserinfo="__e" class="btn data-v-f4cd14d6" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goConsultantByUser',['$event'] ] ] ] ]}}" openType="getUserInfo">联系置业顾问</button>
+    </view>
+    <view class="_footer data-v-f4cd14d6">
+        <button class="mini-btn share-btn barFont22 data-v-f4cd14d6" openType="share">
+            <fc-icon bind:__l="__l" class="data-v-f4cd14d6" type="48_share_black" vueId="8a712296-1"></fc-icon>
+            <text class="data-v-f4cd14d6">分享</text>
+        </button>
+        <button bindtap="__e" class="{{['mini-btn like-btn barFont22 data-v-f4cd14d6',favourite?'liked':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'toggleFavourite',['$event'] ] ] ] ]}}">
+            <fc-icon bind:__l="__l" class="data-v-f4cd14d6" type="{{favourite?'48_love_actions':'48_love_normal'}}" vueId="8a712296-2"></fc-icon>
+            <text class="data-v-f4cd14d6">关注</text>
+        </button>
+        <button bindgetuserinfo="__e" class="comment-btn data-v-f4cd14d6" data-event-opts="{{[ [ 'getuserinfo',[ [ 'showComment',['$event'] ] ] ] ]}}" openType="getUserInfo">我也要评论/提问/晒一晒</button>
+    </view>
+    <like-tip bind:__l="__l" bind:hide="__e" class="data-v-f4cd14d6" content="该楼盘有新动态时，我们将通过服务号发消息通知您哟！" data-event-opts="{{[ [ '^hide',[ ['toggleSubscribe'] ] ] ]}}" show="{{show_subscribe_tip}}" show_copy="{{false}}" title="关注并绑定【杭州购房者之家】" vueId="8a712296-3"></like-tip>
+</view>

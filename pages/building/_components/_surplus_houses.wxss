@@ -1,0 +1,118 @@
+.section-surplus_houses.data-v-0de80e97 {
+    margin-bottom: 20rpx;
+    background: #fff;
+    font-size: 26rpx;
+    color: #222;
+    padding: 24rpx 30rpx 0;
+}
+
+.section-surplus_houses-title.data-v-0de80e97 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1rpx solid #f0f0f0;
+    padding-bottom: 16rpx;
+}
+
+.section-surplus_houses-title ._h1.data-v-0de80e97 {
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #333;
+    font-weight: 700;
+}
+
+.section-surplus_houses-title .surplus-houses.data-v-0de80e97 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #667380;
+    font-size: 24rpx;
+    font-weight: 700;
+    line-height: 33rpx;
+    position: relative;
+}
+
+.section-surplus_houses-title .surplus-houses ._i.data-v-0de80e97 {
+    width: 24rpx;
+    height: 24rpx;
+    border: 2rpx solid #667380;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22rpx;
+    font-size: 18rpx;
+    margin-left: 10rpx;
+}
+
+.section-surplus_houses-list .section-surplus_houses-list__item.data-v-0de80e97 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20rpx 0;
+}
+
+.section-surplus_houses-list .section-surplus_houses-list__item+.section-surplus_houses-list__item.data-v-0de80e97 {
+    border-top: 1rpx solid #f0f0f0;
+}
+
+.section-surplus_houses-list .section-surplus_houses-list__item ._img.data-v-0de80e97 {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+.section-surplus_houses-list .houses-tilte.data-v-0de80e97 {
+    color: #333;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.section-surplus_houses-list .houses-price.data-v-0de80e97 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 8rpx;
+}
+
+.section-surplus_houses-list .houses-price ._span.data-v-0de80e97 {
+    font-size: 28rpx;
+    color: #fa4d32;
+}
+
+.section-surplus_houses-list .houses-price ._em.data-v-0de80e97 {
+    min-width: 120rpx;
+    height: 48rpx;
+    padding: 0 20rpx;
+    line-height: 48rpx;
+    text-align: center;
+    background: #e6faf6;
+    margin-left: 24rpx;
+    border-top-left-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+    border-top-right-radius: 4rpx;
+    border-bottom-left-radius: 4rpx;
+    color: #00ad82;
+    font-size: 24rpx;
+}

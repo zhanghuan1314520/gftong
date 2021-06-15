@@ -1,0 +1,17 @@
+.depreciate_rankings.data-v-3d7cb274 {
+    background: #fff;
+}
+
+.list.data-v-3d7cb274 {
+    padding: 30rpx 30rpx 30rpx 24rpx;
+    background: #fff;
+}
+
+.tabs-wrap.data-v-3d7cb274 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 40rpx;
+    border-bottom: 1rpx solid #ebebeb;
+}

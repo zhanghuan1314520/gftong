@@ -1,0 +1,293 @@
+.top-link.data-v-58f95c74 {
+    color: #00ad82;
+    font-weight: 700;
+    font-size: 26rpx;
+    text-decoration: underline;
+}
+
+.normal-form.data-v-58f95c74 {
+    color: #444;
+    font-size: 30rpx;
+}
+
+.normal-form ._header.data-v-58f95c74 {
+    padding: 22rpx 30rpx 20rpx;
+    color: #999;
+    font-size: 26rpx;
+}
+
+.normal-form ._header ._a.data-v-58f95c74 {
+    display: block;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+.normal-form .sub-title.data-v-58f95c74 {
+    padding: 30rpx 30rpx 16rpx;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.normal-form ._section.data-v-58f95c74 {
+    color: #333;
+    background-color: #fff;
+}
+
+.normal-form ._section .row.data-v-58f95c74 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 88rpx;
+    border-bottom: 1rpx solid #ebebeb;
+    padding-left: 30rpx;
+}
+
+.normal-form ._section .row.name-tips.data-v-58f95c74 {
+    position: relative;
+    height: 128rpx;
+    padding-bottom: 40rpx;
+}
+
+.normal-form ._section .row.name-tips .warning.data-v-58f95c74 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40rpx;
+    line-height: 40rpx;
+    background-color: #fff9f4;
+    font-size: 24rpx;
+    color: #b3b3b3;
+    padding-left: 30rpx;
+}
+
+.normal-form ._section .row.edit.data-v-58f95c74 {
+    height: 88rpx;
+    padding-bottom: 0;
+}
+
+.normal-form ._section .row.data-v-58f95c74:last-child {
+    border: 0;
+}
+
+.normal-form ._section .row .label.data-v-58f95c74 {
+    width: 240rpx;
+}
+
+.normal-form ._section .row .text.data-v-58f95c74 {
+    font-size: 28rpx;
+    color: #ccc;
+}
+
+.normal-form ._section .row .text.data-v-58f95c74,.normal-form ._section .row input.data-v-58f95c74 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.normal-form ._section .row .input-placeholder.data-v-58f95c74 {
+    color: #333;
+}
+
+.normal-form ._section .row .shadow-button.data-v-58f95c74 {
+    padding: 0;
+}
+
+.normal-form .tip.data-v-58f95c74 {
+    padding: 10rpx 30rpx;
+    font-size: 26rpx;
+    color: #666;
+    line-height: 37rpx;
+}
+
+.normal-form .tip.error.data-v-58f95c74 {
+    color: red;
+}
+
+.normal-form .img-section .add-img-wrap.data-v-58f95c74 {
+    padding: 32rpx;
+    text-align: center;
+    color: #999;
+    font-size: 24rpx;
+    background-color: #fff;
+}
+
+.normal-form .img-section .add-img-wrap .add-action.data-v-58f95c74,.normal-form .img-section .add-img-wrap.data-v-58f95c74 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.normal-form .img-section .add-img-wrap ._p.data-v-58f95c74 {
+    margin-right: 16rpx;
+    padding: 0;
+    margin-top: 0;
+    height: 33rpx;
+    color: #333;
+}
+
+.normal-form .img-section .add-img-wrap.data-v-58f95c74:last-child {
+    padding: 0 32rpx 32rpx;
+}
+
+.normal-form .img-section .add-sample.data-v-58f95c74 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 212rpx;
+    height: 148rpx;
+    font-size: 24rpx;
+    color: #888;
+}
+
+.normal-form .img-section .add-sample ._span.data-v-58f95c74 {
+    margin-right: 16rpx;
+}
+
+.normal-form .img-section .add-sample .img-bg.data-v-58f95c74 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 148rpx;
+    height: 148rpx;
+    background: #f5f5f5;
+    border-radius: 8rpx;
+}
+
+.normal-form .img-section .add-sample .img-bg ._img.data-v-58f95c74 {
+    width: 136rpx;
+    height: 136rpx;
+}
+
+.normal-form .img-section .add-sample .img-bg .extra.data-v-58f95c74 {
+    height: 82rpx;
+}
+
+.normal-form .img-section .add-img-btn.data-v-58f95c74 {
+    display: inline-block;
+    width: 148rpx;
+    height: 148rpx;
+    line-height: 148rpx;
+    margin: 0;
+    background-color: #ebebeb;
+    border-radius: 8rpx;
+    vertical-align: middle;
+}
+
+.normal-form .img-section .add-img-btn ._img.data-v-58f95c74 {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+}
+
+.normal-form .img-section ._p.data-v-58f95c74 {
+    margin-top: 20rpx;
+}
+
+.normal-form .img-section .show-photo.data-v-58f95c74 {
+    position: relative;
+}
+
+.normal-form .img-section .show-photo>._img.data-v-58f95c74 {
+    display: inline-block;
+    width: 148rpx;
+    height: 148rpx;
+    border-radius: 8rpx;
+    vertical-align: middle;
+}
+
+.normal-form .img-section .show-photo .remove.data-v-58f95c74 {
+    position: absolute;
+    top: -16rpx;
+    right: -16rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+
+button[disabled].data-v-58f95c74 {
+    border: 1rpx solid #ccc;
+    color: #fff;
+    background: #ccc;
+}
+
+.tiny-link.data-v-58f95c74 {
+    position: relative;
+    height: 42rpx;
+    padding: 0 16rpx 0 34rpx;
+    border-left: 1rpx solid #ebebeb;
+    font-size: 28rpx;
+    color: #666;
+    background-color: #fff;
+}
+
+.tiny-link.data-v-58f95c74:after {
+    content: " ";
+    display: inline-block;
+    height: 18rpx;
+    width: 18rpx;
+    border-color: #c7c7cc;
+    border-style: solid;
+    border-width: 4rpx 4rpx 0 0;
+    transform: matrix(.71,.71,-.71,.71,0,0);
+    position: absolute;
+    top: 10rpx;
+    right: 0;
+}
+
+.house-select.data-v-58f95c74 {
+    display: block;
+    width: 100%;
+}
+
+.house-select button.data-v-58f95c74 {
+    width: 100%;
+    margin: 0;
+}
+
+.argree-row.data-v-58f95c74 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 16rpx 0;
+    font-size: 24rpx;
+}
+
+.edit-mobile.data-v-58f95c74 {
+    color: #69c;
+}
+
+lazy-input.data-v-58f95c74 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}

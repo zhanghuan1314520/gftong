@@ -1,0 +1,79 @@
+<view class="page data-v-5f77c6d3">
+    <view class="card-top data-v-5f77c6d3">
+        <view class="header data-v-5f77c6d3">
+            <text class="data-v-5f77c6d3">{{show_all_clear?'一次性还清 - 当月需还':'部分提前还款 - 当月需还'}}</text>
+            <navigator class="help data-v-5f77c6d3" url="/pages/packageB/prepayment_calc/help">?</navigator>
+        </view>
+        <view class="money data-v-5f77c6d3">
+            <text class="strong data-v-5f77c6d3">{{result.last_month_pay}}</text>
+            <text class="unit data-v-5f77c6d3">元</text>
+        </view>
+        <view class="items data-v-5f77c6d3">
+            <view class="item text data-v-5f77c6d3">
+                <label class="data-v-5f77c6d3">已还利息</label>
+                <text class="data-v-5f77c6d3">{{result.paid_interest+'万'}}</text>
+            </view>
+            <view class="img data-v-5f77c6d3">
+                <image class="book-img _img data-v-5f77c6d3" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/prepayment_calc/book.png"></image>
+            </view>
+            <view class="item text data-v-5f77c6d3">
+                <label class="data-v-5f77c6d3">已还本金</label>
+                <text class="data-v-5f77c6d3">{{result.paid_base+'万'}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="card-bottom data-v-5f77c6d3">
+        <view class="all data-v-5f77c6d3" wx:if="{{show_all_clear}}">
+            <view class="row data-v-5f77c6d3">
+                <label class="textAssistFont28 data-v-5f77c6d3">可节省利息</label>
+                <text class="text28B data-v-5f77c6d3">{{result.save_interest+'万元'}}</text>
+            </view>
+            <view class="row data-v-5f77c6d3">
+                <label class="textAssistFont28 data-v-5f77c6d3">最后还款日期</label>
+                <text class="text28B data-v-5f77c6d3">{{result.prepayment_time}}</text>
+            </view>
+        </view>
+        <view class="part data-v-5f77c6d3" wx:else>
+            <view class="col data-v-5f77c6d3">
+                <view class="header text28B data-v-5f77c6d3">月供减少 年限不变</view>
+                <view class="list data-v-5f77c6d3">
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">次月还款</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_pay.month_pay+'元'}}</text>
+                    </view>
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">可节省利息</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_pay.save_interest+'万元'}}</text>
+                    </view>
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">最后还款日期</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_pay.last_time}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="col data-v-5f77c6d3">
+                <view class="header text28B data-v-5f77c6d3">月供不变 年限缩短</view>
+                <view class="list data-v-5f77c6d3">
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">次月还款</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_month.month_pay+'元'}}</text>
+                    </view>
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">可节省利息</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_month.save_interest+'万元'}}</text>
+                    </view>
+                    <view class="item data-v-5f77c6d3">
+                        <label class="textAssistFont28 data-v-5f77c6d3">最后还款日期</label>
+                        <text class="text28B data-v-5f77c6d3">{{result.decrease_month.last_time}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="btn-tip assistFont24 data-v-5f77c6d3">以上结果仅供参考，不同银行对提前还款的要求不同，部分银行会收取违约金，请以当地实际情况为准。</view>
+    <bottom-right-share bind:__l="__l" class="data-v-5f77c6d3" vueId="3dc33e81-1"></bottom-right-share>
+    <view class="card-footer data-v-5f77c6d3">
+        <footer-weixin bind:__l="__l" class="data-v-5f77c6d3" type="prepayment" undertint="{{true}}" vueId="3dc33e81-2"></footer-weixin>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-5f77c6d3" hide_back_home="{{true}}" title="提前还款计算" vueId="3dc33e81-3"></page-wrap>
+</view>

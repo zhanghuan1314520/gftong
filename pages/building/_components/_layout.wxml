@@ -1,0 +1,32 @@
+<view class="wrap data-v-976fde70">
+    <view class="house-page-title data-v-976fde70">
+        <view class="item-left data-v-976fde70">
+            <view class="_h3 data-v-976fde70">{{title+'('+items.length+')'}}</view>
+            <view bindtap="__e" class="learn-layout _div data-v-976fde70" data-event-opts="{{[ [ 'tap',[ [ 'goLearnLayout',['$event'] ] ] ] ]}}">
+                <view class="i _i data-v-976fde70"></view>
+                <text class="tx data-v-976fde70">户型图攻略</text>
+            </view>
+        </view>
+        <navigator bindtap="__e" class="right-link _a data-v-976fde70" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goMore'] ] ] ] ]}}">{{more_text}}</navigator>
+    </view>
+    <scroll-view class="list data-v-976fde70" enableFlex="{{true}}" scrollX="{{true}}">
+        <view bindtap="__e" class="item data-v-976fde70" data-event-opts="{{[ [ 'tap',[ [ 'tapItem',['$0'],[ [ ['items','id',item.id] ] ] ] ] ] ]}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+            <view class="preview data-v-976fde70">
+                <view class="business-tag data-v-976fde70" wx:if="{{item.usage==='商业'}}">商业</view>
+                <view class="saleout data-v-976fde70" wx:if="{{item.status==='售罄'}}"></view>
+                <common-img bind:__l="__l" class="img data-v-976fde70" mode="aspectFill" src="{{item.image_url}}" vueId="{{'6479b6ce-1-'+__i0__}}"></common-img>
+                <view class="icons data-v-976fde70">
+                    <view class="video i data-v-976fde70" wx:if="{{item.video_url}}"></view>
+                    <view class="vr i data-v-976fde70" wx:if="{{item.vr_url}}"></view>
+                    <view class="audio i data-v-976fde70" wx:if="{{item.audio_url}}"></view>
+                </view>
+            </view>
+            <view class="content data-v-976fde70">
+                <view class="info data-v-976fde70" wx:if="{{item.layout_description}}">{{''+item.layout_description+''}}</view>
+                <view class="desc data-v-976fde70" wx:if="{{item.area}}">
+                    <text class="data-v-976fde70">{{'建面：'+item.area}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

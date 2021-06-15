@@ -1,0 +1,9 @@
+.opt.data-v-ecfefa72 {
+    padding-left: 30rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+
+.opt.active.data-v-ecfefa72 {
+    color: #00ad82;
+}

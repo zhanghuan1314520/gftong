@@ -1,0 +1,89 @@
+.list.data-v-0f5bf110 {
+    position: relative;
+    margin: 0 24rpx 43rpx;
+    background-color: #fff;
+}
+
+.list .item .detail.data-v-0f5bf110 {
+    position: releative;
+    width: 95%;
+    line-height: 107rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.list .item .detail .img.data-v-0f5bf110 {
+    width: 35rpx;
+    height: 43rpx;
+    margin-top: 53.5rpx;
+    margin-right: 20rpx;
+    transform: translateY(-50%);
+}
+
+.list .item .detail .other-img.data-v-0f5bf110 {
+    width: 35rpx;
+    height: 35rpx;
+    background: #ccc;
+    border-radius: 17.5rpx;
+    line-height: 35rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 22rpx;
+}
+
+.list .item .detail .text.data-v-0f5bf110 {
+    font-size: 32rpx;
+    color: #333;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list .item .others.data-v-0f5bf110 {
+    right: 24rpx;
+    margin-top: 53.5rpx;
+    text-align: center;
+    transform: translateY(-50%);
+    width: 28rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    background-image: linear-gradient(160deg,#ffc082,#ff9442 97%);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18rpx;
+}
+
+._ul ._li.data-v-0f5bf110 {
+    min-height: 107rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+._ul ._li:nth-child(1) .img.data-v-0f5bf110 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/top-search/top-one.png);
+    background-size: 35rpx 43rpx;
+}
+
+._ul ._li:nth-child(2) .img.data-v-0f5bf110 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/top-search/top-two.png);
+    background-size: 35rpx 43rpx;
+}
+
+._ul ._li:nth-child(3) .img.data-v-0f5bf110 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/top-search/top-three.png);
+    background-size: 35rpx 43rpx;
+}
+
+._ul ._li.data-v-0f5bf110:last-child {
+    border-bottom: none;
+}

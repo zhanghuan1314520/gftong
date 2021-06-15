@@ -1,0 +1,30 @@
+<view class="page _div data-v-b2c5df86">
+    <view class="consultant-box _div data-v-b2c5df86">
+        <view bindtap="__e" class="item _div data-v-b2c5df86" data-event-opts="{{[ [ 'tap',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{consultantItem.id}}">
+            <view class="item-left _div data-v-b2c5df86">
+                <image class="_img data-v-b2c5df86" src="{{consultantItem.weixin_headimgurl}}"></image>
+                <view class="_h3 data-v-b2c5df86">我的名片</view>
+            </view>
+            <view class="item-right _div data-v-b2c5df86">
+                <image class="_img data-v-b2c5df86" src="https://cdn.vip-wifi.com/hzfangchan/img/icons/48_more_grey.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="likes-box _div data-v-b2c5df86">
+        <view class="item _div data-v-b2c5df86" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="item-left _div data-v-b2c5df86">
+                <view class="like-hd _div data-v-b2c5df86">
+                    <image class="_img data-v-b2c5df86" src="{{item.liker.headimgurl}}"></image>
+                </view>
+                <view class="like-bd _div data-v-b2c5df86">
+                    <view class="liker-name _div data-v-b2c5df86">
+                        <text class="data-v-b2c5df86">{{item.liker.nickname||''}}</text>
+                        <text class="consultant-tag data-v-b2c5df86" wx:if="{{item.liker.is_consultant}}">置业顾问</text>
+                    </view>
+                    <view class="liker-des _div data-v-b2c5df86">赞了你的名片</view>
+                </view>
+            </view>
+            <view class="item-right _div data-v-b2c5df86">{{item.liked_time}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,51 @@
+<button bindgetuserinfo="__e" class="{{['consult-card item',consultant.level]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" id="{{consultant.id}}" openType="getUserInfo">
+    <view class="_header">
+        <view class="headimg consultant-headimg _div">
+            <common-img bind:__l="__l" class="img" mode="widthFix" src="{{consultant.weixin_headimgurl}}" vueId="17794406-1"></common-img>
+            <view class="consultant-headimg-tag" wx:if="{{consultant.honour_title}}">{{consultant.honour_title}}</view>
+        </view>
+        <view class="info _div">
+            <view class="_h3">
+                <label class="_span">{{consultant.name}}</label>
+                <view catchtap="__e" class="consultant-medals _div" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleMedalDetail','$0'],['consultant'] ] ] ] ]}}">
+                    <label class="card-metal _span"></label>
+                </view>
+            </view>
+            <view class="_p">
+                <label catchtap="__e" class="_span" data-event-opts="{{[ [ 'tap',[ [ 'setClipboardData',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-weixin="{{consultant.weixin_name}}">
+                    <text>{{'微信：'+consultant.weixin_name}}</text>
+                    <image class="cp-btn _img" lazyLoad="true" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/copy.png"></image>
+                </label>
+            </view>
+            <view class="_p">{{'楼盘：'+consultant.building_name}}</view>
+        </view>
+    </view>
+    <view class="_article">
+        <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" classname="common-btn consult-btn" data-event-opts="{{[ [ '^tap',[ [ '',['$event'] ] ] ],[ '^success',[ [ 'goChat',['$0'],['consultant.id'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="17794406-2" vueSlots="{{['default']}}">
+            <view class="_i">
+                <image class="_img" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/consult-i.png?v=1"></image>
+            </view>
+            <label class="_span">立即咨询</label>
+        </fangchan-auth-user>
+        <navigator catchtap="__e" class="common-btn call-btn _a" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-phone="{{consultant.mobile}}">
+            <view class="_i">
+                <image class="_img" lazyLoad="true" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/phone-i.png?v=1"></image>
+            </view>
+            <label class="_span">拨打电话</label>
+        </navigator>
+    </view>
+    <view class="_footer">
+        <view class="view-data _div">
+            <label class="num _span">{{consultant.show_times}}</label>
+            <label class="_span">浏览量</label>
+        </view>
+        <view class="view-data _div">
+            <label class="num _span">{{consultant.last_period_obtained_score}}</label>
+            <label class="_span">活跃度</label>
+        </view>
+        <view class="view-data _div">
+            <label class="num _span">{{consultant.like_count}}</label>
+            <label class="_span">点赞数</label>
+        </view>
+    </view>
+</button>

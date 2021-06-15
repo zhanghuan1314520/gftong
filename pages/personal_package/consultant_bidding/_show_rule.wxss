@@ -1,0 +1,47 @@
+.coin-rule {
+    padding: 60rpx 30rpx 0;
+    color: #666;
+    background-color: #fff;
+}
+
+.coin-rule ._h3 {
+    font-size: 26rpx;
+    font-weight: 600;
+}
+
+.coin-rule ._li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+    font-size: 24rpx;
+}
+
+.coin-rule ._li ._i {
+    display: inline-block;
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 16rpx;
+    border-radius: 50%;
+    border: 1rpx solid #888;
+    text-align: center;
+}
+
+.coin-rule ._li ._span {
+    -webkit-box-flex: 1;
+    flex: 1;
+    line-height: 33rpx;
+    word-break: break-all;
+}
+
+.coin-rule ._li ._strong {
+    display: inline;
+    color: #fa543e;
+}

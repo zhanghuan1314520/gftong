@@ -1,0 +1,14 @@
+<view class="coin-page _div data-v-e8dd9044">
+    <coin-header bind:__l="__l" class="data-v-e8dd9044" gold_coins="{{gold_coins}}" headimgurl="{{headimgurl}}" show_charge="true" vueId="cdf8dac4-1"></coin-header>
+    <view class="record-title _h3 data-v-e8dd9044">金币记录</view>
+    <view class="_ul data-v-e8dd9044">
+        <view class="record-item _li data-v-e8dd9044" wx:for="{{records}}" wx:for-index="i" wx:key="i">
+            <view class="detail _div data-v-e8dd9044">
+                <view class="_p data-v-e8dd9044">{{item.description}}</view>
+                <label class="_span data-v-e8dd9044">{{item.date}}</label>
+            </view>
+            <view class="{{[ '_strong data-v-e8dd9044',[item.amount>0?'active':''] ]}}">{{''+(item.amount>0?'+':'')+item.amount+''}}</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-e8dd9044" title="我的金币" vueId="cdf8dac4-2"></page-wrap>
+</view>

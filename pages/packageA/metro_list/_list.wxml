@@ -1,0 +1,21 @@
+<view class="metro-list _div data-v-3cac1f44">
+    <view class="list _div data-v-3cac1f44">
+        <view class="list-top _div data-v-3cac1f44">
+            <common-img bind:__l="__l" class="data-v-3cac1f44" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/metro_list/subway.png" vueId="6354af49-1"></common-img>
+        </view>
+        <view class="list-metro-contant _div data-v-3cac1f44">
+            <view class="{{[ 'top-tabs _div data-v-3cac1f44',[fixed?'fixed':''] ]}}">
+                <tabs bind:__l="__l" bind:change="__e" class="data-v-3cac1f44" data-event-opts="{{[ [ '^change',[ ['e0'] ] ] ]}}" selected="{{selected_line}}" tabs="{{lines}}" vueId="6354af49-2"></tabs>
+            </view>
+            <view class="tip-warp _div data-v-3cac1f44">
+                <view class="tip _p data-v-3cac1f44">仅展示距离地铁1km的楼盘</view>
+                <disclaimer bind:__l="__l" class="data-v-3cac1f44" className="no-padding" title="地铁找房免责声明" vueId="6354af49-3"></disclaimer>
+            </view>
+            <view class="{{[ 'content _div data-v-3cac1f44',[fixed?'list-items':''] ]}}">
+                <building-item bind:__l="__l" class="data-v-3cac1f44" item="{{item}}" vueId="{{'6354af49-4-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></building-item>
+            </view>
+            <bottom-tip bind:__l="__l" class="data-v-3cac1f44" vueId="6354af49-5" wx:if="{{!loading&&no_more&&items.length}}"></bottom-tip>
+            <list-loading bind:__l="__l" class="data-v-3cac1f44" vueId="6354af49-6" wx:if="{{loading||!no_more}}"></list-loading>
+        </view>
+    </view>
+</view>

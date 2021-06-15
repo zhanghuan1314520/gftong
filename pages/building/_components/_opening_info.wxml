@@ -1,0 +1,38 @@
+<view class="current-house-content _div data-v-1da0dccc">
+    <view class="house-page-title _div data-v-1da0dccc">
+        <text class="data-v-1da0dccc">开盘信息</text>
+        <disclaimer bind:__l="__l" class="data-v-1da0dccc" className="no-padding" title="楼盘开盘信息免责声明" vueId="e35128a4-1"></disclaimer>
+    </view>
+    <view class="content _div data-v-1da0dccc">
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.name}}">
+            <label class="label data-v-1da0dccc">项目名称</label>：<label class="_span data-v-1da0dccc" style="max-width:370rpx;">{{current_house.name}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.decoration_desc}}">
+            <label class="label data-v-1da0dccc">预计装修</label>：<label class="_span data-v-1da0dccc">{{current_house.decoration_desc}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.ln_register_date}}">
+            <label class="label data-v-1da0dccc">报名时间</label>：<label class="_span data-v-1da0dccc">{{current_house.ln_register_date}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.capital_verification&&current_house.capital_verification.value&&current_house.capital_verification.title}}">
+            <label class="label data-v-1da0dccc">{{current_house.capital_verification.title}}</label>：<label class="_span data-v-1da0dccc" style="max-width:370rpx;">{{current_house.capital_verification.value}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.selling_buildings}}">
+            <label class="label data-v-1da0dccc">销售范围</label>：<label class="_span data-v-1da0dccc">{{current_house.selling_buildings}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.presell_no}}">
+            <label class="label auto data-v-1da0dccc">预/现售证号</label>：<label class="_span data-v-1da0dccc">
+                <text class="presell-no--item data-v-1da0dccc" wx:for="{{presell_nos_slice}}" wx:for-index="i" wx:for-item="no" wx:key="i">{{no+(i<presell_nos_slice.length-1?',':'')+(i===presell_nos_slice.length-1?showEllipsis:'')}}</text>
+                <collapse-btn bind:__l="__l" bind:onCollapse="__e" class="data-v-1da0dccc" data-event-opts="{{[ [ '^onCollapse',[ ['onShowAll'] ] ] ]}}" vueId="e35128a4-2" wx:if="{{showCollapse}}"></collapse-btn>
+            </label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.area_range}}">
+            <label class="label data-v-1da0dccc">户型建面</label>：<label class="_span data-v-1da0dccc">{{current_house.area_range}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.registration_method}}">
+            <label class="label data-v-1da0dccc">报名方式</label>：<label class="_span data-v-1da0dccc">{{current_house.registration_method}}</label>
+        </view>
+        <view class="list-options _div data-v-1da0dccc" wx:if="{{current_house.register_unlock_date}}">
+            <label class="label auto data-v-1da0dccc">预计解锁日期</label>：<label class="_span data-v-1da0dccc">{{current_house.register_unlock_date}}</label>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+.share-panorama.data-v-79f9bdf5 {
+    position: fixed;
+    top: 33rpx;
+    right: 24rpx;
+    z-index: 99999996;
+}
+
+.share-panorama button.data-v-79f9bdf5 {
+    width: 140rpx;
+    height: 64rpx;
+    z-index: 99999;
+}
+
+.share-panorama cover-image.data-v-79f9bdf5 {
+    width: 100%;
+    height: 100%;
+}

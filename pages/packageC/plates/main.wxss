@@ -1,0 +1,105 @@
+.banner.data-v-b8c1b552 {
+    display: block;
+    width: 750rpx;
+    height: 200rpx;
+}
+
+.list.data-v-b8c1b552 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20rpx 32rpx;
+}
+
+.item.data-v-b8c1b552 {
+    position: relative;
+    width: 328rpx;
+    height: 320rpx;
+    padding: 8rpx;
+    margin-right: 30rpx;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+}
+
+.item.data-v-b8c1b552:nth-child(2n) {
+    margin-right: 0;
+}
+
+.item .name.data-v-b8c1b552 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 8rpx;
+    left: 8rpx;
+    height: 56rpx;
+    padding: 0 20rpx;
+    background: rgba(0,163,147,.94);
+    border-radius: 8rpx 0 20rpx 0;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+}
+
+.item .img-wrap.data-v-b8c1b552 {
+    position: relative;
+    width: 312rpx;
+    height: 200rpx;
+    margin-bottom: 16rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+}
+
+.item .img-wrap.data-v-b8c1b552::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5c9993;
+    opacity: .25;
+    z-index: 1;
+}
+
+.item .img.data-v-b8c1b552 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.item .footer.data-v-b8c1b552 {
+    padding: 0 12rpx;
+    font-size: 24rpx;
+}
+
+.item .zone.data-v-b8c1b552 {
+    color: #444;
+    font-weight: 700;
+}
+
+.item .rate.data-v-b8c1b552 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 6rpx;
+    color: #666;
+}

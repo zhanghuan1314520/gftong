@@ -1,0 +1,8 @@
+<view bindtap="__e" class="{{[ 'audio-msg content data-v-302c7298',msg.classname,[!msg.isRead?'noread':'',reading?'reading':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'read',['$event'] ] ] ] ]}}">
+    <view class="i data-v-302c7298">
+        <view class="wave data-v-302c7298"></view>
+        <view class="wave data-v-302c7298"></view>
+        <view class="wave data-v-302c7298"></view>
+    </view>
+    <text class="text data-v-302c7298">{{msg.duration+'\'\''}}</text>
+</view>

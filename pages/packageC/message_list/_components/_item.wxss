@@ -1,0 +1,69 @@
+.item.data-v-4577720b {
+    padding: 40rpx 32rpx 0;
+}
+
+.time.data-v-4577720b {
+    width: 281rpx;
+    height: 36rpx;
+    background: #ebebeb;
+    border-radius: 4rpx;
+    font-size: 24rpx;
+    color: #a3a3a3;
+    line-height: 36rpx;
+    text-align: center;
+    margin: 0 auto 16rpx;
+}
+
+.content.data-v-4577720b {
+    width: 686rpx;
+    min-height: 136rpx;
+    padding: 24rpx 24rpx 0;
+    text-align: left;
+    background: #fff;
+    border-radius: 8rpx;
+}
+
+.content .tx-title.data-v-4577720b {
+    font-size: 32rpx;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 16rpx;
+}
+
+.content .tx-desc.data-v-4577720b {
+    font-size: 28rpx;
+    color: #888;
+    padding-bottom: 24rpx;
+}
+
+.content .red.data-v-4577720b {
+    color: #fa5e46;
+}
+
+.content .click.data-v-4577720b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1rpx solid #f7f7f7;
+    margin-top: -8rpx;
+    padding: 20rpx 0;
+}
+
+.content .click .text.data-v-4577720b {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.img.data-v-4577720b {
+    display: block;
+    width: 80rpx;
+    height: 158rpx;
+    margin-bottom: 24rpx;
+}

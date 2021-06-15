@@ -1,0 +1,60 @@
+.page.data-v-469e3c4b {
+    padding-bottom: 20rpx;
+    background-color: #f5f5f5;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/vr/top-bg.png?v=1);
+    background-size: 750rpx 320rpx;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.top.data-v-469e3c4b {
+    height: 320rpx;
+    position: relative;
+}
+
+.list.padding-top.data-v-469e3c4b {
+    padding-top: 80rpx;
+}
+
+.item-wrap.data-v-469e3c4b {
+    margin-top: 24rpx;
+    padding: 0 24rpx;
+}
+
+.item-wrap .vr-btn.data-v-469e3c4b {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 662rpx;
+    height: 70rpx;
+    margin-top: 24rpx;
+    font-size: 28rpx;
+    color: #00b08d;
+    font-weight: 700;
+    background-color: #dcf5ef;
+    border-radius: 40rpx;
+}
+
+.rank_item.data-v-469e3c4b {
+    background-color: #fff;
+    border-radius: 8rpx;
+}
+
+.vr-filter--wrap.data-v-469e3c4b {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.vr-filter--wrap.fixed.data-v-469e3c4b {
+    position: fixed;
+    left: 0;
+    right: 0;
+}

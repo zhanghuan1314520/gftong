@@ -1,0 +1,41 @@
+.page.data-v-085382f6 {
+    padding-bottom: 70rpx;
+    position: relative;
+    background-color: #fff;
+}
+
+.phone-call.data-v-085382f6 {
+    position: fixed;
+    bottom: 25rpx;
+    left: 216rpx;
+    width: 318rpx;
+    height: 70rpx;
+    border-radius: 40rpx;
+    background-image: -webkit-gradient(linear,right top,left top,color-stop(3%,#007a62),to(#00cca3));
+    background-image: linear-gradient(270deg,#007a62 3%,#00cca3);
+    font-weight: 700;
+    font-size: 28rpx;
+    color: #fffb80;
+    z-index: 2;
+}
+
+.banner.data-v-085382f6 {
+    position: relative;
+    display: block;
+    width: 750rpx;
+    height: 288rpx;
+}
+
+.banner ._img.data-v-085382f6 {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-item.data-v-085382f6 {
+    width: 688rpx;
+    margin: 0 auto;
+}
+
+.bottom-item image.data-v-085382f6 {
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+<view bindtap="__e" class="bullet-comments-wrap data-v-3f78abca" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}">
+    <view class="bullet-comments data-v-3f78abca">
+        <view class="content data-v-3f78abca">
+            <view class="content-hd data-v-3f78abca">
+                <text class="num data-v-3f78abca">{{total}}</text>
+                <text class="text data-v-3f78abca">人正在热聊</text>
+            </view>
+            <view class="content-bd data-v-3f78abca">
+                <swiper autoplay="{{true}}" bindchange="__e" circular="{{true}}" class="swiper data-v-3f78abca" data-event-opts="{{[ [ 'change',[ [ 'changeSwiper',['$event'] ] ] ] ]}}" interval="{{1500}}" vertical="{{true}}">
+                    <swiper-item class="data-v-3f78abca" data-index="{{i}}" wx:for="{{items}}" wx:for-index="i" wx:key="id">
+                        <view class="{{[ 'data-v-3f78abca',[current-1===i?'opacity':''] ]}}">
+                            <image class="headimgurl data-v-3f78abca" src="{{item.headimgurl}}"></image>
+                            <text class="comments-content data-v-3f78abca">{{item.content}}</text>
+                        </view>
+                    </swiper-item>
+                </swiper>
+            </view>
+        </view>
+        <fc-icon bind:__l="__l" class="data-v-3f78abca" type="48_more_grey" vueId="79365b08-1"></fc-icon>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="_div data-v-355f35fa" wx:if="{{show}}">
+    <view class="dlg _div data-v-355f35fa">
+        <view class="content _div data-v-355f35fa">
+            <view class="_p data-v-355f35fa" wx:for="{{contents}}" wx:for-index="i" wx:for-item="content" wx:key="i">{{''+content+''}}</view>
+        </view>
+        <button bindtap="__e" class="btn data-v-355f35fa" data-event-opts="{{[ [ 'tap',[ [ 'handle',['$event'] ] ] ] ]}}">{{btn_tx}}</button>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-355f35fa" data-event-opts="{{[ [ 'tap',[ [ 'toggleShow',['$event'] ] ] ] ]}}"></view>
+</view>

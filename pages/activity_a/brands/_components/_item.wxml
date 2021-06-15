@@ -1,0 +1,9 @@
+<view class="dev-item _div data-v-5ddfb694" id="{{item.type}}">
+    <view class="item-top _div data-v-5ddfb694">
+        <common-img bind:__l="__l" class="img data-v-5ddfb694" mode="widthFix" src="{{img_src}}" vueId="2cdb6208-1"></common-img>
+        <view class="desc _p data-v-5ddfb694">{{item.desc}}</view>
+    </view>
+    <view class="item-content _div data-v-5ddfb694" wx:for="{{item.list_items}}" wx:for-index="__i0__" wx:for-item="card" wx:key="id">
+        <house-item bind:__l="__l" class="data-v-5ddfb694" item="{{card}}" vueId="{{'2cdb6208-2-'+__i0__}}"></house-item>
+    </view>
+</view>

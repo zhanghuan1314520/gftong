@@ -1,0 +1,38 @@
+.current-house-content.data-v-1da0dccc {
+    margin-top: 20rpx;
+    background: #fff;
+    font-size: 26rpx;
+    color: #222;
+    position: relative;
+}
+
+.current-house-content .qr-wrap.data-v-1da0dccc {
+    position: absolute;
+    top: 0;
+    right: 30rpx;
+}
+
+.current-house-content .content.data-v-1da0dccc {
+    position: relative;
+    min-height: 220rpx;
+    padding-bottom: 24rpx;
+}
+
+.current-house-content .presell-no--item.data-v-1da0dccc {
+    display: block;
+}
+
+.house-page-title.data-v-1da0dccc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-right: 24rpx;
+}

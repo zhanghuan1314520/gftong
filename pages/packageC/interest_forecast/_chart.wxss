@@ -1,0 +1,8 @@
+.chart.pr.data-v-2106e4d7 {
+    padding-top: 50rpx;
+}
+
+.chart-canvas.data-v-2106e4d7 {
+    width: 610rpx;
+    height: 182rpx;
+}

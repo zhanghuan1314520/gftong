@@ -1,0 +1,10 @@
+<view class="_div data-v-6656e8b9" style="{{'display:'+(show?'block':'none')+';'}}">
+    <view class="pop-box _div data-v-6656e8b9">
+        <view class="box-title _p data-v-6656e8b9">评选规则</view>
+        <view class="tx _p data-v-6656e8b9">{{rules.first}}</view>
+        <view class="tx tx-end _p data-v-6656e8b9">{{rules.sec}}</view>
+        <view class="line _i data-v-6656e8b9"></view>
+        <view bindtap="__e" class="box-btn _p data-v-6656e8b9" data-event-opts="{{[ [ 'tap',[ [ '$emit',['hide'] ] ] ] ]}}">我知道了</view>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-6656e8b9" data-event-opts="{{[ [ 'tap',[ [ '$emit',['hide'] ] ] ] ]}}"></view>
+</view>

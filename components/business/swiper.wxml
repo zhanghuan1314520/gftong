@@ -1,0 +1,16 @@
+<swiper autoplay="true" bindanimationfinish="__e" circular="{{true}}" class="top-swiper data-v-1230a884" data-event-opts="{{[ [ 'animationfinish',[ [ 'animationSwiper',['$event'] ] ] ] ]}}" id="{{swiper_id}}" indicatorActiveColor="rgba(255, 255, 255, .8)" indicatorColor="rgba(255, 255, 255, .4)" indicatorDots="{{banners.length>1}}" style="{{'height:'+utils.getHeight(height)+';'+'width:'+utils.getHeight(width)+';'}}">
+    <swiper-item class="data-v-1230a884" wx:for="{{banners}}" wx:for-index="i" wx:for-item="banner" wx:key="i">
+        <navigator bindtap="__e" class="_a data-v-1230a884" data-event-opts="{{[ [ 'tap',[ [ 'goLink',['$event'] ] ] ] ]}}" data-href="{{banner.href}}" data-id="{{banner.id}}" style="{{'height:'+utils.getHeight(height)+';'+'width:'+utils.getHeight(width)+';'}}">
+            <common-img bind:__l="__l" class="data-v-1230a884" src="{{banner.photo_url}}" vueId="{{'1e51226c-1-'+i}}"></common-img>
+            <label class="recommend-logo _span data-v-1230a884">广告</label>
+        </navigator>
+    </swiper-item>
+</swiper>
+<wxs module="utils">
+function getHeight(height) {
+    return (height + 'rpx')
+};
+module.exports = ({
+    getHeight: getHeight,
+});
+</wxs>

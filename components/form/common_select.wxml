@@ -1,0 +1,9 @@
+<view class="{{[ '_div data-v-7523541f',[!show?'hide':''] ]}}">
+    <scroll-view class="select data-v-7523541f" scrollIntoView="{{select_view_id}}" scrollY="true">
+        <view bindtap="__e" class="{{[ 'option _div data-v-7523541f',[i===selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'select',['$event'] ] ] ] ]}}" data-index="{{i}}" id="{{[i+1]}}" wx:for="{{options}}" wx:for-index="i" wx:key="i">
+            <label class="_span data-v-7523541f">{{item.text}}</label>
+            <image class="_img data-v-7523541f" src="/static/img/selected.png"></image>
+        </view>
+    </scroll-view>
+    <view bindtap="__e" class="overlay _div data-v-7523541f" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

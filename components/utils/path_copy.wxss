@@ -1,0 +1,39 @@
+.dot.data-v-5d59c8e6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 32rpx;
+    right: 32rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    background-color: #e6faf6;
+    color: #00ad82;
+    font-size: 40rpx;
+    z-index: 99999999;
+}
+
+.console.data-v-5d59c8e6 {
+    position: fixed;
+    width: 400rpx;
+    padding: 30rpx;
+    bottom: 96rpx;
+    right: 96rpx;
+    background-color: #fff;
+    z-index: 999999999;
+}
+
+.console .btn.data-v-5d59c8e6 {
+    margin: 20rpx auto;
+    background-color: #e6faf6;
+    color: #00ad82;
+    font-size: 24rpx;
+}

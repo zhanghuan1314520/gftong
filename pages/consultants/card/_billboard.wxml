@@ -1,0 +1,16 @@
+<view class="data-v-79c50e4c">
+    <view bindtap="__e" class="billboard-wrap data-v-79c50e4c" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}" style="{{'display:'+(show?'block':'none')+';'}}">
+        <view class="billboard-main data-v-79c50e4c">
+            <view catchtap="__e" class="billboard data-v-79c50e4c" data-event-opts="{{[ [ 'tap',[ [ 'tapBillboard',['$event'] ] ] ] ]}}">
+                <common-img bind:__l="__l" class="preview data-v-79c50e4c" src="{{billboard_path}}" vueId="41bae132-1"></common-img>
+            </view>
+            <view catchtap="__e" class="btns data-v-79c50e4c" data-event-opts="{{[ [ 'tap',[ [ 'tapBillboard',['$event'] ] ] ] ]}}" wx:if="{{billboard_path}}">
+                <button bindtap="__e" class="btn data-v-79c50e4c" data-event-opts="{{[ [ 'tap',[ [ 'changeTpl',['$event'] ] ] ] ]}}">换个样式</button>
+                <button catchtap="__e" class="btn save-btn data-v-79c50e4c" data-event-opts="{{[ [ 'tap',[ [ 'save',['$event'] ] ] ] ]}}">保存到相册</button>
+            </view>
+        </view>
+    </view>
+    <canvas canvasId="canvas_1" class="billboard-canvas data-v-79c50e4c" style="width:690px;height:1038px;"></canvas>
+    <canvas canvasId="canvas_2" class="billboard-canvas data-v-79c50e4c" style="width:690px;height:1038px;"></canvas>
+    <canvas canvasId="canvas_3" class="billboard-canvas data-v-79c50e4c" style="width:690px;height:1038px;"></canvas>
+</view>

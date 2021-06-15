@@ -1,0 +1,21 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "search": "/components/views/search",
+        "top-filter": "/components/buildings_top_filter/index",
+        "list-recommendation": "/pages/packageA/surplus_buildings/_list_recommendation",
+        "house-item": "/components/business/surplus_house_item",
+        "loading": "/components/views/loading",
+        "bottom-tip": "/components/views/bottom_tip",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

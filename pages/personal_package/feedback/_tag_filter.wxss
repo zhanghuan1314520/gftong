@@ -1,0 +1,20 @@
+.tag-filters.data-v-a00653a2 {
+    padding: 0;
+}
+
+.tag-filters .item.data-v-a00653a2 {
+    width: 166rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #ebebeb;
+    border-radius: 4rpx;
+    font-size: 24rpx;
+}
+
+.tag-filters .item.active.data-v-a00653a2 {
+    background: #dcf5ef;
+    border: 2rpx solid rgba(0,176,141,.5);
+    border-radius: 4rpx;
+    font-size: 24rpx;
+    color: #00b08d;
+}

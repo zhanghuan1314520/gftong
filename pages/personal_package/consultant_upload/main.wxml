@@ -1,0 +1,242 @@
+<view class="page data-v-8ac5df92">
+    <view class="top-tab data-v-8ac5df92" wx:if="{{show_top_tabs}}">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{select_tab}}" tabs="{{tabs}}" vueId="1d28a024-1" width="666rpx"></common-tabs>
+    </view>
+    <view class="forms data-v-8ac5df92">
+        <view class="form-group data-v-8ac5df92">
+            <view class="form-body data-v-8ac5df92">
+                <view class="form-item arrow data-v-8ac5df92">
+                    <view class="form-item--hd data-v-8ac5df92">选择楼盘</view>
+                    <view class="form-item--bd data-v-8ac5df92">
+                        <view class="form-picker data-v-8ac5df92" wx:if="{{buildings.length}}">
+                            <picker bindchange="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'change',[ [ 'changeBuildings',['$event'] ] ] ] ]}}" range="{{buildings}}" rangeKey="name" value="{{buildings_index}}">{{''+buildings[buildings_index].name+''}}</picker>
+                        </view>
+                    </view>
+                </view>
+                <view class="form-item--tips data-v-8ac5df92" wx:if="{{!canSubmit}}">*此楼盘已售罄，不能上传哦</view>
+            </view>
+        </view>
+        <view class="data-v-8ac5df92" hidden="{{!(select_tab!=='edit')}}">
+            <view class="data-v-8ac5df92" hidden="{{!(select_tab==='layout')}}">
+                <view class="form-group data-v-8ac5df92" wx:for="{{layout_info}}" wx:for-index="i" wx:for-item="layout" wx:key="i">
+                    <view class="form-header data-v-8ac5df92">
+                        <text class="form-header--tit data-v-8ac5df92">{{'户型图（'+i+1+'）'}}</text>
+                        <text bindtap="__e" class="form-header--del data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'onDelLayout',[i] ] ] ] ]}}">删除</text>
+                    </view>
+                    <view class="form-body data-v-8ac5df92">
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">户型样式</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <view class="form-layout--style data-v-8ac5df92">
+                                    <input bindblur="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="room" type="number" value="{{layout.room}}"></input>
+                                    <text class="data-v-8ac5df92">室</text>
+                                    <input bindblur="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="hall" type="number" value="{{layout.hall}}"></input>
+                                    <text class="data-v-8ac5df92">厅</text>
+                                    <input bindblur="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="toilet" type="number" value="{{layout.toilet}}"></input>
+                                    <text class="data-v-8ac5df92">卫</text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">户型分类</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input bindblur="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="layout_no" placeholder="例：A1" placeholderClass="placeholder" type="text" value="{{layout.layout_no}}"></input>
+                            </view>
+                            <view class="form-item--ft data-v-8ac5df92">户型</view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">户型面积</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input bindblur="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="area" placeholder="例：120" placeholderClass="placeholder" type="number" value="{{layout.area}}"></input>
+                            </view>
+                            <view class="form-item--ft data-v-8ac5df92">平方米</view>
+                        </view>
+                        <view class="form-uploader data-v-8ac5df92">
+                            <view class="form-uploader--tit data-v-8ac5df92">户型图片</view>
+                            <view class="form-uploader--bd data-v-8ac5df92">
+                                <view class="ui-uploader--list data-v-8ac5df92">
+                                    <view class="ui-uploader--item data-v-8ac5df92" wx:if="{{!layout.image_url}}">
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <view bindtap="__e" class="ui-uploader--btn data-v-8ac5df92" data-count="{{1}}" data-event-opts="{{[ [ 'tap',[ [ 'uploadMedia',['$event'] ] ] ] ]}}" data-i="{{i}}" data-mediatype="{{['image']}}" data-name="layout_info" data-storedir="timg/fc_decoration/hz_qrcode_watermark_white"></view>
+                                        </view>
+                                    </view>
+                                    <view class="ui-uploader--item data-v-8ac5df92" wx:else>
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <image bindtap="__e" class="_img data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'delConfirm',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="layout_info" src="{{layout.image_url}}"></image>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view bindtap="__e" class="add-layout data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'onAddLayout',['$event'] ] ] ] ]}}">
+                    <image class="_img data-v-8ac5df92" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/24_plus.png"></image>
+                    <text class="data-v-8ac5df92">添加其他户型</text>
+                </view>
+            </view>
+            <view class="data-v-8ac5df92" hidden="{{!(select_tab==='house')}}">
+                <view class="form-group data-v-8ac5df92">
+                    <view class="form-body data-v-8ac5df92">
+                        <view class="form-item arrow data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">类别</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <view class="form-picker data-v-8ac5df92">
+                                    <picker bindchange="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'change',[ [ 'changeImgsType',['$event'] ] ] ] ]}}" range="{{imgs_types}}" value="{{imgs_types_index}}">{{''+imgs_types[imgs_types_index]+''}}</picker>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="form-uploader data-v-8ac5df92">
+                            <view class="form-uploader--tit data-v-8ac5df92">上传图片</view>
+                            <view class="form-uploader--bd data-v-8ac5df92">
+                                <view class="ui-uploader--list data-v-8ac5df92">
+                                    <view class="ui-uploader--item data-v-8ac5df92" wx:for="{{building_imgs}}" wx:for-index="i" wx:for-item="img" wx:key="i">
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <image bindtap="__e" class="_img data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'delConfirm',['$event'] ] ] ] ]}}" data-i="{{i}}" data-name="building_imgs" src="{{img.image_url}}"></image>
+                                        </view>
+                                    </view>
+                                    <view class="ui-uploader--item data-v-8ac5df92">
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <view bindtap="__e" class="ui-uploader--btn data-v-8ac5df92" data-count="{{9}}" data-event-opts="{{[ [ 'tap',[ [ 'uploadMedia',['$event'] ] ] ] ]}}" data-i="{{0}}" data-mediatype="{{['image']}}" data-name="building_imgs" data-storedir="timg/fc_decoration/hz_watermark_white"></view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="form-tips data-v-8ac5df92">
+                            <view class="data-v-8ac5df92">图片要求：</view>
+                            <view class="data-v-8ac5df92">1、必须上传本楼盘的图片</view>
+                            <view class="data-v-8ac5df92">2、图片不能带有水印</view>
+                            <view class="data-v-8ac5df92">3、楼盘内已有的图片不需再上传</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="data-v-8ac5df92" hidden="{{!(select_tab==='video')}}">
+                <view class="form-group data-v-8ac5df92">
+                    <view class="form-body data-v-8ac5df92">
+                        <view class="form-uploader data-v-8ac5df92">
+                            <view class="form-uploader--tit data-v-8ac5df92">上传视频</view>
+                            <view class="form-uploader--bd data-v-8ac5df92">
+                                <view class="ui-uploader--list data-v-8ac5df92">
+                                    <view class="ui-uploader--item data-v-8ac5df92" wx:if="{{!building_thumb_url}}">
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <view bindtap="__e" class="ui-uploader--btn data-v-8ac5df92" data-count="{{1}}" data-event-opts="{{[ [ 'tap',[ [ 'uploadMedia',['$event'] ] ] ] ]}}" data-mediatype="{{['video']}}" data-name="video"></view>
+                                        </view>
+                                    </view>
+                                    <view class="ui-uploader--item data-v-8ac5df92" wx:else>
+                                        <view class="ui-uploader--inner data-v-8ac5df92">
+                                            <image bindtap="__e" class="_img data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'delConfirm',['$event'] ] ] ] ]}}" data-name="video" src="{{building_thumb_url}}"></image>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="form-tips data-v-8ac5df92">
+                            <view class="data-v-8ac5df92">视频要求：</view>
+                            <view class="data-v-8ac5df92">1、视频必须是楼盘官方发布的宣传片</view>
+                            <view class="data-v-8ac5df92">2、每个楼盘同时只支持一个视频，视频将作为封面在楼盘首页展示</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="forms-btn data-v-8ac5df92">
+                <button bindtap="__e" class="{{[ 'data-v-8ac5df92',[loading||!canSubmit?'disabled':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSubmit',['$event'] ] ] ] ]}}" disabled="{{loading||!canSubmit}}">提交</button>
+            </view>
+        </view>
+        <view class="data-v-8ac5df92" hidden="{{!(select_tab==='edit')}}">
+            <form bindsubmit="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'submit',[ [ 'onSubmitBuildingInfo',['$event'] ] ] ] ]}}">
+                <view class="form-group data-v-8ac5df92">
+                    <view class="form-body data-v-8ac5df92">
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">产权年限</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="property_rights" placeholder="请填写产权年限" placeholderClass="placeholder" type="text" value="{{building_info.property_rights}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">开发商</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="developer" placeholder="请填写开发商" placeholderClass="placeholder" type="text" value="{{building_info.developer}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">占地面积</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="footprint_area" placeholder="请填写占地面积" placeholderClass="placeholder" type="text" value="{{building_info.footprint_area}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">建筑面积</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="construction_area" placeholder="请填写建筑面积" placeholderClass="placeholder" type="text" value="{{building_info.construction_area}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">容积率</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="volume_rate" placeholder="请填写容积率" placeholderClass="placeholder" type="text" value="{{building_info.volume_rate}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">绿化率</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="greening_rate" placeholder="请填写绿化率" placeholderClass="placeholder" type="text" value="{{building_info.greening_rate}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">总户数</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="total_houses" placeholder="请填写总户数" placeholderClass="placeholder" type="text" value="{{building_info.total_houses}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">停车位</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="parking_space" placeholder="请填写停车位" placeholderClass="placeholder" type="text" value="{{building_info.parking_space}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">楼栋总数</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="building_numbers" placeholder="请填写楼栋总数" placeholderClass="placeholder" type="text" value="{{building_info.building_numbers}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">楼层情况</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="floor_situation" placeholder="请填写楼层情况" placeholderClass="placeholder" type="text" value="{{building_info.floor_situation}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">交房时间</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <input class="data-v-8ac5df92" name="delivery_time" placeholder="请填写交房时间" placeholderClass="placeholder" type="text" value="{{building_info.delivery_time}}"></input>
+                            </view>
+                        </view>
+                        <view class="form-item form-item--textarea data-v-8ac5df92">
+                            <view class="form-item--hd data-v-8ac5df92">项目简介</view>
+                            <view class="form-item--bd data-v-8ac5df92">
+                                <textarea class="data-v-8ac5df92" maxlength="{{-1}}" name="description" placeholder="请填写项目简介" placeholderClass="placeholder" value="{{building_info.description}}"></textarea>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="forms-btn data-v-8ac5df92">
+                    <button class="{{[ 'data-v-8ac5df92',[loading||!canSubmit?'disabled':''] ]}}" disabled="{{loading||!canSubmit}}" formType="submit">提交</button>
+                </view>
+            </form>
+        </view>
+    </view>
+    <view class="page-footer--tips data-v-8ac5df92">{{'提示：'+tips+''}}</view>
+    <view class="{{[ 'success-pop data-v-8ac5df92',[!successed?'hide':''] ]}}">
+        <view class="data-v-8ac5df92">
+            <view class="success-pop--tit data-v-8ac5df92">提交成功</view>
+            <view class="success-pop--icon data-v-8ac5df92">
+                <image class="_img data-v-8ac5df92" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/success-1.png"></image>
+            </view>
+            <view class="success-pop--text data-v-8ac5df92">{{tips}}</view>
+            <button bindtap="__e" class="data-v-8ac5df92" data-event-opts="{{[ [ 'tap',[ [ 'onUploadOther',['$event'] ] ] ] ]}}">去上传楼盘其他信息</button>
+        </view>
+    </view>
+</view>

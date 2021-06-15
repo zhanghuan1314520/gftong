@@ -1,0 +1,3 @@
+<view class="{{[ 'common-img _div data-v-3170b41e',shadowClass,[mode==='widthFix'?'auto':''] ]}}">
+    <image binderror="__e" bindload="__e" class="{{['img data-v-3170b41e',loaded?'loaded':'']}}" data-event-opts="{{[ [ 'load',[ [ 'onLoaded',['$event'] ] ] ],[ 'error',[ [ 'handleImgError',['$event'] ] ] ] ]}}" lazyLoad="{{lazy-load}}" mode="{{mode}}" src="{{can_load_img?src:''}}" webp="{{webp}}"></image>
+</view>

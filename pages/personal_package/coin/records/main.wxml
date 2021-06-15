@@ -1,0 +1,13 @@
+<view class="records _div data-v-acd81548">
+    <coin-header bind:__l="__l" class="data-v-acd81548" gold_coins="{{gold_coins}}" vueId="67b7b211-1"></coin-header>
+    <view class="_ul data-v-acd81548">
+        <view class="record-item _li data-v-acd81548" wx:for="{{records}}" wx:for-index="i" wx:key="i">
+            <view class="detail _div data-v-acd81548">
+                <view class="_p data-v-acd81548">{{item.description}}</view>
+                <label class="_span data-v-acd81548">{{item.date}}</label>
+            </view>
+            <view class="{{[ '_strong data-v-acd81548',[item.amount>0?'active':''] ]}}">{{''+(item.amount>0?'+':'')+item.amount+''}}</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-acd81548" title="金币记录" vueId="67b7b211-2"></page-wrap>
+</view>

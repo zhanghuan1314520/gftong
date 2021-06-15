@@ -1,0 +1,210 @@
+.wrap.data-v-3a11833e {
+    width: 686rpx;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 16rpx 0 rgba(0,0,0,.06);
+    border-radius: 12rpx;
+}
+
+.tabs.data-v-3a11833e {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 11rpx 16rpx 15rpx;
+    background-color: #f5faff;
+}
+
+.tabs.data-v-3a11833e,.tabs .item.data-v-3a11833e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tabs .item.data-v-3a11833e {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 136rpx;
+    height: 70rpx;
+    font-size: 30rpx;
+    font-weight: 700;
+    color: #667380;
+}
+
+.tabs .item.active.data-v-3a11833e {
+    background: #fff;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,176,141,.3);
+    border-radius: 40rpx;
+    font-size: 32rpx;
+    color: #00b08d;
+}
+
+.map.data-v-3a11833e {
+    width: 686rpx;
+    height: 400rpx;
+}
+
+.detail.data-v-3a11833e {
+    padding: 24rpx 32rpx;
+}
+
+.detail .row.data-v-3a11833e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    color: #888;
+    margin-bottom: 16rpx;
+}
+
+.detail .row.data-v-3a11833e:last-child {
+    margin-bottom: 0;
+}
+
+.detail .right.data-v-3a11833e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -4rpx;
+}
+
+.detail .label.data-v-3a11833e {
+    min-width: 4em;
+    height: 44rpx;
+    line-height: 44rpx;
+    text-align: justify;
+}
+
+.detail .label.data-v-3a11833e::after {
+    content: "";
+    height: 1rpx;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail .item.data-v-3a11833e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 54rpx;
+    padding: 0 14rpx;
+    margin: 0 14rpx 12rpx 0;
+    background-color: #f7f7f7;
+    border-radius: 4rpx;
+    color: #333;
+    font-size: 26rpx;
+}
+
+.detail .item .content.data-v-3a11833e {
+    max-width: 408rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.detail .item.data-v-3a11833e::before {
+    content: "";
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 4rpx;
+    background-size: contain;
+}
+
+.detail .item.active.data-v-3a11833e {
+    background-color: #dcf5f0;
+    color: #00b08d;
+}
+
+.shop.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/shop-disabled.png);
+}
+
+.harm.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/harm-disabled.png);
+}
+
+.hospital.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/hospital-disabled.png);
+}
+
+.school.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/school-disabled.png);
+}
+
+.road.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/road-disabled.png);
+}
+
+.metro.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/metro-disabled.png);
+}
+
+.park.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/park-disabled.png);
+}
+
+.shop.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/shop-active.png);
+}
+
+.harm.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/harm-active.png);
+}
+
+.hospital.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/hospital-active.png);
+}
+
+.school.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/school-active.png);
+}
+
+.road.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/road-active.png);
+}
+
+.metro.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/metro-active.png);
+}
+
+.park.active.data-v-3a11833e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/plates/park-active.png);
+}
+
+.empty.data-v-3a11833e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 58rpx 0;
+    font-size: 28rpx;
+    color: #888;
+}
+
+.empty .img.data-v-3a11833e {
+    width: 64rpx;
+    height: 64rpx;
+    margin-right: 20rpx;
+}

@@ -1,0 +1,48 @@
+<view class="page data-v-4b02b5ea">
+    <view class="card data-v-4b02b5ea">
+        <view class="top data-v-4b02b5ea">
+            <view class="name text40B data-v-4b02b5ea">{{house.building_name}}</view>
+            <view class="desc data-v-4b02b5ea">{{'*以本楼盘'+house.presell_date+'批次参考计算'}}</view>
+        </view>
+        <view class="bottom data-v-4b02b5ea">
+            <view class="left data-v-4b02b5ea">
+                <view class="_strong data-v-4b02b5ea">
+                    <text class="data-v-4b02b5ea">{{house.price_range}}</text>
+                    <text class="unit data-v-4b02b5ea">元/㎡</text>
+                </view>
+                <view class="label data-v-4b02b5ea">参考价格</view>
+            </view>
+            <view class="right data-v-4b02b5ea">
+                <view class="red _strong data-v-4b02b5ea">
+                    <text class="data-v-4b02b5ea">{{house.price_diff_range}}</text>
+                    <text class="unit data-v-4b02b5ea">元/㎡</text>
+                </view>
+                <view class="label data-v-4b02b5ea">与周边二手房差价</view>
+            </view>
+        </view>
+        <top-right-share bind:__l="__l" class="data-v-4b02b5ea" top="36" type="dark-org" vueId="b2c08734-1"></top-right-share>
+    </view>
+    <view class="list data-v-4b02b5ea">
+        <view class="header data-v-4b02b5ea">
+            <view class="title32B data-v-4b02b5ea">周边二手房价格</view>
+            <navigator class="location _a data-v-4b02b5ea" url="{{'/pages/building/second_hand/map?building_id='+building_id}}">
+                <fc-icon bind:__l="__l" class="i data-v-4b02b5ea" type="40_address_blue" vueId="b2c08734-2"></fc-icon>
+                <text class="data-v-4b02b5ea">查看价格地图</text>
+            </navigator>
+        </view>
+        <item bind:__l="__l" building_id="{{building_id}}" class="data-v-4b02b5ea" house_id="{{house_id}}" item="{{item}}" show_link="{{true}}" show_price="{{show_price}}" vueId="{{'b2c08734-3-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="community_id"></item>
+        <view class="tip data-v-4b02b5ea">
+            <view class="sample data-v-4b02b5ea">
+                <view class="new _i data-v-4b02b5ea"></view>
+                <text class="assistFont24 data-v-4b02b5ea">新房</text>
+            </view>
+            <view class="sample data-v-4b02b5ea">
+                <view class="old _i data-v-4b02b5ea"></view>
+                <text class="assistFont24 data-v-4b02b5ea">二手房</text>
+            </view>
+        </view>
+    </view>
+    <view class="bottom-tip assistFont24 data-v-4b02b5ea">注：周边二手房统计为楼盘3公里内，价格和成交相关数据来源于贝壳，数据更新可能延迟，仅供参考。</view>
+    <weixin-footer bind:__l="__l" class="footer data-v-4b02b5ea" vueId="b2c08734-4"></weixin-footer>
+    <page-wrap bind:__l="__l" class="data-v-4b02b5ea" title="价格分析" vueId="b2c08734-5"></page-wrap>
+</view>

@@ -1,0 +1,10 @@
+<view class="{{[ 'scroll-wrap data-v-71de643a',[shadow?'wrap':''] ]}}" id="text">
+    <scroll-view class="tabs data-v-71de643a" id="scroll" scrollIntoView="{{tab_selected}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+        <view bindtap="__e" class="{{[ '_li data-v-71de643a',[selected===tab.key&&tab.name!=='热门文章'?'active':'',selected===tab.key&&tabs.length>1?'bottom_active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChange',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" data-name="{{tab.name}}" id="{{'tab-'+tab.key}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+            <image class="_img data-v-71de643a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-circles/article-tag.png" wx:if="{{tab.name==='热门文章'&&selected===tab.key}}"></image>
+            <text class="tx data-v-71de643a" wx:else>{{tab.name}}</text>
+            <view class="new _i data-v-71de643a" wx:if="{{tab.new}}"></view>
+        </view>
+        <view class="active-i data-v-71de643a" id="tab-active-bar" style="{{'transform:'+'translate('+active_bar_left+'px, 0)'+';'}}"></view>
+    </scroll-view>
+</view>

@@ -1,0 +1,53 @@
+<view class="{{['preview-img _div data-v-0b2e3267',type]}}">
+    <top-guide banners="{{banners}}" bind:__l="__l" class="data-v-0b2e3267" vueId="08b37050-1"></top-guide>
+    <view class="tabs-wrap _div data-v-0b2e3267" id="top-module-tabs">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-0b2e3267" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" scroll="{{true}}" selected="{{select_tab}}" tabs="{{common_tabs}}" vueId="08b37050-2" width="{{type==='common'?'688rpx':'430rpx'}}"></common-tabs>
+        <view bindtap="__e" class="planar _div data-v-0b2e3267" data-event-opts="{{[ [ 'tap',[ [ 'goLocation',['$event'] ] ] ] ]}}" wx:if="{{show_planar_graph}}">
+            <image class="_img data-v-0b2e3267" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/planar.png"></image>
+            <text class="data-v-0b2e3267">楼盘总平图</text>
+        </view>
+    </view>
+    <view class="layout-top data-v-0b2e3267" wx:if="{{bedroom_tabs&&bedroom_tabs.length}}">
+        <view class="bedrooms-tabs data-v-0b2e3267">
+            <view bindtap="__e" class="{{['item text28 data-v-0b2e3267',bedrooms===''?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'selectBedrooms',[''] ] ] ] ]}}">{{'全部('+urls.length+')'}}</view>
+            <view bindtap="__e" class="{{['item text28 data-v-0b2e3267',tab.bedrooms===bedrooms?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'selectBedrooms',['$0'],[ [ ['bedroom_tabs','bedrooms',tab.bedrooms,'bedrooms'] ] ] ] ] ] ]}}" wx:for="{{bedroom_tabs}}" wx:for-index="__i0__" wx:for-item="tab" wx:key="bedrooms">{{''+tab.bedrooms+'室('+tab.count+')'}}</view>
+        </view>
+    </view>
+    <view class="layout-imgs _div data-v-0b2e3267" wx:if="{{type==='layout'}}">
+        <layout-item bind:__l="__l" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:preview="__e" bind:seek="__e" bind:stop="__e" class="data-v-0b2e3267" data-event-opts="{{[ [ '^preview',[ [ 'preview',[i] ] ] ],[ '^play',[ [ 'playAudio',[i,'$0'],[ [ ['layout_urls','',i,'audio_url'] ] ] ] ] ],[ '^stop',[ [ 'stopAudio',[i] ] ] ],[ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ ['openVr'] ] ],[ '^seek',[ ['seekAudio'] ] ] ]}}" duration="{{durations[i]}}" playing="{{audio_playing[i]}}" running_time="{{running_times[i]}}" url="{{url}}" vueId="{{'08b37050-3-'+i}}" wx:for="{{layout_urls}}" wx:for-index="i" wx:for-item="url" wx:key="i"></layout-item>
+        <disclaimer bind:__l="__l" class="data-v-0b2e3267" title="参考户型图、VR、视频、语音免责声明" vueId="08b37050-4"></disclaimer>
+    </view>
+    <view class="common-images data-v-0b2e3267" wx:if="{{type==='price'}}">
+        <top-right-share bind:__l="__l" class="data-v-0b2e3267" top="8" vueId="08b37050-5" wx:if="{{type==='common'}}"></top-right-share>
+        <view bindtap="__e" class="price-img-wrap data-v-0b2e3267" data-event-opts="{{[ [ 'tap',[ [ 'previewPriceImg',[i] ] ] ] ]}}" wx:for="{{all_urls}}" wx:for-index="i" wx:key="i">
+            <image class="price-img data-v-0b2e3267" mode="widthFix" src="{{item}}"></image>
+        </view>
+    </view>
+    <view class="common-imgs data-v-0b2e3267" wx:else>
+        <top-right-share bind:__l="__l" class="data-v-0b2e3267" top="8" vueId="08b37050-6" wx:if="{{type==='common'}}"></top-right-share>
+        <view class="data-v-0b2e3267" wx:for="{{common_urls}}" wx:for-index="i" wx:key="i">
+            <view class="sub-title data-v-0b2e3267" id="{{item.id}}">{{item.title}}</view>
+            <view class="imgs data-v-0b2e3267">
+                <view bindtap="__e" class="img-wrap data-v-0b2e3267" data-event-opts="{{[ [ 'tap',[ [ 'previewCommonImg',[i,j] ] ] ] ]}}" wx:for="{{item.urls}}" wx:for-index="j" wx:for-item="url" wx:key="j">
+                    <view class="common-img-wrap no-desc data-v-0b2e3267" wx:if="{{item.type==='video'&&showVideo}}">
+                        <view class="video-mask data-v-0b2e3267"></view>
+                        <video binderror="__e" class="data-v-0b2e3267" data-event-opts="{{[ [ 'error',[ [ 'onVideoError',['$event'] ] ] ] ]}}" data-url="{{url}}" src="{{url}}"></video>
+                    </view>
+                    <view class="common-img-wrap no-desc data-v-0b2e3267" wx:else>
+                        <common-img bind:__l="__l" class="data-v-0b2e3267" mode="aspectFill" src="{{url.image_url}}" vueId="{{'08b37050-7-'+i+'-'+j}}"></common-img>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <empty-tip bind:__l="__l" class="data-v-0b2e3267" show="{{show_empty}}" tip="暂时没有内容哦，努力补充中…" vueId="08b37050-8"></empty-tip>
+    <disclaimer bind:__l="__l" class="data-v-0b2e3267" title="楼盘图片、视频免责声明" vueId="08b37050-9" wx:if="{{type==='common'}}"></disclaimer>
+    <consultants bind:__l="__l" bind:goMore="__e" class="data-v-0b2e3267" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultants'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="{{type==='layout'?'户型图':'楼盘图'}}" is_default="{{false}}" theme="{{consultantCard.building.theme}}" title="优秀置业顾问推荐" vueId="08b37050-10" wx:if="{{!show_empty&&!house.current_consultant}}"></consultants>
+    <view class="data-v-0b2e3267" wx:if="{{house.current_consultant&&!loading}}">
+        <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-0b2e3267" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{house}}" is_consultant="{{is_consultant}}" vueId="08b37050-11"></current-consultant>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-0b2e3267" vueId="08b37050-12"></bottom-right-share>
+    <common-footer bind:__l="__l" building_id="{{building_id}}" class="data-v-0b2e3267" from="{{type==='layout'?'户型图':'楼盘图'}}" name="{{title}}" vueId="08b37050-13" wx:if="{{!house.current_consultant&&!loading}}"></common-footer>
+    <timeline-billboard bind:__l="__l" class="data-v-0b2e3267" vueId="08b37050-14" wx:if="{{show_timeline_billboard}}"></timeline-billboard>
+    <page-wrap bind:__l="__l" class="data-v-0b2e3267" has_own_timeline="{{true}}" hide_back_home="{{true}}" title="{{title}}" vueId="08b37050-15"></page-wrap>
+</view>

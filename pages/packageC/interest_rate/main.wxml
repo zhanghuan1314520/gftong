@@ -1,0 +1,56 @@
+<view class="page _div">
+    <view class="_h3">央行2016年最新公布的贷款基准利率<view class="top-share _div">
+            <share-btn bind:__l="__l" vueId="d7eb10ac-1"></share-btn>
+        </view>
+    </view>
+    <view class="main-table _table">
+        <view class="_thead">
+            <view class="_tr">
+                <view class="_th">贷款期限</view>
+                <view class="_th">商业贷款利率(%)</view>
+                <view class="_th">公积金贷款利率(%)</view>
+            </view>
+        </view>
+        <view class="_tbody">
+            <view class="_tr">
+                <view class="_td">5年以上</view>
+                <view class="_td">4.90</view>
+                <view class="_td">3.25</view>
+            </view>
+            <view class="_tr">
+                <view class="_td">3-5年(含)</view>
+                <view class="_td">4.75</view>
+                <view class="_td">2.75</view>
+            </view>
+            <view class="_tr">
+                <view class="_td">1-3年(含)</view>
+                <view class="_td">4.75</view>
+                <view class="_td">2.75</view>
+            </view>
+            <view class="_tr">
+                <view class="_td">1年</view>
+                <view class="_td">4.35</view>
+                <view class="_td">2.75</view>
+            </view>
+            <view class="_tr">
+                <view class="_td">6个月</view>
+                <view class="_td">4.35</view>
+                <view class="_td">2.75</view>
+            </view>
+        </view>
+    </view>
+    <view class="_h3">杭州各大主流银行利率上浮（仅做参考，以现场实际为准）</view>
+    <view class="sub-table _table">
+        <view class="_tr">
+            <view class="_td">银行名称</view>
+            <view class="_td">首套房上浮标注(基准利率4.9%)</view>
+            <view class="_td">二套房上浮标准</view>
+        </view>
+        <view class="_tr" wx:for="{{rankRate}}" wx:key="index">
+            <view class="_td">{{item.rank}}</view>
+            <view class="_td">{{item.first}}</view>
+            <view class="_td">{{item.second}}</view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" title="贷款利率" vueId="d7eb10ac-2"></page-wrap>
+</view>

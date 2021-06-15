@@ -1,0 +1,13 @@
+<view class="_div data-v-7951cf8a">
+    <view class="help-section _div data-v-7951cf8a">
+        <view class="_section data-v-7951cf8a" wx:if="{{usage==='公寓'}}">
+            <label class="data-v-7951cf8a">公寓：</label>
+            <view class="_p data-v-7951cf8a">本次参与公证摇号的商品住房中，公寓和住宅的区别为：每套住宅应有一个卧室或起居室（厅）大寒日日照不低于2小时（三环路以内住宅大寒日日照不低于1小时），否则为公寓。</view>
+        </view>
+        <view class="_section data-v-7951cf8a" wx:if="{{decoration_type==='精装'}}">
+            <label class="data-v-7951cf8a">精装：</label>
+            <view class="_p data-v-7951cf8a">由于不同户型对应装修风格和价格不一样，需要您选择并确认本户型对应的装修价格。</view>
+        </view>
+    </view>
+    <view catchtap="__e" class="overlay _div data-v-7951cf8a" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

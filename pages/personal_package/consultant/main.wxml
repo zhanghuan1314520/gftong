@@ -1,0 +1,31 @@
+<view class="_div data-v-cd997a24">
+    <view class="consultant-wrap _div data-v-cd997a24" style="{{'display:'+(!loading?'block':'none')+';'}}">
+        <view class="_header data-v-cd997a24">
+            <navigator url bindtap="__e" class="userinfo _a data-v-cd997a24" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+                <image class="headimg _img data-v-cd997a24" lazyLoad="{{true}}" mode="aspectFill" src="{{userHeadimgurl}}" wx:if="{{userHeadimgurl}}"></image>
+                <open-data class="headimg data-v-cd997a24" type="userAvatarUrl" wx:else></open-data>
+                <view class="_div data-v-cd997a24">{{'【'+consultant.building_name+'】'+consultant.name}}</view>
+                <label class="_span data-v-cd997a24">查看名片></label>
+            </navigator>
+            <view class="score _div data-v-cd997a24">活跃度(最近30天获得积分):<view class="_strong data-v-cd997a24">{{consultant.last_period_obtained_score}}</view>
+            </view>
+            <view class="detail _div data-v-cd997a24">
+                <image class="_img data-v-cd997a24" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-info/trophy.png"></image>
+                <view class="content _div data-v-cd997a24">
+                    <view class="_p data-v-cd997a24">当前总排名：<view class="_strong data-v-cd997a24">{{consultant.ranking}}</view>
+                    </view>
+                    <view class="_p data-v-cd997a24" wx:if="{{consultant.ranking_exceed}}">{{consultant.ranking_exceed}}</view>
+                    <view class="_p data-v-cd997a24" wx:if="{{consultant.ranking_compare_with_adjacent}}">{{consultant.ranking_compare_with_adjacent}}</view>
+                    <view class="_p data-v-cd997a24">逆水行舟，不进则退</view>
+                    <view class="_p data-v-cd997a24">{{'积分余额：'+consultant.score}}</view>
+                </view>
+            </view>
+        </view>
+        <stats-chart bind:__l="__l" class="data-v-cd997a24" history="{{history}}" vueId="705b1cc8-1"></stats-chart>
+        <view class="_article data-v-cd997a24" wx:if="{{customer_service_info}}">
+            <view class="tip _p data-v-cd997a24">{{'置业顾问专职客服，微信号“'+customer_service_info.wx_username+'”。'}}<navigator bindtap="__e" class="link _a data-v-cd997a24" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制</navigator>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-cd997a24" title="置业顾问" vueId="705b1cc8-2"></page-wrap>
+</view>

@@ -1,0 +1,17 @@
+<view class="stats _div data-v-1192f050">
+    <view class="_h3 data-v-1192f050">活跃度（最近30天获得积分）</view>
+    <view class="chart _div data-v-1192f050">
+        <view class="progress _div data-v-1192f050" wx:for="{{series}}" wx:for-index="i" wx:key="i">
+            <view class="bar _div data-v-1192f050">
+                <view class="_em data-v-1192f050">{{item.date}}</view>
+                <label class="_span data-v-1192f050">{{item.liveness}}</label>
+            </view>
+            <view class="real-progress _div data-v-1192f050" wx:if="{{item.liveness>0}}">
+                <view class="bar-active _div data-v-1192f050" style="{{'width:'+item.progress+';'}}">
+                    <view class="_em data-v-1192f050">{{item.date}}</view>
+                </view>
+                <label class="_span data-v-1192f050">{{item.liveness}}</label>
+            </view>
+        </view>
+    </view>
+</view>

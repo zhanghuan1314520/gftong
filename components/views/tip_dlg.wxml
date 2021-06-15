@@ -1,0 +1,8 @@
+<view class="{{['dlg-wrap _div data-v-8e1198b6',className]}}" wx:if="{{show}}">
+    <view class="dlg _div data-v-8e1198b6">
+        <view class="_h3 data-v-8e1198b6">{{title}}</view>
+        <text class="data-v-8e1198b6">{{content_format}}</text>
+        <button bindtap="__e" class="data-v-8e1198b6" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">我知道了</button>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-8e1198b6" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}"></view>
+</view>

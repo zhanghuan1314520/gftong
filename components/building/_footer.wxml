@@ -1,0 +1,34 @@
+<view class="_div data-v-2ac8f0b8">
+    <view class="{{[ 'footer adapt_bottom_origin _div data-v-2ac8f0b8',[!is_building?'subfooter':''] ]}}">
+        <button bindtap="__e" class="comment data-v-2ac8f0b8" data-event-opts="{{[ [ 'tap',[ [ 'goAllComments',['$event'] ] ] ] ]}}" wx:if="{{comment_count}}">
+            <fc-icon bind:__l="__l" class="comment-icon data-v-2ac8f0b8" type="48_comment" vueId="13f9c7a8-1"></fc-icon>
+            <label class="_span data-v-2ac8f0b8">{{comment_count}}</label>
+        </button>
+        <button bindgetuserinfo="__e" class="comment data-v-2ac8f0b8" data-event-opts="{{[ [ 'getuserinfo',[ [ 'addComment',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:else>
+            <fc-icon bind:__l="__l" class="comment-icon data-v-2ac8f0b8" type="48_comment" vueId="13f9c7a8-2"></fc-icon>
+            <label class="_span data-v-2ac8f0b8">评论</label>
+        </button>
+        <view bindtap="__e" class="{{[ 'favourite _div data-v-2ac8f0b8',[house.favourite?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleFavourite','楼盘详情页——关注'] ] ] ] ]}}" wx:if="{{is_building}}">
+            <fc-icon bind:__l="__l" class="data-v-2ac8f0b8" type="{{house.favourite?'48_love_actions':'48_love_normal'}}" vueId="13f9c7a8-3"></fc-icon>
+            <label class="_span data-v-2ac8f0b8">{{(house.favourite?'已':'')+'关注'}}</label>
+        </view>
+        <navigator bindtap="__e" class="group data-v-2ac8f0b8" data-event-opts="{{[ [ 'tap',[ [ 'clickGroup',['$event'] ] ] ] ]}}" url="/pages/personal_package/group_assistant/main" wx:if="{{right_btn_count<3&&is_building}}">
+            <fc-icon bind:__l="__l" class="data-v-2ac8f0b8" type="48_more_group" vueId="13f9c7a8-4"></fc-icon>
+            <label class="_span data-v-2ac8f0b8">购房群</label>
+        </navigator>
+        <view class="bottom-btn-wrap _div data-v-2ac8f0b8">
+            <button bindgetuserinfo="__e" class="f-btn primary-btn data-v-2ac8f0b8" data-count="{{house.consultants_count}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goConsultantByUser',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:if="{{house.consultants_count}}">
+                <label class="_span data-v-2ac8f0b8">{{show_icon?'联系置业顾问':'置业顾问'}}</label>
+            </button>
+            <button bindtap="__e" class="f-btn primary-btn data-v-2ac8f0b8" data-count="{{house.consultants_count}}" data-event-opts="{{[ [ 'tap',[ [ 'goConsultantList',['$event'] ] ] ] ]}}" wx:else>
+                <label class="_span data-v-2ac8f0b8">{{show_icon?'联系置业顾问':'置业顾问'}}</label>
+            </button>
+            <button-tip bind:__l="__l" class="data-v-2ac8f0b8" data_status="{{current_house.lfd_status==='lfd_completed'?'摇号结果':'登记公示'}}" has_new_result="{{current_house.has_new_result}}" vueId="13f9c7a8-5" wx:if="{{is_building}}"></button-tip>
+            <navigator bindtap="__e" class="f-btn phone-btn _a data-v-2ac8f0b8" data-event-opts="{{[ [ 'tap',[ [ 'goCall',['$event'] ] ] ] ]}}" url="{{true}}" wx:if="{{show_call}}">
+                <label class="_span data-v-2ac8f0b8">{{show_icon?'免费电话咨询':'免费电话'}}</label>
+            </navigator>
+            <navigator bindtap="__e" class="f-btn result-btn _a data-v-2ac8f0b8" data-event-opts="{{[ [ 'tap',[ [ 'goResult',['$event'] ] ] ] ]}}" wx:if="{{show_rs&&is_building}}">{{show_icon?'查询摇号结果':'摇号结果'}}</navigator>
+            <navigator bindtap="__e" class="f-btn result-btn _a data-v-2ac8f0b8" data-event-opts="{{[ [ 'tap',[ [ 'goReg',['$event'] ] ] ] ]}}" wx:if="{{show_reg&&is_building}}">{{show_icon?'查询登记公示':'登记公示'}}</navigator>
+        </view>
+    </view>
+</view>

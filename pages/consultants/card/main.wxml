@@ -1,0 +1,19 @@
+<view class="page _div data-v-caa4c81e">
+    <view class="card-page data-v-caa4c81e">
+        <card bind:__l="__l" bind:callConsultant="__e" bind:goChat="__e" bind:setClipboardData="__e" class="data-v-caa4c81e" consultant="{{consultant}}" data-event-opts="{{[ [ '^goChat',[ ['goChat'] ] ],[ '^callConsultant',[ ['callConsultant'] ] ],[ '^setClipboardData',[ ['setClipboardData'] ] ] ]}}" vueId="867e6464-1"></card>
+        <vr720 bind:__l="__l" class="data-v-caa4c81e" house="{{current_building}}" vueId="867e6464-2" wx:if="{{current_building.vr_panorama_resource&&current_building.vr_panorama_resource.vr_panorama_url}}"></vr720>
+        <like-share bind:__l="__l" bind:likeConsultant="__e" bind:showBillboard="__e" bind:showShareOption="__e" class="data-v-caa4c81e" consultant="{{consultant}}" data-event-opts="{{[ [ '^likeConsultant',[ ['onLikeConsult'] ] ],[ '^showShareOption',[ ['showShareOption'] ] ],[ '^showBillboard',[ ['toggleBillboard'] ] ] ]}}" vueId="867e6464-3" wx:if="{{!loading}}"></like-share>
+        <buiildings bind:__l="__l" buildings="{{buildings}}" class="data-v-caa4c81e" vueId="867e6464-4"></buiildings>
+        <feeds bind:__l="__l" bind:changeFeed="__e" bind:delete="__e" bind:sticky="__e" class="data-v-caa4c81e" data-event-opts="{{[ [ '^changeFeed',[ ['onChangeFeed'] ] ],[ '^delete',[ ['onDeleteFeed'] ] ],[ '^sticky',[ ['onSticky'] ] ] ]}}" feeds="{{items}}" feeds_loading="{{feeds_loading}}" no_more="{{no_more}}" showEdit="{{consultant.is_my_card}}" show_video="{{showVideo}}" vueId="867e6464-5"></feeds>
+    </view>
+    <view class="footer-btns _footer data-v-caa4c81e">
+        <button bindtap="__e" class="bottom-btn green data-v-caa4c81e" data-event-opts="{{[ [ 'tap',[ [ 'goHouse',['$event'] ] ] ] ]}}" style="{{'display:'+(consultant.building_id?'inline-block':'none')+';'}}">楼盘详情</button>
+        <fangchan-auth-user bind:__l="__l" bind:success="__e" class="bottom-btn data-v-caa4c81e" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'goChat',['$0'],['consultant.id'] ] ] ] ]}}" data-id="{{consultant.id}}" data-phone="{{consultant.mobile}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="867e6464-6" vueSlots="{{['default']}}">
+            <view class="bottom-btn blue _div data-v-caa4c81e">在线咨询</view>
+        </fangchan-auth-user>
+    </view>
+    <share-options bind:__l="__l" bind:hide="__e" bind:showBillboard="__e" class="data-v-caa4c81e" data-event-opts="{{[ [ '^showBillboard',[ ['toggleBillboard'] ] ],[ '^hide',[ ['hideShareOption'] ] ] ]}}" shadow="{{false}}" show="{{show_share_option}}" vueId="867e6464-7"></share-options>
+    <billboard bind:__l="__l" bind:hide="__e" class="data-v-caa4c81e" consultant="{{consultant}}" data-event-opts="{{[ [ '^hide',[ ['toggleBillboard'] ] ] ]}}" house="{{house}}" show="{{show_billboard}}" vueId="867e6464-8" wx:if="{{is_consultant}}"></billboard>
+    <medals bind:__l="__l" bind:hide="__e" class="data-v-caa4c81e" consultant="{{consultant}}" data-event-opts="{{[ [ '^hide',[ ['toggleMedalDetail'] ] ] ]}}" vueId="867e6464-9" wx:if="{{show_medal_detail}}"></medals>
+    <page-wrap bind:__l="__l" class="data-v-caa4c81e" hide_back_home="{{true}}" title="置业顾问" vueId="867e6464-10"></page-wrap>
+</view>

@@ -1,0 +1,10 @@
+<view class="{{[ 'attachs-wrap _div data-v-255f7e8e',[attachs.renovation?'five':''] ]}}">
+    <button bindgetuserinfo="__e" class="attach active data-v-255f7e8e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goPricePage',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:if="{{house_price_diagram_url}}">一房一价图</button>
+    <button bindgetuserinfo="__e" class="attach active data-v-255f7e8e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goQulification',['$event'] ] ] ] ]}}" data-url="/pages/check_condition/main?verify_type=杭州购房资格查询" openType="getUserInfo" wx:else>购房资格</button>
+    <button bindgetuserinfo="__e" class="attach active data-v-255f7e8e" data-event-opts="{{[ [ 'getuserinfo',[ [ 'openDoc',['$event'] ] ] ] ]}}" data-url="{{attachs.renovation}}" openType="getUserInfo" style="{{'display:'+(attachs.renovation?'inline-flex':'none')+';'}}">
+        <label class="_span data-v-255f7e8e">装修价格</label>
+    </button>
+    <button bindgetuserinfo="__e" class="{{[ 'attach data-v-255f7e8e',[attachs.publicity_rule?'active':''] ]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goWebView',['$event'] ] ] ] ]}}" data-type="publicity_rule" data-url="{{attachs.publicity_rule}}" openType="getUserInfo">公示方案</button>
+    <button bindgetuserinfo="__e" class="{{[ 'attach data-v-255f7e8e',[lrd_status==='lrd_completed'?'active':''] ]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReview',['$event'] ] ] ] ]}}" data-href="{{review_link}}" openType="getUserInfo">意向登记表</button>
+    <button bindgetuserinfo="__e" class="{{[ 'attach data-v-255f7e8e',[lfd_status==='lfd_completed'?'active':''] ]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goResult',['$event'] ] ] ] ]}}" data-href="{{results_link}}" openType="getUserInfo">摇号结果</button>
+</view>

@@ -1,0 +1,25 @@
+.predict-section.data-v-c4c8753a {
+    position: relative;
+    width: 690rpx;
+    min-height: 248rpx;
+    margin: 20rpx auto;
+    box-shadow: 0 2rpx 9rpx 0 rgba(0,0,0,.18);
+    border-radius: 8rpx;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.predict-content.data-v-c4c8753a {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 145rpx;
+}
+
+.predict-content .tip.data-v-c4c8753a {
+    padding: 0 30rpx;
+    margin-top: 30rpx;
+    line-height: 44rpx;
+    color: #777;
+    font-size: 24rpx;
+}

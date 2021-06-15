@@ -1,0 +1,5 @@
+.rule-page.data-v-45e95380 {
+    min-height: 100vh;
+    padding: 40rpx 0;
+    background-color: #fff;
+}

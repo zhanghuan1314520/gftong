@@ -1,0 +1,47 @@
+<view class="_div data-v-8f319738">
+    <web-view binderror="__e" class="data-v-8f319738" data-event-opts="{{[ [ 'error',[ [ 'errorLoad',['$event'] ] ] ] ]}}" src="{{src}}">
+        <cover-view class="share-wrap data-v-8f319738" wx:if="{{show_btm_share}}">
+            <button class="data-v-8f319738" openType="share">
+                <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/article-share-btn.png"></cover-image>
+            </button>
+        </cover-view>
+        <cover-view class="share-mask data-v-8f319738" wx:if="{{show_rt_share}}">
+            <cover-image class="share-types data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/h.png"></cover-image>
+            <cover-view class="share-btns data-v-8f319738">
+                <button class="share-wx data-v-8f319738" openType="share">.</button>
+                <button catchtap="__e" class="share-py data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'onSaveImg',['$event'] ] ] ] ]}}">.</button>
+            </cover-view>
+        </cover-view>
+        <cover-view class="current-consultant data-v-8f319738" wx:if="{{show_current_consultant}}">
+            <cover-view bindtap="__e" class="consultant-cell data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{current_consultant.id}}">
+                <cover-view class="dt data-v-8f319738">
+                    <cover-image class="data-v-8f319738" src="{{current_consultant.weixin_headimgurl}}"></cover-image>
+                </cover-view>
+                <cover-view class="dd data-v-8f319738">
+                    <cover-view class="dd-th data-v-8f319738">{{current_consultant.name}}</cover-view>
+                    <cover-view class="dd-bd data-v-8f319738">{{current_consultant.building.name}}</cover-view>
+                </cover-view>
+            </cover-view>
+            <cover-view class="btns-cell data-v-8f319738">
+                <button bindtap="__e" class="btn-item data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'getUserProfile',['$event'] ] ] ] ]}}" wx:if="{{canIUseGetUserProfile}}">
+                    <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/btns/chat.png"></cover-image>
+                </button>
+                <button bindgetuserinfo="__e" class="btn-item data-v-8f319738" data-event-opts="{{[ [ 'getuserinfo',[ [ 'getUserInfo',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:else>
+                    <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/btns/chat.png"></cover-image>
+                </button>
+                <button bindtap="__e" class="btn-item data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{current_consultant.id}}" wx:if="{{show_tel_btn}}">
+                    <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/btns/tel.png"></cover-image>
+                </button>
+                <button bindtap="__e" class="btn-item data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'goBuildingEvent',['$event'] ] ] ] ]}}" data-id="{{current_consultant.building.id}}">
+                    <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/btns/event.png"></cover-image>
+                </button>
+            </cover-view>
+        </cover-view>
+        <cover-view bindtap="__e" class="inner-share-tips data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'hideTips',['$event'] ] ] ] ]}}" wx:if="{{show_inner_tips&&is_consultant}}">
+            <cover-image class="data-v-8f319738" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/btns/tips.png"></cover-image>
+        </cover-view>
+        <cover-image bindtap="__e" class="copy-path data-v-8f319738" data-event-opts="{{[ [ 'tap',[ [ 'onCopyPath',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/house-circles/copy-path.png" wx:if="{{show_dot}}"></cover-image>
+    </web-view>
+    <page-wrap bind:__l="__l" class="data-v-8f319738" hide_back_home="{{true}}" page_show_treasure="{{false}}" show_app_name="{{false}}" title="{{title}}" vueId="b2c258c4-1"></page-wrap>
+    <canvas canvasId="canvas" class="share-canvas data-v-8f319738" style="width:750px;height:1334px;"></canvas>
+</view>

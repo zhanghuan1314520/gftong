@@ -1,0 +1,133 @@
+<view class="page _div data-v-794117f7">
+    <view class="top-page _div data-v-794117f7">
+        <view class="_header data-v-794117f7">
+            <view class="left _div data-v-794117f7">
+                <navigator class="integral _a data-v-794117f7" url="/pages/personal_package/consultant_score/main">
+                    <label class="label data-v-794117f7">今日已获积分</label>
+                    <view class="_strong data-v-794117f7">{{today_score}}</view>
+                    <view class="arrow _i data-v-794117f7"></view>
+                </navigator>
+                <view class="need-integral _p data-v-794117f7">{{keep_acitivity_desc}}</view>
+                <navigator class="active _a data-v-794117f7" url="/pages/personal_package/consultant/main">
+                    <label class="data-v-794117f7">当前活跃度<label class="_span data-v-794117f7">{{last_period_obtained_score}}</label>
+                    </label>
+                    <fc-icon bind:__l="__l" class="data-v-794117f7" type="32_more_white" vueId="432cfd48-1"></fc-icon>
+                </navigator>
+            </view>
+            <navigator class="right _a data-v-794117f7" url="/pages/packageA/consultant_qa/main">
+                <label class="_span data-v-794117f7">常见问题</label>
+                <view class="question _i data-v-794117f7">?</view>
+            </navigator>
+        </view>
+    </view>
+    <consultant-checkin bind:__l="__l" bind:getData="__e" class="data-v-794117f7" data-event-opts="{{[ [ '^getData',[ ['getData'] ] ] ]}}" vueId="432cfd48-2"></consultant-checkin>
+    <view class="_article data-v-794117f7">
+        <view class="name _div data-v-794117f7">
+            <view class="_h2 data-v-794117f7">日常任务</view>
+            <label class="top-tip _span data-v-794117f7">连续做任务30天，轻松获取2000+积分！</label>
+        </view>
+        <view class="_ul data-v-794117f7">
+            <view class="_li data-v-794117f7">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">邀请置业顾问好友签到</view>
+                        <label class="desc _span data-v-794117f7">{{invite_checkin.desc}}</label>
+                        <view class="progress-wrap _div data-v-794117f7">
+                            <view class="progress _div data-v-794117f7">
+                                <view class="progress-bar _div data-v-794117f7" style="{{'width:'+invite_checkin.progress_percent+';'}}"></view>
+                            </view>
+                            <label class="_span data-v-794117f7">{{''+invite_checkin.current_score+' /'}}<label class="target-score _span data-v-794117f7">{{''+invite_checkin.target_score+''}}</label>
+                            </label>
+                        </view>
+                    </view>
+                    <button class="btn data-v-794117f7" data-share="invite_checkin" openType="share">去邀请</button>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7" wx:if="{{!subscribe_checkin_notification.done}}">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">每日签到提醒</view>
+                        <label class="desc _span data-v-794117f7">{{subscribe_checkin_notification.desc}}</label>
+                    </view>
+                    <view bindtap="__e" class="btn _div data-v-794117f7" data-event-opts="{{[ [ 'tap',[ [ 'goSubscribe',['$event'] ] ] ] ]}}">订阅提醒</view>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7" wx:if="{{!subscribe_weixin.done}}">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">关注杭州置业顾问之家</view>
+                        <label class="desc strong _span data-v-794117f7">{{subscribe_weixin.desc}}</label>
+                    </view>
+                    <navigator class="btn _a data-v-794117f7" url="/pages/packageA/consultant_home/main?from=task">去关注</navigator>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7" wx:if="{{forward_weixin_moments&&forward_weixin_moments.desc}}">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">转发客服指定图片</view>
+                        <label class="desc _span data-v-794117f7">{{forward_weixin_moments.desc}}</label>
+                    </view>
+                    <button class="btn data-v-794117f7" disabled="{{true}}" wx:if="{{forward_weixin_moments.done}}">已完成</button>
+                    <button bindtap="__e" class="btn data-v-794117f7" data-event-opts="{{[ [ 'tap',[ [ 'onViewContent',['$event'] ] ] ] ]}}" wx:else>查看内容</button>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">提供楼盘信息</view>
+                        <label class="desc _span data-v-794117f7">{{provide_building_info.desc}}</label>
+                    </view>
+                    <button class="btn data-v-794117f7" disabled="{{true}}" wx:if="{{provide_building_info.done}}">已完成</button>
+                    <block wx:else>
+                        <button bindtap="__e" class="btn data-v-794117f7" data-event-opts="{{[ [ 'tap',[ [ 'onActionSheet',['$event'] ] ] ] ]}}" wx:if="{{consultantUploadBuildingInfo}}">去上传</button>
+                        <button bindtap="__e" class="btn data-v-794117f7" data-event-opts="{{[ [ 'tap',[ [ 'copyProvideBuildingWeixin',['$event'] ] ] ] ]}}" wx:else>复制微信号</button>
+                    </block>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">{{''+(show_double_points?'转发带来新用户双倍积分':'转发小程序带来新用户')+''}}</view>
+                        <view class="progress-wrap _div data-v-794117f7">
+                            <view class="progress _div data-v-794117f7">
+                                <view class="progress-bar _div data-v-794117f7" style="{{'width:'+share_new_users.progress_percent+';'}}"></view>
+                            </view>
+                            <label class="_span data-v-794117f7">{{''+share_new_users.current_score+' /'}}<label class="target-score _span data-v-794117f7">{{share_new_users.target_score}}</label>
+                            </label>
+                        </view>
+                    </view>
+                    <button class="btn data-v-794117f7" disabled="{{true}}" wx:if="{{share_new_users.done}}">已完成</button>
+                    <navigator class="btn _a data-v-794117f7" url="{{share_new_users.link}}" wx:else>去转发</navigator>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">转发小程序带来老用户</view>
+                        <view class="progress-wrap _div data-v-794117f7">
+                            <view class="progress _div data-v-794117f7">
+                                <view class="progress-bar _div data-v-794117f7" style="{{'width:'+share_old_users.progress_percent+';'}}"></view>
+                            </view>
+                            <label class="_span data-v-794117f7">{{''+share_old_users.current_score+' /'}}<label class="target-score _span data-v-794117f7">{{share_old_users.target_score}}</label>
+                            </label>
+                        </view>
+                    </view>
+                    <button class="btn data-v-794117f7" disabled="{{true}}" wx:if="{{share_old_users.done}}">已完成</button>
+                    <navigator class="btn _a data-v-794117f7" url="{{share_old_users.link}}" wx:else>去转发</navigator>
+                </view>
+            </view>
+            <view class="_li data-v-794117f7" wx:if="{{subscribe_weixin.done}}">
+                <view class="content _div data-v-794117f7">
+                    <view class="left _div data-v-794117f7">
+                        <view class="_h3 data-v-794117f7">关注杭州置业顾问之家</view>
+                        <label class="desc strong _span data-v-794117f7">{{subscribe_weixin.desc}}</label>
+                    </view>
+                    <button class="btn data-v-794117f7" disabled="{{true}}">已关注</button>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom-tip _p data-v-794117f7">逆水行舟，不进则退，再接再厉</view>
+    <page-wrap bind:__l="__l" class="data-v-794117f7" title="个人中心" vueId="432cfd48-3"></page-wrap>
+    <ui-action-sheet actions="{{actions}}" bind:__l="__l" bind:hide="__e" bind:select="__e" class="data-v-794117f7" data-event-opts="{{[ [ '^select',[ ['onActionSheetSelect'] ] ],[ '^hide',[ ['onActionSheetHide'] ] ] ]}}" show="{{showActionSheet}}" vueId="432cfd48-4"></ui-action-sheet>
+</view>

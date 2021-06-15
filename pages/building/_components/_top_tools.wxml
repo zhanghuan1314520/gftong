@@ -1,0 +1,8 @@
+<view class="tabs-second data-v-42d25662">
+    <view bindtap="__e" class="{{[ 'data-v-42d25662',[icon.show?'icon':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'goIcon',['$event'] ] ] ] ]}}" data-index="{{i}}" data-name="{{icon.name}}" data-type="{{icon.type}}" data-url="{{icon.url||null}}" wx:for="{{icons}}" wx:for-index="i" wx:for-item="icon" wx:key="i">
+        <view class="{{['_i data-v-42d25662',icon.class]}}"></view>
+        <label class="_span data-v-42d25662">{{icon.name}}</label>
+        <view class="{{['data-v-42d25662',icon.flagIcon]}}" wx:if="{{icon.flagIcon&&!is_consultant&&icon.showFlagIcon}}"></view>
+        <view class="new data-v-42d25662" wx:if="{{icon.new}}">上新</view>
+    </view>
+</view>

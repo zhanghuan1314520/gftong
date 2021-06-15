@@ -1,0 +1,21 @@
+{
+    "navigationBarBackgroundColor": "#00B08D",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "list-page": "/pages/building/price/_list_page",
+        "bottom-right-share": "/components/views/bottom_right_share",
+        "block-page": "/pages/building/price/_block_page",
+        "tip": "/pages/building/price/_tip",
+        "common-footer": "/pages/building/_components/_common_footer",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

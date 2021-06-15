@@ -1,0 +1,31 @@
+<view class="page _div data-v-ce7ce220">
+    <view class="card data-v-ce7ce220" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+        <view bindtap="__e" class="item _div data-v-ce7ce220" data-event-opts="{{[ [ 'tap',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{item.id}}">
+            <view class="top _div data-v-ce7ce220">
+                <view class="_h3 data-v-ce7ce220">{{''+item.building_name+''}}</view>
+                <navigator class="card-link _a data-v-ce7ce220">
+                    <label class="_span data-v-ce7ce220">前往名片</label>
+                    <image class="_img data-v-ce7ce220" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/arr-brown.png"></image>
+                </navigator>
+            </view>
+            <view catchtap="__e" class="select _div data-v-ce7ce220" data-event-opts="{{[ [ 'tap',[ [ 'selectCard',['$event'] ] ] ] ]}}" data-id="{{item.id}}">
+                <image class="_img data-v-ce7ce220" src="{{[item.master_card?'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/consultant/selected.png':'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/consultant/select-null.png']}}"></image>
+                <label class="_span data-v-ce7ce220">选择此楼盘作为我的主名片</label>
+            </view>
+            <image class="bg _img data-v-ce7ce220" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/consultant/little-house.png"></image>
+        </view>
+        <view bindtap="__e" class="star data-v-ce7ce220" data-event-opts="{{[ [ 'tap',[ [ 'goStar',['$0'],[ [ ['items','',i,'id'] ] ] ] ] ] ]}}">
+            <view class="left data-v-ce7ce220">
+                <view class="i data-v-ce7ce220"></view>
+                <view class="data-v-ce7ce220">我收到的点赞</view>
+            </view>
+            <view class="right data-v-ce7ce220">去看看</view>
+        </view>
+    </view>
+    <view class="desc data-v-ce7ce220">
+        <view class="_p data-v-ce7ce220">说明</view>
+        <view class="_p data-v-ce7ce220">① 若同时入驻2个及2个以上项目，只能选择其中一个项目作为主名片，其余为副名片；</view>
+        <view class="_p data-v-ce7ce220">② 只有主名片才可被展示到首页和楼盘详情页展位。</view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-ce7ce220" hide_back_home="{{true}}" title="我的名片" vueId="ebb0ed42-1"></page-wrap>
+</view>

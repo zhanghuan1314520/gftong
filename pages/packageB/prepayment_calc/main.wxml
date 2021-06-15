@@ -1,0 +1,90 @@
+<view class="page data-v-74cf6bd6">
+    <view class="tpl-form-section data-v-74cf6bd6">
+        <view class="tpl-input tpl-title data-v-74cf6bd6">
+            <label class="label label-title data-v-74cf6bd6">提前还款计算</label>
+            <view class="share-btn__wrap _div data-v-74cf6bd6">
+                <button class="share2btn radius2left bg__FCF0D7 data-v-74cf6bd6" openType="share">
+                    <view class="_i data-v-74cf6bd6"></view>
+                    <label class="_span data-v-74cf6bd6">分享</label>
+                </button>
+            </view>
+        </view>
+    </view>
+    <view class="tpl-form-section data-v-74cf6bd6">
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">原贷款类型</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changeLoanType',['$event'] ] ] ] ]}}" range="{{loan_types}}" value="{{loan_type_index}}">
+                <text class="data-v-74cf6bd6">{{loan_types[loan_type_index]}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-1"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">原还款方式</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changePaymentType',['$event'] ] ] ] ]}}" range="{{payment_types}}" value="{{payment_type_index}}">
+                <text class="data-v-74cf6bd6">{{payment_types[payment_type_index]}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-2"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">原贷款金额</label>
+            <view class="content data-v-74cf6bd6">
+                <input bindblur="__e" bindinput="__e" class="data-v-74cf6bd6" data-event-opts="{{[ [ 'blur',[ [ 'checkBaseMoney',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','base_moneny','$event',[] ] ] ] ] ]}}" placeholder="{{is_business?'请输入商业贷款总额':'请输入原公积金贷款总额'}}" placeholderClass="hitsFont28" type="digit" value="{{base_moneny}}"></input>
+                <text class="unit data-v-74cf6bd6">万</text>
+            </view>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">原贷款年限</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changeLoanYear',['$event'] ] ] ] ]}}" range="{{loan_years}}" value="{{loan_year_index}}">
+                <text class="data-v-74cf6bd6">{{loan_years[loan_year_index]+'年'}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-3"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">首次还款时间</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changeStartDate',['$event'] ] ] ] ]}}" end="{{years[years.length-1]}}" fields="month" mode="date" start="{{years[0]}}" value="{{start_date}}">
+                <text class="data-v-74cf6bd6">{{start_date}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-4"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6" wx:if="{{is_business}}">
+            <label class="label data-v-74cf6bd6">原商贷利率</label>
+            <view bindtap="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'tap',[ [ 'toggleRatePicker',['$event'] ] ] ] ]}}">
+                <text class="data-v-74cf6bd6">{{rate_show+'%'}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-5"></fc-icon>
+            </view>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6" wx:else>
+            <label class="label data-v-74cf6bd6">原公积金利率</label>
+            <view bindtap="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'tap',[ [ 'toggleRatePicker',['$event'] ] ] ] ]}}">
+                <text class="data-v-74cf6bd6">{{rate_show+'%'}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-6"></fc-icon>
+            </view>
+        </view>
+    </view>
+    <view class="tpl-form-section data-v-74cf6bd6">
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">提前还款时间</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changePrepayDate',['$event'] ] ] ] ]}}" end="{{years[years.length-1]}}" fields="month" mode="date" start="{{years[0]}}" value="{{prepay_date}}">
+                <text class="data-v-74cf6bd6">{{prepay_date}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-7"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6">
+            <label class="label data-v-74cf6bd6">提前还款方式</label>
+            <picker bindchange="__e" class="content data-v-74cf6bd6" data-event-opts="{{[ [ 'change',[ [ 'changePrepaymentType',['$event'] ] ] ] ]}}" range="{{prepayment_types}}" value="{{prepayment_type_index}}">
+                <text class="data-v-74cf6bd6">{{prepayment_types[prepayment_type_index]}}</text>
+                <fc-icon bind:__l="__l" class="data-v-74cf6bd6" type="48_more_grey" vueId="1fe8b336-8"></fc-icon>
+            </picker>
+        </view>
+        <view class="tpl-input data-v-74cf6bd6" wx:if="{{is_pay_partition}}">
+            <label class="label data-v-74cf6bd6">提前还款金额</label>
+            <view class="content data-v-74cf6bd6">
+                <input bindblur="__e" bindinput="__e" class="data-v-74cf6bd6" data-event-opts="{{[ [ 'blur',[ [ 'checkPrepayment',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','prepayment_money','$event',[] ] ] ] ] ]}}" placeholder="请输入还款金额" placeholderClass="hitsFont28" type="digit" value="{{prepayment_money}}"></input>
+                <text class="unit data-v-74cf6bd6">万</text>
+            </view>
+        </view>
+    </view>
+    <button bindtap="__e" class="large-btn confirm-btn data-v-74cf6bd6" data-event-opts="{{[ [ 'tap',[ [ 'openResult',['$event'] ] ] ] ]}}">开始计算</button>
+    <rate-picker bind:__l="__l" bind:change="__e" bind:changePicker="__e" bind:hide="__e" class="data-v-74cf6bd6" data-event-opts="{{[ [ '^hide',[ ['toggleRatePicker'] ] ],[ '^changePicker',[ ['changeRateSelect'] ] ],[ '^change',[ ['changeRate'] ] ] ]}}" default_discount="{{default_discount}}" default_rate="{{default_rate}}" discount_opts="{{discount_opts}}" rate_opts="{{base_rates_opts}}" title="{{rate_picker_title}}" vueId="1fe8b336-9" wx:if="{{show_rate_picker}}"></rate-picker>
+    <page-wrap bind:__l="__l" class="data-v-74cf6bd6" hide_back_home="{{true}}" title="提前还款计算" vueId="1fe8b336-10"></page-wrap>
+</view>

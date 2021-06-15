@@ -1,0 +1,22 @@
+<view class="comments _div data-v-16a3d568">
+    <common-img bind:__l="__l" class="head-img data-v-16a3d568" src="{{head_img}}" vueId="08062d06-1"></common-img>
+    <view class="content _div data-v-16a3d568">
+        <view class="first _div data-v-16a3d568">
+            <view class="comment-name _div data-v-16a3d568">
+                <text class="tx data-v-16a3d568">{{nickname}}</text>
+                <view class="label _p data-v-16a3d568" wx:if="{{is_consultant}}">置业顾问</view>
+            </view>
+            <text class="comment-time data-v-16a3d568">{{item.receive_time}}</text>
+        </view>
+        <view class="desc _div data-v-16a3d568">
+            <text class="tx data-v-16a3d568">{{comment_cubject}}</text>
+            <view class="{{['icon _i data-v-16a3d568',comment_class]}}"></view>
+        </view>
+        <view class="reply-comment _p data-v-16a3d568" wx:if="{{show_comment}}">{{item.details.reply_comment.content}}</view>
+        <view class="my-comment _div data-v-16a3d568">
+            <view class="comment-conent _div data-v-16a3d568">
+                <label class="tx _span data-v-16a3d568">我的评论：</label>{{item.details.origin_comment.content+''}}</view>
+            <common-img bind:__l="__l" class="img data-v-16a3d568" src="{{img_url}}" vueId="08062d06-2" wx:if="{{show_comment_img}}"></common-img>
+        </view>
+    </view>
+</view>

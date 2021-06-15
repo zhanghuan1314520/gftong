@@ -1,0 +1,30 @@
+.header.data-v-5d439e64 {
+    padding: 21rpx 30rpx;
+    height: 211rpx;
+    background-color: #00ad82;
+}
+
+._h3.data-v-5d439e64 {
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #fff;
+}
+
+.address.data-v-5d439e64 {
+    margin-top: 18rpx;
+    font-size: 24rpx;
+    color: #ffc;
+}
+
+.address ._img.data-v-5d439e64 {
+    width: 26rpx;
+    height: 35rpx;
+}
+
+.circle-share.data-v-5d439e64 {
+    position: absolute;
+    top: 21rpx;
+    right: 43rpx;
+    background-color: #faa700;
+    box-shadow: 0 4rpx 8rpx 0 rgba(250,167,0,.4);
+}

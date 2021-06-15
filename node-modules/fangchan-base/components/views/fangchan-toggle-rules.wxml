@@ -1,0 +1,23 @@
+<view class="_div data-v-c7d917a0">
+    <view class="_header data-v-c7d917a0">
+        <view bindtap="__e" class="warn data-v-c7d917a0" data-event-opts="{{[ [ 'tap',[ [ 'toggleRule',['$event'] ] ] ] ]}}">
+            <text class="moreFont24 data-v-c7d917a0">{{title}}</text>
+            <fc-icon bind:__l="__l" class="data-v-c7d917a0" type="32_risk" vueId="772950e2-1"></fc-icon>
+        </view>
+    </view>
+    <view class="dlg-wrap _div data-v-c7d917a0" wx:if="{{show_dlg}}">
+        <view bindtap="__e" class="overlay _div data-v-c7d917a0" data-event-opts="{{[ [ 'tap',[ [ 'toggleRule',['$event'] ] ] ] ]}}"></view>
+        <view class="dlg _div data-v-c7d917a0">
+            <view class="content _div data-v-c7d917a0">
+                <view class="_h4 data-v-c7d917a0">评论规则及免责声明</view>
+                <view class="rules _div data-v-c7d917a0">
+                    <view class="rules-title _p data-v-c7d917a0">评论规则：</view>
+                    <text class="tip-content data-v-c7d917a0">{{comment_rules}}</text>
+                    <view class="rules-title rules-title-sec _p data-v-c7d917a0">免责声明：</view>
+                    <text class="tip-content data-v-c7d917a0">{{tip_content}}</text>
+                </view>
+            </view>
+            <navigator bindtap="__e" class="close _a data-v-c7d917a0" data-event-opts="{{[ [ 'tap',[ [ 'toggleRule',['$event'] ] ] ] ]}}">我知道了</navigator>
+        </view>
+    </view>
+</view>

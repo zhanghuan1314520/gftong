@@ -1,0 +1,68 @@
+<view class="search-page result-wrap _div">
+    <form bindsubmit="__e" class="search-wrap" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="search-input _div">
+            <image class="search _img" src="/static/img/search.png"></image>
+            <input autoFocus="true" bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'search',['$event'] ] ] ],[ 'focus',[ [ 'startSearch',['$event'] ] ] ],[ 'blur',[ [ 'endSearch',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','name','$event',[] ] ] ] ] ]}}" name="name" type="search" value="{{name}}"></input>
+            <view bindtap="__e" class="remove _div" data-event-opts="{{[ [ 'tap',[ [ 'resetName',['$event'] ] ] ] ]}}">
+                <image class="_img" src="/static/img/input-remove.png"></image>
+            </view>
+        </view>
+        <button class="search-btn" formType="submit">搜索</button>
+    </form>
+    <qr bind:__l="__l" search_tip="{{search_tip}}" vueId="613e301a-1"></qr>
+    <view class="search-hisotry-wrap _div" style="{{'display:'+(showHistory?'block':'none')+';'}}">
+        <view class="header _div">
+            <view class="_h3">历史搜索</view>
+            <image bindtap="__e" class="_img" data-event-opts="{{[ [ 'tap',[ [ 'removeHisotry',['$event'] ] ] ] ]}}" src="/static/img/delete.png"></image>
+        </view>
+        <view class="history-list _ul">
+            <view bindtap="__e" class="_li" data-event-opts="{{[ [ 'tap',[ [ 'selectHistory',['$event'] ] ] ] ]}}" data-name="{{item}}" wx:for="{{history}}" wx:for-index="i" wx:key="i">{{''+item+''}}</view>
+        </view>
+    </view>
+    <view class="result-list _div">
+        <view class="result _div" wx:for="{{items}}" wx:for-item="result" wx:key="index">
+            <button bindtap="__e" class="small-btn add" data-event-opts="{{[ [ 'tap',[ [ 'showAddDlg',['$event'] ] ] ] ]}}" data-index="{{index}}">添加</button>
+            <view class="row _div" wx:if="{{result.ln_number}}">
+                <label class="label">公证摇号编码：</label>
+                <label class="_span">{{result.ln_number}}</label>
+            </view>
+            <view class="row _div">
+                <label class="label">姓名：</label>
+                <label class="_span">
+                    <view class="_div" wx:for="{{result.realnames}}" wx:for-index="i" wx:for-item="name" wx:key="i">{{''+name+''}}</view>
+                </label>
+            </view>
+            <view class="row _div">
+                <label class="label">身份证号：</label>
+                <label class="_span">
+                    <view class="_div" wx:for="{{result.id_card_numbers}}" wx:for-index="j" wx:for-item="num" wx:key="j">{{''+num+''}}</view>
+                </label>
+            </view>
+            <view class="row _div" wx:if="{{result.register_number}}">
+                <label class="label">登记号：</label>
+                <label class="_span">{{''+result.register_number+''}}</label>
+            </view>
+            <image class="checked _img" src="/static/img/recheck.png"></image>
+        </view>
+    </view>
+    <view class="_div" style="{{'display:'+(loading?'block':'none')+';'}}">
+        <loading bind:__l="__l" vueId="613e301a-2"></loading>
+    </view>
+    <view class="no-more _div" style="{{'display:'+(!loading&&no_more?'block':'none')+';'}}">没有更多了</view>
+    <page-wrap bind:__l="__l" title="搜索登记公示" vueId="613e301a-3"></page-wrap>
+    <view class="_div" wx:if="{{show_add}}">
+        <view bindtap="__e" class="overlay _div" data-event-opts="{{[ [ 'tap',[ [ 'toggleShowAdd',['$event'] ] ] ] ]}}"></view>
+        <view class="add-dlg _div">
+            <view class="header _div">添加我的号码</view>
+            <view class="content _div">
+                <view class="_p">是否将此编码添加到我的号码中？</view>
+                <view class="_p">后续查看该结果更方便</view>
+            </view>
+            <view class="bottom _div">
+                <button bindtap="__e" class="cancel-btn" data-event-opts="{{[ [ 'tap',[ [ 'toggleShowAdd',['$event'] ] ] ] ]}}">取消</button>
+                <button bindtap="__e" class="confirm-btn" data-event-opts="{{[ [ 'tap',[ [ 'confirmAdd',['$event'] ] ] ] ]}}">确定</button>
+            </view>
+        </view>
+    </view>
+    <build-dialog bind:__l="__l" bind:onClose="__e" data-event-opts="{{[ [ '^onClose',[ ['onClose'] ] ] ]}}" vueId="613e301a-4" wx:if="{{show_dialog}}"></build-dialog>
+</view>

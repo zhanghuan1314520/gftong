@@ -1,0 +1,4 @@
+<navigator catchtap="__e" class="{{[ 'btn _a data-v-5acdea10',[show?'disabled':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleExpression'] ] ] ] ]}}">
+    <image class="img data-v-5acdea10" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/expression-i.png"></image>
+    <text class="data-v-5acdea10">常用语</text>
+</navigator>

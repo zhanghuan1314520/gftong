@@ -1,0 +1,11 @@
+.page.data-v-6a73a85c {
+    background-color: #fff;
+}
+
+.top-header.data-v-6a73a85c {
+    padding: 40rpx 32rpx 80rpx;
+}
+
+.top-header .range.data-v-6a73a85c {
+    margin-bottom: 16px;
+}

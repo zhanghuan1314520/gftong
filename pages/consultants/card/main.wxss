@@ -1,0 +1,105 @@
+.page.data-v-caa4c81e {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 150rpx;
+}
+
+.card-wrap.data-v-caa4c81e {
+    padding: 30rpx 0 0;
+    background-color: #fff;
+}
+
+.shadow-button.data-v-caa4c81e {
+    display: inline-block;
+}
+
+.footer-btns.data-v-caa4c81e {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: calc(128rpx + constant(safe-area-inset-bottom));
+    height: calc(128rpx + env(safe-area-inset-bottom));
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,0,0,.5);
+    z-index: 999;
+}
+
+.footer-btns .bottom-btn.data-v-caa4c81e {
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+    padding: 0;
+    margin: 0 21rpx 0 0;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+    border-radius: 8rpx;
+}
+
+.footer-btns .bottom-btn.data-v-caa4c81e:last-child {
+    margin: 0;
+}
+
+.footer-btns .orange.data-v-caa4c81e {
+    background-image: linear-gradient(135deg,#fac532,#fa9600);
+}
+
+.footer-btns .green.data-v-caa4c81e {
+    background-image: linear-gradient(135deg,#3dccb9,#00c795);
+}
+
+.footer-btns .blue.data-v-caa4c81e {
+    background-image: linear-gradient(-48deg,#0963eb,#53a4f5);
+}
+
+.medals.data-v-caa4c81e {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin-left: 8rpx;
+}
+
+.top-section.data-v-caa4c81e {
+    background-color: #fff;
+}
+
+.excellent-consultants-auth.data-v-caa4c81e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 690rpx;
+    height: 85rpx;
+    margin: 40rpx auto 48rpx;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 8rpx 16rpx 0 hsla(0,0%,87.5%,.36);
+    border-radius: 8rpx;
+}
+
+.excellent-consultants-auth image.data-v-caa4c81e {
+    width: 657rpx;
+    height: 28rpx;
+}

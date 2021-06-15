@@ -1,0 +1,26 @@
+<view class="{{[ 'dev-activity _div data-v-56c0acba',[show_pop_box?'devhide':''] ]}}">
+    <view class="dev-banner _div data-v-56c0acba">
+        <view class="top-tools _div data-v-56c0acba">
+            <view bindtap="__e" class="rules _div data-v-56c0acba" data-event-opts="{{[ [ 'tap',[ [ 'tapRules',['$event'] ] ] ] ]}}">
+                <text class="data-v-56c0acba">评选</text>
+                <text class="data-v-56c0acba">规则</text>
+            </view>
+            <button class="share-wrap data-v-56c0acba" openType="share">
+                <fc-icon bind:__l="__l" class="data-v-56c0acba" type="48_share_white" vueId="3bad4622-1"></fc-icon>
+                <text class="tx data-v-56c0acba">分享</text>
+            </button>
+        </view>
+        <text class="activity-time data-v-56c0acba">数据统计时间: 2020年1月1日00:00-11月30日23:59</text>
+        <view class="{{[ 'tabs _div data-v-56c0acba',[tabs_fixed_top?'fixed':''] ]}}">
+            <tabs bind:__l="__l" bind:changeTab="__e" class="data-v-56c0acba" data-event-opts="{{[ [ '^changeTab',[ ['changeTab'] ] ] ]}}" selectTab="{{selectTab}}" tabs="{{tabs}}" vueId="3bad4622-2"></tabs>
+        </view>
+    </view>
+    <view class="dev-content _div data-v-56c0acba">
+        <view class="{{['items _div data-v-56c0acba',item.type]}}" wx:for="{{tabs}}" wx:for-index="__i0__" wx:key="type">
+            <item bind:__l="__l" class="data-v-56c0acba" item="{{item}}" vueId="{{'3bad4622-3-'+__i0__}}"></item>
+        </view>
+    </view>
+    <view class="statement _div data-v-56c0acba">{{tips}}</view>
+    <pop-box bind:__l="__l" bind:hide="__e" class="data-v-56c0acba" data-event-opts="{{[ [ '^hide',[ ['hide'] ] ] ]}}" rules="{{rules}}" show="{{show_pop_box}}" vueId="3bad4622-4"></pop-box>
+    <page-wrap bind:__l="__l" class="data-v-56c0acba" hide_back_home="{{true}}" title="楼盘年度热榜" vueId="3bad4622-5"></page-wrap>
+</view>

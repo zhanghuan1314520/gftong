@@ -1,0 +1,71 @@
+.like_share.data-v-2ed6ad43 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 40rpx 51rpx 40rpx 62rpx;
+    background-color: #fff;
+}
+
+.like_share>button.data-v-2ed6ad43 {
+    position: relative;
+    display: inline-block;
+    height: 115rpx;
+    margin: 0;
+    text-align: center;
+    border-radius: 8rpx;
+    overflow: visible;
+    background-color: transparent;
+}
+
+.like_share .icon.data-v-2ed6ad43 {
+    width: 74rpx;
+    height: 74rpx;
+    margin: 0 auto;
+}
+
+.like_share ._p.data-v-2ed6ad43 {
+    display: block;
+    margin-top: 8rpx;
+    color: #666;
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.unlike.data-v-2ed6ad43 {
+    background-position: 0rpx 0;
+}
+
+.card.data-v-2ed6ad43,.unlike.data-v-2ed6ad43 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/icons.png);
+    background-size: 510rpx 74rpx;
+}
+
+.card.data-v-2ed6ad43 {
+    background-position: -109rpx 0;
+}
+
+.share.data-v-2ed6ad43 {
+    background-position: -218rpx 0;
+}
+
+.qr.data-v-2ed6ad43,.share.data-v-2ed6ad43 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/icons.png);
+    background-size: 510rpx 74rpx;
+}
+
+.qr.data-v-2ed6ad43 {
+    background-position: -327rpx 0;
+}
+
+.like.data-v-2ed6ad43 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/icons.png);
+    background-size: 510rpx 74rpx;
+    background-position: -436rpx 0;
+}

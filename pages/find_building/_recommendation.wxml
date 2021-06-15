@@ -1,0 +1,5 @@
+<view class="_div">
+    <view class="{{['_div',item.class]}}" data-index="{{i}}" data-item="{{item}}" wx:for="{{list}}" wx:for-index="i" wx:key="id">
+        <building-item bind:__l="__l" item="{{item}}" vueId="{{'f87349a8-1-'+i}}"></building-item>
+    </view>
+</view>

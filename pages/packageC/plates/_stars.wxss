@@ -1,0 +1,30 @@
+.wrap.data-v-323c8b91 {
+    position: relative;
+}
+
+.stars.data-v-323c8b91,.wrap.data-v-323c8b91 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 147rpx;
+    height: 28rpx;
+}
+
+._img.data-v-323c8b91 {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.active.data-v-323c8b91 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}

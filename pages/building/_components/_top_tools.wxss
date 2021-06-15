@@ -1,0 +1,116 @@
+.icon.data-v-42d25662 {
+    width: 20%;
+    height: 120rpx;
+    text-align: center;
+    position: relative;
+}
+
+.icon ._i.data-v-42d25662,.icon ._span.data-v-42d25662 {
+    display: block;
+    margin: 0 auto;
+}
+
+.icon ._span.data-v-42d25662 {
+    height: 33rpx;
+    font-size: 24rpx;
+    color: #444;
+}
+
+.icon ._i.data-v-42d25662 {
+    width: 56rpx;
+    height: 56rpx;
+    background-size: 632rpx 56rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/top-tab-icons.png);
+    margin: 10rpx auto 0;
+}
+
+.icon .building-comment.data-v-42d25662 {
+    background-position: 0rpx 0;
+}
+
+.icon .web720.data-v-42d25662 {
+    background-position: -64rpx 0;
+}
+
+.icon .planar.data-v-42d25662 {
+    background-position: -128rpx 0;
+}
+
+.icon .vr.data-v-42d25662 {
+    background-position: -192rpx 0;
+}
+
+.icon .video.data-v-42d25662 {
+    background-position: -256rpx 0;
+}
+
+.icon .audios.data-v-42d25662 {
+    background-position: -320rpx 0;
+}
+
+.icon .consultant.data-v-42d25662 {
+    background-position: -384rpx 0;
+}
+
+.icon .mortgage.data-v-42d25662 {
+    background-position: -448rpx 0;
+}
+
+.icon .material.data-v-42d25662 {
+    background-position: -512rpx 0;
+}
+
+.icon .qualification.data-v-42d25662 {
+    background-position: -576rpx 0;
+}
+
+.icon .history.data-v-42d25662 {
+    background-size: 56rpx 56rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/56_history.png);
+}
+
+.icon .taxes.data-v-42d25662 {
+    background-size: 56rpx 56rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/56_tax.png);
+}
+
+.icon .land_trade.data-v-42d25662 {
+    background-size: 56rpx 56rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/56_tpxx.png);
+}
+
+.tabs-second.data-v-42d25662 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 120rpx;
+    margin-top: 20rpx;
+    overflow: hidden;
+}
+
+.red-packet.data-v-42d25662 {
+    width: 76rpx;
+    height: 34rpx;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/get-red.png) no-repeat 50%;
+    background-size: 76rpx 34rpx;
+    position: absolute;
+    top: 0;
+    right: -22rpx;
+}
+
+.new.data-v-42d25662 {
+    width: 46rpx;
+    height: 24rpx;
+    border-radius: 12rpx 12rpx 12rpx 0;
+    background-image: linear-gradient(136deg,#fe776b,#fe4747);
+    box-shadow: 0 2rpx 4rpx 0 rgba(254,71,71,.3);
+    position: absolute;
+    top: 0;
+    left: calc(50% + 12rpx);
+    color: #fff;
+    font-size: 16rpx;
+    text-align: center;
+    line-height: 24rpx;
+}

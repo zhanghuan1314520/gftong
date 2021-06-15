@@ -1,0 +1,33 @@
+<view class="page-box _div data-v-3cca96b1">
+    <view class="page _div data-v-3cca96b1">
+        <view class="_div data-v-3cca96b1" style="{{'display:'+(status==='start'?'block':'none')+';'}}">
+            <start bind:__l="__l" bind:next="__e" class="data-v-3cca96b1" data-event-opts="{{[ [ '^next',[ ['goDoing'] ] ] ]}}" verify_type="{{verify_type}}" vueId="2ce5ec69-1"></start>
+        </view>
+        <doing bind:__l="__l" bind:back="__e" bind:next="__e" class="data-v-3cca96b1" data-event-opts="{{[ [ '^next',[ ['goDone'] ] ],[ '^back',[ ['goStart'] ] ] ]}}" verify_type="{{verify_type}}" vueId="2ce5ec69-2" wx:if="{{status==='doing'}}"></doing>
+        <view class="_div data-v-3cca96b1" style="{{'display:'+(status==='done'?'block':'none')+';'}}">
+            <done bind:__l="__l" bind:goStart="__e" class="data-v-3cca96b1" data-event-opts="{{[ [ '^goStart',[ ['goStart'] ] ] ]}}" headimgurl="{{headimgurl}}" questions="{{questions}}" result="{{result}}" verify_type="{{verify_type}}" vueId="2ce5ec69-3"></done>
+        </view>
+        <page-wrap bind:__l="__l" class="data-v-3cca96b1" title="{{title}}" vueId="2ce5ec69-4"></page-wrap>
+    </view>
+    <view class="footer-booth adapt_bottom_origin data-v-3cca96b1" wx:if="{{!loadingCurrentConsultant&&showCurrentConsultant}}">
+        <ui-consultant-booth bind:__l="__l" class="data-v-3cca96b1" consultant="{{currentConsultant}}" pos="分享" vueId="2ce5ec69-5"></ui-consultant-booth>
+    </view>
+    <view class="footer-booth data-v-3cca96b1" wx:if="{{footerCardType==='booth'&&boothIndex>-1&&!loadingCurrentConsultant&&!showCurrentConsultant}}">
+        <ui-consultant-booth bind:__l="__l" class="data-v-3cca96b1" consultant="{{consultant_today_rankings[boothIndex]}}" pos="{{verify_type}}" vueId="2ce5ec69-6"></ui-consultant-booth>
+    </view>
+    <view class="sticky sticky-footer sticky-footer--contact data-v-3cca96b1" wx:if="{{footerCardType==='contact'&&!loadingCurrentConsultant&&!showCurrentConsultant}}">
+        <view class="data-v-3cca96b1">
+            <view class="account data-v-3cca96b1">
+                <view class="account-headimg data-v-3cca96b1">
+                    <image class="_img data-v-3cca96b1" src="{{current_personal_account.headimg}}"></image>
+                </view>
+                <view class="account-body data-v-3cca96b1">
+                    <view class="account-tit data-v-3cca96b1">{{contactSendMessage.personal.title}}</view>
+                    <view class="account-info data-v-3cca96b1">{{contactSendMessage.personal.content}}</view>
+                </view>
+            </view>
+            <identify-btn bind:__l="__l" class="data-v-3cca96b1" text="{{contactSendMessage.personal.btn_text}}" vueId="2ce5ec69-7" wx:if="{{$root.m0}}"></identify-btn>
+            <button class="data-v-3cca96b1" openType="contact" sendMessageImg="{{contactSendMessage.personal.msg_face}}" sendMessagePath="{{'/pages/check_condition/main?mediasourceid='+current_personal_account.id}}" showMessageCard="{{true}}" wx:else>{{contactSendMessage.personal.btn_text}}</button>
+        </view>
+    </view>
+</view>

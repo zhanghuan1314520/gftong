@@ -1,0 +1,11 @@
+.msg-list.data-v-23edec10 {
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding-bottom: 60rpx;
+}
+
+.msg-list .tabs.data-v-23edec10 {
+    position: sticky;
+    top: 0;
+}

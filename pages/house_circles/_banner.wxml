@@ -1,0 +1,16 @@
+<view class="{{['swiper-banner-wrap _div data-v-1b37d3cd',festival?'festival':'']}}">
+    <scroll-view class="banner data-v-1b37d3cd" id="feed_swiper" scrollWithAnimation="true" scrollX="{{true}}" wx:if="{{!loading}}">
+        <view bindtap="__e" class="item card data-v-1b37d3cd" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$0'],[ [ ['topics','',i,'id'] ] ] ] ] ] ]}}" itemId="{{topic.id}}" wx:for="{{topics}}" wx:for-index="i" wx:for-item="topic" wx:key="i">
+            <view class="row top _div data-v-1b37d3cd">
+                <label class="_span data-v-1b37d3cd">{{''+(i==0?'今日话题':'往日热议')+''}}</label>
+                <label class="_span data-v-1b37d3cd">{{'阅读 '+topic.view_count}}</label>
+            </view>
+            <view class="_h3 data-v-1b37d3cd">{{topic.title}}</view>
+            <view class="row _div data-v-1b37d3cd">
+                <view class="btn _div data-v-1b37d3cd">参与话题</view>
+                <view class="_div data-v-1b37d3cd">{{''+topic.comment_count+'位房友参与讨论'}}</view>
+            </view>
+        </view>
+        <navigator class="item more data-v-1b37d3cd" url="/pages/packageA/community_topics/main">全部话题</navigator>
+    </scroll-view>
+</view>

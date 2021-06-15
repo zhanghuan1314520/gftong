@@ -1,0 +1,13 @@
+<scroll-view class="{{['list data-v-d94bdf12',classname]}}" scrollIntoView="{{'item_'+selected_index}}" scrollY="{{true}}">
+    <view class="top data-v-d94bdf12" id="item_-1"></view>
+    <view bindtap="__e" class="{{['poi-item data-v-d94bdf12',selected_index===i?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',[i] ] ] ] ]}}" id="{{'item_'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+        <view class="main data-v-d94bdf12">
+            <view class="left data-v-d94bdf12">{{''+item.name+''}}</view>
+            <view class="right data-v-d94bdf12">
+                <text class="addr data-v-d94bdf12"></text>
+                <text class="data-v-d94bdf12">{{item.distance}}</text>
+            </view>
+        </view>
+        <view class="desc data-v-d94bdf12">{{''+item.address+''}}</view>
+    </view>
+</scroll-view>

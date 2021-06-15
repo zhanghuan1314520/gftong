@@ -1,0 +1,45 @@
+<button bindgetuserinfo="__e" class="{{['consult-card-item data-v-bd4a857a',consultant.consultant_level]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCardFromExcellenct',['$event'] ] ] ] ]}}" data-id="{{consultant.consultant_id}}" id="{{consultant.consultant_id}}" openType="getUserInfo">
+    <view class="_header data-v-bd4a857a">
+        <view class="info _div data-v-bd4a857a">
+            <view class="headimg consultant-headimg _div data-v-bd4a857a">
+                <common-img bind:__l="__l" class="img data-v-bd4a857a" lazyLoad="{{true}}" src="{{consultant.consultant_headimgurl}}" vueId="6b04c824-1"></common-img>
+                <view class="consultant-headimg-tag data-v-bd4a857a" wx:if="{{consultant.honour_title}}">{{consultant.honour_title}}</view>
+            </view>
+            <view class="desc _div data-v-bd4a857a">
+                <view class="_h3 data-v-bd4a857a">
+                    <label class="consultant-name _span data-v-bd4a857a">{{consultant.consultant_name}}</label>
+                    <view class="consultant-medals _div data-v-bd4a857a">
+                        <label class="card-metal _span data-v-bd4a857a"></label>
+                        <label class="excellect _span data-v-bd4a857a" wx:if="{{consultant.excellect_obtain}}"></label>
+                        <label class="perfessional _span data-v-bd4a857a" wx:if="{{consultant.perfessional_obtain}}"></label>
+                    </view>
+                </view>
+                <view class="building _p data-v-bd4a857a">{{'楼盘: '+consultant.building_name}}</view>
+            </view>
+        </view>
+        <view class="tools _div data-v-bd4a857a">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" class="data-v-bd4a857a" classname="shadow-button" data-event-opts="{{[ [ '^tap',[ [ '',['$event'] ] ] ],[ '^success',[ [ 'onChat',['$0'],['consultant.consultant_id'] ] ] ] ]}}" failTip="需要认证用户信息才可以咨询置业顾问" forceAuth="{{true}}" vueId="6b04c824-2" vueSlots="{{['default']}}">
+                <view class="common-btn consult-btn _div data-v-bd4a857a">
+                    <fc-icon bind:__l="__l" class="down data-v-bd4a857a" type="48_consult_green" vueId="{{'6b04c824-3'+','+'6b04c824-2'}}"></fc-icon>
+                </view>
+            </fangchan-auth-user>
+            <button bindgetuserinfo="__e" catchtap="__e" class="common-btn call-btn data-v-bd4a857a" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ],[ 'getuserinfo',[ [ 'onCall',['$event'] ] ] ] ]}}" data-id="{{consultant.consultant_id}}" openType="getUserInfo">
+                <fc-icon bind:__l="__l" class="down data-v-bd4a857a" type="48_phone_green" vueId="6b04c824-4"></fc-icon>
+            </button>
+        </view>
+    </view>
+    <view class="_footer data-v-bd4a857a">
+        <view class="view-data _div data-v-bd4a857a">
+            <label class="_span data-v-bd4a857a">浏览量</label>
+            <label class="num _span data-v-bd4a857a">{{consultant.show_times}}</label>
+        </view>
+        <view class="view-data _div data-v-bd4a857a">
+            <label class="_span data-v-bd4a857a">活跃度</label>
+            <label class="num _span data-v-bd4a857a">{{consultant.last_period_obtained_score}}</label>
+        </view>
+        <view class="view-data _div data-v-bd4a857a">
+            <label class="_span data-v-bd4a857a">点赞数</label>
+            <label class="num _span data-v-bd4a857a">{{consultant.like_count}}</label>
+        </view>
+    </view>
+</button>

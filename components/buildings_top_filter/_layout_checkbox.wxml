@@ -1,0 +1,3 @@
+<view class="checkbox-wrap _div">
+    <view bindtap="__e" class="{{[ 'checkbox _div',[opt.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$0',i],[ [ ['opts','',i,'value'] ] ] ] ] ] ]}}" wx:for="{{opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.value+''}}</view>
+</view>

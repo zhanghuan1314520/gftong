@@ -1,0 +1,34 @@
+.today-opening.data-v-6ec2d7e9 {
+    font-size: 36rpx;
+    color: #fff;
+    background-color: #e63f29;
+    background-image: linear-gradient(127deg,#ff7593 11%,#e64565);
+    position: relative;
+}
+
+.registering.data-v-6ec2d7e9,.today-opening.data-v-6ec2d7e9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 80rpx;
+}
+
+.registering.data-v-6ec2d7e9 {
+    background-color: #fef2d0;
+    color: #f86e21;
+    font-size: 28rpx;
+}
+
+.registering ._img.data-v-6ec2d7e9 {
+    width: 31rpx;
+    height: 32rpx;
+    margin-right: 12rpx;
+}

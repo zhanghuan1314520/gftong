@@ -1,0 +1,27 @@
+<view class="{{['list-wrap data-v-60de0728',class_name]}}" style="{{'height:'+height+';'}}">
+    <banner bind:__l="__l" class="data-v-60de0728" vueId="5d6f48fa-1" wx:if="{{show_banner}}"></banner>
+    <view bindtouchend="__e" bindtouchmove="__e" bindtouchstart="__e" class="top-section data-v-60de0728" data-event-opts="{{[ [ 'touchstart',[ [ 'touchstart',['$event'] ] ] ],[ 'touchmove',[ [ 'touchmove',['$event'] ] ] ],[ 'touchend',[ [ 'touchend',['$event'] ] ] ] ]}}">
+        <view bindtap="__e" class="top-tool data-v-60de0728" data-event-opts="{{[ [ 'tap',[ [ 'toggleSize',['$event'] ] ] ] ]}}">
+            <view class="top-tool-i data-v-60de0728"></view>
+        </view>
+        <view class="list-header data-v-60de0728">
+            <view class="left data-v-60de0728">
+                <view class="data-v-60de0728">{{tip_title}}</view>
+                <view class="tip data-v-60de0728">
+                    <view class="warning data-v-60de0728"></view>
+                    <text class="data-v-60de0728">{{tip_text}}</text>
+                </view>
+            </view>
+            <image bindtap="__e" class="subscribe data-v-60de0728" data-event-opts="{{[ [ 'tap',[ [ 'subscribe',['$event'] ] ] ] ]}}" src="{{btn_url}}"></image>
+        </view>
+    </view>
+    <view class="list data-v-60de0728">
+        <view bindtap="__e" class="item data-v-60de0728" data-event-opts="{{[ [ 'tap',[ [ 'selectItem',[i] ] ] ] ]}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="left data-v-60de0728">
+                <text class="data-v-60de0728">{{item.name}}</text>
+                <view class="today data-v-60de0728" wx:if="{{item.is_today}}"></view>
+            </view>
+            <text class="right data-v-60de0728">{{item.distance}}</text>
+        </view>
+    </view>
+</view>

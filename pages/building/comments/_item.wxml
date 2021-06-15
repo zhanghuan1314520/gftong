@@ -1,0 +1,78 @@
+<view bindtap="__e" class="comment _div" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" classname="headimg-wrap" data-event-opts="{{[ [ '^success',[ [ 'onConsult',['$0'],['comment.consultant_id'] ] ] ],[ '^tap',[ [ '',['$event'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="0a77ecbd-1" vueSlots="{{['default']}}" wx:if="{{comment.consultant_id}}">
+        <image class="headimg _img" lazyLoad="{{true}}" src="{{comment.headimgurl}}"></image>
+    </fangchan-auth-user>
+    <button catchtap="__e" class="headimg-wrap" data-event-opts="{{[ [ 'tap',[ [ 'openBigV',['$event'] ] ] ] ]}}" data-id="{{comment.consultant_id}}" data-waid="{{comment.weixin_account_id}}" openType="getUserInfo" wx:else>
+        <image class="headimg _img" lazyLoad="{{true}}" src="{{comment.headimgurl}}"></image>
+        <text class="big-v" wx:if="{{comment.weixin_account_id}}"></text>
+    </button>
+    <view class="right _div">
+        <view class="name-wrap _div">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'onConsult',['$0'],['comment.consultant_id'] ] ] ],[ '^tap',[ [ '',['$event'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="0a77ecbd-2" vueSlots="{{['default']}}" wx:if="{{comment.consultant_id}}">
+                <label class="{{['nickname _span',comment.consultant_id||comment.weixin_account_id?'consult':'',comment.is_official?'official':'']}}">{{comment.nickname||'匿名用户'}}</label>
+            </fangchan-auth-user>
+            <button catchtap="__e" class="{{['nickname',comment.consultant_id||comment.weixin_account_id?'consult':'',comment.is_official?'official':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'openBigV',['$event'] ] ] ] ]}}" data-waid="{{comment.weixin_account_id}}" wx:else>
+                <label class="_span">{{comment.nickname||'匿名用户'}}</label>
+            </button>
+            <view class="others-wrap">
+                <view catchtap="__e" class="footer-right" data-event-opts="{{[ [ 'tap',[ [ 'stopClick',['$event'] ] ] ] ]}}">
+                    <view bindtap="__e" class="{{[ 'like-btn moreFont24',[comment.is_liked?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onLike',['$event'] ] ] ] ]}}" data-id="{{comment.id}}" data-index="{{index}}">
+                        <fc-icon bind:__l="__l" type="{{comment.is_liked?'48_like_actions':'48_like_normal'}}" vueId="0a77ecbd-3"></fc-icon>
+                        <text>{{like_count}}</text>
+                    </view>
+                    <button bindgetuserinfo="__e" class="comment-btn shadow-button" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goReply',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:if="{{comment.can_reply}}">
+                        <fc-icon bind:__l="__l" type="48_comment_small" vueId="0a77ecbd-4"></fc-icon>
+                    </button>
+                </view>
+            </view>
+        </view>
+        <view class="{{[ 'content _p',[show_comment_fold&&is_fold_comment?'fold':''] ]}}">{{comment.content}}</view>
+        <view class="footer">
+            <text class="noteFont22">{{comment.created_date}}</text>
+            <view catchtap="__e" class="fold-warp" data-event-opts="{{[ [ 'tap',[ [ 'toogleComment',['$event'] ] ] ] ]}}" wx:if="{{show_comment_fold}}">
+                <text class="fold-text">{{''+(is_fold_comment?'展开':'收起')+''}}</text>
+                <view class="{{[ 'triangle-icon _i',[!is_fold_comment?'up':''] ]}}"></view>
+            </view>
+        </view>
+        <view class="content-img" wx:if="{{comment.photos_urls.length}}">
+            <image catchtap="__e" class="_img" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" mode="aspectFill" src="{{comment.photos_urls[0]}}"></image>
+        </view>
+        <weixin-username bind:__l="__l" name="{{comment.official_wx_username}}" vueId="0a77ecbd-5"></weixin-username>
+        <view catchtap="__e" class="reply-wrap _div" data-event-opts="{{[ [ 'tap',[ [ 'stopClick',['$event'] ] ] ] ]}}" wx:if="{{comment.reply_comments.total_count}}">
+            <view class="reply-item _div" wx:for="{{show_reply}}" wx:for-index="j" wx:key="j">
+                <button bindgetuserinfo="__e" class="reply" data-event-opts="{{[ [ 'getuserinfo',[ [ 'replyUser',['$event'] ] ] ] ]}}" data-index="{{j}}" openType="getUserInfo">
+                    <image class="head-img _img" lazyLoad="{{true}}" src="{{item.headimgurl}}"></image>
+                    <view class="right _div">
+                        <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'onConsult',['$0'],[ [ ['show_reply','',j,'consultant_id'] ] ] ] ] ],[ '^tap',[ [ '',['$event'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="{{'0a77ecbd-6-'+j}}" vueSlots="{{['default']}}" wx:if="{{item.consultant_id}}">
+                            <view class="nickname _div">
+                                <label class="active _span">{{item.nickname}}</label>
+                                <navigator class="contact _a">点击联系</navigator>
+                                <label class="_span" wx:if="{{item.parent_username}}">
+                                    <view class="_i">回复</view>{{item.parent_username}}</label>
+                            </view>
+                        </fangchan-auth-user>
+                        <block wx:else>
+                            <button catchtap="__e" class="nickname" data-event-opts="{{[ [ 'tap',[ [ 'openBigV',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" data-waid="{{item.weixin_account_id}}" wx:if="{{item.weixin_account_id}}">
+                                <label class="active _span">{{item.nickname}}</label>
+                                <navigator class="contact _a">点击联系</navigator>
+                                <label class="_span" wx:if="{{item.parent_username}}">
+                                    <view class="_i">回复</view>{{item.parent_username}}</label>
+                            </button>
+                            <label class="nickname _span" wx:else>
+                                <label class="_span">{{item.nickname}}</label>
+                                <label class="_span" wx:if="{{item.parent_username}}">
+                                    <view class="_i">回复</view>{{item.parent_username}}</label>
+                            </label>
+                        </block>
+                        <view class="{{[ 'reply-content _p',[item.show_reply_fold&&item.is_fold_reply?'fold':''] ]}}">{{item.content}}</view>
+                        <view catchtap="__e" class="fold-warp fold-item" data-event-opts="{{[ [ 'tap',[ [ 'toogleReply',[j] ] ] ] ]}}" wx:if="{{item.show_reply_fold}}">
+                            <text class="fold-text">{{''+(item.is_fold_reply?'展开':'收起')+''}}</text>
+                            <view class="{{[ 'triangle-icon _i',[!item.is_fold_reply?'up':''] ]}}"></view>
+                        </view>
+                    </view>
+                </button>
+            </view>
+            <navigator bindtap="__e" class="link _a" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" wx:if="{{!show_all_reply&&comment.reply_comments.total_count>3}}">{{'查看全部'+comment.reply_comments.total_count+'条回复'}}</navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="tag-filters feeds _div data-v-a48f90d6">
+    <view bindtap="__e" class="{{[ 'item _div data-v-a48f90d6',[tag.selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',[i] ] ] ] ]}}" data-tag="{{tag}}" wx:for="{{tags_list}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{''+tag.text+''}}</view>
+</view>

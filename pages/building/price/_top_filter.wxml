@@ -1,0 +1,36 @@
+<view class="_div data-v-07556f9a">
+    <view class="top-filter _div data-v-07556f9a">
+        <view bindtap="__e" class="picker _div data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'toggleBlockPicker',['$event'] ] ] ] ]}}">
+            <label class="_span data-v-07556f9a">{{block_no?block_no:'楼栋'}}</label>
+            <image class="_img data-v-07556f9a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon.png"></image>
+        </view>
+        <view bindtap="__e" class="picker _div data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'toggleUnitPicker',['$event'] ] ] ] ]}}" wx:if="{{units.length&&block_no}}">
+            <label class="_span data-v-07556f9a">{{unit?unit:'单元'}}</label>
+            <image class="_img data-v-07556f9a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon.png"></image>
+        </view>
+        <view bindtap="__e" class="picker _div data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'toggleDecoratePicker',['$event'] ] ] ] ]}}" wx:if="{{decoration_types&&decoration_types.length>1}}">
+            <label class="_span data-v-07556f9a">{{decoration_type||'房源'}}</label>
+            <image class="_img data-v-07556f9a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon.png"></image>
+        </view>
+        <view bindtap="__e" class="picker _div data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'toggleDecoratePrice',['$event'] ] ] ] ]}}" wx:if="{{house_decorate_prices&&house_decorate_prices.length&&decoration_type!='清水'}}">
+            <label class="_span data-v-07556f9a">{{selected_price!==''?'装修价格'+house_decorate_prices[selected_price].value+'元/㎡':'装修价格'}}</label>
+            <image class="_img data-v-07556f9a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon.png"></image>
+            <view class="tooltip-arr _i data-v-07556f9a" wx:if="{{show_decorate_tip}}"></view>
+        </view>
+        <view bindtap="__e" class="picker _div data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'toggleOrderPicker',['$event'] ] ] ] ]}}">
+            <label class="_span data-v-07556f9a">{{selected_order!==''?orders[selected_order].text:'排序'}}</label>
+            <image class="_img data-v-07556f9a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/down-icon.png"></image>
+        </view>
+    </view>
+    <view class="tooltip _div data-v-07556f9a" wx:if="{{show_decorate_tip&&house_decorate_prices&&house_decorate_prices.length&&decoration_type!='清水'}}">
+        <navigator bindtap="__e" class="close-btn _a data-v-07556f9a" data-event-opts="{{[ [ 'tap',[ [ 'hideDecorateTip',['$event'] ] ] ] ]}}">
+            <image class="_img data-v-07556f9a" src="/static/img/close-btn.png"></image>
+        </navigator>
+        <view class="_p data-v-07556f9a">由于不同户型对应装修风格和价格不一样，需要您选择并确认本户型对应的装修价格。</view>
+    </view>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-07556f9a" data-event-opts="{{[ [ '^change',[ ['changeBlock'] ] ],[ '^hide',[ ['toggleBlockPicker'] ] ] ]}}" options="{{block_nos}}" selected="{{selected_block}}" show="{{show_block_picker}}" vueId="478c400d-1"></common-select>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-07556f9a" data-event-opts="{{[ [ '^change',[ ['changeUnit'] ] ],[ '^hide',[ ['toggleUnitPicker'] ] ] ]}}" options="{{units}}" selected="{{selected_unit}}" show="{{show_unit_picker}}" vueId="478c400d-2"></common-select>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-07556f9a" data-event-opts="{{[ [ '^change',[ ['changeDecorate'] ] ],[ '^hide',[ ['toggleDecoratePicker'] ] ] ]}}" options="{{decoration_types}}" selected="{{selected_decorate_type}}" show="{{show_decorate_picker}}" vueId="478c400d-3"></common-select>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-07556f9a" data-event-opts="{{[ [ '^change',[ ['changePrice'] ] ],[ '^hide',[ ['toggleDecoratePrice'] ] ] ]}}" options="{{house_decorate_prices}}" selected="{{selected_price}}" show="{{show_price_picker}}" vueId="478c400d-4"></common-select>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-07556f9a" data-event-opts="{{[ [ '^change',[ ['changeOrder'] ] ],[ '^hide',[ ['toggleOrderPicker'] ] ] ]}}" options="{{orders}}" selected="{{selected_order}}" show="{{show_order_picker}}" vueId="478c400d-5"></common-select>
+</view>

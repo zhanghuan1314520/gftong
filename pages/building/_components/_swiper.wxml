@@ -1,0 +1,35 @@
+<view class="{{['preview-wrap _div',min_loaded&&!loaded?'min_loaded':'',loaded?'loaded':'']}}">
+    <view class="img-loading"></view>
+    <label class="view _span" wx:if="{{view_count}}">
+        <image class="_img" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/common-icons/browse-small-white.png"></image>
+        <text>{{view_count}}</text>
+    </label>
+    <view class="building-swiper-wrap _div">
+        <swiper bindchange="__e" circular="{{true}}" class="building-swiper" current="{{current_count}}" data-event-opts="{{[ [ 'change',[ [ 'changeSwiper',['$event'] ] ] ] ]}}">
+            <swiper-item itemId="{{banner.id}}" wx:for="{{swiper_list}}" wx:for-index="i" wx:for-item="banner" wx:key="i">
+                <view bindtap="__e" class="{{['building-swiper-img',banner.type]}}" data-event-opts="{{[ [ 'tap',[ [ 'tapSwiper',[i] ] ] ] ]}}">
+                    <building-img bind:__l="__l" bind:load="__e" class="min-img" data-event-opts="{{[ [ '^load',[ ['loadMinImg'] ] ] ]}}" mode="aspectFill" src="{{banner.mini_url}}" vueId="{{'9fbecfea-1-'+i}}" webp="{{webp}}" wx:if="{{banner.mini_url}}"></building-img>
+                    <building-img bind:__l="__l" bind:load="__e" class="img" data-event-opts="{{[ [ '^load',[ ['loadImg'] ] ] ]}}" mode="aspectFill" src="{{banner.url}}" vueId="{{'9fbecfea-2-'+i}}" webp="{{webp}}"></building-img>
+                    <view class="live-status" wx:if="{{banner.type==='live'}}">
+                        <view class="liveing" wx:if="{{living}}">
+                            <view class="liveing-bg"></view>
+                        </view>
+                        <view class="forcoming" wx:if="{{forcoming}}">{{live_time}}</view>
+                        <view class="replay" wx:if="{{replay}}"></view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+        <label class="count _span" wx:if="{{pic_order>0&&banners.length>0}}">{{''+pic_order+'/'+banners.length+''}}</label>
+    </view>
+    <view class="{{['switch',selected_tab,'tabs-'+tabs.length]}}" wx:if="{{tabs.length>1}}">
+        <view bindtap="__e" class="{{[ 'item',[selected_tab===item.type?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeSelectTab',['$0',i],[ [ ['tabs','',i,'type'] ] ] ] ] ] ]}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">{{''+item.name+''}}</view>
+        <view class="active-bar" style="{{'left:'+selected_index*80+'rpx'+';'}}"></view>
+    </view>
+    <button bindtap="__e" class="top-right share" data-event-opts="{{[ [ 'tap',[ [ 'tabShare',['$event'] ] ] ] ]}}" id="vip_share_btn" openType="{{open_type}}">
+        <fc-icon bind:__l="__l" type="48_share_white" vueId="9fbecfea-3"></fc-icon>
+    </button>
+    <button bindtap="__e" class="top-right compare" data-event-opts="{{[ [ 'tap',[ [ 'openCompare',['$event'] ] ] ] ]}}">
+        <fc-icon bind:__l="__l" type="48_compare_white" vueId="9fbecfea-4"></fc-icon>
+    </button>
+</view>

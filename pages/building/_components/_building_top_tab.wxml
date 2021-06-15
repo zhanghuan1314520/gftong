@@ -1,0 +1,11 @@
+<view class="{{[ 'building-top-tab data-v-9ef3ad6c',[!show?'hidden':''] ]}}" id="top-module-tabs">
+    <view bindtap="__e" class="tab home-tab data-v-9ef3ad6c" data-event-opts="{{[ [ 'tap',[ [ 'backHome',['$event'] ] ] ] ]}}">
+        <label class="_span data-v-9ef3ad6c">楼盘详情</label>
+        <fc-icon bind:__l="__l" class="data-v-9ef3ad6c" type="32_up" vueId="1dcadfba-1"></fc-icon>
+    </view>
+    <scroll-view class="building-top-tab-other data-v-9ef3ad6c" scrollIntoView="{{position}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+        <view bindtap="__e" class="{{[ 'tab data-v-9ef3ad6c',[position===tab.tab_id?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'clickTab',['$0','$1'],[ [ ['tabs','id',tab.id,'id'] ],[ ['tabs','id',tab.id,'tab_id'] ] ] ] ] ] ]}}" id="{{tab.tab_id}}" wx:for="{{tabs}}" wx:for-index="__i0__" wx:for-item="tab" wx:key="id">
+            <view class="inner data-v-9ef3ad6c">{{tab.text}}</view>
+        </view>
+    </scroll-view>
+</view>

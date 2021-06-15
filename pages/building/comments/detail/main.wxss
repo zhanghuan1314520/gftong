@@ -1,0 +1,27 @@
+.page.data-v-1157a14e {
+    padding-bottom: 88rpx;
+    overflow: hidden;
+}
+
+.reply-wrap.data-v-1157a14e {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.reply-wrap ._h3.data-v-1157a14e {
+    padding: 30rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.nickname.data-v-1157a14e {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.nickname ._i.data-v-1157a14e {
+    display: inline-block;
+    padding: 0 .5em;
+}

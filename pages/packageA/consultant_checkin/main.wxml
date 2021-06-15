@@ -1,0 +1,73 @@
+<view class="sign-page _div data-v-4d34caea">
+    <view class="sign-in data-v-4d34caea">
+        <view class="top data-v-4d34caea">
+            <view class="top-desc _div data-v-4d34caea">
+                <view class="tip _p data-v-4d34caea">连续签到7天可开启宝箱</view>
+            </view>
+            <view bindtap="__e" class="box _div data-v-4d34caea" data-event-opts="{{[ [ 'tap',[ [ 'openBox',['$event'] ] ] ] ]}}">
+                <image class="_img data-v-4d34caea" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultants/checkin-bx.png"></image>
+                <label class="tx _span data-v-4d34caea" wx:if="{{is7days&&checkin_bonus_score}}">宝箱已开启</label>
+                <label class="{{[ 'tx _span data-v-4d34caea',[is7days&&!checkin_bonus_score?'open':''] ]}}" wx:else>开启宝箱</label>
+            </view>
+        </view>
+        <view class="list data-v-4d34caea">
+            <view class="item _div data-v-4d34caea" wx:for="{{checkins}}" wx:for-index="n" wx:for-item="day" wx:key="n">
+                <view class="circle-border active _div data-v-4d34caea" wx:if="{{day.checkin_today}}">
+                    <view class="circle _div data-v-4d34caea">
+                        <text class="normal data-v-4d34caea">积分</text>
+                        <text class="strong data-v-4d34caea">{{'+'+day.score}}</text>
+                    </view>
+                </view>
+                <view class="circle-border _div data-v-4d34caea" wx:else>
+                    <view class="circle _div data-v-4d34caea">
+                        <text class="strong data-v-4d34caea">{{day.score}}</text>
+                        <text class="normal data-v-4d34caea">积分</text>
+                    </view>
+                </view>
+                <view class="day _p data-v-4d34caea">{{day.day_desc}}</view>
+                <label bindtap="__e" class="{{[ 'status _span data-v-4d34caea',[!day.checkin_today?'border':'',!checkin_today&&day.day_desc==='今天'?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'ischeckin',['$0'],[ [ ['checkins','',n,'day_desc'] ] ] ] ] ] ]}}">{{day.checkin_today?'已签到':'签到'}}</label>
+            </view>
+        </view>
+        <view class="checkin-ranking data-v-4d34caea">
+            <view class="data-v-4d34caea">已签到<text class="tx data-v-4d34caea">{{checkin_continuous_days}}</text>{{'/7天'+(checkin_continuous_days?', '+tip:'')}}</view>
+            <navigator class="checkin-ranking-url data-v-4d34caea" url="/pages/personal_package/consultant_checkin_rankings/main">查看签到榜单</navigator>
+        </view>
+    </view>
+    <view class="_div data-v-4d34caea" wx:if="{{show_checkin}}">
+        <view bindtap="__e" class="overlay _div data-v-4d34caea" data-event-opts="{{[ [ 'tap',[ [ 'hideCheckin',['$event'] ] ] ] ]}}"></view>
+        <view class="{{[ 'checkin-dlg _div data-v-4d34caea',[dlgType==='openbox'?'box':''] ]}}">
+            <view class="house-i _div data-v-4d34caea">
+                <image class="_img data-v-4d34caea" src="{{house_img}}"></image>
+            </view>
+            <view class="_div data-v-4d34caea" wx:if="{{dlgType==='checkin'}}">
+                <view class="_h1 data-v-4d34caea">签到成功，增加<label class="checkin-score _span data-v-4d34caea">{{today_checkin_score}}</label>积分</view>
+                <view class="checkin-bg _div data-v-4d34caea">
+                    <view class="desc _h1 data-v-4d34caea">活跃度(最近30天获得积分):<label class="_span data-v-4d34caea">{{last_period_obtained_score}}</label>
+                    </view>
+                    <view class="time _div data-v-4d34caea">{{''+util.getTime(-30)+'至'+util.getTime(0)+''}}</view>
+                </view>
+            </view>
+            <view class="_div data-v-4d34caea" wx:if="{{dlgType==='openbox'}}">
+                <view class="_h2 data-v-4d34caea">恭喜你，获得<label class="_span data-v-4d34caea">{{checkin_bonus_score}}</label>积分</view>
+                <view class="_p data-v-4d34caea">继续签到，7天后可再次开启宝箱</view>
+            </view>
+            <button bindtap="__e" class="data-v-4d34caea" data-event-opts="{{[ [ 'tap',[ [ 'hideCheckin',['$event'] ] ] ] ]}}">我知道了</button>
+        </view>
+    </view>
+</view>
+<wxs module="util">
+var milliseconds = 1000 * 60 * 60 * 24;
+
+function getTime(day) {
+    var today = getDate();
+    var targetday_milliseconds = today.getTime() + milliseconds * day;
+    today.setTime(targetday_milliseconds);
+    var tYear = today.getFullYear();
+    var tMonth = today.getMonth() + 1;
+    var tDate = today.getDate();
+    return (tYear + "-" + tMonth + "-" + tDate)
+};
+module.exports = ({
+    getTime: getTime,
+});
+</wxs>

@@ -1,0 +1,43 @@
+.wrap.data-v-44d88040 {
+    padding: 40rpx 32rpx;
+}
+
+.question.data-v-44d88040 {
+    line-height: 50rpx;
+}
+
+.desc.data-v-44d88040 {
+    margin-top: 16rpx;
+    margin-bottom: 24rpx;
+    line-height: 33rpx;
+}
+
+.option.data-v-44d88040 {
+    position: relative;
+    width: 100%;
+    padding: 24rpx;
+    margin-bottom: 16rpx;
+    border: 2rpx solid #ededed;
+    border-radius: 6rpx;
+}
+
+.option.selected.data-v-44d88040 {
+    color: #35b0ac;
+    background-color: #e0fff4;
+    border-color: #35b0ac;
+}
+
+.option.selected.data-v-44d88040::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33rpx;
+    height: 33rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/query-icons/selected.png);
+    background-size: 100% 100%;
+}
+
+.option.data-v-44d88040:last-child {
+    margin: 0;
+}

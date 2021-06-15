@@ -1,0 +1,65 @@
+<view class="{{['excellent-consultants data-v-15d6b5a8',classname]}}">
+    <view class="items data-v-15d6b5a8" wx:if="{{theme==='a'}}">
+        <button bindgetuserinfo="__e" class="excellent-consultants-card data-v-15d6b5a8" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCardFromExcellenct',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{excellent_consultants}}" wx:for-index="i" wx:key="i">
+            <view class="headimg consultant-headimg _div data-v-15d6b5a8">
+                <common-img bind:__l="__l" class="img data-v-15d6b5a8" mode="widthFix" src="{{item.weixin_headimgurl}}" vueId="{{'8fb81a76-1-'+i}}"></common-img>
+                <view class="consultant-headimg-tag data-v-15d6b5a8" wx:if="{{item.honour_title}}">{{item.honour_title}}</view>
+            </view>
+            <view class="detail _div data-v-15d6b5a8">
+                <view class="_div data-v-15d6b5a8">
+                    <label class="nickname _span data-v-15d6b5a8">{{item.name}}</label>
+                    <label class="zone _span data-v-15d6b5a8">{{item.building_zone||''}}</label>
+                </view>
+                <view class="_p data-v-15d6b5a8">{{''+item.building_name+''}}</view>
+            </view>
+        </button>
+    </view>
+    <block wx:else>
+        <view class="items data-v-15d6b5a8" wx:if="{{theme==='b'}}">
+            <button bindgetuserinfo="__e" class="excellent-consultants-card large-card data-v-15d6b5a8" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCardFromExcellenct',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{excellent_consultants}}" wx:for-index="i" wx:key="i">
+                <view class="headimg consultant-headimg _div data-v-15d6b5a8">
+                    <common-img bind:__l="__l" class="img data-v-15d6b5a8" mode="widthFix" src="{{item.weixin_headimgurl}}" vueId="{{'8fb81a76-2-'+i}}"></common-img>
+                    <view class="consultant-headimg-tag data-v-15d6b5a8" wx:if="{{item.honour_title}}">{{item.honour_title}}</view>
+                </view>
+                <view class="detail _div data-v-15d6b5a8">
+                    <view class="nickname _div data-v-15d6b5a8">{{item.name}}</view>
+                    <view class="building-name _p data-v-15d6b5a8" wx:if="{{show_building_name}}">{{item.building_name}}</view>
+                    <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" class="data-v-15d6b5a8" classname="consult" data-event-opts="{{[ [ '^success',[ [ 'onChat',['$0'],[ [ ['excellent_consultants','',i,'id'] ] ] ] ] ],[ '^tap',[ [ '',['$event'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="{{'8fb81a76-3-'+i}}" vueSlots="{{['default']}}">
+                        <label class="icon _span data-v-15d6b5a8">
+                            <view class="_i data-v-15d6b5a8"></view>
+                            <view class="_i data-v-15d6b5a8"></view>
+                            <view class="_i data-v-15d6b5a8"></view>
+                        </label>
+                        <label class="_span data-v-15d6b5a8">咨询</label>
+                    </fangchan-auth-user>
+                </view>
+            </button>
+        </view>
+        <block wx:else>
+            <view class="items data-v-15d6b5a8" wx:if="{{theme==='c'}}">
+                <button bindgetuserinfo="__e" class="excellent-consultants-card--c data-v-15d6b5a8" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCardFromExcellenct',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{excellent_consultants}}" wx:for-index="i" wx:key="i">
+                    <view class="consultant-detail _div data-v-15d6b5a8">
+                        <view class="consultant-detail--head consultant-headimg _div data-v-15d6b5a8">
+                            <common-img bind:__l="__l" class="img data-v-15d6b5a8" mode="widthFix" src="{{item.weixin_headimgurl}}" vueId="{{'8fb81a76-4-'+i}}"></common-img>
+                            <view class="consultant-headimg-tag data-v-15d6b5a8" wx:if="{{item.honour_title}}">{{item.honour_title}}</view>
+                        </view>
+                        <view class="consultant-detail--body _div data-v-15d6b5a8">
+                            <view class="consultant-detail--nickname _div data-v-15d6b5a8">{{item.name}}</view>
+                            <view class="consultant-detail--buildingname _div data-v-15d6b5a8" wx:if="{{show_building_name}}">{{item.building_name}}</view>
+                        </view>
+                    </view>
+                    <view class="consultant-contact--btns data-v-15d6b5a8">
+                        <button bindgetuserinfo="__e" catchtap="__e" class="consultant-contact data-v-15d6b5a8" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ],[ 'getuserinfo',[ [ 'onCall',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo">
+                            <image class="_img data-v-15d6b5a8" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/tel.png"></image>
+                            <text class="data-v-15d6b5a8">拨打电话</text>
+                        </button>
+                        <fangchan-auth-user bind:__l="__l" bind:success="__e" catch:tap="__e" class="data-v-15d6b5a8" classname="consultant-contact consult-btn" data-event-opts="{{[ [ '^tap',[ [ '',['$event'] ] ] ],[ '^success',[ [ 'onChat',['$0'],[ [ ['excellent_consultants','',i,'id'] ] ] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="{{'8fb81a76-5-'+i}}" vueSlots="{{['default']}}">
+                            <image class="_img data-v-15d6b5a8" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/zx.png"></image>
+                            <text class="data-v-15d6b5a8">立即咨询</text>
+                        </fangchan-auth-user>
+                    </view>
+                </button>
+            </view>
+        </block>
+    </block>
+</view>

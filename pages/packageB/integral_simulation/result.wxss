@@ -1,0 +1,202 @@
+.top {
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#15a8ad),to(rgba(0,204,177,0)));
+    background-image: linear-gradient(180deg,#15a8ad,rgba(0,204,177,0));
+    padding-top: 80rpx;
+}
+
+.main {
+    width: 686rpx;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 16rpx;
+    background-color: #fff;
+}
+
+.main .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 240rpx;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(3%,#fff),to(#8debe4));
+    background-image: linear-gradient(0deg,#fff 3%,#8debe4);
+    border-radius: 16rpx;
+    z-index: 1;
+}
+
+.main .tit {
+    width: 426rpx;
+    height: 126rpx;
+    position: absolute;
+    top: -66rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/integral_simulation/tit.png) no-repeat 50%;
+    background-size: 426rpx 126rpx;
+    z-index: 2;
+}
+
+.main .total {
+    padding-top: 108rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+.main .total::after,.main .total::before {
+    width: 90rpx;
+    height: 168rpx;
+    content: "";
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/integral_simulation/l.png) no-repeat 50%;
+    background-size: 90rpx 168rpx;
+}
+
+.main .total::after {
+    transform: rotateY(180deg);
+}
+
+.main .total-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #333;
+    margin: 0 54rpx;
+}
+
+.main .total-info text:nth-of-type(1) {
+    font-size: 32rpx;
+    line-height: 45rpx;
+}
+
+.main .total-info text:nth-of-type(2) {
+    font-weight: 700;
+    font-size: 88rpx;
+    line-height: 123rpx;
+}
+
+.main .score {
+    padding: 40rpx 0;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.main .score,.main .score-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.main .score-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.main .score-val {
+    font-size: 40rpx;
+    line-height: 56rpx;
+    color: #009fb8;
+    font-weight: 700;
+}
+
+.main .score-label {
+    font-size: 26rpx;
+    line-height: 37rpx;
+    color: #6f989e;
+    font-weight: 700;
+}
+
+.main .info {
+    padding-bottom: 48rpx;
+}
+
+.main .info-item {
+    padding: 26rpx 48rpx;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #333;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.main .btns,.main .info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.main .btns {
+    padding: 0 32rpx 32rpx;
+}
+
+.main .btns button,.main .btns navigator {
+    width: 280rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.main .btns navigator {
+    background: #bcebe1;
+    color: #35b097;
+    box-shadow: 0 4rpx 16rpx 0 rgba(188,235,226,.6);
+}
+
+.main .btns button {
+    color: #fff;
+    background: #35b097;
+    box-shadow: 0 4rpx 16rpx 0 rgba(53,176,151,.3);
+    margin: 0;
+}
+
+.tips {
+    padding: 24rpx 32rpx 32rpx;
+    color: #888;
+    font-size: 24rpx;
+    line-height: 33rpx;
+}
+
+.add-group {
+    padding-bottom: 56rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.add-group ._img {
+    width: 686rpx;
+    height: 144rpx;
+}

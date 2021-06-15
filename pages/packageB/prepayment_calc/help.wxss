@@ -1,0 +1,34 @@
+.page.data-v-276185d9 {
+    min-height: 100vh;
+    padding: 0 32rpx;
+}
+
+.li.data-v-276185d9 {
+    margin-top: 40rpx;
+}
+
+.tip.data-v-276185d9 {
+    margin-top: 8rpx;
+}
+
+.btn.data-v-276185d9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 686rpx;
+    height: 88rpx;
+    border: 2rpx solid #00b08d;
+    border-radius: 12rpx;
+    margin-top: 40rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #00b08d;
+    background-color: transparent;
+}

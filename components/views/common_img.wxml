@@ -1,0 +1,14 @@
+<view class="{{[ 'common-img _div data-v-264f4da8',shadowClass,className,[mode==='widthFix'?'auto':''] ]}}">
+    <image binderror="__e" bindload="{{util.onLoaded}}" class="img data-v-264f4da8" data-event-opts="{{[ [ 'error',[ [ 'handleImgError',['$event'] ] ] ] ]}}" lazyLoad="{{lazy-load}}" mode="{{mode}}" src="{{can_load_img?src:''}}" webp="{{webp}}"></image>
+</view>
+<wxs module="util">
+function onLoaded(e, instance) {
+    var img = instance.selectComponent('.img');
+    img.setStyle(({
+        opacity: 1,
+    }))
+};
+module.exports = ({
+    onLoaded: onLoaded,
+});
+</wxs>

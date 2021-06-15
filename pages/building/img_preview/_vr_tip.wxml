@@ -1,0 +1,20 @@
+<view class="data-v-6e83be79">
+    <view class="dlg data-v-6e83be79">
+        <view class="top-titile data-v-6e83be79">温馨提示</view>
+        <view class="list data-v-6e83be79">
+            <text class="text28B data-v-6e83be79">1、本VR系采集装修示范单位素材制作而成，因受制作方式、拍摄光线及角度等影响与装修示范单位实际存在一定差异。
+
+                2、相同户型单位因楼栋、楼层、单元不同，局部结构、面积及其他细节等可能有所不同。
+
+                3、本单位设立目的为展示该项目户型的家居装饰装修方案，室内装修、家具、陈设等除明示属于交付标准的内容外均不属于交付标准。
+
+                4、本单位为要约邀请，买卖双方的权利义务以买卖合同为准。</text>
+        </view>
+        <view bindtap="__e" class="agreement data-v-6e83be79" data-event-opts="{{[ [ 'tap',[ [ 'toggleAgree',['$event'] ] ] ] ]}}">
+            <fc-icon bind:__l="__l" class="data-v-6e83be79" type="{{agree?'40_checkbox_selected':'40_checkbox_unselected'}}" vueId="42782a98-1"></fc-icon>
+            <text class="text24 data-v-6e83be79">我已知晓并同意该声明</text>
+        </view>
+        <button bindtap="__e" class="{{['confirm-btn data-v-6e83be79',!agree?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}" disabled="{{!agree}}">进入VR看房</button>
+    </view>
+    <view bindtap="__e" class="overlay data-v-6e83be79" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

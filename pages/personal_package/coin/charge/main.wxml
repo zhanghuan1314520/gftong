@@ -1,0 +1,9 @@
+<view class="coin-page _div">
+    <coin-header bind:__l="__l" gold_coins="{{gold_coins}}" score="{{score}}" show_score="{{is_consultant}}" vueId="36577e51-1"></coin-header>
+    <view class="tabs-wrap _div">
+        <common-tabs bind:__l="__l" bind:change="__e" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected_tab}}" tabs="{{common_tabs}}" vueId="36577e51-2" width="260rpx"></common-tabs>
+    </view>
+    <coin-charge bind:__l="__l" bind:success="__e" data-event-opts="{{[ [ '^success',[ ['getExchangeInfo'] ] ] ]}}" show="{{selected_tab==='充值金币'}}" vueId="36577e51-3"></coin-charge>
+    <coin-exchange bind:__l="__l" bind:success="__e" data-event-opts="{{[ [ '^success',[ ['getExchangeInfo'] ] ] ]}}" exchange_gold_coins_desc="{{exchange_gold_coins_desc}}" exchange_scale_desc="{{exchange_scale_desc}}" rules="{{exchange_rules}}" show="{{selected_tab==='积分兑换'}}" vueId="36577e51-4"></coin-exchange>
+    <page-wrap bind:__l="__l" title="金币充值" vueId="36577e51-5"></page-wrap>
+</view>

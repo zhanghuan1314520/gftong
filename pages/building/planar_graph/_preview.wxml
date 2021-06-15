@@ -1,0 +1,24 @@
+<view class="{{['wrap data-v-0b17e99d',min_loaded&&!loaded?'min_loaded':'',img_loaded?'loaded':'']}}">
+    <view class="img-loading data-v-0b17e99d"></view>
+    <view class="tip data-v-0b17e99d" wx:if="{{show_tip}}">
+        <view class="demo data-v-0b17e99d">
+            <image class="zoom zoom-top data-v-0b17e99d" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/planar_graph/arrow.png?v=2"></image>
+            <image class="zoom zoom-bottom data-v-0b17e99d" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/planar_graph/arrow.png?v=2"></image>
+            <image class="hand data-v-0b17e99d" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/planar_graph/hand.png"></image>
+        </view>
+        <view class="data-v-0b17e99d">放大查看</view>
+    </view>
+    <image bindload="__e" class="{{['mini-img data-v-0b17e99d',img_loaded?'hidden':'']}}" data-event-opts="{{[ [ 'load',[ [ 'loadMinImg',['$event'] ] ] ] ]}}" mode="aspectFit" src="{{mini_img}}"></image>
+    <movable-area class="preivew-area data-v-0b17e99d" scaleArea="{{true}}">
+        <movable-view bindchange="__e" bindscale="__e" class="preview-img-wrap data-v-0b17e99d" data-event-opts="{{[ [ 'change',[ [ 'changeMove',['$event'] ] ] ],[ 'scale',[ [ 'changeScale',['$event'] ] ] ] ]}}" direction="all" outOfBounds="true" scale="{{true}}" scaleMax="4" scaleMin="1" x="{{x}}" y="{{y}}">
+            <image bindload="__e" class="preview-img data-v-0b17e99d" data-event-opts="{{[ [ 'load',[ [ 'loadImg',['$event'] ] ] ] ]}}" mode="aspectFit" src="{{large_img}}"></image>
+            <view catchtap="__e" class="{{[ 'block-tag data-v-0b17e99d',[tag.actived?'actived':''],[!tag.left&&!tag.top?'hide':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onTapTag',[i] ] ] ] ]}}" style="{{'left:'+tag.left+'px'+';'+'top:'+tag.top+'px'+';'+'transform:'+'scale('+1/scale+')'+';'}}" wx:for="{{show_tags}}" wx:for-index="i" wx:for-item="tag" wx:key="id">
+                <view class="block-tag--inner data-v-0b17e99d">{{tag.block+' | '+tag.status}}</view>
+            </view>
+        </movable-view>
+    </movable-area>
+    <button catchtap="__e" class="share-top-r data-v-0b17e99d" data-event-opts="{{[ [ 'tap',[ [ 'tabShare',['$event'] ] ] ] ]}}" openType="{{open_type}}">
+        <fc-icon bind:__l="__l" class="data-v-0b17e99d" type="48_share_white" vueId="47751f19-1"></fc-icon>
+        <text class="data-v-0b17e99d">分享</text>
+    </button>
+</view>

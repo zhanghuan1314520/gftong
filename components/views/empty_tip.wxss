@@ -1,0 +1,11 @@
+.empty-wrap.data-v-400e18d6 {
+    font-size: 28rpx;
+    color: #999;
+    margin: 0 auto;
+}
+
+.empty-wrap ._img.data-v-400e18d6 {
+    width: 178rpx;
+    height: 140rpx;
+    margin-bottom: 24rpx;
+}

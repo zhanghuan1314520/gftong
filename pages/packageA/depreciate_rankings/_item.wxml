@@ -1,0 +1,18 @@
+<view bindtap="__e" class="item _div data-v-cf892188" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <view class="{{['_i data-v-cf892188',rank_class]}}">{{index}}</view>
+    <view class="content _div data-v-cf892188">
+        <view class="_h3 data-v-cf892188">{{item.title}}</view>
+        <view class="_p data-v-cf892188">{{item.house_desc}}</view>
+        <view class="detail _div data-v-cf892188">
+            <view class="price _ul data-v-cf892188">
+                <view class="_li data-v-cf892188" wx:if="{{is_today||is_accumulated}}">{{'今日挂牌价：'+item.today_total_price+'万   '+item.today_unit_price+'元/平'}}</view>
+                <view class="_li data-v-cf892188" wx:if="{{is_today}}">{{'昨日挂牌价：'+item.yesterday_total_price+'万   '+item.yesterday_unit_price+'元/平'}}</view>
+                <view class="_li data-v-cf892188" wx:if="{{is_sold}}">{{'成交价：'+item.sold_total_price+'万   '+item.sold_unit_price+'元/平'}}</view>
+                <view class="_li data-v-cf892188" wx:if="{{is_accumulated}}">{{'上月挂牌价：'+item.last_month_total_price+'万   '+item.last_month_unit_price+'元/平'}}</view>
+                <view class="_li data-v-cf892188" wx:if="{{is_sold}}">{{'历史挂牌价：'+item.max_total_price+'万   '+item.max_unit_price+'元/平'}}</view>
+                <view class="_li data-v-cf892188" wx:if="{{is_sold}}">{{'成交日期：'+item.sold_date+''}}</view>
+            </view>
+            <view class="_strong data-v-cf892188">{{''+percent+'%'}}</view>
+        </view>
+    </view>
+</view>

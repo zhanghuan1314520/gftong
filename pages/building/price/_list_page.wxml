@@ -1,0 +1,8 @@
+<view class="page data-v-bf1644ea">
+    <view class="main-section data-v-bf1644ea">
+        <top-filter bind:__l="__l" bind:changeDecoratePrice="__e" bind:changeFilter="__e" bind:changeOrder="__e" bind:onShow="__e" block_no="{{block}}" block_nos="{{blocks}}" class="data-v-bf1644ea" data-event-opts="{{[ [ '^changeOrder',[ ['changeOrder'] ] ],[ '^changeFilter',[ ['changeFilter'] ] ],[ '^changeDecoratePrice',[ ['changeDecoratePrice'] ] ],[ '^onShow',[ ['onFilterShow'] ] ] ]}}" decoration_type="{{decoration_type}}" decoration_types="{{decoration_types}}" house_decorate_prices="{{house_decorate_prices}}" unit="{{unit}}" units="{{units}}" vueId="50743a86-1"></top-filter>
+        <house-item bind:__l="__l" bind:changeDecorate="__e" bind:goDetail="__e" class="data-v-bf1644ea" data-event-opts="{{[ [ '^goDetail',[ [ '$emit',['goDetail','$0'],[ [ ['items','',i,'id'] ] ] ] ] ],[ '^changeDecorate',[ [ 'showItemDecorateSelect',[i] ] ] ] ]}}" item="{{item}}" vueId="{{'50743a86-2-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></house-item>
+        <bottom-tip bind:__l="__l" class="data-v-bf1644ea" vueId="50743a86-3" wx:if="{{!loading&&no_more}}"></bottom-tip>
+        <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-bf1644ea" data-event-opts="{{[ [ '^change',[ ['changeItemDecorate'] ] ],[ '^hide',[ ['hideItemDecorateSelect'] ] ] ]}}" options="{{house_decorate_prices}}" selected="{{selected_item_decorate_price}}" show="{{show_item_decorate_select}}" vueId="50743a86-4"></common-select>
+    </view>
+</view>

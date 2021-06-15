@@ -1,0 +1,9 @@
+<view class="{{['footer _section data-v-1049b610',festival?'festival':'',undertint?'undertint':'']}}">
+    <view class="img-wrap _div data-v-1049b610">
+        <image class="_img data-v-1049b610" src="{{qr}}"></image>
+    </view>
+    <view class="content _div data-v-1049b610">
+        <view class="_h3 data-v-1049b610">杭州购房通，一个信息丰富、天天更新的综合房产信息平台</view>
+        <view class="_p data-v-1049b610">{{'关注我们'+(undertint?',':'')+'  了解更多'}}</view>
+    </view>
+</view>

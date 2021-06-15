@@ -1,0 +1,69 @@
+<view class="red-packet-activity data-v-1537d031">
+    <view class="commont-banner data-v-1537d031" wx:if="{{!is_consultant}}">
+        <view bindtap="__e" class="commont-banner-wrap data-v-1537d031" data-event-opts="{{[ [ 'tap',[ [ 'showDetail',['$event'] ] ] ] ]}}">
+            <common-img bind:__l="__l" class="data-v-1537d031" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/comment-banner.png" vueId="e58cff18-1"></common-img>
+        </view>
+    </view>
+    <view bindtap="__e" class="activity-detail data-v-1537d031" data-event-opts="{{[ [ 'tap',[ [ 'hideDetail',['$event'] ] ] ] ]}}" wx:if="{{show_detail}}">
+        <view catchtap="__e" class="activity-detail--main data-v-1537d031" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+            <view class="activity-detail--header data-v-1537d031">
+                <text class="data-v-1537d031">活动详情</text>
+                <view catchtap="__e" class="activity-detail--close data-v-1537d031" data-event-opts="{{[ [ 'tap',[ [ 'hideDetail',['$event'] ] ] ] ]}}"></view>
+            </view>
+            <view class="activity-detail--body data-v-1537d031">
+                <view class="activity-detail--section data-v-1537d031">
+                    <view class="activity-detail--dt data-v-1537d031">
+                        <text class="data-v-1537d031">活动规则</text>
+                    </view>
+                    <view class="activity-detail--dd data-v-1537d031">
+                        <view class="data-v-1537d031">活动时间：2021.2.22~2021.3.7</view>
+                        <view class="data-v-1537d031">活动期间，参与楼盘评论（内容优质且字数符合规则），即可获取一个微信红包。</view>
+                    </view>
+                </view>
+                <view class="activity-detail--section data-v-1537d031">
+                    <view class="activity-detail--dt data-v-1537d031">
+                        <text class="data-v-1537d031">内容要求</text>
+                    </view>
+                    <view class="activity-detail--dd data-v-1537d031">
+                        <view class="data-v-1537d031">1）评论字数必须大于等于15个字；</view>
+                        <view class="data-v-1537d031">2）评论＜20字，根据质量奖励0.5-0.88元/条，评论≥20字，根据质量奖励0.6-1.08元/条；</view>
+                        <view class="data-v-1537d031">3）内容优质；</view>
+                        <view class="data-v-1537d031">4）每位用户单日最高上限5条；</view>
+                        <view class="data-v-1537d031">5）楼盘置业顾问不参加此项活动；</view>
+                        <view class="data-v-1537d031">6）活动最终解释权归杭州购房通所有。</view>
+                    </view>
+                </view>
+                <view class="activity-detail--section data-v-1537d031">
+                    <view class="activity-detail--dt data-v-1537d031">
+                        <text class="data-v-1537d031">额外奖励</text>
+                    </view>
+                    <view class="activity-detail--dd data-v-1537d031">
+                        <view class="data-v-1537d031">1）奖励1：活动期间内邀请其他用户参与评论，满足要求即可获得9.9元奖励红包；</view>
+                        <view class="data-v-1537d031">2）奖励2：本次活动期间内，您邀请的用户所获取的评论红包，您都可以额外获取20%；</view>
+                        <view class="data-v-1537d031">3）奖励3：活动期间内，连续7天，每日有效评论5条无间断，即可领取9.9元奖励红包，此奖励活动期间仅可领取1次。</view>
+                    </view>
+                </view>
+                <view class="activity-detail--section data-v-1537d031">
+                    <view class="activity-detail--dt data-v-1537d031">
+                        <text class="data-v-1537d031">被邀请用户要求如下：</text>
+                    </view>
+                    <view class="activity-detail--dd data-v-1537d031">
+                        <view class="data-v-1537d031">1）被邀请用户过往未参加过评论红包活动；</view>
+                        <view class="data-v-1537d031">2）被邀请用户在活动期间内有效评论≥15条；</view>
+                    </view>
+                </view>
+                <view class="activity-detail--section data-v-1537d031">
+                    <view class="activity-detail--dt data-v-1537d031">
+                        <text class="data-v-1537d031">红包领取方式</text>
+                    </view>
+                    <view class="activity-detail--dd data-v-1537d031">
+                        <view class="data-v-1537d031">添加客服微信（<text class="strong data-v-1537d031">微信号：hzgftdh</text>），发送评论内容截图给客服，客服确定为优质评论，即可获得红包。</view>
+                    </view>
+                </view>
+            </view>
+            <view class="activity-detail--btn data-v-1537d031">
+                <view catchtap="__e" class="ui-btn primary big data-v-1537d031" data-event-opts="{{[ [ 'tap',[ [ 'openComment',['$event'] ] ] ] ]}}">立即评论拿红包</view>
+            </view>
+        </view>
+    </view>
+</view>

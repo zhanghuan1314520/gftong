@@ -1,0 +1,37 @@
+<view catchtouchmove="{{open}}" class="{{['map-search _div data-v-611cc7f0',page_type==='list'?'list-page':'']}}">
+    <view class="filter-wrap data-v-611cc7f0">
+        <top-filter bind:__l="__l" bind:changeSelect="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^changeSelect',[ ['changeSelect'] ] ] ]}}" selected="{{selected}}" text="{{text}}" vueId="4af725b2-1"></top-filter>
+        <view class="status-filter data-v-611cc7f0" wx:if="{{!is_surplus}}">
+            <view bindtap="__e" class="{{[ 'item data-v-611cc7f0',[status===''?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeStatus',[''] ] ] ] ]}}">全部</view>
+            <view bindtap="__e" class="{{[ 'item data-v-611cc7f0',[status==='即将取证'?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeStatus',['即将取证'] ] ] ] ]}}">即将预售</view>
+            <view bindtap="__e" class="{{[ 'item data-v-611cc7f0',[status==='最新开盘'?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeStatus',['最新开盘'] ] ] ] ]}}">最新取证</view>
+            <view bindtap="__e" class="{{[ 'item data-v-611cc7f0',[status==='摇号剩余'?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeStatus',['摇号剩余'] ] ] ] ]}}">在售</view>
+        </view>
+    </view>
+    <view class="select-wrap data-v-611cc7f0">
+        <zone-select bind:__l="__l" bind:changeMetro="__e" bind:changeZone="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^changeZone',[ ['changeZone'] ] ],[ '^changeMetro',[ ['changeMetro'] ] ] ]}}" show="{{selected==='区域'}}" vueId="4af725b2-2" zone_ids="{{zone_ids}}"></zone-select>
+        <price-select bind:__l="__l" bind:change="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^change',[ ['changePrice'] ] ] ]}}" price="{{price}}" show="{{selected==='价格'}}" total_price="{{total_price}}" vueId="4af725b2-3"></price-select>
+        <layout-select bind:__l="__l" bind:change="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^change',[ ['changeLayout'] ] ] ]}}" layout="{{layout}}" show="{{selected==='户型'}}" vueId="4af725b2-4"></layout-select>
+        <area-select area="{{area}}" bind:__l="__l" bind:change="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^change',[ ['changeArea'] ] ] ]}}" show="{{selected==='面积'}}" vueId="4af725b2-5"></area-select>
+        <decorate-select bind:__l="__l" bind:change="__e" class="data-v-611cc7f0" data-event-opts="{{[ [ '^change',[ ['changeDecorate'] ] ] ]}}" decoration="{{decoration}}" show="{{selected==='装修'}}" vueId="4af725b2-6"></decorate-select>
+    </view>
+    <map-section bind:__l="__l" bind:back="__e" bind:callouttap="__e" bind:tap="__e" class="{{['map data-v-611cc7f0',page_type==='list'?'hide':'']}}" data-event-opts="{{[ [ '^callouttap',[ ['clickCallout'] ] ],[ '^tap',[ ['clickMap'] ] ],[ '^back',[ ['back'] ] ] ]}}" id="house-map" markers="{{markers}}" show_back="{{show_back}}" vueId="4af725b2-7"></map-section>
+    <list-section bind:__l="__l" class="{{['data-v-611cc7f0',page_type==='map'?'hide':'']}}" items="{{items}}" loading="{{loading}}" no_more="{{no_more}}" vueId="4af725b2-8"></list-section>
+    <cover-view bindtap="__e" class="switch-btn floating-btn data-v-611cc7f0" data-event-opts="{{[ [ 'tap',[ [ 'switchPageType',['$event'] ] ] ] ]}}" wx:if="{{!is_surplus}}">
+        <button class="data-v-611cc7f0">
+            <cover-image class="img data-v-611cc7f0" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/map/'+(page_type==='map'?'list':'map')+'.png'}}"></cover-image>
+        </button>
+    </cover-view>
+    <cover-view class="share-btn floating-btn data-v-611cc7f0">
+        <button class="share data-v-611cc7f0" openType="share">
+            <cover-image class="img data-v-611cc7f0" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/map/share.png"></cover-image>
+        </button>
+    </cover-view>
+    <cover-view bindtap="__e" class="disclaimer data-v-611cc7f0" data-event-opts="{{[ [ 'tap',[ [ 'goDisclaimer',['$event'] ] ] ] ]}}" wx:if="{{page_type==='map'}}">
+        <button class="data-v-611cc7f0">
+            <cover-image class="img data-v-611cc7f0" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/disclaimer/map_tips.png"></cover-image>
+        </button>
+    </cover-view>
+    <view bindtap="__e" class="overlay _div data-v-611cc7f0" data-event-opts="{{[ [ 'tap',[ [ 'hideSelect',['$event'] ] ] ] ]}}" wx:if="{{selected}}"></view>
+    <page-wrap bind:__l="__l" class="data-v-611cc7f0" hide_back_home="{{true}}" title="地图找房" vueId="4af725b2-9"></page-wrap>
+</view>

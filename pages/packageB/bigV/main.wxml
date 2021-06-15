@@ -1,0 +1,48 @@
+<view class="data-v-b6bd985a">
+    <view class="v-card data-v-b6bd985a">
+        <view class="v-card-hd data-v-b6bd985a">
+            <image class="_img data-v-b6bd985a" src="{{weixin_account.headimg_url}}"></image>
+        </view>
+        <view class="v-card-bd data-v-b6bd985a">
+            <view class="v-tit data-v-b6bd985a">{{weixin_account.name}}</view>
+            <view class="v-des data-v-b6bd985a">{{weixin_account.introduce}}</view>
+            <view class="v-bts data-v-b6bd985a">
+                <navigator class="_a data-v-b6bd985a" url="{{qrcode_urls['关注公众号']}}">关注公众号</navigator>
+                <navigator class="_a data-v-b6bd985a" url="{{qrcode_urls['拉群助手']}}">进入TA的交流群</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="v-list data-v-b6bd985a">
+        <view class="v-list-tab data-v-b6bd985a">
+            <common-tabs bind:__l="__l" bind:change="__e" class="data-v-b6bd985a" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{selected_tab}}" tabs="{{tabs}}" vueId="63cff80e-1"></common-tabs>
+        </view>
+        <view class="data-v-b6bd985a" wx:if="{{items.length}}">
+            <view class="v-items data-v-b6bd985a" wx:if="{{selected_tab==='weixinAccountComments'}}">
+                <view bindtap="__e" class="v-item-comment data-v-b6bd985a" data-bdid="{{item.building.id}}" data-bdname="{{item.building.name}}" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-id="{{item.comment.id}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+                    <view class="v-item-comment--hd data-v-b6bd985a">
+                        <view class="v-item-comment--headimg data-v-b6bd985a">
+                            <image class="_img data-v-b6bd985a" src="{{weixin_account.headimg_url}}"></image>
+                        </view>
+                        <view class="v-item-comment--info data-v-b6bd985a">
+                            <view class="v-item-comment--name data-v-b6bd985a">{{weixin_account.name}}</view>
+                            <view class="v-item-comment--data data-v-b6bd985a">{{item.comment.created_date}}</view>
+                        </view>
+                    </view>
+                    <view class="v-item-comment--con data-v-b6bd985a">{{item.comment.content}}</view>
+                    <view class="v-item-comment--img data-v-b6bd985a" wx:if="{{item.comment.photos_urls.length}}">
+                        <image catchtap="__e" class="_img data-v-b6bd985a" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" data-imgs="{{item.comment.photos_urls}}" mode="aspectFill" src="{{item.comment.photos_urls[0]}}"></image>
+                    </view>
+                    <view catchtap="__e" class="v-item-comment--building data-v-b6bd985a" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+                        <view class="v-item-comment--house-item data-v-b6bd985a">
+                            <house-item bind:__l="__l" class="data-v-b6bd985a" item="{{item.building}}" vueId="{{'63cff80e-2-'+__i0__}}"></house-item>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="data-v-b6bd985a" wx:else>
+                <article-item bind:__l="__l" class="data-v-b6bd985a" item="{{item}}" vueId="{{'63cff80e-3-'+__i1__}}" wx:for="{{items}}" wx:for-index="__i1__" wx:key="id"></article-item>
+            </view>
+        </view>
+    </view>
+    <loading bind:__l="__l" class="data-v-b6bd985a" vueId="63cff80e-4" wx:if="{{loading}}"></loading>
+</view>

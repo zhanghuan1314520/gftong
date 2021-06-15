@@ -1,0 +1,44 @@
+.comments-wrap.data-v-529ed11c {
+    margin-top: 20rpx;
+    padding-bottom: 30rpx;
+}
+
+.comments-wrap .add-btn.data-v-529ed11c {
+    margin-top: 0;
+}
+
+.comment-tip.data-v-529ed11c {
+    padding: 20rpx 0;
+    font-size: 24rpx;
+    color: #999;
+    text-align: center;
+}
+
+.loading.data-v-529ed11c {
+    height: 332rpx;
+}
+
+.all-comments.data-v-529ed11c {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+    height: 70rpx;
+    background: #fff;
+    font-size: 26rpx;
+    color: #888;
+    top: -2rpx;
+    z-index: 1;
+}
+
+.all-comments .i-more.data-v-529ed11c {
+    margin-top: 2rpx;
+}

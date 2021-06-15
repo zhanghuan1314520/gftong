@@ -1,0 +1,3 @@
+<map bindcallouttap="__e" bindtap="__e" class="data-v-6730a94e" data-event-opts="{{[ [ 'callouttap',[ [ 'e0',['$event'] ] ] ],[ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" id="house-map" markers="{{markers}}">
+    <cover-image bindtap="__e" class="{{[ 'back data-v-6730a94e',[!show_back?'hide':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['back'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/all_buildings/back.png"></cover-image>
+</map>

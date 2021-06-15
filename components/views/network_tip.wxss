@@ -1,0 +1,27 @@
+.network-tip.data-v-71e48c16 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 88rpx;
+    color: #666;
+    font-size: 28rpx;
+    background-color: #ffd9d9;
+    z-index: 99999;
+}
+
+.network-tip icon.data-v-71e48c16 {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 30rpx;
+}

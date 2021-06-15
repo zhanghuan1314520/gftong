@@ -1,0 +1,20 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "loading": "/components/views/loading",
+        "input-dlg": "/pages/building/comments/_input_dlg",
+        "weixin-username": "/pages/building/comments/_wx_username",
+        "comment-footer": "/pages/building/comments/detail/_footer",
+        "comment-tip": "/components/business/comment_tip",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

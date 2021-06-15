@@ -1,0 +1,28 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "msg-card": "/pages/chat_list/chat/_msg_card",
+        "msg-sys-tip": "/pages/chat_list/chat/_msg_sys_tip",
+        "msg-ask": "/pages/chat_list/chat/_msg_ask",
+        "msg-building-card": "/pages/chat_list/chat/_msg_building_card",
+        "loading": "/components/views/loading",
+        "consultant-card": "/pages/chat_list/chat/_consultant",
+        "peer-user": "/pages/chat_list/chat/_peer_user",
+        "audio-msg": "/pages/chat_list/chat/_audio_msg",
+        "float-building-card": "/pages/chat_list/chat/_float_building_card",
+        "tools": "/pages/chat_list/chat/_tools",
+        "expression": "/pages/chat_list/chat/_expression",
+        "chat-input": "/pages/chat_list/chat/_chat_input",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

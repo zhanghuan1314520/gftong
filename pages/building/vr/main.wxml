@@ -1,0 +1,17 @@
+<view class="preview-img layout _div data-v-f5620ec2">
+    <view class="header data-v-f5620ec2">
+        <top-right-share bind:__l="__l" class="data-v-f5620ec2" top="12" type="white" vueId="656a757c-1"></top-right-share>
+    </view>
+    <view class="layout-imgs _div data-v-f5620ec2">
+        <layout-item bind:__l="__l" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:preview="__e" bind:seek="__e" bind:stop="__e" class="data-v-f5620ec2" data-event-opts="{{[ [ '^preview',[ [ 'preview',[i] ] ] ],[ '^play',[ [ 'playAudio',[i,'$0'],[ [ ['urls','',i,'audio_url'] ] ] ] ] ],[ '^stop',[ [ 'stopAudio',[i] ] ] ],[ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ ['openVr'] ] ],[ '^seek',[ ['seekAudio'] ] ] ]}}" duration="{{durations[i]}}" playing="{{audio_playing[i]}}" running_time="{{running_times[i]}}" url="{{url}}" vueId="{{'656a757c-2-'+i}}" wx:for="{{urls}}" wx:for-index="i" wx:for-item="url" wx:key="i"></layout-item>
+        <disclaimer bind:__l="__l" class="data-v-f5620ec2" title="VR看房免责声明" vueId="656a757c-3"></disclaimer>
+    </view>
+    <empty-tip bind:__l="__l" class="data-v-f5620ec2" show="{{show_empty}}" tip="暂时没有内容哦，努力补充中…" vueId="656a757c-4"></empty-tip>
+    <consultants bind:__l="__l" bind:goMore="__e" class="data-v-f5620ec2" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultants'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="VR" is_default="{{false}}" theme="{{consultantCard.building.theme}}" title="优秀置业顾问推荐" vueId="656a757c-5" wx:if="{{!show_empty&&!building.current_consultant}}"></consultants>
+    <view class="data-v-f5620ec2" wx:if="{{building.current_consultant}}">
+        <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-f5620ec2" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{building}}" is_consultant="{{is_consultant}}" vueId="656a757c-6"></current-consultant>
+    </view>
+    <common-footer bind:__l="__l" building_id="{{building_id}}" class="data-v-f5620ec2" from="VR" name="{{title}}" vueId="656a757c-7" wx:if="{{!building.current_consultant}}"></common-footer>
+    <vr-tip agree="{{disclaimer_agree}}" bind:__l="__l" bind:confirm="__e" bind:hide="__e" bind:toggleAgree="__e" class="data-v-f5620ec2" data-event-opts="{{[ [ '^confirm',[ ['confirmDisclaimer'] ] ],[ '^hide',[ ['toggleVrTip'] ] ],[ '^toggleAgree',[ ['toggleDisclaimerAgree'] ] ] ]}}" vueId="656a757c-8" wx:if="{{show_vr_disclaimer}}"></vr-tip>
+    <page-wrap bind:__l="__l" class="data-v-f5620ec2" title="{{title}}" vueId="656a757c-9"></page-wrap>
+</view>

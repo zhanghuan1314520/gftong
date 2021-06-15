@@ -1,0 +1,23 @@
+<view class="page data-v-1a4c4522">
+    <view class="top data-v-1a4c4522"></view>
+    <view class="list page-list data-v-1a4c4522">
+        <view class="{{[ 'list-top data-v-1a4c4522',[tabs_fixed_top?'list-top-fixed':''] ]}}">
+            <view class="list-top-filter data-v-1a4c4522">
+                <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-1a4c4522" className="find-building-filter" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" id="top_filter" layout="{{layout}}" metro="{{metro}}" price="{{price}}" show_section="{{true}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="91c01f7a-1" zone_ids="{{zone_ids}}"></top-filter>
+            </view>
+        </view>
+        <view class="{{[ 'list-container data-v-1a4c4522',[tabs_fixed_top?'list-container-top':''] ]}}" wx:if="{{show_list_container}}">
+            <view class="item-wrap data-v-1a4c4522" wx:for="{{items}}" wx:for-index="i" wx:key="id">
+                <house-item bind:__l="__l" class="data-v-1a4c4522" classname="_item" item="{{item}}" vueId="{{'91c01f7a-2-'+i}}" vueSlots="{{['default']}}">
+                    <button catchtap="__e" class="btn data-v-1a4c4522" data-event-opts="{{[ [ 'tap',[ [ 'tapLayout',[i] ] ] ] ]}}">查看楼盘总平图</button>
+                </house-item>
+            </view>
+            <list-loading bind:__l="__l" class="data-v-1a4c4522" vueId="91c01f7a-3" wx:if="{{loading||!no_more}}"></list-loading>
+        </view>
+        <view class="empty-state data-v-1a4c4522" wx:if="{{!show_list_container&&!loading}}">
+            <empty-box bind:__l="__l" class="data-v-1a4c4522" desc="没有这个楼盘，看看其他的吧～" top="97" type="empty_building" vueId="91c01f7a-4"></empty-box>
+        </view>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-1a4c4522" vueId="91c01f7a-5"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-1a4c4522" vueId="91c01f7a-6"></page-wrap>
+</view>

@@ -1,0 +1,7 @@
+<view class="wrap _div data-v-61a8c7b2">
+    <view class="{{['content assistFont24 _div data-v-61a8c7b2',!show_all?'line-3':'']}}">{{''+content+''}}</view>
+    <view bindtap="__e" class="{{['fold-btn _div data-v-61a8c7b2',show_all?'unfold':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'fold',['$event'] ] ] ] ]}}" wx:if="{{show_fold}}">
+        <view class="_div data-v-61a8c7b2">{{show_all?'折叠':'展开'}}</view>
+        <fc-icon bind:__l="__l" class="i data-v-61a8c7b2" type="32_down" vueId="6a3a74e1-1"></fc-icon>
+    </view>
+</view>

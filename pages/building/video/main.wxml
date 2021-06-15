@@ -1,0 +1,4 @@
+<view class="page data-v-f6893464">
+    <video autoplay="{{true}}" binderror="__e" class="data-v-f6893464" data-event-opts="{{[ [ 'error',[ [ 'onVideoError',['$event'] ] ] ] ]}}" data-url="{{src}}" src="{{src}}" wx:if="{{showVideo}}"></video>
+    <page-wrap bind:__l="__l" class="data-v-f6893464" title="{{title}}" vueId="02e1dac7-1"></page-wrap>
+</view>

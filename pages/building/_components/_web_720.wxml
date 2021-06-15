@@ -1,0 +1,3 @@
+<view bindtap="__e" class="wrap data-v-2f341ccb" data-event-opts="{{[ [ 'tap',[ [ 'onClick',['$event'] ] ] ] ]}}" data-name="楼盘详情页航拍banner">
+    <common-img bind:__l="__l" class="data-v-2f341ccb" src="https://cdn.vip-wifi.com/hzfangchan/images/building/720.png" vueId="e1126e22-1"></common-img>
+</view>

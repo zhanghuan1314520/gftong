@@ -1,0 +1,8 @@
+<view bindtap="__e" class="header _div data-v-5d439e64" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <view class="_h3 data-v-5d439e64">{{name}}</view>
+    <view bindtap="__e" class="address _p data-v-5d439e64" data-event-opts="{{[ [ 'tap',[ [ 'goLocation',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-5d439e64" src="/static/img/location-icon.png"></image>{{''+address+''}}</view>
+    <button catchtap="__e" class="circle-share data-v-5d439e64" data-event-opts="{{[ [ 'tap',[ [ 'stopTap',['$event'] ] ] ] ]}}" openType="share">
+        <image class="_img data-v-5d439e64" src="/static/img/circle-share.png"></image>
+    </button>
+</view>

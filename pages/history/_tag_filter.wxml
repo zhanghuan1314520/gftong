@@ -1,0 +1,3 @@
+<view class="tags _div data-v-0bfc7b1e" wx:if="{{tags.length}}">
+    <view bindtap="__e" class="{{[ 'item _div data-v-0bfc7b1e',tag.class_name,[selected===tag.value?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeTag',['$event'] ] ] ] ]}}" data-value="{{tag.value}}" wx:for="{{tags}}" wx:for-index="__i0__" wx:for-item="tag" wx:key="name">{{''+tag.name+''}}</view>
+</view>

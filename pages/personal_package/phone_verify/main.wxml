@@ -1,0 +1,15 @@
+<view class="page _div data-v-645de684">
+    <form bindsubmit="__e" class="normal-form data-v-645de684" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+        <view class="row _div data-v-645de684">
+            <label class="data-v-645de684">手机号</label>
+            <lazy-input bind:__l="__l" bind:input="__e" class="data-v-645de684" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','mobile','$event',[] ] ] ] ] ]}}" name="mobile" placeholder="请输入手机号" type="number" value="{{mobile}}" vueId="4a6ce237-1"></lazy-input>
+            <captcha-btn bind:__l="__l" class="data-v-645de684" mobile="{{mobile}}" vueId="4a6ce237-2"></captcha-btn>
+        </view>
+        <view class="row _div data-v-645de684">
+            <label class="data-v-645de684">验证码</label>
+            <input bindinput="__e" class="data-v-645de684" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','sms_captcha','$event',[] ] ] ] ] ]}}" name="sms_captcha" placeholder="请输入验证码" type="text" value="{{sms_captcha}}"></input>
+        </view>
+        <button class="large-btn confirm-btn data-v-645de684" formType="submit">提交</button>
+    </form>
+    <page-wrap bind:__l="__l" class="data-v-645de684" title="修改手机号" vueId="4a6ce237-3"></page-wrap>
+</view>

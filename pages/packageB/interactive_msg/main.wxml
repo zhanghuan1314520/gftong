@@ -1,0 +1,38 @@
+<view class="page data-v-58cc8038">
+    <view class="_div data-v-58cc8038">
+        <navigator class="item _a data-v-58cc8038" url="{{item.jump_path}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+            <view class="content interactive data-v-58cc8038">
+                <view class="interactive-headimgurl data-v-58cc8038">
+                    <image class="_img data-v-58cc8038" src="{{item.extra_data.headimgurl}}"></image>
+                </view>
+                <view class="interactive-detail data-v-58cc8038">
+                    <view class="interactive-detail--header data-v-58cc8038">
+                        <view class="interactive-nickname data-v-58cc8038">
+                            <view class="interactive-nickname--name data-v-58cc8038">{{item.extra_data.nickname}}</view>
+                            <view class="interactive-nickname--tag data-v-58cc8038" wx:if="{{item.extra_data.consultant_tag}}">{{item.extra_data.consultant_tag}}</view>
+                        </view>
+                        <view class="interactive-receive-date data-v-58cc8038">{{item.receive_date}}</view>
+                    </view>
+                    <view class="interactive-detail--type data-v-58cc8038" wx:if="{{item.message_type==='comment_like'}}">
+                        <text class="data-v-58cc8038">赞了你的楼盘评论</text>
+                        <image class="_img data-v-58cc8038" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/liked_1.png"></image>
+                    </view>
+                    <view class="interactive-detail--type data-v-58cc8038" wx:if="{{item.message_type==='comment_reply'}}">
+                        <text class="data-v-58cc8038">回复了你的楼盘评论</text>
+                        <image class="_img data-v-58cc8038" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/replay_msg.png"></image>
+                    </view>
+                    <view class="interactive-detail--replay data-v-58cc8038" wx:if="{{item.message_type==='comment_reply'}}">{{item.body}}</view>
+                    <view class="interactive-detail--comment data-v-58cc8038">
+                        <view class="comment-content data-v-58cc8038">
+                            <text class="data-v-58cc8038">我的评论：</text>{{''+item.extra_data.comment.content+''}}</view>
+                        <view class="comment-photos data-v-58cc8038" wx:if="{{item.extra_data.comment.photos_urls.length}}">
+                            <image class="_img data-v-58cc8038" mode="aspectFill" src="{{img}}" wx:for="{{item.extra_data.comment.photos_urls}}" wx:for-index="i" wx:for-item="img" wx:key="i"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <loading bind:__l="__l" class="data-v-58cc8038" vueId="09cf4438-1" wx:if="{{loading}}"></loading>
+    <page-wrap bind:__l="__l" class="data-v-58cc8038" title="{{title}}" vueId="09cf4438-2"></page-wrap>
+</view>

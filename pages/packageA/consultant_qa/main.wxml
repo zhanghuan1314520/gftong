@@ -1,0 +1,75 @@
+<view class="page _div data-v-a7d76a5c">
+    <view class="_ul data-v-a7d76a5c">
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">什么是活跃度？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">最近30个自然日的积分总和为置业顾问活跃度。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">为什么我的活跃度会降低？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">活跃度是累计最近30天的总和，每一天都是变动的。如果有疑问，可以尝试将最近30天的积分相加是否与自己的活跃度吻合。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">什么是积分？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">积分是置业顾问通过转发内容、分享小程序等方式获取的，积分会在置业顾问入驻后开始累计。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">更换项目积分和活跃度是否可以保留？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">更换项目可以保留积分和活跃度，不会有影响。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">分享指定图片是什么意思？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">每个区域有对应的专属客服，添加你的专属客服，转发他指定的图片，一张图片可加10积分。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">怎样更换入驻项目？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">在【杭州购房通小程序-我的-修改资料】中，更改你的入驻项目，提交审核就可以了。</label>
+            </view>
+        </view>
+        <view class="_li data-v-a7d76a5c">
+            <view class="_h3 data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">Q</view>
+                <label class="_span data-v-a7d76a5c">分享指定图片有效期是多久？</label>
+            </view>
+            <view class="_p data-v-a7d76a5c">
+                <view class="_i data-v-a7d76a5c">A</view>
+                <label class="_span data-v-a7d76a5c">分享指定图片当天内有效。</label>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-a7d76a5c" title="常见问题" vueId="5ff48f32-1"></page-wrap>
+</view>

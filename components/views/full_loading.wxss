@@ -1,0 +1,19 @@
+.full-loading.data-v-1c42d5d9 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.box.data-v-1c42d5d9 {
+    position: relative;
+    width: 200rpx;
+    height: 200rpx;
+    line-height: 200rpx;
+    top: calc(50% - 120rpx);
+    left: calc(50% - 100rpx);
+    perspective: 1000rpx;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 8rpx;
+}

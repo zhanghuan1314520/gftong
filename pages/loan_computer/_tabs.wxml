@@ -1,0 +1,9 @@
+<view class="loan-computer-title _div data-v-daf2fb00">
+    <view class="tabs _ul data-v-daf2fb00">
+        <view bindtap="__e" class="{{['_li data-v-daf2fb00',type===item?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$event'] ] ] ] ]}}" data-type="{{item}}" wx:for="{{types}}" wx:key="index">{{''+item+''}}</view>
+    </view>
+    <button class="share-top-right data-v-daf2fb00" openType="share">
+        <image class="_img data-v-daf2fb00" src="/static/img/share-new.png"></image>
+        <label class="_span data-v-daf2fb00">分享</label>
+    </button>
+</view>

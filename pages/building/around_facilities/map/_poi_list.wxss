@@ -1,0 +1,81 @@
+.list.data-v-d94bdf12 {
+    width: 100%;
+    height: 375rpx;
+    background-color: #fff;
+}
+
+.list.data-v-d94bdf12,.poi-item.data-v-d94bdf12 {
+    box-sizing: border-box;
+}
+
+.poi-item.data-v-d94bdf12 {
+    height: 125rpx;
+    padding: 20rpx 32rpx;
+    border-bottom: 1rpx solid #ebebeb;
+    color: #999;
+    font-size: 24rpx;
+}
+
+.poi-item.active.data-v-d94bdf12 {
+    color: #00ad82;
+}
+
+.poi-item.active .left.data-v-d94bdf12 {
+    color: inherit;
+}
+
+.main.data-v-d94bdf12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.left.data-v-d94bdf12 {
+    color: #333;
+    font-size: 28rpx;
+    max-width: 580rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.right.data-v-d94bdf12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.addr.data-v-d94bdf12 {
+    display: inline-block;
+    width: 21rpx;
+    height: 25rpx;
+    margin-right: 8rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/address.png);
+    background-size: 100% 100%;
+}
+
+.active .addr.data-v-d94bdf12 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/address-a.png);
+    background-size: 100% 100%;
+}
+
+.desc.data-v-d94bdf12 {
+    max-width: 680rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

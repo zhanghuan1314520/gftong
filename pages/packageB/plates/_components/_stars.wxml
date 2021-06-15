@@ -1,0 +1,18 @@
+<view class="{{['wrap _div data-v-2551fe4a',type]}}">
+    <view class="default stars _div data-v-2551fe4a">
+        <image class="_img data-v-2551fe4a" src="{{default_icon}}"></image>
+        <image class="_img data-v-2551fe4a" src="{{default_icon}}"></image>
+        <image class="_img data-v-2551fe4a" src="{{default_icon}}"></image>
+        <image class="_img data-v-2551fe4a" src="{{default_icon}}"></image>
+        <image class="_img data-v-2551fe4a" src="{{default_icon}}"></image>
+    </view>
+    <view class="active _div data-v-2551fe4a" style="{{'width:'+percent+';'}}">
+        <view class="stars _div data-v-2551fe4a">
+            <image class="_img data-v-2551fe4a" src="{{active_icon}}"></image>
+            <image class="_img data-v-2551fe4a" src="{{active_icon}}"></image>
+            <image class="_img data-v-2551fe4a" src="{{active_icon}}"></image>
+            <image class="_img data-v-2551fe4a" src="{{active_icon}}"></image>
+            <image class="_img data-v-2551fe4a" src="{{active_icon}}"></image>
+        </view>
+    </view>
+</view>

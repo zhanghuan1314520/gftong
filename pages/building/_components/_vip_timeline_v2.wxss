@@ -1,0 +1,114 @@
+.timeline-wrap.data-v-62fbb77a {
+    background-color: #fff;
+}
+
+.timeline.data-v-62fbb77a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 750rpx;
+    height: 136rpx;
+    font-size: 20rpx;
+    color: #9398a7;
+    white-space: nowrap;
+}
+
+.point-wrap.data-v-62fbb77a {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    min-width: 138rpx;
+    max-width: 172rpx;
+    padding-top: 21rpx;
+    padding-right: 4rpx;
+}
+
+.point-wrap.data-v-62fbb77a:first-child {
+    margin-left: 32rpx;
+}
+
+.point-wrap.data-v-62fbb77a:last-child {
+    padding-right: 0;
+    margin-right: 32rpx;
+}
+
+.point.data-v-62fbb77a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 112rpx;
+    padding: 16rpx;
+    z-index: 1;
+    background-image: linear-gradient(-45deg,#fafcff,#d7e3fa);
+    box-sizing: border-box;
+}
+
+.point.large.data-v-62fbb77a {
+    padding-left: 10rpx;
+}
+
+.point.data-v-62fbb77a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2rpx;
+    height: 2rpx;
+    width: 100%;
+    background-color: #e1e8f5;
+}
+
+.point.selected.data-v-62fbb77a {
+    font-weight: 700;
+    background-image: linear-gradient(-45deg,#f5fffd,#c9f5ec);
+}
+
+.point.selected.data-v-62fbb77a::after {
+    bottom: -3rpx;
+    height: 4rpx;
+    background-color: #00b08d;
+}
+
+.doing.data-v-62fbb77a {
+    position: absolute;
+    top: -21rpx;
+    right: 0;
+    width: 80rpx;
+    height: 32rpx;
+    background-color: #67c200;
+    border-radius: 4rpx;
+    font-size: 20rpx;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.doing.data-v-62fbb77a::after {
+    content: "";
+    position: absolute;
+    bottom: -6rpx;
+    left: 20rpx;
+    width: 0;
+    height: 0;
+    border: 12rpx solid transparent;
+    border-left-color: #67c200;
+    z-index: -1;
+}
+
+.tip.data-v-62fbb77a {
+    padding: 0 32rpx;
+    margin-top: 20rpx;
+}

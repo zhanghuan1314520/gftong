@@ -1,0 +1,42 @@
+<view class="hasfooter _div data-v-77f77e20">
+    <view class="_div data-v-77f77e20" id="top">
+        <view class="header _section data-v-77f77e20">
+            <view class="_h3 data-v-77f77e20">{{''+name+''}}<view class="share-btn-wrap _div data-v-77f77e20">
+                    <ui-share bind:__l="__l" class="data-v-77f77e20" inc="{{true}}" vueId="75900324-1"></ui-share>
+                </view>
+            </view>
+            <view class="_p data-v-77f77e20">{{address}}</view>
+        </view>
+        <view class="_section data-v-77f77e20" wx:if="{{detail.base_info.length||salesDepartment.val}}">
+            <view class="list-options _div data-v-77f77e20" wx:for="{{detail.base_info}}" wx:for-index="i" wx:key="i">
+                <label class="label data-v-77f77e20">{{item.name}}</label>
+                <label class="_span data-v-77f77e20">{{item.value+''}}</label>
+            </view>
+            <view class="list-options _div data-v-77f77e20" wx:if="{{salesDepartment.val}}">
+                <label class="label data-v-77f77e20">售楼部地址</label>：<label bindtap="__e" class="{{[ '_span data-v-77f77e20',[salesDepartment.coord?'address':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'goSalesAddress',['$event'] ] ] ] ]}}">
+                    <fc-icon bind:__l="__l" class="address-blue data-v-77f77e20" type="32_address_blue" vueId="75900324-2" wx:if="{{salesDepartment.coord}}"></fc-icon>
+                    <label class="_span data-v-77f77e20">{{salesDepartment.val}}</label>
+                </label>
+            </view>
+        </view>
+        <view class="_section data-v-77f77e20" wx:if="{{detail.other_info.length}}">
+            <view class="_h4 data-v-77f77e20">周边设施</view>
+            <view class="list-options _div data-v-77f77e20" wx:for="{{detail.other_info}}" wx:for-index="i" wx:key="i">
+                <label class="label data-v-77f77e20">{{item.name}}</label>
+                <label class="_span data-v-77f77e20">{{item.value+''}}</label>
+            </view>
+        </view>
+    </view>
+    <view class="intro _div data-v-77f77e20" wx:if="{{detail.intro.length}}">
+        <view class="_section data-v-77f77e20">
+            <view class="_h4 data-v-77f77e20">项目简介</view>
+            <view class="_p data-v-77f77e20" wx:for="{{detail.intro}}" wx:for-index="i" wx:for-item="content" wx:key="i">{{''+content+''}}</view>
+        </view>
+    </view>
+    <disclaimer bind:__l="__l" class="data-v-77f77e20" title="楼盘基本信息免责声明" vueId="75900324-3"></disclaimer>
+    <view class="data-v-77f77e20" wx:if="{{house.current_consultant&&!loading}}">
+        <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-77f77e20" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{house}}" is_consultant="{{is_consultant}}" vueId="75900324-4"></current-consultant>
+    </view>
+    <building-footer bind:__l="__l" class="data-v-77f77e20" current_house="{{current_house}}" from="楼盘详情" house="{{house}}" is_selling="{{is_selling}}" vueId="75900324-5" wx:if="{{!house.current_consultant&&!loading}}"></building-footer>
+    <page-wrap bind:__l="__l" class="data-v-77f77e20" title="{{name}}" vueId="75900324-6"></page-wrap>
+</view>

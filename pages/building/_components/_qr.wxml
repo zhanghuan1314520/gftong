@@ -1,0 +1,4 @@
+<view class="building-qr data-v-0271f5d2">
+    <image class="_img data-v-0271f5d2" src="{{qr}}"></image>
+    <text class="data-v-0271f5d2">{{text}}</text>
+</view>

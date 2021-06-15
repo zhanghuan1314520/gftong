@@ -1,0 +1,1 @@
+<fangchan-message-score-list bind:__l="__l" bind:goScore="__e" class="data-v-06d48f68" data-event-opts="{{[ [ '^goScore',[ ['goScore'] ] ] ]}}" date_summary="{{date_summary}}" items="{{items}}" vueId="fbe2478a-1"></fangchan-message-score-list>

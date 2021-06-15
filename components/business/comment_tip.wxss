@@ -1,0 +1,30 @@
+.dlg.data-v-355f35fa {
+    position: fixed;
+    width: 630rpx;
+    top: 260rpx;
+    left: 50%;
+    margin-left: -315rpx;
+    z-index: 1000000;
+    border-radius: 8rpx;
+    color: #333;
+    font-size: 26rpx;
+    background-color: #fff;
+}
+
+.content.data-v-355f35fa {
+    padding: 80rpx 48rpx 67rpx;
+}
+
+.content ._p.data-v-355f35fa {
+    margin-top: 18rpx;
+    line-height: 37rpx;
+}
+
+.btn.data-v-355f35fa {
+    height: 80rpx;
+    font-weight: 700;
+    color: inherit;
+    font-size: inherit;
+    border-top: 1rpx solid #ebebeb;
+    background-color: #fff;
+}

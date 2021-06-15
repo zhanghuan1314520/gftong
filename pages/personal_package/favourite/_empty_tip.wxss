@@ -1,0 +1,18 @@
+.wrap.data-v-74913584 {
+    text-align: center;
+    position: relative;
+}
+
+image.data-v-74913584 {
+    position: absolute;
+    display: block;
+    top: 165rpx;
+    left: 297rpx;
+    width: 182rpx;
+    height: 110rpx;
+}
+
+.empty-state-btn.data-v-74913584 {
+    width: 480rpx;
+    margin: 38rpx auto;
+}

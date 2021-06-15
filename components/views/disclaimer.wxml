@@ -1,0 +1,1 @@
+<fangchan-disclaimer bind:__l="__l" bind:goDisclaimer="__e" className="{{className}}" data-event-opts="{{[ [ '^goDisclaimer',[ ['goDisclaimer'] ] ] ]}}" title="{{title}}" vueId="7c3614cf-1"></fangchan-disclaimer>

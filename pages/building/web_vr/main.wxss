@@ -1,0 +1,24 @@
+web-view.data-v-8412dcda {
+    position: relative;
+    z-index: 1;
+}
+
+.share-wrap.data-v-8412dcda {
+    position: fixed;
+    top: 20rpx;
+    right: 15rpx;
+    z-index: 99999999;
+}
+
+.share-wrap button.data-v-8412dcda {
+    width: 140rpx;
+    height: 64rpx;
+    z-index: 99999;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.share-wrap cover-image.data-v-8412dcda {
+    width: 140rpx;
+    height: 64rpx;
+}

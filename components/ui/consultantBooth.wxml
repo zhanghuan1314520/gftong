@@ -1,0 +1,26 @@
+<view class="{{['ui-consultant-booth data-v-77d1b2c3',full?'full':'']}}">
+    <view class="ui-consultant-booth--tips data-v-77d1b2c3" wx:if="{{showTips}}">有疑问？让我来帮您吧~</view>
+    <view class="ui-consultant-booth--card data-v-77d1b2c3">
+        <button bindgetuserinfo="__e" class="ui-consultant-booth--consultant-info data-v-77d1b2c3" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{consultant.consultant_id}}" openType="getUserInfo">
+            <view class="ui-consultant-booth--consultant-head data-v-77d1b2c3">
+                <image class="_img data-v-77d1b2c3" src="{{consultant.consultant_headimgurl}}"></image>
+            </view>
+            <view class="ui-consultant-booth--consultant-body data-v-77d1b2c3">
+                <view class="ui-consultant-booth--consultant-name text-ellipsis data-v-77d1b2c3">{{consultant.consultant_name}}</view>
+                <view class="ui-consultant-booth--consultant-buildingname text-ellipsis data-v-77d1b2c3">{{consultant.building_name}}</view>
+            </view>
+        </button>
+        <view class="ui-consultant-booth--btns _div data-v-77d1b2c3">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" class="btn-item data-v-77d1b2c3" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'openChat',['$0'],['consultant.consultant_id'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="aa37d12a-1" vueSlots="{{['default']}}">
+                <view bindtap="__e" class="btn-item primary _div data-v-77d1b2c3" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}" data-name="聊天">
+                    <image class="_img data-v-77d1b2c3" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/wx.png"></image>
+                    <label class="_span data-v-77d1b2c3">聊天</label>
+                </view>
+            </fangchan-auth-user>
+            <button bindtap="__e" class="btn-item yellow data-v-77d1b2c3" data-event-opts="{{[ [ 'tap',[ [ 'onCallConsultant',['$event'] ] ] ] ]}}" data-id="{{consultant.consultant_id}}" data-name="电话">
+                <image class="_img data-v-77d1b2c3" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/icons/tel.png"></image>
+                <label class="_span data-v-77d1b2c3">电话</label>
+            </button>
+        </view>
+    </view>
+</view>

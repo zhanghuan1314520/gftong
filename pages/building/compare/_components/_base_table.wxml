@@ -1,0 +1,12 @@
+<view class="wrap data-v-16256469">
+    <view class="title32B data-v-16256469">{{title}}</view>
+    <view class="{{['table data-v-16256469',type]}}">
+        <view class="row data-v-16256469" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="thead data-v-16256469">{{item.title}}</view>
+            <view class="{{['col data-v-16256469',item.type]}}" wx:for="{{item.items}}" wx:for-index="j" wx:for-item="building" wx:key="j">
+                <navigator class="btn _a data-v-16256469" url="{{'/pages/building/around_facilities/map/main?id='+building}}" wx:if="{{item.type&&item.type==='detail'}}">查看配套详情</navigator>
+                <text class="data-v-16256469" wx:else>{{building}}</text>
+            </view>
+        </view>
+    </view>
+</view>

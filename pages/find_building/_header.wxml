@@ -1,0 +1,28 @@
+<view class="header data-v-737b96fa">
+    <view class="tools data-v-737b96fa">
+        <common-img bind:__l="__l" class="bg data-v-737b96fa" shadowClass="white-shadow" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/find_building/tabs.png" vueId="03b523d8-1"></common-img>
+        <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="VR看房" data-url="/pages/activity_a/vr/main">
+            <view class="text data-v-737b96fa">VR看房</view>
+        </view>
+        <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="楼盘总平" data-url="/pages/packageA/layout/main">
+            <view class="text data-v-737b96fa">楼盘总平</view>
+        </view>
+        <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="地图找房" data-url="/pages/packageA/whole_buildings_map/main">
+            <view class="text data-v-737b96fa">地图找房</view>
+        </view>
+        <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="一键找房" data-url="/pages/packageA/whole_buildings_result/main?from=personal_center">
+            <view class="text data-v-737b96fa">一键找房</view>
+        </view>
+        <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="购房指南" data-url="/pages/personal_package/material/main">
+            <view class="text data-v-737b96fa">购房指南</view>
+        </view>
+    </view>
+    <view class="section data-v-737b96fa">
+        <view class="section-title data-v-737b96fa">主题找房</view>
+        <view class="hot data-v-737b96fa">
+            <view bindtap="__e" class="item data-v-737b96fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="{{item.name}}" data-url="{{item.link}}" wx:for="{{subjects_list}}" wx:for-index="i" wx:key="i">
+                <subject bind:__l="__l" class="data-v-737b96fa" item="{{item}}" vueId="{{'03b523d8-2-'+i}}" width="334rpx"></subject>
+            </view>
+        </view>
+    </view>
+</view>

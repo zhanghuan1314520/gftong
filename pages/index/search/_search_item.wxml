@@ -1,0 +1,57 @@
+<view bindtap="__e" class="house-item _li data-v-1125754d" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}">
+    <view class="house-item-content _div data-v-1125754d">
+        <view class="content _div data-v-1125754d">
+            <view class="content-main _div data-v-1125754d">
+                <view class="detail _div data-v-1125754d">
+                    <view class="row first-row _div data-v-1125754d">
+                        <view class="text_width_limit _h3 data-v-1125754d">
+                            <text class="{{[ 'data-v-1125754d',[util.getMatching(word,keyName)?'selectd':''] ]}}" wx:for="{{item.searchArray}}" wx:for-index="i" wx:for-item="word" wx:key="i">{{word}}</text>
+                        </view>
+                    </view>
+                    <view class="row second-row text_width_limit _div data-v-1125754d" wx:if="{{item.searchHouseName}}">
+                        <label class="fulltext_house_name _span data-v-1125754d">{{item.fulltext_house_title+':'}}</label>
+                        <text class="{{[ 'data-v-1125754d',[util.getMatching(word,keyName)?'selectd':''] ]}}" wx:for="{{item.searchHouseName}}" wx:for-index="i" wx:for-item="word" wx:key="i">{{word}}</text>
+                    </view>
+                    <view class="row normal-row _div data-v-1125754d">
+                        <view class="info text_width_limit _div data-v-1125754d">{{''+item.zone+''}}<label class="_span data-v-1125754d" wx:if="{{item.zone_section}}">{{'｜'+item.zone_section}}</label>
+                        </view>
+                    </view>
+                </view>
+                <view class="other-msg data-v-1125754d">
+                    <view class="row bottom data-v-1125754d">
+                        <view class="tags _div data-v-1125754d" wx:if="{{item.status}}">
+                            <label class="tag green _span data-v-1125754d">{{item.status}}</label>
+                        </view>
+                    </view>
+                    <view class="row bottom special _div data-v-1125754d">
+                        <view class="left _div data-v-1125754d">
+                            <label class="price _span data-v-1125754d">
+                                <view class="{{['_div data-v-1125754d',item.price_desc_arr&&item.price_desc_arr.length>1||item.customized_price&&item.customized_price.length?'customized_price':'']}}" wx:if="{{util.checkShowPrice(item,type)}}">
+                                    <view class="_div data-v-1125754d" wx:for="{{item.price_desc_arr}}" wx:for-index="i" wx:for-item="price" wx:key="i">
+                                        <text class="data-v-1125754d" wx:if="{{price!=='待定'}}">{{price}}</text>
+                                    </view>
+                                </view>
+                            </label>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<wxs module="common_utils" src="../../../components/business/_house_item_utils.wxs" />
+<wxs module="util">
+function checkShowPrice(item, type) {
+    return (item && item.price_desc_arr && item.price_desc_arr.length)
+};
+
+function getMatching(char, keyWords) {
+    var item = char.toLowerCase();
+    var keyName = keyWords.toLowerCase();
+    return (keyName.indexOf(item) !== -1)
+};
+module.exports = ({
+    checkShowPrice: checkShowPrice,
+    getMatching: getMatching,
+});
+</wxs>

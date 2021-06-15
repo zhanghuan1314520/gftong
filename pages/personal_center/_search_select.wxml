@@ -1,0 +1,18 @@
+<view class="_div data-v-48443c8d">
+    <view bindtap="__e" class="overlay _div data-v-48443c8d" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}" style="{{'display:'+(show?'block':'none')+';'}}"></view>
+    <view class="search-select _div data-v-48443c8d" style="{{'display:'+(show?'block':'none')+';'}}">
+        <form bindsubmit="__e" class="data-v-48443c8d" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+            <view class="content-wrap _div data-v-48443c8d">
+                <image class="_img data-v-48443c8d" src="/static/img/search.png"></image>
+                <input class="data-v-48443c8d" confirmType="search" name="keyword" placeholder="按楼盘名字搜索" type="text"></input>
+                <button class="data-v-48443c8d" formType="submit">搜索</button>
+            </view>
+        </form>
+        <scroll-view class="select data-v-48443c8d" scrollIntoView="{{select_view_id}}" scrollY="true">
+            <view bindtap="__e" class="{{[ 'option _div data-v-48443c8d',[house.id===selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'select',['$event'] ] ] ] ]}}" data-index="{{i}}" id="{{house.view_id}}" wx:for="{{options}}" wx:for-index="i" wx:for-item="house" wx:key="i">
+                <label class="_span data-v-48443c8d">{{house.name}}</label>
+                <image class="_img data-v-48443c8d" src="/static/img/selected.png"></image>
+            </view>
+        </scroll-view>
+    </view>
+</view>

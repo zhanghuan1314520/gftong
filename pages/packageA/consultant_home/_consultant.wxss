@@ -1,0 +1,18 @@
+.weixin-info-page.data-v-adad5f5e {
+    padding-top: 32rpx;
+}
+
+.weixin-info-card.data-v-adad5f5e {
+    margin-top: 0;
+}
+
+.zone-tip.data-v-adad5f5e {
+    margin-bottom: 32rpx;
+}
+
+.guide-img.data-v-adad5f5e {
+    display: block;
+    width: 600rpx;
+    height: 369rpx;
+    margin: 15rpx auto 0;
+}

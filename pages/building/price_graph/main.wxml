@@ -1,0 +1,18 @@
+<view class="page data-v-6c369192">
+    <view class="header data-v-6c369192" wx:if="{{building.name}}">
+        <text class="name data-v-6c369192">{{building.name}}</text>
+        <navigator class="right _a data-v-6c369192" url="{{price_link}}">
+            <view class="i data-v-6c369192"></view>
+            <text class="data-v-6c369192">一房一价表</text>
+            <fc-icon bind:__l="__l" class="data-v-6c369192" type="32_more_primary" vueId="b444d738-1"></fc-icon>
+        </navigator>
+    </view>
+    <view class="list data-v-6c369192">
+        <view bindtap="__e" class="diagram data-v-6c369192" data-event-opts="{{[ [ 'tap',[ [ 'goPagePrice',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{items}}" wx:for-index="i" wx:key="block_no">
+            <common-img bind:__l="__l" class="img data-v-6c369192" mode="aspectFill" src="{{item.mini_diagram_url}}" vueId="{{'b444d738-2-'+i}}"></common-img>
+        </view>
+    </view>
+    <bottom-right-share bind:__l="__l" bottom="188" class="data-v-6c369192" vueId="b444d738-3"></bottom-right-share>
+    <common-footer bind:__l="__l" building_id="{{building.id}}" class="data-v-6c369192" name="{{building.name}}" page="一房一价" vueId="b444d738-4"></common-footer>
+    <page-wrap bind:__l="__l" class="data-v-6c369192" vueId="b444d738-5"></page-wrap>
+</view>

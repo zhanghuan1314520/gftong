@@ -1,0 +1,1 @@
+<view bindtap="__e" class="{{[ 'captcha-btn data-v-310d4c6c',[time>0?'disabled':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onCaptcha',['$event'] ] ] ] ]}}">{{text}}</view>

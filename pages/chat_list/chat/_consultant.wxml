@@ -1,0 +1,29 @@
+<view class="_div data-v-34c827ad">
+    <view class="consultant-card _div data-v-34c827ad">
+        <view bindtap="__e" class="consultant-info _div data-v-34c827ad" data-event-opts="{{[ [ 'tap',[ [ 'goConsultant',['$event'] ] ] ] ]}}">
+            <image class="_img data-v-34c827ad" lazyLoad="{{true}}" src="{{consultant.headimg}}"></image>
+            <view class="_div data-v-34c827ad">
+                <view class="detail _div data-v-34c827ad">
+                    <view class="_h3 data-v-34c827ad">{{consultant.name}}</view>
+                    <label class="_span data-v-34c827ad">{{consultant.level+'置业顾问'}}</label>
+                </view>
+                <navigator catchtap="__e" class="building-link data-v-34c827ad" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}" hoverStopPropagation="{{true}}" url="{{'/pages/building/main?building_id='+building.id}}">{{consultant.building_name}}</navigator>
+            </view>
+            <view catchtap="__e" class="switch-btn data-v-34c827ad" data-event-opts="{{[ [ 'tap',[ [ 'switchConsultant',['$event'] ] ] ] ]}}" wx:if="{{show_switch}}">
+                <view class="icon data-v-34c827ad"></view>
+                <text class="data-v-34c827ad">换一个</text>
+            </view>
+        </view>
+        <view class="btns _div data-v-34c827ad">
+            <button bindtap="__e" class="wechat data-v-34c827ad" data-event-opts="{{[ [ 'tap',[ [ 'copyWx',['$event'] ] ] ] ]}}">
+                <image class="data-v-34c827ad" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chatlist/wx.png"></image>
+                <text class="data-v-34c827ad">复制微信号</text>
+            </button>
+            <button bindtap="__e" class="phone data-v-34c827ad" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}">
+                <image class="data-v-34c827ad" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chatlist/phone.png"></image>
+                <text class="data-v-34c827ad">免费电话咨询</text>
+            </button>
+        </view>
+    </view>
+    <view class="bottom-tip assistFont24 _p data-v-34c827ad">已对置业顾问隐藏您的手机号，请放心沟通~</view>
+</view>

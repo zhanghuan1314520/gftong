@@ -1,0 +1,28 @@
+.page-box.data-v-cadc24fa,.page.data-v-cadc24fa {
+    background-color: #fff;
+}
+
+.tabs-wrap.data-v-cadc24fa {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 750rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 1;
+}
+
+.main.data-v-cadc24fa {
+    padding: 24rpx 32rpx;
+}
+
+.main .tips.data-v-cadc24fa {
+    font-size: 24rpx;
+    line-height: 33rpx;
+    color: #999;
+    padding-bottom: 18rpx;
+}

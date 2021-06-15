@@ -1,0 +1,22 @@
+{
+    "usingComponents": {
+        "vr-tip": "/pages/building/img_preview/_vr_tip",
+        "top-right-share": "/components/views/top_right_share",
+        "empty-tip": "/components/views/empty_tip",
+        "audio-analysis": "/pages/building/img_preview/_audio_analysis",
+        "common-footer": "/pages/building/_components/_common_footer",
+        "consultants": "/pages/building/_components/_excellent_consultants",
+        "layout-item": "/pages/building/img_preview/_layout_item",
+        "disclaimer": "/components/views/disclaimer",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

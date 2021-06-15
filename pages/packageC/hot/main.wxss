@@ -1,0 +1,24 @@
+.house-list.data-v-24c2458f {
+    min-height: 60vh;
+}
+
+.history-filter-list.data-v-24c2458f {
+    position: sticky;
+    top: 126rpx;
+    z-index: 8;
+}
+
+.search-list-page.data-v-24c2458f {
+    padding-top: 128rpx;
+    background: #fff;
+}
+
+.top-banner.data-v-24c2458f {
+    width: 686rpx;
+    height: 256rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+    margin: 0 auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}

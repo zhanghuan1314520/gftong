@@ -1,0 +1,8 @@
+<navigator class="headline _a data-v-5e7194ea" id="headline" wx:if="{{headlines.length}}">
+    <image class="_img data-v-5e7194ea" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/headline.png"></image>
+    <swiper autoplay="{{true}}" bindanimationfinish="__e" circular="{{true}}" class="data-v-5e7194ea" data-event-opts="{{[ [ 'animationfinish',[ [ 'animationSwiper',['$event'] ] ] ] ]}}" vertical="{{true}}">
+        <swiper-item bindtap="__e" class="data-v-5e7194ea" data-event-opts="{{[ [ 'tap',[ [ 'clickLog',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{headlines}}" wx:for-index="i" wx:key="i">
+            <view class="_p data-v-5e7194ea">{{item.content}}</view>
+        </swiper-item>
+    </swiper>
+</navigator>

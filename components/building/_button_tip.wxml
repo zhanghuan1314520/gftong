@@ -1,0 +1,7 @@
+<view class="button-tip _div data-v-e7b35baa" style="{{'display:'+(has_new_result&&show?'block':'none')+';'}}">
+    <navigator bindtap="__e" class="close-btn _a data-v-e7b35baa" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}">
+        <image class="_img data-v-e7b35baa" src="/static/img/close-btn.png"></image>
+    </navigator>
+    <view class="_p data-v-e7b35baa">{{'想要查询'+data_status+'？'}}</view>
+    <view class="_p data-v-e7b35baa">点击这里即可查询～</view>
+</view>

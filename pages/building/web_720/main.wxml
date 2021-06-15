@@ -1,0 +1,39 @@
+<view class="page data-v-79f9bdf5">
+    <web-view binderror="__e" class="data-v-79f9bdf5" data-event-opts="{{[ [ 'error',[ [ 'errorLoad',['$event'] ] ] ] ]}}" src="{{src}}">
+        <cover-view class="share-panorama data-v-79f9bdf5" wx:if="{{show_cover_view&&!is_consultant}}">
+            <button class="shadow-button data-v-79f9bdf5" openType="share">
+                <cover-image class="data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/j.png"></cover-image>
+            </button>
+        </cover-view>
+        <cover-view class="web-view__consultant-card data-v-79f9bdf5" wx:if="{{show_cover_view&&show_current_consultant}}">
+            <cover-image class="web-view__image-bg data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/web_720/consultant_card.png"></cover-image>
+            <cover-view class="web-view__consultant-info data-v-79f9bdf5">
+                <cover-image class="web-view__consultant-cover data-v-79f9bdf5" src="{{consultant_headimgurl}}"></cover-image>
+                <cover-view class="web-view__consultant-name data-v-79f9bdf5">{{consultant_name}}</cover-view>
+            </cover-view>
+            <button bindtap="__e" class="shadow-button data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'getUserProfile',['$event'] ] ] ] ]}}" wx:if="{{canIUseGetUserProfile}}">.</button>
+            <button bindgetuserinfo="__e" class="shadow-button data-v-79f9bdf5" data-event-opts="{{[ [ 'getuserinfo',[ [ 'getUserInfo',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:else>.</button>
+        </cover-view>
+        <cover-view class="web-view__go-consultant-list data-v-79f9bdf5" wx:if="{{show_cover_view&&show_consultants}}">
+            <button bindtap="__e" class="transparent-button data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'getUserProfile',['$event'] ] ] ] ]}}" wx:if="{{canIUseGetUserProfile}}">
+                <cover-image class="image-bg data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/web_720/consultant-720.png"></cover-image>
+            </button>
+            <button bindgetuserinfo="__e" class="transparent-button data-v-79f9bdf5" data-event-opts="{{[ [ 'getuserinfo',[ [ 'getUserInfo',['$event'] ] ] ] ]}}" openType="getUserInfo" wx:else>
+                <cover-image class="image-bg data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/web_720/consultant-720.png"></cover-image>
+            </button>
+        </cover-view>
+        <cover-view class="web-view__consultant-btn-group data-v-79f9bdf5" wx:if="{{show_cover_view&&is_consultant}}">
+            <cover-image class="bg data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/disclaimer/fly_tips.png"></cover-image>
+            <button class="share-btn data-v-79f9bdf5" openType="share">.</button>
+            <button bindtap="__e" class="billboard-btn data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'showBillboard',['$event'] ] ] ] ]}}">.</button>
+            <button bindtap="__e" class="data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'goDisclaimer',['$event'] ] ] ] ]}}">.</button>
+        </cover-view>
+        <cover-view bindtap="__e" class="web-view__billboard-wrap data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'hideBillboard',['$event'] ] ] ] ]}}" wx:if="{{show_success}}">
+            <cover-image catchtap="__e" class="web-view__billboard data-v-79f9bdf5" data-event-opts="{{[ [ 'tap',[ [ 'tapBillboard',['$event'] ] ] ] ]}}" mode="widthFix" src="{{tmp_img_path}}" style="{{'height:'+billboard_height+'rpx'+';'}}"></cover-image>
+            <cover-image class="billboard-success-tip data-v-79f9bdf5" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/save-img-success.png"></cover-image>
+        </cover-view>
+    </web-view>
+    <canvas canvasId="consultant" class="web-view__consultant-canvas data-v-79f9bdf5" style="width:155px;height:220px;"></canvas>
+    <billboard-canvas bind:__l="__l" bind:changeHeight="__e" bind:drawComplete="__e" bind:success="__e" class="data-v-79f9bdf5" consultant="{{consultant}}" current_house="{{current_house}}" data-event-opts="{{[ [ '^drawComplete',[ ['drawComplete'] ] ],[ '^success',[ ['saveImgSuccess'] ] ],[ '^changeHeight',[ ['changeBillboardHeight'] ] ] ]}}" events="{{events}}" house="{{house}}" info="{{buildingCardInfo}}" is_building_consultant="{{is_building_consultant}}" show="{{show_billboard}}" show_720="{{true}}" vueId="7f2c6b56-1"></billboard-canvas>
+    <page-wrap bind:__l="__l" class="data-v-79f9bdf5" hide_back_home="{{true}}" page_show_treasure="{{false}}" title="{{title}}" vueId="7f2c6b56-2"></page-wrap>
+</view>

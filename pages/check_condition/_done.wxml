@@ -1,0 +1,42 @@
+<view class="done-wrap _div data-v-4c2bbb7b">
+    <view class="card _div data-v-4c2bbb7b">
+        <button class="circle-share data-v-4c2bbb7b" openType="share">
+            <image class="_img data-v-4c2bbb7b" src="/static/img/circle-share.png"></image>
+        </button>
+        <view class="result _div data-v-4c2bbb7b">
+            <view class="img-wrap _div data-v-4c2bbb7b">
+                <image class="img _img data-v-4c2bbb7b" lazyLoad="{{true}}" mode="aspectFill" src="{{userHeadimgurl}}" wx:if="{{userHeadimgurl}}"></image>
+                <open-data class="img data-v-4c2bbb7b" type="userAvatarUrl" wx:else></open-data>
+            </view>
+            <view class="content _div data-v-4c2bbb7b">
+                <view class="_div data-v-4c2bbb7b">
+                    <view class="fail _div data-v-4c2bbb7b" wx:if="{{!result}}">{{''+(isLh?'您暂无在杭州落户资格':'您暂无在杭州购房资格')+''}}</view>
+                    <view class="success _div data-v-4c2bbb7b" wx:else>
+                        <view class="_p data-v-4c2bbb7b">{{''+result+''}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <form bindsubmit="__e" class="data-v-4c2bbb7b" data-event-opts="{{[ [ 'submit',[ [ 'goWebView',['$event'] ] ] ] ]}}" data-url="https://mp.weixin.qq.com/s/t7xOoomwJCVRay9wp-olhw" wx:if="{{isIntegral&&isLh}}">
+            <button class="shadow-button data-v-4c2bbb7b" formType="submit">
+                <button class="light-btn data-v-4c2bbb7b">积分落户细则</button>
+            </button>
+        </form>
+        <form bindsubmit="__e" class="data-v-4c2bbb7b" data-event-opts="{{[ [ 'submit',[ [ 'goStart',['$event'] ] ] ] ]}}">
+            <button class="shadow-button data-v-4c2bbb7b" formType="submit">
+                <button class="light-btn data-v-4c2bbb7b">测试家庭其他成员</button>
+            </button>
+        </form>
+        <view class="qr-img _div data-v-4c2bbb7b">
+            <image bindtap="__e" class="_img data-v-4c2bbb7b" data-event-opts="{{[ [ 'tap',[ [ 'perviewQr',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/qr/gzh.jpg"></image>
+            <view class="_p data-v-4c2bbb7b">扫码我也要查</view>
+        </view>
+    </view>
+    <view class="questions _div data-v-4c2bbb7b">
+        <view class="_h3 data-v-4c2bbb7b">
+            <label class="_span data-v-4c2bbb7b">所选答案</label>
+        </view>
+        <view class="answerd _div data-v-4c2bbb7b" wx:for="{{questions}}" wx:for-index="i" wx:key="i">{{''+i+1+'、'+item.question+'答：'+item.answer+''}}</view>
+        <button class="consult data-v-4c2bbb7b" openType="contact">有疑问，可点击咨询</button>
+    </view>
+</view>

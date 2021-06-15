@@ -1,0 +1,23 @@
+<view class="{{[ 'page _div data-v-6b691cca',[filter_show?'page-no-scroll':''] ]}}">
+    <view class="home-header-wrap _header data-v-6b691cca">
+        <view class="home-header _div data-v-6b691cca">
+            <view class="search-wrap _div data-v-6b691cca">
+                <search bind:__l="__l" bind:click="__e" can_search="0" class="data-v-6b691cca" data-event-opts="{{[ [ '^click',[ ['searchClick'] ] ] ]}}" show_hot_keyword="{{false}}" vueId="0b89376a-1"></search>
+            </view>
+            <button class="share-wrap data-v-6b691cca" openType="share">
+                <image class="_img data-v-6b691cca" src="/static/img/share.png"></image>
+                <label class="_span data-v-6b691cca">分享</label>
+            </button>
+        </view>
+    </view>
+    <top-swiper banners="{{banners}}" bind:__l="__l" class="data-v-6b691cca" log_type="business_banner" swiper_id="business-swiper" vueId="0b89376a-2" wx:if="{{banners&&banners.length}}"></top-swiper>
+    <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-6b691cca" className="history-filter" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="0b89376a-3" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}"></top-filter>
+    <status-tip bind:__l="__l" class="data-v-6b691cca" status="热门公寓" vueId="0b89376a-4"></status-tip>
+    <view class="_ul data-v-6b691cca">
+        <list-rec bind:__l="__l" class="{{['data-v-6b691cca',loading&&page===1?'hide':'']}}" list="{{recommendation_list}}" vueId="0b89376a-5" wx:if="{{show_recommendation}}"></list-rec>
+        <house-item bind:__l="__l" class="data-v-6b691cca" item="{{item}}" vueId="{{'0b89376a-6-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id"></house-item>
+    </view>
+    <loading bind:__l="__l" class="data-v-6b691cca" vueId="0b89376a-7" wx:if="{{loading||!no_more}}"></loading>
+    <bottom-tip bind:__l="__l" class="data-v-6b691cca" vueId="0b89376a-8" wx:if="{{!loading&&no_more}}"></bottom-tip>
+    <page-wrap bind:__l="__l" class="data-v-6b691cca" title="热门公寓" vueId="0b89376a-9"></page-wrap>
+</view>

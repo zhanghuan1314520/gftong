@@ -1,0 +1,50 @@
+<view class="page _div data-v-616c48e8">
+    <form bindsubmit="__e" class="data-v-616c48e8" data-event-opts="{{[ [ 'submit',[ [ 'onSubmit',['$event'] ] ] ] ]}}">
+        <view class="row navigator-arrow _div data-v-616c48e8">
+            <label class="data-v-616c48e8">动态类型</label>
+            <picker bindchange="__e" class="data-v-616c48e8" data-event-opts="{{[ [ 'change',[ [ 'changeType',['$event'] ] ] ] ]}}" range="{{templates}}" rangeKey="category" value="{{templates_index}}">{{''+templates[templates_index].category+''}}</picker>
+        </view>
+        <view class="row _div data-v-616c48e8">
+            <label class="item data-v-616c48e8">动态标题</label>
+            <input bindinput="__e" class="data-v-616c48e8" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','title','$event',[] ] ] ] ] ]}}" disabled="{{fixed_title}}" maxlength="30" name="title" placeholder="请输入动态标题" type="text" value="{{title}}" wx:if="{{!loading}}"></input>
+        </view>
+        <view class="row _div data-v-616c48e8">
+            <label class="item data-v-616c48e8">输入动态内容（300字以内）</label>
+            <textarea bindinput="__e" class="content data-v-616c48e8" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','content','$event',[] ] ] ] ] ]}}" maxlength="300" name="content" placeholder="请输入动态内容" value="{{content}}" wx:if="{{!loading}}"></textarea>
+        </view>
+        <view class="row _div data-v-616c48e8">
+            <label class="item data-v-616c48e8">上传图片（最多9张）</label>
+            <view class="form-uploader data-v-616c48e8">
+                <view class="form-uploader--bd data-v-616c48e8">
+                    <view class="ui-uploader--list data-v-616c48e8">
+                        <view class="ui-uploader--item data-v-616c48e8" wx:for="{{photos_urls}}" wx:for-index="i" wx:for-item="img" wx:key="i">
+                            <view class="ui-uploader--inner data-v-616c48e8">
+                                <image bindtap="__e" class="_img data-v-616c48e8" data-event-opts="{{[ [ 'tap',[ [ 'delConfirm',['$event'] ] ] ] ]}}" data-i="{{i}}" src="{{img}}"></image>
+                            </view>
+                        </view>
+                        <view class="ui-uploader--item data-v-616c48e8" wx:if="{{photos_urls.length<9}}">
+                            <view class="ui-uploader--inner data-v-616c48e8">
+                                <view bindtap="__e" class="ui-uploader--btn data-v-616c48e8" data-event-opts="{{[ [ 'tap',[ [ 'uploadMedia',['$event'] ] ] ] ]}}" data-mediatype="{{['image']}}" data-storedir="timg/fc_decoration/hz_watermark_white"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <button class="confirm-btn large-btn data-v-616c48e8" disabled="{{submiting}}" formType="submit" loading="{{submiting}}">提交</button>
+    </form>
+    <view class="consult-rule-section _section data-v-616c48e8">
+        <view class="_h3 data-v-616c48e8">更新动态注意事项：</view>
+        <view class="_ul data-v-616c48e8">
+            <view class="_li data-v-616c48e8">
+                <view class="_i data-v-616c48e8">1</view>
+                <label class="_span data-v-616c48e8">楼盘动态作为该楼盘官方重要动态，只能发布与该楼盘相关的重要信息，如即将拿证、时间变更等官方通知，与此无关的将不予通过。</label>
+            </view>
+            <view class="_li data-v-616c48e8">
+                <view class="_i data-v-616c48e8">2</view>
+                <label class="_span data-v-616c48e8">发布的动态内容不得包含任何含有引导、诱导等性质的广告信息，如姓名、联系方式等。否则我们将不予通过，严重的将取消其资格。</label>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-616c48e8" vueId="5f6e35b8-1"></page-wrap>
+</view>

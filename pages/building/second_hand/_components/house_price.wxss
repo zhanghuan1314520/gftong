@@ -1,0 +1,67 @@
+.item.data-v-bab2027e {
+    margin: 0 auto 20rpx;
+}
+
+.progress.data-v-bab2027e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 44rpx;
+    margin-bottom: 4rpx;
+}
+
+.bar-wrap.data-v-bab2027e {
+    position: relative;
+    width: 486rpx;
+}
+
+.bar.data-v-bab2027e {
+    max-width: 486rpx;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    min-width: 10em;
+    height: 44rpx;
+    padding: 0 8rpx;
+    background-color: #a1e6d8;
+    color: #333;
+}
+
+.bar.data-v-bab2027e,.price.data-v-bab2027e {
+    white-space: nowrap;
+    font-size: 26rpx;
+    font-weight: 700;
+}
+
+.price.data-v-bab2027e {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00b08d;
+    margin-left: 1em;
+}
+
+.current .bar.data-v-bab2027e {
+    background-color: #ffdcad;
+}
+
+.current .price.data-v-bab2027e {
+    color: #fa4b00;
+}

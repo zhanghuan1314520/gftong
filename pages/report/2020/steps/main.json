@@ -1,0 +1,27 @@
+{
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "page1": "/pages/report/2020/components/page_1",
+        "page2": "/pages/report/2020/components/page_2",
+        "page3": "/pages/report/2020/components/page_3",
+        "page4": "/pages/report/2020/components/page_4",
+        "page5": "/pages/report/2020/components/page_5",
+        "page6": "/pages/report/2020/components/page_6",
+        "page7": "/pages/report/2020/components/page_7",
+        "page8": "/pages/report/2020/components/page_8",
+        "page9": "/pages/report/2020/components/page_9",
+        "page10": "/pages/report/2020/components/page_10",
+        "left-bottom-qr": "/pages/report/2020/components/left_bottom_qr",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

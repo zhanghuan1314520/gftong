@@ -1,0 +1,7 @@
+<view bindtap="__e" class="select-wrap _div data-v-45cf1671" data-event-opts="{{[ [ 'tap',[ [ 'toggleList',['$event'] ] ] ] ]}}">
+    <label class="selected _span data-v-45cf1671">{{selected||'全部'}}</label>
+    <view class="{{[ 'modal _div data-v-45cf1671',[!show_list?'hide':''] ]}}"></view>
+    <view class="{{[ '_ul data-v-45cf1671',[!show_list?'hide':''] ]}}">
+        <view catchtap="__e" class="{{[ '_li data-v-45cf1671',[type===selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeType',['$event'] ] ] ] ]}}" data-type="{{type}}" wx:for="{{types}}" wx:for-index="i" wx:for-item="type" wx:key="i">{{''+type+''}}</view>
+    </view>
+</view>

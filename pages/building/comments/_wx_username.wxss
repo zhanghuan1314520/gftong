@@ -1,0 +1,20 @@
+.wx-username.data-v-8392aa64 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #333;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.wx-username ._img.data-v-8392aa64 {
+    width: 180rpx;
+    height: 60rpx;
+}

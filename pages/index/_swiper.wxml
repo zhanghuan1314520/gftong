@@ -1,0 +1,8 @@
+<swiper autoplay="true" bindanimationfinish="__e" circular="{{true}}" class="{{[classname]}}" data-event-opts="{{[ [ 'animationfinish',[ [ 'animationSwiper',['$event'] ] ] ] ]}}" id="{{swiper_id}}" indicatorActiveColor="rgba(255, 255, 255, .8)" indicatorColor="rgba(255, 255, 255, .4)" indicatorDots="{{banners.length>1&&show_indicator}}">
+    <swiper-item wx:for="{{banners}}" wx:for-index="i" wx:for-item="banner" wx:key="i">
+        <navigator bindtap="__e" class="{{['_a',imgClass]}}" data-event-opts="{{[ [ 'tap',[ [ 'goLink',['$event'] ] ] ] ]}}" data-href="{{banner.href}}" data-id="{{banner.id}}" data-pos="{{i}}" data-type="{{banner.open_type}}">
+            <image class="_img" lazyLoad="{{true}}" mode="widthFix" src="{{banner.photo_url}}"></image>
+            <label class="recommend-logo _span">广告</label>
+        </navigator>
+    </swiper-item>
+</swiper>

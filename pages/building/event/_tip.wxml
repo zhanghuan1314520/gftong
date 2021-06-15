@@ -1,0 +1,10 @@
+<view class="ev-tip _div data-v-2b38a1bc">
+    <view bindtap="__e" class="tip _p data-v-2b38a1bc" data-event-opts="{{[ [ 'tap',[ [ 'toggleDlg',['$event'] ] ] ] ]}}">
+        <text class="tx data-v-2b38a1bc">{{title}}</text>
+        <fc-icon bind:__l="__l" class="data-v-2b38a1bc" type="32_risk" vueId="3d2e51e3-1"></fc-icon>
+    </view>
+    <tip-dlg bind:__l="__l" bind:toggleDlg="__e" class="data-v-2b38a1bc" content="{{content}}" data-event-opts="{{[ [ '^toggleDlg',[ ['toggleDlg'] ] ] ]}}" show="{{show_dlg}}" title="免责声明" vueId="3d2e51e3-2"></tip-dlg>
+    <view class="share-btn-wrap _div data-v-2b38a1bc" wx:if="{{show_share}}">
+        <ui-share bind:__l="__l" class="data-v-2b38a1bc" inc="{{true}}" vueId="3d2e51e3-3"></ui-share>
+    </view>
+</view>

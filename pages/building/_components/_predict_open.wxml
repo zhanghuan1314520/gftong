@@ -1,0 +1,8 @@
+<view class="wrap data-v-3bb4a061">
+    <view class="house-page-title data-v-3bb4a061">即将开盘信息</view>
+    <view class="list data-v-3bb4a061">
+        <view class="list-options _div data-v-3bb4a061" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <label class="label auto data-v-3bb4a061">{{item.key}}</label>：<label class="_span data-v-3bb4a061">{{item.val}}</label>
+        </view>
+    </view>
+</view>

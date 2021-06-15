@@ -1,0 +1,85 @@
+<view bindtap="__e" class="{{['house-item _li',classname]}}" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-photo="{{common_utils.getHeadimg(item)}}">
+    <view class="house-item-content _div">
+        <img-wrap bind:__l="__l" item="{{item}}" vueId="02d2d4b0-1"></img-wrap>
+        <view class="content _div">
+            <view class="{{[ 'content-main _div',[center?'center':''] ]}}">
+                <view class="building-desc-title first-row _div">
+                    <view class="_h3">{{''+item.name+''}}<view class="hot" wx:if="{{is_hot}}"></view>
+                    </view>
+                    <view class="new-arrival" wx:if="{{item.new_arrival}}">上新</view>
+                </view>
+                <view class="row normal-row flex-wrap-row _div">
+                    <view class="building-desc-info _div">{{''+item.zone+''}}<label class="_span" wx:if="{{item.zone_section&&hide_date}}">{{'-'+item.zone_section}}</label>
+                    </view>
+                    <view class="{{[ 'building-desc-info _div',[hide_date?'hide':''] ]}}">{{item.date_with_status||''}}</view>
+                </view>
+                <view wx:if="{{util.checkShowPrice(item,type)}}">
+                    <view class="{{[ 'row bottom _div',[item.customized_price.length===1||item.price_desc_arr.length===1?'unit':''] ]}}">
+                        <view class="left _div">
+                            <label class="price _span">
+                                <view class="{{['_div',item.price_desc_arr&&item.price_desc_arr.length>1||item.customized_price&&item.customized_price.length>1?'customized_price':'']}}">
+                                    <view class="building-desc-price _div" wx:for="{{item.price_desc_arr}}" wx:for-index="i" wx:for-item="price" wx:key="i">{{price}}</view>
+                                </view>
+                            </label>
+                            <view class="building-desc-coupons" wx:if="{{util.checkShowCoupon(item)}}">
+                                <view class="i"></view>
+                                <text>楼盘优惠券</text>
+                            </view>
+                        </view>
+                        <view catchtap="__e" class="comment-show _div" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count?'inline-flex':'none')+';'}}">
+                            <fc-icon bind:__l="__l" type="40_comment_small" vueId="02d2d4b0-2"></fc-icon>
+                            <label class="_span">{{item.comment_count}}</label>
+                        </view>
+                    </view>
+                    <view class="row bottom tags-group">
+                        <view class="tags tags-overflow _div" wx:if="{{item.tag_names}}">
+                            <label class="{{['tag _span',tag.style]}}" wx:for="{{item.tag_names}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{tag.name}}</label>
+                        </view>
+                    </view>
+                </view>
+                <view wx:else>
+                    <view class="row bottom _div">
+                        <view class="left _div">
+                            <view class="building-desc-coupons" wx:if="{{util.checkShowCoupon(item)}}">
+                                <view class="i"></view>
+                                <text>楼盘优惠券</text>
+                            </view>
+                            <view class="tags tags-overflow _div" wx:if="{{item.tag_names}}">
+                                <label class="{{['tag _span',tag.style]}}" wx:for="{{item.tag_names}}" wx:for-index="i" wx:for-item="tag" wx:key="i">{{tag.name}}</label>
+                            </view>
+                        </view>
+                        <view catchtap="__e" class="comment-show _div" data-event-opts="{{[ [ 'tap',[ [ 'goComments',['$event'] ] ] ] ]}}" style="{{'display:'+(item.comment_count?'inline-flex':'none')+';'}}">
+                            <fc-icon bind:__l="__l" type="40_comment_small" vueId="02d2d4b0-3"></fc-icon>
+                            <label class="_span">{{item.comment_count}}</label>
+                        </view>
+                    </view>
+                </view>
+                <view class="building-desc-ranking _div" wx:if="{{item.building_ranking}}">
+                    <fc-icon bind:__l="__l" type="28_list" vueId="02d2d4b0-4"></fc-icon>
+                    <text>{{'入选'+item.building_ranking.zone+type_name}}</text>
+                    <text wx:if="{{item.building_ranking.ranking_order<=10}}">{{'第'+item.building_ranking.ranking_order+'名'}}</text>
+                </view>
+                <view class="probability _div" style="{{'display:'+(type!='即将取证'&&(item.common_probability||item.rd_probability)?'flex':'none')+';'}}">
+                    <view class="icon _i"></view>
+                    <label class="_span">中签率：</label>
+                    <label class="item _span" wx:for="{{formatProbability}}" wx:for-index="__i0__" wx:for-item="el" wx:key="key">{{el.label+el.value+'%'}}</label>
+                </view>
+            </view>
+        </view>
+    </view>
+    <slot></slot>
+</view>
+<wxs module="common_utils" src="_house_item_utils.wxs" />
+<wxs module="util">
+function checkShowCoupon(item) {
+    return (item && item.coupons && item.coupons.length)
+};
+
+function checkShowPrice(item, type) {
+    return (item && item.price_desc_arr && item.price_desc_arr.length)
+};
+module.exports = ({
+    checkShowCoupon: checkShowCoupon,
+    checkShowPrice: checkShowPrice,
+});
+</wxs>

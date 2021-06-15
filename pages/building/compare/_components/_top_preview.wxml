@@ -1,0 +1,17 @@
+<view class="header-wrap data-v-bb0bd8ba" id="header" style="{{'height:'+wrap_height+';'}}">
+    <view class="{{['header data-v-bb0bd8ba',fixed?'fixed':'']}}">
+        <view class="left data-v-bb0bd8ba">
+            <text class="i data-v-bb0bd8ba">楼</text>
+            <text class="i data-v-bb0bd8ba">盘</text>
+            <text class="i data-v-bb0bd8ba">对</text>
+            <text class="i data-v-bb0bd8ba">比</text>
+        </view>
+        <view class="right data-v-bb0bd8ba">
+            <view bindtap="__e" class="item data-v-bb0bd8ba" data-event-opts="{{[ [ 'tap',[ [ 'openBuilding',['$0'],[ [ ['buildings','',i,'building_id'] ] ] ] ] ] ]}}" wx:for="{{buildings}}" wx:for-index="i" wx:key="i">
+                <img-wrap bind:__l="__l" class="data-v-bb0bd8ba" item="{{item}}" vueId="{{'dfdf7e9e-1-'+i}}"></img-wrap>
+                <view class="name heading28B data-v-bb0bd8ba">{{item.name}}</view>
+                <view class="usage assistFont24 data-v-bb0bd8ba" wx:if="{{item.usage}}">{{'物业类型：'+item.usage}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="{{['page data-v-6e765714',classname]}}">
+    <view class="img-box data-v-6e765714" wx:if="{{d_img}}">
+        <image bindload="__e" bindtap="__e" class="_img data-v-6e765714" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ],[ 'load',[ [ 'onimgload',['$event'] ] ] ] ]}}" src="{{d_img}}"></image>
+    </view>
+    <button class="share-btn share-btn__f data-v-6e765714" openType="share">
+        <image class="_img data-v-6e765714" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/f.png"></image>
+    </button>
+    <button catchtap="__e" class="save-btn data-v-6e765714" data-event-opts="{{[ [ 'tap',[ [ 'onSaveImg',['$event'] ] ] ] ]}}" wx:if="{{show_bb}}">
+        <image class="_img data-v-6e765714" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/pi/save.png"></image>
+    </button>
+    <canvas canvasId="canvas" class="share-canvas data-v-6e765714" style="{{'width:'+canvas_w+'px'+';'+'height:'+canvas_h+'px'+';'}}"></canvas>
+    <page-wrap bind:__l="__l" class="data-v-6e765714" title="{{title}}" vueId="54e675c6-1"></page-wrap>
+</view>

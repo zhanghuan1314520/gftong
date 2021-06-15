@@ -1,0 +1,41 @@
+.highlight.data-v-4b657664 {
+    color: #3b93eb;
+}
+
+.r-search-wrap.data-v-4b657664 {
+    width: 100%;
+    height: 66rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #444;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 1rpx solid #00ad82;
+    font-size: 26rpx;
+    color: #b2b2b2;
+    margin-bottom: 30rpx;
+    padding-left: 30rpx;
+}
+
+.r-search-wrap ._i.data-v-4b657664 {
+    width: 110rpx;
+    height: 100%;
+    background: #00ad82 url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/search.png) 50% no-repeat;
+    background-size: 36rpx 38rpx;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.bottom-tip.data-v-4b657664 {
+    color: #666;
+    text-align: center;
+    font-size: 24rpx;
+}

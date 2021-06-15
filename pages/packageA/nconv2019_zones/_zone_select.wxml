@@ -1,0 +1,18 @@
+<cover-view class="{{[ 'top-filter-wrap map-filter data-v-a3f74cac',[!show?'hide':''] ]}}">
+    <cover-view class="select-content data-v-a3f74cac">
+        <cover-view class="right data-v-a3f74cac">
+            <cover-view class="data-v-a3f74cac">
+                <cover-view class="zones data-v-a3f74cac">
+                    <cover-view class="opts-wrap data-v-a3f74cac">
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-a3f74cac',[selected_zone===''?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'selectAll',['$event'] ] ] ] ]}}">不限</cover-view>
+                        <cover-view bindtap="__e" class="{{[ 'opt data-v-a3f74cac',[item.name===selected_zone?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$0'],[ [ ['zones','',i,'name'] ] ] ] ] ] ]}}" wx:for="{{zones}}" wx:for-index="i" wx:key="i">{{''+item.name+''}}</cover-view>
+                    </cover-view>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+    </cover-view>
+    <cover-view class="bottom data-v-a3f74cac">
+        <cover-view bindtap="__e" class="btn data-v-a3f74cac" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">清空</cover-view>
+        <cover-view bindtap="__e" class="btn main data-v-a3f74cac" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</cover-view>
+    </cover-view>
+</cover-view>

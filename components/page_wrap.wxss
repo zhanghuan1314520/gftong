@@ -1,0 +1,32 @@
+.back-home.data-v-395c5a64 {
+    position: fixed;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 110rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    bottom: 180rpx;
+    right: 0;
+    border-radius: 83rpx 0 0 83rpx;
+    text-align: center;
+    background-color: rgba(0,173,130,.9);
+    box-shadow: 0 1rpx 2rpx 0 rgba(0,0,0,.6);
+    font-size: 22rpx;
+    color: #fff;
+    z-index: 3;
+}
+
+.back-home ._img.data-v-395c5a64 {
+    width: 32rpx;
+    height: 29rpx;
+    margin-right: 6rpx;
+    margin-bottom: 4rpx;
+}

@@ -1,0 +1,185 @@
+.audio-msg.data-v-302c7298 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 86rpx;
+}
+
+.audio-msg.noread.data-v-302c7298::before {
+    position: absolute;
+    content: "";
+    width: 14rpx;
+    height: 14rpx;
+    background-color: #e15151;
+    border-radius: 50%;
+    right: -34rpx;
+    top: 40rpx;
+}
+
+.audio-msg .i.data-v-302c7298,.audio-msg .text.data-v-302c7298 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.audio-msg .i.data-v-302c7298 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 26rpx;
+    height: 30rpx;
+    margin-right: 12rpx;
+}
+
+.audio-msg .wave.data-v-302c7298 {
+    display: inline-block;
+}
+
+.audio-msg .wave.data-v-302c7298:nth-child(1) {
+    width: 6rpx;
+    height: 6rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-1.png);
+    background-size: 100% 100%;
+}
+
+.audio-msg .wave.data-v-302c7298:nth-child(2) {
+    width: 9rpx;
+    height: 18rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-2.png);
+    background-size: 100% 100%;
+}
+
+.audio-msg .wave.data-v-302c7298:nth-child(3) {
+    width: 10rpx;
+    height: 30rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-3.png);
+    background-size: 100% 100%;
+}
+
+.audio-msg.self.data-v-302c7298 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+}
+
+.audio-msg.self.noread.data-v-302c7298::before {
+    left: -34rpx;
+}
+
+.audio-msg.self .i.data-v-302c7298 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+}
+
+.audio-msg.self .wave.data-v-302c7298:nth-child(1) {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-white-1.png);
+    background-size: 100% 100%;
+}
+
+.audio-msg.self .wave.data-v-302c7298:nth-child(2) {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-white-2.png);
+    background-size: 100% 100%;
+}
+
+.audio-msg.self .wave.data-v-302c7298:nth-child(3) {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/audio-white-3.png);
+    background-size: 100% 100%;
+}
+
+.reading .wave.data-v-302c7298:nth-child(2) {
+    animation: reading2-data-v-302c7298 2s linear infinite;
+}
+
+.reading .wave.data-v-302c7298:nth-child(3) {
+    animation: reading3-data-v-302c7298 2s linear infinite;
+}
+
+@-webkit-keyframes reading2-data-v-302c7298 {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes reading2-data-v-302c7298 {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes reading3-data-v-302c7298 {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes reading3-data-v-302c7298 {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

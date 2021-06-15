@@ -1,0 +1,9 @@
+<view class="top-filter-wrap _div data-v-032ad80b">
+    <view class="select-content _div data-v-032ad80b">
+        <layout-checkbox bind:__l="__l" bind:change="__e" class="data-v-032ad80b" data-event-opts="{{[ [ '^change',[ ['change'] ] ] ]}}" selected="{{selected}}" vueId="1b733b9c-1"></layout-checkbox>
+    </view>
+    <view class="bottom _div data-v-032ad80b">
+        <button bindtap="__e" class="btn data-v-032ad80b" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">清空</button>
+        <button bindtap="__e" class="btn main data-v-032ad80b" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</button>
+    </view>
+</view>

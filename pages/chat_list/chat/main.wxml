@@ -1,0 +1,58 @@
+<view class="page chat-page _div data-v-33717b85">
+    <view class="_div data-v-33717b85" wx:if="{{show}}">
+        <consultant-card bind:__l="__l" bind:getPhoneCall="__e" building="{{building}}" class="data-v-33717b85" consultant="{{consultant}}" consultant_count="{{building.consultant_count}}" data-event-opts="{{[ [ '^getPhoneCall',[ ['getConsultantPhoneCall'] ] ] ]}}" vueId="57ec08e9-1" wx:if="{{is_consult}}"></consultant-card>
+        <peer-user ask_phone_status="{{im_user.ask_phone_status}}" bind:__l="__l" bind:ask="__e" building="{{building}}" class="data-v-33717b85" data-event-opts="{{[ [ '^ask',[ ['askPhone'] ] ] ]}}" peer_headimgurl="{{peer_user.peer_headimgurl}}" peer_nickname="{{peer_user.peer_nickname}}" vueId="57ec08e9-2" wx:else></peer-user>
+    </view>
+    <scroll-view bindscrolltoupper="__e" bindtap="__e" class="{{['chat-wrap data-v-33717b85',is_consult?'consultant':'']}}" data-event-opts="{{[ [ 'scrolltoupper',[ [ 'getMore',['$event'] ] ] ],[ 'tap',[ [ 'hideOtherOption',['$event'] ] ] ] ]}}" scrollAnchoring="{{true}}" scrollIntoView="{{chart_pos}}" scrollY="{{true}}" upperThreshold="100" wx:if="{{show_msg}}">
+        <view class="tip _div data-v-33717b85" wx:if="{{no_more}}">没有更多了</view>
+        <view class="_div data-v-33717b85" id="{{msg.id}}" wx:for="{{msgs}}" wx:for-index="__i0__" wx:for-item="msg" wx:key="id">
+            <view class="msg-date data-v-33717b85" wx:if="{{msg.show_date}}">{{''+msg.date+''}}</view>
+            <msg-card bind:__l="__l" class="data-v-33717b85" consultant_id="{{consultant.id}}" msg="{{msg}}" vueId="{{'57ec08e9-3-'+__i0__}}" wx:if="{{msg.msgStyle==='card'}}"></msg-card>
+            <block wx:else>
+                <msg-sys-tip bind:__l="__l" class="data-v-33717b85" msg="{{msg.content}}" vueId="{{'57ec08e9-4-'+__i0__}}" wx:if="{{msg.msgStyle==='sys_tips'}}"></msg-sys-tip>
+                <block wx:else>
+                    <msg-ask bind:__l="__l" bind:cancel="__e" bind:confirm="__e" cancel_text="复制手机号" card="{{msg.card}}" class="accepted-ask-phone data-v-33717b85" confirm_text="立即致电" data-event-opts="{{[ [ '^cancel',[ [ 'copyPhone',['$0'],[ [ ['msgs','id',msg.id,'phone'] ] ] ] ] ],[ '^confirm',[ [ 'callPhone',['$0'],[ [ ['msgs','id',msg.id,'phone'] ] ] ] ] ] ]}}" vueId="{{'57ec08e9-5-'+__i0__}}" wx:if="{{msg.msgStyle==='accepted_ask_phone'}}"></msg-ask>
+                    <view class="{{['msg _div data-v-33717b85',msg.classname]}}" wx:else>
+                        <image bindtap="__e" class="headimg _img data-v-33717b85" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" data-img="{{msg.headimg}}" lazyLoad="{{true}}" src="{{msg.mini_headimg}}"></image>
+                        <view class="content-wrap _div data-v-33717b85">
+                            <view class="{{[ 'read-status _div data-v-33717b85',[!msg.isPeerRead?'noread':''] ]}}" valign="bottom" wx:if="{{msg.classname==='self'}}">
+                                <label class="text _span data-v-33717b85">{{msg.isPeerRead?'已读':'未读'}}</label>
+                            </view>
+                            <view class="_div data-v-33717b85" wx:if="{{msg.msgStyle==='img'}}">
+                                <image bindtap="__e" class="msg-img _img data-v-33717b85" data-event-opts="{{[ [ 'tap',[ [ 'previewMsgImg',['$0'],[ [ ['msgs','id',msg.id,'content'] ] ] ] ] ] ]}}" mode="aspectFill" src="{{msg.content}}"></image>
+                            </view>
+                            <block wx:else>
+                                <msg-ask bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:getPhoneNumber="__e" cancel_text="{{ask_cancel_text}}" class="data-v-33717b85" data-event-opts="{{[ [ '^getPhoneNumber',[ ['getPhoneNumber'] ] ],[ '^confirm',[ ['acceptPhone'] ] ],[ '^cancel',[ ['rejectPhone'] ] ] ]}}" msg="{{msg.content}}" open_type="{{!auth_phone_number?'getPhoneNumber':''}}" show_confirm="{{phone_ask_waiting}}" vueId="{{'57ec08e9-6-'+__i0__}}" wx:if="{{msg.msgStyle==='ask_phone'}}"></msg-ask>
+                                <block wx:else>
+                                    <msg-ask bind:__l="__l" bind:confirm="__e" class="data-v-33717b85" confirm_text="立即致电" data-event-opts="{{[ [ '^confirm',[ ['callConsultant'] ] ] ]}}" msg="{{msg.content}}" show_cancel="{{false}}" vueId="{{'57ec08e9-7-'+__i0__}}" wx:if="{{msg.msgStyle==='call_consultant'}}"></msg-ask>
+                                    <block wx:else>
+                                        <msg-building-card bind:__l="__l" building="{{building}}" card="{{msg.content}}" class="data-v-33717b85" vueId="{{'57ec08e9-8-'+__i0__}}" wx:if="{{msg.msgStyle==='building_card'}}"></msg-building-card>
+                                        <block wx:else>
+                                            <audio-msg bind:__l="__l" class="data-v-33717b85" msg="{{msg}}" vueId="{{'57ec08e9-9-'+__i0__}}" wx:if="{{msg.msgStyle==='audio'}}"></audio-msg>
+                                            <view class="_div data-v-33717b85" wx:else>
+                                                <text bindlongtap="__e" class="content data-v-33717b85" data-content="{{msg.content}}" data-event-opts="{{[ [ 'longtap',[ [ 'copyContent',['$event'] ] ] ] ]}}" id="{{msg.id}}">{{''+msg.content+''}}</text>
+                                            </view>
+                                        </block>
+                                    </block>
+                                </block>
+                            </block>
+                        </view>
+                    </view>
+                </block>
+            </block>
+            <view bindtap="__e" class="{{['report-card _div data-v-33717b85',msg.classname]}}" data-event-opts="{{[ [ 'tap',[ [ 'goReport',['$event'] ] ] ] ]}}" wx:if="{{msg.msgStyle==='report'}}">
+                <view class="content _div data-v-33717b85">
+                    <text class="text data-v-33717b85">来自年度最佳队友，点击立即
+                        测测谁是你的最佳队友</text>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-33717b85" id="msg-btm"></view>
+    </scroll-view>
+    <view class="bottom-wrap adapt_bottom_origin _div data-v-33717b85">
+        <chat-input bind:__l="__l" bind:changeMsg="__e" bind:checkBlocked="__e" bind:hideBottom="__e" bind:sendAudio="__e" bind:sendMsg="__e" bind:toggleExpression="__e" bind:toggleTools="__e" can_send="{{can_send}}" class="data-v-33717b85" data-event-opts="{{[ [ '^checkBlocked',[ ['checkBlocked'] ] ],[ '^changeMsg',[ ['changeMsg'] ] ],[ '^toggleTools',[ ['toggleTools'] ] ],[ '^toggleExpression',[ ['toggleExpression'] ] ],[ '^sendMsg',[ ['sendMsg'] ] ],[ '^sendAudio',[ ['sendAudio'] ] ],[ '^hideBottom',[ ['hideBottom'] ] ] ]}}" is_peer_blocked="{{is_peer_blocked}}" msg="{{msg}}" show_expression="{{show_expression}}" show_tools="{{show_tools}}" vueId="57ec08e9-10"></chat-input>
+        <tools bind:__l="__l" bind:chooseImg="__e" class="data-v-33717b85" data-event-opts="{{[ [ '^chooseImg',[ ['chooseImg'] ] ] ]}}" show="{{show_tools}}" vueId="57ec08e9-11"></tools>
+        <expression bind:__l="__l" bind:selectExpression="__e" class="data-v-33717b85" data-event-opts="{{[ [ '^selectExpression',[ ['selectExpression'] ] ] ]}}" frequent_expressions="{{frequent_expressions}}" is_consultant_user="{{is_consultant_user}}" show="{{show_expression}}" vueId="57ec08e9-12"></expression>
+    </view>
+    <float-building-card bind:__l="__l" bind:send="__e" building="{{building}}" class="data-v-33717b85" data-event-opts="{{[ [ '^send',[ ['sendBuildingCard'] ] ] ]}}" vueId="57ec08e9-13" wx:if="{{show_building_card}}"></float-building-card>
+</view>

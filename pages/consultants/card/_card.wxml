@@ -1,0 +1,51 @@
+<view class="card-wrap _div data-v-4b5804ad">
+    <view class="{{['consults-card _div data-v-4b5804ad',consultant.level]}}">
+        <view class="_header data-v-4b5804ad">
+            <view bindtap="__e" class="headimg consultant-headimg _div data-v-4b5804ad" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}">
+                <common-img bind:__l="__l" class="img data-v-4b5804ad" mode="widthFix" src="{{consultant.weixin_headimgurl}}" vueId="d6e458f4-1"></common-img>
+                <view class="consultant-headimg-tag data-v-4b5804ad" wx:if="{{consultant.honour_title}}">{{consultant.honour_title}}</view>
+            </view>
+            <view class="info _div data-v-4b5804ad">
+                <view class="_h3 data-v-4b5804ad">
+                    <label class="name _span data-v-4b5804ad">{{consultant.name}}</label>
+                    <view class="medals _div data-v-4b5804ad">
+                        <label class="card-metal _span data-v-4b5804ad"></label>
+                    </view>
+                </view>
+                <view class="_p data-v-4b5804ad">
+                    <label catchtap="__e" class="_span data-v-4b5804ad" data-event-opts="{{[ [ 'tap',[ [ 'setClipboardData',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-weixin="{{consultant.weixin_name}}">微信：<label class="weixin-name _span data-v-4b5804ad">{{consultant.weixin_name}}</label>
+                        <image class="cp-btn _img data-v-4b5804ad" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/copy.png"></image>
+                    </label>
+                </view>
+                <view class="_p data-v-4b5804ad">{{'楼盘：'+consultant.building_name+''}}</view>
+            </view>
+        </view>
+        <view class="_article data-v-4b5804ad">
+            <fangchan-auth-user bind:__l="__l" bind:success="__e" class="data-v-4b5804ad" classname="shadow-button" data-event-opts="{{[ [ '^success',[ [ 'goChat',['$0'],['consultant.id'] ] ] ] ]}}" failTip="需要授权用户信息才可以进行咨询" forceAuth="{{true}}" vueId="d6e458f4-2" vueSlots="{{['default']}}">
+                <view class="common-btn consult-btn _div data-v-4b5804ad">
+                    <image class="_img data-v-4b5804ad" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/consult'+(consultant.level==='silver'?'':'_gold')+'.png'}}"></image>
+                    <label class="_span data-v-4b5804ad">立即咨询</label>
+                </view>
+            </fangchan-auth-user>
+            <navigator bindtap="__e" class="common-btn call-btn _a data-v-4b5804ad" data-event-opts="{{[ [ 'tap',[ [ 'callConsultant',['$event'] ] ] ] ]}}" data-id="{{consultant.id}}" data-phone="{{consultant.mobile}}">
+                <image class="_img data-v-4b5804ad" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/phone'+(consultant.level==='silver'?'':'_gold')+'.png'}}"></image>
+                <label class="_span data-v-4b5804ad">拨打电话</label>
+            </navigator>
+        </view>
+        <view class="_footer data-v-4b5804ad">
+            <view bindtap="__e" class="view-data _div data-v-4b5804ad" data-event-opts="{{[ [ 'tap',[ [ 'openViewer',['$0'],['consultant.id'] ] ] ] ]}}">
+                <label class="num _span data-v-4b5804ad">{{consultant.show_times}}</label>
+                <label class="_span data-v-4b5804ad">浏览量</label>
+            </view>
+            <view class="view-data _div data-v-4b5804ad">
+                <label class="num _span data-v-4b5804ad">{{consultant.last_period_obtained_score}}</label>
+                <label class="_span data-v-4b5804ad">活跃度</label>
+            </view>
+            <view class="view-data _div data-v-4b5804ad">
+                <label class="num _span data-v-4b5804ad">{{consultant.like_count}}</label>
+                <label class="_span data-v-4b5804ad">点赞数</label>
+            </view>
+        </view>
+    </view>
+    <medals bind:__l="__l" bind:hide="__e" class="data-v-4b5804ad" consultant="{{consultant}}" data-event-opts="{{[ [ '^hide',[ ['toggleMedalDetail'] ] ] ]}}" vueId="d6e458f4-3" wx:if="{{show_medal_detail}}"></medals>
+</view>

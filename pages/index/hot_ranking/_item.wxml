@@ -1,0 +1,10 @@
+<view class="ranking-item _div data-v-01ab3820">
+    <image bindtap="__e" class="top-img _img data-v-01ab3820" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goRanking','$0'],['type'] ] ] ] ]}}" src="{{top_img}}"></image>
+    <view class="content _div data-v-01ab3820">
+        <view bindtap="__e" class="item _div data-v-01ab3820" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goItem','$0',index+1,'$1'],[ [ ['val','',index] ],'type' ] ] ] ] ]}}" wx:for="{{val}}" wx:key="index">
+            <view class="index topic _div data-v-01ab3820">{{index+1}}</view>
+            <view class="_p data-v-01ab3820">{{item.name||item.title}}</view>
+            <view class="_i data-v-01ab3820"></view>
+        </view>
+    </view>
+</view>

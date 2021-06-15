@@ -1,0 +1,16 @@
+<view class="top-search data-v-3a6a7e97">
+    <top-right-share bind:__l="__l" class="data-v-3a6a7e97" top="24" type="white" vueId="01f17396-1"></top-right-share>
+    <view class="card-top data-v-3a6a7e97"></view>
+    <navigator class="card-middle data-v-3a6a7e97" url="/pages/activity_a/building_rank/main">
+        <view class="_p data-v-3a6a7e97">{{'更新时间：'+(refreshed_at||'')}}</view>
+        <view class="_div data-v-3a6a7e97">
+            <image class="_img data-v-3a6a7e97" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/top-search/fire.png"></image>
+            <text class="data-v-3a6a7e97">楼盘排行榜</text>
+            <view class="_i data-v-3a6a7e97"></view>
+        </view>
+    </navigator>
+    <view class="card-bottom data-v-3a6a7e97">
+        <host-list bind:__l="__l" class="data-v-3a6a7e97" items="{{items}}" max_length="20" vueId="01f17396-2"></host-list>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-3a6a7e97" hide_back_home="true" title="实时热榜" vueId="01f17396-3"></page-wrap>
+</view>

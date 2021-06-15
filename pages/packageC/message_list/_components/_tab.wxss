@@ -1,0 +1,78 @@
+.scroll-wrap.data-v-edb6a846 {
+    position: relative;
+    width: 750rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.active-i.data-v-edb6a846 {
+    position: absolute;
+    width: 100rpx;
+    top: 82rpx;
+    height: 6rpx;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    background: #00b08d;
+    border-radius: 10rpx;
+}
+
+.tabs.data-v-edb6a846 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    white-space: nowrap;
+    height: 88rpx;
+    position: relative;
+    padding: 0 32rpx;
+}
+
+.tabs ._li.data-v-edb6a846 {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #333;
+    font-size: 28rpx;
+    margin-right: 54rpx;
+    vertical-align: middle;
+    height: 86rpx;
+}
+
+.tabs ._li.active.data-v-edb6a846 {
+    position: relative;
+    font-weight: 700;
+    font-size: 32rpx;
+    color: #333;
+}
+
+.tabs ._li.active .new.data-v-edb6a846 {
+    right: -20%;
+}
+
+.tabs .new.data-v-edb6a846 {
+    width: 34rpx;
+    height: 34rpx;
+    border-radius: 50%;
+    font-size: 22rpx;
+    color: #fff;
+    line-height: 34rpx;
+    text-align: center;
+}
+
+.tabs .new.cirlce.data-v-edb6a846,.tabs .new.data-v-edb6a846 {
+    position: absolute;
+    top: 12rpx;
+    right: -26%;
+    background-color: #f03535;
+}
+
+.tabs .new.cirlce.data-v-edb6a846 {
+    width: 16rpx;
+    height: 16rpx;
+}

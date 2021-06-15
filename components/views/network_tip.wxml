@@ -1,0 +1,6 @@
+<view class="_div data-v-71e48c16">
+    <view class="network-tip _div data-v-71e48c16" wx:if="{{show}}">
+        <icon class="data-v-71e48c16" size="48rpx" type="warn"></icon>
+        <label class="_span data-v-71e48c16">当前网络状态不佳，请检查您的网络设置</label>
+    </view>
+</view>

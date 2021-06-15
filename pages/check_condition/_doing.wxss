@@ -1,0 +1,121 @@
+.answered.data-v-111a5be3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30rpx 0;
+    font-weight: 600;
+    font-size: 28rpx;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.answered label.data-v-111a5be3 {
+    display: inline;
+    color: #333;
+    margin-right: 16rpx;
+}
+
+.answered ._span.data-v-111a5be3 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 300rpx;
+    min-width: 138rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 30rpx;
+    border-radius: 30rpx;
+    background-color: #f2f2f2;
+}
+
+.answered ._span text.data-v-111a5be3 {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    max-width: 218rpx;
+    padding-right: 6rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.answered ._img.data-v-111a5be3 {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+}
+
+.doing-wrap.data-v-111a5be3 {
+    padding: 0 30rpx;
+    background-color: #fff;
+}
+
+.doing-wrap .back-link.data-v-111a5be3 {
+    width: 320rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 43.5rpx;
+    color: #fff;
+    background: #00ad82;
+    font-size: 32rpx;
+    margin-top: 32rpx;
+}
+
+.content.data-v-111a5be3 {
+    padding-top: 60rpx;
+    font-size: 34rpx;
+    color: #333;
+}
+
+.content ._h3.data-v-111a5be3 {
+    font-weight: 700;
+}
+
+.content .radios-wrap.data-v-111a5be3 {
+    width: 100%;
+}
+
+.content .radio.data-v-111a5be3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    padding: 20rpx 0;
+    border: 1rpx solid #e6e6e6;
+    border-radius: 6rpx;
+    margin-top: 16rpx;
+}
+
+.content .radio ._i.data-v-111a5be3 {
+    width: 65rpx;
+    height: 100%;
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #00ad82;
+    text-align: center;
+}
+
+.content .radio ._span.data-v-111a5be3 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 0 20rpx;
+    border-left: 1rpx solid #e6e6e6;
+    color: #444;
+}

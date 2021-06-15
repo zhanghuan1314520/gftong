@@ -1,0 +1,14 @@
+<view class="page-box data-v-cadc24fa">
+    <view class="page data-v-cadc24fa">
+        <view class="tabs-wrap tabs-booth _div data-v-cadc24fa">
+            <common-tabs bind:__l="__l" bind:change="__e" class="data-v-cadc24fa" data-event-opts="{{[ [ '^change',[ ['changeCategory'] ] ] ]}}" scroll="{{true}}" selected="{{type}}" tabs="{{tabs}}" vueId="6368e36c-1"></common-tabs>
+        </view>
+        <view class="main data-v-cadc24fa">
+            <view class="tips data-v-cadc24fa">{{'昨日活跃度排名第'+image.index+'的置业顾问享受此专属展示位'}}</view>
+            <image class="_img data-v-cadc24fa" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/booth/'+image.name+'.png'}}" style="{{$root.s0}}"></image>
+        </view>
+    </view>
+    <view class="sticky sticky-footer sticky-footer--ranking data-v-cadc24fa" wx:if="{{showBtn}}">
+        <navigator class="ui-btn big primary radius-44 _a data-v-cadc24fa" url="/pages/packageB/consultant_topic/main">我要上展位</navigator>
+    </view>
+</view>

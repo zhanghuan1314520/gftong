@@ -1,0 +1,7 @@
+<view class="_div data-v-e48efd66">
+    <view class="building data-v-e48efd66" wx:if="{{!loading}}">
+        <building-item bind:__l="__l" class="data-v-e48efd66" item="{{house}}" vueId="8d9ee7fc-1"></building-item>
+    </view>
+    <building-articles bind:__l="__l" class="data-v-e48efd66 vue-ref" data-ref="building_article" loading="{{loading}}" vueId="8d9ee7fc-2" weixin_account_id="{{house.weixin_account_id}}"></building-articles>
+    <page-wrap bind:__l="__l" class="data-v-e48efd66" title="{{house.name}}" vueId="8d9ee7fc-3"></page-wrap>
+</view>

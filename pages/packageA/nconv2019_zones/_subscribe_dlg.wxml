@@ -1,0 +1,4 @@
+<cover-view class="subscribe-dlg data-v-52117c3b">
+    <cover-image class="img data-v-52117c3b" src="{{src}}"></cover-image>
+    <cover-view bindtap="__e" class="btn data-v-52117c3b" data-event-opts="{{[ [ 'tap',[ [ 'saveImg',['$event'] ] ] ] ]}}"></cover-view>
+</cover-view>

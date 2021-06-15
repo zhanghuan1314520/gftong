@@ -1,0 +1,29 @@
+<view class="page _div data-v-eb3635f6">
+    <navigator class="offical-account hide _a data-v-eb3635f6" url="/pages/packageA/consultant_home/main">
+        <image class="_img data-v-eb3635f6" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/wx-swiper-banner.png"></image>
+        <official-account class="data-v-eb3635f6"></official-account>
+    </navigator>
+    <view class="_h3 data-v-eb3635f6">
+        <label class="_span data-v-eb3635f6">通话记录</label>
+        <view class="{{[ 'rate _div data-v-eb3635f6',[loading?'hide':''] ]}}">
+            <label class="_span data-v-eb3635f6">{{call_completing_rate+'接通率'}}</label>
+            <view class="progress _div data-v-eb3635f6">
+                <view class="bar _div data-v-eb3635f6" style="{{'width:'+call_completing_rate+';'}}"></view>
+            </view>
+        </view>
+    </view>
+    <view class="list _ul data-v-eb3635f6">
+        <view bindtap="__e" class="{{[ 'item _li data-v-eb3635f6',[item.call_status==='未接通'?'unconnected':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'call',['$event'] ] ] ] ]}}" data-phone="{{item.peer_no}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+            <view class="info _div data-v-eb3635f6">
+                <label class="mobile _span data-v-eb3635f6">{{item.peer_no}}</label>
+                <label class="duration _span data-v-eb3635f6">{{item.call_status==='未接通'?'未接通':item.call_interval}}</label>
+            </view>
+            <view class="time _div data-v-eb3635f6">
+                <label class="_span data-v-eb3635f6">{{item.call_time}}</label>
+            </view>
+        </view>
+        <view class="_p data-v-eb3635f6" wx:if="{{!loading&&!items.length}}">暂无通话记录</view>
+    </view>
+    <loading bind:__l="__l" class="data-v-eb3635f6" vueId="b4f22534-1" wx:if="{{loading||items.length<total_count}}"></loading>
+    <page-wrap bind:__l="__l" class="data-v-eb3635f6" title="电话记录" vueId="b4f22534-2"></page-wrap>
+</view>

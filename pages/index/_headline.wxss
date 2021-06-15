@@ -1,0 +1,34 @@
+.headline.data-v-5e7194ea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 21rpx 30rpx 19rpx;
+    border-top: 1rpx solid #ebebeb;
+    background-color: #fff;
+}
+
+swiper.data-v-5e7194ea {
+    -webkit-box-flex: 1;
+    flex: 1;
+    height: 36rpx;
+    line-height: 36rpx;
+}
+
+swiper ._p.data-v-5e7194ea {
+    max-width: 550rpx;
+    font-size: 26rpx;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+._img.data-v-5e7194ea {
+    margin-right: 34rpx;
+    width: 81rpx;
+    height: 36rpx;
+}

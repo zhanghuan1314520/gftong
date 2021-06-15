@@ -1,0 +1,49 @@
+<view class="page _div data-v-584d2dc2">
+    <view class="data-v-584d2dc2" wx:if="{{banners&&banners.length}}">
+        <ad-swiper banners="{{banners}}" bind:__l="__l" class="data-v-584d2dc2" height="{{150}}" log_type="msgpage_top_banner" swiper_id="notice-swiper" vueId="7e86d865-1"></ad-swiper>
+    </view>
+    <view class="tabs-wrap tabs-notice _div data-v-584d2dc2">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-584d2dc2" data-event-opts="{{[ [ '^change',[ ['changeCategory'] ] ] ]}}" scroll="{{true}}" selected="{{type}}" tabs="{{tabs}}" vueId="7e86d865-2"></common-tabs>
+    </view>
+    <view class="_div data-v-584d2dc2" wx:if="{{!loading&&consultant_card_likes.length&&type==='其他消息'}}">
+        <navigator bindtap="__e" class="item _a data-v-584d2dc2" data-event-opts="{{[ [ 'tap',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{item.consultant_id}}" url="{{true}}" wx:for="{{consultant_card_likes}}" wx:for-index="__i0__" wx:key="consultant_id">
+            <view class="content _div data-v-584d2dc2">
+                <view class="img _div data-v-584d2dc2">
+                    <image class="_img data-v-584d2dc2" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/notice/like.png"></image>
+                </view>
+                <view class="detail _div data-v-584d2dc2">
+                    <view class="_h3 data-v-584d2dc2">
+                        <label class="subject _span data-v-584d2dc2">收到的点赞</label>
+                        <label class="date _span data-v-584d2dc2">{{item.liked_time}}</label>
+                    </view>
+                    <view class="_p data-v-584d2dc2">{{item.liker.nickname+'对你有新的点赞'}}</view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <view class="_div data-v-584d2dc2">
+        <navigator bindtap="__e" class="item _a data-v-584d2dc2" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$event'] ] ] ] ]}}" data-href="{{item.jump_path}}" data-index="{{i}}" url="{{true}}" wx:for="{{items}}" wx:for-index="__i1__" wx:key="id">
+            <view class="content _div data-v-584d2dc2">
+                <view class="img _div data-v-584d2dc2">
+                    <view class="new _i data-v-584d2dc2" wx:if="{{!item.is_read}}"></view>
+                    <image class="_img data-v-584d2dc2" src="{{['https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/notice/'+(icon||item.category)+'.png']}}"></image>
+                </view>
+                <view class="detail _div data-v-584d2dc2">
+                    <view class="_h3 data-v-584d2dc2">
+                        <label class="subject _span data-v-584d2dc2">{{item.subject}}</label>
+                        <label class="date _span data-v-584d2dc2">{{item.receive_date}}</label>
+                    </view>
+                    <view class="_p data-v-584d2dc2">{{item.body}}</view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <loading bind:__l="__l" class="data-v-584d2dc2" vueId="7e86d865-3" wx:if="{{loading}}"></loading>
+    <block wx:else>
+        <view class="empty-wrap _div data-v-584d2dc2" wx:if="{{!loading&&items.length===0}}">
+            <image class="_img data-v-584d2dc2" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/empty.png"></image>
+            <view class="_p data-v-584d2dc2">暂无消息通知</view>
+        </view>
+    </block>
+    <page-wrap bind:__l="__l" class="data-v-584d2dc2" title="消息通知" vueId="7e86d865-4"></page-wrap>
+</view>

@@ -1,0 +1,10 @@
+<view class="home-header-search data-v-01e5ae21">
+    <view bindtap="__e" class="input _div data-v-01e5ae21" data-event-opts="{{[ [ 'tap',[ [ 'searchClick',['$event'] ] ] ] ]}}">
+        <fc-icon bind:__l="__l" class="data-v-01e5ae21" type="32_search" vueId="ba1deafa-1"></fc-icon>
+        <text class="textAssistFont28 text data-v-01e5ae21">按楼盘名字搜索</text>
+    </view>
+    <button class="btn data-v-01e5ae21" openType="share">
+        <fc-icon bind:__l="__l" class="data-v-01e5ae21" type="48_share_black" vueId="ba1deafa-2"></fc-icon>
+        <text class="text data-v-01e5ae21">分享</text>
+    </button>
+</view>

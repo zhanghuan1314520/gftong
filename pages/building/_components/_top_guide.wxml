@@ -1,0 +1,7 @@
+<swiper autoplay="true" circular="{{true}}" class="top-swiper data-v-098ca65b" indicatorActiveColor="rgba(255, 255, 255, .8)" indicatorColor="rgba(255, 255, 255, .4)" indicatorDots="{{banners.length>1}}" wx:if="{{banners.length}}">
+    <swiper-item class="data-v-098ca65b" wx:for="{{banners}}" wx:for-index="i" wx:for-item="banner" wx:key="i">
+        <view bindtap="__e" class="item _div data-v-098ca65b" data-event-opts="{{[ [ 'tap',[ [ 'goLink',[i] ] ] ] ]}}">
+            <common-img bind:__l="__l" class="data-v-098ca65b" src="{{banner.photo_url}}" vueId="{{'66c0b8e7-1-'+i}}"></common-img>
+        </view>
+    </swiper-item>
+</swiper>

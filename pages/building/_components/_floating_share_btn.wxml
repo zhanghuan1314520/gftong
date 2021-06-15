@@ -1,0 +1,10 @@
+<view class="_div data-v-7b2736ea">
+    <button bindtap="__e" class="{{[ 'btn data-v-7b2736ea',[show?'show':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'tabBackHome',['$event'] ] ] ] ]}}">
+        <fc-icon bind:__l="__l" class="data-v-7b2736ea" type="40_home_white" vueId="5c398240-1"></fc-icon>
+        <text class="data-v-7b2736ea">首页</text>
+    </button>
+    <button bindtap="__e" class="{{[ 'btn-wx data-v-7b2736ea',[show?'show':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'tabShare',['$event'] ] ] ] ]}}" openType="{{open_type}}">
+        <fc-icon bind:__l="__l" class="data-v-7b2736ea" type="48_share_white" vueId="5c398240-2"></fc-icon>
+        <text class="data-v-7b2736ea">分享</text>
+    </button>
+</view>

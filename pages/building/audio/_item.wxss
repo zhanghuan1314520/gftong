@@ -1,0 +1,107 @@
+.audio.data-v-252e6c56 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 686rpx;
+    height: 104rpx;
+    padding: 0 54rpx 0 24rpx;
+    margin: 0 auto 24rpx;
+    background-color: #fafafa;
+    border-radius: 8rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.audio.data-v-252e6c56,.left.data-v-252e6c56 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.left .name.data-v-252e6c56 {
+    width: 196rpx;
+}
+
+.left .time.data-v-252e6c56 {
+    color: #999;
+    font-size: 22rpx;
+}
+
+.left .time text.data-v-252e6c56 {
+    margin-left: 8rpx;
+}
+
+.play.data-v-252e6c56 {
+    width: 72rpx;
+    height: 72rpx;
+    background: #fff;
+    box-shadow: 0 2rpx 4rpx 0 rgba(0,0,0,.07);
+    background-position: 50%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.vip-wifi.com/fangchan/img/building/preview/play.png);
+    background-size: 20rpx auto;
+}
+
+.playing.data-v-252e6c56 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 40rpx;
+    height: 33rpx;
+}
+
+.playing ._i.data-v-252e6c56 {
+    width: 7rpx;
+    background-color: #00b08d;
+    animation: playing_wave-data-v-252e6c56 1.5s ease infinite;
+}
+
+.playing ._i.data-v-252e6c56:nth-child(1) {
+    animation-delay: .4s;
+}
+
+.playing ._i.data-v-252e6c56:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.playing ._i.data-v-252e6c56:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.playing ._i.data-v-252e6c56:nth-child(4) {
+    animation-delay: .8s;
+}
+
+@-webkit-keyframes playing_wave-data-v-252e6c56 {
+    0%,100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}
+
+@keyframes playing_wave-data-v-252e6c56 {
+    0%,100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}

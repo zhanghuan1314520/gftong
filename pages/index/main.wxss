@@ -1,0 +1,376 @@
+.page.data-v-51ee567b {
+    padding-top: 128rpx;
+}
+
+.has_app_tip.data-v-51ee567b {
+    padding-top: 86rpx;
+}
+
+._section.data-v-51ee567b {
+    margin-top: 16rpx;
+    background-color: #fff;
+}
+
+.stats.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 146rpx;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 24rpx 32rpx 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.stats ._li.data-v-51ee567b {
+    position: relative;
+    width: 96rpx;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.stats ._li .flag.data-v-51ee567b {
+    position: absolute;
+    right: -8rpx;
+    top: -4rpx;
+    transform: translateX(50%);
+    background-image: linear-gradient(136deg,#fe776b,#fe4747);
+    box-shadow: 0 2rpx 4rpx 0 rgba(254,71,71,.3);
+    border-radius: 8rpx 0 8rpx 0;
+    padding: 0 8rpx;
+    height: 24rpx;
+    font-size: 18rpx;
+    color: #fff;
+    line-height: 24rpx;
+}
+
+.stats ._li ._strong.data-v-51ee567b {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 76rpx;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 36rpx;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 90rpx;
+}
+
+.stats ._li:nth-child(1) ._strong.data-v-51ee567b {
+    background-image: linear-gradient(153deg,#ff599e,#ff5691 11%,#ff3826);
+    box-shadow: 0 2rpx 4rpx 0 rgba(255,89,158,.3);
+}
+
+.stats ._li:nth-child(1) ._strong ._img.data-v-51ee567b {
+    width: 40rpx;
+    height: 48rpx;
+}
+
+.stats ._li:nth-child(2) ._strong.data-v-51ee567b {
+    background-image: linear-gradient(162deg,#3ec2fa,#2d71fa);
+    box-shadow: 0 2rpx 4rpx 0 rgba(60,193,250,.3);
+}
+
+.stats ._li:nth-child(3) ._strong.data-v-51ee567b {
+    background-image: linear-gradient(161deg,#faaf64 1%,#fa550f 97%);
+    box-shadow: 0 2rpx 4rpx 0 rgba(250,85,15,.3);
+}
+
+.stats ._li:nth-child(4) ._strong.data-v-51ee567b {
+    background-image: linear-gradient(160deg,#3fe03f,#00b86b);
+    box-shadow: 0 2rpx 4rpx 0 rgba(0,184,92,.3);
+}
+
+.stats ._li:nth-child(5) ._strong.data-v-51ee567b {
+    background-image: linear-gradient(166deg,#cd56f5,#a319ff 97%);
+    box-shadow: 0 2rpx 4rpx 0 rgba(209,87,250,.3);
+}
+
+.stats ._li ._span.data-v-51ee567b {
+    display: block;
+    margin-top: 10rpx;
+    color: #333;
+    font-size: 22rpx;
+}
+
+.stats.top-tab-img ._li ._strong.data-v-51ee567b {
+    background-image: url(https://cdn.vip-wifi.com/njxfy/config/red-cows.png);
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+.daily-report-btn.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 24rpx 0 0;
+    color: #fff;
+    font-size: 28rpx;
+    font-weight: 700;
+    background: transparent;
+}
+
+.daily-report-btn ._img.data-v-51ee567b {
+    width: 48rpx;
+    height: 48rpx;
+    margin: 0;
+}
+
+.daily-report-btn ._span.data-v-51ee567b {
+    margin-left: 8rpx;
+}
+
+.middle-banner-swiper+._section.data-v-51ee567b {
+    margin-top: 0;
+}
+
+.map-btn.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.map-btn ._img.data-v-51ee567b {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.map-btn ._span.data-v-51ee567b {
+    font-size: 28rpx;
+    font-weight: 700;
+    line-height: 48rpx;
+    color: #fff;
+    margin-left: 8rpx;
+}
+
+@-webkit-keyframes loading-data-v-51ee567b {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes loading-data-v-51ee567b {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+.float-right-bottom.data-v-51ee567b {
+    width: 164rpx;
+    height: 162rpx;
+    position: fixed;
+    right: 20rpx;
+    bottom: 144rpx;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 164rpx 162rpx;
+}
+
+.float-right-bottom .close.data-v-51ee567b {
+    width: 28rpx;
+    height: 28rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.float-right-bottom ._a.data-v-51ee567b {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs-fixed.data-v-51ee567b {
+    position: fixed;
+    top: 127rpx;
+    z-index: 9;
+}
+
+.main-section.data-v-51ee567b {
+    position: relative;
+    min-height: 100vh;
+}
+
+.follow-tabs.data-v-51ee567b,.loading-wrap.data-v-51ee567b,.main-section.data-v-51ee567b,.tabs-fixed.data-v-51ee567b {
+    background-color: #fff;
+}
+
+.empty-box.data-v-51ee567b {
+    height: 408rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.preload.data-v-51ee567b {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+
+.recommendations .list-title.data-v-51ee567b {
+    padding: 0 32rpx;
+}
+
+.authUserLocation.data-v-51ee567b {
+    width: 686rpx;
+    height: 355rpx;
+    margin: 42rpx auto;
+}
+
+.address.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    height: 80rpx;
+    line-height: 78rpx;
+    padding: 0 16rpx;
+    font-size: 26rpx;
+    color: #00b08d;
+}
+
+.address .text.data-v-51ee567b {
+    display: inline-block;
+    max-width: 560rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.home-header-wrap.data-v-51ee567b {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: #fff;
+}
+
+.top-header.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 24rpx 32rpx;
+}
+
+.search-wrap.data-v-51ee567b {
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin: 0 32rpx 0 29rpx;
+}
+
+.top-header-item.data-v-51ee567b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 64rpx;
+    line-height: 30rpx;
+    color: #555;
+    font-size: 20rpx;
+    font-weight: 700;
+    margin: 0;
+    background-color: transparent;
+}
+
+.cup-i.data-v-51ee567b,.share-i.data-v-51ee567b {
+    width: 48rpx;
+    height: 34rpx;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.cup-i.data-v-51ee567b {
+    margin-left: 2rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/cup-i.png);
+    background-size: 43rpx 33rpx;
+}
+
+.cup-text.data-v-51ee567b {
+    margin-left: -5rpx;
+}
+
+.share-i.data-v-51ee567b {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/share.png);
+    background-size: 32rpx 32rpx;
+}
+
+.home-top-banner.data-v-51ee567b {
+    height: 256rpx;
+    padding: 0 32rpx;
+    background-color: #fff;
+}

@@ -1,0 +1,126 @@
+.top-tip-guide.data-v-62ec0454 {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+.top-tip-guide .guide-img.data-v-62ec0454 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8) url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/guide-bg.png?_=20200311) no-repeat top;
+    background-size: contain;
+}
+
+.top-tip.data-v-62ec0454 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+    width: 573rpx;
+    height: 95rpx;
+    padding: 14rpx 15rpx 0;
+    font-weight: 700;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/tips-bg.png?_=20200311) no-repeat 50%;
+    background-size: 100% 100%;
+}
+
+.top-tip ._i.data-v-62ec0454,.top-tip.data-v-62ec0454 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top-tip ._i.data-v-62ec0454 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 30rpx;
+    height: 30rpx;
+    border: 1rpx solid #d08f41;
+    border-radius: 50%;
+}
+
+.top-tip ._i ._img.data-v-62ec0454 {
+    width: 18rpx;
+    height: 19rpx;
+}
+
+.desktop-tip.data-v-62ec0454 {
+    position: fixed;
+    top: 16rpx;
+    right: 96rpx;
+    width: 348rpx;
+    padding: 30rpx 24rpx;
+    background-color: #fa543e;
+    box-shadow: 0 2rpx 4rpx 0 #fa543e;
+    line-height: 1.5em;
+    color: #fff;
+    font-size: 24rpx;
+    z-index: 9;
+    border-radius: 3rpx;
+}
+
+.desktop-tip.data-v-62ec0454::after {
+    content: "";
+    position: absolute;
+    top: -8rpx;
+    right: 30rpx;
+    width: 0;
+    height: 0;
+    border: 16rpx solid transparent;
+    border-bottom-color: #fa543e;
+    border-width: 0 15rpx 16rpx;
+}
+
+.desktop-tip .close-btn.data-v-62ec0454 {
+    position: absolute;
+    top: 8rpx;
+    right: 8rpx;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+
+.desktop-tip .close-btn ._img.data-v-62ec0454 {
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.desktop-guide.data-v-62ec0454 {
+    background-size: 602rpx 929rpx;
+    background-position: top;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/desktop-guide.png);
+}
+
+.desktop-guide.data-v-62ec0454,.messages-tip.data-v-62ec0454 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.8);
+    z-index: 2;
+}
+
+.messages-tip.data-v-62ec0454 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/chat-list-tip.png);
+    background-size: 289rpx 255rpx;
+    background-position: 337rpx bottom;
+}

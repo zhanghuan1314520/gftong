@@ -1,0 +1,13 @@
+<view class="_div data-v-6ec2d7e9">
+    <view class="today-opening-wrap _div data-v-6ec2d7e9" wx:if="{{house.today_opening_house_count}}">
+        <view class="today-opening _div data-v-6ec2d7e9">今日取证</view>
+    </view>
+    <block wx:else>
+        <view class="registering-wrap _div data-v-6ec2d7e9" wx:if="{{house.status==='正在登记'&&!clock_end}}">
+            <view class="registering _div data-v-6ec2d7e9">
+                <image class="_img data-v-6ec2d7e9" src="https://cdn.vip-wifi.com/fangchan/img/building/icons/notice-i.png"></image>
+                <label class="_span data-v-6ec2d7e9">{{''+reg_tip+''}}</label>
+            </view>
+        </view>
+    </block>
+</view>

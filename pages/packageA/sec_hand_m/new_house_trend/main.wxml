@@ -1,0 +1,17 @@
+<view class="new-hand _div data-v-5796b67d">
+    <detail-nav bind:__l="__l" class="data-v-5796b67d" item="{{item}}" vueId="fc02d398-1"></detail-nav>
+    <trend bind:__l="__l" class="data-v-5796b67d" vueId="fc02d398-2"></trend>
+    <view class="building-price _div data-v-5796b67d">
+        <view class="price-title items _p data-v-5796b67d">
+            <label class="building-name _span data-v-5796b67d">杭州-区域均价</label>
+            <label class="_span data-v-5796b67d">{{zones.current_month}}</label>
+        </view>
+        <view bindtap="__e" class="items item _div data-v-5796b67d" data-event-opts="{{[ [ 'tap',[ [ 'goDetail',['$0','$1'],[ [ ['zones.items','',i] ],'zones.current_month' ] ] ] ] ]}}" wx:for="{{zones.items}}" wx:for-index="i" wx:key="i">
+            <label class="item-name _span data-v-5796b67d">{{item.zone}}</label>
+            <view class="item-price _div data-v-5796b67d">{{''+item.avg_price}}<label class="unit _span data-v-5796b67d">元/㎡</label>
+            </view>
+            <percent bind:__l="__l" class="data-v-5796b67d" item="{{item}}" vueId="{{'fc02d398-3-'+i}}"></percent>
+            <fc-icon bind:__l="__l" class="data-v-5796b67d" type="48_more_grey" vueId="{{'fc02d398-4-'+i}}"></fc-icon>
+        </view>
+    </view>
+</view>

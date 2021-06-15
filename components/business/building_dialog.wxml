@@ -1,0 +1,24 @@
+<view class="building-dlg__mask _div data-v-6eaa4660">
+    <view class="building-dlg _div data-v-6eaa4660">
+        <view class="building-dlg__header _div data-v-6eaa4660">
+            <label catchtap="__e" class="_span data-v-6eaa4660" data-event-opts="{{[ [ 'tap',[ [ 'onClose',['$event'] ] ] ] ]}}"></label>
+        </view>
+        <view class="building-dlg__body _div data-v-6eaa4660">
+            <form bindsubmit="__e" class="com-wrap data-v-6eaa4660" data-event-opts="{{[ [ 'submit',[ [ 'submit',['$event'] ] ] ] ]}}">
+                <label class="data-v-6eaa4660">
+                    <label class="text2 _span data-v-6eaa4660">姓名</label>
+                    <input class="data-v-6eaa4660" name="realname" type="text"></input>
+                </label>
+                <label class="data-v-6eaa4660">
+                    <label class="_span data-v-6eaa4660">身份证</label>
+                    <input class="data-v-6eaa4660" name="id_card_number" type="idcard"></input>
+                </label>
+                <label class="data-v-6eaa4660">
+                    <label class="text2 _span data-v-6eaa4660">电话</label>
+                    <input class="data-v-6eaa4660" name="mobile" type="number"></input>
+                </label>
+                <button class="com-btn data-v-6eaa4660" formType="submit">一键完善</button>
+            </form>
+        </view>
+    </view>
+</view>

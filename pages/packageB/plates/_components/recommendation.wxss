@@ -1,0 +1,13 @@
+.wrap.data-v-d7060f1a {
+    background-color: #fff;
+}
+
+.filter.data-v-d7060f1a {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.list.data-v-d7060f1a {
+    min-height: 100vh;
+}

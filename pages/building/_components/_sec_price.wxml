@@ -1,0 +1,1 @@
+<view class="secondhand-price _div data-v-19f4deb4" wx:if="{{secondhand_house_price_desc}}">{{secondhand_house_price_desc}}</view>

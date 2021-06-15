@@ -1,0 +1,19 @@
+.tip.data-v-2b38a1bc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #667380;
+    font-size: 24rpx;
+}
+
+.tip .tx.data-v-2b38a1bc {
+    margin-right: 2rpx;
+}
+
+.ev-tip.data-v-2b38a1bc {
+    position: relative;
+}

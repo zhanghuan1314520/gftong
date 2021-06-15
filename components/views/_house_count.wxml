@@ -1,0 +1,7 @@
+<view class="house-count-wrap _div data-v-a5236014">
+    <view class="house-count _div data-v-a5236014">
+        <view class="row _div data-v-a5236014" wx:for="{{$root.l1}}" wx:for-index="i" wx:for-item="row_items" wx:key="i">
+            <view class="{{['item _div data-v-a5236014',item.g0>-1?'prob':'']}}" wx:for="{{row_items.l0}}" wx:for-index="j" wx:key="j">{{''+item[$orig]+''}}</view>
+        </view>
+    </view>
+</view>

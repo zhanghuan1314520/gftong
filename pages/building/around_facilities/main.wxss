@@ -1,0 +1,21 @@
+._section.data-v-5fff0d69 {
+    margin-bottom: 20rpx;
+    box-shadow: 0 2rpx 4rpx 0 rgba(0,0,0,.1);
+}
+
+.page.data-v-5fff0d69 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.facilities.data-v-5fff0d69 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    overflow-y: scroll;
+}

@@ -1,0 +1,8 @@
+<view class="page data-v-829689da">
+    <top-card bind:__l="__l" class="data-v-829689da" plate="{{plate}}" vueId="4a2c0b95-1"></top-card>
+    <life bind:__l="__l" class="data-v-829689da" pid="{{pid}}" plate="{{plate}}" vueId="4a2c0b95-2"></life>
+    <dev bind:__l="__l" class="data-v-829689da" plate="{{plate}}" vueId="4a2c0b95-3"></dev>
+    <price bind:__l="__l" class="data-v-829689da" plate="{{plate}}" presell_data="{{presell_data}}" vueId="4a2c0b95-4"></price>
+    <recommedation bind:__l="__l" bind:changeFilter="__e" class="data-v-829689da" data-event-opts="{{[ [ '^changeFilter',[ ['changeFilter'] ] ] ]}}" items="{{items}}" loading="{{loading}}" name="{{plate.name}}" no_more="{{no_more}}" vueId="4a2c0b95-5"></recommedation>
+    <page-wrap bind:__l="__l" class="data-v-829689da" title="板块分析" vueId="4a2c0b95-6"></page-wrap>
+</view>

@@ -1,0 +1,11 @@
+<view bindtap="__e" class="{{['popup _div data-v-4fa3dd5e',show_popup?'show':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'closePopup',['$event'] ] ] ] ]}}">
+    <view class="overlay _div data-v-4fa3dd5e"></view>
+    <navigator bindtap="__e" class="popup-dialog-content _a data-v-4fa3dd5e" data-event-opts="{{[ [ 'tap',[ [ 'clickPop',['$event'] ] ] ] ]}}" data-href="{{popup.href}}" data-id="{{popup.id}}" data-position="{{popup.position}}">
+        <navigator catchtap="__e" class="close _a data-v-4fa3dd5e" data-event-opts="{{[ [ 'tap',[ [ 'closePopup',['$event'] ] ] ] ]}}">
+            <label class="_span data-v-4fa3dd5e">跳过</label>
+            <label class="time _span data-v-4fa3dd5e">{{popup_time}}</label>
+        </navigator>
+        <image bindload="__e" class="_img data-v-4fa3dd5e" data-event-opts="{{[ [ 'load',[ [ 'loadImg',['$event'] ] ] ] ]}}" src="{{popup.img}}" webp="{{webp}}"></image>
+        <label class="recommend-logo _span data-v-4fa3dd5e">广告</label>
+    </navigator>
+</view>

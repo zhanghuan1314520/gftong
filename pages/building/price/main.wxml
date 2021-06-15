@@ -1,0 +1,24 @@
+<view class="page data-v-6a0ecffd">
+    <view class="header data-v-6a0ecffd" wx:if="{{title}}">
+        <text class="data-v-6a0ecffd">{{title+'一房源价格'}}</text>
+        <view bindtap="__e" class="price-img _div data-v-6a0ecffd" data-event-opts="{{[ [ 'tap',[ [ 'goPricePage',['$event'] ] ] ] ]}}" wx:if="{{show_price_graph}}">
+            <label class="_span data-v-6a0ecffd">一房一价图</label>
+            <fc-icon bind:__l="__l" class="data-v-6a0ecffd" type="32_more_grey" vueId="be7363d6-1"></fc-icon>
+        </view>
+    </view>
+    <view class="price-page data-v-6a0ecffd">
+        <list-page bind:__l="__l" bind:goDetail="__e" bind:onFilterShow="__e" class="data-v-6a0ecffd vue-ref" data-event-opts="{{[ [ '^goDetail',[ ['goDetail'] ] ],[ '^onFilterShow',[ ['onFilterShow'] ] ] ]}}" data-ref="list_page" vueId="be7363d6-2" wx:if="{{show_list}}"></list-page>
+        <block-page bind:__l="__l" bind:call="__e" bind:goDetail="__e" class="data-v-6a0ecffd" data-event-opts="{{[ [ '^goDetail',[ ['goDetail'] ] ],[ '^call',[ ['call'] ] ] ]}}" show_tip="{{show_block_cell_tip}}" vueId="be7363d6-3" wx:if="{{show_block}}"></block-page>
+        <tip bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-6a0ecffd" data-event-opts="{{[ [ '^hide',[ ['toggleShowTip'] ] ],[ '^change',[ ['changeTipStep'] ] ] ]}}" step="{{tip_step}}" vueId="be7363d6-4" wx:if="{{show_tip}}"></tip>
+        <bottom-right-share bind:__l="__l" bottom="{{show_list?'272':'217'}}" class="data-v-6a0ecffd" right="16" vueId="be7363d6-5"></bottom-right-share>
+        <button bindtap="__e" class="switch-btn data-v-6a0ecffd" data-event-opts="{{[ [ 'tap',[ [ 'changeMode',['$event'] ] ] ] ]}}" style="{{'bottom:'+(show_list?'160rpx':'105rpx')+';'}}" wx:if="{{show_switch_btn}}">
+            <fc-icon bind:__l="__l" class="data-v-6a0ecffd" type="{{switch_btn.img}}" vueId="be7363d6-6"></fc-icon>
+            <text class="data-v-6a0ecffd">{{switch_btn.text}}</text>
+        </button>
+    </view>
+    <view class="data-v-6a0ecffd" wx:if="{{house.current_consultant&&!filter_show}}">
+        <current-consultant bind:__l="__l" class="data-v-6a0ecffd" current_house="{{current_house}}" house="{{house}}" is_consultant="{{is_consultant}}" vueId="be7363d6-7"></current-consultant>
+    </view>
+    <common-footer bind:__l="__l" building_id="{{building_id}}" class="data-v-6a0ecffd" from="一房一价" name="{{title}}" vueId="be7363d6-8" wx:if="{{show_list&&!house.current_consultant&&!filter_show}}"></common-footer>
+    <page-wrap bind:__l="__l" class="data-v-6a0ecffd" hide_back_home="{{true}}" title="{{title}}" vueId="be7363d6-9"></page-wrap>
+</view>

@@ -1,0 +1,22 @@
+.disclaimer.data-v-742dbbf4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #667380;
+    text-align: left;
+    padding: 16rpx 32rpx 32rpx;
+}
+
+.disclaimer .tx.data-v-742dbbf4 {
+    font-weight: 400;
+}
+
+.no-padding.data-v-742dbbf4 {
+    padding: 0;
+}

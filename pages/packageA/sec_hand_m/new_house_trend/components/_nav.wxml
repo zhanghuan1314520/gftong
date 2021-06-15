@@ -1,0 +1,18 @@
+<view class="nav _div data-v-3e913807">
+    <view class="_p data-v-3e913807">
+        <label class="house-name _span data-v-3e913807">杭州<text class="data-v-3e913807" wx:if="{{item.zone}}">{{'-'+item.zone}}</text>
+        </label>
+        <label class="_span data-v-3e913807">{{item.current_month}}</label>
+    </view>
+    <view class="detail _div data-v-3e913807">
+        <view class="first part _div data-v-3e913807">
+            <label class="detail-name _span data-v-3e913807">成交均价</label>
+            <label class="trend unit _span data-v-3e913807">{{item.avg_price}}</label>
+            <label class="unit _span data-v-3e913807">元/㎡</label>
+        </view>
+        <view class="sec part _div data-v-3e913807">
+            <label class="detail-name _span data-v-3e913807">环比上月</label>
+            <percent bind:__l="__l" class="data-v-3e913807" item="{{item}}" vueId="427b4b92-1"></percent>
+        </view>
+    </view>
+</view>

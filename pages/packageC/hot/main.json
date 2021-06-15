@@ -1,0 +1,23 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "house-item": "/components/business/house_item",
+        "loading": "/components/views/loading",
+        "top-filter": "/components/buildings_top_filter/index",
+        "tag-filter": "/pages/history/_tag_filter",
+        "search": "/pages/history/_search",
+        "top-swiper": "/components/views/_swiper",
+        "bottom-tip": "/components/views/bottom_tip",
+        "list-recommendation": "/components/business/list_recommendation",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

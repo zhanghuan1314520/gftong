@@ -1,0 +1,6 @@
+<view class="page data-v-c51039d6">
+    <view class="data-v-c51039d6" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+        <article-item bind:__l="__l" class="data-v-c51039d6" item="{{item}}" type="feeds" vueId="{{'1c4800e0-1-'+__i0__}}"></article-item>
+    </view>
+    <bottom-tip bind:__l="__l" class="data-v-c51039d6" vueId="1c4800e0-2" wx:if="{{!loading&&no_more}}"></bottom-tip>
+</view>

@@ -1,0 +1,8 @@
+<view class="wrap data-v-6645a071">
+    <view bindtap="__e" class="entry data-v-6645a071" data-event-opts="{{[ [ 'tap',[ [ 'goLink',['$event'] ] ] ] ]}}">
+        <common-img bind:__l="__l" class="img data-v-6645a071" mode="aspectFill" src="{{house.vr_panorama_resource.cover_image_url}}" vueId="00fa8524-1"></common-img>
+        <view class="flg data-v-6645a071">航拍</view>
+        <view class="name data-v-6645a071">{{house.name}}</view>
+        <view class="icon data-v-6645a071"></view>
+    </view>
+</view>

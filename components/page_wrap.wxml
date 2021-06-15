@@ -1,0 +1,17 @@
+<view class="_div data-v-395c5a64">
+    <timeline-billboard bind:__l="__l" class="data-v-395c5a64" vueId="6b27ead2-1" wx:if="{{!has_own_timeline}}"></timeline-billboard>
+    <network-tip bind:__l="__l" class="data-v-395c5a64" vueId="6b27ead2-2"></network-tip>
+    <path-copy bind:__l="__l" class="data-v-395c5a64" vueId="6b27ead2-3"></path-copy>
+    <view class="_div data-v-395c5a64" wx:if="{{show_home&&!hide_back_home}}">
+        <view class="shadow _div data-v-395c5a64">
+            <form bindsubmit="__e" class="data-v-395c5a64" data-event-opts="{{[ [ 'submit',[ [ 'goHome',['$event'] ] ] ] ]}}">
+                <button class="shadow-button data-v-395c5a64" formType="submit">
+                    <navigator class="back-home _a data-v-395c5a64">
+                        <image class="_img data-v-395c5a64" lazyLoad="{{true}}" src="/static/img/back-home.png"></image>
+                        <label class="_span data-v-395c5a64">首页</label>
+                    </navigator>
+                </button>
+            </form>
+        </view>
+    </view>
+</view>

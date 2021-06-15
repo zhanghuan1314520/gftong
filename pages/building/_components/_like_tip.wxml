@@ -1,0 +1,11 @@
+<view class="{{[ '_div data-v-c845a03e',[!show?'hide':''] ]}}">
+    <view class="dlg _div data-v-c845a03e">
+        <image class="_img data-v-c845a03e" src="{{qr_url}}"></image>
+        <view class="_h1 data-v-c845a03e">{{''+title+''}}</view>
+        <view class="_p data-v-c845a03e">{{''+content+''}}</view>
+        <view bindtap="__e" class="link _div data-v-c845a03e" data-event-opts="{{[ [ 'tap',[ [ 'copyWx',['$event'] ] ] ] ]}}" wx:if="{{show_copy}}">复制微信号：hzgfzzj</view>
+        <identify-btn bind:__l="__l" class="data-v-c845a03e" link="{{wxArticle['3'].url}}" shareShow="{{wxArticle['3'].share}}" text="去关注" title="{{wxArticle['3'].title}}" vueId="5ae78830-1" wx:if="{{$root.m0}}"></identify-btn>
+        <button bindtap="__e" class="data-v-c845a03e" data-event-opts="{{[ [ 'tap',[ [ 'save',['$event'] ] ] ] ]}}" wx:else>{{saving?'正在保存':'保存图片'}}</button>
+    </view>
+    <view bindtap="__e" class="overlay _div data-v-c845a03e" data-event-opts="{{[ [ 'tap',[ [ 'hide',['$event'] ] ] ] ]}}"></view>
+</view>

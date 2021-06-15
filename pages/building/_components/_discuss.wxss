@@ -1,0 +1,12 @@
+._a.data-v-7fde6e0e {
+    margin-top: 20rpx;
+    width: 750rpx;
+    height: 184rpx;
+    position: relative;
+}
+
+._a ._img.data-v-7fde6e0e {
+    position: absolute;
+    width: 750rpx;
+    height: 184rpx;
+}

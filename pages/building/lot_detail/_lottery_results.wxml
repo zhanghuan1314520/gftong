@@ -1,0 +1,41 @@
+<view class="{{[ 'page _div data-v-012c8db8',[show_result.is_success?'success':''] ]}}">
+    <view class="page-content _div data-v-012c8db8">
+        <view class="qr-wrap _div data-v-012c8db8">
+            <image class="_img data-v-012c8db8" lazyLoad="{{true}}" src="{{show_result.qr_img}}"></image>
+            <view class="_p data-v-012c8db8">扫码我也要查</view>
+        </view>
+        <view class="result _div data-v-012c8db8">
+            <view class="result-info _div data-v-012c8db8" wx:if="{{!loading}}">
+                <view bindtap="__e" class="ln-num _div data-v-012c8db8" data-event-opts="{{[ [ 'tap',[ [ 'toggleTip',['$event'] ] ] ] ]}}">
+                    <label class="_span data-v-012c8db8">{{show_result.ln_num_tx}}</label>
+                    <fc-icon bind:__l="__l" class="ln-num-icon data-v-012c8db8" type="{{show_result.is_success?'32_question_white':'32_question'}}" vueId="731ac212-1" wx:if="{{show_result.show_qa}}"></fc-icon>
+                    <label class="num _span data-v-012c8db8">{{show_result.coding}}</label>
+                </view>
+                <view class="result-info-content _div data-v-012c8db8">
+                    <view class="result-detail _div data-v-012c8db8" wx:if="{{show_result.show_content}}">
+                        <view class="card-names _div data-v-012c8db8" wx:if="{{show_result.card_names}}">{{show_result.card_names}}</view>
+                        <view class="status _div data-v-012c8db8" wx:if="{{result.ln_result&&result.ln_result.length}}">
+                            <view class="result-num _div data-v-012c8db8">
+                                <view class="_div data-v-012c8db8" wx:for="{{result.ln_result}}" wx:for-index="i" wx:for-item="rs" wx:key="i">{{'选房顺序第'+rs.ln_order+'号'}}<label class="_span data-v-012c8db8" wx:if="{{i<result.ln_result.length-1}}">，</label>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="order_rating _div data-v-012c8db8" wx:if="{{show_result.desc}}">{{show_result.desc}}</view>
+                    </view>
+                    <view class="warining-tip _div data-v-012c8db8" wx:else>
+                        <view class="_div data-v-012c8db8" wx:if="{{result.is_loted}}">
+                            <view class="_div data-v-012c8db8">没有结果呢，请核对摇号编码是否正确哦~</view>
+                        </view>
+                        <view class="_div data-v-012c8db8" wx:else>
+                            <view class="_div data-v-012c8db8">摇号还未开始，耐心等待哦～</view>
+                        </view>
+                    </view>
+                </view>
+                <view bindtap="__e" class="go-comment _div data-v-012c8db8" data-event-opts="{{[ [ 'tap',[ [ 'drawImg',['$event'] ] ] ] ]}}" wx:if="{{!hide_comment_btn&&show_result.show_content}}">{{go_comment_lock?'上传中...':'一键晒到评论区'}}</view>
+            </view>
+        </view>
+    </view>
+    <canvas canvasId="lottery-result-canvas" class="lottery-result data-v-012c8db8" style="width:343px;height:345px;"></canvas>
+    <slot></slot>
+    <bottom-right-share bind:__l="__l" class="data-v-012c8db8" vueId="731ac212-2"></bottom-right-share>
+</view>

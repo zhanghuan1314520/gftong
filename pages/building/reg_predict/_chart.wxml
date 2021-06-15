@@ -1,0 +1,8 @@
+<view class="chart pr _div data-v-36716a45">
+    <view class="_h3 data-v-36716a45">杭州购房通摇号人数基于大数据实时预测</view>
+    <canvas canvasId="chart" class="chart-canvas data-v-36716a45" disableScroll="false" wx:if="{{show}}"></canvas>
+    <cover-view class="precision data-v-36716a45" wx:if="{{register_predict_precision}}">
+        <cover-image class="data-v-36716a45" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/reg_predict/symbol.png"></cover-image>
+        <cover-view class="num data-v-36716a45">{{register_predict_precision+'%'}}</cover-view>
+    </cover-view>
+</view>

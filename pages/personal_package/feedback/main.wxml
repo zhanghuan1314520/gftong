@@ -1,0 +1,41 @@
+<view class="feedback-page _div data-v-2e2e7d1a">
+    <view class="part _div data-v-2e2e7d1a">
+        <view class="_p data-v-2e2e7d1a">
+            <view class="_i data-v-2e2e7d1a">*</view>反馈类型</view>
+        <tag-filter bind:__l="__l" bind:change="__e" class="data-v-2e2e7d1a" data-event-opts="{{[ [ '^change',[ ['changeStatus'] ] ] ]}}" status="{{params.category}}" vueId="1f0399dc-1"></tag-filter>
+    </view>
+    <view class="part _div data-v-2e2e7d1a">
+        <view class="_p data-v-2e2e7d1a">
+            <view class="_i data-v-2e2e7d1a">*</view>问题描述</view>
+        <view class="textarea-wrap _div data-v-2e2e7d1a">
+            <textarea autoFocus="{{true}}" autoHeight="true" bindinput="__e" class="data-v-2e2e7d1a" cols="30" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','content','$event',[] ],['params'] ] ] ] ]}}" maxlength="300" name="content" placeholder="请描述您的问题或建议，便于我们快速解决哦~" placeholderStyle="placeholder" rows="10" value="{{params.content}}"></textarea>
+            <view class="num-tip text24 data-v-2e2e7d1a">{{''+params.content.length+' / 300'}}</view>
+        </view>
+    </view>
+    <view class="part _div data-v-2e2e7d1a">
+        <view class="_p data-v-2e2e7d1a">相关图片<label class="_span data-v-2e2e7d1a">(最多3张，每张小于8M)</label>
+        </view>
+        <view class="upload-wrap _div data-v-2e2e7d1a">
+            <view class="uploaded _div data-v-2e2e7d1a" data-index="{{i}}" wx:for="{{temp_imgs}}" wx:for-index="i" wx:key="i">
+                <image bindtap="__e" class="_img data-v-2e2e7d1a" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',[i] ] ] ] ]}}" lazyLoad="{{true}}" src="{{item.url}}"></image>
+                <image bindtap="__e" class="remove _img data-v-2e2e7d1a" data-event-opts="{{[ [ 'tap',[ [ 'removeImg',[i] ] ] ] ]}}" src="/static/img/input-remove.png"></image>
+                <view class="fail data-v-2e2e7d1a" wx:if="{{item.status==='fail'}}"></view>
+            </view>
+            <view class="upload _div data-v-2e2e7d1a" wx:if="{{temp_imgs.length<img_count}}">
+                <navigator bindtap="__e" class="add-img-btn _a data-v-2e2e7d1a" data-event-opts="{{[ [ 'tap',[ [ 'uploadImg',['$event'] ] ] ] ]}}">
+                    <image class="_img data-v-2e2e7d1a" src="/static/img/add-img-icon.png"></image>
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <view class="part _div data-v-2e2e7d1a">
+        <view class="_p data-v-2e2e7d1a">联系方式<label class="_span data-v-2e2e7d1a">(手机号/微信号/邮箱)</label>
+        </view>
+        <input bindinput="__e" class="data-v-2e2e7d1a" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','contact','$event',[] ],['params'] ] ] ] ]}}" placeholder="请留下您的联系方式，便于我们及时反馈处理结果" placeholderClass="placeholder" type="text" value="{{params.contact}}"></input>
+    </view>
+    <view class="ccb-btn__box _div data-v-2e2e7d1a">
+        <button bindtap="__e" class="ccb-btn__submit data-v-2e2e7d1a" data-event-opts="{{[ [ 'tap',[ [ 'submit',['$event'] ] ] ] ]}}">
+            <text class="data-v-2e2e7d1a">提交</text>
+        </button>
+    </view>
+</view>

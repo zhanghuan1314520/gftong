@@ -1,0 +1,17 @@
+{
+    "usingComponents": {
+        "search-select": "/pages/personal_center/_search_select",
+        "lazy-input": "/components/form/lazy_input",
+        "captcha-btn": "/pages/personal_center/_captcha_btn",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

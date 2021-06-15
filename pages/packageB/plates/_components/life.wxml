@@ -1,0 +1,15 @@
+<view class="wrap _div data-v-6118faca">
+    <view class="header _div data-v-6118faca">
+        <view class="title36B _div data-v-6118faca">板块生活</view>
+        <view class="right _div data-v-6118faca">
+            <label class="assistFont24 _span data-v-6118faca">宜居指数：</label>
+            <stars bind:__l="__l" class="data-v-6118faca" score="{{plate.ratings&&plate.ratings['宜居指数']}}" type="normal" vueId="36915358-1"></stars>
+        </view>
+    </view>
+    <view class="main _div data-v-6118faca">
+        <view class="chart _div data-v-6118faca">
+            <canvas class="canvas data-v-6118faca" id="chart" type="2d"></canvas>
+        </view>
+        <facilities bind:__l="__l" class="data-v-6118faca" pid="{{pid}}" region="{{plate.region}}" vueId="36915358-2"></facilities>
+    </view>
+</view>

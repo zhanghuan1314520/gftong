@@ -1,0 +1,65 @@
+._footer.data-v-029eef96 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,0,0,.5);
+}
+
+._footer.data-v-029eef96,button.data-v-029eef96 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+button.data-v-029eef96 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    height: 51rpx;
+    line-height: 51rpx;
+    padding: 0;
+    margin: 0;
+    border-right: 1rpx solid #e6e6e6;
+    color: #666;
+    font-size: 26rpx;
+    background-color: transparent;
+}
+
+button.data-v-029eef96:last-child {
+    border: 0;
+}
+
+button>._i.data-v-029eef96 {
+    width: 28rpx;
+    margin-right: 10rpx;
+    background-size: 100%;
+}
+
+.share-btn ._i.data-v-029eef96 {
+    height: 28rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/comments/share.png);
+}
+
+.comment-btn ._i.data-v-029eef96 {
+    height: 24rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/comments/comment.png);
+}

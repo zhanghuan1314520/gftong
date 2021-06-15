@@ -1,0 +1,47 @@
+<view class="page _div data-v-587e3d59">
+    <view class="filter-wrap _div data-v-587e3d59">
+        <view class="{{[ '_div data-v-587e3d59',[!price_select_show?'hide':''] ]}}">
+            <price-select bind:__l="__l" bind:change="__e" class="data-v-587e3d59" data-event-opts="{{[ [ '^change',[ ['changePrice'] ] ] ]}}" price="{{price}}" total_price="{{total_price}}" vueId="17abfaca-1"></price-select>
+        </view>
+        <view class="{{[ '_div data-v-587e3d59',[!zone_select_show?'hide':''] ]}}">
+            <zone-select bind:__l="__l" bind:changeZone="__e" class="data-v-587e3d59" data-event-opts="{{[ [ '^changeZone',[ ['changeZoneMetro'] ] ] ]}}" vueId="17abfaca-2" zone_ids="{{zone_ids}}"></zone-select>
+        </view>
+    </view>
+    <view class="banner _div data-v-587e3d59">
+        <view class="_h1 data-v-587e3d59">定制需求</view>
+        <view class="_p data-v-587e3d59">我们将为您找到满意的房子</view>
+    </view>
+    <view class="row _div data-v-587e3d59">
+        <view class="_h3 data-v-587e3d59">您的预算是多少？<button class="share-btn data-v-587e3d59" openType="share">
+                <image class="_img data-v-587e3d59" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/all_buildings/share.png"></image>
+                <label class="_span data-v-587e3d59">分享</label>
+            </button>
+        </view>
+        <view class="select-wrap _div data-v-587e3d59">
+            <view bindtap="__e" class="select _div data-v-587e3d59" data-event-opts="{{[ [ 'tap',[ [ 'togglePriceSelect',['$event'] ] ] ] ]}}">
+                <view class="price _i data-v-587e3d59"></view>
+                <label class="_span data-v-587e3d59">{{price_tx}}</label>
+            </view>
+        </view>
+    </view>
+    <view class="row _div data-v-587e3d59">
+        <view class="_h3 data-v-587e3d59">您的想买的区域是？</view>
+        <view class="select-wrap _div data-v-587e3d59">
+            <view bindtap="__e" class="select _div data-v-587e3d59" data-event-opts="{{[ [ 'tap',[ [ 'toggleZoneSelect',['$event'] ] ] ] ]}}">
+                <view class="location _i data-v-587e3d59"></view>
+                <label class="_span data-v-587e3d59">{{location_tx}}</label>
+            </view>
+        </view>
+    </view>
+    <view class="row row-layout-filter _div data-v-587e3d59" wx:if="{{show_layout}}">
+        <view class="_h3 data-v-587e3d59">您想买什么户型？</view>
+        <layout-checkbox bind:__l="__l" class="data-v-587e3d59" selected="{{selected_layout}}" vueId="17abfaca-3"></layout-checkbox>
+    </view>
+    <view class="row row-area-filter _div data-v-587e3d59">
+        <view class="_h3 data-v-587e3d59">您想买哪些面积段？</view>
+        <area-checkbox bind:__l="__l" bind:change="__e" class="data-v-587e3d59" data-event-opts="{{[ [ '^change',[ ['changeArea'] ] ] ]}}" selected="{{area}}" vueId="17abfaca-4"></area-checkbox>
+    </view>
+    <button bindtap="__e" class="confirm-btn data-v-587e3d59" data-event-opts="{{[ [ 'tap',[ [ 'submit',['$event'] ] ] ] ]}}">提交</button>
+    <view bindtap="__e" class="overlay _div data-v-587e3d59" data-event-opts="{{[ [ 'tap',[ [ 'hideSelect',['$event'] ] ] ] ]}}" wx:if="{{price_select_show||zone_select_show}}"></view>
+    <page-wrap bind:__l="__l" class="data-v-587e3d59" title="一键找房" vueId="17abfaca-5"></page-wrap>
+</view>

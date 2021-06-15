@@ -1,0 +1,10 @@
+<view class="rule-page _div data-v-45e95380">
+    <view class="consult-rule _div data-v-45e95380">
+        <view class="consult-rule-section _section data-v-45e95380">
+            <view class="_h3 data-v-45e95380">{{'为什么要加入'+VUE_APP_NAME+'：'}}</view>
+            <view class="_p data-v-45e95380">{{'“'+VUE_APP_NAME+'，买房更轻松”，'+VUE_APP_NAME+'是一个信息全面、天天更新的综合房产信息平台。每日为购房者提供上百万次购房信息查询，建立了购房者和置业顾问的沟通平台，为置业顾问提供拓客和维护客户的工具，是置业顾问提高业绩的好帮手！'}}</view>
+        </view>
+        <common-rule bind:__l="__l" class="data-v-45e95380" vueId="74329e9f-1"></common-rule>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-45e95380" title="置业顾问规则说明" vueId="74329e9f-2"></page-wrap>
+</view>

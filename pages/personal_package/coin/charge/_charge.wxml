@@ -1,0 +1,24 @@
+<view class="_div data-v-1016b8fa" style="{{'display:'+(show?'block':'none')+';'}}">
+    <view class="not-ios _div data-v-1016b8fa" wx:if="{{!isIOS}}">
+        <view class="select-wrap _div data-v-1016b8fa">
+            <view class="money-select _div data-v-1016b8fa">
+                <navigator bindtap="__e" class="{{[ 'money _a data-v-1016b8fa',[money===item?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'change',['$event'] ] ] ] ]}}" data-value="{{item}}" wx:for="{{options}}" wx:for-index="i" wx:key="i">{{'¥'+item+''}}</navigator>
+                <navigator bindtap="__e" class="other _a data-v-1016b8fa" data-event-opts="{{[ [ 'tap',[ [ 'showInput',['$event'] ] ] ] ]}}">其他金额</navigator>
+            </view>
+        </view>
+        <view class="tip _p data-v-1016b8fa">充值金额1元=1金币</view>
+        <button bindtap="__e" class="large-btn confirm-btn data-v-1016b8fa" data-event-opts="{{[ [ 'tap',[ [ 'charge',['$event'] ] ] ] ]}}">立即充值</button>
+        <view class="_div data-v-1016b8fa" wx:if="{{input_show}}">
+            <view bindtap="__e" class="overlay _div data-v-1016b8fa" data-event-opts="{{[ [ 'tap',[ [ 'hideInput',['$event'] ] ] ] ]}}"></view>
+            <view class="money-modal _div data-v-1016b8fa">
+                <form bindsubmit="__e" class="data-v-1016b8fa" data-event-opts="{{[ [ 'submit',[ [ 'submitPay',['$event'] ] ] ] ]}}">
+                    <label class="data-v-1016b8fa">请输入金额</label>
+                    <input class="data-v-1016b8fa" name="money" type="number"></input>
+                    <view class="error _p data-v-1016b8fa" wx:if="{{error}}">{{error}}</view>
+                    <button class="data-v-1016b8fa" formType="submit">确定并充值</button>
+                </form>
+            </view>
+        </view>
+    </view>
+    <ios-rules bind:__l="__l" class="data-v-1016b8fa" vueId="379304ff-1" wx:else></ios-rules>
+</view>

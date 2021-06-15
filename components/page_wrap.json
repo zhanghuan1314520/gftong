@@ -1,0 +1,18 @@
+{
+    "component": true,
+    "usingComponents": {
+        "network-tip": "/components/views/network_tip",
+        "path-copy": "/components/utils/path_copy",
+        "timeline-billboard": "/components/views/timeline_billboard",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

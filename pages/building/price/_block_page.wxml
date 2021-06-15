@@ -1,0 +1,34 @@
+<view class="page data-v-3d661a14">
+    <view class="top-wrap data-v-3d661a14" wx:if="{{house_decorate_prices.length}}">
+        <view bindtap="__e" class="picker data-v-3d661a14" data-event-opts="{{[ [ 'tap',[ [ 'toggleDecorateSelect',['$event'] ] ] ] ]}}">
+            <text class="data-v-3d661a14">{{decorator_select_tx}}</text>
+            <fc-icon bind:__l="__l" class="data-v-3d661a14" type="32_triangle" vueId="654a2be4-1"></fc-icon>
+        </view>
+        <view bindtap="__e" class="tip data-v-3d661a14" data-event-opts="{{[ [ 'tap',[ [ '$emit',['call'] ] ] ] ]}}">
+            <text class="data-v-3d661a14">户型对应的装修价格，可电话咨询售楼部</text>
+            <image class="phone _img data-v-3d661a14" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/price/phone.png"></image>
+        </view>
+    </view>
+    <common-tabs bind:__l="__l" bind:change="__e" class="data-v-3d661a14" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" scroll="{{true}}" selected="{{selected_tab}}" tabs="{{block_names}}" vueId="654a2be4-2"></common-tabs>
+    <scroll-view class="blocks data-v-3d661a14" enableFlex="{{true}}" scrollY="{{true}}">
+        <view class="floors data-v-3d661a14">
+            <view class="floor data-v-3d661a14" wx:for="{{house_prices}}" wx:for-index="__i0__" wx:for-item="floor_houses" wx:key="floor">
+                <view class="text28B data-v-3d661a14">{{floor_houses.floor}}</view>
+                <view class="textAssistFont28 data-v-3d661a14">层</view>
+            </view>
+        </view>
+        <scroll-view class="{{[ 'houses data-v-3d661a14',[show_tip?'show_tip':''] ]}}" enableFlex="{{true}}" scrollX="{{true}}" style="{{'height:'+houses_height+';'}}">
+            <view class="floor-houses data-v-3d661a14" wx:for="{{house_prices}}" wx:for-index="__i1__" wx:for-item="floor_houses" wx:key="floor">
+                <view bindtap="__e" class="{{['floor-house data-v-3d661a14',house.disabled?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'clickHouse',['$0'],[ [ ['house_prices','floor',floor_houses.floor],['houses','id',house.id,'id'] ] ] ] ] ] ]}}" wx:for="{{floor_houses.houses}}" wx:for-index="__i2__" wx:for-item="house" wx:key="id">
+                    <view class="num strong data-v-3d661a14">{{house.room_no}}</view>
+                    <view class="area strong data-v-3d661a14">{{house.area+'㎡'}}</view>
+                    <view class="decorate-price strong data-v-3d661a14">{{house.square_price_show+'元/㎡'}}</view>
+                    <view class="price data-v-3d661a14">{{house.total_price+'万元'}}</view>
+                    <view class="apartment data-v-3d661a14" wx:if="{{house.usage==='公寓'}}">公寓</view>
+                    <view class="{{['status data-v-3d661a14',house.disabled?'disabled':'']}}" wx:if="{{house.status}}">{{house.status}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </scroll-view>
+    <common-select bind:__l="__l" bind:change="__e" bind:hide="__e" class="data-v-3d661a14" data-event-opts="{{[ [ '^change',[ ['changeDecorate'] ] ],[ '^hide',[ ['toggleDecorateSelect'] ] ] ]}}" options="{{house_decorate_prices}}" selected="{{selected_decorate_price}}" show="{{show_decorate_select}}" vueId="654a2be4-3"></common-select>
+</view>

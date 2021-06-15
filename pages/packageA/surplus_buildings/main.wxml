@@ -1,0 +1,25 @@
+<view class="{{[ 'page _div data-v-4514416a',[filter_show?'page-no-scroll':''] ]}}">
+    <view class="home-header-wrap _header data-v-4514416a">
+        <view class="home-header _div data-v-4514416a">
+            <view class="search-wrap _div data-v-4514416a">
+                <search bind:__l="__l" bind:click="__e" can_search="0" class="data-v-4514416a" data-event-opts="{{[ [ '^click',[ ['searchClick'] ] ] ]}}" show_hot_keyword="{{true}}" vueId="6d603386-1"></search>
+            </view>
+            <button class="share-wrap data-v-4514416a" openType="share">
+                <image class="_img data-v-4514416a" src="/static/img/share-new.png"></image>
+                <label class="_span data-v-4514416a">分享</label>
+            </button>
+        </view>
+    </view>
+    <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-4514416a" className="history-filter" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" layout="{{layout}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="6d603386-2" vueSlots="{{['default']}}" zone_ids="{{zone_ids}}" zone_section_ids="{{zone_section_ids}}">
+        <navigator class="map-entry _a data-v-4514416a" url="/pages/packageA/map/main?type=摇号剩余">
+            <image class="_img data-v-4514416a" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/surplus_buildings/map-entry.png"></image>
+        </navigator>
+    </top-filter>
+    <view class="list _ul data-v-4514416a">
+        <list-recommendation bind:__l="__l" class="data-v-4514416a" list="{{recommendation}}" vueId="6d603386-3" wx:if="{{show_recommendation}}"></list-recommendation>
+        <house-item bind:__l="__l" class="data-v-4514416a" item="{{item}}" vueId="{{'6d603386-4-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></house-item>
+    </view>
+    <loading bind:__l="__l" class="data-v-4514416a" vueId="6d603386-5" wx:if="{{loading||items.length<total_count}}"></loading>
+    <bottom-tip bind:__l="__l" class="data-v-4514416a" vueId="6d603386-6" wx:if="{{!loading&&items.length>=total_count}}"></bottom-tip>
+    <page-wrap bind:__l="__l" class="data-v-4514416a" title="摇号剩余" vueId="6d603386-7"></page-wrap>
+</view>

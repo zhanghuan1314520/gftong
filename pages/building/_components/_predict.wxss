@@ -1,0 +1,123 @@
+.predict.data-v-2393b06c {
+    position: relative;
+    width: 100%;
+    height: 168rpx;
+    padding: 15rpx 30rpx 0;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/reg-banner.png);
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.header.data-v-2393b06c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header .left.data-v-2393b06c {
+    font-weight: 500;
+}
+
+.header .time.data-v-2393b06c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .time ._span.data-v-2393b06c {
+    font-size: 24rpx;
+}
+
+.header .time ._i.data-v-2393b06c {
+    background: rgba(0,0,0,.25);
+    border-radius: 4rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    padding: 0 10rpx;
+    font-size: 20rpx;
+    margin-left: 10rpx;
+}
+
+.header .num.data-v-2393b06c {
+    font-size: 32rpx;
+    padding-top: 10rpx;
+}
+
+.header .num ._span.data-v-2393b06c {
+    font-size: 40rpx;
+    color: #ff0;
+    margin: 0 5rpx;
+}
+
+.header .right.data-v-2393b06c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 24rpx;
+    font-weight: 500;
+}
+
+.header .right ._a.data-v-2393b06c {
+    color: #8b572a;
+    width: 144rpx;
+    height: 44rpx;
+    text-align: center;
+    line-height: 44rpx;
+    background-image: -webkit-gradient(linear,left top,right top,from(#fae3c8),to(#ffbf80));
+    background-image: linear-gradient(90deg,#fae3c8,#ffbf80);
+    border-radius: 100px;
+    margin-top: 5rpx;
+}
+
+._p.data-v-2393b06c {
+    margin-top: 20rpx;
+    color: #fff;
+    font-size: 18rpx;
+}
+
+.precision.data-v-2393b06c {
+    position: absolute;
+    top: 10rpx;
+    left: 410rpx;
+    width: 137rpx;
+    height: 115rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/symbol-a.png);
+    background-size: 100% 100%;
+    padding-top: 22rpx;
+    padding-left: 9rpx;
+    transform: rotate(-15deg);
+    color: #9c6800;
+    font-size: 20rpx;
+}
+
+.precision ._em.data-v-2393b06c,.precision ._span.data-v-2393b06c {
+    display: block;
+    width: 84rpx;
+    text-align: center;
+    font-weight: 600;
+}
+
+.precision ._span.data-v-2393b06c {
+    margin-top: 3rpx;
+}

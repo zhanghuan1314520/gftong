@@ -1,0 +1,9 @@
+<view class="page _div data-v-613c7e8c">
+    <view class="options _div data-v-613c7e8c">
+        <view bindtap="__e" class="{{['option data-v-613c7e8c',option.value===selected?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-value="{{option.value}}" wx:for="{{options}}" wx:for-index="i" wx:for-item="option" wx:key="i">
+            <label class="_span data-v-613c7e8c">{{option.text}}</label>
+            <image class="_img data-v-613c7e8c" src="/static/img/selected.png"></image>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-613c7e8c" title="新盘通知" vueId="24b6df92-1"></page-wrap>
+</view>

@@ -1,0 +1,18 @@
+<view class="_div data-v-62ec0454" wx:if="{{!loading}}">
+    <view class="top-tip-guide _div data-v-62ec0454" wx:if="{{app_show&&(next_app_show||!user_guide_show)}}">
+        <view bindtap="__e" class="top-tip _div data-v-62ec0454" data-event-opts="{{[ [ 'tap',[ [ 'onShowAddTip',['$event'] ] ] ] ]}}" wx:if="{{add_tip_show}}">
+            <view class="_p data-v-62ec0454">添加到【我的小程序】，下次查询更方便</view>
+            <label class="_span data-v-62ec0454">></label>
+        </view>
+        <view bindtap="__e" class="guide-img _div data-v-62ec0454" data-event-opts="{{[ [ 'tap',[ [ 'onCloseAppTip',['$event'] ] ] ] ]}}" wx:else></view>
+    </view>
+    <view class="desktop-tip _div data-v-62ec0454" wx:if="{{desktop_show}}">
+        <view bindtap="__e" class="close-btn _i data-v-62ec0454" data-event-opts="{{[ [ 'tap',[ [ 'onCloseDesktopTip',['$event'] ] ] ] ]}}">
+            <image class="_img data-v-62ec0454" lazyLoad="{{true}}" src="/static/img/close-btn.png"></image>
+        </view>
+        <view class="_p data-v-62ec0454" wx:for="{{desktop_tip}}" wx:for-index="i" wx:for-item="tip" wx:key="i">{{''+tip+''}}</view>
+    </view>
+    <home-user-guide bind:__l="__l" bind:close="__e" class="data-v-62ec0454" data-event-opts="{{[ [ '^close',[ ['onCloseUserGuide'] ] ] ]}}" show="{{user_guide_show}}" vueId="2084b170-1"></home-user-guide>
+    <view bindtap="__e" class="desktop-guide _div data-v-62ec0454" data-event-opts="{{[ [ 'tap',[ [ 'onCloseGuide',['$event'] ] ] ] ]}}" wx:if="{{show_desktop_guide}}"></view>
+    <popup bind:__l="__l" class="data-v-62ec0454" show="{{show_popup}}" vueId="2084b170-2"></popup>
+</view>

@@ -1,0 +1,9 @@
+<cover-view class="{{[ 'top-filter-wrap map-filter data-v-4fef667e',[!show?'hide':''] ]}}">
+    <cover-view class="select-content column data-v-4fef667e">
+        <cover-view bindtap="__e" class="{{[ 'opt data-v-4fef667e',[opt.value===selected?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-value="{{opt.value}}" wx:for="{{opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.text+''}}</cover-view>
+    </cover-view>
+    <cover-view class="bottom data-v-4fef667e">
+        <cover-view bindtap="__e" class="btn data-v-4fef667e" data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}">不限</cover-view>
+        <cover-view bindtap="__e" class="btn main data-v-4fef667e" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">确定</cover-view>
+    </cover-view>
+</cover-view>

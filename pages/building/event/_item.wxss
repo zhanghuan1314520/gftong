@@ -1,0 +1,159 @@
+.item.data-v-9493d138 {
+    padding: 0 20rpx 0 30rpx;
+}
+
+.header.data-v-9493d138 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 48rpx;
+    color: #999;
+    font-size: 22rpx;
+}
+
+.header.data-v-9493d138,.header .user.data-v-9493d138 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .user.data-v-9493d138 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin: 0;
+    font-size: 26rpx;
+    color: #666;
+    background-color: transparent;
+}
+
+.header .user.clickable.data-v-9493d138 {
+    color: #6b89b3;
+}
+
+.header .headimg.data-v-9493d138 {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 16rpx;
+    border-radius: 50%;
+}
+
+.content.data-v-9493d138 {
+    padding-left: 40rpx;
+    padding-bottom: 30rpx;
+    margin-left: 24rpx;
+    font-size: 26rpx;
+    margin-top: 12rpx;
+    word-wrap: break-word;
+}
+
+.content.line.data-v-9493d138 {
+    border-left: 1rpx solid #ebebeb;
+}
+
+.content ._h3.data-v-9493d138 {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.content ._h3.data-v-9493d138,.content .category.data-v-9493d138 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content .category.data-v-9493d138 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 110rpx;
+    height: 40rpx;
+    color: #fff;
+    font-size: 22rpx;
+    border-radius: 0 16rpx 0 16rpx;
+    background-image: -webkit-gradient(linear,right top,left top,color-stop(71%,#fa9f50),to(#fa7c46));
+    background-image: linear-gradient(270deg,#fa9f50 71%,#fa7c46);
+    margin-left: 12rpx;
+}
+
+.content .text.data-v-9493d138 {
+    display: block;
+    margin-top: 12rpx;
+    line-height: 37rpx;
+    color: #666;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+.content .text.two-line.data-v-9493d138 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.content .link.data-v-9493d138 {
+    margin-top: 20rpx;
+    display: block;
+    text-decoration: none;
+}
+
+.img-wrap.data-v-9493d138 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 10rpx;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.img-wrap .video-mask.data-v-9493d138 {
+    position: relative;
+    width: 375rpx;
+    height: 375rpx;
+    background-repeat: no-repeat;
+}
+
+.img-wrap .video-mask.data-v-9493d138::before {
+    content: "";
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/video-start-btn.png);
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.img-wrap .img.data-v-9493d138 {
+    width: 320rpx;
+}
+
+.img-wrap .video.data-v-9493d138 {
+    height: 375rpx;
+}
+
+.img-wrap .mini.data-v-9493d138 {
+    width: 200rpx;
+    height: 200rpx;
+    margin-right: 6rpx;
+    margin-bottom: 6rpx;
+}

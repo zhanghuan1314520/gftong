@@ -1,0 +1,38 @@
+.ranking-item.data-v-06700d0c {
+    min-height: 180rpx;
+}
+
+.ranking-item .list.data-v-06700d0c {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 400rpx;
+    min-height: 180rpx;
+    margin-right: 24rpx;
+    border-radius: 12rpx;
+    overflow: hidden;
+    background: #fff;
+}
+
+.ranking-item .list image.data-v-06700d0c {
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.ranking-item .list.data-v-06700d0c:first-child {
+    margin-left: 32rpx;
+}
+
+.ranking-item .list.data-v-06700d0c:last-child {
+    margin-right: 38rpx;
+}
+
+.ranking-item .content-scroll.data-v-06700d0c {
+    white-space: nowrap;
+    overflow: scroll;
+    width: 100%;
+    min-height: 180rpx;
+}

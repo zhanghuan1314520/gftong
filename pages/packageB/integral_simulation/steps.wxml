@@ -1,0 +1,472 @@
+<view>
+    <view class="steps">
+        <view class="steps-progress">
+            <view style="{{'width:'+stepsProgress+';'}}"></view>
+        </view>
+        <view class="{{[ 'item',[item.step<=currentStep?'active':''] ]}}" wx:for="{{steps}}" wx:for-index="i" wx:key="step">
+            <text>{{item.step}}</text>
+            <text>{{item.label}}</text>
+        </view>
+    </view>
+    <view class="step-form">
+        <form bindsubmit="__e" data-event-opts="{{[ [ 'submit',[ [ 'onSubmit',['$event'] ] ] ] ]}}">
+            <view class="step-form-group" wx:if="{{currentStep===1}}">
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">姓名</view>
+                        <view class="step-form-item--input">
+                            <input name="name" placeholder="请输入姓名" placeholderClass="placeholder" type="text"></input>
+                        </view>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">身份证号</view>
+                        <view class="step-form-item--input">
+                            <input name="idcard" placeholder="请输入身份证号" placeholderClass="placeholder" type="idcard"></input>
+                        </view>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">性别</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="gender" range="{{gender.range}}" rangeKey="text" value="{{gender.index>-1?gender.index:0}}">
+                                <view wx:if="{{gender.index>-1}}">{{gender.range[gender.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择性别</view>
+                            </picker>
+                            <input name="gender" type="text" value="{{gender.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-1"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">职业</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="job" range="{{job.range}}" rangeKey="text" value="{{job.index>-1?job.index:0}}">
+                                <view wx:if="{{job.index>-1}}">{{job.range[job.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择职业</view>
+                            </picker>
+                            <input name="job" type="text" value="{{job.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-2"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">居住地</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="zone" range="{{zone.range}}" rangeKey="text" value="{{zone.index>-1?zone.index:0}}">
+                                <view wx:if="{{zone.index>-1}}">{{zone.range[zone.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择居住地</view>
+                            </picker>
+                            <input name="zone" type="text" value="{{zone.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-3"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">派出所</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="plice" disabled="{{pliceDisabled}}" range="{{plice.range}}" rangeKey="text" value="{{plice.index>-1?plice.index:0}}">
+                                <view wx:if="{{plice.index>-1}}">{{plice.range[plice.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择派出所</view>
+                            </picker>
+                            <input name="plice" type="text" value="{{plice.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-4"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper"></view>
+                </view>
+                <view class="assistFont24 step-tips">个人姓名用于积分评估计算，请实名填写保证准确性，居住证号为居住证背面条码对应18位数字。</view>
+            </view>
+            <view class="step-form-group" wx:if="{{currentStep===2}}">
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">年龄</view>
+                        <view class="step-form-item--input">
+                            <input disabled="{{true}}" name="age" placeholder="请输入年龄" placeholderClass="placeholder" type="text" value="{{age}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">岁</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{ageScore}}">
+                        <text></text>
+                        <text>{{'+'+ageScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">文化程度</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="education" range="{{education.range}}" rangeKey="text" value="{{education.index>-1?education.index:0}}">
+                                <view wx:if="{{education.index>-1}}">{{education.range[education.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择文化程度</view>
+                            </picker>
+                            <input name="education" type="text" value="{{education.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-5"></fc-icon>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">专业职称</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="professionalTitle" range="{{professionalTitle.range}}" rangeKey="text" value="{{professionalTitle.index>-1?professionalTitle.index:0}}">
+                                <view class="ellipsis" wx:if="{{professionalTitle.index>-1}}">{{professionalTitle.range[professionalTitle.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择专业职称</view>
+                            </picker>
+                            <input name="professionalTitle" type="text" value="{{professionalTitle.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-6"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{educationScore>0}}">
+                        <text>{{'两项最高项目得分'+educationScore}}</text>
+                        <text>{{'+'+educationScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">在杭自购产权住房且实际居住</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="housingSituation" range="{{housingSituation.range}}" rangeKey="text" value="{{housingSituation.index>-1?housingSituation.index:0}}">
+                                <view wx:if="{{housingSituation.index>-1}}">{{housingSituation.range[housingSituation.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择</view>
+                            </picker>
+                            <input name="housingSituation" type="text" value="{{housingSituation.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-7"></fc-icon>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">租住合法居住房屋</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{30}}" data-point="{{6}}" data-type="houseYear" name="houseYear" placeholder="请输入年数" placeholderClass="placeholder" type="number" value="{{houseYear}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">年</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{housingScore>0}}">
+                        <text>{{'两项最高项目得分'+housingScore}}</text>
+                        <text>{{'+'+housingScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">累计在杭市区办理居住登记或居住证</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{45}}" data-point="{{3}}" data-type="registerYear" name="registerYear" placeholder="请输入年数" placeholderClass="placeholder" type="number" value="{{registerYear}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">年</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{registerYearScore>0}}">
+                        <text></text>
+                        <text>{{'+'+registerYearScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">社会保险</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{75}}" data-point="{{0.25}}" data-type="socialSecurity" name="socialSecurity" placeholder="请输入月数" placeholderClass="placeholder" type="number" value="{{socialSecurity}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">月</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{socialSecurityScore>0}}">
+                        <text></text>
+                        <text>{{'+'+socialSecurityScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">就业情况</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="employment" range="{{employment.range}}" rangeKey="text" value="{{employment.index>-1?employment.index:0}}">
+                                <view class="ellipsis" wx:if="{{employment.index>-1}}">{{employment.range[employment.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择就业情况</view>
+                            </picker>
+                            <input name="employment" type="text" value="{{employment.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-8"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{employment.score>0}}">
+                        <text></text>
+                        <text>{{'+'+employment.score+'分'}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="step-form-group" wx:if="{{currentStep===3}}">
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">国家级表彰奖励</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{240}}" data-perunit="{{80}}" data-type="stateLeveledHonour" maxlength="2" name="stateLeveledHonour" placeholder="请输入次数" placeholderClass="placeholder" type="number" value="{{stateLeveledHonour}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{stateLeveledHonourScore>0}}">
+                        <text></text>
+                        <text>{{'+'+stateLeveledHonourScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">省级表彰奖励</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{150}}" data-perunit="{{50}}" data-type="provincialLeveledHonour" maxlength="2" name="provincialLeveledHonour" placeholder="请输入次数" placeholderClass="placeholder" type="number" value="{{provincialLeveledHonour}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{provincialLeveledHonourScore>0}}">
+                        <text></text>
+                        <text>{{'+'+provincialLeveledHonourScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">杭州市级表彰奖励</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{150}}" data-perunit="{{30}}" data-type="municipalLeveledHonour" maxlength="2" name="municipalLeveledHonour" placeholder="请输入次数" placeholderClass="placeholder" type="number" value="{{municipalLeveledHonour}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{municipalLeveledHonourScore>0}}">
+                        <text></text>
+                        <text>{{'+'+municipalLeveledHonourScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">本市区县级表彰奖励</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{150}}" data-perunit="{{10}}" data-type="countyLeveledHonour" maxlength="2" name="countyLeveledHonour" placeholder="请输入次数" placeholderClass="placeholder" type="number" value="{{countyLeveledHonour}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{countyLeveledHonourScore>0}}">
+                        <text></text>
+                        <text>{{'+'+countyLeveledHonourScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">捐献骨髓</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="boneMarrowDonation" range="{{boneMarrowDonation.range}}" rangeKey="text" value="{{boneMarrowDonation.index>-1?boneMarrowDonation.index:0}}">
+                                <view class="ellipsis" wx:if="{{boneMarrowDonation.index>-1}}">{{boneMarrowDonation.range[boneMarrowDonation.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择捐献骨髓情况</view>
+                            </picker>
+                            <input name="boneMarrowDonation" type="text" value="{{boneMarrowDonation.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-9"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{boneMarrowDonation.score>0}}">
+                        <text></text>
+                        <text>{{'+'+boneMarrowDonation.score+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">无偿献血</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{10}}" data-perunit="{{0.5}}" data-starting="{{200}}" data-startpoint="{{1}}" data-type="voluntaryBloodDonation" data-unit="{{100}}" maxlength="8" name="voluntaryBloodDonation" placeholder="请输入献血量" placeholderClass="placeholder" type="number" value="{{voluntaryBloodDonation}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">ml</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{voluntaryBloodDonationScore>0}}">
+                        <text></text>
+                        <text>{{'+'+voluntaryBloodDonationScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">志愿者服务</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{10}}" data-perunit="{{2}}" data-type="volunteer" data-unit="{{20}}" maxlength="4" name="volunteer" placeholder="请输入时间" placeholderClass="placeholder" type="number" value="{{volunteer}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">小时</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{volunteerScore>0}}">
+                        <text></text>
+                        <text>{{'+'+volunteerScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">慈善捐款</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{10}}" data-perunit="{{2}}" data-type="contribution" data-unit="{{1000}}" maxlength="8" name="contribution" placeholder="请输入金额" placeholderClass="placeholder" type="number" value="{{contribution}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">元</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{contributionScore>0}}">
+                        <text></text>
+                        <text>{{'+'+contributionScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">自主创业纳税</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{20}}" data-perunit="{{1}}" data-starting="{{50000}}" data-startpoint="{{1}}" data-type="businessTaxPayment" data-unit="{{30000}}" maxlength="8" name="businessTaxPayment" placeholder="请输入金额" placeholderClass="placeholder" type="number" value="{{businessTaxPayment}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">元</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{businessTaxPaymentScore>0}}">
+                        <text></text>
+                        <text>{{'+'+businessTaxPaymentScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">个人所得税</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{20}}" data-perunit="{{1}}" data-starting="{{10000}}" data-startpoint="{{1}}" data-type="individualIncomeTax" data-unit="{{5000}}" maxlength="8" name="individualIncomeTax" placeholder="请输入金额" placeholderClass="placeholder" type="number" value="{{individualIncomeTax}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">元</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{individualIncomeTaxScore>0}}">
+                        <text></text>
+                        <text>{{'+'+individualIncomeTaxScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">投资企业信用</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="aaafdr" range="{{aaafdr.range}}" rangeKey="text" value="{{aaafdr.index>-1?aaafdr.index:0}}">
+                                <view class="ellipsis" wx:if="{{aaafdr.index>-1}}">{{aaafdr.range[aaafdr.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择投资企业信用</view>
+                            </picker>
+                            <input name="aaafdr" type="text" value="{{aaafdr.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-10"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{aaafdr.score>0}}">
+                        <text></text>
+                        <text>{{'+'+aaafdr.score+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">自主发明创新</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-max="{{1000}}" data-perunit="{{20}}" data-type="independentInventionAndInnovation" maxlength="2" name="independentInventionAndInnovation" placeholder="请输入自主发明创新项数" placeholderClass="placeholder" type="number" value="{{independentInventionAndInnovation}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">项</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{independentInventionAndInnovationScore>0}}">
+                        <text></text>
+                        <text>{{'+'+independentInventionAndInnovationScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item has-arrow">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">科技进步奖</view>
+                        <view class="step-form-item--picker">
+                            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'onPickerChange',['$event'] ] ] ] ]}}" data-type="technologyAward" range="{{technologyAward.range}}" rangeKey="text" value="{{technologyAward.index>-1?technologyAward.index:0}}">
+                                <view class="ellipsis" wx:if="{{technologyAward.index>-1}}">{{technologyAward.range[technologyAward.index].text}}</view>
+                                <view class="placeholder" wx:else>请选择获得奖项</view>
+                            </picker>
+                            <input name="technologyAward" type="text" value="{{technologyAward.current}}"></input>
+                        </view>
+                        <fc-icon bind:__l="__l" type="48_more_grey" vueId="0000458e-11"></fc-icon>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{technologyAward.score>0}}">
+                        <text></text>
+                        <text>{{'+'+technologyAward.score+'分'}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="step-form-group" wx:if="{{currentStep>3}}">
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">5年内有一般刑事犯罪记录的</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-80}}" data-type="criminalRecord" maxlength="2" name="criminalRecord" placeholder="次数" placeholderClass="placeholder" type="number" value="{{criminalRecord}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{criminalRecordScore<0}}">
+                        <text></text>
+                        <text>{{criminalRecordScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">5年内被强制隔离戒毒的</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-50}}" data-type="drugRecord" maxlength="2" name="drugRecord" placeholder="次数" placeholderClass="placeholder" type="number" value="{{drugRecord}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{drugRecordScore<0}}">
+                        <text></text>
+                        <text>{{drugRecordScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">5年内被收容教育的</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-50}}" data-type="receptionEduRecord" maxlength="2" name="receptionEduRecord" placeholder="次数" placeholderClass="placeholder" type="number" value="{{receptionEduRecord}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{receptionEduRecordScore<0}}">
+                        <text></text>
+                        <text>{{receptionEduRecordScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">5年内被行政拘留或司法拘留处罚的</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-30}}" data-type="detentionRecord" maxlength="2" name="detentionRecord" placeholder="次数" placeholderClass="placeholder" type="number" value="{{detentionRecord}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{detentionRecordScore<0}}">
+                        <text></text>
+                        <text>{{detentionRecordScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">5年内被列入国家、浙江省及杭州市公共信用信息平台的失信行为</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-20}}" data-type="brokeRecord" maxlength="2" name="brokeRecord" placeholder="次数" placeholderClass="placeholder" type="number" value="{{brokeRecord}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{brokeRecordScore<0}}">
+                        <text></text>
+                        <text>{{brokeRecordScore+'分'}}</text>
+                    </view>
+                </view>
+                <view class="step-form-item">
+                    <view class="step-form-item--body">
+                        <view class="step-form-item--label">有违反国家计划生育政策行为的</view>
+                        <view class="step-form-item--input">
+                            <input bindblur="__e" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ] ]}}" data-perunit="{{-80}}" data-type="familyPlanning" maxlength="2" name="familyPlanning" placeholder="次数" placeholderClass="placeholder" type="number" value="{{familyPlanning}}"></input>
+                        </view>
+                        <view class="step-form-item--suffix">次</view>
+                    </view>
+                    <view class="step-form-item--helper" wx:if="{{familyPlanningScore<0}}">
+                        <text></text>
+                        <text>{{familyPlanningScore+'分'}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="step-form-btn">
+                <button class="ui-btn primary big" formType="submit">下一步</button>
+            </view>
+        </form>
+    </view>
+</view>

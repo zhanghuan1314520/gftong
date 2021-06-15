@@ -1,0 +1,15 @@
+<view class="header _div data-v-3f905b48">
+    <view class="headimg _div data-v-3f905b48">
+        <image class="_img data-v-3f905b48" lazyLoad="{{true}}" mode="aspectFill" src="{{userHeadimgurl}}" wx:if="{{userHeadimgurl}}"></image>
+        <open-data class="data-v-3f905b48" type="userAvatarUrl" wx:else></open-data>
+    </view>
+    <view class="detail _div data-v-3f905b48">
+        <view class="_div data-v-3f905b48">金币余额</view>
+        <view class="_strong data-v-3f905b48">{{gold_coins}}</view>
+    </view>
+    <view class="score _div data-v-3f905b48" wx:if="{{show_score}}">
+        <view class="_div data-v-3f905b48">积分余额</view>
+        <view class="_strong data-v-3f905b48">{{score}}</view>
+    </view>
+    <navigator bindtap="__e" class="button _a data-v-3f905b48" data-event-opts="{{[ [ 'tap',[ [ 'goCharge',['$event'] ] ] ] ]}}" wx:if="{{show_charge}}">去充值 ></navigator>
+</view>

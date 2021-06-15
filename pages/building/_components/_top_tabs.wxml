@@ -1,0 +1,6 @@
+<view class="{{[ 'tabs-first data-v-fb9b50fa',[is_business?'business':''] ]}}">
+    <view bindtap="__e" class="tab shadow-btn data-v-fb9b50fa" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-index="{{i}}" data-name="{{tab.name}}" data-type="{{tab.type}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+        <view class="{{['_i data-v-fb9b50fa',[loading?'hide':''],tab.show?'active':'',tab.class||tab.type]}}"></view>
+        <label class="_span data-v-fb9b50fa">{{tab.name}}</label>
+    </view>
+</view>

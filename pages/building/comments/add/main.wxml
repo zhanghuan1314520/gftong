@@ -1,0 +1,26 @@
+<view class="add-comments page _div data-v-4cafee8a">
+    <form class="data-v-4cafee8a">
+        <view class="top-section _section data-v-4cafee8a">
+            <view class="textAssistFont28 _header data-v-4cafee8a">{{'写下对楼盘【'+name+'】的点评'}}</view>
+            <view class="textarea-box data-v-4cafee8a">
+                <textarea autoFocus="{{true}}" autoHeight="{{true}}" bindinput="__e" class="title32B data-v-4cafee8a" cols="30" data-event-opts="{{[ [ 'input',[ [ 'changeContent',['$event'] ] ] ] ]}}" disableDefaultPadding="{{true}}" maxlength="140" name="content" placeholder="楼盘的位置如何，环境怎么样，配套规划满意吗？" placeholderClass="hintFont28" rows="10" value="{{content}}"></textarea>
+                <view class="img-view data-v-4cafee8a" wx:if="{{photos_urls.length}}">
+                    <image bindtap="__e" class="_img data-v-4cafee8a" data-event-opts="{{[ [ 'tap',[ [ 'previewImg',['$event'] ] ] ] ]}}" mode="aspectFill" src="{{photos_urls[0]}}"></image>
+                    <view bindtap="__e" class="img-rm data-v-4cafee8a" data-event-opts="{{[ [ 'tap',[ [ 'onRmImg',['$event'] ] ] ] ]}}"></view>
+                </view>
+                <view class="textarea-box__footer data-v-4cafee8a">
+                    <view bindtap="__e" class="add-img data-v-4cafee8a" data-event-opts="{{[ [ 'tap',[ [ 'onChooseImage',['$event'] ] ] ] ]}}">添加图片</view>
+                    <view class="num-tip text24 data-v-4cafee8a">{{content.length+' / 140'}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="question-wrap data-v-4cafee8a" wx:for="{{$root.l1}}" wx:for-index="i" wx:for-item="q_item" wx:key="question">
+            <view class="question textAssistFont28 data-v-4cafee8a">{{q_item[$orig].question}}</view>
+            <view class="tags data-v-4cafee8a">
+                <view bindtap="__e" class="{{[ 'item text24 data-v-4cafee8a',q_item[$orig].select_type,[q_item[$orig].selected===tag[$orig]||tag.g0>-1?'selected':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'selectTag',[i,'$0'],[ [ ['questions','question',q_item[$orig].question],['tags','',__i0__] ] ] ] ] ] ]}}" wx:for="{{q_item.l0}}" wx:for-index="__i0__" wx:for-item="tag" wx:key="$orig">{{tag[$orig]}}</view>
+            </view>
+        </view>
+        <fangchan-auth-user bind:__l="__l" bind:success="__e" class="submit-btn data-v-4cafee8a" classname="large-btn confirm-btn" data-event-opts="{{[ [ '^success',[ ['getUserInfo'] ] ] ]}}" disabled="{{sending||img_uploading}}" failTip="需要认证用户信息才可以进行评论" forceAuth="{{true}}" vueId="5962e874-1" vueSlots="{{['default']}}">{{''+(sending?'提交中':'提交评论')+''}}</fangchan-auth-user>
+    </form>
+    <page-wrap bind:__l="__l" class="data-v-4cafee8a" title="{{title}}" vueId="5962e874-2"></page-wrap>
+</view>

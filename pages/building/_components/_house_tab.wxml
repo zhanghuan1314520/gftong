@@ -1,0 +1,5 @@
+<view class="{{[ 'tabs-wrap _div data-v-2b10f606',[!tabs||tabs.length<2?'hide':''] ]}}">
+    <view class="tabs _div data-v-2b10f606">
+        <view bindtap="__e" class="{{[ 'tab _div data-v-2b10f606',[index===i?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'change',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab+''}}</view>
+    </view>
+</view>

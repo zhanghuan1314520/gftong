@@ -1,0 +1,9 @@
+<view catchtap="__e" class="{{['player data-v-ded0c7f0',!show?'hide':'']}}" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}">
+    <view bindtap="__e" class="btn data-v-ded0c7f0" data-event-opts="{{[ [ 'tap',[ [ 'onPress',['$event'] ] ] ] ]}}">
+        <view class="{{['data-v-ded0c7f0',playing?'playing':'waiting']}}"></view>
+    </view>
+    <text class="time data-v-ded0c7f0" wx:if="{{running_time}}">{{running_duration}}</text>
+    <slider activeColor="#9F9F9F" bindchange="__e" blockColor="#ffffff" blockSize="12" catchtap="__e" class="progress data-v-ded0c7f0" color="rgba(182, 182, 182, .3)" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ],[ 'change',[ [ 'changeProgress',['$event'] ] ] ] ]}}" value="{{progress}}" wx:if="{{running_time}}"></slider>
+    <text class="time data-v-ded0c7f0" wx:if="{{time}}">{{duration}}</text>
+    <text bindtap="__e" class="close data-v-ded0c7f0" data-event-opts="{{[ [ 'tap',[ [ 'onClose',['$event'] ] ] ] ]}}"></text>
+</view>

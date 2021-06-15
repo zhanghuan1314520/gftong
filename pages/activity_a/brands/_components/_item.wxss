@@ -1,0 +1,32 @@
+.dev-item.data-v-5ddfb694 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dev-item .item-top.data-v-5ddfb694 {
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#231500),color-stop(51%,#523100),to(rgba(135,81,2,0)));
+    background-image: linear-gradient(180deg,#231500,#523100 51%,rgba(135,81,2,0));
+    text-align: center;
+    padding: 32rpx 56rpx 27rpx;
+}
+
+.dev-item .item-top .img.data-v-5ddfb694 {
+    width: 638rpx;
+    height: 48rpx;
+}
+
+.dev-item .item-top .desc.data-v-5ddfb694 {
+    text-align: left;
+    padding: 25rpx 0 0;
+    font-size: 24rpx;
+    color: #ffcb9e;
+}
+
+.dev-item .item-content.data-v-5ddfb694 {
+    background: #fff;
+    border-radius: 12rpx;
+    width: 710rpx;
+    margin: 0 auto 16rpx;
+}

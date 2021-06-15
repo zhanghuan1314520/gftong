@@ -1,0 +1,153 @@
+.page.data-v-09543dba {
+    width: 100%;
+    padding-bottom: 166rpx;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.main-contain.data-v-09543dba {
+    padding: 0 32rpx;
+}
+
+.page-title.data-v-09543dba {
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.page-hd.data-v-09543dba {
+    padding-top: 40rpx;
+}
+
+.page-hd--item.data-v-09543dba {
+    padding-bottom: 56rpx;
+}
+
+.page-hd--ul.data-v-09543dba {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 30rpx;
+}
+
+.page-hd--ul>._a.data-v-09543dba {
+    position: relative;
+}
+
+.page-hd--ul>._a ._img.data-v-09543dba {
+    width: 100%;
+    height: 100%;
+}
+
+.page-hd--ul>._a .new.data-v-09543dba {
+    position: absolute;
+    top: -12rpx;
+    right: -8rpx;
+    width: 58rpx;
+    height: 34rpx;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/find_building/subject-new-flg.png) no-repeat 50%;
+    background-size: contain;
+}
+
+.page-hd--ul.hot>._a.data-v-09543dba {
+    width: 218rpx;
+    height: 163rpx;
+}
+
+.page-hd--ul.find>._a.data-v-09543dba {
+    width: 218rpx;
+    height: 162rpx;
+}
+
+._h3.data-v-09543dba {
+    margin-top: 18rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.client-rect.data-v-09543dba {
+    position: sticky;
+    top: 86rpx;
+}
+
+.header.data-v-09543dba {
+    z-index: 999999999;
+}
+
+.find-building-filter--wrap.filter-show.data-v-09543dba {
+    padding: 0;
+}
+
+.home-header-wrap.data-v-09543dba {
+    position: relative;
+    background-color: transparent;
+}
+
+.search.data-v-09543dba {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 24rpx 0 32rpx 32rpx;
+}
+
+.search.data-v-09543dba,.search .input.data-v-09543dba {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.search .input.data-v-09543dba {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 564rpx;
+    height: 80rpx;
+    padding-left: 24rpx;
+    background-color: #fff;
+    border: 2rpx solid #f0f0f0;
+    border-radius: 12rpx;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.05);
+    box-sizing: border-box;
+}
+
+.search .input .text.data-v-09543dba {
+    margin-left: 16rpx;
+}
+
+.search .btn.data-v-09543dba {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 24rpx;
+    color: #444;
+    margin: 0;
+    background-color: transparent;
+}
+
+.search .btn .text.data-v-09543dba {
+    margin-left: 2rpx;
+}
+
+.building-container.data-v-09543dba {
+    min-height: 100vh;
+}

@@ -1,0 +1,165 @@
+.page.data-v-0f1aff8a {
+    padding-bottom: 216rpx;
+    overflow: hidden;
+}
+
+.building.data-v-0f1aff8a {
+    padding: 0 32rpx;
+    background-color: #fff;
+    margin-bottom: 16rpx;
+}
+
+.building .item.data-v-0f1aff8a {
+    border-bottom: none;
+}
+
+.commont-success.data-v-0f1aff8a {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(6,6,6,.5);
+    z-index: 9999999;
+}
+
+.commont-success--main.data-v-0f1aff8a {
+    width: 560rpx;
+    border-radius: 12rpx;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.commont-success--header.data-v-0f1aff8a {
+    width: 100%;
+    height: 168rpx;
+    background: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/commont-success-bg.png) no-repeat center -12rpx;
+    background-size: 592rpx 200rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.commont-success--header image.data-v-0f1aff8a {
+    width: 72rpx;
+    height: 56rpx;
+}
+
+.commont-success--header text.data-v-0f1aff8a {
+    color: #58b09f;
+    font-size: 32rpx;
+    line-height: 45rpx;
+    margin-top: 13rpx;
+}
+
+.commont-success--body.data-v-0f1aff8a {
+    color: #333;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    padding: 64rpx 0 40rpx;
+    text-align: center;
+    font-weight: 700;
+}
+
+.commont-success--footer.data-v-0f1aff8a {
+    border-top: 1rpx solid #ebebeb;
+    text-align: center;
+    padding: 25rpx 0;
+    color: #00b08d;
+    line-height: 44rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.disclaimer.data-v-0f1aff8a {
+    padding: 15rpx 32rpx;
+}
+
+.tags.data-v-0f1aff8a {
+    padding: 16rpx 32rpx 0 18rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.tags .tag-item.data-v-0f1aff8a {
+    min-width: 140rpx;
+    padding: 0 15rpx;
+    background-color: #f7f7f7;
+    border-radius: 4rpx;
+    text-align: center;
+    line-height: 54rpx;
+    font-size: 24rpx;
+    color: #444;
+    margin: 0 0 16rpx 12rpx;
+}
+
+.tags .tag-item.active.data-v-0f1aff8a {
+    color: #00ad82;
+    background-color: #e7f9f5;
+}
+
+.tags.data-v-0f1aff8a::after {
+    content: "";
+    width: 100%;
+    height: 1rpx;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1rpx solid #f7f7f7;
+}
+
+.list-top.data-v-0f1aff8a {
+    background-color: #fff;
+    margin-bottom: -24rpx;
+    padding: 16rpx 32rpx 32rpx;
+}
+
+.filters.data-v-0f1aff8a,.list-top.data-v-0f1aff8a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filters.data-v-0f1aff8a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    color: #888;
+    font-size: 24rpx;
+}
+
+.filters .i.data-v-0f1aff8a {
+    width: 22rpx;
+    text-align: center;
+}
+
+.filters .active.data-v-0f1aff8a {
+    color: #111;
+}

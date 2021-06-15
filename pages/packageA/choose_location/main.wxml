@@ -1,0 +1,28 @@
+<view class="page data-v-0f8328b0">
+    <view class="poi-wrap data-v-0f8328b0">
+        <view class="search-wrap data-v-0f8328b0">
+            <input bindblur="__e" bindfocus="__e" bindinput="__e" class="assistFont28 data-v-0f8328b0" data-event-opts="{{[ [ 'blur',[ [ 'onBlur',['$event'] ] ] ],[ 'focus',[ [ 'onFocus',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','keyword','$event',[] ] ] ] ] ]}}" focus="{{focus}}" placeholder="您要定位的地址？" type="search" value="{{keyword}}"></input>
+        </view>
+        <scroll-view class="poi-list data-v-0f8328b0" scrollY="{{true}}" wx:if="{{!hide_search_list&&search_list.length}}">
+            <view bindtap="__e" class="poi data-v-0f8328b0" data-event-opts="{{[ [ 'tap',[ [ 'selectAddress',[i] ] ] ] ]}}" wx:for="{{search_list}}" wx:for-index="i" wx:key="id">
+                <view class="name data-v-0f8328b0">
+                    <fc-icon bind:__l="__l" class="data-v-0f8328b0" type="40_address_grey" vueId="{{'6cd5e070-1-'+i}}"></fc-icon>
+                    <text class="text28B data-v-0f8328b0">{{item.title}}</text>
+                </view>
+                <view class="addr assistFont24 data-v-0f8328b0">{{item.address}}</view>
+            </view>
+        </scroll-view>
+    </view>
+    <map bindregionchange="__e" class="data-v-0f8328b0" data-event-opts="{{[ [ 'regionchange',[ [ 'onRegionChange',['$event'] ] ] ] ]}}" id="map" latitude="{{latitude}}" longitude="{{longitude}}" showLocation="{{true}}">
+        <view class="center-marker data-v-0f8328b0">
+            <common-img bind:__l="__l" class="data-v-0f8328b0" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/house.png" vueId="6cd5e070-2"></common-img>
+        </view>
+    </map>
+    <view class="addr-confirm data-v-0f8328b0" wx:if="{{current_address}}">
+        <view class="name-wrap data-v-0f8328b0">
+            <text class="i data-v-0f8328b0"></text>
+            <view class="name data-v-0f8328b0">{{current_address}}</view>
+        </view>
+        <view catchtap="__e" class="button data-v-0f8328b0" data-event-opts="{{[ [ 'tap',[ [ 'confirmAddress',['$event'] ] ] ] ]}}">确认定位地址</view>
+    </view>
+</view>

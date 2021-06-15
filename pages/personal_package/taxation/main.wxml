@@ -1,0 +1,109 @@
+<view class="page-box data-v-cd640cfa">
+    <view class="page data-v-cd640cfa">
+        <view class="top-tab data-v-cd640cfa">
+            <common-tabs bind:__l="__l" bind:change="__e" class="data-v-cd640cfa" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" selected="{{house_type}}" tabs="{{house_types}}" vueId="e276e912-1" width="220rpx"></common-tabs>
+            <top-right-share bind:__l="__l" class="data-v-cd640cfa" top="12" vueId="e276e912-2"></top-right-share>
+        </view>
+        <form bindsubmit="__e" class="data-v-cd640cfa" data-event-opts="{{[ [ 'submit',[ [ 'onCalculate',['$event'] ] ] ] ]}}">
+            <view class="form-group data-v-cd640cfa">
+                <view class="form-body data-v-cd640cfa">
+                    <view class="form-item data-v-cd640cfa">
+                        <view class="form-item--hd data-v-cd640cfa">购房性质</view>
+                        <view class="form-item--bd justify-flex-end data-v-cd640cfa">
+                            <radio-group bindchange="__e" class="radio-group data-v-cd640cfa" data-event-opts="{{[ [ 'change',[ [ 'radioQualityChange',['$event'] ] ] ] ]}}" name="house_quality">
+                                <label class="{{['radio data-v-cd640cfa',item.value===house_quality?'active':'']}}" wx:for="{{house_qualities}}" wx:for-index="__i0__" wx:key="value">
+                                    <radio checked="{{item.value===house_quality}}" class="data-v-cd640cfa" value="{{item.value}}"></radio>
+                                    <text class="icon data-v-cd640cfa"></text>
+                                    <text class="span data-v-cd640cfa">{{item.text}}</text>
+                                </label>
+                            </radio-group>
+                        </view>
+                    </view>
+                    <view class="form-item data-v-cd640cfa">
+                        <view class="form-item--hd data-v-cd640cfa">房屋面积</view>
+                        <view class="form-item--bd text-right data-v-cd640cfa">
+                            <input bindinput="__e" class="data-v-cd640cfa" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','house_area','$event',[] ] ] ] ] ]}}" data-name="house_area" name="house_area" placeholder="请输入房屋面积" placeholderClass="placeholder" type="digit" value="{{house_area}}"></input>
+                        </view>
+                        <view class="form-item--ft data-v-cd640cfa">㎡</view>
+                    </view>
+                    <view class="form-item data-v-cd640cfa" hidden="{{!(house_type==='new')}}">
+                        <view class="form-item--hd data-v-cd640cfa">房屋单价</view>
+                        <view class="form-item--bd text-right data-v-cd640cfa">
+                            <input bindinput="__e" class="data-v-cd640cfa" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','house_unit_price','$event',[] ] ] ] ] ]}}" data-name="house_unit_price" name="house_unit_price" placeholder="请输入房屋单价" placeholderClass="placeholder" type="digit" value="{{house_unit_price}}"></input>
+                        </view>
+                        <view class="form-item--ft data-v-cd640cfa">元</view>
+                    </view>
+                    <view class="form-item data-v-cd640cfa">
+                        <view class="form-item--hd data-v-cd640cfa">房屋总价</view>
+                        <view class="form-item--bd text-right data-v-cd640cfa">
+                            <input bindinput="__e" class="data-v-cd640cfa" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','house_total_price','$event',[] ] ] ] ] ]}}" name="house_total_price" placeholderClass="placeholder" type="digit" value="{{house_total_price}}"></input>
+                        </view>
+                        <view class="form-item--ft data-v-cd640cfa">元</view>
+                    </view>
+                    <view class="form-item data-v-cd640cfa" hidden="{{!(house_type==='second')}}">
+                        <view class="form-item--hd data-v-cd640cfa">转让年限</view>
+                        <view class="form-item--bd justify-flex-end data-v-cd640cfa">
+                            <radio-group bindchange="__e" class="radio-group data-v-cd640cfa" data-event-opts="{{[ [ 'change',[ [ 'radioYearsChange',['$event'] ] ] ] ]}}" name="house_years">
+                                <label class="{{['radio data-v-cd640cfa',item.value===house_years?'active':'']}}" wx:for="{{fixed_number_of_years}}" wx:for-index="__i1__" wx:key="value">
+                                    <radio checked="{{item.value===house_years}}" class="data-v-cd640cfa" value="{{item.value}}"></radio>
+                                    <text class="icon data-v-cd640cfa"></text>
+                                    <text class="span data-v-cd640cfa">{{item.text}}</text>
+                                </label>
+                            </radio-group>
+                        </view>
+                    </view>
+                    <view class="form-item data-v-cd640cfa" hidden="{{!(house_type==='second'&&house_years==='over5years')}}">
+                        <view class="form-item--hd data-v-cd640cfa">是否唯一住房</view>
+                        <view class="form-item--bd justify-flex-end data-v-cd640cfa">
+                            <radio-group bindchange="__e" class="radio-group data-v-cd640cfa" data-event-opts="{{[ [ 'change',[ [ 'radioUniqueChange',['$event'] ] ] ] ]}}" name="house_unique">
+                                <label class="{{['radio data-v-cd640cfa',item.value===house_unique?'active':'']}}" wx:for="{{is_unique}}" wx:for-index="__i2__" wx:key="value">
+                                    <radio checked="{{item.value===house_unique}}" class="data-v-cd640cfa" value="{{item.value}}"></radio>
+                                    <text class="icon data-v-cd640cfa"></text>
+                                    <text class="span data-v-cd640cfa">{{item.text}}</text>
+                                </label>
+                            </radio-group>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-box data-v-cd640cfa">
+                <button class="ui-btn big primary radius-12 data-v-cd640cfa" formType="submit">
+                    <text class="data-v-cd640cfa">开始计算</text>
+                </button>
+            </view>
+            <view class="computed-result data-v-cd640cfa" wx:if="{{deed_tax}}">
+                <view class="computed-result--h1 data-v-cd640cfa">需缴纳税费</view>
+                <view class="computed-result--prices data-v-cd640cfa">
+                    <view class="computed-result--total data-v-cd640cfa">
+                        <text class="total-label data-v-cd640cfa">总计：</text>
+                        <text class="total-num data-v-cd640cfa">{{taxation_total}}</text>
+                        <text class="total-unit data-v-cd640cfa">元</text>
+                    </view>
+                    <view class="computed-result--item data-v-cd640cfa">
+                        <text class="price-label data-v-cd640cfa">契税：</text>
+                        <text class="price-num data-v-cd640cfa">{{deed_tax}}</text>
+                        <text class="price-unit data-v-cd640cfa">元</text>
+                    </view>
+                    <view class="computed-result--item data-v-cd640cfa">
+                        <text class="price-label data-v-cd640cfa">个税：</text>
+                        <text class="price-num data-v-cd640cfa" wx:if="{{house_type==='second'}}">{{personal_income_tax}}</text>
+                        <text class="price-unit data-v-cd640cfa">{{house_type==='second'?'元':'新房无需缴纳'}}</text>
+                    </view>
+                    <view class="computed-result--item data-v-cd640cfa">
+                        <text class="price-label data-v-cd640cfa">增值税：</text>
+                        <text class="price-num data-v-cd640cfa" wx:if="{{house_type==='second'}}">{{value_added_tax}}</text>
+                        <text class="price-unit data-v-cd640cfa">{{house_type==='second'?'元':'新房无需缴纳'}}</text>
+                    </view>
+                </view>
+                <view class="qr-box data-v-cd640cfa">
+                    <image class="_img data-v-cd640cfa" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/taxation/qr.png"></image>
+                    <text class="data-v-cd640cfa">扫码我也要查</text>
+                </view>
+            </view>
+        </form>
+        <page-wrap bind:__l="__l" class="data-v-cd640cfa" hide_back_home="{{true}}" title="{{title}}" vueId="e276e912-3"></page-wrap>
+    </view>
+    <view class="footer-booth data-v-cd640cfa" wx:if="{{footerCardType==='booth'}}">
+        <ui-consultant-booth bind:__l="__l" class="data-v-cd640cfa" consultant="{{consultant_today_rankings[5]}}" pos="税费计算器" vueId="e276e912-4"></ui-consultant-booth>
+    </view>
+</view>

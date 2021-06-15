@@ -1,0 +1,24 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "loading": "/components/views/loading",
+        "house-item": "/components/business/house_item",
+        "surplus-house-item": "/components/business/surplus_house_item",
+        "business-house-item": "/components/business/business_building_item",
+        "search-select": "/pages/index/search/_search_select",
+        "bottom-tip": "/components/views/bottom_tip",
+        "search-item": "/pages/index/search/_search_item",
+        "search-loading": "/pages/index/search/_search_loading",
+        "hot-ranking": "/pages/index/hot_ranking/ranking_item",
+        "page-wrap": "/components/page_wrap",
+        "common-img": "/components/views/common_img",
+        "fc-icon": "/components/views/fc_icon",
+        "common-tabs": "/components/views/common_tabs",
+        "tip-dlg": "/components/views/tip_dlg",
+        "identify-btn": "/components/views/wx_identify_btn",
+        "ui-cropper": "/components/ui/cropper",
+        "ad-swiper": "/components/business/swiper",
+        "current-consultant": "/components/building/_current_consultant",
+        "ui-consultant-booth": "/components/ui/consultantBooth"
+    }
+}

@@ -1,0 +1,169 @@
+.consult-card-item.data-v-74d26869 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    height: 224rpx;
+    margin-bottom: 24rpx;
+    border-radius: 32rpx;
+    overflow: hidden;
+}
+
+._header.data-v-74d26869 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 27rpx 32rpx 14rpx 30rpx;
+}
+
+._footer.data-v-74d26869,._header.data-v-74d26869 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._footer.data-v-74d26869 {
+    height: 64rpx;
+    padding: 0 32rpx;
+    color: #000;
+    font-size: 24rpx;
+}
+
+.info.data-v-74d26869 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.info ._h3.data-v-74d26869,.info.data-v-74d26869 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.info ._h3.data-v-74d26869 {
+    color: #000;
+    font-size: 40rpx;
+    font-weight: 700;
+}
+
+.info .medals.data-v-74d26869 {
+    margin-left: 16rpx;
+}
+
+.headimg.data-v-74d26869 {
+    width: 98rpx;
+    height: 98rpx;
+    margin-right: 32rpx;
+}
+
+.headimg ._img.data-v-74d26869 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.tools.data-v-74d26869 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 184rpx;
+    height: 64rpx;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.common-btn.data-v-74d26869 {
+    width: 72rpx;
+    height: 72rpx;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.consult-btn.data-v-74d26869 {
+    background-size: 30rpx 26rpx;
+}
+
+.call-btn.data-v-74d26869 {
+    background-size: 39.3rpx 39.3rpx;
+}
+
+.gold.data-v-74d26869 {
+    background-image: linear-gradient(134deg,#fff2d5,#fff9eb 57%,#fff2d5);
+}
+
+.gold .common-btn.data-v-74d26869 {
+    background-color: #fee8c6;
+}
+
+.gold .consult-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/msg-gold.png);
+}
+
+.gold .call-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/phone-gold.png);
+}
+
+.gold ._footer.data-v-74d26869 {
+    background-color: #feeed5;
+}
+
+.silver.data-v-74d26869 {
+    background-image: linear-gradient(134deg,#eaf3f9,#f6fbff 57%,#eaf3f9);
+}
+
+.silver .common-btn.data-v-74d26869 {
+    background-color: #deebf5;
+}
+
+.silver .consult-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/msg-silver.png);
+}
+
+.silver .call-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/phone-silver.png);
+}
+
+.silver ._footer.data-v-74d26869 {
+    background-color: #e8f2f8;
+}
+
+.copper.data-v-74d26869 {
+    background-image: linear-gradient(134deg,#f4dbcf,#fef3e9 57%,#f4dbcf);
+}
+
+.copper .common-btn.data-v-74d26869 {
+    background-color: #f6d5c3;
+}
+
+.copper .consult-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/msg-bronze.png);
+}
+
+.copper .call-btn.data-v-74d26869 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/filter/phone-bronze.png);
+}
+
+.copper ._footer.data-v-74d26869 {
+    background-color: #f6daca;
+}

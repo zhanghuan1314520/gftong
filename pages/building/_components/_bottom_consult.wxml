@@ -1,0 +1,4 @@
+<view bindtap="__e" class="wrap _div data-v-c402554e" data-event-opts="{{[ [ 'tap',[ [ 'goConsultantByUser',['$event'] ] ] ] ]}}" wx:if="{{show}}">
+    <view catchtap="__e" class="_i data-v-c402554e" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}"></view>
+    <common-img bind:__l="__l" class="data-v-c402554e" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/building_detail_passively.png" vueId="41f955ab-1"></common-img>
+</view>

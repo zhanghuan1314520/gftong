@@ -1,0 +1,389 @@
+.house-item {
+    min-height: 188rpx;
+    padding: 32rpx 0;
+    border-bottom: 1px solid #f7f7f7;
+    margin: 0 24rpx;
+    display: block;
+}
+
+.house-item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+}
+
+.content {
+    margin-top: -1rpx;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 168rpx;
+}
+
+.content .hot {
+    display: inline-block;
+    width: 23rpx;
+    height: 28rpx;
+    margin-left: .3em;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/hot.png);
+    background-size: 100% 100%;
+}
+
+.content-main {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.content-main,.content-main .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.content-main .row {
+    line-height: 36rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content-main .row.bottom {
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.content-main .row.unit {
+    margin-bottom: 5rpx;
+    margin-top: 7rpx;
+}
+
+.content-main .first-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 9rpx;
+}
+
+.content-main .first-row ._h3 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.content-main .flex-wrap-row,.content-main .normal-row {
+    margin-bottom: 5rpx;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.content-main .flex-wrap-row {
+    flex-wrap: wrap;
+}
+
+.content-main .customized_price {
+    font-size: 26rpx;
+    margin-bottom: 5rpx;
+}
+
+.content-main.center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.probability {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 12rpx;
+    font-size: 22rpx;
+    color: #444;
+}
+
+.probability ._i {
+    height: 28rpx;
+    width: 28rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icons/rate.png);
+    background-position: 50%;
+    background-size: cover;
+    margin-right: 8rpx;
+}
+
+.probability .item {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.green {
+    color: #1cb8ab;
+    font-size: 20rpx;
+}
+
+.price {
+    font-size: 30rpx;
+}
+
+.no_border {
+    border: 0;
+}
+
+.new-arrival {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 66rpx;
+    height: 36rpx;
+    font-size: 20rpx;
+    color: #f06e6e;
+    border: 2rpx solid #f06e6e;
+    border-radius: 0 14rpx 0 0;
+}
+
+.page.data-v-3c626818 {
+    width: 100vw;
+    padding: 0 32rpx;
+    position: inherit;
+}
+
+.main.data-v-3c626818 {
+    min-height: calc(100vh - 176rpx);
+}
+
+.topic-t.data-v-3c626818 {
+    padding: 17rpx 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.topic-t>text.data-v-3c626818 {
+    border-left: 6rpx solid #00ad82;
+    padding-left: 20rpx;
+    font-size: 28rpx;
+    color: #666;
+    line-height: normal;
+}
+
+.tl-item--left.data-v-3c626818 {
+    -webkit-box-flex: 0;
+    flex: 0 0 513rpx;
+}
+
+.tl-item--left.data-v-3c626818,.tl-item.data-v-3c626818 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tl-item.data-v-3c626818 {
+    border-radius: 8rpx;
+    background-color: #fff;
+    padding: 31rpx 24rpx 31rpx 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tl-item+.tl-item.data-v-3c626818 {
+    margin-top: 16rpx;
+}
+
+.tl-item:nth-of-type(1) .tl-h.data-v-3c626818,.tl-item:nth-of-type(2) .tl-h.data-v-3c626818,.tl-item:nth-of-type(3) .tl-h.data-v-3c626818 {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 29rpx 36rpx;
+}
+
+.tl-item:nth-of-type(1) .tl-h text.data-v-3c626818,.tl-item:nth-of-type(2) .tl-h text.data-v-3c626818,.tl-item:nth-of-type(3) .tl-h text.data-v-3c626818 {
+    display: none;
+}
+
+.tl-item:nth-of-type(1) .tl-h.data-v-3c626818 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/topic_1_a.png);
+}
+
+.tl-item:nth-of-type(2) .tl-h.data-v-3c626818 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/topic_1_b.png);
+}
+
+.tl-item:nth-of-type(3) .tl-h.data-v-3c626818 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/topic_1_c.png);
+}
+
+.tl-h.data-v-3c626818 {
+    -webkit-box-flex: 0;
+    flex: 0 0 76rpx;
+    height: 86rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tl-h text.data-v-3c626818 {
+    font-family: Helvetica;
+    font-size: 27rpx;
+    color: #999;
+    font-weight: 700;
+}
+
+.tl-b.data-v-3c626818 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 432rpx;
+}
+
+.cs-h.data-v-3c626818 {
+    width: 88rpx;
+    height: 88rpx;
+    border: 4rpx solid rgba(0,0,0,.08);
+    border-radius: 50%;
+}
+
+.cs-h ._img.data-v-3c626818 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cs-b.data-v-3c626818 {
+    margin-left: 12rpx;
+    color: #333;
+}
+
+.cs-name.data-v-3c626818 {
+    font-size: 32rpx;
+    line-height: 45rpx;
+    font-weight: 700;
+}
+
+.cs-des.data-v-3c626818 {
+    font-size: 24rpx;
+    line-height: 33rpx;
+    margin-top: 8rpx;
+}
+
+.tl-f.data-v-3c626818 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ranking-num.data-v-3c626818 {
+    font-size: 24rpx;
+    color: #9a9a9a;
+    line-height: 33rpx;
+    font-weight: 700;
+}
+
+.ranking-num text.data-v-3c626818 {
+    margin: 0 7rpx;
+}
+
+.ranking-status.data-v-3c626818 {
+    width: 21rpx;
+    height: 23rpx;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ranking-status.up.data-v-3c626818 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/topic_u.png);
+}
+
+.ranking-status.down.data-v-3c626818 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/topic_d.png);
+}
+
+.task-btn.data-v-3c626818 {
+    margin: 0 -32rpx;
+    padding: 32rpx 0 56rpx;
+}
+
+.task-btn>._a.data-v-3c626818 {
+    display: block;
+    width: 560rpx;
+    height: 88rpx;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 88rpx;
+    background: #00b08d;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,176,141,.2);
+    border-radius: 44rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.bottom-tips--box.data-v-3c626818 {
+    margin-top: 16rpx;
+}

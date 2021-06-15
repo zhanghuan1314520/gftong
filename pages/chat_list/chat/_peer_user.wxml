@@ -1,0 +1,16 @@
+<view class="wrap data-v-0383ad66">
+    <view class="user data-v-0383ad66">
+        <image class="img data-v-0383ad66" src="{{peer_headimgurl}}"></image>
+        <view class="info data-v-0383ad66">
+            <text class="title32B data-v-0383ad66">{{peer_nickname}}</text>
+            <view class="building data-v-0383ad66">
+                <label class="building-label data-v-0383ad66">咨询楼盘：</label>
+                <navigator class="building-link data-v-0383ad66" url="{{'/pages/building/main?building_id='+building.id}}">{{''+building.name+''}}</navigator>
+            </view>
+        </view>
+    </view>
+    <view bindtap="__e" class="{{['phone-btn data-v-0383ad66',!ask_enable?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'askPhone',['$event'] ] ] ] ]}}">
+        <view class="icon data-v-0383ad66"></view>
+        <text class="data-v-0383ad66">{{ask_enable?'索要电话':'已索要电话'}}</text>
+    </view>
+</view>

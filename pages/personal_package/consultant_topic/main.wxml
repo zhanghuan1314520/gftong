@@ -1,0 +1,40 @@
+<view class="page data-v-3c626818">
+    <view class="main data-v-3c626818">
+        <view class="topic-t data-v-3c626818">
+            <text class="data-v-3c626818">本楼盘置业顾问排名</text>
+        </view>
+        <view class="topic-list data-v-3c626818">
+            <button bindgetuserinfo="__e" class="tl-item data-v-3c626818" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goCard',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+                <view class="tl-item--left data-v-3c626818">
+                    <view class="tl-h data-v-3c626818">
+                        <text class="data-v-3c626818">{{item.current_ranking}}</text>
+                    </view>
+                    <view class="tl-b data-v-3c626818">
+                        <view class="cs-h data-v-3c626818">
+                            <image class="_img data-v-3c626818" src="{{item.weixin_headimgurl}}"></image>
+                        </view>
+                        <view class="cs-b data-v-3c626818">
+                            <view class="cs-name data-v-3c626818">{{item.name}}</view>
+                            <view class="cs-des data-v-3c626818">{{'活跃度'+item.last_period_obtained_score}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="tl-f data-v-3c626818" wx:if="{{item.ranking_trend>0}}">
+                    <view class="ranking-num data-v-3c626818">上升<text class="data-v-3c626818">{{item.ranking_trend}}</text>名</view>
+                    <view class="ranking-status up data-v-3c626818"></view>
+                </view>
+                <view class="tl-f data-v-3c626818" wx:if="{{item.ranking_trend<0}}">
+                    <view class="ranking-num data-v-3c626818">下降<text class="data-v-3c626818">{{-item.ranking_trend}}</text>名</view>
+                    <view class="ranking-status down data-v-3c626818"></view>
+                </view>
+            </button>
+        </view>
+        <list-loading bind:__l="__l" class="data-v-3c626818" vueId="7d00b778-1" wx:if="{{loading||!no_more}}"></list-loading>
+        <view class="bottom-tips--box data-v-3c626818">
+            <bottom-tip bind:__l="__l" class="data-v-3c626818" vueId="7d00b778-2" wx:if="{{!loading&&no_more}}"></bottom-tip>
+        </view>
+    </view>
+    <view class="sticky sticky-footer task-btn data-v-3c626818">
+        <navigator class="_a data-v-3c626818" url="{{task_url}}">去加分</navigator>
+    </view>
+</view>

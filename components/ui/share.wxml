@@ -1,0 +1,4 @@
+<button class="{{['data-v-268521ff',class_name]}}" openType="share">
+    <image class="_img data-v-268521ff" src="{{icon_src}}"></image>
+    <text class="data-v-268521ff">分享</text>
+</button>

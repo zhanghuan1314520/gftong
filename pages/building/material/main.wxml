@@ -1,0 +1,98 @@
+<view class="page _div data-v-577b786d">
+    <view class="header _div data-v-577b786d">
+        <view class="_h1 data-v-577b786d">
+            <label class="house-name _span data-v-577b786d">{{house.name}}</label>
+            <label class="tag _span data-v-577b786d">{{house.status}}</label>
+        </view>
+        <view bindtap="__e" class="{{[ 'address _p data-v-577b786d',[!house.zone&&!house.address?'hide':''] ]}}" data-address="{{house.address}}" data-event-opts="{{[ [ 'tap',[ [ 'goMap',['$event'] ] ] ] ]}}" data-location="{{house.location}}">
+            <image class="_img data-v-577b786d" lazyLoad="{{true}}" src="/static/img/location-icon.png" wx:if="{{house.location}}"></image>{{''+house.zone+(house.zone?'-':'')+house.address+''}}</view>
+        <button class="transparent-share data-v-577b786d" openType="share">
+            <image class="_img data-v-577b786d" lazyLoad="{{true}}" src="/static/img/circle-share.png"></image>
+        </button>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">取证时间</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.created_date}}">{{current_house.created_date}}</label>
+        </view>
+        <view class="content _div data-v-577b786d">
+            <view class="btn-wrap _div data-v-577b786d">
+                <navigator class="btn active _a data-v-577b786d" url="{{['/pages/building/price/main?house_id='+current_house.id+'&title='+house.name]}}">一房一价</navigator>
+                <navigator class="btn _a data-v-577b786d" url="/pages/personal_package/pi/main?img=yx&title=意向登记资料">意向登记资料</navigator>
+                <navigator bindtap="__e" class="btn _a data-v-577b786d" data-event-opts="{{[ [ 'tap',[ [ 'openRegRule',['$event'] ] ] ] ]}}" wx:if="{{current_house.attachment_urls&&current_house.attachment_urls.rule}}">登记规则</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">登记时间</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.ln_register_start_date}}">{{current_house.ln_register_start_date+' ~ '+current_house.ln_register_end_date}}</label>
+            <label class="_span data-v-577b786d" wx:else>待定</label>
+        </view>
+        <view class="content _div data-v-577b786d">
+            <view class="btn-wrap _div data-v-577b786d">
+                <navigator class="btn _a data-v-577b786d" url="/pages/check_condition/main?verify_type=杭州购房资格查询">购房资格查询</navigator>
+                <navigator class="btn _a data-v-577b786d" url="/pages/packageC/qa/main">常见问题</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">补缴资料</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.ln_verify_start_date}}">{{current_house.ln_verify_start_date+' ~ '+current_house.ln_verify_end_date}}</label>
+            <label class="_span data-v-577b786d" wx:else>待定</label>
+        </view>
+        <view class="content _div data-v-577b786d" wx:if="{{current_house.submit_information_address}}">
+            <view bindtap="__e" class="address _div data-v-577b786d" data-address="{{current_house.submit_information_address}}" data-event-opts="{{[ [ 'tap',[ [ 'goMap',['$event'] ] ] ] ]}}" data-location="{{current_house.submit_information_location}}">
+                <label class="data-v-577b786d">缴纳资料地址：</label>
+                <view class="_p data-v-577b786d">
+                    <image class="_img data-v-577b786d" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/material/address.png" wx:if="{{current_house.submit_information_location}}"></image>
+                    <label class="_span data-v-577b786d">{{current_house.submit_information_address}}</label>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">意向公示</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.ln_publicity_start_date}}">{{current_house.ln_publicity_start_date}}</label>
+            <label class="_span data-v-577b786d" wx:else>待定</label>
+        </view>
+        <view class="content _div data-v-577b786d">
+            <view class="btn-wrap _div data-v-577b786d" wx:if="{{current_house.lrd_status==='lrd_completed'}}">
+                <navigator bindtap="__e" class="btn _a data-v-577b786d" data-event-opts="{{[ [ 'tap',[ [ 'goResult',['$event'] ] ] ] ]}}" data-type="reg">意向登记表</navigator>
+            </view>
+            <view class="tip _p data-v-577b786d" wx:else>还未公示</view>
+        </view>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">摇号时间</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.ln_date}}">{{''+current_house.ln_date+'\n                '+(current_house.ln_time_desc||'')+''}}</label>
+            <label class="_span data-v-577b786d" wx:else>待定</label>
+        </view>
+        <view class="content _div data-v-577b786d">
+            <view class="btn-wrap _div data-v-577b786d" wx:if="{{current_house.lfd_status==='lfd_completed'}}">
+                <navigator bindtap="__e" class="btn _a data-v-577b786d" data-event-opts="{{[ [ 'tap',[ [ 'goResult',['$event'] ] ] ] ]}}" data-type="result">摇号结果</navigator>
+            </view>
+            <view class="tip _p data-v-577b786d" wx:else>还未摇号</view>
+        </view>
+    </view>
+    <view class="_section data-v-577b786d">
+        <view class="top _div data-v-577b786d">
+            <view class="_h3 data-v-577b786d">选房时间</view>
+            <label class="_span data-v-577b786d" wx:if="{{current_house.apartment_selection_start_date}}">{{current_house.apartment_selection_start_date+' ～ '+current_house.apartment_selection_end_date}}</label>
+            <label class="_span data-v-577b786d" wx:else>待定</label>
+        </view>
+        <view class="content _div data-v-577b786d" wx:if="{{current_house.select_apartment_address}}">
+            <view bindtap="__e" class="address _div data-v-577b786d" data-address="{{current_house.select_apartment_address}}" data-event-opts="{{[ [ 'tap',[ [ 'goMap',['$event'] ] ] ] ]}}" data-location="{{current_house.select_apartment_location}}">
+                <label class="data-v-577b786d">选房地址：</label>
+                <view class="_p data-v-577b786d">
+                    <image class="_img data-v-577b786d" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/material/address.png" wx:if="{{current_house.select_apartment_location}}"></image>
+                    <label class="_span data-v-577b786d">{{current_house.select_apartment_address}}</label>
+                </view>
+            </view>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-577b786d" title="购房流程" vueId="cf7762b2-1"></page-wrap>
+</view>

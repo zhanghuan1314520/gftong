@@ -1,0 +1,13 @@
+<view class="_div data-v-ba5902a8">
+    <view class="loan-computer-title _h3 data-v-ba5902a8">
+        <label class="_span data-v-ba5902a8">房贷计算明细</label>
+        <button class="share-top-right data-v-ba5902a8" openType="share">
+            <image class="_img data-v-ba5902a8" src="/static/img/share-new.png"></image>
+            <label class="_span data-v-ba5902a8">分享</label>
+        </button>
+    </view>
+    <view class="content _div data-v-ba5902a8">
+        <item bind:__l="__l" class="data-v-ba5902a8" index="{{i}}" item="{{item}}" vueId="{{'4d79a59d-1-'+i}}" wx:for="{{result}}" wx:for-index="i" wx:key="i"></item>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-ba5902a8" hide_back_home="{{true}}" title="房贷计算" vueId="4d79a59d-2"></page-wrap>
+</view>

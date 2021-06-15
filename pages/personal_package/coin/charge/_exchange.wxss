@@ -1,0 +1,39 @@
+.exchange .row.data-v-3ff78832 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 105rpx;
+    margin: 30rpx 30rpx 0;
+    line-height: 105rpx;
+    padding: 0 40rpx;
+    font-size: 28rpx;
+    background-color: #f2f2f2;
+    border-radius: 8rpx;
+}
+
+.exchange .row input.data-v-3ff78832 {
+    width: 240rpx;
+}
+
+.exchange .row label.data-v-3ff78832 {
+    width: 200rpx;
+    color: #111;
+    text-align: right;
+}
+
+.exchange .tips-item.data-v-3ff78832 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}

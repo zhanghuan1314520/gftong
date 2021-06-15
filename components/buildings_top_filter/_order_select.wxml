@@ -1,0 +1,5 @@
+<view catchtouchmove="{{true}}" class="top-filter-wrap _div data-v-1e460d2c">
+    <view class="select-content column _div data-v-1e460d2c">
+        <view bindtap="__e" class="{{[ 'opt _div data-v-1e460d2c',[opt.value===order?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSelect',['$event'] ] ] ] ]}}" data-text="{{opt.text}}" data-value="{{opt.value}}" wx:for="{{opts}}" wx:for-index="i" wx:for-item="opt" wx:key="i">{{''+opt.text+''}}</view>
+    </view>
+</view>

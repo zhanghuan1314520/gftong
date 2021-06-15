@@ -1,0 +1,9 @@
+<view class="articles _div data-v-584d2bce">
+    <view class="house-page-title info tabs tabs-wrap _div data-v-584d2bce" wx:if="{{show}}">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-584d2bce" data-event-opts="{{[ [ '^change',[ ['changeType'] ] ] ]}}" selected="{{selected_type}}" tabs="{{tabs}}" vueId="17b11ec5-1" width="50%"></common-tabs>
+        <navigator bindtap="__e" class="right-link _a data-v-584d2bce" data-event-opts="{{[ [ 'tap',[ [ 'goMore',['$event'] ] ] ] ]}}" wx:if="{{has_more}}">更多</navigator>
+    </view>
+    <view class="articles _div data-v-584d2bce">
+        <article-item bind:__l="__l" bind:like="__e" class="data-v-584d2bce" data-event-opts="{{[ [ '^like',[ ['onLike'] ] ] ]}}" item="{{item}}" type="{{selected_type}}" vueId="{{'17b11ec5-2-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></article-item>
+    </view>
+</view>

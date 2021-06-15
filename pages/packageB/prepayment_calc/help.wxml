@@ -1,0 +1,27 @@
+<view class="page data-v-276185d9">
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">一次性还清-当月需还款金额</view>
+        <view class="tip text28 data-v-276185d9">截止提前还款日期剩余本金+原每月月供之和。</view>
+    </view>
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">部分提前还款-当月需还款</view>
+        <view class="tip text28 data-v-276185d9">提前还款金额+原每月月供之和。</view>
+    </view>
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">已还本金</view>
+        <view class="tip text28 data-v-276185d9">首次还款时间至提前还款时间期间已还的本金之和。</view>
+    </view>
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">已还利息</view>
+        <view class="tip text28 data-v-276185d9">首次还款时间至提前还款时间期间产生的利息之和。</view>
+    </view>
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">次月还款</view>
+        <view class="tip text28 data-v-276185d9">指部分提前还款后，新的月供。</view>
+    </view>
+    <view class="li data-v-276185d9">
+        <view class="header title32B data-v-276185d9">最后还款日期</view>
+        <view class="tip text28 data-v-276185d9">提前还款后，新的最后还款日期。</view>
+    </view>
+    <navigator class="btn data-v-276185d9" openType="navigateBack">知道了</navigator>
+</view>

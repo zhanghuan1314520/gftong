@@ -1,0 +1,72 @@
+.tags.data-v-0bfc7b1e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 16rpx 34rpx 0;
+}
+
+.tags.data-v-0bfc7b1e,.tags .item.data-v-0bfc7b1e {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tags .item.data-v-0bfc7b1e {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 192rpx;
+    height: 64rpx;
+    font-size: 24rpx;
+    color: #666;
+    margin-right: 8rpx;
+    border-radius: 4rpx;
+    background-color: #f7f7f7;
+}
+
+.tags .item.active.data-v-0bfc7b1e {
+    background-color: #e1faf4;
+    color: #00b08d;
+}
+
+.tags .item.data-v-0bfc7b1e::before {
+    display: inline-block;
+    content: "";
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 8rpx;
+    background-size: 100% 100%;
+}
+
+.tags .waiting.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_label_wait.png);
+}
+
+.tags .register.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_label_register.png);
+}
+
+.tags .waiting-lottery.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_label_wait_org.png);
+}
+
+.tags .complete-lottery.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_label_complete.png);
+}
+
+.tags .hot.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_hot.png);
+}
+
+.tags .popular.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_popular.png);
+}
+
+.tags .coments.data-v-0bfc7b1e::before {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/40_coments.png);
+}

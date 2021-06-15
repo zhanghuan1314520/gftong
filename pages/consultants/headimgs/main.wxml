@@ -1,0 +1,10 @@
+<view class="page _div data-v-9d1748fc">
+    <view class="imgs-wrap _div data-v-9d1748fc">
+        <view class="img _div data-v-9d1748fc" wx:for="{{items}}" wx:for-index="i" wx:for-item="url" wx:key="i">
+            <image class="_img data-v-9d1748fc" lazyLoad="{{true}}" src="{{url}}"></image>
+        </view>
+    </view>
+    <loading bind:__l="__l" class="data-v-9d1748fc" vueId="51831dae-1" wx:if="{{loading}}"></loading>
+    <view class="_p data-v-9d1748fc" wx:if="{{items.length>=500}}">已为您显示最近500个访问用户</view>
+    <page-wrap bind:__l="__l" class="data-v-9d1748fc" vueId="51831dae-2"></page-wrap>
+</view>

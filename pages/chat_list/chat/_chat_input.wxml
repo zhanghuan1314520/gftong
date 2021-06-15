@@ -1,0 +1,40 @@
+<form bindsubmit="__e" class="data-v-20b6efba" data-event-opts="{{[ [ 'submit',[ [ 'submitSend',['$event'] ] ] ] ]}}">
+    <view class="{{['input-wrap _div data-v-20b6efba',recording?'recording':'']}}">
+        <image bindtap="__e" class="left-icon data-v-20b6efba" data-event-opts="{{[ [ 'tap',[ [ 'toggleAudio',['$event'] ] ] ] ]}}" src="{{'https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/chat/'+(open_audio?'keyboard':'audio')+'.png'}}"></image>
+        <view bindtouchend="__e" bindtouchmove="__e" bindtouchstart="__e" class="{{['record-btn title32B data-v-20b6efba',recording?'doing':'',show_cancel?'cancel':'']}}" data-event-opts="{{[ [ 'touchstart',[ [ 'recordStart',['$event'] ] ] ],[ 'touchmove',[ [ 'checkRecordCancel',['$event'] ] ] ],[ 'touchend',[ [ 'recordEnd',['$event'] ] ] ] ]}}" wx:if="{{open_audio&&can_send}}">{{''+(recording?'':'按住 说话')+''}}</view>
+        <input adjustPosition="{{true}}" bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="data-v-20b6efba" confirmHold="{{true}}" confirmType="send" cursorSpacing="{{10}}" data-event-opts="{{[ [ 'input',[ [ 'changeMsg',['$event'] ] ] ],[ 'focus',[ [ 'onFocus',['$event'] ] ] ],[ 'blur',[ [ 'onBlur',['$event'] ] ] ],[ 'confirm',[ [ 'send',['$event'] ] ] ] ]}}" disabled="{{!can_send}}" focus="{{focus}}" placeholder="{{[can_send?'给TA发送信息':'请耐心等待客户回复哦']}}" value="{{msg}}" wx:else></input>
+        <view bindtap="__e" class="{{['add-btn data-v-20b6efba',show_tools?'open':'',hide_add_btn?'hide':'']}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleTools'] ] ] ] ]}}"></view>
+        <button bindtap="__e" class="{{['send-btn data-v-20b6efba',hide_send_btn?'hide':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'tagSend',['$event'] ] ] ] ]}}" id="send_btn">发送</button>
+        <view class="record-tip data-v-20b6efba" wx:if="{{recording&&!show_cancel}}">松开 发送</view>
+        <view class="record-cancel data-v-20b6efba" wx:if="{{recording}}">
+            <view class="data-v-20b6efba" wx:if="{{show_cancel}}">松开 取消</view>
+            <view class="{{['cancel data-v-20b6efba',!show_cancel?'disabled':'']}}"></view>
+        </view>
+        <view class="{{['recording-wrap data-v-20b6efba',show_cancel?'cancel':'']}}" wx:if="{{recording}}">
+            <view class="tip data-v-20b6efba" wx:if="{{show_audio_rundown}}">{{temp_duration+'秒后停止录音'}}</view>
+            <view class="wave data-v-20b6efba" wx:else>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+                <view class="_i data-v-20b6efba"></view>
+            </view>
+        </view>
+        <view class="overlay _div data-v-20b6efba" wx:if="{{recording}}"></view>
+        <expression-toggle bind:__l="__l" bind:toggleExpression="__e" class="data-v-20b6efba" data-event-opts="{{[ [ '^toggleExpression',[ [ '$emit',['toggleExpression'] ] ] ] ]}}" show="{{show_expression}}" vueId="19adb8d8-1"></expression-toggle>
+    </view>
+</form>

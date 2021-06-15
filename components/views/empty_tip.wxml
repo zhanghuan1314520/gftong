@@ -1,0 +1,4 @@
+<view class="empty-wrap _div data-v-400e18d6" wx:if="{{show}}">
+    <image class="_img data-v-400e18d6" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant-card/empty.png"></image>
+    <view class="_p data-v-400e18d6">{{tip}}</view>
+</view>

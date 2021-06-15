@@ -1,0 +1,15 @@
+<view class="page data-v-73df6178">
+    <view class="tabs data-v-73df6178">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-73df6178" data-event-opts="{{[ [ '^change',[ ['changeTab'] ] ] ]}}" scroll="{{true}}" selected="{{selected_line}}" tabs="{{lines}}" vueId="ad3ba96e-1"></common-tabs>
+    </view>
+    <view bindtap="__e" class="tips data-v-73df6178" data-event-opts="{{[ [ 'tap',[ [ 'onHideTips',['$event'] ] ] ] ]}}" wx:if="{{showTips}}">
+        <text class="data-v-73df6178">仅展示附近1km内有楼盘的地铁站</text>
+        <image class="data-v-73df6178" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/32_del_1.png"></image>
+    </view>
+    <map bindcallouttap="__e" bindmarkertap="__e" bindregionchange="__e" class="map data-v-73df6178" data-event-opts="{{[ [ 'markertap',[ [ 'clickMarker',['$event'] ] ] ],[ 'callouttap',[ [ 'clickCallout',['$event'] ] ] ],[ 'regionchange',[ [ 'changeRegion',['$event'] ] ] ] ]}}" id="map" markers="{{markers}}" wx:if="{{markers.length}}">
+        <button class="share data-v-73df6178" openType="share">
+            <image class="data-v-73df6178" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageA/metro_map/share-btn.png"></image>
+        </button>
+    </map>
+    <page-wrap bind:__l="__l" class="data-v-73df6178" hide_back_home="{{true}}" title="地铁找房" vueId="ad3ba96e-2"></page-wrap>
+</view>

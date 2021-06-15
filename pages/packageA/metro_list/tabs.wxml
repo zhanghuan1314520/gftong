@@ -1,0 +1,5 @@
+<view class="wrap scroll-wrap data-v-3a27a054">
+    <scroll-view class="metro-tabs data-v-3a27a054" scrollIntoView="{{tab_selected}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+        <view bindtap="__e" class="{{[ '_li data-v-3a27a054',[selected===tab.key?'active':'',selected===tab.key&&tabs.length>1?'bottom_active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onChange',['$event'] ] ] ] ]}}" data-key="{{tab.key}}" id="{{'tab-'+tab.key}}" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{''+tab.name+''}}</view>
+    </scroll-view>
+</view>

@@ -1,0 +1,34 @@
+<view class="swiper-banner-box data-v-1ef358ce">
+    <swiper autoplay="{{true}}" circular="{{true}}" class="swiper-banner data-v-1ef358ce" indicatorActiveColor="#FFFFFF" indicatorColor="rgba(255, 255, 255, 0.39)" indicatorDots="{{show_swiper_dots}}" wx:if="{{show_swiper}}">
+        <swiper-item class="data-v-1ef358ce" wx:if="{{show_consultant_activity}}">
+            <navigator bindtap="__e" class="offical-account _a data-v-1ef358ce" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}" data-name="个人中心置业顾问年终活动banner点击" url="/pages/consultant_activity/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/consultant_activity/consultant_activity.png"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item class="data-v-1ef358ce" wx:if="{{show_activity_aaa_banner}}">
+            <navigator bindtap="__e" class="offical-account _a data-v-1ef358ce" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}" data-name="{{activity_aaa_name}}" url="/pages/report/2020/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/report/2020/banner.png"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item class="data-v-1ef358ce" wx:if="{{show_consultant_get_new_user}}">
+            <navigator class="offical-account _a data-v-1ef358ce" url="/pages/packageA/consultant_task/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/double-points-banner.png"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item class="data-v-1ef358ce" wx:if="{{user.is_consultant&&!bound_consultant_home_weixin}}">
+            <navigator class="offical-account _a data-v-1ef358ce" url="/pages/packageA/consultant_home/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/zygwzj-banner.png"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item class="data-v-1ef358ce" wx:if="{{!bound_official_weixin}}">
+            <navigator class="offical-account _a data-v-1ef358ce" url="/pages/personal_package/official_weixin/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/wxhz-top-banner.png"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item class="data-v-1ef358ce" wx:if="{{show_lq_banner}}">
+            <navigator class="offical-account _a data-v-1ef358ce" url="/pages/personal_package/group_assistant/main">
+                <image class="_img data-v-1ef358ce" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/lq-banner.png"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>

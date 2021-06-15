@@ -1,0 +1,13 @@
+<view class="page">
+    <view class="page-tit">
+        <text>杭州市流动人口</text>
+        <text>居住证积分模拟</text>
+    </view>
+    <view class="main-bg"></view>
+    <top-right-share bind:__l="__l" top="24" type="white" vueId="6364b78e-1"></top-right-share>
+    <view class="tips">所有积分指标均根据《杭州市居住证积分管理办法(试行)》设计</view>
+    <button bindgetuserinfo="__e" class="shadow-button query-btn" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goQuery',['$event'] ] ] ] ]}}" openType="getUserInfo">
+        <image class="_img" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/integral_simulation/button.png"></image>
+    </button>
+    <view class="bt-bg"></view>
+</view>

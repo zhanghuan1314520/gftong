@@ -1,0 +1,77 @@
+.ranking-item.data-v-01ab3820 {
+    width: 400rpx;
+    min-height: 400rpx;
+}
+
+.ranking-item .top-img.data-v-01ab3820 {
+    width: 100%;
+    height: 80rpx;
+    background-size: 100% 100%;
+}
+
+.content.data-v-01ab3820 {
+    width: 100%;
+}
+
+.content .item.data-v-01ab3820 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 70rpx;
+    padding: 0 24rpx 0 16rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.content .item ._i.data-v-01ab3820 {
+    width: 11rpx;
+    height: 19rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/activity_a/building_rank/more.png);
+    background-size: 100% 100%;
+}
+
+.content .item .index.data-v-01ab3820 {
+    width: 26rpx;
+    height: 26rpx;
+    text-align: center;
+    line-height: 26rpx;
+    margin-right: 18rpx;
+    font-size: 24rpx;
+    color: #e8cccc;
+    border-radius: 4rpx;
+}
+
+.content .item ._p.data-v-01ab3820 {
+    max-width: 286rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 286rpx;
+    font-size: 26rpx;
+    color: #333;
+}
+
+.content .item:nth-child(1) .index.data-v-01ab3820 {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ff7272),to(#fe2525));
+    background-image: linear-gradient(180deg,#ff7272,#fe2525);
+    color: #fff;
+}
+
+.content .item:nth-child(2) .index.data-v-01ab3820 {
+    color: #fff;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ff996e),to(#ff673e));
+    background-image: linear-gradient(180deg,#ff996e,#ff673e);
+}
+
+.content .item:nth-child(3) .index.data-v-01ab3820 {
+    color: #fff;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ffcb7e),to(#ff932f));
+    background-image: linear-gradient(180deg,#ffcb7e,#ff932f);
+}

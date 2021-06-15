@@ -1,0 +1,44 @@
+<view class="second-hand-data _div data-v-008d0282">
+    <view class="sec-top _div data-v-008d0282">
+        <view class="updated-time _div data-v-008d0282">
+            <label class="_span data-v-008d0282">杭州</label>
+            <view class="_em data-v-008d0282">{{updated_time}}</view>
+        </view>
+        <view class="second-total _div data-v-008d0282">
+            <view class="_dl data-v-008d0282">
+                <view class="_dt data-v-008d0282">在售房源/套</view>
+                <view class="_dd data-v-008d0282">{{insale_apartments_count}}</view>
+            </view>
+            <view class="_i data-v-008d0282"></view>
+            <view class="_dl data-v-008d0282">
+                <view class="_dt data-v-008d0282">{{showings_date+'日带看量/次'}}</view>
+                <view class="_dd data-v-008d0282">{{showings_times}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="second-chart _div data-v-008d0282">
+        <view class="second-chart__tit _div data-v-008d0282">
+            <label class="_span data-v-008d0282">挂牌均价（元/㎡）</label>
+            <view class="_em data-v-008d0282">最近一年</view>
+        </view>
+        <view class="ecbox _div data-v-008d0282">
+            <f2-charts bind:__l="__l" canvasId="firstLine" class="data-v-008d0282 vue-ref" data-ref="firstLine" opts="{{firstLineOpts}}" source="{{firstLineData}}" vueId="1aeb5d71-1"></f2-charts>
+        </view>
+        <view class="_p data-v-008d0282">数据来源于贝壳</view>
+    </view>
+    <view class="second-chart _div data-v-008d0282">
+        <view class="second-chart__tit _div data-v-008d0282">
+            <label class="_span data-v-008d0282">在售房源数/带看量</label>
+            <picker bindchange="__e" class="data-v-008d0282" data-event-opts="{{[ [ 'change',[ [ 'onFilter',['$event'] ] ] ] ]}}" range="{{lastDays}}" rangeKey="label" value="{{pickerValue}}">
+                <view class="date-filter__handle _div data-v-008d0282">
+                    <view class="date-filter__text _div data-v-008d0282">{{lastDaysDefault.label}}</view>
+                    <view class="date-filter__arrow _div data-v-008d0282"></view>
+                </view>
+            </picker>
+        </view>
+        <view class="ecbox _div data-v-008d0282">
+            <f2-charts bind:__l="__l" canvasId="secLine" class="data-v-008d0282 vue-ref" data-ref="secLine" opts="{{secondLineOpts}}" source="{{secondLineData}}" vueId="1aeb5d71-2"></f2-charts>
+        </view>
+        <view class="_p data-v-008d0282">数据来源于贝壳</view>
+    </view>
+</view>

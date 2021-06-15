@@ -1,0 +1,4 @@
+<view class="wrap data-v-1ba467d1">
+    <view class="header data-v-1ba467d1">所选答案</view>
+    <view class="item data-v-1ba467d1" wx:for="{{items}}" wx:for-index="i" wx:key="i">{{''+i+1+'、'+item.question+' 答：'+item.answer+''}}</view>
+</view>

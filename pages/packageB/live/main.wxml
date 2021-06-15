@@ -1,0 +1,46 @@
+<view class="page data-v-23e44984">
+    <view class="banner data-v-23e44984">
+        <common-img bind:__l="__l" class="data-v-23e44984" mode="aspectFill" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/live/top_banner.png" vueId="63490224-1"></common-img>
+    </view>
+    <view class="live-tabs data-v-23e44984">
+        <view bindtap="__e" class="{{['item data-v-23e44984',index===activeTab?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'onTabTap',['$event'] ] ] ] ]}}" data-index="{{index}}" data-value="{{tab.value}}" wx:for="{{tabs}}" wx:for-item="tab" wx:key="index">
+            <text class="data-v-23e44984">{{tab.name}}</text>
+        </view>
+    </view>
+    <view class="live-list data-v-23e44984">
+        <view bindtap="__e" class="live-item data-v-23e44984" data-event-opts="{{[ [ 'tap',[ [ 'goLive',['$event'] ] ] ] ]}}" data-id="{{item.live_streaming.room_id}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id">
+            <view class="live-status data-v-23e44984" wx:if="{{item.live_streaming}}">
+                <view class="liveing data-v-23e44984" wx:if="{{item.live_streaming.status==='直播中'}}">
+                    <text class="data-v-23e44984">直播中</text>
+                    <view class="liveing-line data-v-23e44984">
+                        <view class="data-v-23e44984"></view>
+                        <view class="data-v-23e44984"></view>
+                        <view class="data-v-23e44984"></view>
+                    </view>
+                </view>
+                <view class="forcoming data-v-23e44984" wx:if="{{item.live_streaming.status==='即将直播'}}">
+                    <text class="forcoming-l data-v-23e44984">预告</text>
+                    <text class="forcoming-r data-v-23e44984">{{util.formatTime(item.live_streaming.start_time)}}</text>
+                </view>
+                <view class="replay data-v-23e44984" wx:if="{{item.live_streaming.status==='回放'}}">直播回放</view>
+            </view>
+            <view class="live-item--cover data-v-23e44984">
+                <common-img bind:__l="__l" class="data-v-23e44984" src="{{item.live_streaming.cover_photo_url||item.cover_photo_url}}" vueId="{{'63490224-2-'+__i0__}}"></common-img>
+            </view>
+            <view class="live-item--title data-v-23e44984">{{item.live_streaming.title||item.name}}</view>
+        </view>
+        <view class="empty-box _div data-v-23e44984" wx:if="{{!loading&&!items.length}}">
+            <empty-box bind:__l="__l" class="data-v-23e44984" desc="{{desc}}" top="0" type="empty_building" vueId="63490224-3"></empty-box>
+        </view>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-23e44984" vueId="63490224-4"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-23e44984" title="杭州购房通" vueId="63490224-5"></page-wrap>
+</view>
+<wxs module="util">
+function formatTime(time) {
+    return (time.substring(5, 16).replace('-', '.'))
+};
+module.exports = ({
+    formatTime: formatTime,
+});
+</wxs>

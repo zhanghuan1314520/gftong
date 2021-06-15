@@ -1,0 +1,22 @@
+<view class="building-header _div data-v-1d3f8cf0">
+    <view class="{{['vip-header _section data-v-1d3f8cf0',is_vip?'vip':'all']}}">
+        <view class="_h1 data-v-1d3f8cf0">
+            <label class="name _span data-v-1d3f8cf0">{{house.name}}</label>
+            <label class="hot _span data-v-1d3f8cf0" wx:if="{{hot}}">
+                <image class="_img data-v-1d3f8cf0" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/hot.png"></image>
+                <text class="data-v-1d3f8cf0">红盘</text>
+            </label>
+            <label class="status _span data-v-1d3f8cf0">{{tag||''}}</label>
+        </view>
+        <label bindtap="__e" class="address _span data-v-1d3f8cf0" data-event-opts="{{[ [ 'tap',[ [ '$emit',['goLocation'] ] ] ] ]}}" wx:if="{{address_desc}}">
+            <fc-icon bind:__l="__l" class="data-v-1d3f8cf0" type="{{is_vip?'40_address_brown':'40_address_grey'}}" vueId="e0f5cea8-1"></fc-icon>
+            <label class="{{['_span data-v-1d3f8cf0',is_vip?'vipFont':'']}}">{{address_desc}}</label>
+            <fc-icon bind:__l="__l" class="data-v-1d3f8cf0" type="{{is_vip?'48_more_brown':'48_more_grey'}}" vueId="e0f5cea8-2"></fc-icon>
+        </label>
+        <view bindtap="__e" class="{{[ 'favourite _div data-v-1d3f8cf0',[house.favourite?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ '$emit',['toggleFavourite'] ] ] ] ]}}">
+            <fc-icon bind:__l="__l" class="data-v-1d3f8cf0" type="{{favourite_icon}}" vueId="e0f5cea8-3"></fc-icon>
+            <label class="text _span data-v-1d3f8cf0">{{favourite_text}}</label>
+            <view class="follow-tips data-v-1d3f8cf0" wx:if="{{show_follow_tip}}">{{follow_building_tip}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<view class="page data-v-51995d1f">
+    <view class="layout-detail data-v-51995d1f">
+        <view bindtap="__e" class="preview data-v-51995d1f" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}">
+            <common-img bind:__l="__l" class="data-v-51995d1f" mode="aspectFill" src="{{preview_img}}" vueId="56370592-1"></common-img>
+            <view class="business-tag data-v-51995d1f" wx:if="{{item.usage==='商业'}}">商业</view>
+            <view class="saleout data-v-51995d1f" wx:if="{{item.status==='售罄'}}"></view>
+        </view>
+        <view class="main data-v-51995d1f">
+            <view class="right-tools data-v-51995d1f">
+                <view bindtap="__e" class="item data-v-51995d1f" data-event-opts="{{[ [ 'tap',[ [ 'changeFavourite',['$event'] ] ] ] ]}}">
+                    <fc-icon bind:__l="__l" class="data-v-51995d1f" type="{{house.favourite?'48_love_actions':'48_love_normal'}}" vueId="56370592-2"></fc-icon>
+                    <view class="barFont22 data-v-51995d1f">{{(house.favourite?'已':'')+'关注'}}</view>
+                </view>
+                <button class="item data-v-51995d1f" openType="share">
+                    <fc-icon bind:__l="__l" class="data-v-51995d1f" type="48_share_black" vueId="56370592-3"></fc-icon>
+                    <view class="barFont22 data-v-51995d1f">转发</view>
+                </button>
+            </view>
+            <view class="layout data-v-51995d1f" wx:if="{{item.layout_description}}">{{''+item.layout_description+''}}</view>
+            <view class="desc data-v-51995d1f" wx:if="{{item.layout_no}}">{{''+item.layout_no+''}}</view>
+            <view class="desc data-v-51995d1f" wx:if="{{item.area}}">
+                <text class="data-v-51995d1f">{{'户型建面：'+item.area}}</text>
+            </view>
+            <view class="tags data-v-51995d1f">
+                <view class="item data-v-51995d1f" wx:for="{{tag_list}}" wx:for-index="__i0__" wx:key="*this">{{item}}</view>
+            </view>
+        </view>
+        <view class="tools _div data-v-51995d1f">
+            <img-tools bind:__l="__l" bind:goLayout="__e" bind:goPrice="__e" bind:goVideo="__e" bind:openVr="__e" bind:play="__e" bind:stop="__e" class="img-tools data-v-51995d1f" data-event-opts="{{[ [ '^goVideo',[ ['goVideo'] ] ],[ '^openVr',[ [ 'openVr',['$0'],['vr_link'] ] ] ],[ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ],[ '^goLayout',[ ['goLayout'] ] ],[ '^goPrice',[ ['goPrice'] ] ] ]}}" playing="{{audio_playing[0]}}" price="true" type="large" url="{{item}}" vueId="56370592-4"></img-tools>
+            <audio-player bind:__l="__l" bind:play="__e" bind:seek="__e" bind:stop="__e" class="data-v-51995d1f" data-event-opts="{{[ [ '^play',[ ['play'] ] ],[ '^stop',[ ['stop'] ] ],[ '^seek',[ ['seek'] ] ] ]}}" playing="{{audio_playing[0]}}" running_time="{{running_times[0]}}" time="{{durations[0]}}" vueId="56370592-5"></audio-player>
+        </view>
+    </view>
+    <layout bind:__l="__l" bind:goMore="__e" bind:openDetail="__e" class="data-v-51995d1f" data-event-opts="{{[ [ '^openDetail',[ ['openLayoutDetail'] ] ],[ '^goMore',[ ['openLayoutList'] ] ] ]}}" items="{{layout_items}}" type="layout_detail" vueId="56370592-6" wx:if="{{layout_items&&layout_items.length}}"></layout>
+    <common-footer bind:__l="__l" building_id="{{building_id}}" class="data-v-51995d1f" from="户型图" vueId="56370592-7"></common-footer>
+    <vr-tip agree="{{disclaimer_agree}}" bind:__l="__l" bind:confirm="__e" bind:hide="__e" bind:toggleAgree="__e" class="data-v-51995d1f" data-event-opts="{{[ [ '^confirm',[ ['confirmDisclaimer'] ] ],[ '^hide',[ ['toggleVrTip'] ] ],[ '^toggleAgree',[ ['toggleDisclaimerAgree'] ] ] ]}}" vueId="56370592-8" wx:if="{{show_vr_disclaimer}}"></vr-tip>
+    <like-tip bind:__l="__l" bind:hide="__e" class="data-v-51995d1f" content="您还可以通过【杭州购房者之家】了解更多购房信息" data-event-opts="{{[ [ '^hide',[ ['hideLikeTip'] ] ] ]}}" show="{{show_like_tip}}" show_copy="{{false}}" title="关注后会实时为您推送楼盘预售信息、摇号结果、新增动态" vueId="56370592-9"></like-tip>
+    <auth-phone bind:__l="__l" bind:hide="__e" class="data-v-51995d1f" data-event-opts="{{[ [ '^hide',[ ['hideAuthPhone'] ] ] ]}}" show="{{show_auth_phone}}" vueId="56370592-10"></auth-phone>
+    <page-wrap bind:__l="__l" class="data-v-51995d1f" hide_back_home="{{true}}" title="{{house.name}}" vueId="56370592-11"></page-wrap>
+</view>

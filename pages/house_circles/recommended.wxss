@@ -1,0 +1,114 @@
+.recommended-page.data-v-69e46b7c {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.theme-item .theme-name.data-v-69e46b7c {
+    padding-left: 37rpx;
+    line-height: 50rpx;
+    margin-bottom: 24rpx;
+    text-align: left;
+    color: #333;
+}
+
+.theme-content.data-v-69e46b7c {
+    margin: 0 0 0 37rpx;
+    height: 180rpx;
+}
+
+.theme-content .list.data-v-69e46b7c {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 280rpx;
+    height: 180rpx;
+    margin-right: 20rpx;
+    border-radius: 6rpx;
+    overflow: hidden;
+}
+
+.theme-content .list image.data-v-69e46b7c {
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.theme-content .list.data-v-69e46b7c:last-child {
+    margin-right: 32rpx;
+}
+
+.ranking-item.data-v-69e46b7c {
+    width: 100%;
+}
+
+.ranking-item .ranking-content.data-v-69e46b7c {
+    margin: 0 34rpx 0 30rpx;
+    height: 218rpx;
+    background: #fafafa;
+    border-radius: 8rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding: 24rpx 8rpx 24rpx 16rpx;
+}
+
+.ranking-item .ranking-content .list.data-v-69e46b7c {
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-top: 23rpx;
+}
+
+.ranking-item .ranking-content .list ._img.data-v-69e46b7c {
+    width: 22rpx;
+    height: 24rpx;
+    background-position: 50%;
+    background-size: cover;
+    margin-right: 17rpx;
+    margin-bottom: -4rpx;
+}
+
+.ranking-item .ranking-content .list .text.data-v-69e46b7c {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.ranking-item .ranking-content .list.data-v-69e46b7c:nth-child(3n-2) {
+    margin-top: 0;
+}
+
+.desc.data-v-69e46b7c {
+    font-size: 24rpx;
+    color: #667380;
+}
+
+.item.data-v-69e46b7c {
+    margin-top: 22rpx;
+}
+
+.tpl-h3.data-v-69e46b7c {
+    position: relative;
+    z-index: 1;
+}
+
+.dynamic-content.data-v-69e46b7c {
+    margin-top: -8rpx;
+}
+
+.content-scroll.data-v-69e46b7c {
+    white-space: nowrap;
+    overflow: scroll;
+    width: 100%;
+    height: 180rpx;
+}

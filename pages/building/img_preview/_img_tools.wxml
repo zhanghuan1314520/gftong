@@ -1,0 +1,16 @@
+<view class="data-v-35ef910d">
+    <view class="{{['tools data-v-35ef910d',type]}}">
+        <view catchtap="__e" class="{{['item audio data-v-35ef910d',durations?'playing':'']}}" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}" wx:if="{{url.audio_url}}">
+            <audio-analysis bind:__l="__l" bind:play="__e" bind:stop="__e" class="data-v-35ef910d" data-event-opts="{{[ [ '^play',[ [ '$emit',['play'] ] ] ],[ '^stop',[ [ '$emit',['stop'] ] ] ] ]}}" playing="{{playing}}" type="{{type}}" vueId="5037ded1-1"></audio-analysis>
+            <view class="text data-v-35ef910d">语音讲解</view>
+        </view>
+        <view catchtap="__e" class="item video data-v-35ef910d" data-event-opts="{{[ [ 'tap',[ [ 'goVideo',['$event'] ] ] ] ]}}" wx:if="{{url.video_url}}">
+            <view class="i data-v-35ef910d"></view>
+            <view class="text data-v-35ef910d">视频详情</view>
+        </view>
+        <view catchtap="__e" class="item vr data-v-35ef910d" data-event-opts="{{[ [ 'tap',[ [ 'openVr',['$event'] ] ] ] ]}}" wx:if="{{url.vr_url}}">
+            <view class="i data-v-35ef910d"></view>
+            <view class="text data-v-35ef910d">VR看房</view>
+        </view>
+    </view>
+</view>

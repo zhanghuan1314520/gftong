@@ -1,0 +1,19 @@
+<view class="header data-v-f54048f4">
+    <view class="left data-v-f54048f4">
+        <view class="headimg-wrap data-v-f54048f4">
+            <image class="headimg data-v-f54048f4" mode="aspectFill" src="{{user.user_headimg_url}}" wx:if="{{user.user_headimg_url}}"></image>
+            <open-data class="headimg data-v-f54048f4" type="userAvatarUrl" wx:else></open-data>
+        </view>
+        <view class="{{['content data-v-f54048f4',class_white]}}">
+            <view class="top data-v-f54048f4">
+                <text class="name data-v-f54048f4" wx:if="{{user.nickname}}">{{user.nickname}}</text>
+                <open-data class="name data-v-f54048f4" type="userNickName" wx:else></open-data>
+                <button class="card-link data-v-f54048f4" openType="share">
+                    <text class="text data-v-f54048f4">邀请好友</text>
+                    <view class="_i data-v-f54048f4"></view>
+                </button>
+            </view>
+            <text class="bottom data-v-f54048f4">{{care_msg}}</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,115 @@
+.audio.data-v-530a3bce {
+    width: 114rpx;
+    height: 56rpx;
+}
+
+.audio.large.data-v-530a3bce {
+    box-shadow: none;
+    width: 166rpx;
+    height: 72rpx;
+    font-size: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 12rpx;
+}
+
+.audio.large.waiting.data-v-530a3bce {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/layout/voice-large.png);
+    background-size: 100% 100%;
+}
+
+.audio.large.playing.data-v-530a3bce {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/layout/voice-playing-large.png);
+    background-size: 100% 100%;
+}
+
+.playing.data-v-530a3bce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/bgm.png);
+    background-size: 100% 100%;
+}
+
+.waiting.data-v-530a3bce {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/audio/voice-s.png);
+    background-size: 100% 100%;
+}
+
+.waiting .progress.data-v-530a3bce {
+    width: 0;
+    height: 0;
+}
+
+.progress-wrap.data-v-530a3bce {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 39rpx;
+    height: 33rpx;
+}
+
+.progress.data-v-530a3bce {
+    width: 6rpx;
+    background-color: #5ab8e0;
+    box-shadow: 0 2rpx 4rpx 0 #fff;
+    margin-right: 5rpx;
+    animation: progress-data-v-530a3bce 1.5s ease-in-out infinite alternate;
+}
+
+.progress.data-v-530a3bce:nth-child(1) {
+    animation-delay: 0;
+    height: 26rpx;
+}
+
+.progress.data-v-530a3bce:nth-child(2) {
+    animation-delay: .6s;
+    height: 11rpx;
+}
+
+.progress.data-v-530a3bce:nth-child(3) {
+    animation-delay: .3s;
+    height: 21rpx;
+}
+
+.progress.data-v-530a3bce:nth-child(4) {
+    animation-delay: .9s;
+    height: 33rpx;
+    margin-right: 0;
+}
+
+@-webkit-keyframes progress-data-v-530a3bce {
+    0% {
+        height: 20%;
+    }
+
+    100% {
+        height: 33rpx;
+    }
+}
+
+@keyframes progress-data-v-530a3bce {
+    0% {
+        height: 20%;
+    }
+
+    100% {
+        height: 33rpx;
+    }
+}

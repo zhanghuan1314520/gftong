@@ -1,0 +1,82 @@
+<view class="header data-v-44c71933">
+    <view class="data-v-44c71933">
+        <view class="consultant-card data-v-44c71933">
+            <navigator class="headimg-wrap data-v-44c71933" url="/pages/packageA/cropper_image/main">
+                <image class="headimg data-v-44c71933" mode="aspectFill" src="{{user.user_headimg_url}}" wx:if="{{user.user_headimg_url}}"></image>
+                <open-data class="headimg data-v-44c71933" type="userAvatarUrl" wx:else></open-data>
+                <view class="choose-img data-v-44c71933">更换</view>
+            </navigator>
+            <button bindgetuserinfo="__e" class="{{['info data-v-44c71933',class_white]}}" data-event-opts="{{[ [ 'getuserinfo',[ [ 'openCard',['$event'] ] ] ] ]}}" openType="getUserInfo">
+                <view class="info-top data-v-44c71933">
+                    <text class="name data-v-44c71933" wx:if="{{consultant.name}}">{{consultant.name}}</text>
+                    <block wx:else>
+                        <text class="name data-v-44c71933" wx:if="{{user.nickname}}">{{user.nickname}}</text>
+                        <open-data class="name data-v-44c71933" type="userNickName" wx:else></open-data>
+                    </block>
+                    <navigator class="card-link data-v-44c71933" url="{{true}}">
+                        <text class="data-v-44c71933">查看名片</text>
+                        <view class="_i data-v-44c71933"></view>
+                    </navigator>
+                </view>
+                <view class="bottom data-v-44c71933">{{''+care_msg+''}}</view>
+            </button>
+        </view>
+        <view class="tools-group data-v-44c71933">
+            <view bindtap="__e" class="tools-item data-v-44c71933" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}" data-name="{{tab.name}}" wx:for="{{tabs}}" wx:for-index="__i0__" wx:for-item="tab" wx:key="name">
+                <button bindgetuserinfo="__e" class="tools-item-inner data-v-44c71933" data-event-opts="{{[ [ 'getuserinfo',[ [ 'e1',['$event'] ] ] ] ]}}" data-tip="{{tab.tip}}" data-url="{{tab.url}}" openType="{{tab.open_type}}" wx:if="{{tab.button}}">
+                    <view class="{{['i data-v-44c71933',tab.icon]}}">
+                        <view class="dot data-v-44c71933" wx:if="{{tab.dot}}"></view>
+                        <view class="new data-v-44c71933" wx:if="{{tab.new_tip}}"></view>
+                        <view class="badge data-v-44c71933" wx:if="{{tab.badge}}">{{tab.badge}}</view>
+                        <view class="label data-v-44c71933" wx:if="{{tab.label}}">{{tab.label}}</view>
+                    </view>
+                    <label class="iconFont24 data-v-44c71933">{{tab.name}}</label>
+                </button>
+                <navigator class="tools-item-inner data-v-44c71933" openType="{{tab.open_type||'navigate'}}" url="{{tab.url}}" wx:else>
+                    <view class="{{['i data-v-44c71933',tab.icon]}}">
+                        <view class="dot data-v-44c71933" wx:if="{{tab.dot}}"></view>
+                        <view class="new data-v-44c71933" wx:if="{{tab.new_tip}}"></view>
+                        <view class="badge data-v-44c71933" wx:if="{{tab.badge}}">{{tab.badge}}</view>
+                        <view class="label data-v-44c71933" wx:if="{{tab.label}}">{{tab.label}}</view>
+                    </view>
+                    <label class="iconFont24 data-v-44c71933">{{tab.name}}</label>
+                </navigator>
+            </view>
+        </view>
+        <view class="consultant-topic data-v-44c71933" wx:if="{{user.is_consultant}}">
+            <view class="top point data-v-44c71933">
+                <text class="name data-v-44c71933">活跃度(最近30天获得积分)</text>
+                <navigator class="right data-v-44c71933" hoverClass="none" url="/pages/personal_package/consultant/main">
+                    <text class="strong data-v-44c71933">{{''+(consultant.last_period_obtained_score||'')}}</text>
+                    <fc-icon bind:__l="__l" class="data-v-44c71933" type="32_more" vueId="3814b8b3-1"></fc-icon>
+                </navigator>
+            </view>
+            <navigator class="rank data-v-44c71933" url="{{task_url}}">
+                <text class="data-v-44c71933">{{consultantRank.ranking_in_building_desc}}</text>
+                <text class="i data-v-44c71933">
+                    <text class="text data-v-44c71933">做任务 挣积分</text>
+                    <text class="trangle data-v-44c71933"></text>
+                    <text class="trangle data-v-44c71933"></text>
+                    <text class="trangle data-v-44c71933"></text>
+                </text>
+            </navigator>
+            <navigator class="top point my-rank data-v-44c71933" url="{{consultant_topic_url}}">
+                <text class="tx data-v-44c71933">本楼盘置业顾问排名</text>
+                <view class="my-list _div data-v-44c71933">我的排名<text class="tx-strong data-v-44c71933">{{consultantRank.current_ranking_in_building}}</text>
+                    <fc-icon bind:__l="__l" class="data-v-44c71933" type="32_more" vueId="3814b8b3-2"></fc-icon>
+                </view>
+            </navigator>
+            <view class="consultant-topic--top3 data-v-44c71933">
+                <button bindgetuserinfo="__e" class="data-v-44c71933" data-event-opts="{{[ [ 'getuserinfo',[ [ 'e2',['$event'] ] ] ] ]}}" data-id="{{item.id}}" openType="getUserInfo" wx:for="{{consultantRank.rankings}}" wx:for-index="__i1__" wx:key="id">
+                    <view class="consultant-w data-v-44c71933">
+                        <view class="consultant-h data-v-44c71933">
+                            <image class="_img data-v-44c71933" src="{{item.weixin_headimgurl}}"></image>
+                        </view>
+                        <view class="consultant-b data-v-44c71933">{{item.name}}</view>
+                    </view>
+                    <view class="{{[ 'ud data-v-44c71933',[item.ranking_trend>0?'u':'',item.ranking_trend<0?'d':''] ]}}" wx:if="{{item.ranking_trend!==0}}">{{item.ranking_trend}}</view>
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

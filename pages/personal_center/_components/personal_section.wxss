@@ -1,0 +1,155 @@
+.personal-center-section.data-v-773ab091 {
+    padding-top: 32rpx;
+}
+
+.personal-center-section .header.data-v-773ab091 {
+    padding: 0 32rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    color: #333;
+}
+
+.more .notice.data-v-773ab091 {
+    background-position: 0rpx -228rpx;
+}
+
+.more .feedback.data-v-773ab091 {
+    background-position: -76rpx -228rpx;
+}
+
+.more .office.data-v-773ab091 {
+    background-position: -152rpx -228rpx;
+}
+
+.more .contact.data-v-773ab091 {
+    background-position: -228rpx -228rpx;
+}
+
+.more .version.data-v-773ab091 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/64_version.png);
+}
+
+.more .cooperation.data-v-773ab091,.more .version.data-v-773ab091 {
+    background-size: 64rpx 64rpx;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.more .cooperation.data-v-773ab091 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/64_cooperation.png);
+}
+
+.normal .version.data-v-773ab091 {
+    background-position: 0rpx 0;
+}
+
+.normal .material.data-v-773ab091 {
+    background-position: -76rpx 0;
+}
+
+.normal .service.data-v-773ab091 {
+    background-position: -152rpx 0;
+}
+
+.normal .like.data-v-773ab091 {
+    background-position: -228rpx 0;
+}
+
+.normal .taxes.data-v-773ab091 {
+    background-position: -304rpx 0;
+}
+
+.normal .household.data-v-773ab091 {
+    background-position: -380rpx 0;
+}
+
+.normal .consultant_apply.data-v-773ab091 {
+    background-position: -456rpx 0;
+}
+
+.normal .consult.data-v-773ab091 {
+    background-position: -532rpx 0;
+}
+
+.normal .provident_fund.data-v-773ab091 {
+    background-position: -608rpx 0;
+}
+
+.normal .prepayment.data-v-773ab091 {
+    background-position: -684rpx 0;
+}
+
+.normal .nohouse.data-v-773ab091 {
+    background-position: -760rpx 0;
+}
+
+.normal .footprint_icon.data-v-773ab091 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/footprint.png);
+    background-size: 51rpx 52rpx;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.normal .integral_simulation.data-v-773ab091 {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/integral_simulation.png?v=1);
+    background-size: 64rpx 64rpx;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.normal .inherit.data-v-773ab091 {
+    width: 64rpx;
+    height: 64rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/64_inherit.png);
+    background-size: 100% 100%;
+}
+
+.normal .find_building.data-v-773ab091 {
+    width: 64rpx;
+    height: 64rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/icon/64_find_building.png);
+    background-size: 100% 100%;
+}
+
+.normal .dora.data-v-773ab091 {
+    width: 64rpx;
+    height: 64rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_center/icons/64_qs.png);
+    background-size: 100% 100%;
+}
+
+.consultant_tools .service.data-v-773ab091 {
+    background-position: 0rpx -76rpx;
+}
+
+.consultant_tools .booth.data-v-773ab091 {
+    background-position: -76rpx -76rpx;
+}
+
+.consultant_tools .modify.data-v-773ab091 {
+    background-position: -152rpx -76rpx;
+}
+
+.consultant_tools .exclusive_poster.data-v-773ab091 {
+    background-position: -228rpx -76rpx;
+}
+
+.consultant_tools .rule.data-v-773ab091 {
+    background-position: -304rpx -76rpx;
+}
+
+.consultant_tools .visit.data-v-773ab091 {
+    background-position: -380rpx -76rpx;
+}
+
+.consultant_tools .point.data-v-773ab091 {
+    background-position: -456rpx -76rpx;
+}
+
+.consultant_tools .league.data-v-773ab091 {
+    background-position: -532rpx -76rpx;
+}
+
+.tools-group.data-v-773ab091 {
+    padding: 20rpx 0 32rpx;
+}

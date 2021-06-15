@@ -1,0 +1,3 @@
+<view class="page data-v-3573455a">
+    <image bindtap="__e" class="_img data-v-3573455a" data-event-opts="{{[ [ 'tap',[ [ 'preview',['$event'] ] ] ] ]}}" src="{{src}}"></image>
+</view>

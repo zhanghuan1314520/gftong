@@ -1,0 +1,36 @@
+.btn-wx.data-v-7b2736ea,.btn.data-v-7b2736ea {
+    position: fixed;
+    top: 60vh;
+    right: -100rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 88rpx;
+    height: 88rpx;
+    line-height: 1.2em;
+    color: #fff;
+    font-size: 24rpx;
+    background-color: rgba(0,176,141,.8);
+    box-shadow: 0 4rpx 12rpx 0 rgba(0,176,141,.4);
+    border-radius: 50%;
+    z-index: 3;
+    transition: right .4s ease-in-out;
+}
+
+.btn-wx.data-v-7b2736ea {
+    margin-top: 112rpx;
+}
+
+.show.data-v-7b2736ea {
+    right: 32rpx;
+}

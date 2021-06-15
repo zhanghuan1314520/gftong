@@ -1,0 +1,25 @@
+<view class="data-v-39ee5857">
+    <view class="_div data-v-39ee5857" wx:if="{{showConsultants}}">
+        <view class="consultants _div data-v-39ee5857" wx:if="{{items.length||loading}}">
+            <view class="_h3 data-v-39ee5857" wx:if="{{!show_new_version}}">
+                <view class="_div data-v-39ee5857">活跃度排行榜</view>
+            </view>
+            <view class="_ul data-v-39ee5857">
+                <view class="_li data-v-39ee5857" wx:for="{{items}}" wx:for-index="__i0__" wx:for-item="consultant" wx:key="id">
+                    <item bind:__l="__l" bind:toggleMedalDetail="__e" class="data-v-39ee5857" consultant="{{consultant}}" data-event-opts="{{[ [ '^toggleMedalDetail',[ ['toggleMedalDetail'] ] ] ]}}" vueId="{{'cb982394-1-'+__i0__}}" wx:if="{{show_new_version}}"></item>
+                    <old-card bind:__l="__l" bind:toggleMedalDetail="__e" class="data-v-39ee5857" consultant="{{consultant}}" data-event-opts="{{[ [ '^toggleMedalDetail',[ ['toggleMedalDetail'] ] ] ]}}" from="{{from}}" vueId="{{'cb982394-2-'+__i0__}}" wx:else></old-card>
+                </view>
+            </view>
+            <loading bind:__l="__l" class="data-v-39ee5857" vueId="cb982394-3" wx:if="{{loading||!no_more}}"></loading>
+            <view class="footer _footer data-v-39ee5857" wx:if="{{!show_new_version}}">
+                <button bindgetuserinfo="__e" class="adapt-btn adapt_bottom_origin data-v-39ee5857" data-event-opts="{{[ [ 'getuserinfo',[ [ 'addConsultant',['$event'] ] ] ] ]}}" openType="getUserInfo">申请置业顾问入驻</button>
+            </view>
+        </view>
+        <view class="empty-wrap _div data-v-39ee5857" wx:else>
+            <empty bind:__l="__l" bind:addConsultant="__e" bind:copyCustomerWeixin="__e" bind:goCall="__e" class="data-v-39ee5857" data-event-opts="{{[ [ '^addConsultant',[ ['addConsultant'] ] ],[ '^copyCustomerWeixin',[ ['copyCustomerWeixin'] ] ],[ '^goCall',[ ['goCall'] ] ] ]}}" official_customer_service="{{official_customer_service}}" vueId="cb982394-4"></empty>
+        </view>
+        <medals bind:__l="__l" bind:hide="__e" class="data-v-39ee5857" consultant="{{selected_consultant}}" data-event-opts="{{[ [ '^hide',[ ['toggleMedalDetail'] ] ] ]}}" vueId="cb982394-5" wx:if="{{show_medal_detail}}"></medals>
+        <page-wrap bind:__l="__l" class="data-v-39ee5857" title="{{building.name}}" vueId="cb982394-6"></page-wrap>
+    </view>
+    <view class="_div data-v-39ee5857" wx:else></view>
+</view>

@@ -1,0 +1,4 @@
+<view class="timeline-wrap data-v-d08fe680" wx:if="{{show}}">
+    <image class="billboard data-v-d08fe680" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/common-icons/timeline-billboard.png"></image>
+    <image class="tip data-v-d08fe680" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/common-icons/timeline-guide.png"></image>
+</view>

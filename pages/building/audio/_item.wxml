@@ -1,0 +1,16 @@
+<view bindtap="__e" class="audio data-v-252e6c56" data-event-opts="{{[ [ 'tap',[ [ 'onPress',['$event'] ] ] ] ]}}">
+    <view class="left data-v-252e6c56">
+        <view class="name data-v-252e6c56">{{title}}</view>
+        <view class="time data-v-252e6c56" wx:if="{{duration}}">
+            <fc-icon bind:__l="__l" class="data-v-252e6c56" type="24_audio_clock" vueId="10e7d14f-1"></fc-icon>
+            <text class="data-v-252e6c56">{{duration}}</text>
+        </view>
+    </view>
+    <view class="play data-v-252e6c56" wx:if="{{status==='waiting'}}"></view>
+    <view class="playing data-v-252e6c56" wx:if="{{status==='playing'}}">
+        <view class="_i data-v-252e6c56"></view>
+        <view class="_i data-v-252e6c56"></view>
+        <view class="_i data-v-252e6c56"></view>
+        <view class="_i data-v-252e6c56"></view>
+    </view>
+</view>

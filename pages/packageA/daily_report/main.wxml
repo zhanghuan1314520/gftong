@@ -1,0 +1,99 @@
+<view class="{{['page _div data-v-77dac3f2',show_paper?'paper-page':'']}}">
+    <view class="theme-content _div data-v-77dac3f2">
+        <scroll-view class="content-scroll data-v-77dac3f2" id="feed_swiper" scrollWithAnimation="true" scrollX="{{true}}">
+            <view bindtap="__e" class="list _div data-v-77dac3f2" data-event-opts="{{[ [ 'tap',[ [ 'goTab',['$event'] ] ] ] ]}}" data-name="{{item.name}}" data-url="{{item.link}}" wx:for="{{subjects}}" wx:for-index="i" wx:key="i">
+                <subject bind:__l="__l" class="data-v-77dac3f2" item="{{item}}" vueId="{{'7ded361a-1-'+i}}" width="280rpx"></subject>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="community-topics-top _div data-v-77dac3f2">
+        <view class="title-section data-v-77dac3f2">
+            <view class="report-title data-v-77dac3f2"></view>
+            <view class="date text28B data-v-77dac3f2" wx:if="{{paper_date}}">
+                <text class="data-v-77dac3f2">{{paper_date}}</text>
+                <text class="data-v-77dac3f2">{{week}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="default _div data-v-77dac3f2">
+        <view class="content pic-tip _div data-v-77dac3f2" wx:if="{{show_paper}}">
+            <image class="subject-pic _img data-v-77dac3f2" mode="widthFix" src="{{image_url}}"></image>
+        </view>
+        <view class="content _div data-v-77dac3f2" wx:else>
+            <view class="data-v-77dac3f2">
+                <view class="_section data-v-77dac3f2">
+                    <view class="title32B data-v-77dac3f2">今日可登记楼盘</view>
+                    <view class="_ul data-v-77dac3f2" wx:if="{{register_buildings.length}}">
+                        <view class="_li data-v-77dac3f2" wx:for="{{register_buildings}}" wx:for-index="i" wx:key="i">
+                            <label class="label data-v-77dac3f2">
+                                <label class="_span data-v-77dac3f2">{{item.zone}}</label>
+                                <view class="_i data-v-77dac3f2" wx:if="{{item.buildings.length}}">：</view>
+                            </label>
+                            <view class="house-name data-v-77dac3f2">
+                                <navigator class="data-v-77dac3f2" url="{{building.link}}" wx:for="{{item.buildings}}" wx:for-index="j" wx:for-item="building" wx:key="j">
+                                    <text class="name data-v-77dac3f2">{{building.name}}</text>
+                                    <text class="date-desc data-v-77dac3f2">{{'('+building.date_desc+')'}}</text>
+                                </navigator>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="_ul data-v-77dac3f2" wx:else>
+                        <view class="null _li data-v-77dac3f2">无</view>
+                    </view>
+                </view>
+                <view class="_section data-v-77dac3f2">
+                    <view class="title32B data-v-77dac3f2">今日摇号楼盘</view>
+                    <view class="_ul data-v-77dac3f2" wx:if="{{ln_buildings.length}}">
+                        <view class="_li data-v-77dac3f2" wx:for="{{ln_buildings}}" wx:for-index="i" wx:key="i">
+                            <label class="label data-v-77dac3f2">
+                                <label class="_span data-v-77dac3f2">{{item.zone}}</label>
+                                <view class="_i data-v-77dac3f2" wx:if="{{item.buildings.length}}">：</view>
+                            </label>
+                            <view class="house-name data-v-77dac3f2">
+                                <navigator class="data-v-77dac3f2" url="{{building.link}}" wx:for="{{item.buildings}}" wx:for-index="j" wx:for-item="building" wx:key="j">
+                                    <text class="name data-v-77dac3f2">{{building.name}}</text>
+                                    <text class="date-desc data-v-77dac3f2">{{'('+building.date_desc+')'}}</text>
+                                </navigator>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="null _p data-v-77dac3f2" wx:else>无</view>
+                </view>
+                <view class="_section data-v-77dac3f2">
+                    <view class="title32B data-v-77dac3f2">即将登记楼盘</view>
+                    <view class="_ul data-v-77dac3f2" wx:if="{{will_register_buildings.length}}">
+                        <view class="_li data-v-77dac3f2" wx:for="{{will_register_buildings}}" wx:for-index="i" wx:key="i">
+                            <label class="label data-v-77dac3f2">
+                                <label class="_span data-v-77dac3f2">{{item.zone}}</label>
+                                <view class="_i data-v-77dac3f2" wx:if="{{item.buildings.length}}">：</view>
+                            </label>
+                            <view class="house-name data-v-77dac3f2">
+                                <navigator class="data-v-77dac3f2" url="{{building.link}}" wx:for="{{item.buildings}}" wx:for-index="j" wx:for-item="building" wx:key="j">
+                                    <text class="name data-v-77dac3f2">{{building.name}}</text>
+                                    <text class="date-desc data-v-77dac3f2">{{'('+building.date_desc+')'}}</text>
+                                </navigator>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="null _p data-v-77dac3f2" wx:else>无</view>
+                </view>
+            </view>
+            <view class="daily-new data-v-77dac3f2" wx:if="{{building_tags&&building_tags.length}}">
+                <view class="_header data-v-77dac3f2">
+                    <view class="_h2 data-v-77dac3f2">今日上新</view>
+                    <text class="desc data-v-77dac3f2">今日新增总平图、航拍、VR的楼盘</text>
+                </view>
+                <view class="card data-v-77dac3f2">
+                    <navigator class="item _a data-v-77dac3f2" url="{{'/pages/building/main?building_id='+item.building_id}}" wx:for="{{building_tags}}" wx:for-index="i" wx:key="i">
+                        <text class="name data-v-77dac3f2">{{''+item.building_name+''}}</text>
+                        <label class="data-v-77dac3f2">新增：</label>
+                        <view class="tag data-v-77dac3f2" wx:for="{{item.tags}}" wx:for-index="j" wx:for-item="tag" wx:key="j">{{''+tag+''}}</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-77dac3f2" vueId="7ded361a-2"></bottom-right-share>
+    <footer-weixin bind:__l="__l" class="data-v-77dac3f2" festival="{{show_paper}}" type="daily_report" vueId="7ded361a-3"></footer-weixin>
+    <page-wrap bind:__l="__l" class="data-v-77dac3f2" hide_back_home="{{true}}" vueId="7ded361a-4"></page-wrap>
+</view>

@@ -1,0 +1,13 @@
+<view class="{{[ 'event _section data-v-905cdd52',[!total_count?'hide':''] ]}}">
+    <view class="house-page-title info _div data-v-905cdd52">
+        <view class="_h3 data-v-905cdd52">{{'楼盘最新动态('+total_count+')'}}</view>
+        <navigator url bindtap="__e" class="right-link _a data-v-905cdd52" data-event-opts="{{[ [ 'tap',[ [ 'goMore',['$event'] ] ] ] ]}}" wx:if="{{items.length}}">全部动态</navigator>
+    </view>
+    <view class="_ul data-v-905cdd52">
+        <event-item bind:__l="__l" class="data-v-905cdd52" has_line="{{false}}" item="{{item}}" photos_url="{{photos_url}}" vueId="{{'2210545f-1-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></event-item>
+        <view class="_p data-v-905cdd52" wx:if="{{!loading&&items.length===0}}">暂无动态</view>
+    </view>
+    <navigator class="add-btn _a data-v-905cdd52" url="{{add_url}}" wx:if="{{is_consultant&&is_building_consultant}}">
+        <view class="_i data-v-905cdd52"></view>发布动态</navigator>
+    <tip-dlg bind:__l="__l" bind:confirm="__e" bind:toggleDlg="__e" class="data-v-905cdd52" content="{{apply_content}}" data-event-opts="{{[ [ '^toggleDlg',[ ['togglePublishDlg'] ] ],[ '^confirm',[ ['copyWexin'] ] ] ]}}" show="{{show_public_dlg}}" title="提示" vueId="2210545f-2"></tip-dlg>
+</view>

@@ -1,0 +1,10 @@
+<view class="wrap _div data-v-d7060f1a" id="recommedation">
+    <view class="header title36B _div data-v-d7060f1a">{{''+name+'板块推荐楼盘'}}</view>
+    <view class="filter _div data-v-d7060f1a">
+        <top-filter area="{{area}}" bind:__l="__l" bind:change="__e" bind:toggleFilter="__e" class="data-v-d7060f1a" data-event-opts="{{[ [ '^toggleFilter',[ ['toggleFilter'] ] ],[ '^change',[ ['changeFilter'] ] ] ]}}" decoration="{{decoration}}" price="{{price}}" tabs="{{filter_tabs}}" total_price="{{total_price}}" vueId="321dad8a-1"></top-filter>
+    </view>
+    <view class="list _div data-v-d7060f1a">
+        <house-item bind:__l="__l" class="data-v-d7060f1a" item="{{item}}" vueId="{{'321dad8a-2-'+__i0__}}" wx:for="{{items}}" wx:for-index="__i0__" wx:key="id"></house-item>
+        <list-loading bind:__l="__l" class="data-v-d7060f1a" vueId="321dad8a-3" wx:if="{{loading||!no_more}}"></list-loading>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="select-wrap _div data-v-4f315dff">
+    <view bindtap="__e" class="_div data-v-4f315dff" data-event-opts="{{[ [ 'tap',[ [ 'onShow',['$event'] ] ] ] ]}}">
+        <label class="_span data-v-4f315dff">区域筛选</label>
+        <view class="down _i data-v-4f315dff"></view>
+    </view>
+    <view class="zones _div data-v-4f315dff" style="{{'display:'+(show?'block':'none')+';'}}">
+        <view bindtap="__e" class="overlay _li data-v-4f315dff" data-event-opts="{{[ [ 'tap',[ [ 'onHide',['$event'] ] ] ] ]}}"></view>
+        <view class="checkboxes-wrap _div data-v-4f315dff">
+            <scroll-view class="select-zone data-v-4f315dff" scrollY="{{true}}">
+                <view class="checkboxes _div data-v-4f315dff" wx:for="{{zone_config}}" wx:for-index="i" wx:for-item="zone" wx:key="i">
+                    <view class="{{['top _div data-v-4f315dff',zone.key]}}">
+                        <checkbox-item bind:__l="__l" bind:change="__e" class="data-v-4f315dff" className="{{'select-all '+zone.key}}" data-event-opts="{{[ [ '^change',[ ['selectLevel'] ] ] ]}}" level="{{zone.key}}" selected="{{selected[zone.key]}}" vueId="{{'1184a6c0-1-'+i}}" zone="{{zone.name}}"></checkbox-item>
+                    </view>
+                    <checkbox-item bind:__l="__l" bind:change="__e" class="data-v-4f315dff" className="{{zone.key}}" data-event-opts="{{[ [ '^change',[ ['changeLevel'] ] ] ]}}" index="{{index}}" level="{{zone.key}}" selected="{{item.selected}}" vueId="{{'1184a6c0-2-'+i+'-'+index}}" zone="{{item.name}}" wx:for="{{selected_zones[zone.key]}}" wx:key="index"></checkbox-item>
+                </view>
+            </scroll-view>
+            <button bindtap="__e" class="large-btn confirm-btn data-v-4f315dff" data-event-opts="{{[ [ 'tap',[ [ 'changeZones',['$event'] ] ] ] ]}}">确定</button>
+        </view>
+    </view>
+</view>

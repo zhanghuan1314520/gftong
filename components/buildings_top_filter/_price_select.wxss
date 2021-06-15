@@ -1,0 +1,17 @@
+.input-wrap.data-v-157ccce2 {
+    width: 375rpx;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 28rpx;
+}
+
+.input-wrap .input.data-v-157ccce2 {
+    width: 170rpx;
+    padding: 0 24rpx;
+    box-sizing: border-box;
+}

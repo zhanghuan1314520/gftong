@@ -1,0 +1,35 @@
+<view class="data-v-5b8d5918">
+    <view class="page _div data-v-5b8d5918">
+        <view class="shm-header _div data-v-5b8d5918">
+            <button class="share-btn share-btn__c data-v-5b8d5918" openType="share">
+                <image class="_img data-v-5b8d5918" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/share-btn/c.png"></image>
+            </button>
+            <view class="shm-header__nav _div data-v-5b8d5918">
+                <navigator url bindtap="__e" class="{{[ 'alink _a data-v-5b8d5918',[link.name===name?'active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'onSetTab',['$event'] ] ] ] ]}}" data-label="{{link.label}}" data-name="{{link.name}}" wx:for="{{nav}}" wx:for-index="__i0__" wx:for-item="link" wx:key="name">
+                    <label class="_span data-v-5b8d5918">{{link.label}}</label>
+                </navigator>
+            </view>
+        </view>
+        <view class="shm-body _div data-v-5b8d5918">
+            <new-house-trend bind:__l="__l" class="data-v-5b8d5918 vue-ref" data-ref="new" vueId="d7a1c2b8-1" wx:if="{{name==='new'}}"></new-house-trend>
+            <sec-hd bind:__l="__l" class="data-v-5b8d5918 vue-ref" data-ref="shd" from="{{from}}" vueId="d7a1c2b8-2" wx:if="{{name==='shd'}}"></sec-hd>
+            <sec-he bind:__l="__l" class="data-v-5b8d5918 vue-ref" data-ref="she" hide="{{secHide}}" vueId="d7a1c2b8-3" wx:if="{{name==='she'}}"></sec-he>
+            <depreciate-rankings bind:__l="__l" class="data-v-5b8d5918 vue-ref" data-ref="dr" vueId="d7a1c2b8-4" wx:if="{{name==='dr'}}"></depreciate-rankings>
+        </view>
+    </view>
+    <view class="sticky coverview sticky-footer sticky-footer--contact data-v-5b8d5918">
+        <view class="sticky-footer--main data-v-5b8d5918">
+            <view class="account data-v-5b8d5918">
+                <view class="account-headimg data-v-5b8d5918">
+                    <image class="_img data-v-5b8d5918" src="{{current_personal_account.headimg}}" wx:if="{{current_personal_account.headimg}}"></image>
+                </view>
+                <view class="account-body data-v-5b8d5918">
+                    <view class="account-tit data-v-5b8d5918">{{contactSendMessage.personal.title}}</view>
+                    <view class="account-info data-v-5b8d5918">{{contactSendMessage.personal.content}}</view>
+                </view>
+            </view>
+            <button class="data-v-5b8d5918" openType="contact" sendMessageImg="{{contactSendMessage.personal.msg_face}}" sendMessagePath="{{'/pages/packageA/sec_hand_m/main?mediasourceid='+current_personal_account.id}}" showMessageCard="{{true}}">{{''+contactSendMessage.personal.btn_text+''}}</button>
+        </view>
+    </view>
+    <page-wrap bind:__l="__l" class="data-v-5b8d5918" hide_back_home="{{true}}" vueId="d7a1c2b8-5"></page-wrap>
+</view>

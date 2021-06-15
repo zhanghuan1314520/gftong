@@ -1,0 +1,165 @@
+<view class="building-page business data-v-46404dc4">
+    <building-top-tab bind:__l="__l" bind:changeHeight="__e" bind:changePosition="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^changeHeight',[ ['changeTopModuleTabsHeight'] ] ],[ '^changePosition',[ ['changeTopModulePosition'] ] ] ]}}" position="{{top_module_tabs_position}}" show="{{show_top_module_tabs}}" tabs="{{top_module_tabs}}" vueId="4af84998-1"></building-top-tab>
+    <view class="preview-wrap _div data-v-46404dc4">
+        <top-swiper banners="{{house.photos_urls}}" bind:__l="__l" bind:goPanorama="__e" bind:goPlanarGraph="__e" bind:goVR="__e" bind:goVideo="__e" bind:showShareOption="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^goVR',[ [ 'goVR',[true] ] ] ],[ '^goVideo',[ ['goVideo'] ] ],[ '^goPanorama',[ ['openWeb720'] ] ],[ '^goPlanarGraph',[ ['goPlanarGraph'] ] ],[ '^showShareOption',[ ['showShareOption'] ] ] ]}}" house="{{house}}" live_streaming="{{house.live_streaming}}" name="{{house.name}}" open_type="{{open_type}}" panorama_url="{{house.vr_panorama_resource?house.vr_panorama_resource.cover_image_url:''}}" planar_graph_url="{{house.planar_graph_url}}" show_panorama="{{show_panorama}}" show_video="{{show_video}}" show_vr="{{show_vr}}" video_url="{{house.video_resource?house.video_resource.photo_url:''}}" view_count="{{house.view_count}}" vr_url="{{house.vr_resource?house.vr_resource.vr_photo_url:''}}" vueId="4af84998-2"></top-swiper>
+    </view>
+    <view class="content-wrap _div data-v-46404dc4">
+        <business-header bind:__l="__l" bind:goComments="__e" bind:openMap="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^openMap',[ ['goAround'] ] ],[ '^goComments',[ ['goComments'] ] ] ]}}" house="{{house}}" vueId="4af84998-3"></business-header>
+        <view class="house-section adapt_bottom_origin _div data-v-46404dc4">
+            <view class="tab-group _div data-v-46404dc4">
+                <top-tabs bind:__l="__l" bind:goTab="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^goTab',[ ['goTab'] ] ] ]}}" id="top-module-tabs-hide-flg" tabs="{{tabs}}" vueId="4af84998-4"></top-tabs>
+                <top-tools bind:__l="__l" bind:goIconLocation="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^goIconLocation',[ ['goIconLocation'] ] ] ]}}" icons="{{icons}}" is_consultant="{{is_consultant}}" vueId="4af84998-5"></top-tools>
+            </view>
+            <building-rank bind:__l="__l" building_ranking="{{house.building_ranking}}" class="data-v-46404dc4" vueId="4af84998-6" wx:if="{{house.building_ranking}}"></building-rank>
+            <view bindtap="__e" class="brands-activity data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'goBrands',['$event'] ] ] ] ]}}" wx:if="{{activity_aaa_thematic_building}}">
+                <text class="text data-v-46404dc4">已入选2020杭州购房通楼盘年度热榜</text>
+            </view>
+            <view class="data-v-46404dc4" wx:if="{{!getUserLoading&&showCommentRedPacketActivity&&!special_banner.length}}">
+                <comment-red-packet-activity bind:__l="__l" bind:openComment="__e" class="data-v-46404dc4" config="{{commentRedPacketActivity}}" data-event-opts="{{[ [ '^openComment',[ ['goAddComments'] ] ] ]}}" is_consultant="{{is_consultant}}" vueId="4af84998-7"></comment-red-packet-activity>
+            </view>
+            <view class="activity-banner data-v-46404dc4" wx:if="{{!getUserLoading&&show_activity_f&&!special_banner.length}}">
+                <navigator bindtap="__e" class="activity-item _a data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'sendEvtLog',['$event'] ] ] ] ]}}" data-name="C端用户抽奖活动" url="/pages/activity_a/oct_a/main">
+                    <image class="_img data-v-46404dc4" lazyLoad="{{true}}" src="https://cdn.vip-wifi.com/hzfangchan/oct_a/banner.png"></image>
+                </navigator>
+            </view>
+            <view class="wk-banner data-v-46404dc4" wx:for="{{special_banner}}" wx:for-index="__i0__" wx:for-item="banner">
+                <navigator bindtap="__e" class="wk-banner--item _a data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'sendEvtLog',['$event'] ] ] ] ]}}" data-name="{{banner.log_name}}" url="{{banner.url}}">
+                    <image class="_img data-v-46404dc4" lazyLoad="{{true}}" src="{{banner.imgUrl}}"></image>
+                </navigator>
+            </view>
+            <view class="current-house _div data-v-46404dc4">
+                <view class="pr current-house-info-wrap _div data-v-46404dc4" id="opening_info" wx:if="{{is_opened}}">
+                    <house-tab bind:__l="__l" bind:change="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^change',[ ['changeCurrentHouse'] ] ] ]}}" index="{{current_house_index}}" tabs="{{current_houses_tabs}}" vueId="4af84998-8"></house-tab>
+                    <view class="current-house-info _div data-v-46404dc4">
+                        <view class="building-r data-v-46404dc4"></view>
+                        <base-info bind:__l="__l" class="data-v-46404dc4" current_house="{{current_house}}" house="{{house}}" show_house_count="{{!show_house_count_table}}" vueId="4af84998-9"></base-info>
+                        <view class="hot-sign-up data-v-46404dc4" wx:if="{{house.current_houses&&house.current_houses.length&&current_house.registration_method_qrcode_url}}">
+                            <button bindgetuserinfo="__e" bindtap="__e" class="data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'sendEvtLog',['$event'] ] ] ],[ 'getuserinfo',[ [ 'openBm',['$event'] ] ] ] ]}}" data-name="线上登记报名" openType="getUserInfo">
+                                <label class="text normal _span data-v-46404dc4">报名通道</label>
+                                <label class="text bold _span data-v-46404dc4">立即报名</label>
+                                <image class="_img data-v-46404dc4" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/online-check.png"></image>
+                            </button>
+                        </view>
+                        <view class="_div data-v-46404dc4">
+                            <house-count bind:__l="__l" class="data-v-46404dc4" current_house="{{current_house}}" vueId="4af84998-10"></house-count>
+                        </view>
+                        <view class="house-tools-new _div data-v-46404dc4">
+                            <form bindsubmit="__e" class="data-v-46404dc4" data-event-opts="{{[ [ 'submit',[ [ 'goHousePrice',['$event'] ] ] ] ]}}" wx:if="{{current_house.has_house_price}}">
+                                <button class="shadow-button data-v-46404dc4" formType="submit">
+                                    <image class="_img data-v-46404dc4" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/yfyj.png"></image>
+                                </button>
+                            </form>
+                            <image bindtap="__e" class="_img data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'goQulification',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/gfzg.png" wx:if="{{!current_house.has_house_price}}"></image>
+                            <image bindtap="__e" class="_img data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'goMaterial',['$event'] ] ] ] ]}}" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/gfzl.png"></image>
+                        </view>
+                    </view>
+                </view>
+                <reg-predict bind:__l="__l" bind:goDetail="__e" building_id="{{house.id}}" class="data-v-46404dc4" data-event-opts="{{[ [ '^goDetail',[ ['goPredict'] ] ] ]}}" house_id="{{current_house.id}}" predict_registers="{{current_house.predict_registers}}" predict_time="{{current_house.predict_time}}" register_predict_precision="{{current_house.register_predict_precision}}" vueId="4af84998-11" wx:if="{{is_opened}}"></reg-predict>
+                <opening-info bind:__l="__l" class="data-v-46404dc4" current_house="{{current_house}}" macode_url="{{house.scene_qrcode_url}}" vueId="4af84998-12" wx:if="{{is_opened}}"></opening-info>
+                <view class="_div data-v-46404dc4" wx:if="{{is_opened&&!is_selling}}">
+                    <vip-timeline bind:__l="__l" class="data-v-46404dc4" current_house="{{current_house}}" house="{{house}}" vueId="4af84998-13"></vip-timeline>
+                </view>
+                <house-attachs attachs="{{current_house.attachment_urls}}" bind:__l="__l" bind:goPreview="__e" class="data-v-46404dc4" current_house_name="{{current_house.name}}" data-event-opts="{{[ [ '^goPreview',[ ['goPreview'] ] ] ]}}" house="{{house}}" house_id="{{current_house.id}}" is_consultant="{{is_consultant}}" lfd_status="{{current_house.lfd_status}}" lrd_status="{{current_house.lrd_status}}" name="{{house.name}}" price_diagram="{{current_house.price_diagram}}" vueId="4af84998-14" wx:if="{{is_opened&&!(is_selling||current_house.status==='即将取证')}}"></house-attachs>
+            </view>
+            <house-result bind:__l="__l" class="data-v-46404dc4 vue-ref" data-ref="house_result" house_id="{{current_house.id}}" id="lottery_result" name="{{house.name}}" show="{{show_result}}" vueId="4af84998-15"></house-result>
+            <view class="_div data-v-46404dc4" style="margin:20rpx 0;" wx:if="{{is_opened&&!house.current_consultant}}">
+                <excellent-consultants bind:__l="__l" bind:goMore="__e" building_id="{{house.id}}" class="data-v-46404dc4" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultant'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="楼盘详情" id="excellent_consultants" is_default="{{is_default_consultants}}" show_help="{{is_consultant}}" theme="{{consultantCard.building.theme}}" title="为您推荐优秀置业顾问" vueId="4af84998-16" wx:if="{{consultantCard}}"></excellent-consultants>
+            </view>
+            <surplus-houses bind:__l="__l" bind:goCall="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^goCall',[ ['goCall'] ] ] ]}}" show_surplus_houses="{{show_surplus_houses}}" surplus_apartment_count="{{surplus_apartment_count}}" surplus_houses="{{surplus_houses}}" vueId="4af84998-17"></surplus-houses>
+            <house-content baseinfos="{{baseinfos}}" bind:__l="__l" bind:goMore="__e" bind:onCollapse="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^onCollapse',[ ['onCollapse'] ] ],[ '^goMore',[ ['goHouseInfo'] ] ] ]}}" house="{{house}}" is_opened="{{is_opened}}" is_selling="{{is_selling}}" is_vip="{{is_vip}}" macode_url="{{house.scene_qrcode_url}}" show_surplus_houses="{{show_surplus_houses}}" vueId="4af84998-18"></house-content>
+            <second-hand bind:__l="__l" building_id="{{house.id}}" class="data-v-46404dc4" has_house_price="{{current_house.has_house_price}}" house="{{secondhand_house}}" house_id="{{current_house.id}}" items="{{secondhand_items}}" vueId="4af84998-19" wx:if="{{show_secondhand}}"></second-hand>
+            <layout bind:__l="__l" bind:goMore="__e" bind:openDetail="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^openDetail',[ ['openLayoutDetail'] ] ],[ '^goMore',[ [ 'goPreview',['layout','户型图'] ] ] ] ]}}" id="layout" items="{{layout_items}}" vueId="4af84998-20" wx:if="{{layout_items&&layout_items.length}}"></layout>
+            <planar-graph bind:__l="__l" building_id="{{house.id}}" class="data-v-46404dc4" id="planar_graph" url="{{house.planar_graph_url}}" vueId="4af84998-21" wx:if="{{house.planar_graph_url}}"></planar-graph>
+            <view class="_div data-v-46404dc4" wx:if="{{(!house.current_houses||!house.current_houses.length)&&!house.current_consultant}}">
+                <excellent-consultants bind:__l="__l" bind:goMore="__e" building_id="{{house.id}}" class="data-v-46404dc4" classname="{{consultantCard.building.class}}" data-event-opts="{{[ [ '^goMore',[ ['goConsultant'] ] ] ]}}" excellent_consultants="{{excellent_consultants}}" from="楼盘详情" id="excellent_consultants" is_default="{{is_default_consultants}}" show_help="{{is_consultant}}" theme="{{consultantCard.building.theme}}" title="为您推荐优秀置业顾问" vueId="4af84998-22" wx:if="{{consultantCard}}"></excellent-consultants>
+            </view>
+            <predict-open bind:__l="__l" class="data-v-46404dc4" id="predict_open" items="{{predict_open}}" price="{{house.price_desc_arr||[]}}" vueId="4af84998-23" wx:if="{{predict_open&&predict_open.length&&!is_opened}}"></predict-open>
+            <view class="_div data-v-46404dc4" id="events">
+                <building-event bind:__l="__l" bind:goMore="__e" building_event_author="{{events.building_event_author}}" class="data-v-46404dc4" customer_service_info="{{events.customer_service_info}}" data-event-opts="{{[ [ '^goMore',[ ['goEvent'] ] ] ]}}" house="{{house}}" is_building_consultant="{{is_building_consultant}}" is_consultant="{{events.is_consultant}}" items="{{events.items}}" loading="{{events.loading}}" photos_url="{{house.photos_urls&&house.photos_urls.length?house.photos_urls[0]:''}}" total_count="{{events.total_count}}" vueId="4af84998-24"></building-event>
+            </view>
+            <house-comments bind:__l="__l" bind:goAdd="__e" bind:goComments="__e" class="data-v-46404dc4 vue-ref" data-event-opts="{{[ [ '^goAdd',[ ['goAddComments'] ] ],[ '^goComments',[ ['goComments'] ] ] ]}}" data-ref="house_comments" id="building_comments" vueId="4af84998-25"></house-comments>
+            <view class="_div data-v-46404dc4" id="discuss_group">
+                <discuss-link bind:__l="__l" building_id="{{house.id}}" class="data-v-46404dc4" vueId="4af84998-26"></discuss-link>
+            </view>
+            <view class="history-wrap _div data-v-46404dc4" id="history_lottery" wx:if="{{history_lot_houses_all&&history_lot_houses_all.length}}">
+                <view class="house-page-title info _div data-v-46404dc4">{{'该楼盘历史摇号'+(history_lot_houses_all.length>1?'('+history_lot_houses_all.length+')':'')}}</view>
+                <button bindgetuserinfo="__e" class="history-item shadow-button data-v-46404dc4" data-event-opts="{{[ [ 'getuserinfo',[ [ 'goLink',['$event'] ] ] ] ]}}" data-href="{{history.href}}" openType="getUserInfo" wx:for="{{history_lot_houses}}" wx:for-index="i" wx:for-item="history" wx:key="i">
+                    <view class="top _div data-v-46404dc4">
+                        <view class="_h3 data-v-46404dc4">{{history.name}}</view>
+                    </view>
+                    <view class="price-box _div data-v-46404dc4">
+                        <view class="price _div data-v-46404dc4" wx:if="{{history.customized_price&&history.customized_price.length}}">
+                            <view class="_div data-v-46404dc4" wx:for="{{history.customized_price}}" wx:for-index="k" wx:for-item="cp" wx:key="k">{{cp}}</view>
+                        </view>
+                        <label class="price _span data-v-46404dc4" wx:else>{{history.price_desc}}</label>
+                    </view>
+                    <view class="content _div data-v-46404dc4">
+                        <label class="{{[ '_span data-v-46404dc4',[!history.presell_date?'hide':''] ]}}">{{'预售时间：'+history.presell_date}}</label>
+                        <label class="{{[ '_span data-v-46404dc4',[!history.date_with_status?'hide':''] ]}}">{{history_with_status}}</label>
+                    </view>
+                    <view class="bottom _div data-v-46404dc4" style="{{'display:'+(history.common_probability||history.rd_probability?'flex':'none')+';'}}">
+                        <label class="{{[ '_span data-v-46404dc4',[!history.total_apartments?'hide':''] ]}}">总套数：<view class="num _i data-v-46404dc4">{{history.total_apartments}}</view>
+                        </label>
+                        <label class="prob _span data-v-46404dc4">
+                            <label class="data-v-46404dc4">中签率：</label>
+                            <label class="{{[ '_span data-v-46404dc4',[!history.common_probability?'hide':''] ]}}">
+                                <text class="data-v-46404dc4">有房</text>
+                                <view class="num _i data-v-46404dc4">{{history.common_probability}}</view>
+                            </label>
+                        </label>
+                        <label class="prob _span data-v-46404dc4">
+                            <label class="{{[ '_span data-v-46404dc4',[!history.rd_probability?'hide':''] ]}}">
+                                <text class="data-v-46404dc4">无房</text>
+                                <view class="num _i data-v-46404dc4">{{history.rd_probability}}</view>
+                            </label>
+                        </label>
+                    </view>
+                </button>
+                <view class="_div data-v-46404dc4" wx:if="{{show_more_history&&history_lot_houses_all.length>=2}}">
+                    <view class="f2-history-trend--header _div data-v-46404dc4">
+                        <text class="data-v-46404dc4">中签趋势</text>
+                        <text class="data-v-46404dc4">*流摇的概率自动计为100%</text>
+                    </view>
+                    <view class="f2-history-trend--box _div data-v-46404dc4">
+                        <view class="f2-history-trend _div data-v-46404dc4">
+                            <f2-charts axisXLabelFormatter="{{historyTrendAxisXLabelFormatter}}" bind:__l="__l" canvasId="historyTrend" class="data-v-46404dc4" opts="{{historyTrendOpts}}" source="{{history_trend_data}}" valueFormatter="{{historyTrendValueFormatter}}" vueId="4af84998-27"></f2-charts>
+                        </view>
+                    </view>
+                </view>
+                <view bindtap="__e" class="show-more-history _div data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'onShowMoreHistory',['$event'] ] ] ] ]}}" wx:if="{{history_lot_houses_all.length>=2}}">
+                    <text class="data-v-46404dc4">{{(show_more_history?'收起':'展开')+'更多历史摇号'}}</text>
+                    <view class="{{[ 'data-v-46404dc4',[show_more_history?'is-show-more':''] ]}}">
+                        <fc-icon bind:__l="__l" class="data-v-46404dc4" type="32_down" vueId="4af84998-28"></fc-icon>
+                    </view>
+                </view>
+            </view>
+            <building-article bind:__l="__l" bind:goMore="__e" class="data-v-46404dc4 vue-ref" data-event-opts="{{[ [ '^goMore',[ ['goBuildingArticle'] ] ] ]}}" data-ref="building_article" has_more="{{true}}" id="building_article" loading="{{loading}}" vueId="4af84998-29" weixin_account_id="{{house.weixin_account_id}}"></building-article>
+            <you-like bind:__l="__l" class="data-v-46404dc4" vueId="4af84998-30" you_like="{{you_like_buidings}}" wx:if="{{!is_vip}}"></you-like>
+            <list-loading bind:__l="__l" class="data-v-46404dc4" vueId="4af84998-31" wx:if="{{!lottery_loaded}}"></list-loading>
+            <view class="data-v-46404dc4" wx:if="{{house.current_consultant&&!loading}}">
+                <current-consultant bind:__l="__l" bind:onHideThis="__e" class="data-v-46404dc4" current_house="{{current_house}}" data-event-opts="{{[ [ '^onHideThis',[ ['onHideThis'] ] ] ]}}" house="{{house}}" is_building="{{true}}" is_consultant="{{is_consultant}}" show_inner_tips="{{show_inner_tips}}" vueId="4af84998-32"></current-consultant>
+            </view>
+            <disclaimer bind:__l="__l" class="data-v-46404dc4" title="《免责声明》" vueId="4af84998-33"></disclaimer>
+            <building-footer bind:__l="__l" bind:goAdd="__e" bind:goComments="__e" bind:toggleFavourite="__e" class="data-v-46404dc4" current_house="{{current_house}}" data-event-opts="{{[ [ '^goAdd',[ ['goAddComments'] ] ],[ '^goComments',[ ['goComments'] ] ],[ '^toggleFavourite',[ ['toggleFavourite'] ] ] ]}}" from="楼盘详情" house="{{house}}" is_building="{{true}}" is_selling="{{is_selling}}" vueId="4af84998-34" wx:if="{{!house.current_consultant&&!loading}}"></building-footer>
+        </view>
+        <view class="adapt_bottom_origin data-v-46404dc4"></view>
+    </view>
+    <like-tip bind:__l="__l" bind:hide="__e" class="data-v-46404dc4" content="您还可以通过【杭州购房者之家】了解更多购房信息" data-event-opts="{{[ [ '^hide',[ ['hideLikeTip'] ] ] ]}}" show="{{show_like_tip}}" show_copy="{{false}}" title="关注后会实时为您推送楼盘预售信息、摇号结果、新增动态" vueId="4af84998-35"></like-tip>
+    <auth-phone bind:__l="__l" bind:hide="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^hide',[ ['hideAuthPhone'] ] ] ]}}" show="{{show_auth_phone}}" vueId="4af84998-36"></auth-phone>
+    <share-options bind:__l="__l" bind:hide="__e" bind:showBillboard="__e" class="data-v-46404dc4" data-event-opts="{{[ [ '^showBillboard',[ ['toggleBillboard'] ] ],[ '^hide',[ ['hideShareOption'] ] ] ]}}" shadow="{{false}}" show="{{show_share_option}}" vueId="4af84998-37"></share-options>
+    <billboard bind:__l="__l" bind:hide="__e" class="data-v-46404dc4" consultant="{{consultant}}" current_house="{{current_house}}" data-event-opts="{{[ [ '^hide',[ ['toggleBillboard'] ] ] ]}}" events="{{events.items}}" house="{{house}}" info="{{buildingCardInfo}}" is_building_consultant="{{is_building_consultant}}" show="{{show_billboard}}" show_720="{{show_panorama}}" show_vr="{{show_vr}}" vueId="4af84998-38"></billboard>
+    <view bindtap="__e" class="bm-tips-mask data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'onCloseBm',['$event'] ] ] ] ]}}" wx:if="{{show_bm}}">
+        <view catchtap="__e" class="bm-tips data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}">
+            <view class="bm-tips-inner data-v-46404dc4">
+                <view class="top-text data-v-46404dc4">扫描二维码，关注杭州购房者之家</view>
+                <view class="qr-box data-v-46404dc4">
+                    <image class="_img data-v-46404dc4" src="{{current_house.registration_method_qrcode_url}}"></image>
+                </view>
+                <view class="bt-text data-v-46404dc4">关注后即可线上登记报名</view>
+                <button catchtap="__e" class="data-v-46404dc4" data-event-opts="{{[ [ 'tap',[ [ 'onSaveQr',['$event'] ] ] ] ]}}">保存图片</button>
+            </view>
+        </view>
+    </view>
+    <timeline-billboard bind:__l="__l" class="data-v-46404dc4" vueId="4af84998-39" wx:if="{{show_timeline_billboard}}"></timeline-billboard>
+    <page-wrap bind:__l="__l" class="data-v-46404dc4" has_own_timeline="{{true}}" hide_back_home="{{true}}" page_show_rain="{{false}}" title="{{house.name}}" vueId="4af84998-40"></page-wrap>
+</view>

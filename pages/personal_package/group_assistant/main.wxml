@@ -1,0 +1,24 @@
+<view class="page data-v-3f8d8f70">
+    <view class="main data-v-3f8d8f70" wx:if="{{show}}">
+        <view class="top data-v-3f8d8f70">
+            <view class="title data-v-3f8d8f70">
+                <image class="_img data-v-3f8d8f70" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/group_assistant/title.png"></image>
+            </view>
+            <view class="wx-wrap data-v-3f8d8f70">
+                <view class="assistFont24 highlight data-v-3f8d8f70">添加客服加群</view>
+                <image class="_img data-v-3f8d8f70" src="{{official_customer_service.wx_qrcode_url}}" wx:if="{{official_customer_service}}"></image>
+                <view class="name assistFont24 data-v-3f8d8f70" wx:if="{{official_customer_service}}">{{'微信号：'+official_customer_service.wx_username}}</view>
+            </view>
+            <button bindtap="__e" class="btn data-v-3f8d8f70" data-event-opts="{{[ [ 'tap',[ [ 'copyCustomerWeixin',['$event'] ] ] ] ]}}">复制微信号</button>
+        </view>
+        <view class="footer data-v-3f8d8f70">
+            <view class="text28B data-v-3f8d8f70">操作步骤：</view>
+            <view class="iconFont24 data-v-3f8d8f70">
+                <view class="data-v-3f8d8f70">1、在微信首页的右上角点击“<view class="add-btn data-v-3f8d8f70">+</view>”，然后选择<text class="highlight data-v-3f8d8f70">“添加朋友”</text>
+                </view>
+                <view class="data-v-3f8d8f70">2、将复制的客服微信号长按粘贴到输入框内进行搜索添加。</view>
+            </view>
+            <image class="_img data-v-3f8d8f70" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/personal_package/group_assistant/example.png"></image>
+        </view>
+    </view>
+</view>

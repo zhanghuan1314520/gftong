@@ -1,0 +1,11 @@
+<form bindsubmit="__e" class="data-v-50f1c538" data-event-opts="{{[ [ 'submit',[ [ 'onSearch',['$event'] ] ] ] ]}}">
+    <view bindtap="__e" class="search _div data-v-50f1c538" data-event-opts="{{[ [ 'tap',[ [ 'onClick',['$event'] ] ] ] ]}}">
+        <view class="left data-v-50f1c538">
+            <fc-icon bind:__l="__l" class="img data-v-50f1c538" type="32_search" vueId="b8fccd42-1"></fc-icon>
+            <input bindconfirm="__e" class="data-v-50f1c538" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'onSearch',['$event'] ] ] ] ]}}" disabled="{{can_search==0}}" name="keyword" placeholder="{{input_placeholder}}" type="search"></input>
+        </view>
+        <view catchtap="__e" class="right data-v-50f1c538" data-event-opts="{{[ [ 'tap',[ [ 'openLocation',['$event'] ] ] ] ]}}">
+            <common-img bind:__l="__l" class="location data-v-50f1c538" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/home/location-i.png" vueId="b8fccd42-2"></common-img>
+        </view>
+    </view>
+</form>

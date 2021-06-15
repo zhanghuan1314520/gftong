@@ -1,0 +1,46 @@
+<view class="page">
+    <view class="top">
+        <view class="main">
+            <view class="header"></view>
+            <view class="tit"></view>
+            <view class="total">
+                <view class="total-info">
+                    <text>您的总积分</text>
+                    <text>{{total_score}}</text>
+                </view>
+            </view>
+            <view class="score">
+                <view class="score-item">
+                    <view class="score-val">{{base_score}}</view>
+                    <view class="score-label">基础分</view>
+                </view>
+                <view class="score-item">
+                    <view class="score-val">{{plus_score}}</view>
+                    <view class="score-label">加分</view>
+                </view>
+                <view class="score-item">
+                    <view class="score-val">{{negative_score}}</view>
+                    <view class="score-label">减分</view>
+                </view>
+            </view>
+            <view class="info">
+                <view class="info-item">
+                    <text>姓名</text>
+                    <text>{{name}}</text>
+                </view>
+                <view class="info-item">
+                    <text>身份证</text>
+                    <text>{{idcard}}</text>
+                </view>
+            </view>
+            <view class="btns">
+                <navigator class="again" openType="redirect" url="/pages/packageB/integral_simulation/steps">再查一次</navigator>
+                <button class="shadow-button" openType="share">分享给朋友</button>
+            </view>
+        </view>
+    </view>
+    <view class="tips">注: 模拟积分结果只作为流动人口了解自己积分情况用，不作为其他用途。</view>
+    <navigator class="add-group" url="/pages/personal_package/group_assistant/main">
+        <image class="_img" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/packageB/integral_simulation/group.png"></image>
+    </navigator>
+</view>

@@ -1,0 +1,25 @@
+<view class="page _div data-v-2ff946e8">
+    <view class="contact-us__header _div data-v-2ff946e8">
+        <button class="share2btn radius2left bg__000000_20 data-v-2ff946e8" openType="share">
+            <view class="_i data-v-2ff946e8"></view>
+            <label class="_span data-v-2ff946e8">分享</label>
+        </button>
+    </view>
+    <view class="contact-us__body _div data-v-2ff946e8">
+        <view class="content _div data-v-2ff946e8">
+            <view class="content-header _div data-v-2ff946e8">
+                <label class="_span data-v-2ff946e8">商务合作</label>
+                <image class="_img data-v-2ff946e8" src="https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/logo.jpeg"></image>
+            </view>
+            <view class="content-text _div data-v-2ff946e8">
+                <view class="left _div data-v-2ff946e8"></view>
+                <view class="right _div data-v-2ff946e8">
+                    <view class="_p data-v-2ff946e8">杭州地区百万级用户量的房产信息类小程序</view>
+                    <view class="_p data-v-2ff946e8">小程序日均访问次数近百万</view>
+                    <view class="_p data-v-2ff946e8">构建的小程序、新媒体、社群、公众号四大产品矩阵精确覆盖杭州地区购房人群</view>
+                </view>
+            </view>
+        </view>
+        <fangchan-cooperation-form bind:__l="__l" class="data-v-2ff946e8" vueId="3964fae2-1"></fangchan-cooperation-form>
+    </view>
+</view>

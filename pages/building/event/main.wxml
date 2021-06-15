@@ -1,0 +1,15 @@
+<view class="page _div data-v-a0a3a38e">
+    <view class="tabs-wrap _div data-v-a0a3a38e">
+        <common-tabs bind:__l="__l" bind:change="__e" class="data-v-a0a3a38e" data-event-opts="{{[ [ '^change',[ ['changeType'] ] ] ]}}" selected="{{type}}" tabs="{{tabs}}" vueId="c06743b4-1" width="100%"></common-tabs>
+    </view>
+    <view class="exent-tip _div data-v-a0a3a38e">
+        <event-tip bind:__l="__l" class="data-v-a0a3a38e" content="{{tip_content}}" title="楼盘动态免责声明" vueId="c06743b4-2"></event-tip>
+    </view>
+    <view class="list _ul data-v-a0a3a38e">
+        <event-item bind:__l="__l" building_id="{{house.id}}" class="data-v-a0a3a38e" item="{{item}}" photos_url="{{house.photos_urls&&house.photos_urls.length?house.photos_urls[0]:''}}" vueId="{{'c06743b4-3-'+i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i"></event-item>
+    </view>
+    <view class="tip _p data-v-a0a3a38e" wx:if="{{!loading&&!items.length}}">暂无动态</view>
+    <bottom-tip bind:__l="__l" class="data-v-a0a3a38e" vueId="c06743b4-4" wx:if="{{!loading&&items.length&&no_more}}"></bottom-tip>
+    <event-footer bind:__l="__l" bind:getData="__e" building_event_author="{{building_event_author}}" class="data-v-a0a3a38e" customer_service_info="{{customer_service_info}}" data-event-opts="{{[ [ '^getData',[ ['getBuilding'] ] ] ]}}" follow_info="{{house.follow_info}}" house="{{house}}" is_building_consultant="{{is_building_consultant}}" is_consultant="{{is_consultant}}" vueId="c06743b4-5" wx:if="{{!loading}}"></event-footer>
+    <page-wrap bind:__l="__l" class="data-v-a0a3a38e" title="{{title}}" vueId="c06743b4-6"></page-wrap>
+</view>

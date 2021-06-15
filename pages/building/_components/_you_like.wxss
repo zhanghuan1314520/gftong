@@ -1,0 +1,19 @@
+.you-like {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.you-like .house-col-3 {
+    padding-top: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.you-like .house-col-3>._a {
+    margin-right: 24rpx;
+}
+
+.you-like .house-col-3>._a:last-child {
+    margin: 0;
+}

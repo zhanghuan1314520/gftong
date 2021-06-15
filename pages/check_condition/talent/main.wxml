@@ -1,0 +1,19 @@
+<view class="page _div data-v-d1ac7540">
+    <view class="h1 data-v-d1ac7540">杭州市高层次人才认定条件</view>
+    <view class="sort-tabs data-v-d1ac7540">
+        <view bindtap="__e" class="data-v-d1ac7540" data-event-opts="{{[ [ 'tap',[ [ 'onTab',['$event'] ] ] ] ]}}" data-index="{{i}}" wx:for="{{tabs}}" wx:for-index="i" wx:key="i">
+            <view class="{{[ 'item data-v-d1ac7540',[index==i?'active':''] ]}}">
+                <text class="data-v-d1ac7540">{{item.label+'类'}}</text>
+                <text class="data-v-d1ac7540">{{item.des}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="sort-list data-v-d1ac7540">
+        <view class="h2 data-v-d1ac7540">{{tabs[index].label+'类申报条件'}}</view>
+        <view class="list data-v-d1ac7540">
+            <view class="data-v-d1ac7540" wx:for="{{sort[index]}}" wx:for-index="i">{{item}}</view>
+        </view>
+    </view>
+    <bottom-right-share bind:__l="__l" class="data-v-d1ac7540" vueId="d5a07b44-1"></bottom-right-share>
+    <page-wrap bind:__l="__l" class="data-v-d1ac7540" title="{{title}}" vueId="d5a07b44-2"></page-wrap>
+</view>

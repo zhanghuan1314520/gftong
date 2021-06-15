@@ -1,0 +1,89 @@
+.loading {
+    display: block;
+    text-align: center;
+}
+
+.typing_loader,.white_typing_loader {
+    position: relative;
+    display: inline-block;
+    left: -12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.typing_loader {
+    animation: typing 1s linear infinite alternate;
+}
+
+.white_typing_loader {
+    animation: while_typing 1s linear infinite alternate;
+}
+
+@-webkit-keyframes typing {
+    0% {
+        background-color: #5760b3;
+        box-shadow: 12px 0 0 0 rgba(87,96,179,.2),24px 0 0 0 rgba(87,96,179,.2);
+    }
+
+    25% {
+        background-color: rgba(87,96,179,.4);
+        box-shadow: 12px 0 0 0 #5760b3,24px 0 0 0 rgba(87,96,179,.2);
+    }
+
+    75% {
+        background-color: rgba(87,96,179,.4);
+        box-shadow: 12px 0 0 0 rgba(87,96,179,.2),24px 0 0 0 #5760b3;
+    }
+}
+
+@keyframes typing {
+    0% {
+        background-color: #5760b3;
+        box-shadow: 12px 0 0 0 rgba(87,96,179,.2),24px 0 0 0 rgba(87,96,179,.2);
+    }
+
+    25% {
+        background-color: rgba(87,96,179,.4);
+        box-shadow: 12px 0 0 0 #5760b3,24px 0 0 0 rgba(87,96,179,.2);
+    }
+
+    75% {
+        background-color: rgba(87,96,179,.4);
+        box-shadow: 12px 0 0 0 rgba(87,96,179,.2),24px 0 0 0 #5760b3;
+    }
+}
+
+@-webkit-keyframes while_typing {
+    0% {
+        background-color: #fff;
+        box-shadow: 12px 0 0 0 hsla(0,0%,100%,.2),24px 0 0 0 hsla(0,0%,100%,.2);
+    }
+
+    25% {
+        background-color: hsla(0,0%,100%,.4);
+        box-shadow: 12px 0 0 0 #fff,24px 0 0 0 hsla(0,0%,100%,.2);
+    }
+
+    75% {
+        background-color: hsla(0,0%,100%,.4);
+        box-shadow: 12px 0 0 0 hsla(0,0%,100%,.2),24px 0 0 0 #fff;
+    }
+}
+
+@keyframes while_typing {
+    0% {
+        background-color: #fff;
+        box-shadow: 12px 0 0 0 hsla(0,0%,100%,.2),24px 0 0 0 hsla(0,0%,100%,.2);
+    }
+
+    25% {
+        background-color: hsla(0,0%,100%,.4);
+        box-shadow: 12px 0 0 0 #fff,24px 0 0 0 hsla(0,0%,100%,.2);
+    }
+
+    75% {
+        background-color: hsla(0,0%,100%,.4);
+        box-shadow: 12px 0 0 0 hsla(0,0%,100%,.2),24px 0 0 0 #fff;
+    }
+}

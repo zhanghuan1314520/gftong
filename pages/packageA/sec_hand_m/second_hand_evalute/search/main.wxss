@@ -1,0 +1,22 @@
+._p.data-v-5f744e93 {
+    padding: 16rpx 30rpx;
+    color: #999;
+    font-size: 26rpx;
+}
+
+.results.data-v-5f744e93 {
+    background-color: #fff;
+}
+
+.results ._li.data-v-5f744e93 {
+    padding: 30rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    color: #333;
+    font-size: 26rpx;
+}
+
+.results ._span.data-v-5f744e93 {
+    margin-left: 20rpx;
+    font-size: 22rpx;
+    color: #999;
+}

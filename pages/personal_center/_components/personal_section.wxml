@@ -1,0 +1,36 @@
+<view class="{{['personal-center-section data-v-773ab091',className]}}">
+    <view class="header data-v-773ab091">{{title}}</view>
+    <view class="tools-group data-v-773ab091">
+        <view bindtap="__e" class="{{[ 'tools-item data-v-773ab091',[index>3?'mt':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'sendLog',['$event'] ] ] ] ]}}" data-name="{{tab.name}}" wx:for="{{tabs}}" wx:for-item="tab" wx:key="name">
+            <button bindgetuserinfo="__e" class="tools-item-inner data-v-773ab091" data-event-opts="{{[ [ 'getuserinfo',[ [ 'checkUserInfo',['$event'] ] ] ] ]}}" data-tip="{{tab.tip}}" data-url="{{tab.url}}" openType="{{tab.open_type}}" wx:if="{{tab.button&&!tab.message_card}}">
+                <view class="{{['i data-v-773ab091',tab.icon]}}">
+                    <view class="dot data-v-773ab091" wx:if="{{tab.dot}}"></view>
+                    <view class="new data-v-773ab091" wx:if="{{tab.new_tip}}"></view>
+                    <view class="badge data-v-773ab091" wx:if="{{tab.badge}}">{{tab.badge}}</view>
+                    <view class="label data-v-773ab091" wx:if="{{tab.label}}">{{tab.label}}</view>
+                </view>
+                <label class="iconFont24 data-v-773ab091">{{tab.name}}</label>
+            </button>
+            <block wx:else>
+                <button bindgetuserinfo="__e" class="tools-item-inner data-v-773ab091" data-event-opts="{{[ [ 'getuserinfo',[ [ 'checkUserInfo',['$event'] ] ] ] ]}}" data-tip="{{tab.tip}}" data-url="{{tab.url}}" openType="{{tab.open_type}}" sendMessageImg="{{tab.message_card.img}}" sendMessagePath="{{tab.message_card.path}}" showMessageCard="{{true}}" wx:if="{{tab.button&&tab.message_card}}">
+                    <view class="{{['i data-v-773ab091',tab.icon]}}">
+                        <view class="dot data-v-773ab091" wx:if="{{tab.dot}}"></view>
+                        <view class="new data-v-773ab091" wx:if="{{tab.new_tip}}"></view>
+                        <view class="badge data-v-773ab091" wx:if="{{tab.badge}}">{{tab.badge}}</view>
+                        <view class="label data-v-773ab091" wx:if="{{tab.label}}">{{tab.label}}</view>
+                    </view>
+                    <label class="iconFont24 data-v-773ab091">{{tab.name}}</label>
+                </button>
+                <navigator class="tools-item-inner data-v-773ab091" openType="{{tab.open_type||'navigate'}}" url="{{tab.url}}" wx:else>
+                    <view class="{{['i data-v-773ab091',tab.icon]}}">
+                        <view class="dot data-v-773ab091" wx:if="{{tab.dot}}"></view>
+                        <view class="new data-v-773ab091" wx:if="{{tab.new_tip}}"></view>
+                        <view class="badge data-v-773ab091" wx:if="{{tab.badge}}">{{tab.badge}}</view>
+                        <view class="label data-v-773ab091" wx:if="{{tab.label}}">{{tab.label}}</view>
+                    </view>
+                    <label class="iconFont24 data-v-773ab091">{{tab.name}}</label>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<view class="page _div">
+    <around-map bind:__l="__l" category="{{category}}" dest="{{dest}}" house="{{house}}" vueId="4915afad-1"></around-map>
+    <view class="facility _section">
+        <view class="_header">
+            <label class="{{['_span',category]}}">{{category_name}}</label>
+        </view>
+        <view class="_ul">
+            <view bindtap="__e" class="_li" data-event-opts="{{[ [ 'tap',[ [ 'selectPos',['$event'] ] ] ] ]}}" data-i="{{i}}" wx:for="{{items}}" wx:for-index="i" wx:key="i">
+                <view class="_h3">
+                    <label class="name _span">{{item.name}}</label>
+                    <label class="_span">{{item.distance+'米'}}</label>
+                </view>
+                <view class="_p">{{item.address}}</view>
+            </view>
+        </view>
+        <loading bind:__l="__l" vueId="4915afad-2" wx:if="{{total_count>items.length||loading}}"></loading>
+    </view>
+    <page-wrap bind:__l="__l" title="{{title}}" vueId="4915afad-3"></page-wrap>
+</view>

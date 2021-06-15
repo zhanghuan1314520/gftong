@@ -1,0 +1,253 @@
+.page.data-v-1ea0abfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 100vh;
+}
+
+map.data-v-1ea0abfa {
+    width: 750rpx;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+._footer.data-v-1ea0abfa {
+    width: 100%;
+    min-height: 200rpx;
+    max-height: 575rpx;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2rpx 8rpx 0 rgba(0,0,0,.5);
+    transition: height .3s ease-in-out;
+}
+
+._footer.school.data-v-1ea0abfa {
+    min-height: 286rpx;
+    max-height: 662rpx;
+}
+
+._footer.min.data-v-1ea0abfa {
+    height: 200rpx;
+}
+
+._footer.min .movable-icon.data-v-1ea0abfa {
+    transform: rotate(0deg);
+}
+
+._footer.max.data-v-1ea0abfa {
+    height: 575rpx;
+}
+
+._footer.max.school.data-v-1ea0abfa {
+    height: 662rpx;
+}
+
+._footer.max .movable-icon.data-v-1ea0abfa {
+    transform: rotate(180deg);
+}
+
+.tabs.data-v-1ea0abfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 48rpx;
+}
+
+.tabs .tab.data-v-1ea0abfa {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding-top: 59rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/tabs.png?v=1);
+    background-size: 750rpx 50rpx;
+    background-repeat: no-repeat;
+    background-position-y: 10rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #666;
+}
+
+.tabs .tab.active.data-v-1ea0abfa {
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/tabs-a.png?v=1);
+    color: #00ad82;
+}
+
+.tabs .metro.data-v-1ea0abfa {
+    background-position-x: 0rpx;
+}
+
+.tabs .school.data-v-1ea0abfa {
+    background-position-x: -214rpx;
+}
+
+.tabs .food.data-v-1ea0abfa {
+    background-position-x: -540rpx;
+}
+
+.tabs .hospital.data-v-1ea0abfa {
+    background-position-x: -322rpx;
+}
+
+.tabs .shopping.data-v-1ea0abfa {
+    background-position-x: -648rpx;
+}
+
+.tabs .bus.data-v-1ea0abfa {
+    background-position-x: -106rpx;
+}
+
+.tabs .bank.data-v-1ea0abfa {
+    background-position-x: -432rpx;
+}
+
+.consult-tip.data-v-1ea0abfa {
+    position: fixed;
+    top: 24rpx;
+    left: 24rpx;
+    width: 702rpx;
+    height: 88rpx;
+    padding: 0 14rpx 0 21rpx;
+    border-radius: 8rpx;
+    background-color: hsla(0,0%,100%,.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #666;
+    font-size: 28rpx;
+    border: 1rpx solid rgba(0,0,0,.2);
+}
+
+.consult-tip cover-image.data-v-1ea0abfa {
+    width: 200rpx;
+    height: 60rpx;
+}
+
+.movable.data-v-1ea0abfa {
+    text-align: center;
+}
+
+.movable-icon.data-v-1ea0abfa {
+    display: inline-block;
+    width: 52rpx;
+    height: 14rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/up.png);
+    background-size: 100% 100%;
+}
+
+.audio-share.data-v-1ea0abfa {
+    position: fixed;
+    width: 100%;
+    top: 136rpx;
+}
+
+.audio-player.data-v-1ea0abfa {
+    display: block;
+    height: 90rpx;
+}
+
+.share-btn.data-v-1ea0abfa {
+    display: block;
+    width: 108rpx;
+    height: 108rpx;
+    padding: 0;
+    margin: 20rpx 0 0 620rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/share-btn.png);
+    background-size: 100% 100%;
+}
+
+.guide.data-v-1ea0abfa {
+    position: absolute;
+    bottom: 36rpx;
+}
+
+.guide-btn.data-v-1ea0abfa {
+    display: block;
+    background-color: transparent;
+    width: 92rpx;
+    height: 94rpx;
+    margin-left: 630rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/building/around_facilities/navigation.png);
+    background-size: 100% 100%;
+}
+
+.filters.data-v-1ea0abfa {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 32rpx;
+    margin: 16rpx 0;
+}
+
+.filters.data-v-1ea0abfa,.filters .item.data-v-1ea0abfa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filters .item.data-v-1ea0abfa {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 160rpx;
+    height: 54rpx;
+    margin-right: 15rpx;
+    border-radius: 4rpx;
+    color: #444;
+    font-size: 24rpx;
+    background-color: #f7f7f7;
+}
+
+.filters .item.selected.data-v-1ea0abfa {
+    color: #00ad82;
+    font-size: 24rpx;
+    background-color: #dcf5ef;
+}
+
+.filters .item.data-v-1ea0abfa:last-child {
+    margin: 0;
+}
+
+.empty.data-v-1ea0abfa {
+    text-align: center;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.empty .img.data-v-1ea0abfa {
+    display: block;
+    width: 192rpx;
+    height: 150rpx;
+    margin: 0 auto 14rpx;
+}
+
+.disclaimer-btn.data-v-1ea0abfa {
+    display: block;
+    background-color: transparent;
+    width: 240rpx;
+    height: 50rpx;
+    margin-left: 20rpx;
+    background-image: url(https://cdn.vip-wifi.com/hzfangchan/version-img/1.14.25/disclaimer/around_tips.png);
+    background-size: 100% 100%;
+    z-index: 9;
+}

@@ -1,0 +1,4 @@
+<button class="bottom-right-write data-v-04303e4c">
+    <fc-icon bind:__l="__l" class="data-v-04303e4c" type="48_write_white" vueId="289fe537-1"></fc-icon>
+    <text class="data-v-04303e4c">{{tip}}</text>
+</button>
